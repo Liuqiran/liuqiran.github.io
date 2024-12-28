@@ -79,7 +79,7 @@ languages:
     languageCode: "zh"
     contentDir: content/zh/  
     taxonomies: # 分类系统
-      category: 分类
+      category: categories
       tag: 标签
     menu:
       main:
@@ -101,7 +101,7 @@ languages:
           weight: 40
         - identifier: 分类
           name: 分类
-          url: /categories/
+          url: /zh/categories/
           weight: 50
         - identifier: search
           name: 搜索

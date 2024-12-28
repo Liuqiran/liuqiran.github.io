@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title></title>
-    <link>https://liuqiran.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on </description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 Feb 2023 15:35:06 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reading list</title>
-      <link>https://liuqiran.github.io/reading-list/</link>
+      <link>http://localhost:1313/reading-list/</link>
       <pubDate>Fri, 10 Feb 2023 15:35:06 +0000</pubDate>
-      <guid>https://liuqiran.github.io/reading-list/</guid>
+      <guid>http://localhost:1313/reading-list/</guid>
       <description>&lt;p&gt;The books I have finished reading:&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -311,9 +311,9 @@
     </item>
     <item>
       <title>About me</title>
-      <link>https://liuqiran.github.io/about-me/</link>
+      <link>http://localhost:1313/about-me/</link>
       <pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate>
-      <guid>https://liuqiran.github.io/about-me/</guid>
+      <guid>http://localhost:1313/about-me/</guid>
       <description>&lt;p&gt;Writing is supposed to be an essential part of life. Organizing one’s words and works in the form of a blog is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this blog to record myself and share my thoughts, articles and works. ：)&lt;/p&gt;
 &lt;p&gt;This site has joined the “ten-year contract” activities:&lt;code&gt;&amp;lt;a rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://www.foreverblog.cn/&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img decoding=&amp;quot;async&amp;quot; style=&amp;quot;width:auto;height:16px;&amp;quot; src=&amp;quot;https://img.foreverblog.cn/logo_en_default.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;``&amp;lt;/a&amp;gt;&lt;/code&gt;(that is, from joining this activity, our blog will not be closed for ten years, to maintain the update and vitality!)&lt;/p&gt;</description>
     </item>
