@@ -1,0 +1,145 @@
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false  
+baseURL: "https://liuqiran.github.io/"  
+theme: "PaperMod"
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    languageCode: "en"
+    contentDir: /content/en/
+    taxonomies: # 分类系统
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - identifier: about
+          name: About
+          url: /about-me/
+          weight: 10
+        - identifier: project
+          name: Project
+          url: /project/
+          weight: 20
+        - identifier: Reading list
+          name: Reading list
+          url: /reading-list/
+          weight: 30
+        - identifier: friends
+          name: Friends
+          url: /my-friends/
+          weight: 40
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 50
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 60
+    params:
+      alternatelang: 'zh'
+      profileMode:
+        enabled: true
+        title: Liu Qiran
+        subtitle: Welcome to my personal website! 
+        imageUrl: '/img/Avatar.jpg'
+        imageWidth: 150
+        imageHeight: 150
+        buttons:
+          - name: Project
+            url: /project/
+          - name: Resume
+            url: /resume.pdf
+          - name: Log
+            url: /blog/tech/log/
+      socialIcons:
+        - name: rss
+          url: '/'
+        - name: mastodon
+          url: 'https://mastodon.social/@liuqiran'
+        - name: github
+          url: 'https://github.com/liuqiran'
+        - name: telegram
+          url: 'https://t.me/qiranschannel'
+        - name: twitter
+          url: 'https://twitter.com/qiran_liu' 
+        - name: linkedin
+          url: 'https://www.linkedin.com/in/liuqiran/'
+        - name: youtube
+          url: 'https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ'
+        - name: goodreads
+          url: 'https://www.goodreads.com/user/show/161105203-yunyi-tang'
+        - name: email
+          url: 'mailto:woshiniuziku@gmail.com'
+  zh:
+    languageName: "中"
+    weight: 2
+    languageCode: "zh"
+    contentDir: content/zh/  
+    taxonomies: # 分类系统
+      category: 分类
+      tag: 标签
+    menu:
+      main:
+        - identifier: about
+          name: 关于
+          url: /zh/about-me/
+          weight: 10
+        - identifier: log
+          name: 建站
+          url: /zh/log/
+          weight: 20
+        - identifier: blog
+          name: 博客
+          url: /zh/blog/
+          weight: 30
+        - identifier: links
+          name: 友人
+          url: /zh/my-friends/
+          weight: 40
+        - identifier: 分类
+          name: 分类
+          url: /categories/
+          weight: 50
+        - identifier: search
+          name: 搜索
+          url: /zh/search/
+          weight: 60
+        - identifier: travellings
+          name: 阅读书目
+          url: /zh/reading-list/
+          weight: 70
+    params:
+      alternatelang: 'en'
+      homeInfoParams:
+        enabled: true
+        Title: "刘其然的部落格"
+        Content: "欢迎访问本人站点！"
+        imageUrl: "/img/Avatar.jpg"
+        imageWidth: 110
+        imageHeight: 110
+      socialIcons:
+        - name: github
+          url: 'https://github.com/liuqiran'
+        - name: instagram
+          url: 'https://www.instagram.com/yunyi_cam/'
+        - name: goodreads
+          url: 'https://www.goodreads.com/user/show/161105203-yunyi-tang'
+        - name: email
+          url: 'mailto:woshiniuziku@gmail.com'   
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true   # 关于 Raw HTML 警告，你可以选择在 config.yml 中添加以下内容来忽略它：   
+
+# ignoreErrors: 
+   # - "error-remote-getjson" #不想启用不安全的 HTML 渲染      
+
+outputs:
+  home:
+    - HTML # 生成的静态页面
+    - RSS # 这个其实无所谓
+    - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
