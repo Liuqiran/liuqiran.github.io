@@ -2,46 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/zh/</loc>
+    <loc>https://liuqiran.github.io/zh/</loc>
     <lastmod>2019-02-09T03:14:24+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://liuqiran.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/zh/"
+                href="https://liuqiran.github.io/zh/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/about-me/</loc>
+    <loc>https://liuqiran.github.io/zh/about-me/</loc>
     <lastmod>2019-02-09T03:14:24+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/about-me/"
+                href="https://liuqiran.github.io/about-me/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/zh/about-me/"
+                href="https://liuqiran.github.io/zh/about-me/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/%E6%A0%87%E7%AD%BE/</loc>
+    <loc>https://liuqiran.github.io/zh/%E6%A0%87%E7%AD%BE/</loc>
   </url><url>
-    <loc>http://localhost:1313/zh/%E5%88%86%E7%B1%BB/</loc>
+    <loc>https://liuqiran.github.io/zh/%E5%88%86%E7%B1%BB/</loc>
   </url><url>
-    <loc>http://localhost:1313/zh/search/</loc>
+    <loc>https://liuqiran.github.io/zh/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/search/"
+                href="https://liuqiran.github.io/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/zh/search/"
+                href="https://liuqiran.github.io/zh/search/"
                 />
   </url>
 </urlset>
