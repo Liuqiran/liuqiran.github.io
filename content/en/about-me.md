@@ -3,7 +3,6 @@ title: About me
 author: Qiran
 type: post
 date: 2019-02-09T03:14:24+00:00
-url: /about-me/
 categories:
   - Building Site
 ---
