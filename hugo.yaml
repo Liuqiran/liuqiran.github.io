@@ -56,7 +56,7 @@ languages:
             url: /blog/tech/log/
       socialIcons:
         - name: rss
-          url: '/'
+          url: '/index.xml'     
         - name: mastodon
           url: 'https://mastodon.social/@liuqiran'
         - name: github
@@ -72,7 +72,8 @@ languages:
         - name: goodreads
           url: 'https://www.goodreads.com/user/show/161105203-yunyi-tang'
         - name: email
-          url: 'mailto:woshiniuziku@gmail.com'
+          url: 'mailto:woshiniuziku@gmail.com'   
+    ShowFullTextinRSS: true
   zh:
     languageName: "中"
     weight: 2
@@ -83,6 +84,10 @@ languages:
       tag: 标签
     menu:
       main:
+        - identifier: homepage 
+          name: 主页
+          weight: 1
+          url: /zh/
         - identifier: about
           name: 关于
           url: /zh/about-me/
@@ -112,7 +117,7 @@ languages:
           url: /zh/reading-list/
           weight: 70
     params:
-      alternatelang: 'en'
+      alternatelang: 'en' 
       homeInfoParams:
         enabled: true
         Title: "刘其然的部落格"
@@ -121,14 +126,24 @@ languages:
         imageWidth: 110
         imageHeight: 110
       socialIcons:
+        - name: rss
+          url:  ./index.xml/     
+        - name: mastodon
+          url: 'https://mastodon.social/@liuqiran'
         - name: github
           url: 'https://github.com/liuqiran'
-        - name: instagram
-          url: 'https://www.instagram.com/yunyi_cam/'
+        - name: telegram
+          url: 'https://t.me/qiranschannel'
+        - name: twitter
+          url: 'https://twitter.com/qiran_liu' 
+        - name: linkedin
+          url: 'https://www.linkedin.com/in/liuqiran/'
+        - name: youtube
+          url: 'https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ'
         - name: goodreads
           url: 'https://www.goodreads.com/user/show/161105203-yunyi-tang'
         - name: email
-          url: 'mailto:woshiniuziku@gmail.com'   
+          url: 'mailto:woshiniuziku@gmail.com'    
 
 markup:
   goldmark:
