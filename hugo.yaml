@@ -127,7 +127,7 @@ languages:
         imageHeight: 110
       socialIcons:
         - name: rss
-          url:  ./index.xml/     
+          url:  ./index.xml     
         - name: mastodon
           url: 'https://mastodon.social/@liuqiran'
         - name: github
