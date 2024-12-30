@@ -2,6 +2,7 @@
 title: 关于
 author: Qiran
 type: post
+url: /zh/about-me
 date: 2019-02-09T03:14:24+00:00
 categories: 
   - 建站
@@ -9,7 +10,7 @@ categories:
 写作是应该是生活中必不可少的一部分，以网站的形式将自己的文字和作品整理出来，相比社交媒体式的分享，不再那么浮躁，也没有更多无意义的点赞；相比自己私密保存，又能分享需要的人。
 
 本站点于2019年2月9日创建。我创建这个部落格用来记录自己，分享自己的思考、文章和作品。：）
-本站已加入“十年之约”活动：`<a href="https://www.foreverblog.cn/" target="_blank" rel="noopener"><img decoding="async" style="width:auto;height:16px;" src="https://img.foreverblog.cn/logo_en_default.png" alt="" />``</a>`（即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！）
+本站已加入“十年之约”活动：（即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！）
 
 比特币地址：1Lae6qzRkp62V6Tbfusv3fhtfKrXDZnoV9
 
@@ -19,4 +20,4 @@ categories:
 
 联系我：请直接在评论区留言。
 
- [1]: https://www.liuqiran.com/index.php/category/technology/building-site/
+ [1]: /categories/building-site/

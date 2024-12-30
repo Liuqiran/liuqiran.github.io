@@ -1,0 +1,6 @@
+{{ $path := printf "content/shared/%s.md" (.Get 0) }}
+{{ with os.ReadFile $path }}
+  {{ . | markdownify }}
+{{ else }}
+  <p>Shared content not found: {{ $path }}</p>
+{{ end }}

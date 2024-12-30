@@ -14,9 +14,13 @@ languages:
       tag: tags
     menu:
       main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: 1
         - identifier: about
           name: About
-          url: /about-me/
+          url: /about-me-2/
           weight: 10
         - identifier: project
           name: Project
@@ -56,7 +60,7 @@ languages:
             url: /blog/tech/log/
       socialIcons:
         - name: rss
-          url: '/index.xml'     
+          url: '/rss'     
         - name: mastodon
           url: 'https://mastodon.social/@liuqiran'
         - name: github
@@ -69,8 +73,6 @@ languages:
           url: 'https://www.linkedin.com/in/liuqiran/'
         - name: youtube
           url: 'https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ'
-        - name: goodreads
-          url: 'https://www.goodreads.com/user/show/161105203-yunyi-tang'
         - name: email
           url: 'mailto:woshiniuziku@gmail.com'   
     ShowFullTextinRSS: true
@@ -91,31 +93,24 @@ languages:
         - identifier: about
           name: 关于
           url: /zh/about-me/
-          weight: 10
-        - identifier: log
-          name: 建站
-          url: /zh/log/
-          weight: 20
-        - identifier: blog
-          name: 博客
-          url: /zh/blog/
-          weight: 30
+          weight: 2
+        - identifier: reading-list
+          name: 阅读书目
+          url: /zh/reading-list/
+          weight: 3
         - identifier: links
           name: 友人
           url: /zh/my-friends/
-          weight: 40
+          weight: 4
         - identifier: 分类
           name: 分类
           url: /zh/categories/
-          weight: 50
+          weight: 5
         - identifier: search
           name: 搜索
           url: /zh/search/
-          weight: 60
-        - identifier: travellings
-          name: 阅读书目
-          url: /zh/reading-list/
-          weight: 70
+          weight: 6
+
     params:
       alternatelang: 'en' 
       homeInfoParams:
@@ -127,7 +122,7 @@ languages:
         imageHeight: 110
       socialIcons:
         - name: rss
-          url:  ./index.xml     
+          url:  /zh/rss-2/     
         - name: mastodon
           url: 'https://mastodon.social/@liuqiran'
         - name: github
@@ -140,8 +135,6 @@ languages:
           url: 'https://www.linkedin.com/in/liuqiran/'
         - name: youtube
           url: 'https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ'
-        - name: goodreads
-          url: 'https://www.goodreads.com/user/show/161105203-yunyi-tang'
         - name: email
           url: 'mailto:woshiniuziku@gmail.com'    
 
@@ -157,4 +150,14 @@ outputs:
   home:
     - HTML # 生成的静态页面
     - RSS # 这个其实无所谓
-    - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
+    - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下   
+
+# 这里的参数会被代码以 .Site.Params 的形式读取
+params:
+  comments: true  # 这里打开评论
+  # twikoo评论
+  twikoo:
+    version: 1.6.40
+    id: https://twikoo-gamma-red.vercel.app/
+    region:  # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数，请看twikoo官方文档  
+
