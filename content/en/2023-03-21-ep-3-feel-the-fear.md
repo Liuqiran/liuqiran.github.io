@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 3 Feel the fear
 author: Qiran
 type: post
 date: 2023-03-21T11:34:28+00:00
-url: /ep-3-feel-the-fear/
+aliases: ["/ep-3-feel-the-fear/"]
 xyz_twap:
   - 1
 boomdevs_metabox:

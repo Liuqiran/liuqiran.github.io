@@ -1,9 +1,9 @@
----
+﻿---
 title: EGYPT UNDER THE PHARAOHS
 author: Qiran
 type: post
 date: 2019-09-12T23:42:27+00:00
-url: /egypt-under-the-pharaohs/
+aliases: ["/egypt-under-the-pharaohs/"]
 categories:
   - Art through the Ages
 

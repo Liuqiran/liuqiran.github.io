@@ -1,9 +1,9 @@
----
+﻿---
 title: Whether You Want It or Not…It’s Yours
 author: Qiran
 type: post
 date: 2020-07-27T03:18:20+00:00
-url: /whether-you-want-it-or-not-its-yours-2/
+aliases: ["/whether-you-want-it-or-not-its-yours-2/"]
 categories:
   - Feel The Fear And Do It Anyway
 

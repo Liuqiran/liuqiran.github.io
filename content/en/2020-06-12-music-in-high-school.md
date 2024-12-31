@@ -1,9 +1,9 @@
----
+﻿---
 title: Music in high school
 author: Qiran
 type: post
 date: 2020-06-12T15:27:00+00:00
-url: /music-in-high-school/
+aliases: ["/music-in-high-school/"]
 categories:
   - Music
   - School

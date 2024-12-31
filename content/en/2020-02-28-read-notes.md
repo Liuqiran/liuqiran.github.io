@@ -1,9 +1,9 @@
----
+﻿---
 title: Read notes
 author: Qiran
 type: post
 date: 2020-02-28T10:20:04+00:00
-url: /read-notes/
+aliases: ["/read-notes/"]
 categories:
   - Art theory
 

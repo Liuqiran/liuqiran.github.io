@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 2 The tree of habits
 author: Qiran
 type: post
 date: 2023-03-07T03:37:57+00:00
-url: /ep-2-the-tree-of-habits/
+aliases: ["/ep-2-the-tree-of-habits/"]
 xyz_twap:
   - 1
 categories:

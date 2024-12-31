@@ -1,9 +1,9 @@
----
+﻿---
 title: Chapter V RIDDLES IN THE DARK
 author: Qiran
 type: post
 date: 2020-05-20T05:48:54+00:00
-url: /chapter-v-riddles-in-the-dark/
+aliases: ["/chapter-v-riddles-in-the-dark/"]
 categories:
   - Hobbit
 

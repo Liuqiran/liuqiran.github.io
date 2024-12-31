@@ -1,9 +1,9 @@
----
+﻿---
 title: Free and Easy Wandering
 author: Qiran
 type: post
 date: 2019-08-02T11:46:14+00:00
-url: /free-and-easy-wandering/
+aliases: ["/free-and-easy-wandering/"]
 categories:
   - Chuang tzu
 

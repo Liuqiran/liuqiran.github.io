@@ -1,9 +1,9 @@
----
+﻿---
 title: Holding Hands in the Dark
 author: Qiran
 type: post
 date: 2019-12-16T05:16:11+00:00
-url: /holding-hands-in-the-dark/
+aliases: ["/holding-hands-in-the-dark/"]
 categories:
   - Nothing to Envy
 

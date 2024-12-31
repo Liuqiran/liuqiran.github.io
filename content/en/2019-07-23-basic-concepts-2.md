@@ -1,9 +1,9 @@
----
+﻿---
 title: Basic concepts 2
 author: Qiran
 type: post
 date: 2019-07-23T11:02:13+00:00
-url: /basic-concepts-2/
+aliases: ["/basic-concepts-2/"]
 categories:
   - Art through the Ages
 

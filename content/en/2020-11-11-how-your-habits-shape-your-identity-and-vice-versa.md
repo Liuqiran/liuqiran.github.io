@@ -1,9 +1,9 @@
----
+﻿---
 title: How Your Habits Shape Your Identity (and Vice Versa)
 author: Qiran
 type: post
 date: 2020-11-11T01:44:56+00:00
-url: /how-your-habits-shape-your-identity-and-vice-versa/
+aliases: ["/how-your-habits-shape-your-identity-and-vice-versa/"]
 categories:
   - Atomic Habits
 

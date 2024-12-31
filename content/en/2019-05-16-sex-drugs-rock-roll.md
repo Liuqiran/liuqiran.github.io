@@ -1,11 +1,11 @@
----
+﻿---
 title: 'Sex, drugs, rock & roll'
 author: Qiran
 type: post
 date: 2019-05-16T12:33:24+00:00
 draft: true
 private: true
-url: /sex-drugs-rock-roll/
+aliases: ["/sex-drugs-rock-roll/"]
 categories:
   - Journal
   - Life

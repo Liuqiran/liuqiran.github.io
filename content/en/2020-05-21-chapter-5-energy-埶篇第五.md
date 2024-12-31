@@ -1,9 +1,9 @@
----
+﻿---
 title: Chapter 5 Energy 埶篇第五
 author: Qiran
 type: post
 date: 2020-05-21T05:57:40+00:00
-url: /chapter-5-energy-埶篇第五/
+aliases: ["/chapter-5-energy-埶篇第五/"]
 categories:
   - "Sun Tzu's The Art of War"
 

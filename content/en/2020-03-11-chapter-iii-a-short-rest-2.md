@@ -1,9 +1,9 @@
----
+﻿---
 title: CHAPTER III A Short Rest
 author: Qiran
 type: post
 date: 2020-03-11T10:39:58+00:00
-url: /chapter-iii-a-short-rest-2/
+aliases: ["/chapter-iii-a-short-rest-2/"]
 categories:
   - Hobbit
 

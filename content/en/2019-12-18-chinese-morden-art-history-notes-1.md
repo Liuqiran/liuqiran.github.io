@@ -1,9 +1,9 @@
----
+﻿---
 title: Chinese modern art history notes 1
 author: Qiran
 type: post
 date: 2019-12-18T02:02:45+00:00
-url: /chinese-morden-art-history-notes-1/
+aliases: ["/chinese-morden-art-history-notes-1/"]
 categories:
   - Chinese art history
 

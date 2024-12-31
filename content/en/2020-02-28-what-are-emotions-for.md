@@ -1,9 +1,9 @@
----
+﻿---
 title: What Are Emotions For?
 author: Qiran
 type: post
 date: 2020-02-28T14:07:47+00:00
-url: /what-are-emotions-for/
+aliases: ["/what-are-emotions-for/"]
 categories:
   - Emotional Intelligence
 

@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 8 Real wealth
 author: Qiran
 type: post
 date: 2023-05-30T15:07:06+00:00
-url: /ep-8-real-wealth/
+aliases: ["/ep-8-real-wealth/"]
 xyz_twap:
   - 1
 categories:

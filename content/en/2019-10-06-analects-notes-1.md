@@ -1,9 +1,9 @@
----
+﻿---
 title: Analects notes 1
 author: Qiran
 type: post
 date: 2019-10-06T08:33:15+00:00
-url: /analects-notes-1/
+aliases: ["/analects-notes-1/"]
 categories:
   - Analects
 

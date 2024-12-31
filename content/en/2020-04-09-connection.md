@@ -1,9 +1,9 @@
----
+﻿---
 title: Connection
 author: Qiran
 type: post
 date: 2020-04-09T04:19:59+00:00
-url: /connection/
+aliases: ["/connection/"]
 categories:
   - Loneliness
   - Music

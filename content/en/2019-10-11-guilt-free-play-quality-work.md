@@ -1,9 +1,9 @@
----
+﻿---
 title: GUILT-FREE PLAY, QUALITY WORK
 author: Qiran
 type: post
 date: 2019-10-11T04:07:34+00:00
-url: /guilt-free-play-quality-work/
+aliases: ["/guilt-free-play-quality-work/"]
 categories:
   - The Now Habit
 

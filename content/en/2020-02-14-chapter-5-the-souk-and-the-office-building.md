@@ -1,9 +1,9 @@
----
+﻿---
 title: CHAPTER 5 The Souk and the Office Building
 author: Qiran
 type: post
 date: 2020-02-14T12:04:06+00:00
-url: /chapter-5-the-souk-and-the-office-building/
+aliases: ["/chapter-5-the-souk-and-the-office-building/"]
 categories:
   - 'Antifragile: Things That Gain From Disorder'
 

@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 11 Pure writing
 author: Qiran
 type: post
 date: 2023-07-11T13:39:29+00:00
-url: /ep-11-pure-writing/
+aliases: ["/ep-11-pure-writing/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

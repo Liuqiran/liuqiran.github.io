@@ -1,9 +1,9 @@
----
+﻿---
 title: Swimming pool
 author: Qiran
 type: post
 date: 2019-08-26T12:35:51+00:00
-url: /swimming-pool/
+aliases: ["/swimming-pool/"]
 categories:
   - Dream
 

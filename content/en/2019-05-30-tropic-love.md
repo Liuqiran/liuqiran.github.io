@@ -1,9 +1,9 @@
----
+﻿---
 title: Tropic love
 author: Qiran
 type: post
 date: 2019-05-30T09:29:54+00:00
-url: /tropic-love/
+aliases: ["/tropic-love/"]
 categories:
   - Journal
   - Mood

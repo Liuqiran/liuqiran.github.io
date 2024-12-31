@@ -1,9 +1,9 @@
----
+﻿---
 title: Reading the first five books of the Bible
 author: Qiran
 type: post
 date: 2023-04-11T09:55:03+00:00
-url: /reading-the-first-five-books-of-the-bible/
+aliases: ["/reading-the-first-five-books-of-the-bible/"]
 xyz_twap:
   - 1
 categories:

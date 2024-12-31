@@ -1,9 +1,9 @@
----
+﻿---
 title: 'Prologue: Managing your life as an integrated whole'
 author: Qiran
 type: post
 date: 2019-09-12T08:57:01+00:00
-url: /prologue-managing-your-life-as-an-integrated-whole/
+aliases: ["/prologue-managing-your-life-as-an-integrated-whole/"]
 categories:
   - Your Money or Your Life
 

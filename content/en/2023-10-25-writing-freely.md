@@ -1,9 +1,9 @@
----
+﻿---
 title: Writing freely
 author: Qiran
 type: post
 date: 2023-10-25T00:17:17+00:00
-url: /writing-freely/
+aliases: ["/writing-freely/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

@@ -1,9 +1,9 @@
----
+﻿---
 title: Curator and exhibition
 author: Qiran
 type: post
 date: 2020-01-10T05:51:09+00:00
-url: /curator-and-exhibition/
+aliases: ["/curator-and-exhibition/"]
 categories:
   - Museology
 

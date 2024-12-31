@@ -1,9 +1,9 @@
----
+﻿---
 title: New Museology
 author: Qiran
 type: post
 date: 2019-10-08T02:19:52+00:00
-url: /new-museology/
+aliases: ["/new-museology/"]
 categories:
   - Museology
 

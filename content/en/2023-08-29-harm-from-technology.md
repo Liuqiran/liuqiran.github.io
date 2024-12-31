@@ -1,9 +1,9 @@
----
+﻿---
 title: Harm from technology
 author: Qiran
 type: post
 date: 2023-08-28T16:03:02+00:00
-url: /harm-from-technology/
+aliases: ["/harm-from-technology/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

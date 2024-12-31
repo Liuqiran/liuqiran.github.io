@@ -1,78 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>未分类 on </title>
-    <link>http://localhost:1313/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</link>
-    <description>Recent content in 未分类 on </description>
-    <generator>Hugo -- 0.140.1</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 May 2019 13:03:48 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>It’s my life</title>
-      <link>http://localhost:1313/zh/its-my-life/</link>
-      <pubDate>Thu, 23 May 2019 13:03:48 +0000</pubDate>
-      <guid>http://localhost:1313/zh/its-my-life/</guid>
-      <description>&lt;p&gt;实在想象不了十多年的时间，&lt;/p&gt;
-&lt;p&gt;一个人最美好的年华,&lt;/p&gt;
-&lt;p&gt;呆在监狱里。&lt;/p&gt;
-&lt;p&gt;有些话让我印象深刻，&lt;/p&gt;
-&lt;p&gt;“他们打你不需要理由，只是对你的尊严进行摧毁”&lt;/p&gt;
-&lt;p&gt;“这里的每个人脸上都冒着黑气”&lt;/p&gt;
-&lt;p&gt;“狱中没有钟，让你的时间完全被剥夺;狱中没有镜子，让你丧失自我”&lt;/p&gt;
-&lt;p&gt;人群当中，抬头望着探监家属离去的一个个背影，“这不就像上坟嘛”&lt;/p&gt;
-&lt;p&gt;“这跟死人有区别嘛？”&lt;/p&gt;
-&lt;p&gt;出狱后听着这首歌，是什么感觉呢？&lt;/p&gt;
-&lt;p&gt;This ain’t a song for the broken-hearted&lt;br&gt;
-這不是一首為了心碎的人寫的歌&lt;br&gt;
-No silent prayer for the faith-departed&lt;br&gt;
-沒有沉默的祈禱者為了死著的亡魂而禱告&lt;br&gt;
-I ain’t gonna be just a face in the crowd&lt;br&gt;
-我才不會變成組成人海的那張臉孔&lt;br&gt;
-You’re gonna hear my voice&lt;br&gt;
-你將會聽見我的聲音&lt;br&gt;
-When I shout it out loud&lt;br&gt;
-當我大聲喊叫&lt;/p&gt;
-&lt;p&gt;It’s my life&lt;br&gt;
-這是我的人生&lt;br&gt;
-It’s now or never&lt;br&gt;
-就是此刻或者永遠不是&lt;br&gt;
-I ain’t gonna live forever&lt;br&gt;
-我不想要長生不老&lt;br&gt;
-I just want to live while I’m alive&lt;br&gt;
-我只想為了生活而生存&lt;br&gt;
-(It’s my life)&lt;br&gt;
-這是我的人生&lt;br&gt;
-My heart is like an open highway&lt;br&gt;
-我的心就像是條敞開的高速公路&lt;br&gt;
-Like Frankie said&lt;br&gt;
-就像Frankie說的&lt;br&gt;
-I did it my way&lt;br&gt;
-做我想要做的&lt;br&gt;
-I just wanna live while I’m alive&lt;br&gt;
-我只為了生活而生存&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2019年3月13日</title>
-      <link>http://localhost:1313/zh/log/</link>
-      <pubDate>Wed, 13 Mar 2019 13:33:27 +0000</pubDate>
-      <guid>http://localhost:1313/zh/log/</guid>
-      <description>&lt;p&gt;转眼间我用英语写日记已经1年多了，但是英语还是很渣。回过头来看自己的日记发现自己的写的量还是不够多，就几句话而已，很多东西没有写下来。和用中文写不一样，用英文写如果很多地方不知道怎么表达经常需要翻译，用中文写就非常流畅，看来还是要加大每天写的篇幅，尽量达到200词以上。&lt;/p&gt;
-&lt;p&gt;今天发生了很多让我不愉快的事情，负能量比较大。恐惧、担心、焦虑这些情绪依旧存在，但是我发现我能够觉察到这些负面的情绪。我觉得对此现在我该做的事就是经常给自己正确、客观的评价，每当负面的想法来临时，立马思考下一步应该怎么做来提高自己的能动性。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2017-04-20</title>
-      <link>http://localhost:1313/zh/2017-04-20/</link>
-      <pubDate>Thu, 20 Apr 2017 09:52:20 +0000</pubDate>
-      <guid>http://localhost:1313/zh/2017-04-20/</guid>
-      <description>&lt;p&gt;我喜欢看app上的统计数据，&lt;br&gt;
-比如anki的复习统计图&lt;br&gt;
-quality time 的使用数据&lt;br&gt;
-和习惯的打卡，&lt;br&gt;
-这样我就能知道我的生活不是一成不变的&lt;br&gt;
-我才能知道这些是潜移默化的积累，&lt;br&gt;
-知道自己在改变与充实，&lt;br&gt;
-不会太过迷茫，这是一种馈赠。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>未分类 on</title><link>https://liuqiran.github.io/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</link><description>Recent content in 未分类 on</description><generator>Hugo -- 0.140.1</generator><language>zh-CN</language><lastBuildDate>Thu, 23 May 2019 13:03:48 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml"/><item><title>It’s my life</title><link>https://liuqiran.github.io/zh/its-my-life/</link><pubDate>Thu, 23 May 2019 13:03:48 +0000</pubDate><guid>https://liuqiran.github.io/zh/its-my-life/</guid><description>&lt;p>实在想象不了十多年的时间，&lt;/p>
+&lt;p>一个人最美好的年华,&lt;/p>
+&lt;p>呆在监狱里。&lt;/p>
+&lt;p>有些话让我印象深刻，&lt;/p>
+&lt;p>“他们打你不需要理由，只是对你的尊严进行摧毁”&lt;/p>
+&lt;p>“这里的每个人脸上都冒着黑气”&lt;/p>
+&lt;p>“狱中没有钟，让你的时间完全被剥夺;狱中没有镜子，让你丧失自我”&lt;/p>
+&lt;p>人群当中，抬头望着探监家属离去的一个个背影，“这不就像上坟嘛”&lt;/p>
+&lt;p>“这跟死人有区别嘛？”&lt;/p>
+&lt;p>出狱后听着这首歌，是什么感觉呢？&lt;/p>
+&lt;p>This ain’t a song for the broken-hearted&lt;br>
+這不是一首為了心碎的人寫的歌&lt;br>
+No silent prayer for the faith-departed&lt;br>
+沒有沉默的祈禱者為了死著的亡魂而禱告&lt;br>
+I ain’t gonna be just a face in the crowd&lt;br>
+我才不會變成組成人海的那張臉孔&lt;br>
+You’re gonna hear my voice&lt;br>
+你將會聽見我的聲音&lt;br>
+When I shout it out loud&lt;br>
+當我大聲喊叫&lt;/p>
+&lt;p>It’s my life&lt;br>
+這是我的人生&lt;br>
+It’s now or never&lt;br>
+就是此刻或者永遠不是&lt;br>
+I ain’t gonna live forever&lt;br>
+我不想要長生不老&lt;br>
+I just want to live while I’m alive&lt;br>
+我只想為了生活而生存&lt;br>
+(It’s my life)&lt;br>
+這是我的人生&lt;br>
+My heart is like an open highway&lt;br>
+我的心就像是條敞開的高速公路&lt;br>
+Like Frankie said&lt;br>
+就像Frankie說的&lt;br>
+I did it my way&lt;br>
+做我想要做的&lt;br>
+I just wanna live while I’m alive&lt;br>
+我只為了生活而生存&lt;/p></description></item><item><title>2019年3月13日</title><link>https://liuqiran.github.io/zh/log/</link><pubDate>Wed, 13 Mar 2019 13:33:27 +0000</pubDate><guid>https://liuqiran.github.io/zh/log/</guid><description>&lt;p>转眼间我用英语写日记已经1年多了，但是英语还是很渣。回过头来看自己的日记发现自己的写的量还是不够多，就几句话而已，很多东西没有写下来。和用中文写不一样，用英文写如果很多地方不知道怎么表达经常需要翻译，用中文写就非常流畅，看来还是要加大每天写的篇幅，尽量达到200词以上。&lt;/p>
+&lt;p>今天发生了很多让我不愉快的事情，负能量比较大。恐惧、担心、焦虑这些情绪依旧存在，但是我发现我能够觉察到这些负面的情绪。我觉得对此现在我该做的事就是经常给自己正确、客观的评价，每当负面的想法来临时，立马思考下一步应该怎么做来提高自己的能动性。&lt;/p></description></item><item><title>2017-04-20</title><link>https://liuqiran.github.io/zh/2017-04-20/</link><pubDate>Thu, 20 Apr 2017 09:52:20 +0000</pubDate><guid>https://liuqiran.github.io/zh/2017-04-20/</guid><description>&lt;p>我喜欢看app上的统计数据，&lt;br>
+比如anki的复习统计图&lt;br>
+quality time 的使用数据&lt;br>
+和习惯的打卡，&lt;br>
+这样我就能知道我的生活不是一成不变的&lt;br>
+我才能知道这些是潜移默化的积累，&lt;br>
+知道自己在改变与充实，&lt;br>
+不会太过迷茫，这是一种馈赠。&lt;/p></description></item></channel></rss>

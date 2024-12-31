@@ -1,9 +1,9 @@
----
+﻿---
 title: Communication
 author: Qiran
 type: post
 date: 2023-08-01T15:06:51+00:00
-url: /communication/
+aliases: ["/communication/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

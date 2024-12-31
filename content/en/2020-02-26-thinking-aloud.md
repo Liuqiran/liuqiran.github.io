@@ -1,9 +1,9 @@
----
+﻿---
 title: Thinking aloud
 author: Qiran
 type: post
 date: 2020-02-26T02:08:27+00:00
-url: /thinking-aloud/
+aliases: ["/thinking-aloud/"]
 categories:
   - Psychology
   - Self-development

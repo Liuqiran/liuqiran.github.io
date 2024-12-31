@@ -1,9 +1,9 @@
----
+﻿---
 title: Introduction and Chapter 1
 author: Qiran
 type: post
 date: 2020-11-10T06:54:48+00:00
-url: /introduction-and-chapter-1/
+aliases: ["/introduction-and-chapter-1/"]
 categories:
   - Atomic Habits
 

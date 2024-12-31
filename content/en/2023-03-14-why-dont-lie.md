@@ -1,9 +1,9 @@
----
+﻿---
 title: Why don’t lie
 author: Qiran
 type: post
 date: 2023-03-13T23:06:31+00:00
-url: /why-dont-lie/
+aliases: ["/why-dont-lie/"]
 xyz_twap:
   - 1
 categories:

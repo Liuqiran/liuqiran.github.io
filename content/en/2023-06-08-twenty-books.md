@@ -1,9 +1,9 @@
----
+﻿---
 title: Twenty books
 author: Qiran
 type: post
 date: 2023-06-08T14:52:35+00:00
-url: /twenty-books/
+aliases: ["/twenty-books/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

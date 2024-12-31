@@ -1,9 +1,9 @@
----
+﻿---
 title: Your Password Can Be Cracked!
 author: Qiran
 type: post
 date: 2019-11-29T11:55:35+00:00
-url: /your-password-can-be-cracked/
+aliases: ["/your-password-can-be-cracked/"]
 boomdevs_metabox:
   - 's:41:"a:1:{s:19:"disable_auto_insert";s:1:"0";}";'
 categories:

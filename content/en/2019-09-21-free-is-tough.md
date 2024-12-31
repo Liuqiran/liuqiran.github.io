@@ -1,9 +1,9 @@
----
+﻿---
 title: Free is tough
 author: Qiran
 type: post
 date: 2019-09-21T12:22:01+00:00
-url: /free-is-tough/
+aliases: ["/free-is-tough/"]
 categories:
   - freedom
   - Heart

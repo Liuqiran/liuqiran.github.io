@@ -3,7 +3,7 @@ title: HOW TO TALK TO YOURSELF
 author: Qiran
 type: post
 date: 2019-09-13T07:17:42+00:00
-url: /how-to-talk-to-yourself/
+aliases: ["/how-to-talk-to-yourself/"]
 categories:
   - The Now Habit
 
@@ -43,3 +43,4 @@ Don&#8217;t think about perfect performance, you just think I could be perfectly
 You can intentionally try to be imperfect.
 
 Never thinking &#8221; I don&#8217;t have time to play&#8221;, You just say &#8221; I must have time to play&#8221;.
+

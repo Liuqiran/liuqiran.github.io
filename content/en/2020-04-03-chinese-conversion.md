@@ -1,9 +1,9 @@
----
+﻿---
 title: Chinese conversion
 author: Qiran
 type: post
 date: 2020-04-03T13:13:35+00:00
-url: /chinese-conversion/
+aliases: ["/chinese-conversion/"]
 categories:
   - Building Site
 

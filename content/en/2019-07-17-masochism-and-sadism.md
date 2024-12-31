@@ -1,9 +1,9 @@
----
+﻿---
 title: Masochism and sadism
 author: Qiran
 type: post
 date: 2019-07-17T06:39:28+00:00
-url: /masochism-and-sadism/
+aliases: ["/masochism-and-sadism/"]
 categories:
   - Masochism And the Self
 

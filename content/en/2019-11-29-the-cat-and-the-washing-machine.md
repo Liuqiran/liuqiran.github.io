@@ -3,7 +3,7 @@ title: The Cat and the Washing Machine
 author: Qiran
 type: post
 date: 2019-11-29T12:59:49+00:00
-url: /the-cat-and-the-washing-machine/
+aliases: ["/the-cat-and-the-washing-machine/"]
 categories:
   - 'Antifragile: Things That Gain From Disorder'
 
@@ -41,3 +41,4 @@ Touristification is the life of tourist, everything is scheduled for them and it
 #### The Secret Thirst for Chance {.wp-block-heading}
 
 The natural environment is full of randomness, unlike doing the same excerises on the flat ground in gym, nature is full of dangerous, like you see a wild life and run away as soon as possible, nature is never boring! It has no boss, no homework, no academic grades, no chronic stress injury.
+

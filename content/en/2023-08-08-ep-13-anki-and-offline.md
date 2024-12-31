@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 13 Anki and offline
 author: Qiran
 type: post
 date: 2023-08-08T13:44:33+00:00
-url: /ep-13-anki-and-offline/
+aliases: ["/ep-13-anki-and-offline/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

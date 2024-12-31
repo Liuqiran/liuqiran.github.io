@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 9 Technical breakdown
 author: Qiran
 type: post
 date: 2023-06-13T14:52:24+00:00
-url: /ep-9-technical-breakdown/
+aliases: ["/ep-9-technical-breakdown/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

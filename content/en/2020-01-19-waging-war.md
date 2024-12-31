@@ -1,9 +1,9 @@
----
+﻿---
 title: Waging War
 author: Qiran
 type: post
 date: 2020-01-18T16:02:27+00:00
-url: /waging-war/
+aliases: ["/waging-war/"]
 categories:
   - "Sun Tzu's The Art of War"
 

@@ -1,9 +1,9 @@
----
+﻿---
 title: '2: Six dynasties'
 author: Qiran
 type: post
 date: 2020-04-05T13:08:32+00:00
-url: /2-six-dynasties/
+aliases: ["/2-six-dynasties/"]
 categories:
   - A Chinese-foreign exchange history of fine arts
 

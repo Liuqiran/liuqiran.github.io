@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 5 Thirteen years of journaling
 author: Qiran
 type: post
 date: 2023-04-18T09:52:12+00:00
-url: /ep-5-thirteen-years-of-journaling/
+aliases: ["/ep-5-thirteen-years-of-journaling/"]
 xyz_twap:
   - 1
 categories:

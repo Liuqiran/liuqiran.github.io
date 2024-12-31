@@ -1,9 +1,9 @@
----
+﻿---
 title: Basic concept 3
 author: Qiran
 type: post
 date: 2019-07-27T09:29:57+00:00
-url: /basic-concept-3/
+aliases: ["/basic-concept-3/"]
 categories:
   - Art through the Ages
 

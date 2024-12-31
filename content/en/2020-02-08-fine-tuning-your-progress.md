@@ -1,9 +1,9 @@
----
+﻿---
 title: FINE-TUNING YOUR PROGRESS
 author: Qiran
 type: post
 date: 2020-02-08T10:31:04+00:00
-url: /fine-tuning-your-progress/
+aliases: ["/fine-tuning-your-progress/"]
 categories:
   - The Now Habit
 

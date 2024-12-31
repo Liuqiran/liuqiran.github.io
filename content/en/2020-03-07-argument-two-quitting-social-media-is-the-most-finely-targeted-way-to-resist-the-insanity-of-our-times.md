@@ -1,9 +1,9 @@
----
+﻿---
 title: 'ARGUMENT TWO: QUITTING SOCIAL MEDIA IS THE MOST FINELY TARGETED WAY TO RESIST THE INSANITY OF OUR TIMES'
 author: Qiran
 type: post
 date: 2020-03-07T14:05:27+00:00
-url: /argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times/
+aliases: ["/argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times/"]
 categories:
   - Ten Arguments for Deleting Your Social Media Accounts Right Now
 

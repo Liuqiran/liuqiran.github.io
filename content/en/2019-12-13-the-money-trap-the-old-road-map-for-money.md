@@ -1,9 +1,9 @@
----
+﻿---
 title: 'THE MONEY TRAP: THE OLD ROAD MAP FOR MONEY'
 author: Qiran
 type: post
 date: 2019-12-13T09:17:12+00:00
-url: /the-money-trap-the-old-road-map-for-money/
+aliases: ["/the-money-trap-the-old-road-map-for-money/"]
 categories:
   - Your Money or Your Life
 

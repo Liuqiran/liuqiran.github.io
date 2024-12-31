@@ -1,9 +1,9 @@
----
+﻿---
 title: After the Quake
 author: Qiran
 type: post
 date: 2020-02-14T12:31:28+00:00
-url: /after-the-quake/
+aliases: ["/after-the-quake/"]
 categories:
   - "One Child: The Story of China's Most Radical Experiment"
 

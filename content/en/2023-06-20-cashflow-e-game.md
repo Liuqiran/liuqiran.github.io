@@ -1,9 +1,9 @@
----
+﻿---
 title: Cashflow E-Game
 author: Qiran
 type: post
 date: 2023-06-20T14:05:31+00:00
-url: /cashflow-e-game/
+aliases: ["/cashflow-e-game/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

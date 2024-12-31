@@ -1,9 +1,9 @@
----
+﻿---
 title: 6. THE UNSCHEDULE
 author: Qiran
 type: post
 date: 2019-11-24T13:06:41+00:00
-url: /6-the-unschedule/
+aliases: ["/6-the-unschedule/"]
 categories:
   - The Now Habit
 

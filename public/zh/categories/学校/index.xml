@@ -1,23 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>学校 on </title>
-    <link>http://localhost:1313/zh/categories/%E5%AD%A6%E6%A0%A1/</link>
-    <description>Recent content in 学校 on </description>
-    <generator>Hugo -- 0.140.1</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sat, 16 Mar 2019 08:50:24 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/categories/%E5%AD%A6%E6%A0%A1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>文献综述写作方法</title>
-      <link>http://localhost:1313/zh/research-review-writing/</link>
-      <pubDate>Sat, 16 Mar 2019 08:50:24 +0000</pubDate>
-      <guid>http://localhost:1313/zh/research-review-writing/</guid>
-      <description>&lt;p&gt;1、查找文献文献所用关键词、文献数量、文献整理分析角度。&lt;/p&gt;
-&lt;p&gt;2、文献年度数量分布——研究态势。&lt;/p&gt;
-&lt;p&gt;3、文献作者分布——核心人物及其研究和方向。&lt;/p&gt;
-&lt;p&gt;4、文献的类型分布——探索性/描述性/解释性比例&lt;/p&gt;
-&lt;p&gt;5、文献的内容分析：作者用……方法研究了……问题得出了什么结论/对本文的……研究产生了什么参考。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>学校 on</title><link>https://liuqiran.github.io/zh/categories/%E5%AD%A6%E6%A0%A1/</link><description>Recent content in 学校 on</description><generator>Hugo -- 0.140.1</generator><language>zh-CN</language><lastBuildDate>Sat, 16 Mar 2019 08:50:24 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/zh/categories/%E5%AD%A6%E6%A0%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>文献综述写作方法</title><link>https://liuqiran.github.io/zh/research-review-writing/</link><pubDate>Sat, 16 Mar 2019 08:50:24 +0000</pubDate><guid>https://liuqiran.github.io/zh/research-review-writing/</guid><description>&lt;p>1、查找文献文献所用关键词、文献数量、文献整理分析角度。&lt;/p>
+&lt;p>2、文献年度数量分布——研究态势。&lt;/p>
+&lt;p>3、文献作者分布——核心人物及其研究和方向。&lt;/p>
+&lt;p>4、文献的类型分布——探索性/描述性/解释性比例&lt;/p>
+&lt;p>5、文献的内容分析：作者用……方法研究了……问题得出了什么结论/对本文的……研究产生了什么参考。&lt;/p></description></item></channel></rss>

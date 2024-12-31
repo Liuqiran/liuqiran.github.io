@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 10 Temporary guest
 author: Qiran
 type: post
 date: 2023-06-27T15:49:06+00:00
-url: /ep-10-temporary-guest/
+aliases: ["/ep-10-temporary-guest/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 4 AI tool for learning
 author: Qiran
 type: post
 date: 2023-04-03T20:33:00+00:00
-url: /ep-4-ai-tool-for-learning/
+aliases: ["/ep-4-ai-tool-for-learning/"]
 xyz_twap:
   - 1
 categories:

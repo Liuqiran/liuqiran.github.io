@@ -1,9 +1,9 @@
----
+﻿---
 title: '1: EP-01 Why I start my podcast'
 author: Qiran
 type: post
 date: 2023-02-21T07:29:08+00:00
-url: /1-ep-01-why-i-start-my-podcast/
+aliases: ["/1-ep-01-why-i-start-my-podcast/"]
 featured_image: /wp-content/uploads/2023/02/36671809-1676986967226-434bd30b2a30c-1568x1568.jpg
 xyz_twap:
   - 1

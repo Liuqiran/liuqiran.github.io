@@ -1,9 +1,9 @@
----
+﻿---
 title: 'Written Assignment #2'
 author: Qiran
 type: post
 date: 2019-12-09T00:01:04+00:00
-url: /written-assignment-2/
+aliases: ["/written-assignment-2/"]
 categories:
   - English
 

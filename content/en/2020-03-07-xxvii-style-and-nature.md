@@ -1,9 +1,9 @@
----
+﻿---
 title: XXVII. Style and Nature
 author: Qiran
 type: post
 date: 2020-03-07T10:25:01+00:00
-url: /xxvii-style-and-nature/
+aliases: ["/xxvii-style-and-nature/"]
 categories:
   - The Literary Mind and the Carving of Dragons
 

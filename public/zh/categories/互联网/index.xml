@@ -1,88 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>互联网 on </title>
-    <link>http://localhost:1313/zh/categories/%E4%BA%92%E8%81%94%E7%BD%91/</link>
-    <description>Recent content in 互联网 on </description>
-    <generator>Hugo -- 0.140.1</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Wed, 08 Feb 2023 11:17:57 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/categories/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>重新整理版面</title>
-      <link>http://localhost:1313/zh/reorganize-home-page/</link>
-      <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
-      <guid>http://localhost:1313/zh/reorganize-home-page/</guid>
-      <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
-  我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了……
-&lt;/p&gt;
-&lt;p&gt;最近发现许多功能已经失效了，花了很长时间才修复好，不然这里已经长草了。&lt;/p&gt;
-&lt;p&gt;发现很多人开始用 LinkTree 作为集合众多链接的个人主页。应该是如今这些人活跃的社交平台越来越多。数不过来了，用这个网站做整理。&lt;/p&gt;
-&lt;p&gt;但是这不就是个站主页的功能吗？只要在主页上添加这些链接就行，还可以自己设定样式和功能，避免了千篇一律的问题。&lt;/p&gt;
-&lt;p&gt;除此之外自己整理主页还有其他的优势：网址更加简洁、便于记忆；访问能集中到自己的平台上，不受其他平台控制。&lt;/p&gt;
-&lt;p&gt;但不管怎么样，还是需要定期维护才行。还是多更新动态吧。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>创建电报频道</title>
-      <link>http://localhost:1313/zh/created-telegram-channel/</link>
-      <pubDate>Wed, 08 Feb 2023 10:12:49 +0000</pubDate>
-      <guid>http://localhost:1313/zh/created-telegram-channel/</guid>
-      <description>&lt;p&gt;尝试开通了一下&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://t.me/qiranschannel&#34; target=&#34;_blank&#34;&gt;电报频道&lt;/a&gt;。&lt;br&gt;
-发现电报创建频道非常快捷，向他人广播也非常快。&lt;br&gt;
-最重要的是平台是开放的，添加机器人功能之后可以自动将个人网站的动态同步到频道当中。&lt;/p&gt;
-&lt;p&gt;如今加上接收消息的及时性，电报的功能已经超越很多其他通讯软件了，非常推荐尝鲜！&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ChatGPT</title>
-      <link>http://localhost:1313/zh/chatgpt/</link>
-      <pubDate>Wed, 08 Feb 2023 04:44:31 +0000</pubDate>
-      <guid>http://localhost:1313/zh/chatgpt/</guid>
-      <description>&lt;p&gt;因为 OpenAI 不能用中国手机号注册，自己折腾了很久购买了一个泰国的临时手机号才能注册成功。&lt;br&gt;
-到真正尝鲜的时候还是感到眼前一亮。虽然很多刁钻的问题回答得不是很让人满意，但大都能回答出来。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>聚合资讯订阅</title>
-      <link>http://localhost:1313/zh/rss-experience/</link>
-      <pubDate>Fri, 11 Jun 2021 05:14:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/rss-experience/</guid>
-      <description>&lt;p&gt;在如今信息泛滥的时代，我发现自己越来越被动地通过各种社交软件、短视频平台获取信息。 大部分社交网站的算法只提供读者喜好、能提高点击率的内容，同时大部分内容是浅薄而毫无营养的。自己也慢慢变成了像被投喂垃圾信息的“僵尸”。&lt;br&gt;
-也需要承认，某些平台上不乏一些有价值的内容，有些微信公众号会有一些高质量的文章，但是微信本身就会打断注意力，推送的时候平台也会经常带一些广告和私货。&lt;/p&gt;
-&lt;p&gt;如何改变这一现状，创造个人专属的信息源，获取有深度、有价值的信息？虽然自己早已了解 RSS，但最近我才开始使用 RSS 工具获取信息。 “聚合资讯订阅”（即 RSS feed )是通过 RSS 工具抓取各个网站内容进行阅读的一种订阅方式。通过 RSS 工具，我们可以将不同平台的各种信息聚合到一起，你可以自行收藏、保存。&lt;figure class=&#34;wp-block-image size-large is-style-tw-rounded-corners&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2022/06/Screenshot-2022-06-15-00.32.44.png&#34;&gt; &lt;figcaption class=&#34;wp-element-caption&#34;&gt;自己搭建的 RSS 服务&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.rsshub.app/&#34; data-type=&#34;URL&#34; data-id=&#34;https://docs.rsshub.app/&#34;&gt;rsshub.app&lt;/a&gt;是一个提供各平台 RSS 订阅源的网站，通过它我可以同时订阅不同网站、微博、公众号等各个平台的内容。&lt;br&gt;
-（2022-06-14: RSSHub 官网里的订阅源越来越多了，很棒！）&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://feedly.com/&#34; data-type=&#34;URL&#34; data-id=&#34;https://feedly.com/&#34;&gt;Feedly&lt;/a&gt;是全球知名的在线聚合订阅网站。&lt;s&gt;不过使用一段时间之后，我换成了可以提供全文内容离线阅读的软件，这样我可以避免在线消息的打扰&lt;/s&gt;。自从搭建了自己的 RSS 网站之后，就没有再用其他软件和服务了。&lt;/p&gt;
-&lt;p&gt;（Feedly 无法在中国直接访问，RSSHub 似乎也不太稳定）&lt;/p&gt;
-&lt;p&gt;我订阅的都是比较深入的内容。这个时候我才发现我的跳跃式的阅读方式很难改变，已经不能在电子设备上很专注地阅读较长的文章了，现在需要做的是养成深入阅读的习惯。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>建站周年纪念日</title>
-      <link>http://localhost:1313/zh/one-year-blogging-anniversary/</link>
-      <pubDate>Sun, 09 Feb 2020 15:15:41 +0000</pubDate>
-      <guid>http://localhost:1313/zh/one-year-blogging-anniversary/</guid>
-      <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
-  今天是建站一周年纪念日。
-&lt;/p&gt;
-&lt;p&gt;我已经不记得2019年的这一天，我为什么会突然心血来潮地折腾一整天，装上服务器，安装好Wordpress搭好网站了。&lt;/p&gt;
-&lt;p&gt;可能是我那一段时间一直在关注一些博客，也刚好看到了很多很有意思的个人网站，所以也想建一个网站吧。&lt;/p&gt;
-&lt;p&gt;后来自己仔细想想其实这不是最重要的原因，建站对我充满吸引力的原因，应该是在内心深处想找回自己的某些记忆：&lt;/p&gt;
-&lt;p&gt;在2006年2月，当时新浪博客还是很火爆的时候，我刚学会上网，对网上的一切都很好奇，包括浏览器图标和那些绚丽的网页。我在新浪开通了邮箱和博客，这是我第一次有了自己的邮箱和博客，也是自己第一次在互联网上留下自己的足迹。&lt;/p&gt;
-&lt;p&gt;在博客开通的时候，我非常兴奋，迫不及待地给自己取名字、加装扮、选背景、开通各种各样新的功能，把自己的“大作”发表。&lt;/p&gt;
-&lt;p&gt;开通好博客之后，发现博客边栏里有一个访客统计，毎当博客的访问数加一的时候，自己就激动一下，有人来看我的博客了！发现每次自己刷新一下页面的时候，那个访问数就会多一个，当时不懂为什么，所以自己疯狂刷新自己的博客。到访问数到100的时候，我还特地画了一张“&lt;a href=&#34;https://www.liuqiran.com/2006/03/11/sina-blog/&#34;&gt;大作&lt;/a&gt;”庆祝一下。&lt;/p&gt;
-&lt;p&gt;我也把自己的博客到处宣传，亲戚、老师、同学都来访问自己博客。老弟老哥也来凑热闹，学着开通。我的博客也被当时有名气的漫画家知道了，他也来留了言。那时真的很开心。&lt;/p&gt;
-&lt;p&gt;随着自己用电脑和画画的机会变少，就沒有时间管自己的博客了。后来，自己接触到了QQ、微博还有各种游戏，就更没有时间看博客了。慢慢地，自己的博客也就随着博客时代的谢幕逐渐尘封。&lt;/p&gt;
-&lt;p&gt;自己也长大了。&lt;/p&gt;
-&lt;p&gt;去年在部落格建好的那天，因为有了一个在互联网完全属于自己的空间，我非常的兴奋，彻夜睡不着觉，似乎又回到了童年。我迫不及待地折腾主题和面板、加插件，研究各种功能，把自己之前写的文章发表。&lt;/p&gt;
-&lt;p&gt;自己也到其他站长那里留言，有一些人开始回访了，&lt;a href=&#34;http://yir.me&#34;&gt;YIR&lt;/a&gt;是我的第一个访客。&lt;br&gt;
-虽然后来没有人来留言了，但我还是会凭着这股新鲜感再折腾一会儿。&lt;/p&gt;
-&lt;p&gt;慢慢地我发现，如果没有人关注的话，自己失去了写博文的动力。&lt;br&gt;
-互联网早已不是当年的那个让我充满好奇的东西，没有了亲朋好友和当时的成就感，取而待之的是只会在线上出现的站长和很难有真情实感的回访留言。&lt;/p&gt;
-&lt;p&gt;我也已经不是当年那个刷新页面的孩子了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;其实到这个时候，这个网站已经没有存在的必要了。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;只是写给自己的话，不需要公开。&lt;br&gt;
-不知道怎么处理这个网站，10月份的时候我想着&lt;a href=&#34;https://www.liuqiran.com/index.php/2019/10/30/lock-my-blog/&#34;&gt;关站&lt;/a&gt;、把自己的站点设为私密，最后删除了事。可是想到自己已经加入十年之约，自己是否真的要毁约呢？最后，还是决定&lt;a href=&#34;https://www.liuqiran.com/index.php/2019/11/17/reopen-my-blog/&#34;&gt;没有关站&lt;/a&gt;，只是将自己的大部分公开博文转移。&lt;/p&gt;
-&lt;p&gt;如果没有十年之约，可能这个网站早己关闭了吧。可能还是想证明点什么—-我想要&lt;a href=&#34;https://www.liuqiran.com/index.php/category/self-development/habit/&#34;&gt;坚持&lt;/a&gt;做一些事，最好以年来计算，也许是我比较恋旧吧。我会将自己以前的资料慢慢搬运，做一个线上的记忆库。这里也会是我展示公开的笔记作品的地方。&lt;/p&gt;
-&lt;p&gt;也许哪天意外，这个网站关闭，我也可能不能再屡约，那一天这个网站将再带着这些记忆慢慢尘封。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>互联网 on</title><link>https://liuqiran.github.io/zh/categories/%E4%BA%92%E8%81%94%E7%BD%91/</link><description>Recent content in 互联网 on</description><generator>Hugo -- 0.140.1</generator><language>zh-CN</language><lastBuildDate>Wed, 08 Feb 2023 11:17:57 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/zh/categories/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml"/><item><title>重新整理版面</title><link>https://liuqiran.github.io/zh/reorganize-home-page/</link><pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate><guid>https://liuqiran.github.io/zh/reorganize-home-page/</guid><description>&lt;p class="has-primary-background-color has-background">
+我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了……
+&lt;/p>
+&lt;p>最近发现许多功能已经失效了，花了很长时间才修复好，不然这里已经长草了。&lt;/p>
+&lt;p>发现很多人开始用 LinkTree 作为集合众多链接的个人主页。应该是如今这些人活跃的社交平台越来越多。数不过来了，用这个网站做整理。&lt;/p>
+&lt;p>但是这不就是个站主页的功能吗？只要在主页上添加这些链接就行，还可以自己设定样式和功能，避免了千篇一律的问题。&lt;/p>
+&lt;p>除此之外自己整理主页还有其他的优势：网址更加简洁、便于记忆；访问能集中到自己的平台上，不受其他平台控制。&lt;/p>
+&lt;p>但不管怎么样，还是需要定期维护才行。还是多更新动态吧。&lt;/p></description></item><item><title>创建电报频道</title><link>https://liuqiran.github.io/zh/created-telegram-channel/</link><pubDate>Wed, 08 Feb 2023 10:12:49 +0000</pubDate><guid>https://liuqiran.github.io/zh/created-telegram-channel/</guid><description>&lt;p>尝试开通了一下&lt;a rel="noreferrer noopener" href="https://t.me/qiranschannel" target="_blank">电报频道&lt;/a>。&lt;br>
+发现电报创建频道非常快捷，向他人广播也非常快。&lt;br>
+最重要的是平台是开放的，添加机器人功能之后可以自动将个人网站的动态同步到频道当中。&lt;/p>
+&lt;p>如今加上接收消息的及时性，电报的功能已经超越很多其他通讯软件了，非常推荐尝鲜！&lt;/p></description></item><item><title>ChatGPT</title><link>https://liuqiran.github.io/zh/chatgpt/</link><pubDate>Wed, 08 Feb 2023 04:44:31 +0000</pubDate><guid>https://liuqiran.github.io/zh/chatgpt/</guid><description>&lt;p>因为 OpenAI 不能用中国手机号注册，自己折腾了很久购买了一个泰国的临时手机号才能注册成功。&lt;br>
+到真正尝鲜的时候还是感到眼前一亮。虽然很多刁钻的问题回答得不是很让人满意，但大都能回答出来。&lt;/p></description></item><item><title>聚合资讯订阅</title><link>https://liuqiran.github.io/zh/rss-experience/</link><pubDate>Fri, 11 Jun 2021 05:14:00 +0000</pubDate><guid>https://liuqiran.github.io/zh/rss-experience/</guid><description>&lt;p>在如今信息泛滥的时代，我发现自己越来越被动地通过各种社交软件、短视频平台获取信息。 大部分社交网站的算法只提供读者喜好、能提高点击率的内容，同时大部分内容是浅薄而毫无营养的。自己也慢慢变成了像被投喂垃圾信息的“僵尸”。&lt;br>
+也需要承认，某些平台上不乏一些有价值的内容，有些微信公众号会有一些高质量的文章，但是微信本身就会打断注意力，推送的时候平台也会经常带一些广告和私货。&lt;/p>
+&lt;p>如何改变这一现状，创造个人专属的信息源，获取有深度、有价值的信息？虽然自己早已了解 RSS，但最近我才开始使用 RSS 工具获取信息。 “聚合资讯订阅”（即 RSS feed )是通过 RSS 工具抓取各个网站内容进行阅读的一种订阅方式。通过 RSS 工具，我们可以将不同平台的各种信息聚合到一起，你可以自行收藏、保存。&lt;figure class="wp-block-image size-large is-style-tw-rounded-corners">&lt;/p>
+&lt;p>&lt;img loading="lazy" src="../../../uploads/2022/06/Screenshot-2022-06-15-00.32.44.png"> &lt;figcaption class="wp-element-caption">自己搭建的 RSS 服务&lt;/figcaption>&lt;/figure>&lt;/p>
+&lt;p>&lt;a href="https://docs.rsshub.app/" data-type="URL" data-id="https://docs.rsshub.app/">rsshub.app&lt;/a>是一个提供各平台 RSS 订阅源的网站，通过它我可以同时订阅不同网站、微博、公众号等各个平台的内容。&lt;br>
+（2022-06-14: RSSHub 官网里的订阅源越来越多了，很棒！）&lt;/p>
+&lt;p>&lt;a href="https://feedly.com/" data-type="URL" data-id="https://feedly.com/">Feedly&lt;/a>是全球知名的在线聚合订阅网站。&lt;s>不过使用一段时间之后，我换成了可以提供全文内容离线阅读的软件，这样我可以避免在线消息的打扰&lt;/s>。自从搭建了自己的 RSS 网站之后，就没有再用其他软件和服务了。&lt;/p>
+&lt;p>（Feedly 无法在中国直接访问，RSSHub 似乎也不太稳定）&lt;/p>
+&lt;p>我订阅的都是比较深入的内容。这个时候我才发现我的跳跃式的阅读方式很难改变，已经不能在电子设备上很专注地阅读较长的文章了，现在需要做的是养成深入阅读的习惯。&lt;/p></description></item><item><title>建站周年纪念日</title><link>https://liuqiran.github.io/zh/one-year-blogging-anniversary/</link><pubDate>Sun, 09 Feb 2020 15:15:41 +0000</pubDate><guid>https://liuqiran.github.io/zh/one-year-blogging-anniversary/</guid><description>&lt;p class="has-primary-background-color has-background">
+今天是建站一周年纪念日。
+&lt;/p>
+&lt;p>我已经不记得2019年的这一天，我为什么会突然心血来潮地折腾一整天，装上服务器，安装好Wordpress搭好网站了。&lt;/p>
+&lt;p>可能是我那一段时间一直在关注一些博客，也刚好看到了很多很有意思的个人网站，所以也想建一个网站吧。&lt;/p>
+&lt;p>后来自己仔细想想其实这不是最重要的原因，建站对我充满吸引力的原因，应该是在内心深处想找回自己的某些记忆：&lt;/p>
+&lt;p>在2006年2月，当时新浪博客还是很火爆的时候，我刚学会上网，对网上的一切都很好奇，包括浏览器图标和那些绚丽的网页。我在新浪开通了邮箱和博客，这是我第一次有了自己的邮箱和博客，也是自己第一次在互联网上留下自己的足迹。&lt;/p>
+&lt;p>在博客开通的时候，我非常兴奋，迫不及待地给自己取名字、加装扮、选背景、开通各种各样新的功能，把自己的“大作”发表。&lt;/p>
+&lt;p>开通好博客之后，发现博客边栏里有一个访客统计，毎当博客的访问数加一的时候，自己就激动一下，有人来看我的博客了！发现每次自己刷新一下页面的时候，那个访问数就会多一个，当时不懂为什么，所以自己疯狂刷新自己的博客。到访问数到100的时候，我还特地画了一张“&lt;a href="https://www.liuqiran.com/2006/03/11/sina-blog/">大作&lt;/a>”庆祝一下。&lt;/p>
+&lt;p>我也把自己的博客到处宣传，亲戚、老师、同学都来访问自己博客。老弟老哥也来凑热闹，学着开通。我的博客也被当时有名气的漫画家知道了，他也来留了言。那时真的很开心。&lt;/p>
+&lt;p>随着自己用电脑和画画的机会变少，就沒有时间管自己的博客了。后来，自己接触到了QQ、微博还有各种游戏，就更没有时间看博客了。慢慢地，自己的博客也就随着博客时代的谢幕逐渐尘封。&lt;/p>
+&lt;p>自己也长大了。&lt;/p>
+&lt;p>去年在部落格建好的那天，因为有了一个在互联网完全属于自己的空间，我非常的兴奋，彻夜睡不着觉，似乎又回到了童年。我迫不及待地折腾主题和面板、加插件，研究各种功能，把自己之前写的文章发表。&lt;/p>
+&lt;p>自己也到其他站长那里留言，有一些人开始回访了，&lt;a href="http://yir.me">YIR&lt;/a>是我的第一个访客。&lt;br>
+虽然后来没有人来留言了，但我还是会凭着这股新鲜感再折腾一会儿。&lt;/p>
+&lt;p>慢慢地我发现，如果没有人关注的话，自己失去了写博文的动力。&lt;br>
+互联网早已不是当年的那个让我充满好奇的东西，没有了亲朋好友和当时的成就感，取而待之的是只会在线上出现的站长和很难有真情实感的回访留言。&lt;/p>
+&lt;p>我也已经不是当年那个刷新页面的孩子了。&lt;/p>
+&lt;p>&lt;strong>其实到这个时候，这个网站已经没有存在的必要了。&lt;/strong>&lt;/p>
+&lt;p>只是写给自己的话，不需要公开。&lt;br>
+不知道怎么处理这个网站，10月份的时候我想着&lt;a href="https://www.liuqiran.com/index.php/2019/10/30/lock-my-blog/">关站&lt;/a>、把自己的站点设为私密，最后删除了事。可是想到自己已经加入十年之约，自己是否真的要毁约呢？最后，还是决定&lt;a href="https://www.liuqiran.com/index.php/2019/11/17/reopen-my-blog/">没有关站&lt;/a>，只是将自己的大部分公开博文转移。&lt;/p>
+&lt;p>如果没有十年之约，可能这个网站早己关闭了吧。可能还是想证明点什么—-我想要&lt;a href="https://www.liuqiran.com/index.php/category/self-development/habit/">坚持&lt;/a>做一些事，最好以年来计算，也许是我比较恋旧吧。我会将自己以前的资料慢慢搬运，做一个线上的记忆库。这里也会是我展示公开的笔记作品的地方。&lt;/p>
+&lt;p>也许哪天意外，这个网站关闭，我也可能不能再屡约，那一天这个网站将再带着这些记忆慢慢尘封。&lt;/p></description></item></channel></rss>

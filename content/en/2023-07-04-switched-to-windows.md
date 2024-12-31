@@ -1,9 +1,9 @@
----
+﻿---
 title: Switched to Windows
 author: Qiran
 type: post
 date: 2023-07-04T14:39:59+00:00
-url: /switched-to-windows/
+aliases: ["/switched-to-windows/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

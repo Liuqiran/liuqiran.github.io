@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 6 Plain text
 author: Qiran
 type: post
 date: 2023-05-02T15:03:53+00:00
-url: /ep-6-plain-text/
+aliases: ["/ep-6-plain-text/"]
 xyz_twap:
   - 1
 categories:

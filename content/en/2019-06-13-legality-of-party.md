@@ -1,11 +1,11 @@
----
+﻿---
 title: Legality of Party
 author: Qiran
 type: post
 date: 2019-06-12T20:56:54+00:00
 draft: true
 private: true
-url: /legality-of-party/
+aliases: ["/legality-of-party/"]
 categories:
   - China
   - Journal

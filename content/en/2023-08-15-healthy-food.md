@@ -1,9 +1,9 @@
----
+﻿---
 title: Healthy food
 author: Qiran
 type: post
 date: 2023-08-15T15:45:01+00:00
-url: /healthy-food/
+aliases: ["/healthy-food/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

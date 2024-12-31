@@ -1,9 +1,9 @@
----
+﻿---
 title: What Kills Me Makes Others Stronger
 author: Qiran
 type: post
 date: 2020-01-10T05:33:52+00:00
-url: /what-kills-me-makes-others-stronger/
+aliases: ["/what-kills-me-makes-others-stronger/"]
 categories:
   - 'Antifragile: Things That Gain From Disorder'
 

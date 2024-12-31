@@ -1,9 +1,9 @@
----
+﻿---
 title: Myth and Dream
 author: Qiran
 type: post
 date: 2020-06-20T08:19:43+00:00
-url: /myth-and-dream/
+aliases: ["/myth-and-dream/"]
 categories:
   - The Hero With a Thousand Faces
 

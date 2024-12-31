@@ -1,9 +1,9 @@
----
+﻿---
 title: 'Notes: The Now Habit (1)'
 author: Qiran
 type: post
 date: 2019-03-26T07:44:15+00:00
-url: /notes-the-now-habit-1/
+aliases: ["/notes-the-now-habit-1/"]
 categories:
   - Efficiency
   - The Now Habit

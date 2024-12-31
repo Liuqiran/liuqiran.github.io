@@ -1,9 +1,9 @@
----
+﻿---
 title: Questions about Wenxin Diaolong
 author: Qiran
 type: post
 date: 2020-04-08T00:17:47+00:00
-url: /questions-about-wenxin-diaolong/
+aliases: ["/questions-about-wenxin-diaolong/"]
 categories:
   - The Literary Mind and the Carving of Dragons
 

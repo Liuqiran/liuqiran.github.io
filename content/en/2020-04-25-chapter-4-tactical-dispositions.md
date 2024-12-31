@@ -1,9 +1,9 @@
----
+﻿---
 title: CHAPTER 4 Tactical Dispositions
 author: Qiran
 type: post
 date: 2020-04-25T13:25:15+00:00
-url: /chapter-4-tactical-dispositions/
+aliases: ["/chapter-4-tactical-dispositions/"]
 categories:
   - "Sun Tzu's The Art of War"
 

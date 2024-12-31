@@ -1,9 +1,9 @@
----
+﻿---
 title: How We Procrastinate
 author: Qiran
 type: post
 date: 2019-08-28T17:01:23+00:00
-url: /how-we-procrastinate/
+aliases: ["/how-we-procrastinate/"]
 categories:
   - The Now Habit
 

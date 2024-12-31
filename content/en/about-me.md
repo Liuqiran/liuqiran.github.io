@@ -1,9 +1,9 @@
----
+﻿---
 title: About me
 author: Qiran
 type: post
 date: 2019-02-09T03:14:24+00:00
-url: /en/about-me-2/
+aliases: ["/en/about-me-2/"]
 views:
   - 4
 wp_last_modified_info:
@@ -29,3 +29,4 @@ Contact me: [Telegram: Contact @liu_qiran][2]
 
  [1]: /categories/building-site/
  [2]: https://t.me/liu_qiran
+

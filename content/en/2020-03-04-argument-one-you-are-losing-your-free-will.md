@@ -1,9 +1,9 @@
----
+﻿---
 title: 'ARGUMENT ONE: YOU ARE LOSING YOUR FREE WILL'
 author: Qiran
 type: post
 date: 2020-03-04T05:50:54+00:00
-url: /argument-one-you-are-losing-your-free-will/
+aliases: ["/argument-one-you-are-losing-your-free-will/"]
 categories:
   - Ten Arguments for Deleting Your Social Media Accounts Right Now
 

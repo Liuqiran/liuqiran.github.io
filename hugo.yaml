@@ -1,4 +1,4 @@
-defaultContentLanguage: en
+defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: true  
 baseURL: "https://liuqiran.github.io/"  
 theme: "PaperMod"  
@@ -8,36 +8,38 @@ languages:
   en:
     languageName: "English"  
     weight: 1
-    languageCode: "en"
+    languageCode: "en-US"
     contentDir: /content/en/
     taxonomies: # 分类系统
       category: categories
       tag: tags
+    permalinks:
+      posts: /en/:title/
     menu:
       main:
         - identifier: home
           name: Home
-          url: /
+          url: /en/
           weight: 1
         - identifier: about
           name: About
-          url: /about-me-2/
+          url: /en/about-me-2/
           weight: 10
         - identifier: Reading list
           name: Reading list
-          url: /reading-list/
+          url: /en/reading-list/
           weight: 30
         - identifier: friends
           name: Friends
-          url: /my-friends/
+          url: /en/my-friends/
           weight: 40
         - identifier: categories
           name: Categories
-          url: /categories/
+          url: /en/categories/
           weight: 50
         - identifier: search
           name: Search
-          url: /search/
+          url: /en/search/
           weight: 60
     params:
       alternatelang: 'zh'
@@ -53,7 +55,7 @@ languages:
             url: /en/about-me-2/
       socialIcons:
         - name: rss
-          url: '/rss'     
+          url: 'en/rss'     
         - name: mastodon
           url: 'https://mastodon.social/@liuqiran'
         - name: github

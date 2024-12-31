@@ -1,9 +1,9 @@
----
+﻿---
 title: A Brief Overview of 19th Century English
 author: Qiran
 type: post
 date: 2019-11-04T12:13:17+00:00
-url: /a-brief-overview-of-19th-century-english/
+aliases: ["/a-brief-overview-of-19th-century-english/"]
 categories:
   - English
 

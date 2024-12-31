@@ -1,9 +1,9 @@
----
+﻿---
 title: Separation
 author: Qiran
 type: post
 date: 2022-08-04T15:37:39+00:00
-url: /separation/
+aliases: ["/separation/"]
 xyz_twap:
   - 1
 categories:

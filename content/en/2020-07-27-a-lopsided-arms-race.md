@@ -1,9 +1,9 @@
----
+﻿---
 title: A Lopsided Arms Race
 author: Qiran
 type: post
 date: 2020-07-27T03:46:43+00:00
-url: /a-lopsided-arms-race/
+aliases: ["/a-lopsided-arms-race/"]
 categories:
   - Digital Minimalism
 

@@ -1,9 +1,9 @@
----
+﻿---
 title: Z-library in Nov. 2022
 author: Qiran
 type: post
 date: 2022-11-04T02:49:11+00:00
-url: /z-library-in-nov-2022/
+aliases: ["/z-library-in-nov-2022/"]
 categories:
   - Internet
 

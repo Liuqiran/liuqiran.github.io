@@ -1,9 +1,9 @@
----
+﻿---
 title: Join the Attention Resistance
 author: Qiran
 type: post
 date: 2020-09-23T06:16:17+00:00
-url: /join-the-attention-resistance/
+aliases: ["/join-the-attention-resistance/"]
 categories:
   - Digital Minimalism
 

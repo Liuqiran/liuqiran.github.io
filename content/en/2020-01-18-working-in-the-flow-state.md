@@ -1,9 +1,9 @@
----
+﻿---
 title: WORKING IN THE FLOW STATE
 author: Qiran
 type: post
 date: 2020-01-18T15:00:22+00:00
-url: /working-in-the-flow-state/
+aliases: ["/working-in-the-flow-state/"]
 categories:
   - The Now Habit
 

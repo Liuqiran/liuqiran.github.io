@@ -1,9 +1,9 @@
----
+﻿---
 title: Don’t Click “Like”
 author: Qiran
 type: post
 date: 2020-08-12T13:34:08+00:00
-url: /dont-click-like/
+aliases: ["/dont-click-like/"]
 categories:
   - Digital Minimalism
 

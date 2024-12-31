@@ -1,9 +1,9 @@
----
+﻿---
 title: Belonging
 author: Qiran
 type: post
 date: 2019-10-11T06:04:29+00:00
-url: /belonging/
+aliases: ["/belonging/"]
 categories:
   - Becoming Human
 

@@ -1,9 +1,9 @@
----
+﻿---
 title: CHAPTER 3 Attack By Strategem
 author: Qiran
 type: post
 date: 2020-02-11T12:54:19+00:00
-url: /chapter-3-attack-by-strategem/
+aliases: ["/chapter-3-attack-by-strategem/"]
 categories:
   - "Sun Tzu's The Art of War"
 

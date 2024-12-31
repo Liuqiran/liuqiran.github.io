@@ -1,32 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Art Theory on </title>
-    <link>http://localhost:1313/en/categories/art-theory/</link>
-    <description>Recent content in Art Theory on </description>
-    <generator>Hugo -- 0.140.1</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 28 Feb 2020 10:20:04 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/art-theory/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Read notes</title>
-      <link>http://localhost:1313/read-notes/</link>
-      <pubDate>Fri, 28 Feb 2020 10:20:04 +0000</pubDate>
-      <guid>http://localhost:1313/read-notes/</guid>
-      <description>&lt;pre class=&#34;wp-block-preformatted&#34;&gt;作者认为柏拉图对艺术的看法不妥。但在柏拉图的观点中，可以说艺术和他要建立的真理与乌托邦是对立的，本身就是有局限性的。柏拉图认为艺术应被禁止再现罪恶性情、放荡、粗鲁，是否也可以说柏拉图在批判摹仿性艺术满足人低劣的那一部分？&lt;/pre&gt;
-&lt;p&gt;在古希腊中常有和欲望有关的故事，如对于古希腊神话中常有的身体幻化，我认为是很好的例子，如宙斯的幻化、阿波罗幻化成月桂树、牛头怪，人马兽也是其中之一，比如人马兽是国王伊克西翁被宙斯所塑造的涅斐勒所生，最终半人马被神所杀死。&lt;br&gt;
-喀戎是一个例外具有良好的品格，被徒弟赫拉克勒斯在追杀半人马强盗时误伤，喀戎本是不死之身，但赫拉克勒斯的箭浸泡了九头蛇的血，喀戎感到疼痛最终放弃永生换取普罗米修斯的自由。&lt;br&gt;
-半人马一般被当作野蛮，情欲，酗酒的代表，半人马被认为是酒神的追随者。人马可以表示着上半身、人的理性驾驭不了下半身的欲望？最终人马被神所杀死，喀戎也成为悲剧的代表，是否也意味着着这种野蛮、情欲的代名词，在古希腊中它最终要被神惩罚？半人马的故事对我们理解艺术尼采的酒神精神有什么启示？&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Plato and Aristotle</title>
-      <link>http://localhost:1313/plato-and-aristotle/</link>
-      <pubDate>Fri, 28 Feb 2020 10:17:02 +0000</pubDate>
-      <guid>http://localhost:1313/plato-and-aristotle/</guid>
-      <description>&lt;p&gt;柏拉图和亚历士多德艺术思想的比较：&lt;br&gt;
-柏拉图认为，艺术只是完美、永恒的本原的一种有缺陷的再模仿，人们从这种虚假模仿中是得不到真理（美）的；亚历士多德则肯定艺术家创作过程本身的作用，同时通过艺术作品对自然的模仿，人们更能深刻理解对象的美。&lt;br&gt;
-柏拉图认为，因为来自“灵感”、“礼物”，艺术是有力量的，同时也是危险的。为了保护理想的公民和理想的社会，艺术等级不高，必须严格控制；亚历士多德则认为艺术的模仿是一种教育和学习形式，是有价值的。&lt;br&gt;
-柏拉图认为，艺术家的灵感来源于神性的启发而不是一种技能，因此艺术家相比医药、建筑、算术等需要技巧的一类人更低级；亚历士多德则更为乐观，认为这种创造艺术的能力隐含在“模仿”之中，同样需要大量的学习和练习。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Art Theory on</title><link>https://liuqiran.github.io/en/categories/art-theory/</link><description>Recent content in Art Theory on</description><generator>Hugo -- 0.140.1</generator><language>en-US</language><lastBuildDate>Fri, 28 Feb 2020 10:20:04 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/en/categories/art-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>Read notes</title><link>https://liuqiran.github.io/en/2020-02-28-read-notes/</link><pubDate>Fri, 28 Feb 2020 10:20:04 +0000</pubDate><guid>https://liuqiran.github.io/en/2020-02-28-read-notes/</guid><description>&lt;pre class="wp-block-preformatted">作者认为柏拉图对艺术的看法不妥。但在柏拉图的观点中，可以说艺术和他要建立的真理与乌托邦是对立的，本身就是有局限性的。柏拉图认为艺术应被禁止再现罪恶性情、放荡、粗鲁，是否也可以说柏拉图在批判摹仿性艺术满足人低劣的那一部分？&lt;/pre>
+&lt;p>在古希腊中常有和欲望有关的故事，如对于古希腊神话中常有的身体幻化，我认为是很好的例子，如宙斯的幻化、阿波罗幻化成月桂树、牛头怪，人马兽也是其中之一，比如人马兽是国王伊克西翁被宙斯所塑造的涅斐勒所生，最终半人马被神所杀死。&lt;br>
+喀戎是一个例外具有良好的品格，被徒弟赫拉克勒斯在追杀半人马强盗时误伤，喀戎本是不死之身，但赫拉克勒斯的箭浸泡了九头蛇的血，喀戎感到疼痛最终放弃永生换取普罗米修斯的自由。&lt;br>
+半人马一般被当作野蛮，情欲，酗酒的代表，半人马被认为是酒神的追随者。人马可以表示着上半身、人的理性驾驭不了下半身的欲望？最终人马被神所杀死，喀戎也成为悲剧的代表，是否也意味着着这种野蛮、情欲的代名词，在古希腊中它最终要被神惩罚？半人马的故事对我们理解艺术尼采的酒神精神有什么启示？&lt;/p></description></item><item><title>Plato and Aristotle</title><link>https://liuqiran.github.io/en/2020-02-28-plato-and-aristotle/</link><pubDate>Fri, 28 Feb 2020 10:17:02 +0000</pubDate><guid>https://liuqiran.github.io/en/2020-02-28-plato-and-aristotle/</guid><description>&lt;p>柏拉图和亚历士多德艺术思想的比较：&lt;br>
+柏拉图认为，艺术只是完美、永恒的本原的一种有缺陷的再模仿，人们从这种虚假模仿中是得不到真理（美）的；亚历士多德则肯定艺术家创作过程本身的作用，同时通过艺术作品对自然的模仿，人们更能深刻理解对象的美。&lt;br>
+柏拉图认为，因为来自“灵感”、“礼物”，艺术是有力量的，同时也是危险的。为了保护理想的公民和理想的社会，艺术等级不高，必须严格控制；亚历士多德则认为艺术的模仿是一种教育和学习形式，是有价值的。&lt;br>
+柏拉图认为，艺术家的灵感来源于神性的启发而不是一种技能，因此艺术家相比医药、建筑、算术等需要技巧的一类人更低级；亚历士多德则更为乐观，认为这种创造艺术的能力隐含在“模仿”之中，同样需要大量的学习和练习。&lt;/p></description></item></channel></rss>

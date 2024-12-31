@@ -1,59 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>新浪博客 on </title>
-    <link>http://localhost:1313/zh/categories/%E6%96%B0%E6%B5%AA%E5%8D%9A%E5%AE%A2/</link>
-    <description>Recent content in 新浪博客 on </description>
-    <generator>Hugo -- 0.140.1</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Fri, 07 Jun 2019 08:00:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/categories/%E6%96%B0%E6%B5%AA%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>表哥的画</title>
-      <link>http://localhost:1313/zh/cousinsdrawing/</link>
-      <pubDate>Fri, 07 Jun 2019 08:00:53 +0000</pubDate>
-      <guid>http://localhost:1313/zh/cousinsdrawing/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/06/487ac2fdb33d3c31dcd7e.jpeg&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>博客</title>
-      <link>http://localhost:1313/zh/sina-blog/</link>
-      <pubDate>Sat, 11 Mar 2006 07:05:45 +0000</pubDate>
-      <guid>http://localhost:1313/zh/sina-blog/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/06/487ac2fdc4aee81651625.jpeg&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>姚佩画画室</title>
-      <link>http://localhost:1313/zh/%E5%A7%9A%E4%BD%A9%E7%94%BB%E7%94%BB%E5%AE%A4/</link>
-      <pubDate>Sat, 04 Feb 2006 08:02:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/%E5%A7%9A%E4%BD%A9%E7%94%BB%E7%94%BB%E5%AE%A4/</guid>
-      <description>&lt;p&gt;　　　　今天，我和妈妈来到姚佩叔叔培训班去画画。我先去试一下，好的话下学期就去学。&lt;br&gt;
-　　一到那楼梯上，我就看到一幅幅动人的画挂在墙上。再到教室后，哇！好多来学的同学啊！就像我们教室的８０个人一样！&lt;br&gt;
-　　“铃！！！”上课铃响了，我就坐在一个空位上。老师在黑板上画了３个圆，叫上了３个同学画“怒”的表情。一分钟后，他们３个画好了。老师说“第３个天下有创意！”&lt;br&gt;
-　　老师又在黑板上画了一个人，两手斜放。还画了一个侧着的人，要我们照着画，还要加背景涂颜色呢。&lt;br&gt;
-最后，我画好了，和叔叔说再见了。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>这是我去年（２００５年）画的速写</title>
-      <link>http://localhost:1313/zh/%E8%BF%99%E6%98%AF%E6%88%91%E5%8E%BB%E5%B9%B4%EF%BC%88%EF%BC%92%EF%BC%90%EF%BC%90%EF%BC%95%E5%B9%B4%EF%BC%89%E7%94%BB%E7%9A%84%E9%80%9F%E5%86%99/</link>
-      <pubDate>Sat, 04 Feb 2006 06:42:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/%E8%BF%99%E6%98%AF%E6%88%91%E5%8E%BB%E5%B9%B4%EF%BC%88%EF%BC%92%EF%BC%90%EF%BC%90%EF%BC%95%E5%B9%B4%EF%BC%89%E7%94%BB%E7%9A%84%E9%80%9F%E5%86%99/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2023/02/487ac2fd9a2c6880e2239.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2023/02/487ac2fde58f052b1ac81.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2023/02/487ac2fd0133c337827f4.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2023/02/487ac2fd1758ee2825411.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2023/02/487ac2fd6bc9d2ef56777.jpeg&#34;&gt;&lt;/figure&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>我爱画画</title>
-      <link>http://localhost:1313/zh/%E6%88%91%E7%88%B1%E7%94%BB%E7%94%BB/</link>
-      <pubDate>Sat, 04 Feb 2006 05:07:59 +0000</pubDate>
-      <guid>http://localhost:1313/zh/%E6%88%91%E7%88%B1%E7%94%BB%E7%94%BB/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2006/02/487ac2fd5b50f2511ebca.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;　我爱画画&lt;br&gt;
-　　我喜欢画画，我是从４岁开始画画的。&lt;br&gt;
-　　那一年，我参加了画画班。我要画鸭子，笔没有洗干净就把第二只鸭子画成了Ju色的了。&lt;br&gt;
-　　结果我得了一等奖，奖是一本邮票书。&lt;br&gt;
-　　五岁的时候，我就听到爸爸讲古新冬和巴大西的故事。我又想画出他。&lt;br&gt;
-　　所以我喜欢画画。&lt;br&gt;
-　　我从七岁就开始画速写，现在我就收集了很多作品。&lt;br&gt;
-　　我好喜欢画画。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>新浪博客 on</title><link>https://liuqiran.github.io/zh/categories/%E6%96%B0%E6%B5%AA%E5%8D%9A%E5%AE%A2/</link><description>Recent content in 新浪博客 on</description><generator>Hugo -- 0.140.1</generator><language>zh-CN</language><lastBuildDate>Fri, 07 Jun 2019 08:00:53 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/zh/categories/%E6%96%B0%E6%B5%AA%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml"/><item><title>表哥的画</title><link>https://liuqiran.github.io/zh/cousinsdrawing/</link><pubDate>Fri, 07 Jun 2019 08:00:53 +0000</pubDate><guid>https://liuqiran.github.io/zh/cousinsdrawing/</guid><description>&lt;p>&lt;img loading="lazy" src="../../../uploads/2019/06/487ac2fdb33d3c31dcd7e.jpeg">&lt;/p></description></item><item><title>博客</title><link>https://liuqiran.github.io/zh/sina-blog/</link><pubDate>Sat, 11 Mar 2006 07:05:45 +0000</pubDate><guid>https://liuqiran.github.io/zh/sina-blog/</guid><description>&lt;p>&lt;img loading="lazy" src="../../../uploads/2019/06/487ac2fdc4aee81651625.jpeg">&lt;/p></description></item><item><title>姚佩画画室</title><link>https://liuqiran.github.io/zh/%E5%A7%9A%E4%BD%A9%E7%94%BB%E7%94%BB%E5%AE%A4/</link><pubDate>Sat, 04 Feb 2006 08:02:00 +0000</pubDate><guid>https://liuqiran.github.io/zh/%E5%A7%9A%E4%BD%A9%E7%94%BB%E7%94%BB%E5%AE%A4/</guid><description>&lt;p>　　　　今天，我和妈妈来到姚佩叔叔培训班去画画。我先去试一下，好的话下学期就去学。&lt;br>
+　　一到那楼梯上，我就看到一幅幅动人的画挂在墙上。再到教室后，哇！好多来学的同学啊！就像我们教室的８０个人一样！&lt;br>
+　　“铃！！！”上课铃响了，我就坐在一个空位上。老师在黑板上画了３个圆，叫上了３个同学画“怒”的表情。一分钟后，他们３个画好了。老师说“第３个天下有创意！”&lt;br>
+　　老师又在黑板上画了一个人，两手斜放。还画了一个侧着的人，要我们照着画，还要加背景涂颜色呢。&lt;br>
+最后，我画好了，和叔叔说再见了。&lt;/p></description></item><item><title>这是我去年（２００５年）画的速写</title><link>https://liuqiran.github.io/zh/%E8%BF%99%E6%98%AF%E6%88%91%E5%8E%BB%E5%B9%B4%EF%BC%88%EF%BC%92%EF%BC%90%EF%BC%90%EF%BC%95%E5%B9%B4%EF%BC%89%E7%94%BB%E7%9A%84%E9%80%9F%E5%86%99/</link><pubDate>Sat, 04 Feb 2006 06:42:00 +0000</pubDate><guid>https://liuqiran.github.io/zh/%E8%BF%99%E6%98%AF%E6%88%91%E5%8E%BB%E5%B9%B4%EF%BC%88%EF%BC%92%EF%BC%90%EF%BC%90%EF%BC%95%E5%B9%B4%EF%BC%89%E7%94%BB%E7%9A%84%E9%80%9F%E5%86%99/</guid><description>&lt;p>&lt;img loading="lazy" src="../../../uploads/2023/02/487ac2fd9a2c6880e2239.jpeg">&lt;img loading="lazy" src="../../../uploads/2023/02/487ac2fde58f052b1ac81.jpeg">&lt;img loading="lazy" src="../../../uploads/2023/02/487ac2fd0133c337827f4.jpeg">&lt;img loading="lazy" src="../../../uploads/2023/02/487ac2fd1758ee2825411.jpeg">&lt;img loading="lazy" src="../../../uploads/2023/02/487ac2fd6bc9d2ef56777.jpeg">&lt;/figure>&lt;/p></description></item><item><title>我爱画画</title><link>https://liuqiran.github.io/zh/%E6%88%91%E7%88%B1%E7%94%BB%E7%94%BB/</link><pubDate>Sat, 04 Feb 2006 05:07:59 +0000</pubDate><guid>https://liuqiran.github.io/zh/%E6%88%91%E7%88%B1%E7%94%BB%E7%94%BB/</guid><description>&lt;p>&lt;img loading="lazy" src="../../../uploads/2006/02/487ac2fd5b50f2511ebca.jpg">&lt;/p>
+&lt;p>　我爱画画&lt;br>
+　　我喜欢画画，我是从４岁开始画画的。&lt;br>
+　　那一年，我参加了画画班。我要画鸭子，笔没有洗干净就把第二只鸭子画成了Ju色的了。&lt;br>
+　　结果我得了一等奖，奖是一本邮票书。&lt;br>
+　　五岁的时候，我就听到爸爸讲古新冬和巴大西的故事。我又想画出他。&lt;br>
+　　所以我喜欢画画。&lt;br>
+　　我从七岁就开始画速写，现在我就收集了很多作品。&lt;br>
+　　我好喜欢画画。&lt;/p></description></item></channel></rss>

@@ -1,9 +1,9 @@
----
+﻿---
 title: '3: Upsurge in Study Art Aboard and Fine Art Education in Early 20th Century'
 author: Qiran
 type: post
 date: 2019-09-30T10:37:11+00:00
-url: /upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-century/
+aliases: ["/upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-century/"]
 categories:
   - Chinese Fine Art Education in 20 Century
 

@@ -1,11 +1,8 @@
----
+﻿---
 title: My friends
 author: Qiran
 type: post
 date: 2019-07-09T07:51:36+00:00
-url:
-xyz_twap:
-  - 1
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

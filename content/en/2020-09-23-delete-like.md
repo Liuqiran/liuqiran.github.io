@@ -1,9 +1,9 @@
----
+﻿---
 title: Delete “like”
 author: Qiran
 type: post
 date: 2020-09-23T05:41:08+00:00
-url: /delete-like/
+aliases: ["/delete-like/"]
 categories:
   - Building Site
 

@@ -1,9 +1,9 @@
----
+﻿---
 title: Plato and Aristotle
 author: Qiran
 type: post
 date: 2020-02-28T10:17:02+00:00
-url: /plato-and-aristotle/
+aliases: ["/plato-and-aristotle/"]
 categories:
   - Art theory
 

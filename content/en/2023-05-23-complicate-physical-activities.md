@@ -1,9 +1,9 @@
----
+﻿---
 title: Complicate physical activities
 author: Qiran
 type: post
 date: 2023-05-23T15:02:06+00:00
-url: /complicate-physical-activities/
+aliases: ["/complicate-physical-activities/"]
 xyz_twap:
   - 1
 categories:

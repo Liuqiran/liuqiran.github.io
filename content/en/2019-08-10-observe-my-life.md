@@ -1,9 +1,9 @@
----
+﻿---
 title: Observe my life
 author: Qiran
 type: post
 date: 2019-08-10T12:01:45+00:00
-url: /observe-my-life/
+aliases: ["/observe-my-life/"]
 categories:
   - Life
 

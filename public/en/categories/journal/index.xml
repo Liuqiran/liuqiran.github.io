@@ -1,74 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Journal on </title>
-    <link>http://localhost:1313/en/categories/journal/</link>
-    <description>Recent content in Journal on </description>
-    <generator>Hugo -- 0.140.1</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 27 Nov 2023 12:41:28 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/journal/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Digitization</title>
-      <link>http://localhost:1313/digitization/</link>
-      <pubDate>Mon, 27 Nov 2023 12:41:28 +0000</pubDate>
-      <guid>http://localhost:1313/digitization/</guid>
-      <description>&lt;p&gt;I will try to digitize all of my diaries. It’s a very big project.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>EP 5 Thirteen years of journaling</title>
-      <link>http://localhost:1313/ep-5-thirteen-years-of-journaling/</link>
-      <pubDate>Tue, 18 Apr 2023 09:52:12 +0000</pubDate>
-      <guid>http://localhost:1313/ep-5-thirteen-years-of-journaling/</guid>
-      <description>&lt;p&gt;I’ve been journaling for thirteen years.&lt;br&gt;
-I started journaling in April 2010.&lt;/p&gt;
-&lt;p&gt;It’s one of the most important habits in my life.&lt;br&gt;
-Before 2016, I wrote journals on paper. After 2016, I started to write on app. It’s very convenient to write digitally. After December 2017, I started writing in English.&lt;/p&gt;
-&lt;p&gt;I became aware that journals are the history of my own life.&lt;br&gt;
-Now I have the intention to collect all my journals and publish them in a book. I think it would be very interesting to browse through my whole life.&lt;br&gt;
-Looking back to my childhood, I realized that I already have the talent to collect the materials in different periods and save them in order. I enjoyed that kind of feeling.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>1: EP-01 Why I start my podcast</title>
-      <link>http://localhost:1313/1-ep-01-why-i-start-my-podcast/</link>
-      <pubDate>Tue, 21 Feb 2023 07:29:08 +0000</pubDate>
-      <guid>http://localhost:1313/1-ep-01-why-i-start-my-podcast/</guid>
-      <description>&lt;!--[if lt IE 9]&gt;&lt;![endif]--&gt;&lt;audio class=&#34;wp-audio-shortcode&#34; id=&#34;audio-4600-1&#34; preload=&#34;none&#34; style=&#34;width: 100%;&#34; controls=&#34;controls&#34;&gt;&lt;source type=&#34;audio/mpeg&#34; src=&#34;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a?_=1&#34; /&gt;
-&lt;p&gt;&lt;a href=&#34;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a&#34;&gt;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a&lt;/a&gt;&lt;/audio&gt;&lt;/p&gt;
-&lt;p&gt;Hello everyone. I’m Qiran. This is the first episode of my podcast. Today’s topic is that, I want to share reasons about why I start my podcast.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tropic love</title>
-      <link>http://localhost:1313/tropic-love/</link>
-      <pubDate>Thu, 30 May 2019 09:29:54 +0000</pubDate>
-      <guid>http://localhost:1313/tropic-love/</guid>
-      <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
-&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
-&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;不知道为什么，听到这个背景音乐会感觉到有点伤心？是宝座被夺去的那一刻吗？&lt;/p&gt;
-&lt;p&gt;I remember the ocean, Memories die out so hard. We were traveling the mountains, just to find the loudest seas. We settled down by the fire, knowing we could aim higher, but we didn’t know that yet. So if you want something to hold on to, gotta find it first. But here I am.&lt;/p&gt;
-&lt;p&gt;‘Cause I’ve been laying under palm trees, waiting for the summer, knowing there’s nowhere to do. ‘Cause I am happy on this island, Wanna be my funland? I don’t ever want to leave, I’m in a tropic love.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Category</title>
-      <link>http://localhost:1313/category/</link>
-      <pubDate>Wed, 22 May 2019 13:26:07 +0000</pubDate>
-      <guid>http://localhost:1313/category/</guid>
-      <description>&lt;p class=&#34;has-background has-primary-background-color&#34;&gt;
-  The most important decision you&amp;#8217;ll ever make: Change your categories.
-&lt;/p&gt;
-&lt;p&gt;A lack of willingness to change your categories is dogmatic, and your categories become chains that restrict your growth. On the other hand, your categories may change so wildly that they become meaningless and without something to anchor you, you fall into an endless abyss.&lt;/p&gt;
-&lt;p style=&#34;text-align:left&#34;&gt;
-  Perhaps, the most important category you&amp;#8217;ll construct is one of yourself.
-&lt;/p&gt;
-&lt;p&gt;Every category you impose one the world is one that you also impose on yourself and you decide if you do or don’t fit into that category.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/611/</link>
-      <pubDate>Tue, 21 May 2019 13:24:41 +0000</pubDate>
-      <guid>http://localhost:1313/611/</guid>
-      <description>&lt;p&gt;These days I started listening the podcast, A.J. Hoge is very good, his talking is understandable and knowledgable.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Journal on</title><link>https://liuqiran.github.io/en/categories/journal/</link><description>Recent content in Journal on</description><generator>Hugo -- 0.140.1</generator><language>en-US</language><lastBuildDate>Mon, 27 Nov 2023 12:41:28 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/en/categories/journal/index.xml" rel="self" type="application/rss+xml"/><item><title>Digitization</title><link>https://liuqiran.github.io/en/2023-11-27-digitization/</link><pubDate>Mon, 27 Nov 2023 12:41:28 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-11-27-digitization/</guid><description>&lt;p>I will try to digitize all of my diaries. It’s a very big project.&lt;/p></description></item><item><title>EP 5 Thirteen years of journaling</title><link>https://liuqiran.github.io/en/2023-04-18-ep-5-thirteen-years-of-journaling/</link><pubDate>Tue, 18 Apr 2023 09:52:12 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-04-18-ep-5-thirteen-years-of-journaling/</guid><description>&lt;p>I’ve been journaling for thirteen years.&lt;br>
+I started journaling in April 2010.&lt;/p>
+&lt;p>It’s one of the most important habits in my life.&lt;br>
+Before 2016, I wrote journals on paper. After 2016, I started to write on app. It’s very convenient to write digitally. After December 2017, I started writing in English.&lt;/p>
+&lt;p>I became aware that journals are the history of my own life.&lt;br>
+Now I have the intention to collect all my journals and publish them in a book. I think it would be very interesting to browse through my whole life.&lt;br>
+Looking back to my childhood, I realized that I already have the talent to collect the materials in different periods and save them in order. I enjoyed that kind of feeling.&lt;/p></description></item><item><title>1: EP-01 Why I start my podcast</title><link>https://liuqiran.github.io/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</link><pubDate>Tue, 21 Feb 2023 07:29:08 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</guid><description>&lt;!--[if lt IE 9]>&lt;![endif]-->&lt;audio class="wp-audio-shortcode" id="audio-4600-1" preload="none" style="width: 100%;" controls="controls">&lt;source type="audio/mpeg" src="https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a?_=1" />
+&lt;p>&lt;a href="https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a">https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a&lt;/a>&lt;/audio>&lt;/p>
+&lt;p>Hello everyone. I’m Qiran. This is the first episode of my podcast. Today’s topic is that, I want to share reasons about why I start my podcast.&lt;/p></description></item><item><title>Tropic love</title><link>https://liuqiran.github.io/en/2019-05-30-tropic-love/</link><pubDate>Thu, 30 May 2019 09:29:54 +0000</pubDate><guid>https://liuqiran.github.io/en/2019-05-30-tropic-love/</guid><description>&lt;figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+&lt;div class="wp-block-embed__wrapper">
+&lt;/div>&lt;/figure>
+&lt;p>不知道为什么，听到这个背景音乐会感觉到有点伤心？是宝座被夺去的那一刻吗？&lt;/p>
+&lt;p>I remember the ocean, Memories die out so hard. We were traveling the mountains, just to find the loudest seas. We settled down by the fire, knowing we could aim higher, but we didn’t know that yet. So if you want something to hold on to, gotta find it first. But here I am.&lt;/p>
+&lt;p>‘Cause I’ve been laying under palm trees, waiting for the summer, knowing there’s nowhere to do. ‘Cause I am happy on this island, Wanna be my funland? I don’t ever want to leave, I’m in a tropic love.&lt;/p></description></item><item><title>Category</title><link>https://liuqiran.github.io/en/2019-05-22-category/</link><pubDate>Wed, 22 May 2019 13:26:07 +0000</pubDate><guid>https://liuqiran.github.io/en/2019-05-22-category/</guid><description>&lt;p class="has-background has-primary-background-color">
+The most important decision you&amp;#8217;ll ever make: Change your categories.
+&lt;/p>
+&lt;p>A lack of willingness to change your categories is dogmatic, and your categories become chains that restrict your growth. On the other hand, your categories may change so wildly that they become meaningless and without something to anchor you, you fall into an endless abyss.&lt;/p>
+&lt;p style="text-align:left">
+Perhaps, the most important category you&amp;#8217;ll construct is one of yourself.
+&lt;/p>
+&lt;p>Every category you impose one the world is one that you also impose on yourself and you decide if you do or don’t fit into that category.&lt;/p></description></item><item><title/><link>https://liuqiran.github.io/en/2019-05-21-611/</link><pubDate>Tue, 21 May 2019 13:24:41 +0000</pubDate><guid>https://liuqiran.github.io/en/2019-05-21-611/</guid><description>&lt;p>These days I started listening the podcast, A.J. Hoge is very good, his talking is understandable and knowledgable.&lt;/p></description></item></channel></rss>

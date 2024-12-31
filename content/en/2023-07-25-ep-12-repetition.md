@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 12 Repetition
 author: Qiran
 type: post
 date: 2023-07-25T12:24:20+00:00
-url: /ep-12-repetition/
+aliases: ["/ep-12-repetition/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

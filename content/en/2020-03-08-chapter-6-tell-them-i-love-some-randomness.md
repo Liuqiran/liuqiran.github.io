@@ -1,9 +1,9 @@
----
+﻿---
 title: CHAPTER 6 Tell Them I Love (Some) Randomness
 author: Qiran
 type: post
 date: 2020-03-08T11:56:18+00:00
-url: /chapter-6-tell-them-i-love-some-randomness/
+aliases: ["/chapter-6-tell-them-i-love-some-randomness/"]
 categories:
   - 'Antifragile: Things That Gain From Disorder'
 

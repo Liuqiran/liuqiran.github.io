@@ -1,9 +1,9 @@
----
+﻿---
 title: Overcompensation and Overreaction Everywhere
 author: Qiran
 type: post
 date: 2019-11-27T06:24:04+00:00
-url: /overcompensation-and-overreaction-everywhere/
+aliases: ["/overcompensation-and-overreaction-everywhere/"]
 categories:
   - 'Antifragile: Things That Gain From Disorder'
 

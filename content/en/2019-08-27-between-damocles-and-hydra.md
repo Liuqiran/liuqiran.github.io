@@ -1,9 +1,9 @@
----
+﻿---
 title: Between Damocles and Hydra
 author: Qiran
 type: post
 date: 2019-08-26T16:59:31+00:00
-url: /between-damocles-and-hydra/
+aliases: ["/between-damocles-and-hydra/"]
 categories:
   - 'Antifragile: Things That Gain From Disorder'
 

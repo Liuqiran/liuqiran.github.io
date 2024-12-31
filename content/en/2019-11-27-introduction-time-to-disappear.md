@@ -1,9 +1,9 @@
----
+﻿---
 title: 'Introduction: Time to Disappear'
 author: Qiran
 type: post
 date: 2019-11-27T12:43:10+00:00
-url: /introduction-time-to-disappear/
+aliases: ["/introduction-time-to-disappear/"]
 categories:
   - The Art of Invisibility
 

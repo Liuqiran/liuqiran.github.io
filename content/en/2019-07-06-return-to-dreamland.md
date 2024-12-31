@@ -1,9 +1,9 @@
----
+﻿---
 title: Return to dreamland
 author: Qiran
 type: post
 date: 2019-07-06T00:21:52+00:00
-url: /return-to-dreamland/
+aliases: ["/return-to-dreamland/"]
 categories:
   - Aesthetics
   - Chuang tzu

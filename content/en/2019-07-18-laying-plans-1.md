@@ -1,9 +1,9 @@
----
+﻿---
 title: Laying plans 1
 author: Qiran
 type: post
 date: 2019-07-18T08:18:04+00:00
-url: /laying-plans-1/
+aliases: ["/laying-plans-1/"]
 categories:
   - "Sun Tzu's The Art of War"
 

@@ -1,9 +1,9 @@
----
+﻿---
 title: 5 Love Languages
 author: Qiran
 type: post
 date: 2020-11-27T13:32:15+00:00
-url: /introduction-4/
+aliases: ["/introduction-4/"]
 xyz_twap:
   - 1
 categories:

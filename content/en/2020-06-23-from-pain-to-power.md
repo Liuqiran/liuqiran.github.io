@@ -1,9 +1,9 @@
----
+﻿---
 title: From Pain to Power
 author: Qiran
 type: post
 date: 2020-06-22T17:10:44+00:00
-url: /from-pain-to-power/
+aliases: ["/from-pain-to-power/"]
 categories:
   - Feel The Fear And Do It Anyway
 

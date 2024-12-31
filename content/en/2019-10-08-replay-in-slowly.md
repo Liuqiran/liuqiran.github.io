@@ -1,9 +1,9 @@
----
+﻿---
 title: Reply in Slowly
 author: Qiran
 type: post
 date: 2019-10-07T22:06:10+00:00
-url: /replay-in-slowly/
+aliases: ["/replay-in-slowly/"]
 wm_record_added:
   - added
 categories:

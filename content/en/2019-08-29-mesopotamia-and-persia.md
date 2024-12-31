@@ -1,9 +1,9 @@
----
+﻿---
 title: 'MESOPOTAMIA  AND PERSIA'
 author: Qiran
 type: post
 date: 2019-08-29T05:27:52+00:00
-url: /mesopotamia-and-persia/
+aliases: ["/mesopotamia-and-persia/"]
 categories:
   - Art through the Ages
 

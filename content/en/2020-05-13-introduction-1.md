@@ -1,9 +1,9 @@
----
+﻿---
 title: Introduction 1
 author: Qiran
 type: post
 date: 2020-05-13T01:52:25+00:00
-url: /introduction-1/
+aliases: ["/introduction-1/"]
 categories:
   - The Literary Mind and the Carving of Dragons
 

@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 7 Practice
 author: Qiran
 type: post
 date: 2023-05-15T17:39:00+00:00
-url: /ep-7-practice/
+aliases: ["/ep-7-practice/"]
 xyz_twap:
   - 1
 categories:

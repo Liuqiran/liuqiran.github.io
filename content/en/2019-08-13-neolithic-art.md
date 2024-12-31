@@ -1,9 +1,9 @@
----
+﻿---
 title: Neolithic Art
 author: Qiran
 type: post
 date: 2019-08-13T15:55:13+00:00
-url: /neolithic-art/
+aliases: ["/neolithic-art/"]
 categories:
   - Art through the Ages
 

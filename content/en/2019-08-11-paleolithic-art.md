@@ -1,9 +1,9 @@
----
+﻿---
 title: Paleolithic Art
 author: Qiran
 type: post
 date: 2019-08-11T11:17:14+00:00
-url: /paleolithic-art/
+aliases: ["/paleolithic-art/"]
 categories:
   - Art through the Ages
 

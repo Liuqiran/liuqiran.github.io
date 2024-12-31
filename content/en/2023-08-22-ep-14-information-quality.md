@@ -1,9 +1,9 @@
----
+﻿---
 title: EP 14 Information quality
 author: Qiran
 type: post
 date: 2023-08-22T15:52:36+00:00
-url: /ep-14-information-quality/
+aliases: ["/ep-14-information-quality/"]
 autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:

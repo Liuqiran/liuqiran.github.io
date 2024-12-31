@@ -1,11 +1,11 @@
----
+﻿---
 title: Elon Musk and Jack Ma
 author: Qiran
 type: post
 date: 2019-10-10T12:50:08+00:00
 draft: true
 private: true
-url: /elon-musk-and-jack-ma/
+aliases: ["/elon-musk-and-jack-ma/"]
 categories:
   - English
   - Philosophy

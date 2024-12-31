@@ -1,9 +1,9 @@
----
+﻿---
 title: 'CHAPTER I: AN UNEXPECTED PARTY'
 author: Qiran
 type: post
 date: 2020-03-07T10:33:09+00:00
-url: /chapter-i-an-unexpected-party/
+aliases: ["/chapter-i-an-unexpected-party/"]
 categories:
   - Hobbit
 

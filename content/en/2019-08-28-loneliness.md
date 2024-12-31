@@ -1,9 +1,9 @@
----
+﻿---
 title: Loneliness
 author: Qiran
 type: post
 date: 2019-08-28T04:19:44+00:00
-url: /loneliness/
+aliases: ["/loneliness/"]
 categories:
   - Becoming Human
 

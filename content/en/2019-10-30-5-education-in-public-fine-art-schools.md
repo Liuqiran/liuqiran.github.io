@@ -3,7 +3,7 @@ title: '5: Education in Public Fine Art Schools'
 author: Qiran
 type: post
 date: 2019-10-30T11:19:54+00:00
-url: /5-education-in-public-fine-art-schools/
+aliases: ["/5-education-in-public-fine-art-schools/"]
 boomdevs_metabox:
   - 's:41:"a:1:{s:19:"disable_auto_insert";s:1:"0";}";'
 categories:
@@ -44,3 +44,4 @@ categories:
 ![](/uploads/2019/10/Screenshot_20191029_210304.png) </figure>
 
 1929年秋，学校改名为国立杭州艺术专科学校
+
