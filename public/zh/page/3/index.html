@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.140.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title></title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/zh/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d72444526d7ecbdb0015438a7fa89054a658bf759d0542e2e5df81ce94b493ee.css" integrity="sha256-1yREUm1&#43;y9sAFUOKf6iQVKZYv3WdBULi5d&#43;BzpS0k&#43;4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/zh/index.xml">
+<link rel="alternate" type="application/json" href="//localhost:1313/zh/index.json">
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/zh/feed.xml">
+<link rel="alternate" hreflang="en" href="//localhost:1313/en/">
+<link rel="alternate" hreflang="zh" href="//localhost:1313/zh/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="//localhost:1313/en/" title="English"
+                            aria-label="English">En</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/zh/" title="主页">
+                    <span class="active">主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/zh/about-me/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/zh/reading-list-2/" title="阅读书目">
+                    <span>阅读书目</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/zh/my-friends/" title="友人">
+                    <span>友人</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/zh/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/zh/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">十：明人的真性情
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>“真性情”是明代的主線。背後的思想基礎還是以儒家為主，佛學的狂禪與道教的觀點到了儒家之中。
+民間的趣向猶其的重要。
+與六朝和唐的真不一樣。
+先秦-漢 漢-宋 宋以後 分為三個階段
+明末有一大批儒生，是近代以來傳統文化的中介。在國家滅亡的狀態之下有更為自覺的文化意識，體現強烈的亡天下的觀念，這樣一種體會使得宋末和明末的文人……，這樣一個過程開始反思這些問題。
+元明以降近古思想的主線：心性之學
+文人的科舉還在。明代把考試作風往前一步，思想的正確正統性。
+意識形態的向心力（xian zhi)，在這樣一種情況出現一種革新。
+放在了內心的修煉上，是儒家養氣的延續，也是禪宗的內修。 牛毛繭絲，無不辨晰，未必是對的。
+黃宗義：明代以來都延續理學，但王陽明至良知是一個大突破。
+在王陽明的基礎上，人人可成聖。似乎就是一種宗教。
+陽明學：致良知與知行合一
+忽悟格物致知之旨…… ：不要從外面求，讀史什麽都沒有意義了。為什麽人和人不一樣了呢？可能人的成色、斤兩不一樣。一開始延續理學，開始格物。他只是為自己求理學上的一個解脫。莫名其妙就悟了。不去刻意的打坐了，用自然的觀念。有點像蘇軾否定的氛圍。 良知本來就在這里，而王陽明是些演繹。感受的本體就是良知，不斷的用，发散。 知之真切篤實處即是行…… ：知和行是同時发生的，行動在不斷的覺察中，沒有那種超越性的智慧。而王陽明這里是實踐性的智慧，你能選擇。 王陽明事實在達到孔子的道德的高度。可能他是個體的差異，心學到底是不是可以傳授的哲學。
+近代有陽明學的擁簇。 我要和外物溝通是把心賦予外物。
+夫以知識為知，則輕浮而不實…… ：這些東西是不會變的，人的心靈結構是不會變的。“故必以力行為功夫”不斷由內到外的實踐，知行一定要有本心。有人這是佛教的說法。黃認為佛是沒有天地萬物之理的，你守住你的心就行了，但儒家還要把亁坤整飭起來。
+王陽明認為不僅僅像佛教那樣，還要推出天理來。
+明代只要抓住陽明學就可以了
+“師心”與“師造化” ：繪畫美學的變通意識
+王履《華山圖序》：但知法在華山，意不知…… ：不在哪一家的畫法，（這時家法就出來了），他沒有家法性的東西，人人皆為堯舜，我也可以。
+“從其在我乎？”，我就不會有這種法統，要根隨你的本心，該學就學不該學就不學，山有各種形態，畫它的方式也要有各種方法，跟據時事有新的畫法。
+不斷的進入神秘體驗當中。他不是刻意的背叛，這並不是刻意學前人而來的。
+吾師心，心師目…… :哪一家都沒學，學我家實實在在的東西。
+董其昌：文人畫的品位奠基
+讀萬卷書，行萬里路，胸中脫去塵濁…… ：就是要不斷去實踐，不斷在肉體生活中增廣見聞，自然在心中形成丘壑。明人其實還重視丘壑，但多在筆墨上體現。
+士人作畫，當以…… ：這里完全是職業的士人，相對於院體畫就有獨特的趣味，好似懂好似不懂，一看就一目了然的東西就太俗了。
+我們在唐宋中看到了，自然比神更高，在蘇軾朱中可以看到。
+士大夫當窮工極研…… ：最高的境界就是要師造化。
+他還有南北二宗之分。是筆墨上的區別。董其昌對二李的功利上的東西就會被貶。
+文人之畫，自王右…… ：唐詩最高境界，本來是杜甫的規範的境界。
+余謂右丞雲…… ：董都在重覆他的觀點
+畫欲暗…… ：是以筆墨贏丘壑，心學是以個人想象力來營造，是更為重形式，技法。
+明人詩歌美學的趨勢
+李東陽他要擺脫規範性。
+李東陽：……所謂法者…… ：宋人的錯誤觀念過於刻意，唐人不刻意。
+必待法度既定……野可犯…… ：你那台閣體特別好沒什麽意思，你可以野，但是你不要追求俗，明待追求雅俗的區分。
+到明代也在講覆古，覆的是盛唐詩。
+李夢陽:宋人主理，作理語…… ：文必秦漢詩必盛唐，
+有唐宋派，文必唐宋，不覆唐宋算了。
+總之唐代的抒情性更強，宋人主理全是道理，說宋人不要去抒情，教人怎麽寫詩，搞得別人不知道怎麽寫。你要講道理就要有情感。這種句子只體現道理田俗，宋人不行唐人行。
+李夢陽：詩的內在情感普遍性
+今真詩乃在民間…… ：宋人玩過頭了，這個地方更多人認為詩出於民間，它的目的是在反對規範詩學，要抒情達到和的狀態，情感的整合。
+其實這種狀態一直存在，文人水平太高，無法突破，文勝質。但宋人越講越麻煩。
+故人不必同，同於心…… ：作詩的人太多，好的東西反而得不到認可，科舉制使得文人進入規範之中，我們发現明清以來格律詩水平越來越低。
+人斤兩可以不一樣，是好人就行。這和康德像。 寫詩要重視心和情的東西。只是人外在的體驗不一樣，最根本的情是不變的，詩可以觀可以情。之前是氣的層面，在這是心了，是純然出於主觀，沒有外在依據。
+故遇者因乎情…… ：情是取代了氣，被主觀取代。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-05-13 02:21:18 +0000 +0000'>五月 13, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to 十：明人的真性情" href="//localhost:1313/zh/literary-intellectuals-in-ming/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">九：復古與文人趣味
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>南宋
+文人想要回到唐代文人的狀態
+對於正統文人來說，佛教是很激進的。
+在韓愈這里，仁變成外在的博愛，加了新的觀點。 如果不把仁義變成道家的哲學的話語，就無法與道家進行比較。
+學而易明 ：學習好懂得知識就有智慧嗎？韓愈偷換了概念。
+他其實對思想史做了一個改造，是為了與佛老進行鬥爭。
+養其根而俟其實：先修身，達到這個境界，（對自己是非常自信的）
+要去辯別哪些東西是正統的，（但有些經就是後人編的，還是要強行解釋）
+可以把他的美學歸結為：求道，最正統的方式追求的文學。
+不可以不養也 ：美學之道，尋求一個外在的歸範之道。青年總是要長大的，不斷的區分什麽是正什麽是邪。
+水大而物之浮者大小畢浮……處心有道……：把內心做到位了，還可以讓更多的人領悟這個境界，他對於藝術的理解，“文以載道”有人把他的理解為約束，道不是書本上的知識，由道來把文撐起來。
+柳宗元：作文之法與歷史傳承意識
+故吾每為文章…… ：養氣而養心，不斷地在養我的氣，排除錯誤的路徑對我的干擾。把道講通，寫文章的道理。
+他比較開明，不僅講正統，還要讀集部的文學性的東西。
+史記不僅是簡單的歴史的東西。
+目的是把文章寫好就要琢磨根源，學最根本的東西，更不要提佛教的東西了。
+由唐至宋：文人意識的逐漸自覺
+歐陽修只是以前為了當官賺錢，駢體只是為了了解一些知識點，不會有自己的思考。但即便如此主考官賞識我。
+我讀書還是明道理的，但現在用的時候卻用來得罪人。
+寫實文還是不容易的。
+你要考好先把高考作文寫好。
+天聖中，天子下詔…… ：皇帝：但以後不要搞形式主義了。 還是要有一些真正的學養。
+儒家的下滲，到民間，師道的重要性。
+到韓愈這裡就沒有師了，野孤襌。沒有老師管你你就沒有一個文人的樣子。
+……夫世無師矣 ：歐陽修要強調最經典的東西，你要有一個敬意之心。不能把經典的東西變成大眾的。
+用功於道，師法古人
+以為文風可以了，就自我滿足了。
+……聖人之文雖不可及 ：是內在的道理達到了高度，孟子只是說，沒有寫東西。亞歴土多德也沒有寫，為文而文，這樣是不對的，荀子是徹底失勢的時候才寫的。
+他們活著的時候並不是為了寫文章而有這些美的感受，人格到了之後到哪都是美。
+……若道之充焉 ：你要寫好文章，先要求學，提升理解能力，提升道德操守，古人的目光是集中在更高的性質。 歐陽修是當時的領袖人物，影響力也是當時意料之外的東西
+政治理想與園林美學
+芙渠芰荷之的歴…… : 真州東園表現的是年輕人的政績，當政者做得好，文人自覺抱團的文化氛圍。這三個人是有擔當的，體現出公共空間與私人空間的遊刃有余。
+是其中士大夫的抱負。
+金石與收藏：學識、審美與志趣
+歐陽修還從事史學、金石、石碑研究。
+予性專而嗜古。凡世人之所…… ：碑林有一些氛圍很好，這些東西有文人獨特的趣味，其他金玉珍寳沒什麼意思。
+非敢以器為玩也…… ：呂大臨想把古人的心智還原出來，還想為後人著想（給你畫下來）
+趙明誠等人都說明他們那個時代是想體現金石的審美的風尚。
+不期而文
+我們可以在三蘇那裡看到不一樣的方向，以純藝為目標，三蘇的復古內容不一樣，是想回到戰國時期的風格。
+賈誼也是，氣勢很強，比喻、用典，和歐陽修的金石氣不一樣，戰國氣有實用的效果。（最重要的源頭是荘子）
+蘇洵的道是自然之道，而不是歐陽修的君王之道。
+風行水上渙。此亦天下之至文也…… ：變化多端，和劉勰的背後的宇宙秩序類似。在這裡蘇洵是自然的狀態，隨遇而安，把自己變成一個小船，不是主觀，是自然趨勢讓他們成為了“文”，各種各樣的作用。而劉勰是天地間有神秘的秩序。
+這裡要從更高的本體論去尋找。
+蘇軾的自然美學
+物皆有可觀。茍有可觀…… ：要打破原有的眼光，要不斷說不。生了人為之心後就會有區別了。可能西方人的看實物也是一種習慣，看一個東西是習慣，要看一個東西要拋卻成見。
+雨雪之朝，風月之夕…… ：在每一個狀態由韻來決定，物和物之間沒有什麼區別，重要的東西我自己的心靈和造化之間的溝通。
+名山大川等應著最好的趣，但在這裡不是事物本身，眼前的東西不重要，我們能不能用心靈去溝通。
+古之君子，不必仕…… ： 都是無我之境，是由於自然的韻，正是由於把自己擺在這自然中，不要刻意讓自己成為某個人，當物和物之間相通的時候，是自然的來源。一生如何過都無所謂。
+隨物賦形
+非能為之為工…… ：把自己放在那個東西當中，你不得不去做。
+及其與山石曲折…… ：不要去勉強，你本身還在這裡。跟據具體情況。
+畫奔湍巨浪，與…… ：這裡的畫不要凴空，自然而為。
+老夫之書，本無法也，但觀世間萬…… ：萬緣是來自佛，他們都有共同的三教合流的品味，這樣一種把自我給消解，和魏晉不一樣，只要把自己擺在哲學中就可。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-05-08 07:25:40 +0000 +0000'>五月 8, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to 九：復古與文人趣味" href="//localhost:1313/zh/ninth-ancient-style/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">另一種真實
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>“我們的藝術的基本目標是將主觀客觀化，而不是將客觀主觀化。”
+——古斯塔夫‧卡恩
+雷東與莫羅通過主觀的表達引向一種神秘的存在，和中世紀不同，是自我，經驗的東西。
+這是背後隱藏的一種真實。
+普通人可能認為這個山沒什麽意思，但在賽尚眼里可以坐一個月不動，要表達的做為一個存在物存在的事實。
+高更： 心靈的感覺/思考是感覺的奴隸
+有很多的東西用語言聲音不能表現，繪畫可以
+梵高：我的畫作是痛苦的呼喊，盡管鄉村向日葵的這些畫可能象征著感謝。
+他的東西相比高更更趨於存在。
+馬蒂斯:把顏色用得更加純
+康定斯基：源頭可以找到塞尚，我們可以看到塞尚的方法論，很理性。
+英國：康斯泰伯爾，
+透納大約是在1850年左右，啟发歐洲大陸的印象派。模糊的感覺。
+拉斐爾前派：可以歸納到浪漫主義的框架中去。
+羅斯金：我們在畫面中要講一個道理。他有一個樸素的觀念，希望有一種功能。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-05-07 12:35:01 +0000 +0000'>五月 7, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to 另一種真實" href="//localhost:1313/zh/another-true/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">questions about aesthetics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>（1）什麽是“規範詩學”？你認為其對於藝術創作有什麽積極意義？
+是一種文學規範，研究“如何寫”詩歌的問題，是從語言的角度對詩歌的創作提出了一系列形式上的規範。
+詩歌語言不斷的鍛造與錘煉，變得更加爽朗、凝煉。“規範詩學”蘊含的變通之術，為詩人的個性抒展開啟了門戶。同時也是文學理論和文學形式上的頁獻。
+（2）《滄浪詩話》是不是“神韻說”？正反觀點各自的依據是什麽？
+從文中的觀點來看，不是“神韻說”。“第一義之悟”和“透徹之悟”是對同一等級詩歌的不同表述，並非各有格調、神韻之二義；“興趣”與“神韻”不是一個含義，錢鐘書所謂“詩之有神韻者……”的引用，將興趣置換成了神韻；同時“以禪喻詩”的角度來看，別字理解也有誤，實質上是“教外別傳”的“別”，“別趣”實際上是不尚義理惟在興致的趣味。嚴羽的“妙悟”主要是為了把詩的創作與參禪進行類比，並沒有把禪與詩的一切進行類比，王魚洋將“以禪喻詩”變成“字字入禪，這種說法只是王漁洋所倡導的。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-04-28 14:09:08 +0000 +0000'>四月 28, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to questions about aesthetics" href="//localhost:1313/zh/questions-about-aesthetics/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">象山觀水的心法-笔記
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>通過山水這種自然之文，能不能用過這種形色的狀態呈現出來。
+並不是一上來就講形象，宗炳是希望達到一個至人的高度。
+類往往帶有一種抽象的性質，玄牝之靈，即是最大的類。
+它是一個從下往上的山水畫觀。
+中古繪畫的“心法”自覺
+用自己的心去描摹，“詳古人之意，專在顯其所長，而不守於俗變也。”目的是表現，而不是再現，這種道的過程用筆來表現出來。
+真和俗是相對的。這個背景來源於追求脫俗的文化背景。
+六法之精要在氣韻骨法
+謝赫主要在品評古畫……張彥遠等人，都是在是古非今。
+中國的美術歷史，可以算是一個覆古的觀念史。
+氣韻生動是一個總綱，後面都是運用。
+氣韻也是一種心法。
+古之善畫者，都是有文化品味者，不能僅僅留在普通人當中。
+平等的、大眾的藝術是不存在的。
+難解的“氣韻”
+氣韻真的能指導創作嗎?
+鄒一桂區分了鑒賞與創作，他沒有理解張彥遠的意思，氣韻是一種心法。韻是有度，是藝術家的基本法度。
+明清以來的問題是不再追求主體狀態，只是從作品上看，認為心意、筆法、氣韻不能分開看。
+剛柔與筆墨：作為創作心法的“氣韻”
+徐覆觀：氣為剛，韻為柔。
+唐以後筆上論氣，墨上論韻。（和禮樂文化有關），韻，區格，區別。
+以五等包六法”：意象的品格
+“自然者為上品之上，神者為上品之中，妙者為上品之下，精者為中品之上，謹而細者為中品之中。” 自然者為上品之上，即用自己的氣韻打通自然之氣韻。
+脫俗之道：意存筆先
+是創作者主觀的狀態。
+有人認為，宋以前如王羲之皆為武官所作，到宋以後則皆柔媚無骨。
+氣脈通連書畫同
+所以吳道子學筆法於張旭。 書畫用筆同。
+《筆法記》的哲學場景
+《筆法記》是文學作品。開頭對老叟的描述是唐傳奇的方法。是要人產生山水的意象。是一個教育性的文本，用神仙啟發讀者。
+度象取真
+畫者，畫也。重點即在行動上。
+取其華，取其實，取其真。是一種道體之真。
+是一個慢慢硺磨的過程。
+真包括內在的本體的真，如果能把握，就不會到雕琢的狀態。
+是極高的與自然之理相通的狀態。 伐去雜欲，不惑不俗
+山水畫的重點要達到一個不惑的狀態。
+神妙奇巧與筋肉骨氣
+妙與宗炳講的很象，要思考萬事萬物的規律。
+物象之原
+要有內在的哲學觀念，才能把畫畫好。
+通過內在的關聯性來表現物象之原。
+哲學教化的終場
+人本身的教化是最終的目的，為什麽要讚同古松呢？好像是講傳統的物象，實際是一種氣質。 真是內在氣質的真，筆墨都是外在的，真景是自我情懷的培養。
+鑒賞論 居廟堂而樂山水
+居廟堂需要俗，但仍可樂山水。
+修養論 繪畫與心體工夫
+和虛靜不同，是“註精以一之”，磨煉自己的內心。
+宇宙論 格物致知與天人相類
+已經把這些呈現了。
+本體論 活的精神
+山水本身的理論，蘇軾的“常理”是可以通達的東西。
+（一）宗炳“澄懷味象”觀的主要立場是儒家還是道家?
+我認為主要立場是道家，但是受到了儒家的影響。宗炳是崇釋的隱士，但對於儒家是采取了實用主義的態度，通過對形的描摹達到暢神的境界，從儒入道。
+（二）如何理解《筆法記》中的“真”？ 取其華，取其實，取其真。《筆法記》中的真是一種道體之真。 是一種極高的與自然之理相通的狀態。是通過行動，通過一個慢慢琢磨的過程，才能把握的內在本體、氣質。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-04-14 11:07:44 +0000 +0000'>四月 14, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to 象山觀水的心法-笔記" href="//localhost:1313/zh/shan-shui/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">日記十年
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>不知不覺我已經寫了十年日記了，过去的九年，我的九本紙質日記全部集中到了一起，雖然翻閱起來很方便，但是不易檢索。之后的电子版日記分散到了几個地方，要全部保存到這里還是一項大工程。
+回頋過去的一年，在个人網站上寫日記檢索起來十分方便，並且每一天都能标出大的話題，我將之前的日記慢慢保存到這里，還是很不錯的一件事。有的內容還可以隨時同歩公開到部落格。
+當我再次打開以前的日記時，密密麻麻的繁體到很多字讀不懂的篆體已經讓我感到有些陌生了，但那就是四、五年前的自己留下的東西，突然覺得自己還是可以重新捨起繁體字這個習慣，為自己的生活增加一點樂趣。
+雖然當時最後只流于形式，但自己那個時候還是對古典文化很亲近的，現在我還是可以真正地去感受它的魅力。
+現在用倉頡打簡體字已經比較熟練了，現在我想要打繁體可以隨時打，繁簡通打，倉頡真的太合適了。
+如今在網站上記録只有一年時間而已，我相信這只是開始，希望再接再厲。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-04-03 12:56:16 +0000 +0000'>四月 3, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to 日記十年" href="//localhost:1313/zh/ten-years-of-journaling/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">建站周年纪念日
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 今天是建站一周年纪念日。 我已经不记得2019年的这一天，我为什么会突然心血来潮地折腾一整天，装上服务器，安装好Wordpress搭好网站了。
+可能是我那一段时间一直在关注一些博客，也刚好看到了很多很有意思的个人网站，所以也想建一个网站吧。
+后来自己仔细想想其实这不是最重要的原因，建站对我充满吸引力的原因，应该是在内心深处想找回自己的某些记忆：
+在2006年2月，当时新浪博客还是很火爆的时候，我刚学会上网，对网上的一切都很好奇，包括浏览器图标和那些绚丽的网页。我在新浪开通了邮箱和博客，这是我第一次有了自己的邮箱和博客，也是自己第一次在互联网上留下自己的足迹。
+在博客开通的时候，我非常兴奋，迫不及待地给自己取名字、加装扮、选背景、开通各种各样新的功能，把自己的“大作”发表。
+开通好博客之后，发现博客边栏里有一个访客统计，毎当博客的访问数加一的时候，自己就激动一下，有人来看我的博客了！发现每次自己刷新一下页面的时候，那个访问数就会多一个，当时不懂为什么，所以自己疯狂刷新自己的博客。到访问数到100的时候，我还特地画了一张“大作”庆祝一下。
+我也把自己的博客到处宣传，亲戚、老师、同学都来访问自己博客。老弟老哥也来凑热闹，学着开通。我的博客也被当时有名气的漫画家知道了，他也来留了言。那时真的很开心。
+随着自己用电脑和画画的机会变少，就沒有时间管自己的博客了。后来，自己接触到了QQ、微博还有各种游戏，就更没有时间看博客了。慢慢地，自己的博客也就随着博客时代的谢幕逐渐尘封。
+自己也长大了。
+去年在部落格建好的那天，因为有了一个在互联网完全属于自己的空间，我非常的兴奋，彻夜睡不着觉，似乎又回到了童年。我迫不及待地折腾主题和面板、加插件，研究各种功能，把自己之前写的文章发表。
+自己也到其他站长那里留言，有一些人开始回访了，YIR是我的第一个访客。
+虽然后来没有人来留言了，但我还是会凭着这股新鲜感再折腾一会儿。
+慢慢地我发现，如果没有人关注的话，自己失去了写博文的动力。
+互联网早已不是当年的那个让我充满好奇的东西，没有了亲朋好友和当时的成就感，取而待之的是只会在线上出现的站长和很难有真情实感的回访留言。
+我也已经不是当年那个刷新页面的孩子了。
+其实到这个时候，这个网站已经没有存在的必要了。
+只是写给自己的话，不需要公开。
+不知道怎么处理这个网站，10月份的时候我想着关站、把自己的站点设为私密，最后删除了事。可是想到自己已经加入十年之约，自己是否真的要毁约呢？最后，还是决定没有关站，只是将自己的大部分公开博文转移。
+如果没有十年之约，可能这个网站早己关闭了吧。可能还是想证明点什么—-我想要坚持做一些事，最好以年来计算，也许是我比较恋旧吧。我会将自己以前的资料慢慢搬运，做一个线上的记忆库。这里也会是我展示公开的笔记作品的地方。
+也许哪天意外，这个网站关闭，我也可能不能再屡约，那一天这个网站将再带着这些记忆慢慢尘封。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-02-09 15:15:41 +0000 +0000'>二月 9, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to 建站周年纪念日" href="//localhost:1313/zh/one-year-blogging-anniversary/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">冷静
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 可能我对这次的疫情过于恐慌了。 这几天出门，街上基本没有什么人，遇见的人也是戴上口罩把自己捂严实的。自己去过的最热闹的地方应该就是超市了。户外只能用一个词来形容—-冷清，大概其他地方都是这个情况。我会离别人很远，生怕遇上瘟神被感染。
+网上流言四起，遣责不戴口罩的长辈。很多人不相信官方的确诊数和死亡率，各种数字都有，人心惶惶。
+中国历史上经历了多次瘟疫。随着社会的进步，人类虽然已经克服了鼠疫、天花等恐怖的传染病，依然有着对“瘟疫流行，十室九空”、疾病、死亡的恐惧。年轻人没有经历过传染病的流行，或着对上次的SARS只有着模糊的印象，那么恐惧和心理冲击会更大一些。
+可是仔细想想，这是否真的会是一次像黑死病一样的灾难，可能并不是：
+上一次给人类造成重大灾难的传染病并不是SARS，而是1918年的流感大流行，仅一种流感就造成了几千万人的死亡，平均死亡率在2.5%-5%，同时对年轻人的危害更大。相比之下，SARS有15%的死亡率，只有几千人受到感染。这次的肺炎虽然传染性很强，但目前的情况来看严重程度不如SARS，对免疫力强的人危害并不大。
+这一次病毒的传染，是不是已经到了可以空气传播、病毒遍布空气不散的地步？如果潜伏期也有传染性，那么它是如何传染的，只通过呼吸就可以吗？如果病人生病，那么它摸过的东西就全是病毒？这些问题还没有明确的答案，如果硬要往坏的地方想的话，那么只能让人们增加恐慌而己。硬要往坏的方面想，可能口罩都不保险，戴上口罩都不能完全阻隔病毒。
+如果自己真的感染上了，也只能靠免疫力扛过去。相比得肺炎死，心血管疾病、癌症更可能是我最终的死法：）
+这次疫情造成的最大的危害可能不在于疾病本身，而是人人自危，环境雪上加霜。还有恐慌引起的各种人为事件（已经发生了），希望都能早点冷静下来。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-01-28 05:58:11 +0000 +0000'>一月 28, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to 冷静" href="//localhost:1313/zh/calm-down-2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">第八讲 博物馆与传统艺术
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>艺术如何成为艺术？
+我们如何认识艺术？谁让它成为艺术的？
+奇马布埃的画之前不是艺术。
+杜尚是离经叛道的人。
+罗马城本身就是博物馆。
+系统的收藏开始了，温克尔曼的《古代艺术史》
+近代博物馆大发展，让你开始思考。
+启蒙运动就这样开始了
+中国对艺术的认知比较少。
+人类的文明载体被放到了一起。
+重新的角度切入博物馆 作业
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-01-06 11:04:42 +0000 +0000'>一月 6, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to 第八讲 博物馆与传统艺术" href="//localhost:1313/zh/%E7%AC%AC%E5%85%AB%E8%AE%B2-%E5%8D%9A%E7%89%A9%E9%A6%86%E4%B8%8E%E4%BC%A0%E7%BB%9F%E8%89%BA%E6%9C%AF/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">第九讲 博物馆与当代艺术
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一、博物馆对当代艺术史的“促生”
+当代艺术史的缔造看起来像一场庞大而精细的谋略。
+博物馆策划构成了缔造艺术史的重要手段，它不仅提供欣赏的空间，还提供趣味导向与审美共识。
+二、博物馆展览策划的艺术批评
+在传统思维保守的旧博物馆时代，展览并无过多策划，展品之间保持沉默与人入胜的因果关系，更像一个公开的库房。
+策划是随着博物馆的近代化进程而逐渐加强与深化的。
+问题是：策划的原则是什么？它是如何影响人的？
+具体与博物馆相配套的管制手法，就是关于艺术史的缔造及展示。
+福柯认为社会能量只会通过两个途径加诸于人，即权力与知识。前者如监狱后者如博物馆，后者不会运用暴力等强制手
+那么，这种带有主观干预的认知过程符合博物馆教育所应当具有的自由精神和民主态度吗？
+同理，一件客观而恒常存在的艺术品，会被主观的
+博物馆展览触及了艺术史的编撰问题，策展者或收藏家的个人，愿望往往成为左右艺术发展的因素，甚至构成了艺术史发展本身。
+在展览策划中，策划者必然有自已的观念，而且会将自己的意见尽可能地灌输给观众，这是一种知识发布原理。
+三、博物馆与当代艺术展览
+博物馆进入现代发展以后首先遇到的一个挑战就是对传统的策展理念与方式的质疑与矫正。
+“非历史”展览强调各种完全不同质的展品——例如，罗丹的雕塑，博伊斯的现成品
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-01-06 11:03:39 +0000 +0000'>一月 6, 2020</span>&nbsp;·&nbsp;Qiran</footer>
+  <a class="entry-link" aria-label="post link to 第九讲 博物馆与当代艺术" href="//localhost:1313/zh/%E7%AC%AC%E4%B9%9D%E8%AE%B2-%E5%8D%9A%E7%89%A9%E9%A6%86%E4%B8%8E%E5%BD%93%E4%BB%A3%E8%89%BA%E6%9C%AF/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="//localhost:1313/zh/page/2/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="//localhost:1313/zh/page/4/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="//localhost:1313/zh/"></a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

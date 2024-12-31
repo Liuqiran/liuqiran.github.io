@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>孤独 on</title><link>/zh/categories/%E5%AD%A4%E7%8B%AC/</link><description>Recent content in 孤独 on</description><generator>Hugo -- 0.140.1</generator><language>zh-CN</language><lastBuildDate>Mon, 13 Jun 2016 11:50:01 +0000</lastBuildDate><atom:link href="/zh/categories/%E5%AD%A4%E7%8B%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>2016-6-13</title><link>/zh/2016-6-13/</link><pubDate>Mon, 13 Jun 2016 11:50:01 +0000</pubDate><guid>/zh/2016-6-13/</guid><description>&lt;p>rouse:昔日的篇章已经结束，还如梦初醒。在这里面对的是虚幻的一切，在这里所有的人都素不相识，感到十分的孤独，夜空黑暗将一切吞噬，为什么还望着颗遥不可及的孤星？谁来做这里的长明灯火？&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>孤独 on </title>
+    <link>//localhost:1313/zh/categories/%E5%AD%A4%E7%8B%AC/</link>
+    <description>Recent content in 孤独 on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 13 Jun 2016 11:50:01 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/zh/categories/%E5%AD%A4%E7%8B%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2016-6-13</title>
+      <link>//localhost:1313/zh/2016-6-13/</link>
+      <pubDate>Mon, 13 Jun 2016 11:50:01 +0000</pubDate>
+      <guid>//localhost:1313/zh/2016-6-13/</guid>
+      <description>&lt;p&gt;rouse:昔日的篇章已经结束，还如梦初醒。在这里面对的是虚幻的一切，在这里所有的人都素不相识，感到十分的孤独，夜空黑暗将一切吞噬，为什么还望着颗遥不可及的孤星？谁来做这里的长明灯火？&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

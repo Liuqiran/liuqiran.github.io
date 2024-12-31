@@ -1,3 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Freedom on</title><link>/en/categories/freedom/</link><description>Recent content in Freedom on</description><generator>Hugo -- 0.140.1</generator><language>en</language><lastBuildDate>Sat, 21 Sep 2019 12:22:01 +0000</lastBuildDate><atom:link href="/en/categories/freedom/index.xml" rel="self" type="application/rss+xml"/><item><title>Free is tough</title><link>/free-is-tough/</link><pubDate>Sat, 21 Sep 2019 12:22:01 +0000</pubDate><guid>/free-is-tough/</guid><description>&lt;p>Today I browsed many articles about free software, especially &lt;a href="https://tech.sina.cn/it/2014-05-27/detail-iavxeafs2072085.d.html?from=wap">this article&lt;/a>, Stallman is sort of extreme, why I always care about extremely security and privacy too?&lt;/p>
-&lt;p>I’m not an extreme person in any topic, I need to have my life and my own goal, but because of my personality, I stick to some thinking that makes me different from others, in the end, it doesn’t make me very happy.&lt;/p>
-&lt;p>My dreams(like become a native speaker or improve my skill and knowledge reserve very fast) are building in the air, not in the reality, why I cannot enjoy the road?&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Freedom on </title>
+    <link>//localhost:1313/en/categories/freedom/</link>
+    <description>Recent content in Freedom on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 Sep 2019 12:22:01 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/freedom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Free is tough</title>
+      <link>//localhost:1313/free-is-tough/</link>
+      <pubDate>Sat, 21 Sep 2019 12:22:01 +0000</pubDate>
+      <guid>//localhost:1313/free-is-tough/</guid>
+      <description>&lt;p&gt;Today I browsed many articles about free software, especially &lt;a href=&#34;https://tech.sina.cn/it/2014-05-27/detail-iavxeafs2072085.d.html?from=wap&#34;&gt;this article&lt;/a&gt;, Stallman is sort of extreme, why I always care about extremely security and privacy too?&lt;/p&gt;
+&lt;p&gt;I’m not an extreme person in any topic, I need to have my life and my own goal, but because of my personality, I stick to some thinking that makes me different from others, in the end, it doesn’t make me very happy.&lt;/p&gt;
+&lt;p&gt;My dreams(like become a native speaker or improve my skill and knowledge reserve very fast) are building in the air, not in the reality, why I cannot enjoy the road?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

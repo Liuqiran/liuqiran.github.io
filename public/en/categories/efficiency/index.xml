@@ -1,23 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Efficiency on</title><link>/en/categories/efficiency/</link><description>Recent content in Efficiency on</description><generator>Hugo -- 0.140.1</generator><language>en</language><lastBuildDate>Mon, 24 Apr 2023 14:03:12 +0000</lastBuildDate><atom:link href="/en/categories/efficiency/index.xml" rel="self" type="application/rss+xml"/><item><title>Automated system</title><link>/automated-system/</link><pubDate>Mon, 24 Apr 2023 14:03:12 +0000</pubDate><guid>/automated-system/</guid><description>&lt;p>Creating an effective and automated system is very important.&lt;br>
-I always look at the tools. But any tools should be built on a good system. Tools are medium. I must know how to use these tools.&lt;br>
-With an effective and stable system, you don’t even need a tool with high technology.&lt;/p></description></item><item><title>Notes: The Now Habit (1)</title><link>/notes-the-now-habit-1/</link><pubDate>Tue, 26 Mar 2019 07:44:15 +0000</pubDate><guid>/notes-the-now-habit-1/</guid><description>&lt;p style="text-align: right;">
-Goal: supportive of yourself
-&lt;/p>
-&lt;p>The questions about yourself:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Obligation.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Time (vague terms such as “sometime next week” )&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Goals and value. (distracted by another plan)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Mood, fear.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>Conclusion: Our real distress comes from constant anxiety of delaying.&lt;/p>
-&lt;p>It is important to notice the healing system. But Why we procrastinate? Because we fear a threat to our independence.&lt;/p>
-&lt;p>The fear of judgment is the key fear that stems from over-identifying who you are.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Efficiency on </title>
+    <link>//localhost:1313/en/categories/efficiency/</link>
+    <description>Recent content in Efficiency on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 24 Apr 2023 14:03:12 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/efficiency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automated system</title>
+      <link>//localhost:1313/automated-system/</link>
+      <pubDate>Mon, 24 Apr 2023 14:03:12 +0000</pubDate>
+      <guid>//localhost:1313/automated-system/</guid>
+      <description>&lt;p&gt;Creating an effective and automated system is very important.&lt;br&gt;
+I always look at the tools. But any tools should be built on a good system. Tools are medium. I must know how to use these tools.&lt;br&gt;
+With an effective and stable system, you don’t even need a tool with high technology.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes: The Now Habit (1)</title>
+      <link>//localhost:1313/notes-the-now-habit-1/</link>
+      <pubDate>Tue, 26 Mar 2019 07:44:15 +0000</pubDate>
+      <guid>//localhost:1313/notes-the-now-habit-1/</guid>
+      <description>&lt;p style=&#34;text-align: right;&#34;&gt;
+  Goal: supportive of yourself
+&lt;/p&gt;
+&lt;p&gt;The questions about yourself:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Obligation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Time (vague terms such as “sometime next week” )&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Goals and value. (distracted by another plan)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mood, fear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Conclusion: Our real distress comes from constant anxiety of delaying.&lt;/p&gt;
+&lt;p&gt;It is important to notice the healing system. But Why we procrastinate? Because we fear a threat to our independence.&lt;/p&gt;
+&lt;p&gt;The fear of judgment is the key fear that stems from over-identifying who you are.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
