@@ -19,10 +19,18 @@
         <p><strong>New RSS feed address for English content:</strong> <a href="https://liuqiran.com/en/index.xml">https://liuqiran.com/en/index.xml</a></p>
         <p><strong>New RSS feed address for Chinese content:</strong> <a href="https://liuqiran.com/zh/index.xml">https://liuqiran.com/zh/index.xml</a></p>
         <p>Please update your RSS reader to ensure you continue receiving the latest updates.</p>
-        <p>Thank you for your support!</p>
+        <p>Thank you for your support!</p>  
+                <p>亲爱的订阅者：</p>
+        <p>我的个人网站 RSS 订阅地址已经更新。请使用以下新地址继续订阅：</p>
+        <p><strong>中文内容的新 RSS 订阅地址：</strong> <a href="https://liuqiran.com/zh/index.xml">https://liuqiran.com/zh/index.xml</a></p>
+        <p><strong>英文内容的新 RSS 订阅地址：</strong> <a href="https://liuqiran.com/en/index.xml">https://liuqiran.com/en/index.xml</a></p>
+        <p>请更新您的 RSS 阅读器以确保继续接收最新更新。</p>
+        <p>感谢您的支持！</p>
         <hr>
         ]]>
       </description>
     </item>
   </channel>
-</rss>   
+</rss>      
+
+
