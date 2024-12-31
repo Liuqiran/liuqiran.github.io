@@ -13,7 +13,9 @@ categories:
 ---
 Writing is supposed to be an essential part of life. Organizing one&#8217;s words and works in the form of a blog is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this blog to record myself and share my thoughts, articles and works. ：)
 
-This site has joined the &#8220;ten-year contract&#8221; activities(that is, from joining this activity, our blog will not be closed for ten years, to maintain the update and vitality!)
+This site has joined the [Ten-year Contract activities](https://foreverblog.cn/)
+
+(that is, from joining this activity, our blog will not be closed for ten years, to maintain the update and vitality!)
 
 Hello! My name is LIU, Qiran. I hope to connect to the world and meet more friends. :）
 
