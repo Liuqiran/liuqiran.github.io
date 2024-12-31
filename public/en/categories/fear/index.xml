@@ -1,6 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Fear on</title><link>https://liuqiran.github.io/en/categories/fear/</link><description>Recent content in Fear on</description><generator>Hugo -- 0.140.1</generator><language>en-US</language><lastBuildDate>Tue, 21 Mar 2023 11:34:28 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/en/categories/fear/index.xml" rel="self" type="application/rss+xml"/><item><title>EP 3 Feel the fear</title><link>https://liuqiran.github.io/en/2023-03-21-ep-3-feel-the-fear/</link><pubDate>Tue, 21 Mar 2023 11:34:28 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-03-21-ep-3-feel-the-fear/</guid><description>&lt;p>Hi, I’m Qiran. Today I would like to share with you my understanding of fear.&lt;/p>
-&lt;p>Fear is one of the basic human emotions. We all have fears. As for me, fear is one of my biggest difficulties in life.&lt;/p>
-&lt;p>There are different kinds of fear.&lt;br>
-The first fear of myself is the fear of being disappointed by others. In terms of human relationships, I’m really an infant now. I am afraid of falling.&lt;br>
-I always avoid dealing with others, just like an infant avoids learning to walk. But if I never fall down, I cannot learn to walk forever.&lt;br>
-I knew I had to accept disappointments. Maybe I’m able to collect them in order to develop my abilities. I don’t have to take them personally. Disappointments are actually assets.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fear on </title>
+    <link>//localhost:1313/en/categories/fear/</link>
+    <description>Recent content in Fear on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 21 Mar 2023 11:34:28 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/fear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EP 3 Feel the fear</title>
+      <link>//localhost:1313/en/2023-03-21-ep-3-feel-the-fear/</link>
+      <pubDate>Tue, 21 Mar 2023 11:34:28 +0000</pubDate>
+      <guid>//localhost:1313/en/2023-03-21-ep-3-feel-the-fear/</guid>
+      <description>&lt;p&gt;Hi, I’m Qiran. Today I would like to share with you my understanding of fear.&lt;/p&gt;
+&lt;p&gt;Fear is one of the basic human emotions. We all have fears. As for me, fear is one of my biggest difficulties in life.&lt;/p&gt;
+&lt;p&gt;There are different kinds of fear.&lt;br&gt;
+The first fear of myself is the fear of being disappointed by others. In terms of human relationships, I’m really an infant now. I am afraid of falling.&lt;br&gt;
+I always avoid dealing with others, just like an infant avoids learning to walk. But if I never fall down, I cannot learn to walk forever.&lt;br&gt;
+I knew I had to accept disappointments. Maybe I’m able to collect them in order to develop my abilities. I don’t have to take them personally. Disappointments are actually assets.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

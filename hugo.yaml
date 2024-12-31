@@ -1,6 +1,6 @@
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: true  
-baseURL: "https://liuqiran.github.io/"  
+baseURL: "/"  
 theme: "PaperMod"  
 relativeURLs: true
 
@@ -14,7 +14,7 @@ languages:
       category: categories
       tag: tags
     permalinks:
-      posts: /en/:title/
+      en: /en/:title/
     menu:
       main:
         - identifier: home

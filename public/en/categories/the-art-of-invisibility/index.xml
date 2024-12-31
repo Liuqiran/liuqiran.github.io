@@ -1,10 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The Art of Invisibility on</title><link>https://liuqiran.github.io/en/categories/the-art-of-invisibility/</link><description>Recent content in The Art of Invisibility on</description><generator>Hugo -- 0.140.1</generator><language>en-US</language><lastBuildDate>Fri, 29 Nov 2019 11:55:35 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/en/categories/the-art-of-invisibility/index.xml" rel="self" type="application/rss+xml"/><item><title>Your Password Can Be Cracked!</title><link>https://liuqiran.github.io/en/2019-11-29-your-password-can-be-cracked/</link><pubDate>Fri, 29 Nov 2019 11:55:35 +0000</pubDate><guid>https://liuqiran.github.io/en/2019-11-29-your-password-can-be-cracked/</guid><description>&lt;p>Open the 2FA when it is possible, set a strong password (at least 25 digits).&lt;/p></description></item><item><title>Introduction: Time to Disappear</title><link>https://liuqiran.github.io/en/2019-11-27-introduction-time-to-disappear/</link><pubDate>Wed, 27 Nov 2019 12:43:10 +0000</pubDate><guid>https://liuqiran.github.io/en/2019-11-27-introduction-time-to-disappear/</guid><description>&lt;p>We live in a world of low-privacy, and we also had an illusion about privacy, so many people said it’s not important to hide my privacy, so many people don’t care. but it’s a choice for yourself as for privacy, if you don’t care, your privacy may be going around the internet, maybe forever.&lt;/p>
-&lt;p>This book will help you to learn how to:&lt;/p>
-&lt;ol>
-&lt;li>encrypt and send a secure e-mail&lt;/li>
-&lt;li>protect your data with good password management&lt;/li>
-&lt;li>hide your true IP address from places you visit&lt;/li>
-&lt;li>obscure your computer from being tracked&lt;/li>
-&lt;li>defend your anonymity&lt;/li>
-&lt;li>and much more&lt;/li>
-&lt;/ol></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>The Art of Invisibility on </title>
+    <link>//localhost:1313/en/categories/the-art-of-invisibility/</link>
+    <description>Recent content in The Art of Invisibility on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 29 Nov 2019 11:55:35 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/the-art-of-invisibility/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Your Password Can Be Cracked!</title>
+      <link>//localhost:1313/en/2019-11-29-your-password-can-be-cracked/</link>
+      <pubDate>Fri, 29 Nov 2019 11:55:35 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-11-29-your-password-can-be-cracked/</guid>
+      <description>&lt;p&gt;Open the 2FA when it is possible, set a strong password (at least 25 digits).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction: Time to Disappear</title>
+      <link>//localhost:1313/en/2019-11-27-introduction-time-to-disappear/</link>
+      <pubDate>Wed, 27 Nov 2019 12:43:10 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-11-27-introduction-time-to-disappear/</guid>
+      <description>&lt;p&gt;We live in a world of low-privacy, and we also had an illusion about privacy, so many people said it’s not important to hide my privacy, so many people don’t care. but it’s a choice for yourself as for privacy, if you don’t care, your privacy may be going around the internet, maybe forever.&lt;/p&gt;
+&lt;p&gt;This book will help you to learn how to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;encrypt and send a secure e-mail&lt;/li&gt;
+&lt;li&gt;protect your data with good password management&lt;/li&gt;
+&lt;li&gt;hide your true IP address from places you visit&lt;/li&gt;
+&lt;li&gt;obscure your computer from being tracked&lt;/li&gt;
+&lt;li&gt;defend your anonymity&lt;/li&gt;
+&lt;li&gt;and much more&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>
