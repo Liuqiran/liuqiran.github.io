@@ -7,7 +7,6 @@ aliases: ["/rss/"]
 categories:
   - Building Site
 ---
-[English Site ](/index.xml) 
+[English Site ](/en/index.xml)
 
 [Chinese Site](/zh/index.xml)
-

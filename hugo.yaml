@@ -1,6 +1,6 @@
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: true  
-baseURL: "https://liuqiran.com/"  
+baseURL: "/"  
 theme: "PaperMod"  
 relativeURLs: true
 

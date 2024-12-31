@@ -9,6 +9,6 @@ categories:
 ---
 [中文站](/zh/index.xml)
 
-[英文站](/index.xml)
+[英文站](/en/index.xml)
 
 （可能无法两个站点都照顾到，建议全部订阅）
