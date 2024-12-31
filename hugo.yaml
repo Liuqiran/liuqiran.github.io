@@ -20,23 +20,23 @@ languages:
           weight: 1
         - identifier: about
           name: About
-          url: /about-me-2/
+          url: en/about-me-2/
           weight: 10
         - identifier: Reading list
           name: Reading list
-          url: /reading-list/
+          url: en/reading-list/
           weight: 30
         - identifier: friends
           name: Friends
-          url: /my-friends/
+          url: en/my-friends/
           weight: 40
         - identifier: categories
           name: Categories
-          url: /categories/
+          url: en/categories/
           weight: 50
         - identifier: search
           name: Search
-          url: /search/
+          url: en/search/
           weight: 60
     params:
       alternatelang: 'zh'
@@ -49,7 +49,7 @@ languages:
         imageHeight: 150
         buttons:
           - name: about
-            url: /about-me-2/
+            url: /en/about-me-2/
       socialIcons:
         - name: rss
           url: '/rss'     
