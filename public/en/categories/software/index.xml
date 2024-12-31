@@ -1,28 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Software on </title>
-    <link>//localhost:1313/en/categories/software/</link>
-    <description>Recent content in Software on </description>
-    <generator>Hugo -- 0.140.1</generator>
-    <language>en-US</language>
-    <lastBuildDate>Tue, 08 Aug 2023 13:44:33 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/software/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>EP 13 Anki and offline</title>
-      <link>//localhost:1313/en/2023-08-08-ep-13-anki-and-offline/</link>
-      <pubDate>Tue, 08 Aug 2023 13:44:33 +0000</pubDate>
-      <guid>//localhost:1313/en/2023-08-08-ep-13-anki-and-offline/</guid>
-      <description>&lt;p&gt;I had been using Anki as my reviewing tool from 2017.&lt;br&gt;
-Anki is a very powerful and effective tool, it’s also one of the best tools for learning a language. There is also no alternative of Anki as a tool for creating your own database.&lt;/p&gt;
-&lt;p&gt;But I gradually felt its disadvantages. It’s a software. I always need to use it on computer or on smartphone. To form a habit, I need to open it everyday.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Loop Habits Tracker</title>
-      <link>//localhost:1313/en/2023-05-09-loop-habits-tracker/</link>
-      <pubDate>Tue, 09 May 2023 15:09:09 +0000</pubDate>
-      <guid>//localhost:1313/en/2023-05-09-loop-habits-tracker/</guid>
-      <description>&lt;p&gt;Maybe I can use plain text instead of software to track my habits.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Software on</title><link>/en/categories/software/</link><description>Recent content in Software on</description><generator>Hugo -- 0.140.1</generator><language>en-US</language><lastBuildDate>Tue, 08 Aug 2023 13:44:33 +0000</lastBuildDate><atom:link href="/en/categories/software/index.xml" rel="self" type="application/rss+xml"/><item><title>EP 13 Anki and offline</title><link>/en/2023-08-08-ep-13-anki-and-offline/</link><pubDate>Tue, 08 Aug 2023 13:44:33 +0000</pubDate><guid>/en/2023-08-08-ep-13-anki-and-offline/</guid><description>&lt;p>I had been using Anki as my reviewing tool from 2017.&lt;br>
+Anki is a very powerful and effective tool, it’s also one of the best tools for learning a language. There is also no alternative of Anki as a tool for creating your own database.&lt;/p>
+&lt;p>But I gradually felt its disadvantages. It’s a software. I always need to use it on computer or on smartphone. To form a habit, I need to open it everyday.&lt;/p></description></item><item><title>Loop Habits Tracker</title><link>/en/2023-05-09-loop-habits-tracker/</link><pubDate>Tue, 09 May 2023 15:09:09 +0000</pubDate><guid>/en/2023-05-09-loop-habits-tracker/</guid><description>&lt;p>Maybe I can use plain text instead of software to track my habits.&lt;/p></description></item></channel></rss>

@@ -1,63 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Loneliness on </title>
-    <link>//localhost:1313/en/categories/loneliness/</link>
-    <description>Recent content in Loneliness on </description>
-    <generator>Hugo -- 0.140.1</generator>
-    <language>en-US</language>
-    <lastBuildDate>Thu, 09 Apr 2020 04:19:59 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/loneliness/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Connection</title>
-      <link>//localhost:1313/en/2020-04-09-connection/</link>
-      <pubDate>Thu, 09 Apr 2020 04:19:59 +0000</pubDate>
-      <guid>//localhost:1313/en/2020-04-09-connection/</guid>
-      <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio&#34;&gt;
-&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
-&lt;/div&gt;&lt;/figure&gt;
-&lt;blockquote class=&#34;wp-block-quote is-layout-flow wp-block-quote-is-layout-flow&#34;&gt;
-  &lt;p&gt;
-    Hold my hand&lt;br /&gt;I&amp;#8217;m real powerless to fight&lt;br /&gt;Can you lead me to the light?&lt;br /&gt;My strenght has come to fear&lt;br /&gt;Fled in truth of dawn&lt;br /&gt;Curious as a day&lt;br /&gt;My heart huh woah oh
-  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote class=&#34;wp-block-quote is-layout-flow wp-block-quote-is-layout-flow&#34;&gt;
-  &lt;p&gt;
-    Can you bring me back to life?&lt;br /&gt;Ignite the fire again?&lt;br /&gt;Can you bring me back home where I am not alone?&lt;br /&gt;I&amp;#8217;m lost inside, the night and I cannot find you&lt;br /&gt;Bring me back
-  &lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Alone</title>
-      <link>//localhost:1313/en/2019-12-25-alone/</link>
-      <pubDate>Wed, 25 Dec 2019 12:28:29 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-12-25-alone/</guid>
-      <description>&lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
-&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
-&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;em&gt;I’m so alone, nothing feels like home.&lt;br&gt;
-I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;&lt;/p&gt;
-&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
-&lt;/div&gt;&lt;/figure&gt;</description>
-    </item>
-    <item>
-      <title>Reply in Slowly</title>
-      <link>//localhost:1313/en/2019-10-08-replay-in-slowly/</link>
-      <pubDate>Mon, 07 Oct 2019 22:06:10 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-10-08-replay-in-slowly/</guid>
-      <description>&lt;p&gt;I also feel lonely last week, but I walked out recently.&lt;br&gt;
-I’m sorry to hear that you didn’t live with your parents 🙁&lt;br&gt;
-I think maybe it’s the reason you still struggling against loneliness.&lt;br&gt;
-In the book ‘Becoming human’, belonging is very important, we need belongings.&lt;br&gt;
-I’m so sorry my language is not very well? but I’m willing to hear your stories, through words, I hope we can build a good friendship ?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Free is tough</title>
-      <link>//localhost:1313/en/2019-09-21-free-is-tough/</link>
-      <pubDate>Sat, 21 Sep 2019 12:22:01 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-09-21-free-is-tough/</guid>
-      <description>&lt;p&gt;Today I browsed many articles about free software, especially &lt;a href=&#34;https://tech.sina.cn/it/2014-05-27/detail-iavxeafs2072085.d.html?from=wap&#34;&gt;this article&lt;/a&gt;, Stallman is sort of extreme, why I always care about extremely security and privacy too?&lt;/p&gt;
-&lt;p&gt;I’m not an extreme person in any topic, I need to have my life and my own goal, but because of my personality, I stick to some thinking that makes me different from others, in the end, it doesn’t make me very happy.&lt;/p&gt;
-&lt;p&gt;My dreams(like become a native speaker or improve my skill and knowledge reserve very fast) are building in the air, not in the reality, why I cannot enjoy the road?&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Loneliness on</title><link>/en/categories/loneliness/</link><description>Recent content in Loneliness on</description><generator>Hugo -- 0.140.1</generator><language>en-US</language><lastBuildDate>Thu, 09 Apr 2020 04:19:59 +0000</lastBuildDate><atom:link href="/en/categories/loneliness/index.xml" rel="self" type="application/rss+xml"/><item><title>Connection</title><link>/en/2020-04-09-connection/</link><pubDate>Thu, 09 Apr 2020 04:19:59 +0000</pubDate><guid>/en/2020-04-09-connection/</guid><description>&lt;figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">
+&lt;div class="wp-block-embed__wrapper">
+&lt;/div>&lt;/figure>
+&lt;blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+&lt;p>
+Hold my hand&lt;br />I&amp;#8217;m real powerless to fight&lt;br />Can you lead me to the light?&lt;br />My strenght has come to fear&lt;br />Fled in truth of dawn&lt;br />Curious as a day&lt;br />My heart huh woah oh
+&lt;/p>
+&lt;/blockquote>
+&lt;blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+&lt;p>
+Can you bring me back to life?&lt;br />Ignite the fire again?&lt;br />Can you bring me back home where I am not alone?&lt;br />I&amp;#8217;m lost inside, the night and I cannot find you&lt;br />Bring me back
+&lt;/p></description></item><item><title>Alone</title><link>/en/2019-12-25-alone/</link><pubDate>Wed, 25 Dec 2019 12:28:29 +0000</pubDate><guid>/en/2019-12-25-alone/</guid><description>&lt;figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+&lt;div class="wp-block-embed__wrapper">
+&lt;/div>&lt;/figure>
+&lt;p>&lt;em>I’m so alone, nothing feels like home.&lt;br>
+I’m so alone, try to find my way back home to you&lt;/em>.&lt;figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">&lt;/p>
+&lt;div class="wp-block-embed__wrapper">
+&lt;/div>&lt;/figure></description></item><item><title>Reply in Slowly</title><link>/en/2019-10-08-replay-in-slowly/</link><pubDate>Mon, 07 Oct 2019 22:06:10 +0000</pubDate><guid>/en/2019-10-08-replay-in-slowly/</guid><description>&lt;p>I also feel lonely last week, but I walked out recently.&lt;br>
+I’m sorry to hear that you didn’t live with your parents 🙁&lt;br>
+I think maybe it’s the reason you still struggling against loneliness.&lt;br>
+In the book ‘Becoming human’, belonging is very important, we need belongings.&lt;br>
+I’m so sorry my language is not very well? but I’m willing to hear your stories, through words, I hope we can build a good friendship ?&lt;/p></description></item><item><title>Free is tough</title><link>/en/2019-09-21-free-is-tough/</link><pubDate>Sat, 21 Sep 2019 12:22:01 +0000</pubDate><guid>/en/2019-09-21-free-is-tough/</guid><description>&lt;p>Today I browsed many articles about free software, especially &lt;a href="https://tech.sina.cn/it/2014-05-27/detail-iavxeafs2072085.d.html?from=wap">this article&lt;/a>, Stallman is sort of extreme, why I always care about extremely security and privacy too?&lt;/p>
+&lt;p>I’m not an extreme person in any topic, I need to have my life and my own goal, but because of my personality, I stick to some thinking that makes me different from others, in the end, it doesn’t make me very happy.&lt;/p>
+&lt;p>My dreams(like become a native speaker or improve my skill and knowledge reserve very fast) are building in the air, not in the reality, why I cannot enjoy the road?&lt;/p></description></item></channel></rss>
