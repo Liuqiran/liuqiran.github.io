@@ -6,9 +6,26 @@ I’ve done my best to fix it myself until midnight. It’s useless. I could onl
 Added the Mastodon icon and removed the YouTube icon.&lt;br>
 Tried out Mastodon, a decentralized social networking software. I think it is a good alternative to Twitter.&lt;/p></description></item><item><title>Delete “like”</title><link>https://liuqiran.github.io/delete-like/</link><pubDate>Wed, 23 Sep 2020 05:41:08 +0000</pubDate><guid>https://liuqiran.github.io/delete-like/</guid><description>&lt;p>Reference: &lt;em>&lt;a href="https://www.liuqiran.com/2020/08/12/dont-click-like/">Don’t Click “Like”&lt;/a>&lt;/em>&lt;/p></description></item><item><title>Chinese conversion</title><link>https://liuqiran.github.io/chinese-conversion/</link><pubDate>Fri, 03 Apr 2020 13:13:35 +0000</pubDate><guid>https://liuqiran.github.io/chinese-conversion/</guid><description>&lt;p>已開啓中文繁簡轉換和關键詞搜索轉換功能，感謝&lt;a href="https://wordpress.org/support/plugin/wp-chinese-conversion/reviews/">WP Chinese Conversion&lt;/a>插件作者。&lt;/p></description></item><item><title>RSS Feed</title><link>https://liuqiran.github.io/rss/</link><pubDate>Sun, 29 Sep 2019 09:00:50 +0000</pubDate><guid>https://liuqiran.github.io/rss/</guid><description>&lt;p>&lt;a href="https://liuqiran.github.io/index.xml">English Site &lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://liuqiran.github.io/zh/index.xml">Chinese Site&lt;/a>&lt;/p></description></item><item><title>My friends</title><link>https://liuqiran.github.io/my-friends/</link><pubDate>Tue, 09 Jul 2019 07:51:36 +0000</pubDate><guid>https://liuqiran.github.io/my-friends/</guid><description>&lt;p class="has-contrast-color has-primary-background-color has-text-color has-background">
-&amp;nbsp;“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”
+ “If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”
 &lt;/p>
-&lt;p>[widgets_on_pages id=”1″]&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.dylanwu.space/">Dylan Wu&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://imzm.im">陈仓颉&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://yir.me">YIR&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fspark.me">FSpark&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://phenol-phthalein.info/">Broca-Phenol&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://springwood.me/">沉舟侧畔&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bkryofu.xyz/">非科学のカッ�&amp;hellip;&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pewae.com">大致&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://osmh.net">OSMH&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.huhexian.com">青山&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://dreamendy.com">Dreamendy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.cxwblog.com">梅塔特隆立方&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://blog.moekira.com">Kira&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kqh.me">kqh&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.yanshihua.com/">Mars&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://minuo.me">minuo&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;ul class="wp-block-list">
 &lt;li>
 &lt;a rel="noreferrer noopener" href="https://blog.xinshijiededa.men/" target="_blank">新世界的大门&lt;/a>

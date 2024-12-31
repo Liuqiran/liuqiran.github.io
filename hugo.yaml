@@ -22,10 +22,6 @@ languages:
           name: About
           url: /about-me-2/
           weight: 10
-        - identifier: project
-          name: Project
-          url: /project/
-          weight: 20
         - identifier: Reading list
           name: Reading list
           url: /reading-list/
@@ -52,12 +48,8 @@ languages:
         imageWidth: 150
         imageHeight: 150
         buttons:
-          - name: Project
-            url: /project/
-          - name: Resume
-            url: /resume.pdf
-          - name: Log
-            url: /blog/tech/log/
+          - name: about
+            url: /about-me-2/
       socialIcons:
         - name: rss
           url: '/rss'     

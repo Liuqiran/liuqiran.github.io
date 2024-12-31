@@ -7,8 +7,8 @@ url: /zh/rss-2/
 categories:
   - 建站
 ---
-[中文站](https://liuqiran.github.io/zh/index.xml)
+[中文站](/zh/index.xml)
 
-[英文站](https://liuqiran.github.io/index.xml)
+[英文站](/index.xml)
 
 （可能无法两个站点都照顾到，建议全部订阅）
