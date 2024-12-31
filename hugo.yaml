@@ -1,5 +1,5 @@
 defaultContentLanguage: en
-defaultContentLanguageInSubdir: false  
+defaultContentLanguageInSubdir: true  
 baseURL: "/"  
 theme: "PaperMod"
 
