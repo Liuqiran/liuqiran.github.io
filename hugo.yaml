@@ -5,7 +5,7 @@ theme: "PaperMod"
 
 languages:
   en:
-    languageName: "English"
+    languageName: "English"  
     weight: 1
     languageCode: "en"
     contentDir: /content/en/
@@ -70,8 +70,8 @@ languages:
     ShowFullTextinRSS: true
   zh:
     languageName: "中"
+    languageCode: "zh-CN"
     weight: 2
-    languageCode: "zh"
     contentDir: content/zh/  
     taxonomies: # 分类系统
       category: categories
@@ -88,7 +88,7 @@ languages:
           weight: 2
         - identifier: reading-list
           name: 阅读书目
-          url: /zh/reading-list/
+          url: /zh/reading-list-2/
           weight: 3
         - identifier: links
           name: 友人
@@ -142,14 +142,31 @@ outputs:
   home:
     - HTML # 生成的静态页面
     - RSS # 这个其实无所谓
-    - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下   
+    - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
+    - RSSFeed    
+  section:
+    - HTML
+    - RSS 
+    - RSSFeed
+
+outputFormats:
+  RSS:
+    mediatype: "application/rss+xml"
+    baseName: "index"  # 这将生成 index.xml
+  RSSFeed:
+    mediatype: "application/rss+xml"
+    baseName: "feed"   # 这将生成 feed.xml
+    permalinkable: true   
+    path: /
 
 # 这里的参数会被代码以 .Site.Params 的形式读取
 params:
   comments: true  # 这里打开评论
+  showtoc: true
+  tocopen: true
+  ShowBreadCrumbs: true
   # twikoo评论
   twikoo:
     version: 1.6.40
     id: https://twikoo-gamma-red.vercel.app/
     region:  # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数，请看twikoo官方文档  
-

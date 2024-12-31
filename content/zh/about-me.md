@@ -18,6 +18,6 @@ categories:
 
 [关于本站][1]
 
-联系我：请直接在评论区留言。
+联系我：可[直接发送邮件](mailto:woshiniuziku@gmail.com)或评论区留言。
 
  [1]: /categories/building-site/
