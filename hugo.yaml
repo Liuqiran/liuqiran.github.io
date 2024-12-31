@@ -1,6 +1,6 @@
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: true  
-baseURL: "/"  
+baseURL: "https://liuqiran.com/"  
 theme: "PaperMod"  
 relativeURLs: true
 
@@ -9,12 +9,12 @@ languages:
     languageName: "English"  
     weight: 1
     languageCode: "en-US"
-    contentDir: /content/en/
+    contentDir: content/en/
     taxonomies: # 分类系统
       category: categories
       tag: tags
     permalinks:
-      en: /en/:title/
+      posts: /en/:title/
     menu:
       main:
         - identifier: home
@@ -146,11 +146,9 @@ outputs:
     - HTML # 生成的静态页面
     - RSS # 这个其实无所谓
     - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
-    - RSSFeed    
   section:
     - HTML
     - RSS 
-    - RSSFeed
 
 outputFormats:
   RSS:
