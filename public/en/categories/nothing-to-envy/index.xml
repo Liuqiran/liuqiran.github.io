@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Nothing to Envy on</title><link>/en/categories/nothing-to-envy/</link><description>Recent content in Nothing to Envy on</description><generator>Hugo -- 0.140.1</generator><language>en</language><lastBuildDate>Fri, 20 Dec 2019 08:23:34 +0000</lastBuildDate><atom:link href="/en/categories/nothing-to-envy/index.xml" rel="self" type="application/rss+xml"/><item><title>Tainted Blood</title><link>/tainted-blood/</link><pubDate>Fri, 20 Dec 2019 08:23:34 +0000</pubDate><guid>/tainted-blood/</guid><description>&lt;p>In this chapter, the author introduced the families of Mi-ran and Jun-sang, Mi-ran’s father is a warrior from South Korea and he was captive by North army, he was forced to be a miner in Chojin (that town in northeastern), but he never told this to his daughters and son, until this tainted blood effects their life.&lt;/p>
-&lt;p>Jun-sang’s family is from Japan, they are wealthy as Japanese-Korean. when Korea divided, some Japanese-Korean thought the North government is better than South as a group battled with Japanese, so they went to North, but after the regime formed, they noticed everything changed, Kim Il-sung, never believe them, they were purged because God Kim didn’t allow them to be wealthier than common North Korea people and to connect their relatives in Japan. They couldn’t go back to Japan forever.&lt;/p></description></item><item><title>Holding Hands in the Dark</title><link>/holding-hands-in-the-dark/</link><pubDate>Mon, 16 Dec 2019 05:16:11 +0000</pubDate><guid>/holding-hands-in-the-dark/</guid><description>&lt;p>This is a love story between two teenagers, Mi-ran and Jun-Sang, although it happened in the most totalitarian country in the world–North Korea.&lt;/p>
-&lt;p>Mi-ran is a girl, her father is a miner, Jun-Sang is a student belongs to a family at a high level.&lt;/p>
-&lt;p>In the 1990s, the country’s economy broke down, and there is not enough electric power to keep the night be lighten, but the night in North Korea, it’s more natural and beautiful than other countries, no noises, no neons. What’s more, no one can spy the two teenagers, holding hands in the dark.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nothing to Envy on </title>
+    <link>http://localhost:1313/en/categories/nothing-to-envy/</link>
+    <description>Recent content in Nothing to Envy on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Dec 2019 08:23:34 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/nothing-to-envy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tainted Blood</title>
+      <link>http://localhost:1313/tainted-blood/</link>
+      <pubDate>Fri, 20 Dec 2019 08:23:34 +0000</pubDate>
+      <guid>http://localhost:1313/tainted-blood/</guid>
+      <description>&lt;p&gt;In this chapter, the author introduced the families of Mi-ran and Jun-sang, Mi-ran’s father is a warrior from South Korea and he was captive by North army, he was forced to be a miner in Chojin (that town in northeastern), but he never told this to his daughters and son, until this tainted blood effects their life.&lt;/p&gt;
+&lt;p&gt;Jun-sang’s family is from Japan, they are wealthy as Japanese-Korean. when Korea divided, some Japanese-Korean thought the North government is better than South as a group battled with Japanese, so they went to North, but after the regime formed, they noticed everything changed, Kim Il-sung, never believe them, they were purged because God Kim didn’t allow them to be wealthier than common North Korea people and to connect their relatives in Japan. They couldn’t go back to Japan forever.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Holding Hands in the Dark</title>
+      <link>http://localhost:1313/holding-hands-in-the-dark/</link>
+      <pubDate>Mon, 16 Dec 2019 05:16:11 +0000</pubDate>
+      <guid>http://localhost:1313/holding-hands-in-the-dark/</guid>
+      <description>&lt;p&gt;This is a love story between two teenagers, Mi-ran and Jun-Sang, although it happened in the most totalitarian country in the world–North Korea.&lt;/p&gt;
+&lt;p&gt;Mi-ran is a girl, her father is a miner, Jun-Sang is a student belongs to a family at a high level.&lt;/p&gt;
+&lt;p&gt;In the 1990s, the country’s economy broke down, and there is not enough electric power to keep the night be lighten, but the night in North Korea, it’s more natural and beautiful than other countries, no noises, no neons. What’s more, no one can spy the two teenagers, holding hands in the dark.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

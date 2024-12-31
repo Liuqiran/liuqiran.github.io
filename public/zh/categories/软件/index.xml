@@ -1,8 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>软件 on</title><link>/zh/categories/%E8%BD%AF%E4%BB%B6/</link><description>Recent content in 软件 on</description><generator>Hugo -- 0.140.1</generator><language>zh-CN</language><lastBuildDate>Thu, 20 Apr 2017 09:52:20 +0000</lastBuildDate><atom:link href="/zh/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>2017-04-20</title><link>/zh/2017-04-20/</link><pubDate>Thu, 20 Apr 2017 09:52:20 +0000</pubDate><guid>/zh/2017-04-20/</guid><description>&lt;p>我喜欢看app上的统计数据，&lt;br>
-比如anki的复习统计图&lt;br>
-quality time 的使用数据&lt;br>
-和习惯的打卡，&lt;br>
-这样我就能知道我的生活不是一成不变的&lt;br>
-我才能知道这些是潜移默化的积累，&lt;br>
-知道自己在改变与充实，&lt;br>
-不会太过迷茫，这是一种馈赠。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>软件 on </title>
+    <link>http://localhost:1313/zh/categories/%E8%BD%AF%E4%BB%B6/</link>
+    <description>Recent content in 软件 on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 20 Apr 2017 09:52:20 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2017-04-20</title>
+      <link>http://localhost:1313/zh/2017-04-20/</link>
+      <pubDate>Thu, 20 Apr 2017 09:52:20 +0000</pubDate>
+      <guid>http://localhost:1313/zh/2017-04-20/</guid>
+      <description>&lt;p&gt;我喜欢看app上的统计数据，&lt;br&gt;
+比如anki的复习统计图&lt;br&gt;
+quality time 的使用数据&lt;br&gt;
+和习惯的打卡，&lt;br&gt;
+这样我就能知道我的生活不是一成不变的&lt;br&gt;
+我才能知道这些是潜移默化的积累，&lt;br&gt;
+知道自己在改变与充实，&lt;br&gt;
+不会太过迷茫，这是一种馈赠。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

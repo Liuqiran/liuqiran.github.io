@@ -1,6 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Philosophy on</title><link>/en/categories/philosophy/</link><description>Recent content in Philosophy on</description><generator>Hugo -- 0.140.1</generator><language>en</language><lastBuildDate>Thu, 06 Jun 2019 08:22:15 +0000</lastBuildDate><atom:link href="/en/categories/philosophy/index.xml" rel="self" type="application/rss+xml"/><item><title>Zizek</title><link>/zizek/</link><pubDate>Thu, 06 Jun 2019 08:22:15 +0000</pubDate><guid>/zizek/</guid><description>&lt;p>意识形态批评&lt;/p>
-&lt;p>意识形态不是强加在我们上面的。&lt;/p>
-&lt;p>走出意识形态是痛苦的，意识形态会使你看到真相。自由是痛苦的。&lt;/p>
-&lt;p>幻想正是组成意识形态的重要材料。幻想提供了简单的解答。&lt;/p>
-&lt;p>过去的纯粹的消费主义，现在变得非常狡猾。&lt;/p>
-&lt;p>颠覆斯大林主义的独裁不仅仅在于嘲笑领袖，还要破坏得以存在的依据——“人民”。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Philosophy on </title>
+    <link>http://localhost:1313/en/categories/philosophy/</link>
+    <description>Recent content in Philosophy on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Jun 2019 08:22:15 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zizek</title>
+      <link>http://localhost:1313/zizek/</link>
+      <pubDate>Thu, 06 Jun 2019 08:22:15 +0000</pubDate>
+      <guid>http://localhost:1313/zizek/</guid>
+      <description>&lt;p&gt;意识形态批评&lt;/p&gt;
+&lt;p&gt;意识形态不是强加在我们上面的。&lt;/p&gt;
+&lt;p&gt;走出意识形态是痛苦的，意识形态会使你看到真相。自由是痛苦的。&lt;/p&gt;
+&lt;p&gt;幻想正是组成意识形态的重要材料。幻想提供了简单的解答。&lt;/p&gt;
+&lt;p&gt;过去的纯粹的消费主义，现在变得非常狡猾。&lt;/p&gt;
+&lt;p&gt;颠覆斯大林主义的独裁不仅仅在于嘲笑领袖，还要破坏得以存在的依据——“人民”。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

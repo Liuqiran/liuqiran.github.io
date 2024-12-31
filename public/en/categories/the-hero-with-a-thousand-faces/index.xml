@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The Hero With a Thousand Faces on</title><link>/en/categories/the-hero-with-a-thousand-faces/</link><description>Recent content in The Hero With a Thousand Faces on</description><generator>Hugo -- 0.140.1</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2020 08:19:43 +0000</lastBuildDate><atom:link href="/en/categories/the-hero-with-a-thousand-faces/index.xml" rel="self" type="application/rss+xml"/><item><title>Myth and Dream</title><link>/myth-and-dream/</link><pubDate>Sat, 20 Jun 2020 08:19:43 +0000</pubDate><guid>/myth-and-dream/</guid><description>&lt;p>&lt;em>By the sacrilege of the refusal of the rite, however, the individual cut himself as a unit off from the larger unit of the whole community&lt;/em>&lt;/p>
-&lt;p>&lt;em>The hero is the man of self-achieved submission, …only birth can conquer death&lt;/em>&lt;/p>
-&lt;p>&lt;em>We shall come to the center of our own existence&lt;/em>&lt;br>
-like the labyrinth, it’s a path of hero&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>The Hero With a Thousand Faces on </title>
+    <link>http://localhost:1313/en/categories/the-hero-with-a-thousand-faces/</link>
+    <description>Recent content in The Hero With a Thousand Faces on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2020 08:19:43 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/the-hero-with-a-thousand-faces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Myth and Dream</title>
+      <link>http://localhost:1313/myth-and-dream/</link>
+      <pubDate>Sat, 20 Jun 2020 08:19:43 +0000</pubDate>
+      <guid>http://localhost:1313/myth-and-dream/</guid>
+      <description>&lt;p&gt;&lt;em&gt;By the sacrilege of the refusal of the rite, however, the individual cut himself as a unit off from the larger unit of the whole community&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The hero is the man of self-achieved submission, …only birth can conquer death&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We shall come to the center of our own existence&lt;/em&gt;&lt;br&gt;
+like the labyrinth, it’s a path of hero&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

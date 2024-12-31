@@ -1,7 +1,8 @@
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true  
-baseURL: "/"  
-theme: "PaperMod"
+baseURL: "https://liuqiran.github.io/"  
+theme: "PaperMod"  
+relativeURLs: true
 
 languages:
   en:
@@ -20,23 +21,23 @@ languages:
           weight: 1
         - identifier: about
           name: About
-          url: en/about-me-2/
+          url: /about-me-2/
           weight: 10
         - identifier: Reading list
           name: Reading list
-          url: en/reading-list/
+          url: /reading-list/
           weight: 30
         - identifier: friends
           name: Friends
-          url: en/my-friends/
+          url: /my-friends/
           weight: 40
         - identifier: categories
           name: Categories
-          url: en/categories/
+          url: /categories/
           weight: 50
         - identifier: search
           name: Search
-          url: en/search/
+          url: /search/
           weight: 60
     params:
       alternatelang: 'zh'

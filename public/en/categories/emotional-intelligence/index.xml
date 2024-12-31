@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Emotional Intelligence on</title><link>/en/categories/emotional-intelligence/</link><description>Recent content in Emotional Intelligence on</description><generator>Hugo -- 0.140.1</generator><language>en</language><lastBuildDate>Fri, 28 Feb 2020 14:07:47 +0000</lastBuildDate><atom:link href="/en/categories/emotional-intelligence/index.xml" rel="self" type="application/rss+xml"/><item><title>What Are Emotions For?</title><link>/what-are-emotions-for/</link><pubDate>Fri, 28 Feb 2020 14:07:47 +0000</pubDate><guid>/what-are-emotions-for/</guid><description>&lt;p>From the story that a parent rescued their daughter and perished, we can learn that self-sacrifice is an irrational urge from emotion. Our emotion is an extraordinary power that guides us to handle the challenges of life.&lt;/p>
-&lt;p>&lt;strong>WHEN PASSIONS OVERWHELM REASON&lt;/strong>&lt;br>
-From the tragedy that happened in Crabtree, we can learn that passions always overwhelm ration time and again.&lt;/p>
-&lt;p>&lt;strong>Impulses to Action&lt;/strong>&lt;br>
-&lt;em>In our emotional repertoire, each plays a unique role.&lt;/em>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Emotional Intelligence on </title>
+    <link>http://localhost:1313/en/categories/emotional-intelligence/</link>
+    <description>Recent content in Emotional Intelligence on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Feb 2020 14:07:47 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/emotional-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Are Emotions For?</title>
+      <link>http://localhost:1313/what-are-emotions-for/</link>
+      <pubDate>Fri, 28 Feb 2020 14:07:47 +0000</pubDate>
+      <guid>http://localhost:1313/what-are-emotions-for/</guid>
+      <description>&lt;p&gt;From the story that a parent rescued their daughter and perished, we can learn that self-sacrifice is an irrational urge from emotion. Our emotion is an extraordinary power that guides us to handle the challenges of life.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WHEN PASSIONS OVERWHELM REASON&lt;/strong&gt;&lt;br&gt;
+From the tragedy that happened in Crabtree, we can learn that passions always overwhelm ration time and again.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Impulses to Action&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;In our emotional repertoire, each plays a unique role.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

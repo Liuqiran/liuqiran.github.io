@@ -1,2 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Health on</title><link>/en/categories/health/</link><description>Recent content in Health on</description><generator>Hugo -- 0.140.1</generator><language>en</language><lastBuildDate>Mon, 28 Aug 2023 16:03:02 +0000</lastBuildDate><atom:link href="/en/categories/health/index.xml" rel="self" type="application/rss+xml"/><item><title>Harm from technology</title><link>/harm-from-technology/</link><pubDate>Mon, 28 Aug 2023 16:03:02 +0000</pubDate><guid>/harm-from-technology/</guid><description>&lt;p>In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it’s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.&lt;/p></description></item><item><title>Healthy food</title><link>/healthy-food/</link><pubDate>Tue, 15 Aug 2023 15:45:01 +0000</pubDate><guid>/healthy-food/</guid><description>&lt;p>Healthy food: Salmon, saurekrout, pecan, olive oil, (cod) liver, arugula, hamburger meat. These foods have the highest nutrients.&lt;/p></description></item><item><title>Complicate physical activities</title><link>/complicate-physical-activities/</link><pubDate>Tue, 23 May 2023 15:02:06 +0000</pubDate><guid>/complicate-physical-activities/</guid><description>&lt;p>In my opinion, simple physical activities are not enough to improve mental health.&lt;br>
-As human beings, we get used to coordinate with our mind and body. Repeated and easy activities are boring. If the activities are more complicated, it’s better for our mentality. We can also combine different activities.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Health on </title>
+    <link>http://localhost:1313/en/categories/health/</link>
+    <description>Recent content in Health on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Aug 2023 16:03:02 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/health/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Harm from technology</title>
+      <link>http://localhost:1313/harm-from-technology/</link>
+      <pubDate>Mon, 28 Aug 2023 16:03:02 +0000</pubDate>
+      <guid>http://localhost:1313/harm-from-technology/</guid>
+      <description>&lt;p&gt;In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it’s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Healthy food</title>
+      <link>http://localhost:1313/healthy-food/</link>
+      <pubDate>Tue, 15 Aug 2023 15:45:01 +0000</pubDate>
+      <guid>http://localhost:1313/healthy-food/</guid>
+      <description>&lt;p&gt;Healthy food: Salmon, saurekrout, pecan, olive oil, (cod) liver, arugula, hamburger meat. These foods have the highest nutrients.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Complicate physical activities</title>
+      <link>http://localhost:1313/complicate-physical-activities/</link>
+      <pubDate>Tue, 23 May 2023 15:02:06 +0000</pubDate>
+      <guid>http://localhost:1313/complicate-physical-activities/</guid>
+      <description>&lt;p&gt;In my opinion, simple physical activities are not enough to improve mental health.&lt;br&gt;
+As human beings, we get used to coordinate with our mind and body. Repeated and easy activities are boring. If the activities are more complicated, it’s better for our mentality. We can also combine different activities.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

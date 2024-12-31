@@ -1,11 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Habit on</title><link>/en/categories/habit/</link><description>Recent content in Habit on</description><generator>Hugo -- 0.140.1</generator><language>en</language><lastBuildDate>Tue, 09 May 2023 15:09:09 +0000</lastBuildDate><atom:link href="/en/categories/habit/index.xml" rel="self" type="application/rss+xml"/><item><title>Loop Habits Tracker</title><link>/loop-habits-tracker/</link><pubDate>Tue, 09 May 2023 15:09:09 +0000</pubDate><guid>/loop-habits-tracker/</guid><description>&lt;p>Maybe I can use plain text instead of software to track my habits.&lt;/p></description></item><item><title>EP 2 The tree of habits</title><link>/ep-2-the-tree-of-habits/</link><pubDate>Tue, 07 Mar 2023 03:37:57 +0000</pubDate><guid>/ep-2-the-tree-of-habits/</guid><description>&lt;p>Hi, I’m Qiran. Today I would like to share with you some of my understanding about habits.&lt;br>
-In my life, the concept of cultivating habits is gradually becoming one of the most important parts.&lt;/p>
-&lt;p>In my opinion, habit is a compound interest. The fruits or effects of habits will grow faster and faster in the long run.&lt;/p>
-&lt;p>For me, one of the examples of daily habit is writing journals. Maybe it’s my longest habit, which started from my middle school time. Now it has become my important habit that records my life.&lt;/p></description></item><item><title>Two Years Anniversary of Using Anki</title><link>/two-years-anniversary-of-using-anki/</link><pubDate>Mon, 25 Mar 2019 13:10:15 +0000</pubDate><guid>/two-years-anniversary-of-using-anki/</guid><description>&lt;p>&lt;img loading="lazy" src="/uploads/2019/03/Anki.png">&lt;/p>
-&lt;p>I have been using Anki for two years.&lt;br>
-It is one of the best learning and memorizing software I have ever met. It is open-source, freedom and personal.&lt;/p>
-&lt;figure class="wp-block-image">
-&lt;p>&lt;img loading="lazy" src="/uploads/2019/03/DeepinScreenshot_select-area_20190325204406.png"> &lt;/figure>&lt;img loading="lazy" src="/uploads/2019/03/DeepinScreenshot_select-area_20190325204509.png">&lt;/p>
-&lt;p>I have added 18,000 cards in the English desk, making my English from slag to intermediate level where I can read English articles.&lt;br>
-I also created other types of desks, related to my major and my interests.&lt;br>
-The next steps are to improve my knowledge base of my major: create cards I should memorize, check my cards’ grammar and add some necessary pictures.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Habit on </title>
+    <link>http://localhost:1313/en/categories/habit/</link>
+    <description>Recent content in Habit on </description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 May 2023 15:09:09 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/habit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Loop Habits Tracker</title>
+      <link>http://localhost:1313/loop-habits-tracker/</link>
+      <pubDate>Tue, 09 May 2023 15:09:09 +0000</pubDate>
+      <guid>http://localhost:1313/loop-habits-tracker/</guid>
+      <description>&lt;p&gt;Maybe I can use plain text instead of software to track my habits.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EP 2 The tree of habits</title>
+      <link>http://localhost:1313/ep-2-the-tree-of-habits/</link>
+      <pubDate>Tue, 07 Mar 2023 03:37:57 +0000</pubDate>
+      <guid>http://localhost:1313/ep-2-the-tree-of-habits/</guid>
+      <description>&lt;p&gt;Hi, I’m Qiran. Today I would like to share with you some of my understanding about habits.&lt;br&gt;
+In my life, the concept of cultivating habits is gradually becoming one of the most important parts.&lt;/p&gt;
+&lt;p&gt;In my opinion, habit is a compound interest. The fruits or effects of habits will grow faster and faster in the long run.&lt;/p&gt;
+&lt;p&gt;For me, one of the examples of daily habit is writing journals. Maybe it’s my longest habit, which started from my middle school time. Now it has become my important habit that records my life.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Two Years Anniversary of Using Anki</title>
+      <link>http://localhost:1313/two-years-anniversary-of-using-anki/</link>
+      <pubDate>Mon, 25 Mar 2019 13:10:15 +0000</pubDate>
+      <guid>http://localhost:1313/two-years-anniversary-of-using-anki/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/03/Anki.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I have been using Anki for two years.&lt;br&gt;
+It is one of the best learning and memorizing software I have ever met. It is open-source, freedom and personal.&lt;/p&gt;
+&lt;figure class=&#34;wp-block-image&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/03/DeepinScreenshot_select-area_20190325204406.png&#34;&gt; &lt;/figure&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/03/DeepinScreenshot_select-area_20190325204509.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I have added 18,000 cards in the English desk, making my English from slag to intermediate level where I can read English articles.&lt;br&gt;
+I also created other types of desks, related to my major and my interests.&lt;br&gt;
+The next steps are to improve my knowledge base of my major: create cards I should memorize, check my cards’ grammar and add some necessary pictures.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
