@@ -1,39 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Social Media on </title>
-    <link>//localhost:1313/en/categories/social-media/</link>
-    <description>Recent content in Social Media on </description>
-    <generator>Hugo -- 0.140.1</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 20 Feb 2021 02:29:16 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/social-media/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Mastodon</title>
-      <link>//localhost:1313/mastodon/</link>
-      <pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate>
-      <guid>//localhost:1313/mastodon/</guid>
-      <description>&lt;p&gt;Removed some plugins from my blog. &lt;s&gt;Added options for foreign languages&lt;/s&gt;.&lt;br&gt;
-Added the Mastodon icon and removed the YouTube icon.&lt;br&gt;
-Tried out Mastodon, a decentralized social networking software. I think it is a good alternative to Twitter.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Connection</title>
-      <link>//localhost:1313/connection/</link>
-      <pubDate>Thu, 09 Apr 2020 04:19:59 +0000</pubDate>
-      <guid>//localhost:1313/connection/</guid>
-      <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio&#34;&gt;
-&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
-&lt;/div&gt;&lt;/figure&gt;
-&lt;blockquote class=&#34;wp-block-quote is-layout-flow wp-block-quote-is-layout-flow&#34;&gt;
-  &lt;p&gt;
-    Hold my hand&lt;br /&gt;I&amp;#8217;m real powerless to fight&lt;br /&gt;Can you lead me to the light?&lt;br /&gt;My strenght has come to fear&lt;br /&gt;Fled in truth of dawn&lt;br /&gt;Curious as a day&lt;br /&gt;My heart huh woah oh
-  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote class=&#34;wp-block-quote is-layout-flow wp-block-quote-is-layout-flow&#34;&gt;
-  &lt;p&gt;
-    Can you bring me back to life?&lt;br /&gt;Ignite the fire again?&lt;br /&gt;Can you bring me back home where I am not alone?&lt;br /&gt;I&amp;#8217;m lost inside, the night and I cannot find you&lt;br /&gt;Bring me back
-  &lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Social Media on</title><link>/en/categories/social-media/</link><description>Recent content in Social Media on</description><generator>Hugo -- 0.140.1</generator><language>en</language><lastBuildDate>Sat, 20 Feb 2021 02:29:16 +0000</lastBuildDate><atom:link href="/en/categories/social-media/index.xml" rel="self" type="application/rss+xml"/><item><title>Mastodon</title><link>/mastodon/</link><pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate><guid>/mastodon/</guid><description>&lt;p>Removed some plugins from my blog. &lt;s>Added options for foreign languages&lt;/s>.&lt;br>
+Added the Mastodon icon and removed the YouTube icon.&lt;br>
+Tried out Mastodon, a decentralized social networking software. I think it is a good alternative to Twitter.&lt;/p></description></item><item><title>Connection</title><link>/connection/</link><pubDate>Thu, 09 Apr 2020 04:19:59 +0000</pubDate><guid>/connection/</guid><description>&lt;figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">
+&lt;div class="wp-block-embed__wrapper">
+&lt;/div>&lt;/figure>
+&lt;blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+&lt;p>
+Hold my hand&lt;br />I&amp;#8217;m real powerless to fight&lt;br />Can you lead me to the light?&lt;br />My strenght has come to fear&lt;br />Fled in truth of dawn&lt;br />Curious as a day&lt;br />My heart huh woah oh
+&lt;/p>
+&lt;/blockquote>
+&lt;blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+&lt;p>
+Can you bring me back to life?&lt;br />Ignite the fire again?&lt;br />Can you bring me back home where I am not alone?&lt;br />I&amp;#8217;m lost inside, the night and I cannot find you&lt;br />Bring me back
+&lt;/p></description></item></channel></rss>

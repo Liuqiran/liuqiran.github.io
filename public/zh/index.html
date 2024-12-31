@@ -1,280 +1,25 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto">
-
-<head>
-	<meta name="generator" content="Hugo 0.140.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title></title>
-
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="canonical" href="//localhost:1313/zh/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.d72444526d7ecbdb0015438a7fa89054a658bf759d0542e2e5df81ce94b493ee.css" integrity="sha256-1yREUm1&#43;y9sAFUOKf6iQVKZYv3WdBULi5d&#43;BzpS0k&#43;4=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="//localhost:1313/zh/index.xml">
-<link rel="alternate" type="application/json" href="//localhost:1313/zh/index.json">
-<link rel="alternate" type="application/rss+xml" href="//localhost:1313/zh/feed.xml">
-<link rel="alternate" hreflang="en" href="//localhost:1313/en/">
-<link rel="alternate" hreflang="zh" href="//localhost:1313/zh/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-</head>
-
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-                <ul class="lang-switch"><li>|</li>
-                    <li>
-                        <a href="//localhost:1313/en/" title="English"
-                            aria-label="English">En</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="//localhost:1313/zh/" title="主页">
-                    <span class="active">主页</span>
-                </a>
-            </li>
-            <li>
-                <a href="//localhost:1313/zh/about-me/" title="关于">
-                    <span>关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="//localhost:1313/zh/reading-list-2/" title="阅读书目">
-                    <span>阅读书目</span>
-                </a>
-            </li>
-            <li>
-                <a href="//localhost:1313/zh/my-friends/" title="友人">
-                    <span>友人</span>
-                </a>
-            </li>
-            <li>
-                <a href="//localhost:1313/zh/categories/" title="分类">
-                    <span>分类</span>
-                </a>
-            </li>
-            <li>
-                <a href="//localhost:1313/zh/search/" title="搜索 (Alt &#43; /)" accesskey=/>
-                    <span>搜索</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>刘其然的部落格</h1>
-    </header>
-    <div class="entry-content">
-        欢迎访问本人站点！
-    </div>
-    <footer class="entry-footer">
-        <div class="social-icons" >
-    <a href="/zh/rss-2/" target="_blank" rel="noopener noreferrer me"
-        title="Rss">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 11a9 9 0 0 1 9 9" />
-    <path d="M4 4a16 16 0 0 1 16 16" />
-    <circle cx="5" cy="19" r="1" />
-</svg>
-    </a>
-    <a href="https://mastodon.social/@liuqiran" target="_blank" rel="noopener noreferrer me"
-        title="Mastodon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M21.58 13.913c-.29 1.469-2.592 3.121-5.238 3.396-1.379.184-2.737.368-4.185.276-2.368-.092-4.237-.551-4.237-.551 0 .184.014.459.043.643.308 2.294 2.317 2.478 4.22 2.57 1.922 0 3.633-.46 3.633-.46l.079 1.653s-1.344.734-3.738.918c-1.32.091-2.96-.092-4.869-.551-4.14-1.102-4.853-5.507-4.961-10.005-.034-1.285-.013-2.57-.013-3.58 0-4.589 3-5.966 3-5.966 1.513-.734 4.11-1.01 6.808-1.01h.067c2.699 0 5.296.276 6.81 1.01 0 0 3 1.377 3 5.967 0 0 .037 3.304-.419 5.69"
-        stroke="currentColor" />
-    <path
-        d="M17.832 8.633v5h-1.978V8.78c0-1.023-.43-1.542-1.29-1.542-.95 0-1.427.616-1.427 1.834v2.655H11.17V9.072c0-1.218-.476-1.834-1.427-1.834-.86 0-1.29.52-1.29 1.542v4.852H6.475V8.633c0-1.022.26-1.834.782-2.434.538-.6 1.243-.909 2.118-.909 1.012 0 1.779.39 2.286 1.169l.492.827.493-.827c.507-.78 1.274-1.169 2.286-1.169.875 0 1.58.308 2.118.909.522.6.782 1.412.782 2.434"
-        fill="currentColor" stroke="none" />
-</svg>
-    </a>
-    <a href="https://github.com/liuqiran" target="_blank" rel="noopener noreferrer me"
-        title="Github">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-    </path>
-</svg>
-    </a>
-    <a href="https://t.me/qiranschannel" target="_blank" rel="noopener noreferrer me"
-        title="Telegram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.509 1.793.997 3.592 1.48 5.388.16.36.506.494.864.498l-.002.018s.281.028.555-.038a2.1 2.1 0 0 0 .933-.517c.345-.324 1.28-1.244 1.811-1.764l3.999 2.952.032.018s.442.311 1.09.355c.324.022.75-.04 1.116-.308.37-.27.613-.702.728-1.196.342-1.492 2.61-12.285 2.997-14.072l-.01.042c.27-1.006.17-1.928-.455-2.474a1.654 1.654 0 0 0-1.034-.407z" />
-</svg>
-    </a>
-    <a href="https://twitter.com/qiran_liu" target="_blank" rel="noopener noreferrer me"
-        title="Twitter">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-    </path>
-</svg>
-    </a>
-    <a href="https://www.linkedin.com/in/liuqiran/" target="_blank" rel="noopener noreferrer me"
-        title="Linkedin">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-    <rect x="2" y="9" width="4" height="12"></rect>
-    <circle cx="4" cy="4" r="2"></circle>
-</svg>
-    </a>
-    <a href="https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ" target="_blank" rel="noopener noreferrer me"
-        title="Youtube">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
-    </path>
-    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
-</svg>
-    </a>
-    <a href="mailto:woshiniuziku@gmail.com" target="_blank" rel="noopener noreferrer me"
-        title="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-    <polyline points="22,6 12,13 2,6"></polyline>
-</svg>
-    </a>
-</div>
-
-    </footer>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">重新更新
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>很久没有打理自己的网站了。这几天准备再来更新一下站点。
-最近放弃了离线写作的想法。开始尝试在线写文章，这样保存更方便一些。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-23 00:36:01 +0000 +0000'>十二月 23, 2024</span>&nbsp;·&nbsp;Qiran</footer>
-  <a class="entry-link" aria-label="post link to 重新更新" href="//localhost:1313/zh/updateblogagain/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">一篇文章全部了解：营养健康群相关知识和参考方案
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> （本页面按个人需求收集所有可能常用的相关资料，如有问题和建议可直接留言或联系，本文可持续更新）
+<!doctype html><html lang=zh dir=auto><head><meta name=generator content="Hugo 0.140.1"><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title></title>
+<meta name=description content><meta name=author content><link rel=canonical href=/zh/><link crossorigin=anonymous href=/assets/css/stylesheet.d72444526d7ecbdb0015438a7fa89054a658bf759d0542e2e5df81ce94b493ee.css integrity="sha256-1yREUm1+y9sAFUOKf6iQVKZYv3WdBULi5d+BzpS0k+4=" rel="preload stylesheet" as=style><link rel=icon href=/favicon.ico><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=apple-touch-icon href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=/zh/index.xml><link rel=alternate type=application/json href=/zh/index.json><link rel=alternate type=application/rss+xml href=/zh/feed.xml><link rel=alternate hreflang=en href=/en/><link rel=alternate hreflang=zh href=/zh/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="/zh/"><meta property="og:locale" content="zh-CN"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"","url":"/zh/","description":"","logo":"/favicon.ico","sameAs":["/zh/rss-2/","https://mastodon.social/@liuqiran","https://github.com/liuqiran","https://t.me/qiranschannel","https://twitter.com/qiran_liu","https://www.linkedin.com/in/liuqiran/","https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ","mailto:woshiniuziku@gmail.com"]}</script></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button><ul class=lang-switch><li>|</li><li><a href=/en/ title=English aria-label=English>En</a></li></ul></div></div><ul id=menu><li><a href=/zh/ title=主页><span class=active>主页</span></a></li><li><a href=/zh/about-me/ title=关于><span>关于</span></a></li><li><a href=/zh/reading-list-2/ title=阅读书目><span>阅读书目</span></a></li><li><a href=/zh/my-friends/ title=友人><span>友人</span></a></li><li><a href=/zh/categories/ title=分类><span>分类</span></a></li><li><a href=/zh/search/ title="搜索 (Alt + /)" accesskey=/><span>搜索</span></a></li></ul></nav></header><main class=main><article class="first-entry home-info"><header class=entry-header><h1>刘其然的部落格</h1></header><div class=entry-content>欢迎访问本人站点！</div><footer class=entry-footer><div class=social-icons><a href=/zh/rss-2/ target=_blank rel="noopener noreferrer me" title=Rss><svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg>
+</a><a href=https://mastodon.social/@liuqiran target=_blank rel="noopener noreferrer me" title=Mastodon><svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.58 13.913c-.29 1.469-2.592 3.121-5.238 3.396-1.379.184-2.737.368-4.185.276-2.368-.092-4.237-.551-4.237-.551.0.184.014.459.043.643.308 2.294 2.317 2.478 4.22 2.57 1.922.0 3.633-.46 3.633-.46l.079 1.653s-1.344.734-3.738.918c-1.32.091-2.96-.092-4.869-.551-4.14-1.102-4.853-5.507-4.961-10.005-.034-1.285-.013-2.57-.013-3.58.0-4.589 3-5.966 3-5.966 1.513-.734 4.11-1.01 6.808-1.01h.067c2.699.0 5.296.276 6.81 1.01.0.0 3 1.377 3 5.967.0.0.037 3.304-.419 5.69" stroke="currentcolor"/><path d="M17.832 8.633v5h-1.978V8.78c0-1.023-.43-1.542-1.29-1.542-.95.0-1.427.616-1.427 1.834v2.655H11.17V9.072c0-1.218-.476-1.834-1.427-1.834-.86.0-1.29.52-1.29 1.542v4.852H6.475V8.633c0-1.022.26-1.834.782-2.434.538-.6 1.243-.909 2.118-.909 1.012.0 1.779.39 2.286 1.169l.492.827.493-.827c.507-.78 1.274-1.169 2.286-1.169.875.0 1.58.308 2.118.909.522.6.782 1.412.782 2.434" fill="currentcolor" stroke="none"/></svg>
+</a><a href=https://github.com/liuqiran target=_blank rel="noopener noreferrer me" title=Github><svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg>
+</a><a href=https://t.me/qiranschannel target=_blank rel="noopener noreferrer me" title=Telegram><svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.198 2.433a2.242 2.242.0 00-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15.0 01-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.509 1.793.997 3.592 1.48 5.388.16.36.506.494.864.498l-.002.018s.281.028.555-.038a2.1 2.1.0 00.933-.517c.345-.324 1.28-1.244 1.811-1.764l3.999 2.952.032.018s.442.311 1.09.355c.324.022.75-.04 1.116-.308.37-.27.613-.702.728-1.196.342-1.492 2.61-12.285 2.997-14.072l-.01.042c.27-1.006.17-1.928-.455-2.474a1.654 1.654.0 00-1.034-.407z"/></svg>
+</a><a href=https://twitter.com/qiran_liu target=_blank rel="noopener noreferrer me" title=Twitter><svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z"/></svg>
+</a><a href=https://www.linkedin.com/in/liuqiran/ target=_blank rel="noopener noreferrer me" title=Linkedin><svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+</a><a href=https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ target=_blank rel="noopener noreferrer me" title=Youtube><svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78.0 00-1.94-2C18.88 4 12 4 12 4s-6.88.0-8.6.46a2.78 2.78.0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78.0 003.4 19c1.72.46 8.6.46 8.6.46s6.88.0 8.6-.46a2.78 2.78.0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+</a><a href=mailto:woshiniuziku@gmail.com target=_blank rel="noopener noreferrer me" title=Email><svg viewBox="0 0 24 21" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1.0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1.0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></div></footer></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>重新更新</h2></header><div class=entry-content><p>很久没有打理自己的网站了。这几天准备再来更新一下站点。
+最近放弃了离线写作的想法。开始尝试在线写文章，这样保存更方便一些。</p></div><footer class=entry-footer><span title='2024-12-23 00:36:01 +0000 +0000'>十二月 23, 2024</span>&nbsp;·&nbsp;Qiran</footer><a class=entry-link aria-label="post link to 重新更新" href=/zh/updateblogagain/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>一篇文章全部了解：营养健康群相关知识和参考方案</h2></header><div class=entry-content><p>（本页面按个人需求收集所有可能常用的相关资料，如有问题和建议可直接留言或联系，本文可持续更新）
 初次发布日期：2024-06-05
-最后更新日期：2024-06-29 饮食 相关概念 可颂饮食：大量饱和脂肪&#43;适量碳水
+最后更新日期：2024-06-29 饮食 相关概念 可颂饮食：大量饱和脂肪+适量碳水
 雷佩特饮食
 避免摄入 PUFA (多不饱和脂肪酸) 群主补剂和设备参考方案 基本参考群主的方案，个人并未采用，可根据自身情况调整补剂方案并增加或减少用量。 维⽣素C/抗坏⾎酸 介绍 基础补剂，强大的抗氧化剂。
 宁哥的维生素C知识系列 视频合集
-购买 1688：石药集团食品级VC原料。参考价：32元&#43;/kg 参考用量 初期3克/天，逐渐增加剂量到后期10-20/天。
+购买 1688：石药集团食品级VC原料。参考价：32元+/kg 参考用量 初期3克/天，逐渐增加剂量到后期10-20/天。
 ⼀天最少分3次使用，最佳次数是5-6次，或每2-4⼩时吃⼀次，最⻓4-6⼩时使用⼀次。 维⽣素C可以兑⽔，或加⼊电解质⽔中， ⼀起喝，如果嫌太酸，可以买安装器和胶囊（装胶囊吃）或⽤糯⽶纸吞服。 安装器和胶囊 可搜索 0# 胶囊填充板，0#胶囊容量为0.5g 有植物胶囊和明胶胶囊两种，可选择明胶胶囊 维⽣素C如何找到最适合⾃⼰的最佳剂量？ 从早上开始，每2⼩时1-3克，如果当天晚上就腹泻或者第⼆天早上就腹泻，那就说明吃多了解，平时可以按照这个量的80%使用。 如果当天没腹泻，第⼆天正常排便，那就是合适的量。 ⽤以上的⽅法就可以找到最适合⾃⼰的每⽇剂量。 ⾃制脂质体维⽣素C⽅案和设备 原料 抗坏⾎酸粉末，卵磷脂，纯净⽔。
 设备 搅拌器，夹⼦，玻璃容器，超声波震动清洗机。
-制作⽅法 将10克维⽣素C粉&#43;100-150克⽔加⼊玻璃容器 中，搅拌⾄完全溶解，加⼊30-40克卵磷脂，搅拌均匀，然后放⼊⾃动搅拌器搅拌，再将玻璃容器放⼊超声波机器震30分钟，在还剩10-15分钟时将搅拌器拿出，然后继续震动到时间结束。 结束后放⼊冰箱冷藏，第⼆天饮⽤。（可以⼀次制作⼏天的量） 相关购买 大豆卵磷脂 1688：山东巨荣批发大豆卵磷脂 参考价：32元&#43;/kg
-葵花磷脂 1688：现货供应 葵花磷脂 参考价：285元&#43;/kg 超声波清洗机 搜索：工业级超声波清洗机 3L 参考价：319元 自动打蛋器 可购买虹起自动打蛋器 不锈钢夹子 参考总长：12cm 开口：6cm 喜⻢拉雅粉盐（巴基斯坦产） 每天吃5-10克，分3-5次，可以跟电解质⽔⼀起 使用，不⽤随餐使用。 注：粉盐都来自喜马拉雅山脉，购买巴基斯坦产即可。 拼多多购买 柠檬酸钾 参考用量 每天5-10克，分3次，可以跟电解质⽔⼀起使用，也可以装胶囊使用，不⽤随餐使用。
-购买 1688：巨荣集团柠檬酸钾，参考价：15元&#43;/kg ⽢氨酸镁 参考用量 每天吃6-8克，分3次，可以跟电解质⽔⼀起使用，也可以装胶囊使用，不⽤随餐。 购买 1688：巨荣 甘氨酸镁 参考价：55元&#43;/kg 左旋⾁碱 参考用量 每天吃3-5克，分2-3 次，可以跟电解质⽔⼀起使用，也可以装胶囊，不⽤随餐使用。
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-06-05 05:14:01 +0000 +0000'>六月 5, 2024</span>&nbsp;·&nbsp;Qiran</footer>
-  <a class="entry-link" aria-label="post link to 一篇文章全部了解：营养健康群相关知识和参考方案" href="//localhost:1313/zh/nutrition-and-health-knowledge/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">转载：肠漏的七个症状
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>来源：伯格医生
+制作⽅法 将10克维⽣素C粉+100-150克⽔加⼊玻璃容器 中，搅拌⾄完全溶解，加⼊30-40克卵磷脂，搅拌均匀，然后放⼊⾃动搅拌器搅拌，再将玻璃容器放⼊超声波机器震30分钟，在还剩10-15分钟时将搅拌器拿出，然后继续震动到时间结束。 结束后放⼊冰箱冷藏，第⼆天饮⽤。（可以⼀次制作⼏天的量） 相关购买 大豆卵磷脂 1688：山东巨荣批发大豆卵磷脂 参考价：32元+/kg
+葵花磷脂 1688：现货供应 葵花磷脂 参考价：285元+/kg 超声波清洗机 搜索：工业级超声波清洗机 3L 参考价：319元 自动打蛋器 可购买虹起自动打蛋器 不锈钢夹子 参考总长：12cm 开口：6cm 喜⻢拉雅粉盐（巴基斯坦产） 每天吃5-10克，分3-5次，可以跟电解质⽔⼀起 使用，不⽤随餐使用。 注：粉盐都来自喜马拉雅山脉，购买巴基斯坦产即可。 拼多多购买 柠檬酸钾 参考用量 每天5-10克，分3次，可以跟电解质⽔⼀起使用，也可以装胶囊使用，不⽤随餐使用。
+购买 1688：巨荣集团柠檬酸钾，参考价：15元+/kg ⽢氨酸镁 参考用量 每天吃6-8克，分3次，可以跟电解质⽔⼀起使用，也可以装胶囊使用，不⽤随餐。 购买 1688：巨荣 甘氨酸镁 参考价：55元+/kg 左旋⾁碱 参考用量 每天吃3-5克，分2-3 次，可以跟电解质⽔⼀起使用，也可以装胶囊，不⽤随餐使用。
+...</p></div><footer class=entry-footer><span title='2024-06-05 05:14:01 +0000 +0000'>六月 5, 2024</span>&nbsp;·&nbsp;Qiran</footer><a class=entry-link aria-label="post link to 一篇文章全部了解：营养健康群相关知识和参考方案" href=/zh/nutrition-and-health-knowledge/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>转载：肠漏的七个症状</h2></header><div class=entry-content><p>来源：伯格医生
 一层非常薄的单一细胞层充当你的肠道内外之间的屏障。肠道提供保护，并吸收你所有营养素的90%。它们还包含一层粘液、微生物，并包含你免疫系统的80%。
 医学专业人士通常会推荐增加可溶性纤维摄入来修复肠道渗漏，但实际上你应该做的正好相反。食肉动物饮食是最佳的肠道渗漏饮食。更多的纤维会造成更多的炎症。
 医学专业人士也不会将饮食视为肠道渗漏的主要原因或解决方案。大多数疾病都是由你的肠道中的东西引发的，这与你的饮食息息相关。
@@ -291,98 +36,20 @@
 当你有自身免疫反应时，你的身体会将正常组织视为外来的或致病的。
 如果你的身体将你的甲状腺视为入侵者，你的甲状腺就会发炎。这被称为桥本病，它以炎症和肠道渗漏开始。
 几个月的食肉动物饮食可以帮助修复肠道渗漏，通过去除引起炎症的食物。
-谷氨酰胺和甘氨酸也可以帮助修复肠道渗漏。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-29 10:28:20 +0000 +0000'>五月 29, 2024</span>&nbsp;·&nbsp;Qiran</footer>
-  <a class="entry-link" aria-label="post link to 转载：肠漏的七个症状" href="//localhost:1313/zh/seven-symptons-of-leaky-gut/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">《摩西五经》
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>经过近一年断断续续的阅读，终于读完了《旧约》的前五卷。前五卷也被称为《摩西五经》，记载了以色列早期的历史和犹太教的律法。
+谷氨酰胺和甘氨酸也可以帮助修复肠道渗漏。</p></div><footer class=entry-footer><span title='2024-05-29 10:28:20 +0000 +0000'>五月 29, 2024</span>&nbsp;·&nbsp;Qiran</footer><a class=entry-link aria-label="post link to 转载：肠漏的七个症状" href=/zh/seven-symptons-of-leaky-gut/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>《摩西五经》</h2></header><div class=entry-content><p>经过近一年断断续续的阅读，终于读完了《旧约》的前五卷。前五卷也被称为《摩西五经》，记载了以色列早期的历史和犹太教的律法。
 突然发现《圣经》中百分之七十的内容其实是《旧约》，只有一小部分是《新约》。《旧约》是用希伯来文写的，《新约》是用希腊文写的。
 有些故事给我留下了很深的印象：摩西的时代充满了杀戮和惩罚。有一个叫索多玛的城市，充斥着淫乱和罪恶。人们在天火彻底摧毁这个城市之前纷纷逃离。有犹太人只是扭头回望索多玛，便化成了盐柱。
-摩西和曾经在埃及为奴的那一代以色列人，虽然逃离了埃及，但都看不到应许之地。只能等这一代人都死了，他们的后代才可以出发，到达应许之地。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-04-11 09:55:03 +0000 +0000'>四月 11, 2023</span>&nbsp;·&nbsp;Qiran</footer>
-  <a class="entry-link" aria-label="post link to 《摩西五经》" href="//localhost:1313/zh/reading-the-first-five-books-of-the-bible-2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">更新了 RSS 订阅地址
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>中文站
+摩西和曾经在埃及为奴的那一代以色列人，虽然逃离了埃及，但都看不到应许之地。只能等这一代人都死了，他们的后代才可以出发，到达应许之地。</p></div><footer class=entry-footer><span title='2023-04-11 09:55:03 +0000 +0000'>四月 11, 2023</span>&nbsp;·&nbsp;Qiran</footer><a class=entry-link aria-label="post link to 《摩西五经》" href=/zh/reading-the-first-five-books-of-the-bible-2/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>更新了 RSS 订阅地址</h2></header><div class=entry-content><p>中文站
 英文站
-（可能无法两个站点都照顾到，建议全部订阅）
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-10 14:31:32 +0000 +0000'>二月 10, 2023</span>&nbsp;·&nbsp;Qiran</footer>
-  <a class="entry-link" aria-label="post link to 更新了 RSS 订阅地址" href="//localhost:1313/zh/updated-rss-feed-url/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">重新整理版面
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了…… 最近发现许多功能已经失效了，花了很长时间才修复好，不然这里已经长草了。
+（可能无法两个站点都照顾到，建议全部订阅）</p></div><footer class=entry-footer><span title='2023-02-10 14:31:32 +0000 +0000'>二月 10, 2023</span>&nbsp;·&nbsp;Qiran</footer><a class=entry-link aria-label="post link to 更新了 RSS 订阅地址" href=/zh/updated-rss-feed-url/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>重新整理版面</h2></header><div class=entry-content><p>我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了…… 最近发现许多功能已经失效了，花了很长时间才修复好，不然这里已经长草了。
 发现很多人开始用 LinkTree 作为集合众多链接的个人主页。应该是如今这些人活跃的社交平台越来越多。数不过来了，用这个网站做整理。
 但是这不就是个站主页的功能吗？只要在主页上添加这些链接就行，还可以自己设定样式和功能，避免了千篇一律的问题。
 除此之外自己整理主页还有其他的优势：网址更加简洁、便于记忆；访问能集中到自己的平台上，不受其他平台控制。
-但不管怎么样，还是需要定期维护才行。还是多更新动态吧。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-08 11:17:57 +0000 +0000'>二月 8, 2023</span>&nbsp;·&nbsp;Qiran</footer>
-  <a class="entry-link" aria-label="post link to 重新整理版面" href="//localhost:1313/zh/reorganize-home-page/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">创建电报频道
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>尝试开通了一下电报频道。
+但不管怎么样，还是需要定期维护才行。还是多更新动态吧。</p></div><footer class=entry-footer><span title='2023-02-08 11:17:57 +0000 +0000'>二月 8, 2023</span>&nbsp;·&nbsp;Qiran</footer><a class=entry-link aria-label="post link to 重新整理版面" href=/zh/reorganize-home-page/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>创建电报频道</h2></header><div class=entry-content><p>尝试开通了一下电报频道。
 发现电报创建频道非常快捷，向他人广播也非常快。
 最重要的是平台是开放的，添加机器人功能之后可以自动将个人网站的动态同步到频道当中。
-如今加上接收消息的及时性，电报的功能已经超越很多其他通讯软件了，非常推荐尝鲜！
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-08 10:12:49 +0000 +0000'>二月 8, 2023</span>&nbsp;·&nbsp;Qiran</footer>
-  <a class="entry-link" aria-label="post link to 创建电报频道" href="//localhost:1313/zh/created-telegram-channel/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">ChatGPT
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>因为 OpenAI 不能用中国手机号注册，自己折腾了很久购买了一个泰国的临时手机号才能注册成功。
-到真正尝鲜的时候还是感到眼前一亮。虽然很多刁钻的问题回答得不是很让人满意，但大都能回答出来。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-08 04:44:31 +0000 +0000'>二月 8, 2023</span>&nbsp;·&nbsp;Qiran</footer>
-  <a class="entry-link" aria-label="post link to ChatGPT" href="//localhost:1313/zh/chatgpt/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">为什么不买房
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>伴随着轰鸣声，附近的建筑工地又开工了。这几个月的进度很快， 高楼拔地而起，不出意外又会是一幢高层住宅楼。房子，应该是大部分国人绕不开的话题。
+如今加上接收消息的及时性，电报的功能已经超越很多其他通讯软件了，非常推荐尝鲜！</p></div><footer class=entry-footer><span title='2023-02-08 10:12:49 +0000 +0000'>二月 8, 2023</span>&nbsp;·&nbsp;Qiran</footer><a class=entry-link aria-label="post link to 创建电报频道" href=/zh/created-telegram-channel/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>ChatGPT</h2></header><div class=entry-content><p>因为 OpenAI 不能用中国手机号注册，自己折腾了很久购买了一个泰国的临时手机号才能注册成功。
+到真正尝鲜的时候还是感到眼前一亮。虽然很多刁钻的问题回答得不是很让人满意，但大都能回答出来。</p></div><footer class=entry-footer><span title='2023-02-08 04:44:31 +0000 +0000'>二月 8, 2023</span>&nbsp;·&nbsp;Qiran</footer><a class=entry-link aria-label="post link to ChatGPT" href=/zh/chatgpt/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>为什么不买房</h2></header><div class=entry-content><p>伴随着轰鸣声，附近的建筑工地又开工了。这几个月的进度很快， 高楼拔地而起，不出意外又会是一幢高层住宅楼。房子，应该是大部分国人绕不开的话题。
 我对房子并不太感冒，甚至讨厌这些千篇一律的高层住宅楼。
 不管是从哪种角度，房子都是不值得买的。就从买房的主要几个论调之逐个来谈：
 房子会升值，不买就亏了
@@ -394,20 +61,7 @@
 房子只是很多中国人心中结婚的一个“保障”。他们需要用房，直接点说，足够多的钱，来筛选自己合适的结婚对象而已，这种筛选机制是相互的。（虽然可能会筛选掉大部分的人。）
 在我看来，拥有共同的价值观、甚至信仰的人，相比只强调物质保障的人来说会更有凝聚力。 多年前做过一个印象深刻的梦：50年后的2067年，这些高层住宅楼变得斑驳老旧。这个城市基本看不到小孩，能看见的只有蹒跚的老人。
 网上也有人在问，这些高层住宅楼今后该怎么办。
-复活节岛的文明死去了，复活节岛的石像还在。这些高层住宅楼，可能就像复活节岛的石像一样，是一个时代的墓碑。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-06-21 16:57:43 +0000 +0000'>六月 21, 2022</span>&nbsp;·&nbsp;Qiran</footer>
-  <a class="entry-link" aria-label="post link to 为什么不买房" href="//localhost:1313/zh/why-dont-buy-a-house/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">摘录：阿姨对中国一线城市的评论
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>北京 王朝政治有一个秘诀：京师是首善之区，住在京师比其他地方要好。为什么呢？因为天高皇帝远，一个小县官就可以杀人，如果你在边远地区的一个小县城住的话，县官要杀你，你基本上没有什么办法。但是你如果住在京师的话，就算是刑部尚书要杀你都很难。因为京师的官太多了。刑部尚书，他肯定会害怕户部尚书在皇帝面前告他状，他不怕你这个老百姓，但他如果要杀你这个老百姓的话，户部尚书和兵部尚书说不定会拿这一点来打击他。他虽然是堂堂的一个刑部尚书，比起边远地区的小县官高了不知道多少级，但他要杀一个人的话，那比边远地区的一个县官反而要难得多。请问为什么京师的老百姓能占这个便宜呢？答案是，他们在天子脚下，接近秩序中心。但是一旦你的城市不再是首都了，那么情况就恰好相反，你的命不但不比别人贵，而且你是最有可能被消灭的对象，因为人人都想打进首都，死人死得最多的一定是京师这个地方。
+复活节岛的文明死去了，复活节岛的石像还在。这些高层住宅楼，可能就像复活节岛的石像一样，是一个时代的墓碑。</p></div><footer class=entry-footer><span title='2022-06-21 16:57:43 +0000 +0000'>六月 21, 2022</span>&nbsp;·&nbsp;Qiran</footer><a class=entry-link aria-label="post link to 为什么不买房" href=/zh/why-dont-buy-a-house/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>摘录：阿姨对中国一线城市的评论</h2></header><div class=entry-content><p>北京 王朝政治有一个秘诀：京师是首善之区，住在京师比其他地方要好。为什么呢？因为天高皇帝远，一个小县官就可以杀人，如果你在边远地区的一个小县城住的话，县官要杀你，你基本上没有什么办法。但是你如果住在京师的话，就算是刑部尚书要杀你都很难。因为京师的官太多了。刑部尚书，他肯定会害怕户部尚书在皇帝面前告他状，他不怕你这个老百姓，但他如果要杀你这个老百姓的话，户部尚书和兵部尚书说不定会拿这一点来打击他。他虽然是堂堂的一个刑部尚书，比起边远地区的小县官高了不知道多少级，但他要杀一个人的话，那比边远地区的一个县官反而要难得多。请问为什么京师的老百姓能占这个便宜呢？答案是，他们在天子脚下，接近秩序中心。但是一旦你的城市不再是首都了，那么情况就恰好相反，你的命不但不比别人贵，而且你是最有可能被消灭的对象，因为人人都想打进首都，死人死得最多的一定是京师这个地方。
 帝国的运作方式是征调各地的资源供养帝都，帝都基本没有任何自给能力。帝国秩序崩坏，帝都马上会陷入巨大的物资缺乏状态，第一个冬天就会有一大半人冻饿而死。阿西莫夫笔下的川陀陷落就是这个景象。然后出现劫掠者，最后才是农民起义军屠城。总之，朝代更迭之后，新朝得到的一定是一个空无一人的前朝旧都。事实上若是没有清兵入关，北京人很快会被闯王屠杀殆尽。
 问：您认为大一统不复存在的后洪水时代，北京的地位会是怎样？ 答：会落到大同张家口的层次。
 上海 可以说在1949年以前，没有多少人把香港和上海区别对待。它们都是租界，都是各国在远东的据点。如果有什么不同的话，那么上海才是大英在远东秩序的大本营，香港则是秩序的一个不太重要的分支。普遍认为，包括共产国际的鲍罗廷，蒋介石和周恩来这些人都认为，外国人的大本营是在上海，搞定了上海，香港本身是不成问题的。没有人会认为香港比上海更重要。香港显得比上海更重要，是因为经过几十年的窒息以后，上海已经丧失了原有的地位和结构。收复香港这件事情本来是提过好几次，在北伐战争的时候就提过，在抗日战争结束的时候也提过，拖到现在是由于一系列阴差阳错的结果。
@@ -419,89 +73,8 @@
 深圳，一方面地理位置接近香港和海岸线，另一方面，它获得了一定的自主权。江苏和浙江的资源不可避免地向上海集中。为什么？因为上海在大英军舰和工部局法律的保护之下，实行了普通法的统治，在这里，你的财产权和交易自由得到了最大限度的保障，而你如果在南京的话，张勳或者冯国璋的部队如果抢了你，你是没办法投诉的。在工部局的统治下，你的财产权是有保护的。同时，上海的地理位置比南京和其他地方也要好得多。深圳所享有的就是这两方面的优势。
 但是这两方面它都是不如过去上海租界的。原因也很简单，就是因为现在的统治比起大清的统治来说要武断得多。它如果要干涉上海自治权，那比大清或者国民党要干涉上海租界是要容易得多的，所以它的处境相对而言要更加脆弱而危险。对深圳这样的地方来说，最理想的就是一个汉萨同盟式的城市结构，这个城市结构应该是从上海、宁波一直延伸到北海，遍布整个东南沿海。这些地方如果都能像汉萨同盟一样建立一系列具有自治权的城邦组织，那么它很容易把至少是整个东亚的经济中心集中到这里来。
 其实，深圳得到的，就是内地所失去的。从这一点来说的话，它的成功其实是没有多少可喜的。你也可以想象，如果将来对香港的压力逐步增加，以至于香港原有的普通法传统和自治传统受到严重侵蚀，那么香港连同它附属的深圳，未必不会变成五十年代的上海。这个问题主要要看周围的环境演化。在中世纪末期，安特卫普曾经像一九二零年代的上海和现在的香港、深圳一样，是经济中心，而阿姆斯特丹则是微不足道的农村。但是西班牙人对尼德兰加强管制以后，资本和人才就统统逃到阿姆斯特丹去了。
-香港的成功，是五十年代以后上海失败的产物，它得到的就是上海所失去的。深圳所得到的其实就是内地失去的，至少就是从宁波到北海这一片沿海地区失去的。如果这一片地区也有良好的自治政体的话，那么资本和人力会自然而然地就近聚集到那些地方，而不会来到深圳。如果你的邻居家都著了火，他们自然会带著他们的财产跑到你家来里，使你的家里显得财产很多。深圳的成功主要是这一方面的成功。或者更正确地说，它的成功是巨大的中华帝国体制过于僵化的一个消极的结果。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-06-21 11:25:37 +0000 +0000'>六月 21, 2022</span>&nbsp;·&nbsp;刘仲敬</footer>
-  <a class="entry-link" aria-label="post link to 摘录：阿姨对中国一线城市的评论" href="//localhost:1313/zh/liuzhongjings-opinion-about-first-tier-cities/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="//localhost:1313/zh/page/2/">下一页&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2024 <a href="//localhost:1313/zh/"></a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+香港的成功，是五十年代以后上海失败的产物，它得到的就是上海所失去的。深圳所得到的其实就是内地失去的，至少就是从宁波到北海这一片沿海地区失去的。如果这一片地区也有良好的自治政体的话，那么资本和人力会自然而然地就近聚集到那些地方，而不会来到深圳。如果你的邻居家都著了火，他们自然会带著他们的财产跑到你家来里，使你的家里显得财产很多。深圳的成功主要是这一方面的成功。或者更正确地说，它的成功是巨大的中华帝国体制过于僵化的一个消极的结果。</p></div><footer class=entry-footer><span title='2022-06-21 11:25:37 +0000 +0000'>六月 21, 2022</span>&nbsp;·&nbsp;刘仲敬</footer><a class=entry-link aria-label="post link to 摘录：阿姨对中国一线城市的评论" href=/zh/liuzhongjings-opinion-about-first-tier-cities/></a></article><footer class=page-footer><nav class=pagination><a class=next href=/zh/page/2/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2024 <a href=/zh/></a></span>·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
