@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RSS Feed Update Notification - Liu Qiran's Website | RSS 订阅地址更新通知 - 刘其然的部落格</title>
-    <link>https://liuqiran.com/</link>
-    <description>Important: RSS Feed Address Has Been Updated</description>
+    <title>RSS Feed Address Update Notification - Liu Qiran's Blog | RSS 订阅地址更新通知 - 刘其然的部落格 </title>
+    <link>https://liuqiran.com/en/</link>
+    <description>Important Notice: RSS Feed Addresses Have Been Updated</description>
     <language>en-us</language>
-    <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
-    <atom:link href="https://liuqiran.com/feed" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Dec 2024 20:00:00 GMT</lastBuildDate>
+    <atom:link href="https://liuqiran.com/en/feed/" rel="self" type="application/rss+xml" />
     <item>
       <title>RSS Feed Addresses Have Been Updated</title>
-      <link>https://liuqiran.com/rss-update</link>
-      <pubDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
-      <guid>https://liuqiran.com/rss-update</guid>
+      <link>https://liuqiran.com/rss</link>
+      <pubDate>Tue, 31 Dec 2024 20:00:00 GMT</pubDate>
+      <guid>https://liuqiran.com/rss</guid>
       <description>
-        <![CDATA[
-        <p>Dear subscribers,</p>
-        <p>The RSS feed addresses for my blog have been updated. Please use the following new addresses to continue your subscription:</p>
-        <p><strong>New RSS feed address for English content:</strong> <a href="https://liuqiran.com/en/index.xml">https://liuqiran.com/en/index.xml</a></p>
-        <p><strong>New RSS feed address for Chinese content:</strong> <a href="https://liuqiran.com/zh/index.xml">https://liuqiran.com/zh/index.xml</a></p>
-        <p>Please update your RSS reader to ensure you continue receiving the latest updates.</p>
-        <p>Thank you for your support!</p>  
-                <p>亲爱的订阅者：</p>
-        <p>我的个人网站 RSS 订阅地址已经更新。请使用以下新地址继续订阅：</p>
-        <p><strong>中文内容的新 RSS 订阅地址：</strong> <a href="https://liuqiran.com/zh/index.xml">https://liuqiran.com/zh/index.xml</a></p>
-        <p><strong>英文内容的新 RSS 订阅地址：</strong> <a href="https://liuqiran.com/en/index.xml">https://liuqiran.com/en/index.xml</a></p>
-        <p>请更新您的 RSS 阅读器以确保继续接收最新更新。</p>
-        <p>感谢您的支持！</p>
-        <hr>
-        ]]>
+<![CDATA[
+<p>Dear subscribers,</p>
+<p>The RSS feed addresses for my personal website have been updated. Please use the following new addresses to continue your subscription:</p>
+<p><strong>New RSS feed address for Chinese content:</strong> <a href="https://liuqiran.com/zh/index.xml">https://liuqiran.com/zh/index.xml</a></p>
+<p><strong>New RSS feed address for English content:</strong> <a href="https://liuqiran.com/en/index.xml">https://liuqiran.com/en/index.xml</a></p>
+<p>Please update your RSS reader to ensure you continue receiving the latest updates.</p>
+<p>Thank you for your support!</p>
+]]>
       </description>
     </item>
   </channel>
-</rss>      
-
-
+</rss>
