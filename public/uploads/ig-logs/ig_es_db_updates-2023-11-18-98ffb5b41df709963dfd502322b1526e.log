@@ -1,0 +1,18 @@
+2023-11-18T11:20:23+00:00 INFO Require to run updater..Start Installation/ Update process
+2023-11-18T11:20:23+00:00 INFO Needs DB Update?
+2023-11-18T11:20:23+00:00 INFO Current DB Version: 5.7.0
+2023-11-18T11:20:23+00:00 INFO Database update require. Start updating database
+2023-11-18T11:20:23+00:00 INFO Do Update....
+2023-11-18T11:20:23+00:00 INFO Current IG ES DB Version: 5.7.0
+2023-11-18T11:20:23+00:00 INFO [Queue] ig_es_migrate_ess_daily_limit_to_monthly_limits
+2023-11-18T11:20:23+00:00 INFO [Queue] ig_es_update_571_db_version
+2023-11-18T11:20:23+00:00 INFO Yes, we have tasks to process
+2023-11-18T11:20:23+00:00 INFO --------------------- Started To Run Task Again---------------------
+2023-11-18T11:20:23+00:00 INFO [Processing] ig_es_migrate_ess_daily_limit_to_monthly_limits
+2023-11-18T11:20:23+00:00 INFO --- Running Task - ig_es_migrate_ess_daily_limit_to_monthly_limits
+2023-11-18T11:20:23+00:00 INFO --- Finished Task - ig_es_migrate_ess_daily_limit_to_monthly_limits 
+2023-11-18T11:20:23+00:00 INFO [Processed] ig_es_migrate_ess_daily_limit_to_monthly_limits
+2023-11-18T11:20:23+00:00 INFO [Processing] ig_es_update_571_db_version
+2023-11-18T11:20:23+00:00 INFO --- Running Task - ig_es_update_571_db_version
+2023-11-18T11:20:23+00:00 INFO --- Finished Task - ig_es_update_571_db_version 
+2023-11-18T11:20:23+00:00 INFO [Processed] ig_es_update_571_db_version

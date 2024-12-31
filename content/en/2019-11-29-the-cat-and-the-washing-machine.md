@@ -1,4 +1,4 @@
----
+﻿---
 title: The Cat and the Washing Machine
 author: Qiran
 type: post
@@ -20,7 +20,7 @@ _Humans tend to do better with acute than with chronic stressors_, from the new 
 
 From that point, we can get to know, some acute things like shocking emotions will stimulate our body, but some slowly but unstoppable stresses will hurt our body (mortgage and working pressure, deadline or future repayment).<figure class="wp-block-image">
 
-<img loading="lazy" decoding="async" width="1024" height="834" src="https://www.liuqiran.com/wp-content/uploads/2019/11/Screenshot_20191129172635-1024x834.jpg" alt="" class="wp-image-3374" srcset="https://www.liuqiran.com/wp-content/uploads/2019/11/Screenshot_20191129172635-1024x834.jpg 1024w, https://www.liuqiran.com/wp-content/uploads/2019/11/Screenshot_20191129172635-450x367.jpg 450w, https://www.liuqiran.com/wp-content/uploads/2019/11/Screenshot_20191129172635-300x244.jpg 300w, https://www.liuqiran.com/wp-content/uploads/2019/11/Screenshot_20191129172635-768x626.jpg 768w, https://www.liuqiran.com/wp-content/uploads/2019/11/Screenshot_20191129172635.jpg 1053w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /> </figure>
+![](/uploads/2019/11/Screenshot_20191129172635.jpg) </figure>
 
 #### Equilibrium, Not Again {.wp-block-heading}
 

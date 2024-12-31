@@ -1,4 +1,4 @@
----
+﻿---
 title: 聚合资讯订阅
 author: Qiran
 type: post
@@ -15,7 +15,7 @@ categories:
 
 如何改变这一现状，创造个人专属的信息源，获取有深度、有价值的信息？虽然自己早已了解 RSS，但最近我才开始使用 RSS 工具获取信息。 “聚合资讯订阅”（即 RSS feed )是通过 RSS 工具抓取各个网站内容进行阅读的一种订阅方式。通过 RSS 工具，我们可以将不同平台的各种信息聚合到一起，你可以自行收藏、保存。<figure class="wp-block-image size-large is-style-tw-rounded-corners">
 
-<img loading="lazy" decoding="async" width="1024" height="598" src="https://www.liuqiran.com/wp-content/uploads/2022/06/Screenshot-2022-06-15-00.32.44-1024x598.png" alt="" class="wp-image-3858" srcset="https://www.liuqiran.com/wp-content/uploads/2022/06/Screenshot-2022-06-15-00.32.44-1024x598.png 1024w, https://www.liuqiran.com/wp-content/uploads/2022/06/Screenshot-2022-06-15-00.32.44-450x263.png 450w, https://www.liuqiran.com/wp-content/uploads/2022/06/Screenshot-2022-06-15-00.32.44-300x175.png 300w, https://www.liuqiran.com/wp-content/uploads/2022/06/Screenshot-2022-06-15-00.32.44-768x449.png 768w, https://www.liuqiran.com/wp-content/uploads/2022/06/Screenshot-2022-06-15-00.32.44-1536x897.png 1536w, https://www.liuqiran.com/wp-content/uploads/2022/06/Screenshot-2022-06-15-00.32.44-2048x1196.png 2048w, https://www.liuqiran.com/wp-content/uploads/2022/06/Screenshot-2022-06-15-00.32.44-1568x916.png 1568w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /> <figcaption class="wp-element-caption">自己搭建的 RSS 服务</figcaption></figure>
+![](/uploads/2022/06/Screenshot-2022-06-15-00.32.44.png) <figcaption class="wp-element-caption">自己搭建的 RSS 服务</figcaption></figure>
 
 <a href="https://docs.rsshub.app/" data-type="URL" data-id="https://docs.rsshub.app/">rsshub.app</a>是一个提供各平台 RSS 订阅源的网站，通过它我可以同时订阅不同网站、微博、公众号等各个平台的内容。  
 （2022-06-14: RSSHub 官网里的订阅源越来越多了，很棒！）

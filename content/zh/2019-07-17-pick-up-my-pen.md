@@ -1,4 +1,4 @@
----
+﻿---
 title: 重拾画笔
 author: Qiran
 type: post
@@ -9,7 +9,7 @@ categories:
   - 绘画
 
 ---
-<figure class="wp-block-image"><img loading="lazy" decoding="async" width="1024" height="768" src="https://www.liuqiran.com/wp-content/uploads/2019/07/1_001-1024x768.jpg" alt="" class="wp-image-1874" srcset="https://www.liuqiran.com/wp-content/uploads/2019/07/1_001-1024x768.jpg 1024w, https://www.liuqiran.com/wp-content/uploads/2019/07/1_001-450x338.jpg 450w, https://www.liuqiran.com/wp-content/uploads/2019/07/1_001-300x225.jpg 300w, https://www.liuqiran.com/wp-content/uploads/2019/07/1_001-768x576.jpg 768w, https://www.liuqiran.com/wp-content/uploads/2019/07/1_001-1568x1176.jpg 1568w, https://www.liuqiran.com/wp-content/uploads/2019/07/1_001.jpg 1600w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+![](/uploads/2019/07/1_001.jpg)
 
 <p class="has-primary-background-color has-background">
   已经有两年没怎么画过画了。

@@ -1,4 +1,4 @@
----
+﻿---
 title: HOW TO TALK TO YOURSELF
 author: Qiran
 type: post
@@ -8,7 +8,7 @@ categories:
   - The Now Habit
 
 ---
-<figure class="wp-block-image"><img loading="lazy" decoding="async" width="348" height="143" src="https://www.liuqiran.com/wp-content/uploads/2019/09/image.png" alt="" class="wp-image-2721" srcset="https://www.liuqiran.com/wp-content/uploads/2019/09/image.png 348w, https://www.liuqiran.com/wp-content/uploads/2019/09/image-300x123.png 300w" sizes="auto, (max-width: 348px) 100vw, 348px" /></figure>
+![](/uploads/2019/09/image.png)
 
 #### The “Have To’s”—Messages of Stress  {.wp-block-heading}
 

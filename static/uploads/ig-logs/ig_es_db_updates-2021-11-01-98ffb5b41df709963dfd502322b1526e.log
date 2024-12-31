@@ -1,0 +1,18 @@
+2021-11-01T22:59:42+00:00 INFO Require to run updater..Start Installation/ Update process
+2021-11-01T22:59:42+00:00 INFO Needs DB Update?
+2021-11-01T22:59:42+00:00 INFO Current DB Version: 4.8.4
+2021-11-01T22:59:42+00:00 INFO Database update require. Start updating database
+2021-11-01T22:59:42+00:00 INFO Do Update....
+2021-11-01T22:59:42+00:00 INFO Current IG ES DB Version: 4.8.4
+2021-11-01T22:59:42+00:00 INFO [Queue] ig_es_update_490_alter_contacts_table
+2021-11-01T22:59:42+00:00 INFO [Queue] ig_es_update_490_db_version
+2021-11-01T22:59:42+00:00 INFO Yes, we have tasks to process
+2021-11-01T22:59:42+00:00 INFO --------------------- Started To Run Task Again---------------------
+2021-11-01T22:59:42+00:00 INFO [Processing] ig_es_update_490_alter_contacts_table
+2021-11-01T22:59:42+00:00 INFO --- Running Task - ig_es_update_490_alter_contacts_table
+2021-11-01T22:59:42+00:00 INFO --- Finished Task - ig_es_update_490_alter_contacts_table 
+2021-11-01T22:59:42+00:00 INFO [Processed] ig_es_update_490_alter_contacts_table
+2021-11-01T22:59:42+00:00 INFO [Processing] ig_es_update_490_db_version
+2021-11-01T22:59:42+00:00 INFO --- Running Task - ig_es_update_490_db_version
+2021-11-01T22:59:42+00:00 INFO --- Finished Task - ig_es_update_490_db_version 
+2021-11-01T22:59:42+00:00 INFO [Processed] ig_es_update_490_db_version

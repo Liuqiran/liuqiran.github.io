@@ -1,4 +1,4 @@
----
+﻿---
 title: Practice Wen Zhengming Caotang Shizhi
 author: Qiran
 type: post
@@ -11,4 +11,4 @@ categories:
   - Wen Zhengming
 
 ---
-<img loading="lazy" decoding="async" src="https://www.liuqiran.com/wp-content/uploads/2019/05/IMG_20190424_210105-1.jpg" class="alignnone size-full wp-image-588" width="3024" height="3395" />
+![](/uploads/2019/05/IMG_20190424_210105-1.jpg)

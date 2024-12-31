@@ -1,4 +1,4 @@
----
+﻿---
 title: '5: Education in Public Fine Art Schools'
 author: Qiran
 type: post
@@ -31,7 +31,7 @@ categories:
 1934年：教育部令恢复国立北平艺术专科学校  
 1937年：全面抗战爆发，学校南迁<figure class="wp-block-image">
 
-<img loading="lazy" decoding="async" width="517" height="412" src="https://www.liuqiran.com/wp-content/uploads/2019/10/Screenshot_20191028_204634.png" alt="" class="wp-image-3237" srcset="https://www.liuqiran.com/wp-content/uploads/2019/10/Screenshot_20191028_204634.png 517w, https://www.liuqiran.com/wp-content/uploads/2019/10/Screenshot_20191028_204634-450x359.png 450w, https://www.liuqiran.com/wp-content/uploads/2019/10/Screenshot_20191028_204634-300x239.png 300w" sizes="auto, (max-width: 517px) 100vw, 517px" /> </figure>
+![](/uploads/2019/10/Screenshot_20191028_204634.png) </figure>
 
 在林风眠的组织下，1927年5月1日，北京艺专师生联合社会的进步艺术社团组织了艺术大会，美术系举办美术展览，共展览了2000余幅作品，这些作品多抨击社会、讽刺现实。  
 事后，林风眠发表《致全国艺术界书》，指出没有国内真正创造的艺术品（模特儿事件），后林风眠被迫辞职。
@@ -41,6 +41,6 @@ categories:
 1927年，国民政府定都南京，为改变当时国内艺术教育萎靡不振的情况下，蔡元培倡议设立国民艺术教育委员会，同年，在委员会议上通过“筹建国立艺术大学”提案。由林风眠、林文铮、王代之负责建校。  
 1929年：国立艺术院举行开学典礼。<figure class="wp-block-image">
 
-<img loading="lazy" decoding="async" width="640" height="340" src="https://www.liuqiran.com/wp-content/uploads/2019/10/Screenshot_20191029_210304.png" alt="" class="wp-image-3242" srcset="https://www.liuqiran.com/wp-content/uploads/2019/10/Screenshot_20191029_210304.png 640w, https://www.liuqiran.com/wp-content/uploads/2019/10/Screenshot_20191029_210304-450x239.png 450w, https://www.liuqiran.com/wp-content/uploads/2019/10/Screenshot_20191029_210304-300x159.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /> </figure>
+![](/uploads/2019/10/Screenshot_20191029_210304.png) </figure>
 
 1929年秋，学校改名为国立杭州艺术专科学校
