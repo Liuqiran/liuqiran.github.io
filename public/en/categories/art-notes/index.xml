@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Art Notes on</title><link>/en/categories/art-notes/</link><description>Recent content in Art Notes on</description><generator>Hugo -- 0.140.1</generator><language>en-US</language><lastBuildDate>Fri, 30 Aug 2019 13:24:26 +0000</lastBuildDate><atom:link href="/en/categories/art-notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Painting for aunt</title><link>/en/2019-08-30-painting-for-aunt/</link><pubDate>Fri, 30 Aug 2019 13:24:26 +0000</pubDate><guid>/en/2019-08-30-painting-for-aunt/</guid><description>&lt;p>These days I painting for aunt, making my painting more figurative is a cool thing.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Art Notes on </title>
+    <link>//localhost:1313/en/categories/art-notes/</link>
+    <description>Recent content in Art Notes on </description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 30 Aug 2019 13:24:26 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/art-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Painting for aunt</title>
+      <link>//localhost:1313/en/2019-08-30-painting-for-aunt/</link>
+      <pubDate>Fri, 30 Aug 2019 13:24:26 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-08-30-painting-for-aunt/</guid>
+      <description>&lt;p&gt;These days I painting for aunt, making my painting more figurative is a cool thing.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

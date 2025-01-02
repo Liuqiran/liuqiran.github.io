@@ -1,8 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Anki on</title><link>/en/categories/anki/</link><description>Recent content in Anki on</description><generator>Hugo -- 0.140.1</generator><language>en-US</language><lastBuildDate>Mon, 25 Mar 2019 13:10:15 +0000</lastBuildDate><atom:link href="/en/categories/anki/index.xml" rel="self" type="application/rss+xml"/><item><title>Two Years Anniversary of Using Anki</title><link>/en/2019-03-25-two-years-anniversary-of-using-anki/</link><pubDate>Mon, 25 Mar 2019 13:10:15 +0000</pubDate><guid>/en/2019-03-25-two-years-anniversary-of-using-anki/</guid><description>&lt;p>&lt;img loading="lazy" src="../../../uploads/2019/03/Anki.png">&lt;/p>
-&lt;p>I have been using Anki for two years.&lt;br>
-It is one of the best learning and memorizing software I have ever met. It is open-source, freedom and personal.&lt;/p>
-&lt;figure class="wp-block-image">
-&lt;p>&lt;img loading="lazy" src="../../../uploads/2019/03/DeepinScreenshot_select-area_20190325204406.png"> &lt;/figure>&lt;img loading="lazy" src="../../../uploads/2019/03/DeepinScreenshot_select-area_20190325204509.png">&lt;/p>
-&lt;p>I have added 18,000 cards in the English desk, making my English from slag to intermediate level where I can read English articles.&lt;br>
-I also created other types of desks, related to my major and my interests.&lt;br>
-The next steps are to improve my knowledge base of my major: create cards I should memorize, check my cards’ grammar and add some necessary pictures.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Anki on </title>
+    <link>//localhost:1313/en/categories/anki/</link>
+    <description>Recent content in Anki on </description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 25 Mar 2019 13:10:15 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/anki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two Years Anniversary of Using Anki</title>
+      <link>//localhost:1313/en/2019-03-25-two-years-anniversary-of-using-anki/</link>
+      <pubDate>Mon, 25 Mar 2019 13:10:15 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-03-25-two-years-anniversary-of-using-anki/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/03/Anki.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I have been using Anki for two years.&lt;br&gt;
+It is one of the best learning and memorizing software I have ever met. It is open-source, freedom and personal.&lt;/p&gt;
+&lt;figure class=&#34;wp-block-image&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/03/DeepinScreenshot_select-area_20190325204406.png&#34;&gt; &lt;/figure&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/03/DeepinScreenshot_select-area_20190325204509.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I have added 18,000 cards in the English desk, making my English from slag to intermediate level where I can read English articles.&lt;br&gt;
+I also created other types of desks, related to my major and my interests.&lt;br&gt;
+The next steps are to improve my knowledge base of my major: create cards I should memorize, check my cards’ grammar and add some necessary pictures.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

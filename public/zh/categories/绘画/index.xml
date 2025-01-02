@@ -1,9 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>绘画 on</title><link>/zh/categories/%E7%BB%98%E7%94%BB/</link><description>Recent content in 绘画 on</description><generator>Hugo -- 0.140.1</generator><language>zh-CN</language><lastBuildDate>Wed, 17 Jul 2019 10:24:53 +0000</lastBuildDate><atom:link href="/zh/categories/%E7%BB%98%E7%94%BB/index.xml" rel="self" type="application/rss+xml"/><item><title>重拾画笔</title><link>/zh/pick-up-my-pen/</link><pubDate>Wed, 17 Jul 2019 10:24:53 +0000</pubDate><guid>/zh/pick-up-my-pen/</guid><description>&lt;p>&lt;img loading="lazy" src="../../../uploads/2019/07/1_001.jpg">&lt;/p>
-&lt;p class="has-primary-background-color has-background">
-已经有两年没怎么画过画了。
-&lt;/p>
-&lt;p>13年前我就用过数位板，当我再次看到自己曾经写下的&lt;a href="https://www.liuqiran.com/index.php/2006/02/04/%E6%88%91%E7%88%B1%E7%94%BB%E7%94%BB/">东西&lt;/a>时，感到自己早已不是曾经的样子。当时的自己完全没有想过自己会走上这样这一条路。&lt;/p>
-&lt;p>但走在这条路的过程中，自己慢慢丧失了初心，随后只有独自面对数不清的痛苦与艰难。&lt;/p>
-&lt;p>可以说，我早就放弃这条路了，也不想回过头去看它，我知道我想要的是什么，我也知道这条路上的一切是从何而来。&lt;/p>
-&lt;p>有人说，它对于我这种人来说是一个意外背负的十字架。我想，这个十字架什么时候可以卸下呢？&lt;/p>
-&lt;p>令我庆幸的是，未来的路逐渐属于我自己，我不知道的是，我能不能独自承担自己所做的选择，但我知道，这是通往前方的必经之路。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>绘画 on </title>
+    <link>//localhost:1313/zh/categories/%E7%BB%98%E7%94%BB/</link>
+    <description>Recent content in 绘画 on </description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 17 Jul 2019 10:24:53 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/zh/categories/%E7%BB%98%E7%94%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重拾画笔</title>
+      <link>//localhost:1313/zh/pick-up-my-pen/</link>
+      <pubDate>Wed, 17 Jul 2019 10:24:53 +0000</pubDate>
+      <guid>//localhost:1313/zh/pick-up-my-pen/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/07/1_001.jpg&#34;&gt;&lt;/p&gt;
+&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
+  已经有两年没怎么画过画了。
+&lt;/p&gt;
+&lt;p&gt;13年前我就用过数位板，当我再次看到自己曾经写下的&lt;a href=&#34;https://www.liuqiran.com/index.php/2006/02/04/%E6%88%91%E7%88%B1%E7%94%BB%E7%94%BB/&#34;&gt;东西&lt;/a&gt;时，感到自己早已不是曾经的样子。当时的自己完全没有想过自己会走上这样这一条路。&lt;/p&gt;
+&lt;p&gt;但走在这条路的过程中，自己慢慢丧失了初心，随后只有独自面对数不清的痛苦与艰难。&lt;/p&gt;
+&lt;p&gt;可以说，我早就放弃这条路了，也不想回过头去看它，我知道我想要的是什么，我也知道这条路上的一切是从何而来。&lt;/p&gt;
+&lt;p&gt;有人说，它对于我这种人来说是一个意外背负的十字架。我想，这个十字架什么时候可以卸下呢？&lt;/p&gt;
+&lt;p&gt;令我庆幸的是，未来的路逐渐属于我自己，我不知道的是，我能不能独自承担自己所做的选择，但我知道，这是通往前方的必经之路。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,7 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Becoming Human on</title><link>/en/categories/becoming-human/</link><description>Recent content in Becoming Human on</description><generator>Hugo -- 0.140.1</generator><language>en-US</language><lastBuildDate>Fri, 11 Oct 2019 06:04:29 +0000</lastBuildDate><atom:link href="/en/categories/becoming-human/index.xml" rel="self" type="application/rss+xml"/><item><title>Belonging</title><link>/en/2019-10-11-belonging/</link><pubDate>Fri, 11 Oct 2019 06:04:29 +0000</pubDate><guid>/en/2019-10-11-belonging/</guid><description>&lt;p>The author thinks we cannot just live alone, we need to have a belonging, but maybe love other people is hurt other people’s freedom. What’s more, we think we are in a group or a community, we can feel we are superior than others. we all need help, but sometimes we always hide this and think we are better than others.&lt;/p>
-&lt;p>In order to think we are superior to others, we build walls, make our group against other groups, prejudice cultivates.&lt;/p></description></item><item><title>Loneliness</title><link>/en/2019-08-28-loneliness/</link><pubDate>Wed, 28 Aug 2019 04:19:44 +0000</pubDate><guid>/en/2019-08-28-loneliness/</guid><description>&lt;p>The author got some experiences which saw so many disabilities, they full of loneliness, painful.&lt;/p>
-&lt;p>A human being needs a companion, and we need truths and make our worlds or communities better.&lt;/p>
-&lt;h4 class="wp-block-heading" id="community-and-rigid-order">Community and Rigid Order&lt;/h4>
-&lt;p>This is a paradox between the desire to belong, to fit in a community and to serve the deepest mind for oneself, close to God and be freedom.&lt;/p>
-&lt;h4 class="wp-block-heading" id="the-weakness-of-a-child">The Weakness of a Child&lt;/h4>
-&lt;p>We all born with weakness, we need love from parents as we cannot survive without others help. So if we don’t get love from the outside world, we will feel lonely. A lonely child will construct protection to survive and close his heart, but a child who gets love will more open to the world. we all have a lonely child in our heart, a lonely child can make us survive but also can destruct us.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Becoming Human on </title>
+    <link>//localhost:1313/en/categories/becoming-human/</link>
+    <description>Recent content in Becoming Human on </description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 11 Oct 2019 06:04:29 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/becoming-human/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belonging</title>
+      <link>//localhost:1313/en/2019-10-11-belonging/</link>
+      <pubDate>Fri, 11 Oct 2019 06:04:29 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-10-11-belonging/</guid>
+      <description>&lt;p&gt;The author thinks we cannot just live alone, we need to have a belonging, but maybe love other people is hurt other people’s freedom. What’s more, we think we are in a group or a community, we can feel we are superior than others. we all need help, but sometimes we always hide this and think we are better than others.&lt;/p&gt;
+&lt;p&gt;In order to think we are superior to others, we build walls, make our group against other groups, prejudice cultivates.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Loneliness</title>
+      <link>//localhost:1313/en/2019-08-28-loneliness/</link>
+      <pubDate>Wed, 28 Aug 2019 04:19:44 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-08-28-loneliness/</guid>
+      <description>&lt;p&gt;The author got some experiences which saw so many disabilities, they full of loneliness, painful.&lt;/p&gt;
+&lt;p&gt;A human being needs a companion, and we need truths and make our worlds or communities better.&lt;/p&gt;
+&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;community-and-rigid-order&#34;&gt;Community and Rigid Order&lt;/h4&gt;
+&lt;p&gt;This is a paradox between the desire to belong, to fit in a community and to serve the deepest mind for oneself, close to God and be freedom.&lt;/p&gt;
+&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;the-weakness-of-a-child&#34;&gt;The Weakness of a Child&lt;/h4&gt;
+&lt;p&gt;We all born with weakness, we need love from parents as we cannot survive without others help. So if we don’t get love from the outside world, we will feel lonely. A lonely child will construct protection to survive and close his heart, but a child who gets love will more open to the world. we all have a lonely child in our heart, a lonely child can make us survive but also can destruct us.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

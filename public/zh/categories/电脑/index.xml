@@ -1,6 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>电脑 on</title><link>/zh/categories/%E7%94%B5%E8%84%91/</link><description>Recent content in 电脑 on</description><generator>Hugo -- 0.140.1</generator><language>zh-CN</language><lastBuildDate>Tue, 19 Mar 2019 22:15:57 +0000</lastBuildDate><atom:link href="/zh/categories/%E7%94%B5%E8%84%91/index.xml" rel="self" type="application/rss+xml"/><item><title>在Manjaro下使用小鹤音形</title><link>/zh/manjaro-flypy/</link><pubDate>Tue, 19 Mar 2019 22:15:57 +0000</pubDate><guid>/zh/manjaro-flypy/</guid><description>&lt;p>昨日将Manjaro装了小鹤音形，能用作主力系统了，现在总结一下有哪些坑需要避免。&lt;/p>
-&lt;p>1、安装fcitx, 相比ibus，fcitx能开机自动启动。&lt;/p>
-&lt;p style="background-color:#cb3b14" class="has-background">
-2、安装fcitx 一定要在软件包仓库下载完整的插件，否则无法显示输入框，安装好后将相关代码保存。
-&lt;/p>
-&lt;p>3、在小鹤音形官网上下载linux的码表文件，按照教程将文件保存到系统分区里。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>电脑 on </title>
+    <link>//localhost:1313/zh/categories/%E7%94%B5%E8%84%91/</link>
+    <description>Recent content in 电脑 on </description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 19 Mar 2019 22:15:57 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/zh/categories/%E7%94%B5%E8%84%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在Manjaro下使用小鹤音形</title>
+      <link>//localhost:1313/zh/manjaro-flypy/</link>
+      <pubDate>Tue, 19 Mar 2019 22:15:57 +0000</pubDate>
+      <guid>//localhost:1313/zh/manjaro-flypy/</guid>
+      <description>&lt;p&gt;昨日将Manjaro装了小鹤音形，能用作主力系统了，现在总结一下有哪些坑需要避免。&lt;/p&gt;
+&lt;p&gt;1、安装fcitx, 相比ibus，fcitx能开机自动启动。&lt;/p&gt;
+&lt;p style=&#34;background-color:#cb3b14&#34; class=&#34;has-background&#34;&gt;
+  2、安装fcitx 一定要在软件包仓库下载完整的插件，否则无法显示输入框，安装好后将相关代码保存。
+&lt;/p&gt;
+&lt;p&gt;3、在小鹤音形官网上下载linux的码表文件，按照教程将文件保存到系统分区里。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
