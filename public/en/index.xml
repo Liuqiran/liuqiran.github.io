@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title></title>
+    <title>Liu Qiran</title>
     <link>//localhost:1313/en/</link>
-    <description>Recent content on </description>
-    <generator>Hugo -- 0.140.2</generator>
+    <description>Recent content on Liu Qiran</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 27 Nov 2023 12:41:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrated to Hugo</title>
+      <link>//localhost:1313/en/migrated-to-hugo/</link>
+      <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/migrated-to-hugo/</guid>
+      <description>&lt;p&gt;After several days of painstaking working I finally moved from WordPress to Hugo.&lt;/p&gt;
+&lt;p&gt;Due to the reason that my server is very slow.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Digitization</title>
       <link>//localhost:1313/en/2023-11-27-digitization/</link>
@@ -299,9 +307,7 @@ In my life, the concept of cultivating habits is gradually becoming one of the m
       <pubDate>Fri, 10 Feb 2023 15:35:06 +0000</pubDate>
       <guid>//localhost:1313/en/reading-list/</guid>
       <description>&lt;p&gt;The books I have finished reading:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
-
-  &lt;table&gt;
+&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th&gt;No.&lt;/th&gt;
@@ -592,11 +598,16 @@ In my life, the concept of cultivating habits is gradually becoming one of the m
           &lt;td&gt;2024-05-31&lt;/td&gt;
           &lt;td&gt;★★★⁠★⁠★&lt;/td&gt;
       &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;41&lt;/td&gt;
+          &lt;td&gt;Rightly Divided&lt;/td&gt;
+          &lt;td&gt;J. Michael Lester&lt;/td&gt;
+          &lt;td&gt;2025-03-08&lt;/td&gt;
+          &lt;td&gt;★★★★☆&lt;/td&gt;
+      &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It’s updated from time to time…&lt;/p&gt;</description>
+&lt;p&gt;It’s updated from time to time…&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reply to Chris</title>
@@ -2432,14 +2443,6 @@ The next steps are to improve my knowledge base of my major: create cards I shou
       <guid>//localhost:1313/en/about-me/</guid>
       <description>&lt;p&gt;Writing is supposed to be an essential part of life. Organizing one’s words and works in the form of a blog is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this blog to record myself and share my thoughts, articles and works. ：)&lt;/p&gt;
 &lt;p&gt;This site has joined the &lt;a href=&#34;https://foreverblog.cn/&#34;&gt;Ten-year Contract activities&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Migrated to Hugo</title>
-      <link>//localhost:1313/en/migrated-to-hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/en/migrated-to-hugo/</guid>
-      <description>&lt;p&gt;After several days of painstaking working I finally moved from WordPress to Hugo.&lt;/p&gt;
-&lt;p&gt;Due to the reason that my server is very slow.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

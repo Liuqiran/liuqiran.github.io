@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Chuang Tzu on </title>
+    <title>Chuang Tzu on Liu Qiran</title>
     <link>//localhost:1313/en/categories/chuang-tzu/</link>
-    <description>Recent content in Chuang Tzu on </description>
-    <generator>Hugo -- 0.140.2</generator>
+    <description>Recent content in Chuang Tzu on Liu Qiran</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 02 Aug 2019 11:46:14 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/en/categories/chuang-tzu/index.xml" rel="self" type="application/rss+xml" />

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Technology on </title>
+    <title>Technology on Liu Qiran</title>
     <link>//localhost:1313/en/categories/technology/</link>
-    <description>Recent content in Technology on </description>
-    <generator>Hugo -- 0.140.2</generator>
+    <description>Recent content in Technology on Liu Qiran</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 28 Aug 2023 16:03:02 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/en/categories/technology/index.xml" rel="self" type="application/rss+xml" />

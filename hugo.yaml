@@ -2,11 +2,12 @@ defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: true  
 baseURL: "/"  
 theme: "PaperMod"  
-relativeURLs: true
+relativeURLs: true   
 
 languages:
   en:
     languageName: "English"  
+    title: "Liu Qiran"
     weight: 1
     languageCode: "en-US"
     contentDir: content/en/
@@ -53,6 +54,7 @@ languages:
         buttons:
           - name: about
             url: /en/about-me-2/
+
       socialIcons:
         - name: rss
           url: 'en/rss'     
@@ -69,10 +71,13 @@ languages:
         - name: youtube
           url: 'https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ'
         - name: email
-          url: 'mailto:woshiniuziku@gmail.com'   
+          url: 'mailto:woshiniuziku@gmail.com'    
+        - name: facebook
+          url: 'https://web.facebook.com/woshiniuziku'
     ShowFullTextinRSS: true
   zh:
-    languageName: "中"
+    languageName: "中"   
+    Title: "刘其然的部落格"
     languageCode: "zh-CN"
     weight: 2
     contentDir: content/zh/  
@@ -104,7 +109,8 @@ languages:
         - identifier: search
           name: 搜索
           url: /zh/search/
-          weight: 6
+          weight: 7
+
 
     params:
       alternatelang: 'en' 
@@ -115,6 +121,7 @@ languages:
         imageUrl: "/img/Avatar.jpg"
         imageWidth: 110
         imageHeight: 110
+      
       socialIcons:
         - name: rss
           url:  /zh/rss-2/     
@@ -165,7 +172,8 @@ params:
   comments: true  # 这里打开评论
   showtoc: true
   tocopen: true
-  ShowBreadCrumbs: false
+  ShowArchive: true
+  rss: "/feed/"
   # twikoo评论
   twikoo:
     version: 1.6.40

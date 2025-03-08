@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>科技 on </title>
+    <title>科技 on 刘其然的部落格</title>
     <link>//localhost:1313/zh/categories/%E7%A7%91%E6%8A%80/</link>
-    <description>Recent content in 科技 on </description>
-    <generator>Hugo -- 0.140.2</generator>
+    <description>Recent content in 科技 on 刘其然的部落格</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 28 Nov 2019 08:25:08 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/zh/categories/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/en/</loc>
-    <lastmod>2023-11-27T12:41:28+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -14,6 +14,9 @@
                 hreflang="en-US"
                 href="//localhost:1313/en/"
                 />
+  </url><url>
+    <loc>//localhost:1313/en/migrated-to-hugo/</loc>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/categories/</loc>
     <lastmod>2023-11-27T12:41:28+00:00</lastmod>
@@ -790,8 +793,6 @@
                 hreflang="en-US"
                 href="//localhost:1313/en/about-me/"
                 />
-  </url><url>
-    <loc>//localhost:1313/en/migrated-to-hugo/</loc>
   </url><url>
     <loc>//localhost:1313/en/search/</loc>
     <xhtml:link

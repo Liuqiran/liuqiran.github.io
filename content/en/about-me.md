@@ -25,8 +25,7 @@ Blog’s birthday: Feb 9, 2019
 
 [About this blog][1]
 
-Contact me: [Telegram: Contact @liu_qiran][2]
+Contact me: [Telegram: Contact @liuqiran][2]
 
  [1]: /categories/building-site/
- [2]: https://t.me/liu_qiran
-
+ [2]: https://t.me/liuqiran

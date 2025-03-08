@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title></title>
+    <title>刘其然的部落格</title>
     <link>//localhost:1313/zh/</link>
-    <description>Recent content on </description>
-    <generator>Hugo -- 0.140.2</generator>
+    <description>Recent content on 刘其然的部落格</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 23 Dec 2024 00:36:01 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/zh/index.xml" rel="self" type="application/rss+xml" />
@@ -216,9 +216,7 @@
       <pubDate>Fri, 10 Feb 2023 15:35:06 +0000</pubDate>
       <guid>//localhost:1313/zh/reading-list-2/</guid>
       <description>&lt;p&gt;读完的书:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
-
-  &lt;table&gt;
+&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th&gt;No.&lt;/th&gt;
@@ -509,11 +507,16 @@
           &lt;td&gt;2024-05-31&lt;/td&gt;
           &lt;td&gt;★★★⁠★⁠★&lt;/td&gt;
       &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;41&lt;/td&gt;
+          &lt;td&gt;Rightly Divided&lt;/td&gt;
+          &lt;td&gt;J. Michael Lester&lt;/td&gt;
+          &lt;td&gt;2025-03-08&lt;/td&gt;
+          &lt;td&gt;★★★★☆&lt;/td&gt;
+      &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以上列表不定期更新……&lt;/p&gt;</description>
+&lt;p&gt;以上列表不定期更新……&lt;/p&gt;</description>
     </item>
     <item>
       <title>更新了 RSS 订阅地址</title>
@@ -1981,8 +1984,7 @@
       <pubDate>Tue, 09 Jul 2019 07:51:36 +0000</pubDate>
       <guid>//localhost:1313/zh/my-friends/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）&lt;/p&gt;&lt;/blockquote&gt;
 
 
   &lt;ul&gt;

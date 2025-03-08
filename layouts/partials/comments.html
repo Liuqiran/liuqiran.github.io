@@ -3,22 +3,15 @@
 {{- /* Comments area end */ -}}
  -->
 <!-- Twikoo -->
-<div>
-    <details class="comments_details">
-        <summary style="cursor: pointer; margin: 50px 0 20px 0;width: 130px;">
-            <span style="font-size: 20px;color: var(--content);">💬</span>
-        </summary>
-        <div id="tcomment"></div>
-    </details>
-    <script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js">
-    </script>
-    <script>
-        twikoo.init({
-            envId: {{ .Site.Params.twikoo.id }},
+<div id="tcomment"></div>
+
+<script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
+<script>
+    twikoo.init({
+        envId: {{ .Site.Params.twikoo.id }},
         el: "#tcomment",
-            region: {{ .Site.Params.twikoo.region }},   
-            lang: {{ .Site.Language.Lang }},
-        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
-        })
-    </script>
-</div>
+        region: {{ .Site.Params.twikoo.region }},   
+        lang: {{ .Site.Language.Lang }},
+        path: window.TWIKOO_MAGIC_PATH || window.location.pathname,
+    })
+</script>

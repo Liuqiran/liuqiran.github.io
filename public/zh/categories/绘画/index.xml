@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>绘画 on </title>
+    <title>绘画 on 刘其然的部落格</title>
     <link>//localhost:1313/zh/categories/%E7%BB%98%E7%94%BB/</link>
-    <description>Recent content in 绘画 on </description>
-    <generator>Hugo -- 0.140.2</generator>
+    <description>Recent content in 绘画 on 刘其然的部落格</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 17 Jul 2019 10:24:53 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/zh/categories/%E7%BB%98%E7%94%BB/index.xml" rel="self" type="application/rss+xml" />

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>死亡 on </title>
+    <title>死亡 on 刘其然的部落格</title>
     <link>//localhost:1313/zh/categories/%E6%AD%BB%E4%BA%A1/</link>
-    <description>Recent content in 死亡 on </description>
-    <generator>Hugo -- 0.140.2</generator>
+    <description>Recent content in 死亡 on 刘其然的部落格</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 28 Jan 2020 05:58:11 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/zh/categories/%E6%AD%BB%E4%BA%A1/index.xml" rel="self" type="application/rss+xml" />
