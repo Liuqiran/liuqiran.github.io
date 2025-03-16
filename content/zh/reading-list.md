@@ -6,7 +6,7 @@ url: /zh/reading-list-2/
 date: 2023-02-10T15:35:06+00:00
 featured_image: /wp-content/uploads/2023/09/books-1568x2367.jpg
 ---
-读完的书:  
+读完的书:
 
 | No. | Title                                                                  | Author                        | Date of completion | Rating         |
 | --- | ---------------------------------------------------------------------- | ----------------------------- | ------------------ | -------------- |
@@ -51,6 +51,5 @@ featured_image: /wp-content/uploads/2023/09/books-1568x2367.jpg
 | 39  | Easyway to Stop Smoking                                                | Allen Carr                    | 2024-04-14         | ★★★★☆     |
 | 40  | Why We Get Sick                                                        | Benjamin Bikman               | 2024-05-31         | ★★★⁠★⁠★ |
 | 41  | Rightly Divided                                                        | J. Michael Lester             | 2025-03-08         | ★★★★☆     |
-
-
+|42|Mind the Gap|Terrie Chappell|2025-03-16|★★★☆☆     |
 以上列表不定期更新……

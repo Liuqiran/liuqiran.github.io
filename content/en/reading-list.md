@@ -51,5 +51,6 @@ The books I have finished reading:
 | 39  | Easyway to Stop Smoking                                                | Allen Carr                    | 2024-04-14         | ★★★★☆     |
 | 40  | Why We Get Sick                                                        | Benjamin Bikman               | 2024-05-31         | ★★★⁠★⁠★ |
 | 41  | Rightly Divided                                                        | J. Michael Lester             | 2025-03-08         | ★★★★☆     |
+|42|Mind the Gap|Terrie Chappell|2025-03-16|★★★☆☆     |
 
 It’s updated from time to time…

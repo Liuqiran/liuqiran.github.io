@@ -57,7 +57,7 @@ languages:
 
       socialIcons:
         - name: rss
-          url: 'en/rss'     
+          url: '/rss'     
         - name: mastodon
           url: 'https://mastodon.social/@liuqiran'
         - name: github
