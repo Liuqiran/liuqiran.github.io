@@ -15,9 +15,6 @@
                 href="//localhost:1313/en/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/migrated-to-hugo/</loc>
-    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/categories/</loc>
     <lastmod>2023-11-27T12:41:28+00:00</lastmod>
     <xhtml:link
@@ -524,9 +521,6 @@
     <loc>//localhost:1313/en/2019-10-19-letter-2/</loc>
     <lastmod>2019-10-19T11:52:03+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/2019-10-19-basic-shortcut/</loc>
-    <lastmod>2019-10-19T10:55:48+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/2019-10-19-overcoming-blocks-to-action/</loc>
     <lastmod>2019-10-19T10:55:48+00:00</lastmod>
   </url><url>
@@ -542,20 +536,11 @@
     <loc>//localhost:1313/en/2019-10-11-guilt-free-play-quality-work/</loc>
     <lastmod>2019-10-11T04:07:34+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/2019-10-10-elon-musk-and-jack-ma/</loc>
-    <lastmod>2019-10-10T12:50:08+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/categories/philosophy/</loc>
-    <lastmod>2019-10-10T12:50:08+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/2019-10-08-new-museology/</loc>
     <lastmod>2019-10-08T02:19:52+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-10-08-replay-in-slowly/</loc>
     <lastmod>2019-10-07T22:06:10+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/2019-10-07-eos-136/</loc>
-    <lastmod>2019-10-07T14:01:35+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-10-06-analects-notes-1/</loc>
     <lastmod>2019-10-06T08:33:15+00:00</lastmod>
@@ -681,12 +666,6 @@
     <loc>//localhost:1313/en/2019-07-17-basic-conceptions/</loc>
     <lastmod>2019-07-17T06:20:39+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/calligraphy/</loc>
-    <lastmod>2019-07-14T08:52:51+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/2019-07-14-practice-of-lanting-xu/</loc>
-    <lastmod>2019-07-14T08:52:51+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/my-friends/</loc>
     <lastmod>2019-07-09T07:51:36+00:00</lastmod>
     <xhtml:link
@@ -709,35 +688,20 @@
     <loc>//localhost:1313/en/categories/student/</loc>
     <lastmod>2019-07-06T00:21:52+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/2019-07-05-expo/</loc>
-    <lastmod>2019-07-05T13:37:38+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/categories/travel/</loc>
-    <lastmod>2019-07-05T13:37:38+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/2019-06-23-categorize-my-blog/</loc>
     <lastmod>2019-06-23T02:26:48+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/categories/category/</loc>
     <lastmod>2019-06-23T02:26:48+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/2019-06-23-big-dream/</loc>
-    <lastmod>2019-06-23T02:01:15+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/categories/relatives/</loc>
-    <lastmod>2019-06-23T02:01:15+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/categories/china/</loc>
-    <lastmod>2019-06-12T20:56:54+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/2019-06-13-legality-of-party/</loc>
-    <lastmod>2019-06-12T20:56:54+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/2019-06-10-1263/</loc>
     <lastmod>2019-06-10T02:24:08+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/categories/western-art-history/</loc>
     <lastmod>2019-06-10T02:24:08+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/en/categories/philosophy/</loc>
+    <lastmod>2019-06-06T08:22:15+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-06-06-zizek/</loc>
     <lastmod>2019-06-06T08:22:15+00:00</lastmod>
@@ -756,21 +720,6 @@
   </url><url>
     <loc>//localhost:1313/en/2019-05-21-611/</loc>
     <lastmod>2019-05-21T13:24:41+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/categories/porn/</loc>
-    <lastmod>2019-05-16T12:33:24+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/2019-05-16-sex-drugs-rock-roll/</loc>
-    <lastmod>2019-05-16T12:33:24+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/2019-05-14-practice-wen-zhengming-caotang-shizhi/</loc>
-    <lastmod>2019-05-14T12:52:26+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/categories/wen-zhengming/</loc>
-    <lastmod>2019-05-14T12:52:26+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/2019-05-13-daydream/</loc>
-    <lastmod>2019-05-13T12:33:50+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-03-26-notes-the-now-habit-1/</loc>
     <lastmod>2019-03-26T07:44:15+00:00</lastmod>
@@ -792,6 +741,18 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="//localhost:1313/en/about-me/"
+                />
+  </url><url>
+    <loc>//localhost:1313/en/archive/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="//localhost:1313/zh/archive/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/en/archive/"
                 />
   </url><url>
     <loc>//localhost:1313/en/search/</loc>

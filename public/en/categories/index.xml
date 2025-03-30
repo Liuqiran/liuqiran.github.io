@@ -387,13 +387,6 @@
       <description></description>
     </item>
     <item>
-      <title>Philosophy</title>
-      <link>//localhost:1313/en/categories/philosophy/</link>
-      <pubDate>Thu, 10 Oct 2019 12:50:08 +0000</pubDate>
-      <guid>//localhost:1313/en/categories/philosophy/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Masochism and the Self</title>
       <link>//localhost:1313/en/categories/masochism-and-the-self/</link>
       <pubDate>Sat, 21 Sep 2019 22:05:00 +0000</pubDate>
@@ -443,13 +436,6 @@
       <description></description>
     </item>
     <item>
-      <title>Calligraphy</title>
-      <link>//localhost:1313/en/categories/calligraphy/</link>
-      <pubDate>Sun, 14 Jul 2019 08:52:51 +0000</pubDate>
-      <guid>//localhost:1313/en/categories/calligraphy/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Aesthetics</title>
       <link>//localhost:1313/en/categories/aesthetics/</link>
       <pubDate>Sat, 06 Jul 2019 00:21:52 +0000</pubDate>
@@ -464,31 +450,10 @@
       <description></description>
     </item>
     <item>
-      <title>Travel</title>
-      <link>//localhost:1313/en/categories/travel/</link>
-      <pubDate>Fri, 05 Jul 2019 13:37:38 +0000</pubDate>
-      <guid>//localhost:1313/en/categories/travel/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Category</title>
       <link>//localhost:1313/en/categories/category/</link>
       <pubDate>Sun, 23 Jun 2019 02:26:48 +0000</pubDate>
       <guid>//localhost:1313/en/categories/category/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Relatives</title>
-      <link>//localhost:1313/en/categories/relatives/</link>
-      <pubDate>Sun, 23 Jun 2019 02:01:15 +0000</pubDate>
-      <guid>//localhost:1313/en/categories/relatives/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>China</title>
-      <link>//localhost:1313/en/categories/china/</link>
-      <pubDate>Wed, 12 Jun 2019 20:56:54 +0000</pubDate>
-      <guid>//localhost:1313/en/categories/china/</guid>
       <description></description>
     </item>
     <item>
@@ -499,24 +464,17 @@
       <description></description>
     </item>
     <item>
+      <title>Philosophy</title>
+      <link>//localhost:1313/en/categories/philosophy/</link>
+      <pubDate>Thu, 06 Jun 2019 08:22:15 +0000</pubDate>
+      <guid>//localhost:1313/en/categories/philosophy/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Mood</title>
       <link>//localhost:1313/en/categories/mood/</link>
       <pubDate>Thu, 30 May 2019 09:29:54 +0000</pubDate>
       <guid>//localhost:1313/en/categories/mood/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Porn</title>
-      <link>//localhost:1313/en/categories/porn/</link>
-      <pubDate>Thu, 16 May 2019 12:33:24 +0000</pubDate>
-      <guid>//localhost:1313/en/categories/porn/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Wen Zhengming</title>
-      <link>//localhost:1313/en/categories/wen-zhengming/</link>
-      <pubDate>Tue, 14 May 2019 12:52:26 +0000</pubDate>
-      <guid>//localhost:1313/en/categories/wen-zhengming/</guid>
       <description></description>
     </item>
     <item>

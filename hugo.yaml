@@ -29,19 +29,23 @@ languages:
         - identifier: Reading list
           name: Reading list
           url: /en/reading-list/
-          weight: 30
+          weight: 20
+        - identifier: archive
+          name: Archive
+          url: /en/archive/
+          weight: 40
         - identifier: friends
           name: Friends
           url: /en/my-friends/
-          weight: 40
+          weight: 50
         - identifier: categories
           name: Categories
           url: /en/categories/
-          weight: 50
+          weight: 60
         - identifier: search
           name: Search
           url: /en/search/
-          weight: 60
+          weight: 70
     params:
       alternatelang: 'zh'
       profileMode:
@@ -96,16 +100,20 @@ languages:
           weight: 2
         - identifier: reading-list
           name: 阅读书目
-          url: /zh/reading-list-2/
+          url: /zh/reading-list-2/  
+        - identifier: archive  
           weight: 3
+          name: 归档
+          url: /zh/archive/
+          weight: 4
         - identifier: links
           name: 友人
           url: /zh/my-friends/
-          weight: 4
+          weight: 5
         - identifier: 分类
           name: 分类
           url: /zh/categories/
-          weight: 5
+          weight: 6
         - identifier: search
           name: 搜索
           url: /zh/search/

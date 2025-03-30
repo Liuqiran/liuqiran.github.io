@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>China on Liu Qiran</title>
-    <link>//localhost:1313/en/categories/china/</link>
+    <link>/en/categories/china/</link>
     <description>Recent content in China on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 12 Jun 2019 20:56:54 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/china/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/en/categories/china/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Legality of Party</title>
-      <link>//localhost:1313/en/2019-06-13-legality-of-party/</link>
+      <link>/en/2019-06-13-legality-of-party/</link>
       <pubDate>Wed, 12 Jun 2019 20:56:54 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-06-13-legality-of-party/</guid>
+      <guid>/en/2019-06-13-legality-of-party/</guid>
       <description>&lt;p&gt;原文：https://pincong.rocks/question/4825&lt;/p&gt;
 &lt;blockquote class=&#34;wp-block-quote is-layout-flow wp-block-quote-is-layout-flow&#34;&gt;
   &lt;p&gt;
@@ -27,9 +27,9 @@
     </item>
     <item>
       <title>Daydream</title>
-      <link>//localhost:1313/en/2019-05-13-daydream/</link>
+      <link>/en/2019-05-13-daydream/</link>
       <pubDate>Mon, 13 May 2019 12:33:50 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-05-13-daydream/</guid>
+      <guid>/en/2019-05-13-daydream/</guid>
       <description>&lt;p&gt;I think people truly want to flee and people truly proud of the country are not in one world.&lt;/p&gt;
 &lt;p&gt;I dreamt a dream two years ago,  in the dream, it’s 2067, 50 years later.&lt;/p&gt;
 &lt;p&gt;In 2067, buildings in China are very very shabby, everything is desolate. There are old people everywhere,  no children, no vitality, no hope.&lt;/p&gt;

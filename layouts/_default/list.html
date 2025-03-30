@@ -38,7 +38,13 @@
 </div>
 {{- end }}
 
-{{- $pages := union .RegularPages .Sections }}
+{{- $pages := .RegularPages }}
+
+{{- if eq .Type "archive" }}
+    {{- $pages = site.RegularPages }}
+{{- else }}
+    {{- $pages = union .RegularPages .Sections }}
+{{- end }}   
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}

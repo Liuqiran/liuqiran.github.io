@@ -49,12 +49,6 @@
     <loc>//localhost:1313/zh/categories/%E5%9C%A3%E7%BB%8F/</loc>
     <lastmod>2023-04-11T09:55:03+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%8E%86%E5%8F%B2/</loc>
-    <lastmod>2023-02-14T06:12:17+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/zh/toward-a-unipolar-world/</loc>
-    <lastmod>2023-02-14T06:12:17+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/zh/reading-list-2/</loc>
     <lastmod>2023-02-10T15:35:06+00:00</lastmod>
     <xhtml:link
@@ -273,9 +267,6 @@
     <loc>//localhost:1313/zh/chinese-museum/</loc>
     <lastmod>2019-09-24T00:28:58+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/joined-foreverblog/</loc>
-    <lastmod>2019-09-17T13:46:47+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/zh/history-of/</loc>
     <lastmod>2019-09-17T01:14:08+00:00</lastmod>
   </url><url>
@@ -310,12 +301,6 @@
                 href="//localhost:1313/zh/my-friends/"
                 />
   </url><url>
-    <loc>//localhost:1313/zh/letter-in-slowly-3/</loc>
-    <lastmod>2019-06-16T04:59:34+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%93%B2%E5%AD%A6/</loc>
-    <lastmod>2019-06-16T04:59:34+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/title/Wen-zhengming-and-chen-chun/</loc>
     <lastmod>2019-06-10T09:34:04+00:00</lastmod>
   </url><url>
@@ -325,11 +310,8 @@
     <loc>//localhost:1313/zh/categories/%E6%96%B0%E6%B5%AA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2019-06-07T08:00:53+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/letter-in-slowly/</loc>
-    <lastmod>2019-06-04T12:14:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%BF%83%E7%90%86/</loc>
-    <lastmod>2019-06-04T12:14:00+00:00</lastmod>
+    <loc>//localhost:1313/zh/categories/%E5%8E%86%E5%8F%B2/</loc>
+    <lastmod>2019-05-26T23:05:50+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/893/</loc>
     <lastmod>2019-05-26T23:05:50+00:00</lastmod>
@@ -354,9 +336,6 @@
   </url><url>
     <loc>//localhost:1313/zh/reply-in-slowly-2/</loc>
     <lastmod>2019-05-19T12:19:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/zh/reply-to-a-person-in-slowly/</loc>
-    <lastmod>2019-05-09T12:28:12+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/post-to-my-blog/</loc>
     <lastmod>2019-05-04T06:46:58+00:00</lastmod>
@@ -515,9 +494,6 @@
     <loc>//localhost:1313/zh/%E5%A7%9A%E4%BD%A9%E7%94%BB%E7%94%BB%E5%AE%A4/</loc>
     <lastmod>2006-02-04T08:02:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/%E6%88%91%E7%9A%84%E7%85%A7%E7%89%87%EF%BC%8C%E5%A5%BD%E7%9C%8B%E5%90%A7%EF%BC%81/</loc>
-    <lastmod>2006-02-04T07:20:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/zh/%E8%BF%99%E6%98%AF%E6%88%91%E5%8E%BB%E5%B9%B4%EF%BC%88%EF%BC%92%EF%BC%90%EF%BC%90%EF%BC%95%E5%B9%B4%EF%BC%89%E7%94%BB%E7%9A%84%E9%80%9F%E5%86%99/</loc>
     <lastmod>2006-02-04T06:42:00+00:00</lastmod>
   </url><url>
@@ -525,6 +501,18 @@
     <lastmod>2006-02-04T05:07:59+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/%E6%A0%87%E7%AD%BE/</loc>
+  </url><url>
+    <loc>//localhost:1313/zh/archive/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/en/archive/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="//localhost:1313/zh/archive/"
+                />
   </url><url>
     <loc>//localhost:1313/zh/search/</loc>
     <xhtml:link

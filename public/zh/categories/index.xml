@@ -30,13 +30,6 @@
       <description></description>
     </item>
     <item>
-      <title>历史</title>
-      <link>//localhost:1313/zh/categories/%E5%8E%86%E5%8F%B2/</link>
-      <pubDate>Tue, 14 Feb 2023 06:12:17 +0000</pubDate>
-      <guid>//localhost:1313/zh/categories/%E5%8E%86%E5%8F%B2/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>建站</title>
       <link>//localhost:1313/zh/categories/%E5%BB%BA%E7%AB%99/</link>
       <pubDate>Fri, 10 Feb 2023 14:31:32 +0000</pubDate>
@@ -191,13 +184,6 @@
       <description></description>
     </item>
     <item>
-      <title>哲学</title>
-      <link>//localhost:1313/zh/categories/%E5%93%B2%E5%AD%A6/</link>
-      <pubDate>Sun, 16 Jun 2019 04:59:34 +0000</pubDate>
-      <guid>//localhost:1313/zh/categories/%E5%93%B2%E5%AD%A6/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>新浪博客</title>
       <link>//localhost:1313/zh/categories/%E6%96%B0%E6%B5%AA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Fri, 07 Jun 2019 08:00:53 +0000</pubDate>
@@ -205,10 +191,10 @@
       <description></description>
     </item>
     <item>
-      <title>心理</title>
-      <link>//localhost:1313/zh/categories/%E5%BF%83%E7%90%86/</link>
-      <pubDate>Tue, 04 Jun 2019 12:14:00 +0000</pubDate>
-      <guid>//localhost:1313/zh/categories/%E5%BF%83%E7%90%86/</guid>
+      <title>历史</title>
+      <link>//localhost:1313/zh/categories/%E5%8E%86%E5%8F%B2/</link>
+      <pubDate>Sun, 26 May 2019 23:05:50 +0000</pubDate>
+      <guid>//localhost:1313/zh/categories/%E5%8E%86%E5%8F%B2/</guid>
       <description></description>
     </item>
     <item>
