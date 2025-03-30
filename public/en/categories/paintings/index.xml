@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Paintings on Liu Qiran</title>
-    <link>//localhost:38815/en/categories/paintings/</link>
+    <link>//localhost:45615/en/categories/paintings/</link>
     <description>Recent content in Paintings on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 29 Feb 2020 11:23:54 +0000</lastBuildDate>
-    <atom:link href="//localhost:38815/en/categories/paintings/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:45615/en/categories/paintings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Practice digital drawing</title>
-      <link>//localhost:38815/en/2020-02-29-practice-digital-drawing/</link>
+      <link>//localhost:45615/en/2020-02-29-practice-digital-drawing/</link>
       <pubDate>Sat, 29 Feb 2020 11:23:54 +0000</pubDate>
-      <guid>//localhost:38815/en/2020-02-29-practice-digital-drawing/</guid>
+      <guid>//localhost:45615/en/2020-02-29-practice-digital-drawing/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2020/02/Project-4_2.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Krita practice 2</title>
-      <link>//localhost:38815/en/2019-08-01-krita-practice-2/</link>
+      <link>//localhost:45615/en/2019-08-01-krita-practice-2/</link>
       <pubDate>Thu, 01 Aug 2019 13:29:42 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-08-01-krita-practice-2/</guid>
+      <guid>//localhost:45615/en/2019-08-01-krita-practice-2/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/08/manhua-girl-1.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>学校 on 刘其然的部落格</title>
-    <link>//localhost:38815/zh/categories/%E5%AD%A6%E6%A0%A1/</link>
+    <link>//localhost:45615/zh/categories/%E5%AD%A6%E6%A0%A1/</link>
     <description>Recent content in 学校 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 16 Mar 2019 08:50:24 +0000</lastBuildDate>
-    <atom:link href="//localhost:38815/zh/categories/%E5%AD%A6%E6%A0%A1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:45615/zh/categories/%E5%AD%A6%E6%A0%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文献综述写作方法</title>
-      <link>//localhost:38815/zh/research-review-writing/</link>
+      <link>//localhost:45615/zh/research-review-writing/</link>
       <pubDate>Sat, 16 Mar 2019 08:50:24 +0000</pubDate>
-      <guid>//localhost:38815/zh/research-review-writing/</guid>
+      <guid>//localhost:45615/zh/research-review-writing/</guid>
       <description>&lt;p&gt;1、查找文献文献所用关键词、文献数量、文献整理分析角度。&lt;/p&gt;
 &lt;p&gt;2、文献年度数量分布——研究态势。&lt;/p&gt;
 &lt;p&gt;3、文献作者分布——核心人物及其研究和方向。&lt;/p&gt;

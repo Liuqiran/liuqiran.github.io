@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Journal on Liu Qiran</title>
-    <link>//localhost:38815/en/categories/journal/</link>
+    <link>//localhost:45615/en/categories/journal/</link>
     <description>Recent content in Journal on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 27 Nov 2023 12:41:28 +0000</lastBuildDate>
-    <atom:link href="//localhost:38815/en/categories/journal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:45615/en/categories/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Digitization</title>
-      <link>//localhost:38815/en/2023-11-27-digitization/</link>
+      <link>//localhost:45615/en/2023-11-27-digitization/</link>
       <pubDate>Mon, 27 Nov 2023 12:41:28 +0000</pubDate>
-      <guid>//localhost:38815/en/2023-11-27-digitization/</guid>
+      <guid>//localhost:45615/en/2023-11-27-digitization/</guid>
       <description>&lt;p&gt;I will try to digitize all of my diaries. It’s a very big project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 5 Thirteen years of journaling</title>
-      <link>//localhost:38815/en/2023-04-18-ep-5-thirteen-years-of-journaling/</link>
+      <link>//localhost:45615/en/2023-04-18-ep-5-thirteen-years-of-journaling/</link>
       <pubDate>Tue, 18 Apr 2023 09:52:12 +0000</pubDate>
-      <guid>//localhost:38815/en/2023-04-18-ep-5-thirteen-years-of-journaling/</guid>
+      <guid>//localhost:45615/en/2023-04-18-ep-5-thirteen-years-of-journaling/</guid>
       <description>&lt;p&gt;I’ve been journaling for thirteen years.&lt;br&gt;
 I started journaling in April 2010.&lt;/p&gt;
 &lt;p&gt;It’s one of the most important habits in my life.&lt;br&gt;
@@ -30,41 +30,41 @@ Looking back to my childhood, I realized that I already have the talent to colle
     </item>
     <item>
       <title>1: EP-01 Why I start my podcast</title>
-      <link>//localhost:38815/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</link>
+      <link>//localhost:45615/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</link>
       <pubDate>Tue, 21 Feb 2023 07:29:08 +0000</pubDate>
-      <guid>//localhost:38815/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</guid>
+      <guid>//localhost:45615/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</guid>
       <description>&lt;!--[if lt IE 9]&gt;&lt;![endif]--&gt;&lt;audio class=&#34;wp-audio-shortcode&#34; id=&#34;audio-4600-1&#34; preload=&#34;none&#34; style=&#34;width: 100%;&#34; controls=&#34;controls&#34;&gt;&lt;source type=&#34;audio/mpeg&#34; src=&#34;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a?_=1&#34; /&gt;
 &lt;p&gt;&lt;a href=&#34;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a&#34;&gt;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a&lt;/a&gt;&lt;/audio&gt;&lt;/p&gt;
 &lt;p&gt;Hello everyone. I’m Qiran. This is the first episode of my podcast. Today’s topic is that, I want to share reasons about why I start my podcast.&lt;/p&gt;</description>
     </item>
     <item>
       <title>basic shortcut</title>
-      <link>//localhost:38815/en/2019-10-19-basic-shortcut/</link>
+      <link>//localhost:45615/en/2019-10-19-basic-shortcut/</link>
       <pubDate>Sat, 19 Oct 2019 10:55:48 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-10-19-basic-shortcut/</guid>
+      <guid>//localhost:45615/en/2019-10-19-basic-shortcut/</guid>
       <description>&lt;p&gt;reset rotation: 5&lt;/p&gt;</description>
     </item>
     <item>
       <title>Eos 136</title>
-      <link>//localhost:38815/en/2019-10-07-eos-136/</link>
+      <link>//localhost:45615/en/2019-10-07-eos-136/</link>
       <pubDate>Mon, 07 Oct 2019 14:01:35 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-10-07-eos-136/</guid>
+      <guid>//localhost:45615/en/2019-10-07-eos-136/</guid>
       <description>&lt;p&gt;saving 3000rmb to 136 eos&lt;/p&gt;</description>
     </item>
     <item>
       <title>A long dream</title>
-      <link>//localhost:38815/en/2019-06-23-big-dream/</link>
+      <link>//localhost:45615/en/2019-06-23-big-dream/</link>
       <pubDate>Sun, 23 Jun 2019 02:01:15 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-06-23-big-dream/</guid>
+      <guid>//localhost:45615/en/2019-06-23-big-dream/</guid>
       <description>&lt;p&gt;Last night I had a dream which is the longest dream I have ever had in my life, it is also the clearest dream I can remember. So I wrote down and analyzed it.&lt;/p&gt;
 &lt;p&gt;Scene 1: My grandma and I chatting in the house of grandparents in a night.&lt;/p&gt;
 &lt;p&gt;Scene 2: It was in a restaurant. There were many people, mixing the different circles of people I know. They were chatting and having fun. I noticed Zhang Jin ( classmate in primary school ) have fun with her boyfriend, hugging each other. I wanna call Zhou Yuxi ( classmate in high school ), she also appeared in the crowd and answered with surprising.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Legality of Party</title>
-      <link>//localhost:38815/en/2019-06-13-legality-of-party/</link>
+      <link>//localhost:45615/en/2019-06-13-legality-of-party/</link>
       <pubDate>Wed, 12 Jun 2019 20:56:54 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-06-13-legality-of-party/</guid>
+      <guid>//localhost:45615/en/2019-06-13-legality-of-party/</guid>
       <description>&lt;p&gt;原文：https://pincong.rocks/question/4825&lt;/p&gt;
 &lt;blockquote class=&#34;wp-block-quote is-layout-flow wp-block-quote-is-layout-flow&#34;&gt;
   &lt;p&gt;
@@ -79,9 +79,9 @@ Looking back to my childhood, I realized that I already have the talent to colle
     </item>
     <item>
       <title>Tropic love</title>
-      <link>//localhost:38815/en/2019-05-30-tropic-love/</link>
+      <link>//localhost:45615/en/2019-05-30-tropic-love/</link>
       <pubDate>Thu, 30 May 2019 09:29:54 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-05-30-tropic-love/</guid>
+      <guid>//localhost:45615/en/2019-05-30-tropic-love/</guid>
       <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 &lt;/div&gt;&lt;/figure&gt;
@@ -91,9 +91,9 @@ Looking back to my childhood, I realized that I already have the talent to colle
     </item>
     <item>
       <title>Category</title>
-      <link>//localhost:38815/en/2019-05-22-category/</link>
+      <link>//localhost:45615/en/2019-05-22-category/</link>
       <pubDate>Wed, 22 May 2019 13:26:07 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-05-22-category/</guid>
+      <guid>//localhost:45615/en/2019-05-22-category/</guid>
       <description>&lt;p class=&#34;has-background has-primary-background-color&#34;&gt;
   The most important decision you&amp;#8217;ll ever make: Change your categories.
 &lt;/p&gt;
@@ -105,25 +105,25 @@ Looking back to my childhood, I realized that I already have the talent to colle
     </item>
     <item>
       <title></title>
-      <link>//localhost:38815/en/2019-05-21-611/</link>
+      <link>//localhost:45615/en/2019-05-21-611/</link>
       <pubDate>Tue, 21 May 2019 13:24:41 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-05-21-611/</guid>
+      <guid>//localhost:45615/en/2019-05-21-611/</guid>
       <description>&lt;p&gt;These days I started listening the podcast, A.J. Hoge is very good, his talking is understandable and knowledgable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sex, drugs, rock &amp; roll</title>
-      <link>//localhost:38815/en/2019-05-16-sex-drugs-rock-roll/</link>
+      <link>//localhost:45615/en/2019-05-16-sex-drugs-rock-roll/</link>
       <pubDate>Thu, 16 May 2019 12:33:24 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-05-16-sex-drugs-rock-roll/</guid>
+      <guid>//localhost:45615/en/2019-05-16-sex-drugs-rock-roll/</guid>
       <description>&lt;figure&gt;&lt;/figure&gt;
 &lt;p&gt;I may have a porn addiction recently. Watching pornography made me immersed in fantasies, not realities. Maybe I should control my desires.&lt;/p&gt;
 &lt;p&gt;There are a lot of noises make us surrender, TV dramas, and social media make us passive. The meaning of life should be like this, it should be like that. They just mention soft moralities (compassion, kindness) rather than hard moralities ( Powerful, justice). it makes us easy to control, let us succumb to desires.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Daydream</title>
-      <link>//localhost:38815/en/2019-05-13-daydream/</link>
+      <link>//localhost:45615/en/2019-05-13-daydream/</link>
       <pubDate>Mon, 13 May 2019 12:33:50 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-05-13-daydream/</guid>
+      <guid>//localhost:45615/en/2019-05-13-daydream/</guid>
       <description>&lt;p&gt;I think people truly want to flee and people truly proud of the country are not in one world.&lt;/p&gt;
 &lt;p&gt;I dreamt a dream two years ago,  in the dream, it’s 2067, 50 years later.&lt;/p&gt;
 &lt;p&gt;In 2067, buildings in China are very very shabby, everything is desolate. There are old people everywhere,  no children, no vitality, no hope.&lt;/p&gt;

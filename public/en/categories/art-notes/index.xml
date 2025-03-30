@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Art Notes on Liu Qiran</title>
-    <link>//localhost:38815/en/categories/art-notes/</link>
+    <link>//localhost:45615/en/categories/art-notes/</link>
     <description>Recent content in Art Notes on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 30 Aug 2019 13:24:26 +0000</lastBuildDate>
-    <atom:link href="//localhost:38815/en/categories/art-notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:45615/en/categories/art-notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Painting for aunt</title>
-      <link>//localhost:38815/en/2019-08-30-painting-for-aunt/</link>
+      <link>//localhost:45615/en/2019-08-30-painting-for-aunt/</link>
       <pubDate>Fri, 30 Aug 2019 13:24:26 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-08-30-painting-for-aunt/</guid>
+      <guid>//localhost:45615/en/2019-08-30-painting-for-aunt/</guid>
       <description>&lt;p&gt;These days I painting for aunt, making my painting more figurative is a cool thing.&lt;/p&gt;</description>
     </item>
   </channel>

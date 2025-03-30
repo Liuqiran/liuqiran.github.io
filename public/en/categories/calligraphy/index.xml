@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Calligraphy on Liu Qiran</title>
-    <link>//localhost:38815/en/categories/calligraphy/</link>
+    <link>//localhost:45615/en/categories/calligraphy/</link>
     <description>Recent content in Calligraphy on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 14 Jul 2019 08:52:51 +0000</lastBuildDate>
-    <atom:link href="//localhost:38815/en/categories/calligraphy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:45615/en/categories/calligraphy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Practice of Lanting Xu</title>
-      <link>//localhost:38815/en/2019-07-14-practice-of-lanting-xu/</link>
+      <link>//localhost:45615/en/2019-07-14-practice-of-lanting-xu/</link>
       <pubDate>Sun, 14 Jul 2019 08:52:51 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-07-14-practice-of-lanting-xu/</guid>
+      <guid>//localhost:45615/en/2019-07-14-practice-of-lanting-xu/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/07/IMG_20190714_110701-1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/07/IMG_20190714_101211.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Practice Wen Zhengming Caotang Shizhi</title>
-      <link>//localhost:38815/en/2019-05-14-practice-wen-zhengming-caotang-shizhi/</link>
+      <link>//localhost:45615/en/2019-05-14-practice-wen-zhengming-caotang-shizhi/</link>
       <pubDate>Tue, 14 May 2019 12:52:26 +0000</pubDate>
-      <guid>//localhost:38815/en/2019-05-14-practice-wen-zhengming-caotang-shizhi/</guid>
+      <guid>//localhost:45615/en/2019-05-14-practice-wen-zhengming-caotang-shizhi/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/05/IMG_20190424_210105-1.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
