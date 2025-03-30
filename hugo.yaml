@@ -6,7 +6,7 @@ relativeURLs: true
 
 languages:
   en:
-    languageName: "English"  
+    languageName: "EN"  
     title: "Liu Qiran"
     weight: 1
     languageCode: "en-US"
@@ -47,6 +47,7 @@ languages:
           url: /en/search/
           weight: 70
     params:
+      displayFullLangName: true
       alternatelang: 'zh'
       profileMode:
         enabled: true
@@ -80,7 +81,8 @@ languages:
           url: 'https://web.facebook.com/woshiniuziku'
     ShowFullTextinRSS: true
   zh:
-    languageName: "中"   
+    
+    languageName: "中文"   
     Title: "刘其然的部落格"
     languageCode: "zh-CN"
     weight: 2
@@ -100,9 +102,9 @@ languages:
           weight: 2
         - identifier: reading-list
           name: 阅读书目
-          url: /zh/reading-list-2/  
-        - identifier: archive  
+          url: /zh/reading-list-2/    
           weight: 3
+        - identifier: archive 
           name: 归档
           url: /zh/archive/
           weight: 4
@@ -121,6 +123,7 @@ languages:
 
 
     params:
+      displayFullLangName: true
       alternatelang: 'en' 
       homeInfoParams:
         enabled: true
