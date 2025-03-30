@@ -81,7 +81,6 @@ languages:
           url: 'https://web.facebook.com/woshiniuziku'
     ShowFullTextinRSS: true
   zh:
-    
     languageName: "中文"   
     Title: "刘其然的部落格"
     languageCode: "zh-CN"
