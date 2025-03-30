@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>English on Liu Qiran</title>
-    <link>//localhost:1313/en/categories/english/</link>
+    <link>//localhost:38815/en/categories/english/</link>
     <description>Recent content in English on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 11 Jul 2023 13:39:29 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/english/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:38815/en/categories/english/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EP 11 Pure writing</title>
-      <link>//localhost:1313/en/2023-07-11-ep-11-pure-writing/</link>
+      <link>//localhost:38815/en/2023-07-11-ep-11-pure-writing/</link>
       <pubDate>Tue, 11 Jul 2023 13:39:29 +0000</pubDate>
-      <guid>//localhost:1313/en/2023-07-11-ep-11-pure-writing/</guid>
+      <guid>//localhost:38815/en/2023-07-11-ep-11-pure-writing/</guid>
       <description>&lt;figure class=&#34;wp-block-embed is-type-wp-embed is-provider-anchor-fm-inc wp-block-embed-anchor-fm-inc&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 &lt;/div&gt;&lt;/figure&gt;
@@ -27,9 +27,9 @@ Recently I started writing in plain text. I can write in any note-taking softwar
     </item>
     <item>
       <title>Written Assignment #2</title>
-      <link>//localhost:1313/en/2019-12-09-written-assignment-2/</link>
+      <link>//localhost:38815/en/2019-12-09-written-assignment-2/</link>
       <pubDate>Mon, 09 Dec 2019 00:01:04 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-12-09-written-assignment-2/</guid>
+      <guid>//localhost:38815/en/2019-12-09-written-assignment-2/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Translation&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The Master said to Yan Yuan, “If I’m employed, I’ll show my talent; If not, I’ll hide my light under a bushel, only you and I have the ability to do it!”&lt;/li&gt;
@@ -40,9 +40,9 @@ Recently I started writing in plain text. I can write in any note-taking softwar
     </item>
     <item>
       <title>A Brief Overview of 19th Century English</title>
-      <link>//localhost:1313/en/2019-11-04-a-brief-overview-of-19th-century-english/</link>
+      <link>//localhost:38815/en/2019-11-04-a-brief-overview-of-19th-century-english/</link>
       <pubDate>Mon, 04 Nov 2019 12:13:17 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-11-04-a-brief-overview-of-19th-century-english/</guid>
+      <guid>//localhost:38815/en/2019-11-04-a-brief-overview-of-19th-century-english/</guid>
       <description>&lt;p&gt;Google Books Ngram Viewer&lt;br&gt;
 &lt;strong&gt;Ngram&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -59,10 +59,20 @@ default time period: 1800 to 2000 output: graph representing use of  searched i
 &lt;/p&gt;</description>
     </item>
     <item>
+      <title>Elon Musk and Jack Ma</title>
+      <link>//localhost:38815/en/2019-10-10-elon-musk-and-jack-ma/</link>
+      <pubDate>Thu, 10 Oct 2019 12:50:08 +0000</pubDate>
+      <guid>//localhost:38815/en/2019-10-10-elon-musk-and-jack-ma/</guid>
+      <description>&lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
+&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;After watching this video, I’m motivated to learn English and logistics again?&lt;/p&gt;</description>
+    </item>
+    <item>
       <title></title>
-      <link>//localhost:1313/en/2019-05-21-611/</link>
+      <link>//localhost:38815/en/2019-05-21-611/</link>
       <pubDate>Tue, 21 May 2019 13:24:41 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-05-21-611/</guid>
+      <guid>//localhost:38815/en/2019-05-21-611/</guid>
       <description>&lt;p&gt;These days I started listening the podcast, A.J. Hoge is very good, his talking is understandable and knowledgable.&lt;/p&gt;</description>
     </item>
   </channel>

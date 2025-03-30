@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Art Through the Ages on Liu Qiran</title>
-    <link>//localhost:1313/en/categories/art-through-the-ages/</link>
+    <link>//localhost:38815/en/categories/art-through-the-ages/</link>
     <description>Recent content in Art Through the Ages on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 08 Sep 2020 12:49:47 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/art-through-the-ages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:38815/en/categories/art-through-the-ages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ancient Greece</title>
-      <link>//localhost:1313/en/2020-09-08-ancient-greece/</link>
+      <link>//localhost:38815/en/2020-09-08-ancient-greece/</link>
       <pubDate>Tue, 08 Sep 2020 12:49:47 +0000</pubDate>
-      <guid>//localhost:1313/en/2020-09-08-ancient-greece/</guid>
+      <guid>//localhost:38815/en/2020-09-08-ancient-greece/</guid>
       <description>&lt;h3 class=&#34;wp-block-heading&#34; id=&#34;architecture-and-architectural-sculpture&#34;&gt;Architecture and Architectural Sculpture&lt;/h3&gt;
 &lt;p&gt;Doric and Ionic orders.&lt;br&gt;
 &lt;em&gt;Doric&lt;/em&gt; formulated on the mainland; the &lt;em&gt;Ionic&lt;/em&gt; was the order of choice in the Aegean Islans and coast of Asia Minor.&lt;br&gt;
@@ -25,9 +25,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EGYPT UNDER THE PHARAOHS</title>
-      <link>//localhost:1313/en/2019-09-13-egypt-under-the-pharaohs/</link>
+      <link>//localhost:38815/en/2019-09-13-egypt-under-the-pharaohs/</link>
       <pubDate>Thu, 12 Sep 2019 23:42:27 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-09-13-egypt-under-the-pharaohs/</guid>
+      <guid>//localhost:38815/en/2019-09-13-egypt-under-the-pharaohs/</guid>
       <description>&lt;h3 class=&#34;wp-block-heading&#34; id=&#34;predynastic-and-early-dynastic-periods&#34;&gt;PREDYNASTIC AND EARLY DYNASTIC PERIODS&lt;/h3&gt;
 &lt;h3 class=&#34;wp-block-heading&#34; id=&#34;painting-and-sculpture&#34;&gt;Painting and Sculpture&lt;/h3&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;palette-of-king-narmer&#34;&gt;PALETTE OF KING NARMER&lt;/h4&gt;
@@ -38,9 +38,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MESOPOTAMIA  AND PERSIA</title>
-      <link>//localhost:1313/en/2019-08-29-mesopotamia-and-persia/</link>
+      <link>//localhost:38815/en/2019-08-29-mesopotamia-and-persia/</link>
       <pubDate>Thu, 29 Aug 2019 05:27:52 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-08-29-mesopotamia-and-persia/</guid>
+      <guid>//localhost:38815/en/2019-08-29-mesopotamia-and-persia/</guid>
       <description>&lt;h3 class=&#34;wp-block-heading&#34; id=&#34;sumer&#34;&gt;Sumer&lt;/h3&gt;
 &lt;p&gt;The Sumerians developed city-states and formed a white temple for rituals. Sumerians also produced great literature.&lt;/p&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;inanna&#34;&gt;INANNA&lt;/h4&gt;
@@ -54,9 +54,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Neolithic Art</title>
-      <link>//localhost:1313/en/2019-08-13-neolithic-art/</link>
+      <link>//localhost:38815/en/2019-08-13-neolithic-art/</link>
       <pubDate>Tue, 13 Aug 2019 15:55:13 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-08-13-neolithic-art/</guid>
+      <guid>//localhost:38815/en/2019-08-13-neolithic-art/</guid>
       <description>&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;anatolia-and-mesopotamia&#34;&gt;Anatolia and Mesopotamia&lt;/h4&gt;
 &lt;p&gt;The agriculture developed, many towns developed, so the&lt;/p&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;jericho&#34;&gt;JERICHO&lt;/h4&gt;
@@ -68,9 +68,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paleolithic Art</title>
-      <link>//localhost:1313/en/2019-08-11-paleolithic-art/</link>
+      <link>//localhost:38815/en/2019-08-11-paleolithic-art/</link>
       <pubDate>Sun, 11 Aug 2019 11:17:14 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-08-11-paleolithic-art/</guid>
+      <guid>//localhost:38815/en/2019-08-11-paleolithic-art/</guid>
       <description>&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;africa&#34;&gt;Africa&lt;/h4&gt;
 &lt;p&gt;What shall be my subject? -animals, but men are rare. They’re almost profiled because the only profile can show the essence.&lt;/p&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;western-europe&#34;&gt;Western Europe&lt;/h4&gt;
@@ -83,9 +83,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basic concepts 4</title>
-      <link>//localhost:1313/en/2019-08-01-basic-concepts-4/</link>
+      <link>//localhost:38815/en/2019-08-01-basic-concepts-4/</link>
       <pubDate>Thu, 01 Aug 2019 09:25:15 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-08-01-basic-concepts-4/</guid>
+      <guid>//localhost:38815/en/2019-08-01-basic-concepts-4/</guid>
       <description>&lt;p&gt;Carving and Casting: Subtractive, and addictive.&lt;/p&gt;
 &lt;p&gt;Relief sculpture: some sculpture is very boldly.&lt;/p&gt;
 &lt;p&gt;Art historian should learn in other disciplines.&lt;/p&gt;
@@ -93,9 +93,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basic concept 3</title>
-      <link>//localhost:1313/en/2019-07-27-basic-concept-3/</link>
+      <link>//localhost:38815/en/2019-07-27-basic-concept-3/</link>
       <pubDate>Sat, 27 Jul 2019 09:29:57 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-07-27-basic-concept-3/</guid>
+      <guid>//localhost:38815/en/2019-07-27-basic-concept-3/</guid>
       <description>&lt;p&gt;Texture reflects the material.&lt;/p&gt;
 &lt;p&gt;SPACE, MASS, and VOLUME&lt;/p&gt;
 &lt;p&gt;Perspective, Foreshortening Foreshortening is one form of perspective, Rubens use it, Egyptian artists don’t use it, neither is the correct.&lt;/p&gt;
@@ -103,9 +103,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basic concepts 2</title>
-      <link>//localhost:1313/en/2019-07-23-basic-concepts-2/</link>
+      <link>//localhost:38815/en/2019-07-23-basic-concepts-2/</link>
       <pubDate>Tue, 23 Jul 2019 11:02:13 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-07-23-basic-concepts-2/</guid>
+      <guid>//localhost:38815/en/2019-07-23-basic-concepts-2/</guid>
       <description>&lt;p&gt;Who made it? From the personal style, art historian can attribute who made these art works.&lt;/p&gt;
 &lt;p&gt;Who paid for it? Patrons always have a big influence when artists are commissioned. They can change subjects and style in an artwork, under these circumstances, personal style is not important. So it is necessary to know who paid for it?&lt;/p&gt;
 &lt;p&gt;Basic words for art historian:&lt;/p&gt;
@@ -113,9 +113,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basic concepts</title>
-      <link>//localhost:1313/en/2019-07-17-basic-conceptions/</link>
+      <link>//localhost:38815/en/2019-07-17-basic-conceptions/</link>
       <pubDate>Wed, 17 Jul 2019 06:20:39 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-07-17-basic-conceptions/</guid>
+      <guid>//localhost:38815/en/2019-07-17-basic-conceptions/</guid>
       <description>&lt;p&gt;What is art history:&lt;/p&gt;
 &lt;p&gt;Art history aims to learn and find the history and development of art.&lt;/p&gt;
 &lt;p&gt;The questions art historians should ask:&lt;/p&gt;

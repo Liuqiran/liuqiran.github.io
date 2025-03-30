@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>软件 on 刘其然的部落格</title>
-    <link>//localhost:1313/zh/categories/%E8%BD%AF%E4%BB%B6/</link>
+    <link>//localhost:38815/zh/categories/%E8%BD%AF%E4%BB%B6/</link>
     <description>Recent content in 软件 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 20 Apr 2017 09:52:20 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/zh/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:38815/zh/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2017-04-20</title>
-      <link>//localhost:1313/zh/2017-04-20/</link>
+      <link>//localhost:38815/zh/2017-04-20/</link>
       <pubDate>Thu, 20 Apr 2017 09:52:20 +0000</pubDate>
-      <guid>//localhost:1313/zh/2017-04-20/</guid>
+      <guid>//localhost:38815/zh/2017-04-20/</guid>
       <description>&lt;p&gt;我喜欢看app上的统计数据，&lt;br&gt;
 比如anki的复习统计图&lt;br&gt;
 quality time 的使用数据&lt;br&gt;

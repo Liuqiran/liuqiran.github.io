@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Journal on Liu Qiran</title>
-    <link>//localhost:1313/en/categories/journal/</link>
+    <link>//localhost:38815/en/categories/journal/</link>
     <description>Recent content in Journal on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 27 Nov 2023 12:41:28 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/journal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:38815/en/categories/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Digitization</title>
-      <link>//localhost:1313/en/2023-11-27-digitization/</link>
+      <link>//localhost:38815/en/2023-11-27-digitization/</link>
       <pubDate>Mon, 27 Nov 2023 12:41:28 +0000</pubDate>
-      <guid>//localhost:1313/en/2023-11-27-digitization/</guid>
+      <guid>//localhost:38815/en/2023-11-27-digitization/</guid>
       <description>&lt;p&gt;I will try to digitize all of my diaries. It’s a very big project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 5 Thirteen years of journaling</title>
-      <link>//localhost:1313/en/2023-04-18-ep-5-thirteen-years-of-journaling/</link>
+      <link>//localhost:38815/en/2023-04-18-ep-5-thirteen-years-of-journaling/</link>
       <pubDate>Tue, 18 Apr 2023 09:52:12 +0000</pubDate>
-      <guid>//localhost:1313/en/2023-04-18-ep-5-thirteen-years-of-journaling/</guid>
+      <guid>//localhost:38815/en/2023-04-18-ep-5-thirteen-years-of-journaling/</guid>
       <description>&lt;p&gt;I’ve been journaling for thirteen years.&lt;br&gt;
 I started journaling in April 2010.&lt;/p&gt;
 &lt;p&gt;It’s one of the most important habits in my life.&lt;br&gt;
@@ -30,18 +30,58 @@ Looking back to my childhood, I realized that I already have the talent to colle
     </item>
     <item>
       <title>1: EP-01 Why I start my podcast</title>
-      <link>//localhost:1313/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</link>
+      <link>//localhost:38815/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</link>
       <pubDate>Tue, 21 Feb 2023 07:29:08 +0000</pubDate>
-      <guid>//localhost:1313/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</guid>
+      <guid>//localhost:38815/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</guid>
       <description>&lt;!--[if lt IE 9]&gt;&lt;![endif]--&gt;&lt;audio class=&#34;wp-audio-shortcode&#34; id=&#34;audio-4600-1&#34; preload=&#34;none&#34; style=&#34;width: 100%;&#34; controls=&#34;controls&#34;&gt;&lt;source type=&#34;audio/mpeg&#34; src=&#34;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a?_=1&#34; /&gt;
 &lt;p&gt;&lt;a href=&#34;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a&#34;&gt;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a&lt;/a&gt;&lt;/audio&gt;&lt;/p&gt;
 &lt;p&gt;Hello everyone. I’m Qiran. This is the first episode of my podcast. Today’s topic is that, I want to share reasons about why I start my podcast.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>basic shortcut</title>
+      <link>//localhost:38815/en/2019-10-19-basic-shortcut/</link>
+      <pubDate>Sat, 19 Oct 2019 10:55:48 +0000</pubDate>
+      <guid>//localhost:38815/en/2019-10-19-basic-shortcut/</guid>
+      <description>&lt;p&gt;reset rotation: 5&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eos 136</title>
+      <link>//localhost:38815/en/2019-10-07-eos-136/</link>
+      <pubDate>Mon, 07 Oct 2019 14:01:35 +0000</pubDate>
+      <guid>//localhost:38815/en/2019-10-07-eos-136/</guid>
+      <description>&lt;p&gt;saving 3000rmb to 136 eos&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A long dream</title>
+      <link>//localhost:38815/en/2019-06-23-big-dream/</link>
+      <pubDate>Sun, 23 Jun 2019 02:01:15 +0000</pubDate>
+      <guid>//localhost:38815/en/2019-06-23-big-dream/</guid>
+      <description>&lt;p&gt;Last night I had a dream which is the longest dream I have ever had in my life, it is also the clearest dream I can remember. So I wrote down and analyzed it.&lt;/p&gt;
+&lt;p&gt;Scene 1: My grandma and I chatting in the house of grandparents in a night.&lt;/p&gt;
+&lt;p&gt;Scene 2: It was in a restaurant. There were many people, mixing the different circles of people I know. They were chatting and having fun. I noticed Zhang Jin ( classmate in primary school ) have fun with her boyfriend, hugging each other. I wanna call Zhou Yuxi ( classmate in high school ), she also appeared in the crowd and answered with surprising.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Legality of Party</title>
+      <link>//localhost:38815/en/2019-06-13-legality-of-party/</link>
+      <pubDate>Wed, 12 Jun 2019 20:56:54 +0000</pubDate>
+      <guid>//localhost:38815/en/2019-06-13-legality-of-party/</guid>
+      <description>&lt;p&gt;原文：https://pincong.rocks/question/4825&lt;/p&gt;
+&lt;blockquote class=&#34;wp-block-quote is-layout-flow wp-block-quote-is-layout-flow&#34;&gt;
+  &lt;p&gt;
+    请问为甚麽中国共产党一直标榜自己是中华民族复兴的代表？&lt;br /&gt;这个问题一直让我很困惑。中共明明就是外国资助的反动势力，成功的在抗战胜利后发动内战推翻中华民国。然后联合苏维埃大搞各种运动，造成众多的百姓伤亡。一直到所谓的改革开放，又用各种方式阻挠政治开放，屠杀学生，封杀舆论，到今天不断的仇视西方”敌对势力，“ 吹捧中共独裁的优势。请问一个靠着破坏传统文化，反对儒家思想，无神论，无法理的共产政权，如何让众多的14亿人口乖乖的高举那红色的链锤五星旗？ 中共动不动就代表14亿人民，指责所有不肯屈服的台湾人，香港人是背祖忘宗。借问，马克思，梁家河，毛泽东，是什么时候成为“中华文化”的精髓？为甚麽不肯接受共产党所谓“一国两制”的条件就算是“背祖忘宗”？共产党那时候变成中华民族的祖宗了？ 谢谢。
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个问题的核心是party面临的一个一直以来的致命缺陷，就是统治权威（Authority）的不完整。&lt;/p&gt;
+&lt;p&gt;很多人或许会有疑问，那就是为什么一个国家里一个政治势力能够执政，支撑这种统治的法理是什么？不同国家有着不同的解释，但是一直以来相当多国家甚至包括中国的认识就是，如果一个政治势力不能够比较好的统治，那么它是可以被换掉的，因为统治的不好会使它失去统治权威，那么理所当然的就不能再统治下去。&lt;/p&gt;
+&lt;p&gt;这在资本主义国家是很正常的，但是对于共产党则不行，在共产主义运动发展的过程中，逐渐地资本家是可以与工人阶级妥协的，但是红色政权永远没法与资本家妥协，所以为了保持红色政权的稳固，必须创造一套“有且仅有”的合法性叙事来保证，这在中国刚建国的时候表现为两条，第一条是“共产主义好”；第二条是“只有共产党才能救中国。”&lt;/p&gt;
+&lt;p&gt;开始这种理论具有很强的自洽性，可以形成循环论证，而且当时中国外部环境紧张，人民可以接受这种叙事，但是逐渐地，人民改善生活的需求高涨，中共最后不得不解除一部分控制，改革开放。&lt;/p&gt;
+&lt;p&gt;但是这带来了另一个问题，改革开放意味着中国必须停止革命宣传与革命输出，而且要发展资本主义（或多或少地），那么这直接消灭了合法性叙事的第一条，那么要想让统治合法，就只能仅仅抱住“只有共产党才能救中国”。但是这样的说法并不确切，因为从历史上看“只有共产党救了中国”才是真正发生的事，历史并不能证明中共救中国的唯一合理性。所以为了进一步巩固这样的说法，必须掺入民族主义的成分，将自己与民族的前途命运绑定在一起，所以中华民族的伟大复兴这样与共产主义思想完全相悖的说法才会被发明出来。但是，即便如此，依然不能说明中共的唯一性，因此中共必须不断用“我现在做的很好，所以我将来也会做好。”这样的论据来证明自己。当然如果有一天中国经济停止发展了，统治的合法性自然消失了，如果有一天大家认为香港台湾做的更好的时候，统治的合法性也会自然消失了。所以才会不断神化自己，抹黑别人，否则就失去了合法性。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Tropic love</title>
-      <link>//localhost:1313/en/2019-05-30-tropic-love/</link>
+      <link>//localhost:38815/en/2019-05-30-tropic-love/</link>
       <pubDate>Thu, 30 May 2019 09:29:54 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-05-30-tropic-love/</guid>
+      <guid>//localhost:38815/en/2019-05-30-tropic-love/</guid>
       <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 &lt;/div&gt;&lt;/figure&gt;
@@ -51,9 +91,9 @@ Looking back to my childhood, I realized that I already have the talent to colle
     </item>
     <item>
       <title>Category</title>
-      <link>//localhost:1313/en/2019-05-22-category/</link>
+      <link>//localhost:38815/en/2019-05-22-category/</link>
       <pubDate>Wed, 22 May 2019 13:26:07 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-05-22-category/</guid>
+      <guid>//localhost:38815/en/2019-05-22-category/</guid>
       <description>&lt;p class=&#34;has-background has-primary-background-color&#34;&gt;
   The most important decision you&amp;#8217;ll ever make: Change your categories.
 &lt;/p&gt;
@@ -65,10 +105,30 @@ Looking back to my childhood, I realized that I already have the talent to colle
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/en/2019-05-21-611/</link>
+      <link>//localhost:38815/en/2019-05-21-611/</link>
       <pubDate>Tue, 21 May 2019 13:24:41 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-05-21-611/</guid>
+      <guid>//localhost:38815/en/2019-05-21-611/</guid>
       <description>&lt;p&gt;These days I started listening the podcast, A.J. Hoge is very good, his talking is understandable and knowledgable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sex, drugs, rock &amp; roll</title>
+      <link>//localhost:38815/en/2019-05-16-sex-drugs-rock-roll/</link>
+      <pubDate>Thu, 16 May 2019 12:33:24 +0000</pubDate>
+      <guid>//localhost:38815/en/2019-05-16-sex-drugs-rock-roll/</guid>
+      <description>&lt;figure&gt;&lt;/figure&gt;
+&lt;p&gt;I may have a porn addiction recently. Watching pornography made me immersed in fantasies, not realities. Maybe I should control my desires.&lt;/p&gt;
+&lt;p&gt;There are a lot of noises make us surrender, TV dramas, and social media make us passive. The meaning of life should be like this, it should be like that. They just mention soft moralities (compassion, kindness) rather than hard moralities ( Powerful, justice). it makes us easy to control, let us succumb to desires.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Daydream</title>
+      <link>//localhost:38815/en/2019-05-13-daydream/</link>
+      <pubDate>Mon, 13 May 2019 12:33:50 +0000</pubDate>
+      <guid>//localhost:38815/en/2019-05-13-daydream/</guid>
+      <description>&lt;p&gt;I think people truly want to flee and people truly proud of the country are not in one world.&lt;/p&gt;
+&lt;p&gt;I dreamt a dream two years ago,  in the dream, it’s 2067, 50 years later.&lt;/p&gt;
+&lt;p&gt;In 2067, buildings in China are very very shabby, everything is desolate. There are old people everywhere,  no children, no vitality, no hope.&lt;/p&gt;
+&lt;p&gt;The dream of the great rejuvenation all in vain.&lt;/p&gt;
+&lt;p&gt;I am afraid that this dream will become a reality in 2067.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
