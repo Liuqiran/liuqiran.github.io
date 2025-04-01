@@ -6,7 +6,7 @@ date: 2023-04-03T20:33:00+00:00
 aliases: ["/ep-4-ai-tool-for-learning/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Podcast
   - Technology
 

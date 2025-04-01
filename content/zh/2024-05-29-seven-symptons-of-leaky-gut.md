@@ -10,7 +10,7 @@ xyz_twap:
   - 1
 xyz_twap_insert_twitter_card:
   - 1
-categories:
+tags:
   - 健康
 
 ---

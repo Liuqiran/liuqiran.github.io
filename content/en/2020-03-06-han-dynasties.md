@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-03-06T13:11:03+00:00
 aliases: ["/han-dynasties/"]
-categories:
+tags:
   - A Chinese-foreign exchange history of fine arts
 
 ---

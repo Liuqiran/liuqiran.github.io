@@ -6,7 +6,7 @@ date: 2023-05-09T15:09:09+00:00
 aliases: ["/loop-habits-tracker/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Habit
   - Software
 

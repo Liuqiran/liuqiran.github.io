@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-05-13T02:21:18+00:00
 url: /zh/literary-intellectuals-in-ming/
-categories:
+tags:
   - 美学
 
 ---

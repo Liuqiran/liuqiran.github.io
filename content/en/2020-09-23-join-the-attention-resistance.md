@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-09-23T06:16:17+00:00
 aliases: ["/join-the-attention-resistance/"]
-categories:
+tags:
   - Digital Minimalism
 
 ---

@@ -6,7 +6,7 @@ date: 2023-03-07T03:37:57+00:00
 aliases: ["/ep-2-the-tree-of-habits/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Habit
   - Podcast
 

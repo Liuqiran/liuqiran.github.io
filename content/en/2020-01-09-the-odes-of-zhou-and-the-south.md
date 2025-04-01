@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-01-09T01:56:57+00:00
 aliases: ["/the-odes-of-zhou-and-the-south/"]
-categories:
+tags:
   - Book of Poetry
 
 ---

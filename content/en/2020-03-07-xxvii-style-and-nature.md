@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-03-07T10:25:01+00:00
 aliases: ["/xxvii-style-and-nature/"]
-categories:
+tags:
   - The Literary Mind and the Carving of Dragons
 
 ---

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-03-21T05:37:16+00:00
 url: /zh/visual-pleasure-and-narrative-cinema/
-categories:
+tags:
   - 西方美术史
 
 ---

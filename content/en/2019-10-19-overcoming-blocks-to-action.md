@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-10-19T10:55:48+00:00
 aliases: ["/overcoming-blocks-to-action/"]
-categories:
+tags:
   - The Now Habit
 
 ---

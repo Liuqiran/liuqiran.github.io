@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-09-29T02:15:38+00:00
 url: /zh/chinese-art-education-in-the-turn-of-20th-century/
-categories:
+tags:
   - 中国美术史
 ---
 **画会、社团的美术教育**

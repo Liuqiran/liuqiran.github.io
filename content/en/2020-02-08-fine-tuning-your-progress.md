@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-02-08T10:31:04+00:00
 aliases: ["/fine-tuning-your-progress/"]
-categories:
+tags:
   - The Now Habit
 
 ---

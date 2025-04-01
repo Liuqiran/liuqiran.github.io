@@ -12,7 +12,7 @@ autoshare_tweet_accounts:
   - 'a:1:{i:0;s:18:"731881692575739904";}'
 autoshare_status:
   - 'a:1:{i:0;a:4:{s:6:"status";s:9:"published";s:10:"twitter_id";i:1688909061360848896;s:6:"handle";s:9:"qiran_liu";s:10:"created_at";s:25:"2023-08-08T13:44:33+00:00";}}'
-categories:
+tags:
   - Software
 
 ---

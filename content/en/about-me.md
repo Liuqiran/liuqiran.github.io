@@ -8,7 +8,7 @@ views:
   - 4
 wp_last_modified_info:
   - 2019-04-16 @ 6:29 AM
-categories:
+tags:
   - Building Site
 ---
 Writing is supposed to be an essential part of life. Organizing one&#8217;s words and works in the form of a blog is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this blog to record myself and share my thoughts, articles and works. ：)

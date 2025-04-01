@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-12-13T09:17:12+00:00
 aliases: ["/the-money-trap-the-old-road-map-for-money/"]
-categories:
+tags:
   - Your Money or Your Life
 
 ---

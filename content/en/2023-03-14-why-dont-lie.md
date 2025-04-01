@@ -6,7 +6,7 @@ date: 2023-03-13T23:06:31+00:00
 aliases: ["/why-dont-lie/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Life
   - Psychology
 

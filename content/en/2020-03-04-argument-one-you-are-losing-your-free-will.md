@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-03-04T05:50:54+00:00
 aliases: ["/argument-one-you-are-losing-your-free-will/"]
-categories:
+tags:
   - Ten Arguments for Deleting Your Social Media Accounts Right Now
 
 ---

@@ -6,7 +6,7 @@ date: 2023-02-28T12:53:54+00:00
 aliases: ["/change-the-title/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Building Site
 
 ---

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-01-18T15:00:22+00:00
 aliases: ["/working-in-the-flow-state/"]
-categories:
+tags:
   - The Now Habit
 
 ---

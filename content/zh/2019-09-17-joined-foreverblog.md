@@ -6,7 +6,7 @@ date: 2019-09-17T13:46:47+00:00
 draft: true
 private: true
 url: /zh/joined-foreverblog/
-categories:
+tags:
   - 建站
 
 ---

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-09-17T01:14:08+00:00
 url: /zh/history-of/
-categories:
+tags:
   - 博物馆学
 
 ---

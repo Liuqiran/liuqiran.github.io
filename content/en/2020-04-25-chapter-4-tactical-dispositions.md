@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-04-25T13:25:15+00:00
 aliases: ["/chapter-4-tactical-dispositions/"]
-categories:
+tags:
   - "Sun Tzu's The Art of War"
 
 ---

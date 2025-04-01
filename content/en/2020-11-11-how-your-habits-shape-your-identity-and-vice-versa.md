@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-11-11T01:44:56+00:00
 aliases: ["/how-your-habits-shape-your-identity-and-vice-versa/"]
-categories:
+tags:
   - Atomic Habits
 
 ---

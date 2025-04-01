@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2018-05-31T07:44:05+00:00
 url: /zh/introduce-flypy/
-categories:
+tags:
   - 科技
 
 ---

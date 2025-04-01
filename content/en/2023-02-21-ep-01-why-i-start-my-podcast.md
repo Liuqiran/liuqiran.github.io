@@ -6,7 +6,7 @@ date: 2023-02-21T15:47:15+00:00
 aliases: ["/ep-01-why-i-start-my-podcast/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Podcast
 
 ---

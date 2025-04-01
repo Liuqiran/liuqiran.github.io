@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-01-18T08:00:51+00:00
 url: /zh/domestic-drama/
-categories:
+tags:
   - 传播
 
 ---

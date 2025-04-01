@@ -8,7 +8,7 @@ autoshare_autoshare_for_twitter:
   - 1
 autoshare_tweet-allow-image:
   - yes
-categories:
+tags:
   - 研究
 
 ---

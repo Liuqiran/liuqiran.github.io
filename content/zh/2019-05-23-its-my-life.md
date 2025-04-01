@@ -6,7 +6,7 @@ date: 2019-05-23T13:03:48+00:00
 url: /zh/its-my-life/
 boomdevs_metabox:
   - 's:41:"a:1:{s:19:"disable_auto_insert";s:1:"0";}";'
-categories:
+tags:
   - 人生
   - 未分类
   - 音乐

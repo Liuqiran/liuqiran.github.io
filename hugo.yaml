@@ -39,7 +39,7 @@ languages:
           url: /en/my-friends/
           weight: 50
         - identifier: tags
-          name: Categories
+          name: tags
           url: /en/tags/
           weight: 60
         - identifier: search
@@ -59,6 +59,8 @@ languages:
         buttons:
           - name: about
             url: /en/about-me-2/
+          - name: posts 
+            url: /en/archive/
 
       socialIcons:
         - name: rss
@@ -88,7 +90,7 @@ languages:
     contentDir: content/zh/  
     taxonomies: # 分类系统
       category: categories
-      tag: 标签
+      tag: tags
     menu:
       main:
         - identifier: homepage 
@@ -111,9 +113,9 @@ languages:
           name: 友人
           url: /zh/my-friends/
           weight: 5
-        - identifier: 分类
-          name: 分类
-          url: /zh/categories/
+        - identifier: 标签
+          name: 标签
+          url: /zh/tags/
           weight: 6
         - identifier: search
           name: 搜索

@@ -8,7 +8,7 @@ xyz_twap:
   - 1
 boomdevs_metabox:
   - 's:41:"a:1:{s:19:"disable_auto_insert";s:1:"0";}";'
-categories:
+tags:
   - Fear
   - Podcast
 

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-03-16T08:50:24+00:00
 url: /zh/research-review-writing/
-categories:
+tags:
   - 学校
 
 ---

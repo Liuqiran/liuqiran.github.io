@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-11-29T12:59:49+00:00
 aliases: ["/the-cat-and-the-washing-machine/"]
-categories:
+tags:
   - 'Antifragile: Things That Gain From Disorder'
 
 ---

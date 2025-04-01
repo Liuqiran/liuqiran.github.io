@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-09-24T00:28:58+00:00
 url: /zh/chinese-museum/
-categories:
+tags:
   - 博物馆学
 
 ---

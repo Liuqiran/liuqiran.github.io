@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-07-27T03:46:43+00:00
 aliases: ["/a-lopsided-arms-race/"]
-categories:
+tags:
   - Digital Minimalism
 
 ---

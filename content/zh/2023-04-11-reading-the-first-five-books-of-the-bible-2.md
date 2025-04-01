@@ -6,7 +6,7 @@ date: 2023-04-11T09:55:03+00:00
 url: /zh/reading-the-first-five-books-of-the-bible-2/
 xyz_twap:
   - 1
-categories:
+tags:
   - 圣经
 
 ---

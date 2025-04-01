@@ -8,7 +8,7 @@ wp_last_modified_info:
   - 2019-04-30 @ 11:00 AM
 wplmi_shortcode:
   - '[lmt-post-modified-info]'
-categories:
+tags:
   - 历史课
 
 ---

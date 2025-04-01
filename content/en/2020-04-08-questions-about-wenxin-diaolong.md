@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-04-08T00:17:47+00:00
 aliases: ["/questions-about-wenxin-diaolong/"]
-categories:
+tags:
   - The Literary Mind and the Carving of Dragons
 
 ---

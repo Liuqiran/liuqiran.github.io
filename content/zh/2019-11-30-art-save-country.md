@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-11-30T08:42:49+00:00
 url: /zh/art-save-country/
-categories:
+tags:
   - 中国美术史
 
 ---

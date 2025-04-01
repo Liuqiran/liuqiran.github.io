@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-09-29T00:54:26+00:00
 url: /zh/1-new-voice-of-chinese-fine-art-education/
-categories:
+tags:
   - 中国美术史
 ---
 **Arrival of western culture and change of Chinese art education**

@@ -6,7 +6,7 @@ date: 2023-04-11T09:55:03+00:00
 aliases: ["/reading-the-first-five-books-of-the-bible/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Bible
 
 ---

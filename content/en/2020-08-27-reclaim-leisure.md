@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-08-27T12:54:04+00:00
 aliases: ["/reclaim-leisure/"]
-categories:
+tags:
   - Digital Minimalism
 
 ---

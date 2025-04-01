@@ -8,7 +8,7 @@ autoshare_tweet-allow-image:
   - yes
 autoshare_tweet_accounts:
   - 'a:1:{i:0;s:18:"731881692575739904";}'
-categories:
+tags:
   - 新浪博客
 
 ---

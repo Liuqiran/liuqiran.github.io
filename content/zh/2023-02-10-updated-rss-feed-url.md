@@ -6,7 +6,7 @@ date: 2023-02-10T14:31:32+00:00
 url: /zh/updated-rss-feed-url/
 xyz_twap:
   - 1
-categories:
+tags:
   - 建站
 
 ---

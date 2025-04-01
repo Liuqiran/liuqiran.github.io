@@ -8,7 +8,7 @@ wp_last_modified_info:
   - 2019-05-03 @ 9:32 AM
 wplmi_shortcode:
   - '[lmt-post-modified-info]'
-categories:
+tags:
   - 习惯
   - 人生
 

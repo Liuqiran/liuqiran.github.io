@@ -10,7 +10,7 @@ autoshare_tweet-allow-image:
   - yes
 autoshare_tweet_accounts:
   - 'a:0:{}'
-categories:
+tags:
   - 人生
   - 信件
   - 社交媒体

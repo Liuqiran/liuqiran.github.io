@@ -6,7 +6,7 @@ date: 2022-06-21T11:25:37+00:00
 url: /zh/liuzhongjings-opinion-about-first-tier-cities/
 xyz_twap:
   - 1
-categories:
+tags:
   - 中国
 ---
 **北京**

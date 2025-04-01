@@ -15,32 +15,32 @@
                 href="//localhost:1313/en/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/categories/building-site/</loc>
+    <loc>//localhost:1313/en/tags/building-site/</loc>
     <lastmod>2025-01-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/categories/</loc>
-    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="//localhost:1313/zh/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/en/categories/"
-                />
   </url><url>
     <loc>//localhost:1313/en/migrated-to-hugo/</loc>
     <lastmod>2025-01-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/en/tags/</loc>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="//localhost:1313/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/en/tags/"
+                />
+  </url><url>
     <loc>//localhost:1313/en/2023-11-27-digitization/</loc>
     <lastmod>2023-11-27T12:41:28+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/journal/</loc>
+    <loc>//localhost:1313/en/tags/journal/</loc>
     <lastmod>2023-11-27T12:41:28+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/log/</loc>
+    <loc>//localhost:1313/en/tags/log/</loc>
     <lastmod>2023-10-25T00:17:17+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-10-25-writing-freely/</loc>
@@ -49,16 +49,16 @@
     <loc>//localhost:1313/en/2023-08-29-harm-from-technology/</loc>
     <lastmod>2023-08-28T16:03:02+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/health/</loc>
+    <loc>//localhost:1313/en/tags/health/</loc>
     <lastmod>2023-08-28T16:03:02+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/technology/</loc>
+    <loc>//localhost:1313/en/tags/technology/</loc>
     <lastmod>2023-08-28T16:03:02+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-08-22-ep-14-information-quality/</loc>
     <lastmod>2023-08-22T15:52:36+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/podcast/</loc>
+    <loc>//localhost:1313/en/tags/podcast/</loc>
     <lastmod>2023-08-22T15:52:36+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-08-15-healthy-food/</loc>
@@ -67,31 +67,31 @@
     <loc>//localhost:1313/en/2023-08-08-ep-13-anki-and-offline/</loc>
     <lastmod>2023-08-08T13:44:33+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/software/</loc>
+    <loc>//localhost:1313/en/tags/software/</loc>
     <lastmod>2023-08-08T13:44:33+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-08-01-communication/</loc>
     <lastmod>2023-08-01T15:06:51+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/reading/</loc>
+    <loc>//localhost:1313/en/tags/reading/</loc>
     <lastmod>2023-08-01T15:06:51+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-07-25-ep-12-repetition/</loc>
     <lastmod>2023-07-25T12:24:20+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/life/</loc>
+    <loc>//localhost:1313/en/tags/life/</loc>
     <lastmod>2023-07-25T12:24:20+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-07-18-cash/</loc>
     <lastmod>2023-07-18T15:24:01+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/english/</loc>
+    <loc>//localhost:1313/en/tags/english/</loc>
     <lastmod>2023-07-11T13:39:29+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-07-11-ep-11-pure-writing/</loc>
     <lastmod>2023-07-11T13:39:29+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/computer/</loc>
+    <loc>//localhost:1313/en/tags/computer/</loc>
     <lastmod>2023-07-04T14:39:59+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-07-04-switched-to-windows/</loc>
@@ -100,13 +100,13 @@
     <loc>//localhost:1313/en/2023-06-27-ep-10-temporary-guest/</loc>
     <lastmod>2023-06-27T15:49:06+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/relationship/</loc>
+    <loc>//localhost:1313/en/tags/relationship/</loc>
     <lastmod>2023-06-27T15:49:06+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-06-20-cashflow-e-game/</loc>
     <lastmod>2023-06-20T14:05:31+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/self-development/</loc>
+    <loc>//localhost:1313/en/tags/self-development/</loc>
     <lastmod>2023-06-20T14:05:31+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-06-13-ep-9-technical-breakdown/</loc>
@@ -124,7 +124,7 @@
     <loc>//localhost:1313/en/2023-05-16-ep-7-practice/</loc>
     <lastmod>2023-05-15T17:39:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/habit/</loc>
+    <loc>//localhost:1313/en/tags/habit/</loc>
     <lastmod>2023-05-09T15:09:09+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-05-09-loop-habits-tracker/</loc>
@@ -136,13 +136,13 @@
     <loc>//localhost:1313/en/2023-04-24-automated-system/</loc>
     <lastmod>2023-04-24T14:03:12+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/efficiency/</loc>
+    <loc>//localhost:1313/en/tags/efficiency/</loc>
     <lastmod>2023-04-24T14:03:12+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-04-18-ep-5-thirteen-years-of-journaling/</loc>
     <lastmod>2023-04-18T09:52:12+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/bible/</loc>
+    <loc>//localhost:1313/en/tags/bible/</loc>
     <lastmod>2023-04-11T09:55:03+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-04-11-reading-the-first-five-books-of-the-bible/</loc>
@@ -151,7 +151,7 @@
     <loc>//localhost:1313/en/2023-04-04-ep-4-ai-tool-for-learning/</loc>
     <lastmod>2023-04-03T20:33:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/internet/</loc>
+    <loc>//localhost:1313/en/tags/internet/</loc>
     <lastmod>2023-03-28T11:18:08+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-03-28-stickers/</loc>
@@ -160,10 +160,10 @@
     <loc>//localhost:1313/en/2023-03-21-ep-3-feel-the-fear/</loc>
     <lastmod>2023-03-21T11:34:28+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/fear/</loc>
+    <loc>//localhost:1313/en/tags/fear/</loc>
     <lastmod>2023-03-21T11:34:28+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/psychology/</loc>
+    <loc>//localhost:1313/en/tags/psychology/</loc>
     <lastmod>2023-03-13T23:06:31+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-03-14-why-dont-lie/</loc>
@@ -194,13 +194,13 @@
                 href="//localhost:1313/en/reading-list/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/categories/letter/</loc>
+    <loc>//localhost:1313/en/tags/letter/</loc>
     <lastmod>2023-02-08T12:31:56+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-02-08-reply-to-chris/</loc>
     <lastmod>2023-02-08T12:31:56+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/politics/</loc>
+    <loc>//localhost:1313/en/tags/politics/</loc>
     <lastmod>2023-02-08T12:00:15+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2023-02-08-4299-2/</loc>
@@ -218,16 +218,16 @@
     <loc>//localhost:1313/en/2021-02-20-mastodon/</loc>
     <lastmod>2021-02-20T02:29:16+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/social-media/</loc>
+    <loc>//localhost:1313/en/tags/social-media/</loc>
     <lastmod>2021-02-20T02:29:16+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-11-27-introduction-4/</loc>
     <lastmod>2020-11-27T13:32:15+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/the-5-love-languages/</loc>
+    <loc>//localhost:1313/en/tags/the-5-love-languages/</loc>
     <lastmod>2020-11-27T13:32:15+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/atomic-habits/</loc>
+    <loc>//localhost:1313/en/tags/atomic-habits/</loc>
     <lastmod>2020-11-11T01:44:56+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-11-11-how-your-habits-shape-your-identity-and-vice-versa/</loc>
@@ -239,16 +239,16 @@
     <loc>//localhost:1313/en/2020-10-31-argument-three-social-media-is-making-you-into-an-asshole-2/</loc>
     <lastmod>2020-10-31T14:56:52+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/ten-arguments-for-deleting-your-social-media-accounts-right-now/</loc>
+    <loc>//localhost:1313/en/tags/ten-arguments-for-deleting-your-social-media-accounts-right-now/</loc>
     <lastmod>2020-10-31T14:56:52+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-10-01-chapter-5-6/</loc>
     <lastmod>2020-10-01T02:50:38+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/the-four-agreements/</loc>
+    <loc>//localhost:1313/en/tags/the-four-agreements/</loc>
     <lastmod>2020-10-01T02:50:38+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/digital-minimalism/</loc>
+    <loc>//localhost:1313/en/tags/digital-minimalism/</loc>
     <lastmod>2020-09-23T06:16:17+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-09-23-join-the-attention-resistance/</loc>
@@ -263,7 +263,7 @@
     <loc>//localhost:1313/en/2020-09-08-ancient-greece/</loc>
     <lastmod>2020-09-08T12:49:47+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/art-through-the-ages/</loc>
+    <loc>//localhost:1313/en/tags/art-through-the-ages/</loc>
     <lastmod>2020-09-08T12:49:47+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-08-27-reclaim-leisure/</loc>
@@ -275,7 +275,7 @@
     <loc>//localhost:1313/en/2020-07-27-a-lopsided-arms-race/</loc>
     <lastmod>2020-07-27T03:46:43+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/feel-the-fear-and-do-it-anyway/</loc>
+    <loc>//localhost:1313/en/tags/feel-the-fear-and-do-it-anyway/</loc>
     <lastmod>2020-07-27T03:18:20+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-07-27-whether-you-want-it-or-not-its-yours-2/</loc>
@@ -287,37 +287,37 @@
     <loc>//localhost:1313/en/2020-06-20-myth-and-dream/</loc>
     <lastmod>2020-06-20T08:19:43+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/the-hero-with-a-thousand-faces/</loc>
+    <loc>//localhost:1313/en/tags/the-hero-with-a-thousand-faces/</loc>
     <lastmod>2020-06-20T08:19:43+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/music/</loc>
+    <loc>//localhost:1313/en/tags/music/</loc>
     <lastmod>2020-06-12T15:27:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-06-12-music-in-high-school/</loc>
     <lastmod>2020-06-12T15:27:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/school/</loc>
+    <loc>//localhost:1313/en/tags/school/</loc>
     <lastmod>2020-06-12T15:27:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-05-21-chapter-5-energy-%E5%9F%B6%E7%AF%87%E7%AC%AC%E4%BA%94/</loc>
     <lastmod>2020-05-21T05:57:40+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/sun-tzus-the-art-of-war/</loc>
+    <loc>//localhost:1313/en/tags/sun-tzus-the-art-of-war/</loc>
     <lastmod>2020-05-21T05:57:40+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-05-20-chapter-v-riddles-in-the-dark/</loc>
     <lastmod>2020-05-20T05:48:54+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/hobbit/</loc>
+    <loc>//localhost:1313/en/tags/hobbit/</loc>
     <lastmod>2020-05-20T05:48:54+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-05-13-introduction-1/</loc>
     <lastmod>2020-05-13T01:52:25+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/the-literary-mind-and-the-carving-of-dragons/</loc>
+    <loc>//localhost:1313/en/tags/the-literary-mind-and-the-carving-of-dragons/</loc>
     <lastmod>2020-05-13T01:52:25+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/are-you-lights-on/</loc>
+    <loc>//localhost:1313/en/tags/are-you-lights-on/</loc>
     <lastmod>2020-05-07T09:29:08+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-05-07-chapter-2/</loc>
@@ -329,7 +329,7 @@
     <loc>//localhost:1313/en/2020-04-09-connection/</loc>
     <lastmod>2020-04-09T04:19:59+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/loneliness/</loc>
+    <loc>//localhost:1313/en/tags/loneliness/</loc>
     <lastmod>2020-04-09T04:19:59+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-04-08-questions-about-wenxin-diaolong/</loc>
@@ -338,7 +338,7 @@
     <loc>//localhost:1313/en/2020-04-05-2-six-dynasties/</loc>
     <lastmod>2020-04-05T13:08:32+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/a-chinese-foreign-exchange-history-of-fine-arts/</loc>
+    <loc>//localhost:1313/en/tags/a-chinese-foreign-exchange-history-of-fine-arts/</loc>
     <lastmod>2020-04-05T13:08:32+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-04-03-chinese-conversion/</loc>
@@ -353,7 +353,7 @@
     <loc>//localhost:1313/en/2020-03-11-chapter-ii-roast-mutton/</loc>
     <lastmod>2020-03-11T10:33:58+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/antifragile-things-that-gain-from-disorder/</loc>
+    <loc>//localhost:1313/en/tags/antifragile-things-that-gain-from-disorder/</loc>
     <lastmod>2020-03-08T11:56:18+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-03-08-chapter-6-tell-them-i-love-some-randomness/</loc>
@@ -374,25 +374,25 @@
     <loc>//localhost:1313/en/2020-03-04-argument-one-you-are-losing-your-free-will/</loc>
     <lastmod>2020-03-04T05:50:54+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/the-screwtape-letters/</loc>
+    <loc>//localhost:1313/en/tags/the-screwtape-letters/</loc>
     <lastmod>2020-03-03T00:24:46+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-03-03-vi/</loc>
     <lastmod>2020-03-03T00:24:46+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/paintings/</loc>
+    <loc>//localhost:1313/en/tags/paintings/</loc>
     <lastmod>2020-02-29T11:23:54+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-02-29-practice-digital-drawing/</loc>
     <lastmod>2020-02-29T11:23:54+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/emotional-intelligence/</loc>
+    <loc>//localhost:1313/en/tags/emotional-intelligence/</loc>
     <lastmod>2020-02-28T14:07:47+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-02-28-what-are-emotions-for/</loc>
     <lastmod>2020-02-28T14:07:47+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/art-theory/</loc>
+    <loc>//localhost:1313/en/tags/art-theory/</loc>
     <lastmod>2020-02-28T10:20:04+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-02-28-read-notes/</loc>
@@ -407,7 +407,7 @@
     <loc>//localhost:1313/en/2020-02-15-and-the-clock-struck-8-8-08/</loc>
     <lastmod>2020-02-15T15:12:27+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/one-child-the-story-of-chinas-most-radical-experiment/</loc>
+    <loc>//localhost:1313/en/tags/one-child-the-story-of-chinas-most-radical-experiment/</loc>
     <lastmod>2020-02-15T15:12:27+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-02-14-after-the-quake/</loc>
@@ -419,7 +419,7 @@
     <loc>//localhost:1313/en/2020-02-11-chapter-3-attack-by-strategem/</loc>
     <lastmod>2020-02-11T12:54:19+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/the-now-habit/</loc>
+    <loc>//localhost:1313/en/tags/the-now-habit/</loc>
     <lastmod>2020-02-09T08:16:48+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-02-09-the-procrastinator-in-your-life/</loc>
@@ -437,13 +437,13 @@
     <loc>//localhost:1313/en/2020-01-10-curator-and-exhibition/</loc>
     <lastmod>2020-01-10T05:51:09+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/museology/</loc>
+    <loc>//localhost:1313/en/tags/museology/</loc>
     <lastmod>2020-01-10T05:51:09+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-01-10-what-kills-me-makes-others-stronger/</loc>
     <lastmod>2020-01-10T05:33:52+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/book-of-poetry/</loc>
+    <loc>//localhost:1313/en/tags/book-of-poetry/</loc>
     <lastmod>2020-01-09T01:56:57+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2020-01-09-the-odes-of-zhou-and-the-south/</loc>
@@ -452,13 +452,13 @@
     <loc>//localhost:1313/en/2019-12-25-alone/</loc>
     <lastmod>2019-12-25T12:28:29+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/nothing-to-envy/</loc>
+    <loc>//localhost:1313/en/tags/nothing-to-envy/</loc>
     <lastmod>2019-12-20T08:23:34+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-12-20-tainted-blood/</loc>
     <lastmod>2019-12-20T08:23:34+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/chinese-art-history/</loc>
+    <loc>//localhost:1313/en/tags/chinese-art-history/</loc>
     <lastmod>2019-12-18T02:02:45+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-12-18-chinese-morden-art-history-notes-1/</loc>
@@ -473,7 +473,7 @@
     <loc>//localhost:1313/en/2019-12-13-the-money-trap-the-old-road-map-for-money/</loc>
     <lastmod>2019-12-13T09:17:12+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/your-money-or-your-life/</loc>
+    <loc>//localhost:1313/en/tags/your-money-or-your-life/</loc>
     <lastmod>2019-12-13T09:17:12+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-12-09-written-assignment-2/</loc>
@@ -482,7 +482,7 @@
     <loc>//localhost:1313/en/2019-11-29-the-cat-and-the-washing-machine/</loc>
     <lastmod>2019-11-29T12:59:49+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/the-art-of-invisibility/</loc>
+    <loc>//localhost:1313/en/tags/the-art-of-invisibility/</loc>
     <lastmod>2019-11-29T11:55:35+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-11-29-your-password-can-be-cracked/</loc>
@@ -503,7 +503,7 @@
     <loc>//localhost:1313/en/2019-10-30-5-education-in-public-fine-art-schools/</loc>
     <lastmod>2019-10-30T11:19:54+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/chinese-fine-art-education-in-20-century/</loc>
+    <loc>//localhost:1313/en/tags/chinese-fine-art-education-in-20-century/</loc>
     <lastmod>2019-10-30T11:19:54+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-10-28-4-emergence-of-private-fine-art-schools/</loc>
@@ -512,7 +512,7 @@
     <loc>//localhost:1313/en/2019-10-26-letter-4/</loc>
     <lastmod>2019-10-26T07:41:21+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/analects/</loc>
+    <loc>//localhost:1313/en/tags/analects/</loc>
     <lastmod>2019-10-21T06:14:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-10-21-pa-yih-13-analysis/</loc>
@@ -542,13 +542,7 @@
     <loc>//localhost:1313/en/2019-10-10-elon-musk-and-jack-ma/</loc>
     <lastmod>2019-10-10T12:50:08+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/museology/</loc>
-    <lastmod>2019-10-08T02:19:52+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/2019-10-08-new-museology/</loc>
-    <lastmod>2019-10-08T02:19:52+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/tags/</loc>
     <lastmod>2019-10-08T02:19:52+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-10-08-replay-in-slowly/</loc>
@@ -581,9 +575,6 @@
   </url><url>
     <loc>//localhost:1313/en/2019-09-21-free-is-tough/</loc>
     <lastmod>2019-09-21T12:22:01+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/tags/music/</loc>
-    <lastmod>2019-09-18T04:36:10+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-09-18-touched/</loc>
     <lastmod>2019-09-18T04:36:10+00:00</lastmod>
@@ -657,17 +648,11 @@
     <loc>//localhost:1313/en/2019-07-18-laying-plans-1/</loc>
     <lastmod>2019-07-18T08:18:04+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/sun-tzus-the-art-of-war/</loc>
-    <lastmod>2019-07-18T08:18:04+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/2019-07-17-masochism-and-sadism/</loc>
     <lastmod>2019-07-17T06:39:28+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/tags/masochism-and-the-self/</loc>
     <lastmod>2019-07-17T06:39:28+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/tags/art-through-the-ages/</loc>
-    <lastmod>2019-07-17T06:20:39+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-07-17-basic-conceptions/</loc>
     <lastmod>2019-07-17T06:20:39+00:00</lastmod>
@@ -706,14 +691,8 @@
     <loc>//localhost:1313/en/2019-07-05-expo/</loc>
     <lastmod>2019-07-05T13:37:38+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/health/</loc>
-    <lastmod>2019-07-05T13:37:38+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/tags/travel/</loc>
     <lastmod>2019-07-05T13:37:38+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/tags/building-site/</loc>
-    <lastmod>2019-06-23T02:26:48+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-06-23-categorize-my-blog/</loc>
     <lastmod>2019-06-23T02:26:48+00:00</lastmod>
@@ -725,9 +704,6 @@
     <lastmod>2019-06-23T02:01:15+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/tags/dream/</loc>
-    <lastmod>2019-06-23T02:01:15+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/tags/journal/</loc>
     <lastmod>2019-06-23T02:01:15+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/tags/relatives/</loc>
@@ -766,13 +742,7 @@
     <loc>//localhost:1313/en/2019-05-21-611/</loc>
     <lastmod>2019-05-21T13:24:41+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/english/</loc>
-    <lastmod>2019-05-21T13:24:41+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/2019-05-16-sex-drugs-rock-roll/</loc>
-    <lastmod>2019-05-16T12:33:24+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/tags/life/</loc>
     <lastmod>2019-05-16T12:33:24+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/tags/porn/</loc>
@@ -787,19 +757,10 @@
     <loc>//localhost:1313/en/2019-05-13-daydream/</loc>
     <lastmod>2019-05-13T12:33:50+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/efficiency/</loc>
-    <lastmod>2019-03-26T07:44:15+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/2019-03-26-notes-the-now-habit-1/</loc>
     <lastmod>2019-03-26T07:44:15+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/the-now-habit/</loc>
-    <lastmod>2019-03-26T07:44:15+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/en/tags/anki/</loc>
-    <lastmod>2019-03-25T13:10:15+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/en/tags/habit/</loc>
     <lastmod>2019-03-25T13:10:15+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/en/2019-03-25-two-years-anniversary-of-using-anki/</loc>
@@ -828,6 +789,18 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="//localhost:1313/en/archive/"
+                />
+  </url><url>
+    <loc>//localhost:1313/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="//localhost:1313/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/en/categories/"
                 />
   </url><url>
     <loc>//localhost:1313/en/search/</loc>

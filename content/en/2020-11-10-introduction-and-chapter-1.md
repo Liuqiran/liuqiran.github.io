@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-11-10T06:54:48+00:00
 aliases: ["/introduction-and-chapter-1/"]
-categories:
+tags:
   - Atomic Habits
 
 ---

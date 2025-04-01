@@ -10,7 +10,7 @@ autoshare_tweet-allow-image:
   - yes
 autoshare_status:
   - 'a:1:{i:0;a:3:{s:6:"status";s:9:"published";s:10:"twitter_id";i:1666820525480644615;s:10:"created_at";s:25:"2023-06-08T14:52:36+00:00";}}'
-categories:
+tags:
   - Reading
 
 ---

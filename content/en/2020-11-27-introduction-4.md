@@ -6,7 +6,7 @@ date: 2020-11-27T13:32:15+00:00
 aliases: ["/introduction-4/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - The 5 Love Languages
 
 ---

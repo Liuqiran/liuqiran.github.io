@@ -8,7 +8,7 @@ private: true
 url: /zh/toward-a-unipolar-world/
 xyz_twap:
   - 1
-categories:
+tags:
   - 历史
 
 ---

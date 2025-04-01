@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-09-23T05:41:08+00:00
 aliases: ["/delete-like/"]
-categories:
+tags:
   - Building Site
 
 ---

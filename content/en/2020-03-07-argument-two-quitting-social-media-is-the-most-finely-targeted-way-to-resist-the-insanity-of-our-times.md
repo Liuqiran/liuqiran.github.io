@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-03-07T14:05:27+00:00
 aliases: ["/argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times/"]
-categories:
+tags:
   - Ten Arguments for Deleting Your Social Media Accounts Right Now
 
 ---

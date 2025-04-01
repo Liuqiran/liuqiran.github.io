@@ -6,7 +6,7 @@ date: 2023-05-02T15:03:53+00:00
 aliases: ["/ep-6-plain-text/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Podcast
   - Technology
 

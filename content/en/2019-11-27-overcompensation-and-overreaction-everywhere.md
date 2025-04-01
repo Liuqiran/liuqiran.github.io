@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-11-27T06:24:04+00:00
 aliases: ["/overcompensation-and-overreaction-everywhere/"]
-categories:
+tags:
   - 'Antifragile: Things That Gain From Disorder'
 
 ---

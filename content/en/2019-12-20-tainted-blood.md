@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-12-20T08:23:34+00:00
 aliases: ["/tainted-blood/"]
-categories:
+tags:
   - Nothing to Envy
 
 ---

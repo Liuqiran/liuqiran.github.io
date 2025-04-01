@@ -16,7 +16,7 @@ enclosure:
         118
         audio/mpeg
         
-categories:
+tags:
   - Journal
 
 ---

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-07-27T03:18:20+00:00
 aliases: ["/whether-you-want-it-or-not-its-yours-2/"]
-categories:
+tags:
   - Feel The Fear And Do It Anyway
 
 ---

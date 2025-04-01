@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-04-09T04:19:59+00:00
 aliases: ["/connection/"]
-categories:
+tags:
   - Loneliness
   - Music
   - Social media

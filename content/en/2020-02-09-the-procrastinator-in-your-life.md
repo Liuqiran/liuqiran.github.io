@@ -6,7 +6,7 @@ date: 2020-02-09T08:16:48+00:00
 aliases: ["/the-procrastinator-in-your-life/"]
 boomdevs_metabox:
   - 's:41:"a:1:{s:19:"disable_auto_insert";s:1:"0";}";'
-categories:
+tags:
   - The Now Habit
 
 ---

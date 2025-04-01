@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2021-06-18T08:20:51+00:00
 url: /zh/the-meaning-of-love/
-categories:
+tags:
   - 爱
 
 ---

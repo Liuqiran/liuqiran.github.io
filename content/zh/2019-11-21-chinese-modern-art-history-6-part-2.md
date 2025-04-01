@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-11-21T02:01:41+00:00
 url: /zh/chinese-modern-art-history-6-part-2/
-categories:
+tags:
   - 中国美术史
 
 ---

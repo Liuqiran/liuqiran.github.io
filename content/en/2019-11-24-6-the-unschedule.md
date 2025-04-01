@@ -4,9 +4,8 @@ author: Qiran
 type: post
 date: 2019-11-24T13:06:41+00:00
 aliases: ["/6-the-unschedule/"]
-categories:
+tags:
   - The Now Habit
-
 ---
 When things start, we find the projects take less time than your thinking.
 

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-01-10T05:33:52+00:00
 aliases: ["/what-kills-me-makes-others-stronger/"]
-categories:
+tags:
   - 'Antifragile: Things That Gain From Disorder'
 
 ---

@@ -5,7 +5,7 @@ type: post
 date: 2020-02-09T15:15:41+00:00
 url: /zh/one-year-blogging-anniversary/
 featured_image: /wp-content/uploads/2019/10/wp-1570197736987.jpg
-categories:
+tags:
   - 互联网
 
 ---

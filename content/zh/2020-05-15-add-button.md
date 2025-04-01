@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-05-14T23:42:07+00:00
 url: /zh/add-button/
-categories:
+tags:
   - 建站
 
 ---

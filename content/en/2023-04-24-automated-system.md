@@ -6,7 +6,7 @@ date: 2023-04-24T14:03:12+00:00
 aliases: ["/automated-system/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Efficiency
 
 ---

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-01-20T08:41:29+00:00
 url: /zh/wen-zhenming-influence/
-categories:
+tags:
   - 文征明
 ---
 <pre class="wp-block-preformatted">文征明作为吴门画派的代表人物，他的文人色彩尽显，其个人性格对绘画创作的风格、题材、内容上都有深远的影响，文征明的追求隐逸、渴慕园林的志趣塑造了他的细笔风格，而尊师重道的传统让文征明在题材广度和粗笔风格上有所突破。<br /></pre>

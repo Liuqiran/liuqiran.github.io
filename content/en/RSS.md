@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-09-29T09:00:50+00:00
 aliases: ["/rss/"]
-categories:
+tags:
   - Building Site
 ---
 [English Site ](/en/index.xml)

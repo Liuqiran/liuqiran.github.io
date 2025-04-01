@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-03-24T13:17:11+00:00
 url: /zh/wen-zhengming-of-wumen/
-categories:
+tags:
   - 中国美术史
 ---
 #### **文征明相关研究文献综述**

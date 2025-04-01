@@ -12,7 +12,7 @@ autoshare_tweet-body:
   - "Based on the recommendation from Rich Dad's book, I try to install the Cashflow game. But the desktop version of E-Game is difficult to install now."
 autoshare_status:
   - 'a:1:{i:0;a:3:{s:6:"status";s:9:"published";s:10:"twitter_id";i:1671157337682477058;s:10:"created_at";s:25:"2023-06-20T14:05:32+00:00";}}'
-categories:
+tags:
   - Self-development
 
 ---

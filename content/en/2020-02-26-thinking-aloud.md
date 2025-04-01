@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-02-26T02:08:27+00:00
 aliases: ["/thinking-aloud/"]
-categories:
+tags:
   - Psychology
   - Self-development
 

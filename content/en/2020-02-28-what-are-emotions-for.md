@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-02-28T14:07:47+00:00
 aliases: ["/what-are-emotions-for/"]
-categories:
+tags:
   - Emotional Intelligence
 
 ---

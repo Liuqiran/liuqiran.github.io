@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-02-28T10:20:04+00:00
 aliases: ["/read-notes/"]
-categories:
+tags:
   - Art theory
 
 ---

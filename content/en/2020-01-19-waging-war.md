@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-01-18T16:02:27+00:00
 aliases: ["/waging-war/"]
-categories:
+tags:
   - "Sun Tzu's The Art of War"
 
 ---

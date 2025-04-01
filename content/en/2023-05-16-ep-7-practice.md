@@ -6,7 +6,7 @@ date: 2023-05-15T17:39:00+00:00
 aliases: ["/ep-7-practice/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Life
   - Podcast
 

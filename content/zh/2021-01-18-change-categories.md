@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2021-01-18T10:13:15+00:00
 url: /zh/change-categories/
-categories:
+tags:
   - 建站
 
 ---

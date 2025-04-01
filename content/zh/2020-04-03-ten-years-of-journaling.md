@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-04-03T12:56:16+00:00
 url: /zh/ten-years-of-journaling/
-categories:
+tags:
   - 人生
 
 ---

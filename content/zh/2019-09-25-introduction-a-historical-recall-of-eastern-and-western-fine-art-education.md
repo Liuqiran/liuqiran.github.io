@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-09-25T02:27:33+00:00
 url: /zh/introduction-a-historical-recall-of-eastern-and-western-fine-art-education/
-categories:
+tags:
   - 中国美术史
 ---
 中国的美术教育事业是基本上是从近代以来才起步的。

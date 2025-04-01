@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-10-28T11:52:46+00:00
 aliases: ["/4-emergence-of-private-fine-art-schools/"]
-categories:
+tags:
   - Chinese Fine Art Education in 20 Century
 
 ---

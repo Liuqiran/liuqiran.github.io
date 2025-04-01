@@ -6,7 +6,7 @@ date: 2023-05-23T15:02:06+00:00
 aliases: ["/complicate-physical-activities/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Health
 
 ---

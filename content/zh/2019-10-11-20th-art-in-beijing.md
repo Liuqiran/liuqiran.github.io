@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-10-11T00:04:21+00:00
 url: /zh/20th-art-in-beijing/
-categories:
+tags:
   - 中国美术史
 
 ---

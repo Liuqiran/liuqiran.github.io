@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-11-23T11:45:50+00:00
 url: /zh/chinese-modern-art-history-new-art-movement/
-categories:
+tags:
   - 中国美术史
 
 ---

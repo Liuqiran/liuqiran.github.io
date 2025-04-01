@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-02-29T11:23:54+00:00
 aliases: ["/practice-digital-drawing/"]
-categories:
+tags:
   - Paintings
 
 ---

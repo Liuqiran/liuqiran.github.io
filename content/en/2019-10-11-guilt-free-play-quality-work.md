@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-10-11T04:07:34+00:00
 aliases: ["/guilt-free-play-quality-work/"]
-categories:
+tags:
   - The Now Habit
 
 ---

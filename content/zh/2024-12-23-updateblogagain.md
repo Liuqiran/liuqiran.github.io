@@ -12,7 +12,7 @@ autoshare_tweet_accounts:
   - 'a:1:{i:0;s:18:"731881692575739904";}'
 autoshare_status:
   - 'a:1:{i:0;a:4:{s:6:"status";s:9:"published";s:10:"twitter_id";i:1870991723939483710;s:6:"handle";s:9:"qiran_liu";s:10:"created_at";s:25:"2024-12-23T00:36:03+00:00";}}'
-categories:
+tags:
   - 说说
 
 ---

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-12-24T14:23:51+00:00
 url: /zh/the-break-of-chinese-grammar-and-self-building/
-categories:
+tags:
   - 中国美术史
 
 ---

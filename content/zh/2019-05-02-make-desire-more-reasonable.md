@@ -8,7 +8,7 @@ wp_last_modified_info:
   - 2019-05-02 @ 11:56 AM
 wplmi_shortcode:
   - '[lmt-post-modified-info]'
-categories:
+tags:
   - 成人
 
 ---

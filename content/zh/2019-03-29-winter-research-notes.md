@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-03-29T00:59:16+00:00
 url: /zh/winter-research-notes/
-categories:
+tags:
   - 研究
 
 ---

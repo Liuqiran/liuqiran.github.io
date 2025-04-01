@@ -6,7 +6,7 @@ date: 2023-02-08T12:31:56+00:00
 aliases: ["/reply-to-chris/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Letter
 
 ---

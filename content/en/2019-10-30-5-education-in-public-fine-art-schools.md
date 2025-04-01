@@ -6,7 +6,7 @@ date: 2019-10-30T11:19:54+00:00
 aliases: ["/5-education-in-public-fine-art-schools/"]
 boomdevs_metabox:
   - 's:41:"a:1:{s:19:"disable_auto_insert";s:1:"0";}";'
-categories:
+tags:
   - Chinese Fine Art Education in 20 Century
 
 ---

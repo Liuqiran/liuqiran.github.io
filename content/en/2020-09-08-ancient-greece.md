@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-09-08T12:49:47+00:00
 aliases: ["/ancient-greece/"]
-categories:
+tags:
   - Art through the Ages
 
 ---

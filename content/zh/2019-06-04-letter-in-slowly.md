@@ -6,7 +6,7 @@ date: 2019-06-04T12:14:00+00:00
 draft: true
 private: true
 url: /zh/letter-in-slowly/
-categories:
+tags:
   - 信件
   - 心理
 

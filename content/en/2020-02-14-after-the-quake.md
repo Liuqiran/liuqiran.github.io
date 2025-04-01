@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-02-14T12:31:28+00:00
 aliases: ["/after-the-quake/"]
-categories:
+tags:
   - "One Child: The Story of China's Most Radical Experiment"
 
 ---

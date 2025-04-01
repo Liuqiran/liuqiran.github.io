@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2022-06-21T16:57:43+00:00
 url: /zh/why-dont-buy-a-house/
-categories:
+tags:
   - 人生
 
 ---

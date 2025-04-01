@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-02-20T08:05:55+00:00
 url: /zh/how-social-media-affects-us/
-categories:
+tags:
   - 社交媒体
 
 ---

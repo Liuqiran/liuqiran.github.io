@@ -15,26 +15,26 @@
                 href="//localhost:1313/zh/"
                 />
   </url><url>
-    <loc>//localhost:1313/zh/categories/</loc>
+    <loc>//localhost:1313/zh/tags/</loc>
     <lastmod>2024-12-23T00:36:01+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/categories/"
+                href="//localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh/categories/"
+                href="//localhost:1313/zh/tags/"
                 />
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E8%AF%B4%E8%AF%B4/</loc>
+    <loc>//localhost:1313/zh/tags/%E8%AF%B4%E8%AF%B4/</loc>
     <lastmod>2024-12-23T00:36:01+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/updateblogagain/</loc>
     <lastmod>2024-12-23T00:36:01+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%81%A5%E5%BA%B7/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%81%A5%E5%BA%B7/</loc>
     <lastmod>2024-06-05T05:14:01+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/nutrition-and-health-knowledge/</loc>
@@ -46,10 +46,10 @@
     <loc>//localhost:1313/zh/reading-the-first-five-books-of-the-bible-2/</loc>
     <lastmod>2023-04-11T09:55:03+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%9C%A3%E7%BB%8F/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%9C%A3%E7%BB%8F/</loc>
     <lastmod>2023-04-11T09:55:03+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%8E%86%E5%8F%B2/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%8E%86%E5%8F%B2/</loc>
     <lastmod>2023-02-14T06:12:17+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/toward-a-unipolar-world/</loc>
@@ -71,13 +71,13 @@
     <loc>//localhost:1313/zh/updated-rss-feed-url/</loc>
     <lastmod>2023-02-10T14:31:32+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%BB%BA%E7%AB%99/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2023-02-10T14:31:32+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
+    <loc>//localhost:1313/zh/tags/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
     <lastmod>2023-02-08T11:17:57+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E4%BA%BA%E7%94%9F/</loc>
+    <loc>//localhost:1313/zh/tags/%E4%BA%BA%E7%94%9F/</loc>
     <lastmod>2023-02-08T11:17:57+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/reorganize-home-page/</loc>
@@ -95,16 +95,16 @@
     <loc>//localhost:1313/zh/liuzhongjings-opinion-about-first-tier-cities/</loc>
     <lastmod>2022-06-21T11:25:37+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E4%B8%AD%E5%9B%BD/</loc>
+    <loc>//localhost:1313/zh/tags/%E4%B8%AD%E5%9B%BD/</loc>
     <lastmod>2022-06-21T11:25:37+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E4%BF%A1%E4%BB%B0/</loc>
+    <loc>//localhost:1313/zh/tags/%E4%BF%A1%E4%BB%B0/</loc>
     <lastmod>2021-06-18T10:08:31+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/faith-and-future/</loc>
     <lastmod>2021-06-18T10:08:31+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E7%88%B1/</loc>
+    <loc>//localhost:1313/zh/tags/%E7%88%B1/</loc>
     <lastmod>2021-06-18T08:20:51+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/the-meaning-of-love/</loc>
@@ -116,7 +116,7 @@
     <loc>//localhost:1313/zh/updated-domain-name/</loc>
     <lastmod>2021-06-08T08:06:09+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/</loc>
+    <loc>//localhost:1313/zh/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/</loc>
     <lastmod>2021-02-20T02:29:16+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/mastodon-button/</loc>
@@ -125,7 +125,7 @@
     <loc>//localhost:1313/zh/change-categories/</loc>
     <lastmod>2021-01-18T10:13:15+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E7%BE%8E%E5%AD%A6/</loc>
+    <loc>//localhost:1313/zh/tags/%E7%BE%8E%E5%AD%A6/</loc>
     <lastmod>2020-06-15T15:04:20+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/chinese-aesthetics-notes/</loc>
@@ -137,13 +137,13 @@
     <loc>//localhost:1313/zh/add-button/</loc>
     <lastmod>2020-05-14T23:42:07+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E6%88%90%E4%BA%BA/</loc>
+    <loc>//localhost:1313/zh/tags/%E6%88%90%E4%BA%BA/</loc>
     <lastmod>2020-05-14T23:10:48+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/eating/</loc>
     <lastmod>2020-05-14T23:10:48+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%BF%83%E7%81%B5/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%BF%83%E7%81%B5/</loc>
     <lastmod>2020-05-14T23:10:48+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/literary-intellectuals-in-ming/</loc>
@@ -155,7 +155,7 @@
     <loc>//localhost:1313/zh/another-true/</loc>
     <lastmod>2020-05-07T12:35:01+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E8%89%BA%E6%9C%AF%E7%90%86%E8%AE%BA/</loc>
+    <loc>//localhost:1313/zh/tags/%E8%89%BA%E6%9C%AF%E7%90%86%E8%AE%BA/</loc>
     <lastmod>2020-05-07T12:35:01+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/questions-about-aesthetics/</loc>
@@ -173,13 +173,13 @@
     <loc>//localhost:1313/zh/calm-down-2/</loc>
     <lastmod>2020-01-28T05:58:11+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E7%A4%BE%E4%BC%9A/</loc>
+    <loc>//localhost:1313/zh/tags/%E7%A4%BE%E4%BC%9A/</loc>
     <lastmod>2020-01-28T05:58:11+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E6%AD%BB%E4%BA%A1/</loc>
+    <loc>//localhost:1313/zh/tags/%E6%AD%BB%E4%BA%A1/</loc>
     <lastmod>2020-01-28T05:58:11+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%8D%9A%E7%89%A9%E9%A6%86%E5%AD%A6/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%8D%9A%E7%89%A9%E9%A6%86%E5%AD%A6/</loc>
     <lastmod>2020-01-06T11:04:42+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/%E7%AC%AC%E5%85%AB%E8%AE%B2-%E5%8D%9A%E7%89%A9%E9%A6%86%E4%B8%8E%E4%BC%A0%E7%BB%9F%E8%89%BA%E6%9C%AF/</loc>
@@ -188,7 +188,7 @@
     <loc>//localhost:1313/zh/%E7%AC%AC%E4%B9%9D%E8%AE%B2-%E5%8D%9A%E7%89%A9%E9%A6%86%E4%B8%8E%E5%BD%93%E4%BB%A3%E8%89%BA%E6%9C%AF/</loc>
     <lastmod>2020-01-06T11:03:39+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E4%B8%AD%E5%9B%BD%E7%BE%8E%E6%9C%AF%E5%8F%B2/</loc>
+    <loc>//localhost:1313/zh/tags/%E4%B8%AD%E5%9B%BD%E7%BE%8E%E6%9C%AF%E5%8F%B2/</loc>
     <lastmod>2019-12-24T14:23:51+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/the-break-of-chinese-grammar-and-self-building/</loc>
@@ -200,7 +200,7 @@
     <loc>//localhost:1313/zh/cangjie-input-method-review/</loc>
     <lastmod>2019-11-28T08:25:08+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E7%A7%91%E6%8A%80/</loc>
+    <loc>//localhost:1313/zh/tags/%E7%A7%91%E6%8A%80/</loc>
     <lastmod>2019-11-28T08:25:08+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/chinese-modern-art-history-new-art-movement/</loc>
@@ -236,16 +236,16 @@
     <loc>//localhost:1313/zh/reply-in-slowly-5/</loc>
     <lastmod>2019-10-06T11:53:38+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E7%8B%AC%E5%A4%84/</loc>
+    <loc>//localhost:1313/zh/tags/%E7%8B%AC%E5%A4%84/</loc>
     <lastmod>2019-10-06T11:53:38+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E4%BA%B2%E6%88%9A/</loc>
+    <loc>//localhost:1313/zh/tags/%E4%BA%B2%E6%88%9A/</loc>
     <lastmod>2019-10-06T11:53:38+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E4%BF%A1%E4%BB%B6/</loc>
+    <loc>//localhost:1313/zh/tags/%E4%BF%A1%E4%BB%B6/</loc>
     <lastmod>2019-10-06T11:53:38+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%AD%A6%E7%94%9F/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%AD%A6%E7%94%9F/</loc>
     <lastmod>2019-10-06T11:53:38+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/rss-2/</loc>
@@ -282,7 +282,7 @@
     <loc>//localhost:1313/zh/%E5%A4%96%E5%9B%BD%E7%BE%8E%E6%9C%AF-%E5%90%8D%E8%AF%8D%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/</loc>
     <lastmod>2019-09-12T00:39:45+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E8%A5%BF%E6%96%B9%E7%BE%8E%E6%9C%AF%E5%8F%B2/</loc>
+    <loc>//localhost:1313/zh/tags/%E8%A5%BF%E6%96%B9%E7%BE%8E%E6%9C%AF%E5%8F%B2/</loc>
     <lastmod>2019-09-12T00:39:45+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/%E7%AC%AC%E4%B8%80%E8%AE%B2/</loc>
@@ -291,7 +291,7 @@
     <loc>//localhost:1313/zh/museology/</loc>
     <lastmod>2019-09-10T00:18:36+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E7%BB%98%E7%94%BB/</loc>
+    <loc>//localhost:1313/zh/tags/%E7%BB%98%E7%94%BB/</loc>
     <lastmod>2019-07-17T10:24:53+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/pick-up-my-pen/</loc>
@@ -313,7 +313,7 @@
     <loc>//localhost:1313/zh/letter-in-slowly-3/</loc>
     <lastmod>2019-06-16T04:59:34+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%93%B2%E5%AD%A6/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%93%B2%E5%AD%A6/</loc>
     <lastmod>2019-06-16T04:59:34+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/title/Wen-zhengming-and-chen-chun/</loc>
@@ -322,13 +322,13 @@
     <loc>//localhost:1313/zh/cousinsdrawing/</loc>
     <lastmod>2019-06-07T08:00:53+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E6%96%B0%E6%B5%AA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>//localhost:1313/zh/tags/%E6%96%B0%E6%B5%AA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2019-06-07T08:00:53+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/letter-in-slowly/</loc>
     <lastmod>2019-06-04T12:14:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%BF%83%E7%90%86/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%BF%83%E7%90%86/</loc>
     <lastmod>2019-06-04T12:14:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/893/</loc>
@@ -337,7 +337,7 @@
     <loc>//localhost:1313/zh/12-renaissance-4/</loc>
     <lastmod>2019-05-25T01:17:19+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%8E%86%E5%8F%B2%E8%AF%BE/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%8E%86%E5%8F%B2%E8%AF%BE/</loc>
     <lastmod>2019-05-25T01:17:19+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/2019-05-25-624/</loc>
@@ -346,10 +346,10 @@
     <loc>//localhost:1313/zh/its-my-life/</loc>
     <lastmod>2019-05-23T13:03:48+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</loc>
+    <loc>//localhost:1313/zh/tags/%E6%9C%AA%E5%88%86%E7%B1%BB/</loc>
     <lastmod>2019-05-23T13:03:48+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E9%9F%B3%E4%B9%90/</loc>
+    <loc>//localhost:1313/zh/tags/%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2019-05-23T13:03:48+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/reply-in-slowly-2/</loc>
@@ -364,7 +364,7 @@
     <loc>//localhost:1313/zh/make-desire-more-reasonable/</loc>
     <lastmod>2019-05-02T03:43:06+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E8%B4%A6%E6%88%B7/</loc>
+    <loc>//localhost:1313/zh/tags/%E8%B4%A6%E6%88%B7/</loc>
     <lastmod>2019-04-30T03:19:21+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/logout-qq/</loc>
@@ -376,7 +376,7 @@
     <loc>//localhost:1313/zh/ancient-themes/</loc>
     <lastmod>2019-04-18T22:38:38+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E6%96%87%E5%BE%81%E6%98%8E/</loc>
+    <loc>//localhost:1313/zh/tags/%E6%96%87%E5%BE%81%E6%98%8E/</loc>
     <lastmod>2019-04-18T22:38:38+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/style-blue-and-green/</loc>
@@ -394,7 +394,7 @@
     <loc>//localhost:1313/zh/record-my-life/</loc>
     <lastmod>2019-04-09T04:34:54+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E4%B9%A0%E6%83%AF/</loc>
+    <loc>//localhost:1313/zh/tags/%E4%B9%A0%E6%83%AF/</loc>
     <lastmod>2019-04-09T04:34:54+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/style-of-wen/</loc>
@@ -403,13 +403,13 @@
     <loc>//localhost:1313/zh/manifesto-notes/</loc>
     <lastmod>2019-03-29T09:34:15+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E9%98%85%E8%AF%BB/</loc>
+    <loc>//localhost:1313/zh/tags/%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2019-03-29T09:34:15+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/winter-research-notes/</loc>
     <lastmod>2019-03-29T00:59:16+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E7%A0%94%E7%A9%B6/</loc>
+    <loc>//localhost:1313/zh/tags/%E7%A0%94%E7%A9%B6/</loc>
     <lastmod>2019-03-29T00:59:16+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/wen-zhengming-of-wumen/</loc>
@@ -418,7 +418,7 @@
     <loc>//localhost:1313/zh/visual-pleasure-and-narrative-cinema/</loc>
     <lastmod>2019-03-21T05:37:16+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E7%94%B5%E8%84%91/</loc>
+    <loc>//localhost:1313/zh/tags/%E7%94%B5%E8%84%91/</loc>
     <lastmod>2019-03-19T22:15:57+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/manjaro-flypy/</loc>
@@ -427,7 +427,7 @@
     <loc>//localhost:1313/zh/research-review-writing/</loc>
     <lastmod>2019-03-16T08:50:24+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%AD%A6%E6%A0%A1/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%AD%A6%E6%A0%A1/</loc>
     <lastmod>2019-03-16T08:50:24+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/winter-research-questionnaire/</loc>
@@ -473,13 +473,13 @@
     <loc>//localhost:1313/zh/domestic-drama/</loc>
     <lastmod>2019-01-18T08:00:51+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E4%BC%A0%E6%92%AD/</loc>
+    <loc>//localhost:1313/zh/tags/%E4%BC%A0%E6%92%AD/</loc>
     <lastmod>2019-01-18T08:00:51+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E8%A1%8C%E5%8A%A8%E5%8A%9B%EF%BC%9F/</loc>
     <lastmod>2019-01-13T08:06:41+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E6%95%88%E7%8E%87/</loc>
+    <loc>//localhost:1313/zh/tags/%E6%95%88%E7%8E%87/</loc>
     <lastmod>2019-01-13T08:06:41+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/97/</loc>
@@ -494,19 +494,19 @@
     <loc>//localhost:1313/zh/2017-04-20/</loc>
     <lastmod>2017-04-20T09:52:20+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>//localhost:1313/zh/tags/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2017-04-20T09:52:20+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/2016-6-13/</loc>
     <lastmod>2016-06-13T11:50:01+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%AD%A4%E7%8B%AC/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%AD%A4%E7%8B%AC/</loc>
     <lastmod>2016-06-13T11:50:01+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%85%B3%E7%B3%BB/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%85%B3%E7%B3%BB/</loc>
     <lastmod>2016-06-13T11:50:01+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/categories/%E5%B8%8C%E6%9C%9B/</loc>
+    <loc>//localhost:1313/zh/tags/%E5%B8%8C%E6%9C%9B/</loc>
     <lastmod>2016-06-13T11:50:01+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/zh/sina-blog/</loc>
@@ -524,7 +524,17 @@
     <loc>//localhost:1313/zh/%E6%88%91%E7%88%B1%E7%94%BB%E7%94%BB/</loc>
     <lastmod>2006-02-04T05:07:59+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/zh/%E6%A0%87%E7%AD%BE/</loc>
+    <loc>//localhost:1313/zh/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="//localhost:1313/zh/categories/"
+                />
   </url><url>
     <loc>//localhost:1313/zh/archive/</loc>
     <xhtml:link

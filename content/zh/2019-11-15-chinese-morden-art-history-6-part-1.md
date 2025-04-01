@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-11-15T11:51:42+00:00
 url: /zh/chinese-morden-art-history-6-part-1/
-categories:
+tags:
   - 中国美术史
 
 ---

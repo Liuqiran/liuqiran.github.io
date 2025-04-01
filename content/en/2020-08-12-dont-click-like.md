@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-08-12T13:34:08+00:00
 aliases: ["/dont-click-like/"]
-categories:
+tags:
   - Digital Minimalism
 
 ---

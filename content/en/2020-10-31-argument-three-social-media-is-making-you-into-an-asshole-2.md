@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-10-31T14:56:52+00:00
 aliases: ["/argument-three-social-media-is-making-you-into-an-asshole-2/"]
-categories:
+tags:
   - Ten Arguments for Deleting Your Social Media Accounts Right Now
 
 ---

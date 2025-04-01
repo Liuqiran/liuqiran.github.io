@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-10-12T11:16:19+00:00
 aliases: ["/pa-yih-13-translations/"]
-categories:
+tags:
   - Analects
 
 ---

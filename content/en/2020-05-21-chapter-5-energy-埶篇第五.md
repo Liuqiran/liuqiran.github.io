@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-05-21T05:57:40+00:00
 aliases: ["/chapter-5-energy-埶篇第五/"]
-categories:
+tags:
   - "Sun Tzu's The Art of War"
 
 ---

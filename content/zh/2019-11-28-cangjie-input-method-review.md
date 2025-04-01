@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-11-28T08:25:08+00:00
 url: /zh/cangjie-input-method-review/
-categories:
+tags:
   - 科技
 
 ---

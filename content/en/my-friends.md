@@ -9,7 +9,7 @@ autoshare_tweet-allow-image:
   - yes
 autoshare_tweet_accounts:
   - 'a:0:{}'
-categories:
+tags:
   - Building Site
 ---
 <p class="has-contrast-color has-primary-background-color has-text-color has-background">

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-04-05T13:08:32+00:00
 aliases: ["/2-six-dynasties/"]
-categories:
+tags:
   - A Chinese-foreign exchange history of fine arts
 
 ---

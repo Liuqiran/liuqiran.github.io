@@ -6,7 +6,7 @@ date: 2019-10-21T06:14:00+00:00
 aliases: ["/pa-yih-13-analysis/"]
 xyz_twap:
   - 1
-categories:
+tags:
   - Analects
 
 ---

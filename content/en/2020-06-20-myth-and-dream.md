@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-06-20T08:19:43+00:00
 aliases: ["/myth-and-dream/"]
-categories:
+tags:
   - The Hero With a Thousand Faces
 
 ---

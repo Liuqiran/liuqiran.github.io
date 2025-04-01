@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-03-19T22:15:57+00:00
 url: /zh/manjaro-flypy/
-categories:
+tags:
   - 电脑
 
 ---

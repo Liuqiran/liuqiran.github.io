@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2018-10-16T08:17:55+00:00
 url: /zh/middle-age-wenzhengming/
-categories:
+tags:
   - 中国美术史
 ---
 ![](/uploads/2019/02/img_20190226_161742_855589193632959511323.jpg)

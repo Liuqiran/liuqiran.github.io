@@ -8,7 +8,7 @@ wp_last_modified_info:
   - 2019-04-21 @ 6:55 AM
 wplmi_shortcode:
   - '[lmt-post-modified-info]'
-categories:
+tags:
   - 中国美术史
 ---
 文征明屡试不第，和他追求“古意”的主张相关。在被推荐入朝为官后，他目睹了朝中的政治斗争，发现在京为官不符合他的政治理想，因此辞官还乡。

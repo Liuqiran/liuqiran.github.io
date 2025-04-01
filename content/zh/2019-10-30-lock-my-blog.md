@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-10-30T07:27:32+00:00
 url: /zh/lock-my-blog/
-categories:
+tags:
   - 建站
 
 ---

@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-02-14T12:04:06+00:00
 aliases: ["/chapter-5-the-souk-and-the-office-building/"]
-categories:
+tags:
   - 'Antifragile: Things That Gain From Disorder'
 
 ---

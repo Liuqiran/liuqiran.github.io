@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-02-11T12:54:19+00:00
 aliases: ["/chapter-3-attack-by-strategem/"]
-categories:
+tags:
   - "Sun Tzu's The Art of War"
 
 ---

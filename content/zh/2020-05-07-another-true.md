@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-05-07T12:35:01+00:00
 url: /zh/another-true/
-categories:
+tags:
   - 艺术理论
 
 ---

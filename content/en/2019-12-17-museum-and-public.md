@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-12-17T09:32:09+00:00
 aliases: ["/museum-and-public/"]
-categories:
+tags:
   - Museology
 
 ---

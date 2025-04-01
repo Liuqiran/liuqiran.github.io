@@ -6,7 +6,7 @@ date: 2019-05-09T12:28:12+00:00
 draft: true
 private: true
 url: /zh/reply-to-a-person-in-slowly/
-categories:
+tags:
   - 信件
 
 ---

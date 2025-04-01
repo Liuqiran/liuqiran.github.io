@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Loneliness on Liu Qiran</title>
+    <link>//localhost:1313/en/tags/loneliness/</link>
+    <description>Recent content in Loneliness on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 09 Apr 2020 04:19:59 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/tags/loneliness/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connection</title>
+      <link>//localhost:1313/en/2020-04-09-connection/</link>
+      <pubDate>Thu, 09 Apr 2020 04:19:59 +0000</pubDate>
+      <guid>//localhost:1313/en/2020-04-09-connection/</guid>
+      <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio&#34;&gt;
+&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;blockquote class=&#34;wp-block-quote is-layout-flow wp-block-quote-is-layout-flow&#34;&gt;
+  &lt;p&gt;
+    Hold my hand&lt;br /&gt;I&amp;#8217;m real powerless to fight&lt;br /&gt;Can you lead me to the light?&lt;br /&gt;My strenght has come to fear&lt;br /&gt;Fled in truth of dawn&lt;br /&gt;Curious as a day&lt;br /&gt;My heart huh woah oh
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;wp-block-quote is-layout-flow wp-block-quote-is-layout-flow&#34;&gt;
+  &lt;p&gt;
+    Can you bring me back to life?&lt;br /&gt;Ignite the fire again?&lt;br /&gt;Can you bring me back home where I am not alone?&lt;br /&gt;I&amp;#8217;m lost inside, the night and I cannot find you&lt;br /&gt;Bring me back
+  &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alone</title>
+      <link>//localhost:1313/en/2019-12-25-alone/</link>
+      <pubDate>Wed, 25 Dec 2019 12:28:29 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-12-25-alone/</guid>
+      <description>&lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
+&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;I’m so alone, nothing feels like home.&lt;br&gt;
+I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
+&lt;/div&gt;&lt;/figure&gt;</description>
+    </item>
+  </channel>
+</rss>

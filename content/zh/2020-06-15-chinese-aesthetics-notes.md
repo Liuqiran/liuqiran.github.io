@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-06-15T15:04:20+00:00
 url: /zh/chinese-aesthetics-notes/
-categories:
+tags:
   - 美学
 
 ---

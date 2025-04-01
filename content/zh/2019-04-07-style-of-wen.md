@@ -8,7 +8,7 @@ wp_last_modified_info:
   - 2019-04-14 @ 3:03 PM
 wplmi_shortcode:
   - '[lmt-post-modified-info]'
-categories:
+tags:
   - 中国美术史
 
 ---

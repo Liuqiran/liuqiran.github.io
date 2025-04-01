@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2019-12-18T02:02:45+00:00
 aliases: ["/chinese-morden-art-history-notes-1/"]
-categories:
+tags:
   - Chinese art history
 
 ---

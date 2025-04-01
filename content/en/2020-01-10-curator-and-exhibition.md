@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2020-01-10T05:51:09+00:00
 aliases: ["/curator-and-exhibition/"]
-categories:
+tags:
   - Museology
 
 ---

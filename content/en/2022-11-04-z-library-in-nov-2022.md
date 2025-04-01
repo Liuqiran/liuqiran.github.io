@@ -4,7 +4,7 @@ author: Qiran
 type: post
 date: 2022-11-04T02:49:11+00:00
 aliases: ["/z-library-in-nov-2022/"]
-categories:
+tags:
   - Internet
 
 ---

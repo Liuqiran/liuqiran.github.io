@@ -6,7 +6,7 @@ date: 2019-06-16T04:59:34+00:00
 draft: true
 private: true
 url: /zh/letter-in-slowly-3/
-categories:
+tags:
   - 信件
   - 哲学
 
