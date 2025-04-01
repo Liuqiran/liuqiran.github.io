@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>爱 on 刘其然的部落格</title>
-    <link>//localhost:1313/zh/tags/%E7%88%B1/</link>
+    <link>/zh/tags/%E7%88%B1/</link>
     <description>Recent content in 爱 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 18 Jun 2021 08:20:51 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/zh/tags/%E7%88%B1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/zh/tags/%E7%88%B1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>爱的定义</title>
-      <link>//localhost:1313/zh/the-meaning-of-love/</link>
+      <link>/zh/the-meaning-of-love/</link>
       <pubDate>Fri, 18 Jun 2021 08:20:51 +0000</pubDate>
-      <guid>//localhost:1313/zh/the-meaning-of-love/</guid>
+      <guid>/zh/the-meaning-of-love/</guid>
       <description>&lt;p&gt;一&lt;br&gt;
 对于爱，不同文化有不同的解释，如今的人往往将爱定义得比较狭隘。&lt;br&gt;
 在CS路易斯的《四种爱》中爱有且仅有以下四种类型，在我看来，这四种爱是有层次高低的：&lt;/p&gt;
