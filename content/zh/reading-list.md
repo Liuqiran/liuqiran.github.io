@@ -4,7 +4,8 @@ author:    Qiran
 type:    page
 url: /zh/reading-list-2/
 date:    2023-02-10
-featuredImage: /static/uploads/2023/09/books-1568x2367.jpg
+cover:
+  image: /uploads/2023/09/books.jpg
 ---
 读完的书:
 

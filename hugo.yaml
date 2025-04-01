@@ -191,6 +191,7 @@ params:
   showtoc: true
   tocopen: true
   ShowArchive: true
+  image: "/img/Avatar.jpg"
   rss: "/feed/"
   # twikoo评论
   twikoo:
