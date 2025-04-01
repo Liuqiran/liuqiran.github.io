@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>未分类 on 刘其然的部落格</title>
-    <link>http://localhost:1313/zh/tags/%E6%9C%AA%E5%88%86%E7%B1%BB/</link>
+    <link>https://liuqiran.github.io/zh/tags/%E6%9C%AA%E5%88%86%E7%B1%BB/</link>
     <description>Recent content in 未分类 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 23 May 2019 13:03:48 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/%E6%9C%AA%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://liuqiran.github.io/zh/tags/%E6%9C%AA%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>It’s my life</title>
-      <link>http://localhost:1313/zh/its-my-life/</link>
+      <link>https://liuqiran.github.io/zh/its-my-life/</link>
       <pubDate>Thu, 23 May 2019 13:03:48 +0000</pubDate>
-      <guid>http://localhost:1313/zh/its-my-life/</guid>
+      <guid>https://liuqiran.github.io/zh/its-my-life/</guid>
       <description>&lt;p&gt;实在想象不了十多年的时间，&lt;/p&gt;
 &lt;p&gt;一个人最美好的年华,&lt;/p&gt;
 &lt;p&gt;呆在监狱里。&lt;/p&gt;
@@ -22,16 +22,16 @@
     </item>
     <item>
       <title>2019年3月13日</title>
-      <link>http://localhost:1313/zh/log/</link>
+      <link>https://liuqiran.github.io/zh/log/</link>
       <pubDate>Wed, 13 Mar 2019 13:33:27 +0000</pubDate>
-      <guid>http://localhost:1313/zh/log/</guid>
+      <guid>https://liuqiran.github.io/zh/log/</guid>
       <description>&lt;p&gt;转眼间我用英语写日记已经1年多了，但是英语还是很渣。回过头来看自己的日记发现自己的写的量还是不够多，就几句话而已，很多东西没有写下来。和用中文写不一样，用英文写如果很多地方不知道怎么表达经常需要翻译，用中文写就非常流畅，看来还是要加大每天写的篇幅，尽量达到200词以上。&lt;/p&gt;</description>
     </item>
     <item>
       <title>2017-04-20</title>
-      <link>http://localhost:1313/zh/2017-04-20/</link>
+      <link>https://liuqiran.github.io/zh/2017-04-20/</link>
       <pubDate>Thu, 20 Apr 2017 09:52:20 +0000</pubDate>
-      <guid>http://localhost:1313/zh/2017-04-20/</guid>
+      <guid>https://liuqiran.github.io/zh/2017-04-20/</guid>
       <description>&lt;p&gt;我喜欢看app上的统计数据，&lt;br&gt;
 比如anki的复习统计图&lt;br&gt;
 quality time 的使用数据&lt;br&gt;

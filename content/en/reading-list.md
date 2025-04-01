@@ -5,6 +5,7 @@ type: page
 date: 2023-02-10  
 cover:
   image: /uploads/2023/09/books-scaled.jpg
+description: This is my reading list...
 ---
 The books I have finished reading:
 

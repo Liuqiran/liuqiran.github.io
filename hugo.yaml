@@ -15,8 +15,6 @@ languages:
     taxonomies: # 分类系统
       category: categories
       tag: tags
-    permalinks:
-      posts: /en/:title/
     menu:
       main:
         - identifier: home
@@ -49,6 +47,7 @@ languages:
           weight: 70
     params:
       displayFullLangName: true
+      ShowPostNavLinks: true
       alternatelang: 'zh'
       profileMode:
         enabled: true
@@ -126,6 +125,7 @@ languages:
 
     params:
       displayFullLangName: true
+      ShowPostnevLinks: true
       alternatelang: 'en' 
       homeInfoParams:
         enabled: true
@@ -185,13 +185,15 @@ params:
   author : "Qiran" 
   ShowShareButtons: true
   ShareButtons: ["linkedin","x","facebook","telegram","bilibili"]
-  ShowPostNevLinks: true
+  ShowPostNavLinks: true
+  mainSections: ["post", "zh", "en"]
   ShowWordCount: true
   comments: true  # 这里打开评论
   showtoc: true
   tocopen: true
   ShowArchive: true
-  image: "/img/Avatar.jpg"
+  cover:
+    image: "/img/Avatar.jpg"
   rss: "/feed/"
   # twikoo评论
   twikoo:
