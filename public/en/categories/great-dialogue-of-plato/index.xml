@@ -2,17 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Great Dialogue of Plato on Liu Qiran</title>
-    <link>//localhost:45615/en/categories/great-dialogue-of-plato/</link>
+    <link>//localhost:1313/en/categories/great-dialogue-of-plato/</link>
     <description>Recent content in Great Dialogue of Plato on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 01 Aug 2019 05:26:38 +0000</lastBuildDate>
-    <atom:link href="//localhost:45615/en/categories/great-dialogue-of-plato/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/en/categories/great-dialogue-of-plato/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Socrate</title>
-      <link>//localhost:45615/en/2019-08-01-socrate/</link>
+      <link>//localhost:1313/en/2019-08-01-socrate/</link>
       <pubDate>Thu, 01 Aug 2019 05:26:38 +0000</pubDate>
-      <guid>//localhost:45615/en/2019-08-01-socrate/</guid>
+      <guid>//localhost:1313/en/2019-08-01-socrate/</guid>
       <description>&lt;p&gt;People should not act on the basis of opinion, but true knowledge.&lt;/p&gt;
 &lt;p&gt;“The unexamined life is not worth living” (Apology 38A).&lt;/p&gt;
 &lt;p&gt;It’s not by art, but by divine power.&lt;/p&gt;</description>

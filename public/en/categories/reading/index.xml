@@ -2,24 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Reading on Liu Qiran</title>
-    <link>//localhost:45615/en/categories/reading/</link>
+    <link>//localhost:1313/en/categories/reading/</link>
     <description>Recent content in Reading on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 01 Aug 2023 15:06:51 +0000</lastBuildDate>
-    <atom:link href="//localhost:45615/en/categories/reading/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/en/categories/reading/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Communication</title>
-      <link>//localhost:45615/en/2023-08-01-communication/</link>
+      <link>//localhost:1313/en/2023-08-01-communication/</link>
       <pubDate>Tue, 01 Aug 2023 15:06:51 +0000</pubDate>
-      <guid>//localhost:45615/en/2023-08-01-communication/</guid>
+      <guid>//localhost:1313/en/2023-08-01-communication/</guid>
       <description>&lt;p&gt;Communication is necessary in our life. Reading is also a form of communication. When I’m reading, it just like I’m talking with the author.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Twenty books</title>
-      <link>//localhost:45615/en/2023-06-08-twenty-books/</link>
+      <link>//localhost:1313/en/2023-06-08-twenty-books/</link>
       <pubDate>Thu, 08 Jun 2023 14:52:35 +0000</pubDate>
-      <guid>//localhost:45615/en/2023-06-08-twenty-books/</guid>
+      <guid>//localhost:1313/en/2023-06-08-twenty-books/</guid>
       <description>&lt;p&gt;Until today I finished reading 20 books written in English.&lt;br&gt;
 Twenty books is not a lot, but it’s a big step for me.&lt;br&gt;
 It’s a good accomplishment.&lt;br&gt;

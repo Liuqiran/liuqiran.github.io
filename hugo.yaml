@@ -38,9 +38,9 @@ languages:
           name: Friends
           url: /en/my-friends/
           weight: 50
-        - identifier: categories
+        - identifier: tags
           name: Categories
-          url: /en/categories/
+          url: /en/tags/
           weight: 60
         - identifier: search
           name: Search
@@ -178,7 +178,13 @@ outputFormats:
     path: /
 
 # 这里的参数会被代码以 .Site.Params 的形式读取
-params:
+params:  
+  author : "Qiran" 
+  images: /static/img/Avatar.jpg
+  ShowShareButtons: true
+  ShareButtons: ["linkedin","x","facebook","telegram","bilibili"]
+  ShowPostNevLinks: true
+  ShowWordCount: true
   comments: true  # 这里打开评论
   showtoc: true
   tocopen: true

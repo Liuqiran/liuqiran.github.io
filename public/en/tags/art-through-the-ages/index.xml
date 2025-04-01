@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Art Through the Ages on Liu Qiran</title>
+    <link>//localhost:1313/en/tags/art-through-the-ages/</link>
+    <description>Recent content in Art Through the Ages on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 17 Jul 2019 06:20:39 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/tags/art-through-the-ages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic concepts</title>
+      <link>//localhost:1313/en/2019-07-17-basic-conceptions/</link>
+      <pubDate>Wed, 17 Jul 2019 06:20:39 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-07-17-basic-conceptions/</guid>
+      <description>&lt;p&gt;What is art history:&lt;/p&gt;
+&lt;p&gt;Art history aims to learn and find the history and development of art.&lt;/p&gt;
+&lt;p&gt;The questions art historians should ask:&lt;/p&gt;
+&lt;p&gt;How old is it?&lt;/p&gt;
+&lt;p&gt;What is it&amp;rsquo;s style?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

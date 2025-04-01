@@ -2,17 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>亲戚 on 刘其然的部落格</title>
-    <link>//localhost:45615/zh/categories/%E4%BA%B2%E6%88%9A/</link>
+    <link>//localhost:1313/zh/categories/%E4%BA%B2%E6%88%9A/</link>
     <description>Recent content in 亲戚 on 刘其然的部落格</description>
+    <image>
+      <title>刘其然的部落格</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 06 Oct 2019 11:53:38 +0000</lastBuildDate>
-    <atom:link href="//localhost:45615/zh/categories/%E4%BA%B2%E6%88%9A/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/zh/categories/%E4%BA%B2%E6%88%9A/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reply in Slowly</title>
-      <link>//localhost:45615/zh/reply-in-slowly-5/</link>
+      <link>//localhost:1313/zh/reply-in-slowly-5/</link>
       <pubDate>Sun, 06 Oct 2019 11:53:38 +0000</pubDate>
-      <guid>//localhost:45615/zh/reply-in-slowly-5/</guid>
+      <guid>//localhost:1313/zh/reply-in-slowly-5/</guid>
       <description>&lt;p&gt;感谢来信&lt;br&gt;
 我也有享受独处的时候，享受独处并不意味着自己没有归属感，只是最近我的状态不太好，曾经的某种归属感和安逸的状态丧失了，这也可能意味着我需要调整自己的状态了。&lt;br&gt;
 除了最近我和父母通话变多了以外，我没有几个能够深入聊下去的人。最近某个初中的老“朋友”慰问了我一下，我说了很多我的想法，最后他没有回复我。&lt;br&gt;

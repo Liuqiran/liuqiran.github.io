@@ -2,17 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Museology on Liu Qiran</title>
-    <link>//localhost:45615/en/categories/museology/</link>
+    <link>//localhost:1313/en/categories/museology/</link>
     <description>Recent content in Museology on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 10 Jan 2020 05:51:09 +0000</lastBuildDate>
-    <atom:link href="//localhost:45615/en/categories/museology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/en/categories/museology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curator and exhibition</title>
-      <link>//localhost:45615/en/2020-01-10-curator-and-exhibition/</link>
+      <link>//localhost:1313/en/2020-01-10-curator-and-exhibition/</link>
       <pubDate>Fri, 10 Jan 2020 05:51:09 +0000</pubDate>
-      <guid>//localhost:45615/en/2020-01-10-curator-and-exhibition/</guid>
+      <guid>//localhost:1313/en/2020-01-10-curator-and-exhibition/</guid>
       <description>&lt;p&gt;Curator 是一个专有名称，曾经被作为“博物馆馆长”之意。&lt;/p&gt;
 &lt;p&gt;做一个策展人要具备资金筹措能力。&lt;/p&gt;
 &lt;p&gt;故宫的展览负责人以前是一个机构，以前很稳定。&lt;/p&gt;
@@ -25,9 +30,9 @@
     </item>
     <item>
       <title>Museum and public</title>
-      <link>//localhost:45615/en/2019-12-17-museum-and-public/</link>
+      <link>//localhost:1313/en/2019-12-17-museum-and-public/</link>
       <pubDate>Tue, 17 Dec 2019 09:32:09 +0000</pubDate>
-      <guid>//localhost:45615/en/2019-12-17-museum-and-public/</guid>
+      <guid>//localhost:1313/en/2019-12-17-museum-and-public/</guid>
       <description>&lt;p&gt;公众态度公众责任如何建立？&lt;br&gt;
 很多民间的组织开始带领公众参观博物馆。&lt;/p&gt;
 &lt;p&gt;我们可以从社会端参与到其中。&lt;/p&gt;
@@ -54,33 +59,6 @@
 &lt;p&gt;798出现的多元文化的画廊&lt;/p&gt;
 &lt;p&gt;诠释的视野&lt;br&gt;
 它让人感受到是必要的&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>New Museology</title>
-      <link>//localhost:45615/en/2019-10-08-new-museology/</link>
-      <pubDate>Tue, 08 Oct 2019 02:19:52 +0000</pubDate>
-      <guid>//localhost:45615/en/2019-10-08-new-museology/</guid>
-      <description>&lt;p&gt;学期最重要的问题：作为一个个体与这个事物的关系。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;新博物馆学视野下博物馆认知&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;《当卢浮宫遇见紫禁城》&lt;/p&gt;
-&lt;p&gt;博物馆学的三次研究高潮发生于30、50、80年代&lt;/p&gt;
-&lt;p&gt;30:世界范围内第一次研究高潮&lt;/p&gt;
-&lt;p&gt;50:世界博物馆学研究出现第二次高潮，开始成为世界性的事业&lt;/p&gt;
-&lt;p&gt;20世纪60年代初期，博物馆学的活动逐渐独立并且清晰起来，博物馆组织的分类开始基于功能加以区分。&lt;/p&gt;
-&lt;p&gt;80年代中期，“新博物馆学”运动&lt;/p&gt;
-&lt;p&gt;广阔的社会背景：20世纪70年代随着全球性的生态危机和社区主义的发展，人们开始思考，博物馆和社会到底是一个什么样的关系？&lt;/p&gt;
-&lt;p&gt;新博物馆学 理论基础：除方法与技术外，还要懂政治学、社会学等多学科&lt;/p&gt;
-&lt;p&gt;发展策略：观众需要为主，大众主义，专家参与&lt;/p&gt;
-&lt;p&gt;展示手法：动态的，采用主题单元展示，内容侧重内在与未来，尽量让观众参与，注意娱乐与休闲，多种传播方式。&lt;/p&gt;
-&lt;p&gt;人如果只是私密化存在的话，社会是难以进步的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;新博物馆学对博物馆的多重认识：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;博物馆可以是不同形式的空间：&lt;/p&gt;
-&lt;p&gt;“飞地” 人类可以通过这块飞地领略人类文化遗产。&lt;/p&gt;
-&lt;p&gt;“圣地” 它有广阔的历史时刻的特征，与宗教有关联，我们赋予了它极其崇高的地位。“偶像意象”、“治疗的潜能”、“仪式化之所”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“市场主导产业”&lt;/strong&gt; 文化场所应该成为市场主导的形态。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“殖民化空间”&lt;/strong&gt; “展览是有特权的舞台，展示着自我与‘他者’的意象。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;艺术博物馆：文化表征的特征空间&lt;/strong&gt; 无论是避难所、诊所还是监狱等，均是权力和知识关系的体制化的表现。&lt;/p&gt;
-&lt;p&gt;艺术博物馆并非艺术经典的简单承载体。每一种展品的定夺无不是建立在人的文化认知与判断之上的。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

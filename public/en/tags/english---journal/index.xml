@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>English - Journal on Liu Qiran</title>
+    <link>//localhost:1313/en/tags/english---journal/</link>
+    <description>Recent content in English - Journal on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 21 May 2019 13:24:41 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/tags/english---journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/en/2019-05-21-611/</link>
+      <pubDate>Tue, 21 May 2019 13:24:41 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-05-21-611/</guid>
+      <description>&lt;p&gt;These days I started listening the podcast, A.J. Hoge is very good, his talking is understandable and knowledgable.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

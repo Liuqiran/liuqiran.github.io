@@ -2,17 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Travel on Liu Qiran</title>
-    <link>//localhost:45615/en/categories/travel/</link>
+    <link>//localhost:1313/en/categories/travel/</link>
     <description>Recent content in Travel on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 05 Jul 2019 13:37:38 +0000</lastBuildDate>
-    <atom:link href="//localhost:45615/en/categories/travel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/en/categories/travel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Expo</title>
-      <link>//localhost:45615/en/2019-07-05-expo/</link>
+      <link>//localhost:1313/en/2019-07-05-expo/</link>
       <pubDate>Fri, 05 Jul 2019 13:37:38 +0000</pubDate>
-      <guid>//localhost:45615/en/2019-07-05-expo/</guid>
+      <guid>//localhost:1313/en/2019-07-05-expo/</guid>
       <description>&lt;p&gt;Today I went to Yanqing visiting the 2019 Expo. But the weather was bad, it often rains.&lt;/p&gt;
 &lt;p&gt;I think my physical condition is still not very good, I can try to build a habit of washing cold water. Washing cold water can build up cardiopulmonary function and improve my immunity.&lt;/p&gt;
 &lt;p&gt;reference:&lt;/p&gt;

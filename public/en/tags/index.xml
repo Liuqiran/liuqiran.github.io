@@ -2,10 +2,212 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Liu Qiran</title>
-    <link>//localhost:45615/en/tags/</link>
+    <link>//localhost:1313/en/tags/</link>
     <description>Recent content in Tags on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:45615/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Oct 2019 02:19:52 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Museology</title>
+      <link>//localhost:1313/en/tags/museology/</link>
+      <pubDate>Tue, 08 Oct 2019 02:19:52 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/museology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Music</title>
+      <link>//localhost:1313/en/tags/music/</link>
+      <pubDate>Wed, 18 Sep 2019 04:36:10 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/music/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sun Tzu&#39;s the Art of War</title>
+      <link>//localhost:1313/en/tags/sun-tzus-the-art-of-war/</link>
+      <pubDate>Thu, 18 Jul 2019 08:18:04 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/sun-tzus-the-art-of-war/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Masochism and the Self</title>
+      <link>//localhost:1313/en/tags/masochism-and-the-self/</link>
+      <pubDate>Wed, 17 Jul 2019 06:39:28 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/masochism-and-the-self/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Art Through the Ages</title>
+      <link>//localhost:1313/en/tags/art-through-the-ages/</link>
+      <pubDate>Wed, 17 Jul 2019 06:20:39 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/art-through-the-ages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Calligraphy</title>
+      <link>//localhost:1313/en/tags/calligraphy/</link>
+      <pubDate>Sun, 14 Jul 2019 08:52:51 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/calligraphy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aesthetics</title>
+      <link>//localhost:1313/en/tags/aesthetics/</link>
+      <pubDate>Sat, 06 Jul 2019 00:21:52 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/aesthetics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chuang Tzu</title>
+      <link>//localhost:1313/en/tags/chuang-tzu/</link>
+      <pubDate>Sat, 06 Jul 2019 00:21:52 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/chuang-tzu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Student</title>
+      <link>//localhost:1313/en/tags/student/</link>
+      <pubDate>Sat, 06 Jul 2019 00:21:52 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/student/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Health</title>
+      <link>//localhost:1313/en/tags/health/</link>
+      <pubDate>Fri, 05 Jul 2019 13:37:38 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/health/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>//localhost:1313/en/tags/travel/</link>
+      <pubDate>Fri, 05 Jul 2019 13:37:38 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Building Site</title>
+      <link>//localhost:1313/en/tags/building-site/</link>
+      <pubDate>Sun, 23 Jun 2019 02:26:48 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/building-site/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category</title>
+      <link>//localhost:1313/en/tags/category/</link>
+      <pubDate>Sun, 23 Jun 2019 02:26:48 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/category/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dream</title>
+      <link>//localhost:1313/en/tags/dream/</link>
+      <pubDate>Sun, 23 Jun 2019 02:01:15 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/dream/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Journal</title>
+      <link>//localhost:1313/en/tags/journal/</link>
+      <pubDate>Sun, 23 Jun 2019 02:01:15 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/journal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Relatives</title>
+      <link>//localhost:1313/en/tags/relatives/</link>
+      <pubDate>Sun, 23 Jun 2019 02:01:15 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/relatives/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>China</title>
+      <link>//localhost:1313/en/tags/china/</link>
+      <pubDate>Wed, 12 Jun 2019 20:56:54 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/china/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Western Art History</title>
+      <link>//localhost:1313/en/tags/western-art-history/</link>
+      <pubDate>Mon, 10 Jun 2019 02:24:08 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/western-art-history/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philosophy</title>
+      <link>//localhost:1313/en/tags/philosophy/</link>
+      <pubDate>Thu, 06 Jun 2019 08:22:15 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mood</title>
+      <link>//localhost:1313/en/tags/mood/</link>
+      <pubDate>Thu, 30 May 2019 09:29:54 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/mood/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>English</title>
+      <link>//localhost:1313/en/tags/english/</link>
+      <pubDate>Tue, 21 May 2019 13:24:41 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/english/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life</title>
+      <link>//localhost:1313/en/tags/life/</link>
+      <pubDate>Thu, 16 May 2019 12:33:24 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/life/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Porn</title>
+      <link>//localhost:1313/en/tags/porn/</link>
+      <pubDate>Thu, 16 May 2019 12:33:24 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/porn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wen Zhengming</title>
+      <link>//localhost:1313/en/tags/wen-zhengming/</link>
+      <pubDate>Tue, 14 May 2019 12:52:26 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/wen-zhengming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Efficiency</title>
+      <link>//localhost:1313/en/tags/efficiency/</link>
+      <pubDate>Tue, 26 Mar 2019 07:44:15 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/efficiency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Now Habit</title>
+      <link>//localhost:1313/en/tags/the-now-habit/</link>
+      <pubDate>Tue, 26 Mar 2019 07:44:15 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/the-now-habit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anki</title>
+      <link>//localhost:1313/en/tags/anki/</link>
+      <pubDate>Mon, 25 Mar 2019 13:10:15 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/anki/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Habit</title>
+      <link>//localhost:1313/en/tags/habit/</link>
+      <pubDate>Mon, 25 Mar 2019 13:10:15 +0000</pubDate>
+      <guid>//localhost:1313/en/tags/habit/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

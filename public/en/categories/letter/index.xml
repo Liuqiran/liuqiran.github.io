@@ -2,34 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Letter on Liu Qiran</title>
-    <link>//localhost:45615/en/categories/letter/</link>
+    <link>//localhost:1313/en/categories/letter/</link>
     <description>Recent content in Letter on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 08 Feb 2023 12:31:56 +0000</lastBuildDate>
-    <atom:link href="//localhost:45615/en/categories/letter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/en/categories/letter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reply to Chris</title>
-      <link>//localhost:45615/en/2023-02-08-reply-to-chris/</link>
+      <link>//localhost:1313/en/2023-02-08-reply-to-chris/</link>
       <pubDate>Wed, 08 Feb 2023 12:31:56 +0000</pubDate>
-      <guid>//localhost:45615/en/2023-02-08-reply-to-chris/</guid>
+      <guid>//localhost:1313/en/2023-02-08-reply-to-chris/</guid>
       <description>&lt;p&gt;Chris:&lt;br&gt;
 I definitely know Austria.&lt;br&gt;
 You can find out more about me on my personal website. By the way, why not leave a footprint there?&lt;/p&gt;
 &lt;p&gt;It’s great that you’re interested in learning a language. It’s a long way for learning something.&lt;/p&gt;
 &lt;p&gt;Yes, it is. I’m Qiran. Nice to meet you!&lt;/p&gt;
 &lt;p&gt;Qiran&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Reply in Slowly</title>
-      <link>//localhost:45615/en/2019-10-08-replay-in-slowly/</link>
-      <pubDate>Mon, 07 Oct 2019 22:06:10 +0000</pubDate>
-      <guid>//localhost:45615/en/2019-10-08-replay-in-slowly/</guid>
-      <description>&lt;p&gt;I also feel lonely last week, but I walked out recently.&lt;br&gt;
-I’m sorry to hear that you didn’t live with your parents 🙁&lt;br&gt;
-I think maybe it’s the reason you still struggling against loneliness.&lt;br&gt;
-In the book ‘Becoming human’, belonging is very important, we need belongings.&lt;br&gt;
-I’m so sorry my language is not very well? but I’m willing to hear your stories, through words, I hope we can build a good friendship ?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

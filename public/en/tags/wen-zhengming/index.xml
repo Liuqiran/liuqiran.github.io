@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Wen Zhengming on Liu Qiran</title>
+    <link>//localhost:1313/en/tags/wen-zhengming/</link>
+    <description>Recent content in Wen Zhengming on Liu Qiran</description>
+    <image>
+      <title>Liu Qiran</title>
+      <url>//localhost:1313/47</url>
+      <link>//localhost:1313/47</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 14 May 2019 12:52:26 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/tags/wen-zhengming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practice Wen Zhengming Caotang Shizhi</title>
+      <link>//localhost:1313/en/2019-05-14-practice-wen-zhengming-caotang-shizhi/</link>
+      <pubDate>Tue, 14 May 2019 12:52:26 +0000</pubDate>
+      <guid>//localhost:1313/en/2019-05-14-practice-wen-zhengming-caotang-shizhi/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/05/IMG_20190424_210105-1.jpg&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
