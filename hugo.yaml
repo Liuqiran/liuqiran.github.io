@@ -1,6 +1,6 @@
 defaultContentLanguage: "en"
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: true  
-baseURL: "/"  
 theme: "PaperMod"  
 relativeURLs: true   
 
@@ -34,13 +34,13 @@ languages:
           name: Archive
           url: /en/archive/
           weight: 40
-        - identifier: friends
-          name: Friends
-          url: /en/my-friends/
-          weight: 50
         - identifier: tags
           name: tags
           url: /en/tags/
+          weight: 50
+        - identifier: friends
+          name: Friends
+          url: /en/my-friends/
           weight: 60
         - identifier: search
           name: Search
@@ -85,7 +85,7 @@ languages:
   zh:
     languageName: "中文"   
     Title: "刘其然的部落格"
-    languageCode: "zh-CN"
+    languageCode: "zh-cn"
     weight: 2
     contentDir: content/zh/  
     taxonomies: # 分类系统
@@ -109,13 +109,13 @@ languages:
           name: 归档
           url: /zh/archive/
           weight: 4
-        - identifier: links
-          name: 友人
-          url: /zh/my-friends/
-          weight: 5
         - identifier: 标签
           name: 标签
           url: /zh/tags/
+          weight: 5
+        - identifier: links
+          name: 友人
+          url: /zh/my-friends/
           weight: 6
         - identifier: search
           name: 搜索

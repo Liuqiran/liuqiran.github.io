@@ -5,7 +5,7 @@
     <link>/zh/tags/%E7%94%B5%E8%84%91/</link>
     <description>Recent content in 电脑 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
-    <language>zh-CN</language>
+    <language>zh-cn</language>
     <lastBuildDate>Tue, 19 Mar 2019 22:15:57 +0000</lastBuildDate>
     <atom:link href="/zh/tags/%E7%94%B5%E8%84%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -17,8 +17,7 @@
 &lt;p&gt;1、安装fcitx, 相比ibus，fcitx能开机自动启动。&lt;/p&gt;
 &lt;p style=&#34;background-color:#cb3b14&#34; class=&#34;has-background&#34;&gt;
   2、安装fcitx 一定要在软件包仓库下载完整的插件，否则无法显示输入框，安装好后将相关代码保存。
-&lt;/p&gt;
-&lt;p&gt;3、在小鹤音形官网上下载linux的码表文件，按照教程将文件保存到系统分区里。&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

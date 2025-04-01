@@ -5,7 +5,7 @@
     <link>/zh/tags/%E5%BB%BA%E7%AB%99/</link>
     <description>Recent content in 建站 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
-    <language>zh-CN</language>
+    <language>zh-cn</language>
     <lastBuildDate>Fri, 10 Feb 2023 14:31:32 +0000</lastBuildDate>
     <atom:link href="/zh/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -25,11 +25,7 @@
       <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
   我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了……
 &lt;/p&gt;
-&lt;p&gt;最近发现许多功能已经失效了，花了很长时间才修复好，不然这里已经长草了。&lt;/p&gt;
-&lt;p&gt;发现很多人开始用 LinkTree 作为集合众多链接的个人主页。应该是如今这些人活跃的社交平台越来越多。数不过来了，用这个网站做整理。&lt;/p&gt;
-&lt;p&gt;但是这不就是个站主页的功能吗？只要在主页上添加这些链接就行，还可以自己设定样式和功能，避免了千篇一律的问题。&lt;/p&gt;
-&lt;p&gt;除此之外自己整理主页还有其他的优势：网址更加简洁、便于记忆；访问能集中到自己的平台上，不受其他平台控制。&lt;/p&gt;
-&lt;p&gt;但不管怎么样，还是需要定期维护才行。还是多更新动态吧。&lt;/p&gt;</description>
+&lt;p&gt;最近发现许多功能已经失效了，花了很长时间才修复好，不然这里已经长草了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>创建电报频道</title>
@@ -38,8 +34,7 @@
       <guid>/zh/created-telegram-channel/</guid>
       <description>&lt;p&gt;尝试开通了一下&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://t.me/qiranschannel&#34; target=&#34;_blank&#34;&gt;电报频道&lt;/a&gt;。&lt;br&gt;
 发现电报创建频道非常快捷，向他人广播也非常快。&lt;br&gt;
-最重要的是平台是开放的，添加机器人功能之后可以自动将个人网站的动态同步到频道当中。&lt;/p&gt;
-&lt;p&gt;如今加上接收消息的及时性，电报的功能已经超越很多其他通讯软件了，非常推荐尝鲜！&lt;/p&gt;</description>
+最重要的是平台是开放的，添加机器人功能之后可以自动将个人网站的动态同步到频道当中。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Updated domain name  更新域名</title>
@@ -61,8 +56,7 @@
       <pubDate>Mon, 18 Jan 2021 10:13:15 +0000</pubDate>
       <guid>/zh/change-categories/</guid>
       <description>&lt;p&gt;因为这几个月自己不在公开的部落格上更新。这两天才发现博客域名已经过期了，不得已暂时更换域名。&lt;/p&gt;
-&lt;p&gt;在翻看的文章的时候发现许多内容根本没有发布。同时，感到标签页面逐渐变得杂乱而难以维护。我觉得将文章分层归类是很失败的一件事。&lt;/p&gt;
-&lt;p&gt;从现在开始合并归类，新发布的文章可以不需要文章归类。&lt;/p&gt;</description>
+&lt;p&gt;在翻看的文章的时候发现许多内容根本没有发布。同时，感到标签页面逐渐变得杂乱而难以维护。我觉得将文章分层归类是很失败的一件事。&lt;/p&gt;</description>
     </item>
     <item>
       <title>添加按鈕</title>
@@ -81,8 +75,7 @@
       <guid>/zh/reopen-my-blog/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.liuqiran.com/index.php/2019/10/30/lock-my-blog/&#34;&gt;关闭部落格&lt;/a&gt;已经半个月了.&lt;/p&gt;
 &lt;p&gt;在这段时间里,我将原来的博文全部搬运到了以blog开头的私密站点，之后将大这里的大部分博文都删除了。&lt;/p&gt;
-&lt;p&gt;学习是本来就是孤独的，但人还是需要交流，经历过一段时间的低谷期后,我决定重新开放部落格.&lt;/p&gt;
-&lt;p&gt;经过这次关闭后，我觉得写一些私密的文字是十分必要的，有很多东西只有给自己看才有意义，而且要和博客这种完全公开的形式分开，所以我建立了新的私密站点。同时，安装了同步插件，这样我就可以随时在这个站点分享我想要分享的东西。&lt;/p&gt;</description>
+&lt;p&gt;学习是本来就是孤独的，但人还是需要交流，经历过一段时间的低谷期后,我决定重新开放部落格.&lt;/p&gt;</description>
     </item>
     <item>
       <title>关闭部落格</title>
@@ -92,11 +85,7 @@
       <description>&lt;p class=&#34;has-white-color has-primary-background-color has-text-color has-background&#34;&gt;
   距部落格建立到现在已经9个月了。
 &lt;/p&gt;
-&lt;p&gt;我发现现在不仅没有多少人来关注，我也没有继续写的动力。那么，我还是否有必要再开放博客呢？我建站的初衷是否真的是为了分享，还是希望获得别人的关注，还是一时的新鲜感？我建站的初衷是什么？&lt;/p&gt;
-&lt;p class=&#34;has-black-color has-green-background-color has-text-color has-background&#34;&gt;
-  &lt;a href=&#34;https://www.liuqiran.com/index.php/2019/09/17/joined-foreverblog/&#34;&gt;之前&lt;/a&gt;自己已经发现我失去了写公开博文、写给别人看的博文的动力，我想我最终还是走到这一步了，那么，如果我关闭站点，博客不就和笔记软件一个一个性质了吗？&lt;br /&gt;最近几个月以来，我逐渐发现wordpress和其他笔记应用最大的不同在于，它是开放的系统，最高兴的事是我在这里建立了自己的&lt;a href=&#34;https://www.liuqiran.com/index.php/2019/06/23/categorize-my-blog/&#34;&gt;分类&lt;/a&gt;，这是其他笔记应用所不能比拟的。
-&lt;/p&gt;
-&lt;p&gt;我原来的计划是逐渐把自己的电子日记与笔记逐渐存放到这里。但是我还是没有办法很好的同时管理自己的公开博文和私密文字，索性就用密码保护整个站点了，并分享密码给了两个博友。&lt;/p&gt;</description>
+&lt;p&gt;我发现现在不仅没有多少人来关注，我也没有继续写的动力。那么，我还是否有必要再开放博客呢？我建站的初衷是否真的是为了分享，还是希望获得别人的关注，还是一时的新鲜感？我建站的初衷是什么？&lt;/p&gt;</description>
     </item>
     <item>
       <title>RSS 订阅</title>
@@ -144,12 +133,7 @@
       <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
   从今天开始，我的笔记和日记都到这里来写了。
 &lt;/p&gt;
-&lt;p&gt;如果有一些值得分享的东西，我会将我的日记公开，我的英语还不够好，希望大家能够指出我语法和语言上的问题。：P&lt;/p&gt;
-&lt;p&gt;相比Google Keep，个人博客分类可以使用树状结构，因此对于笔记的整理来说，Wordpress更有优势。但是Google Keep我也会作为备用。&lt;/p&gt;
-&lt;p class=&#34;has-dark-gray-color has-text-color&#34;&gt;
-  因此，如果除了&lt;strong&gt;我的博客系统发生意外/我自己发生意外，&lt;/strong&gt;我是不会停止更新和整理我的博客了，这里作为我思考和展示的地方，会长期维护下去。
-&lt;/p&gt;
-&lt;p&gt;毕竟，思考是人不可缺少的东西：）&lt;/p&gt;</description>
+&lt;p&gt;如果有一些值得分享的东西，我会将我的日记公开，我的英语还不够好，希望大家能够指出我语法和语言上的问题。：P&lt;/p&gt;</description>
     </item>
     <item>
       <title>建站有感</title>
@@ -171,13 +155,7 @@
       <link>/zh/about-me/</link>
       <pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate>
       <guid>/zh/about-me/</guid>
-      <description>&lt;p&gt;写作是应该是生活中必不可少的一部分，以网站的形式将自己的文字和作品整理出来，相比社交媒体式的分享，不再那么浮躁，也没有更多无意义的点赞；相比自己私密保存，又能分享需要的人。&lt;/p&gt;
-&lt;p&gt;本站点于2019年2月9日创建。我创建这个部落格用来记录自己，分享自己的思考、文章和作品。：）
-本站已加入“&lt;a href=&#34;https://foreverblog.cn/&#34;&gt;十年之约&lt;/a&gt;”活动（即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！）&lt;/p&gt;
-&lt;p&gt;比特币地址：1Lae6qzRkp62V6Tbfusv3fhtfKrXDZnoV9&lt;/p&gt;
-&lt;p&gt;(本站分英文站点和中文站点，内容并不相同，均为原创。翻译功能只有在内容对应的情况下才有效。)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;../../../categories/building-site/&#34;&gt;关于本站&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;联系我：可&lt;a href=&#34;mailto:woshiniuziku@gmail.com&#34;&gt;直接发送邮件&lt;/a&gt;或评论区留言。&lt;/p&gt;</description>
+      <description>&lt;p&gt;写作是应该是生活中必不可少的一部分，以网站的形式将自己的文字和作品整理出来，相比社交媒体式的分享，不再那么浮躁，也没有更多无意义的点赞；相比自己私密保存，又能分享需要的人。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

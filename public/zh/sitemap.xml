@@ -11,7 +11,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-cn"
                 href="/zh/"
                 />
   </url><url>
@@ -24,7 +24,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-cn"
                 href="/zh/tags/"
                 />
   </url><url>
@@ -64,7 +64,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-cn"
                 href="/zh/reading-list-2/"
                 />
   </url><url>
@@ -251,7 +251,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-cn"
                 href="/zh/rss-2/"
                 />
   </url><url>
@@ -297,7 +297,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-cn"
                 href="/zh/my-friends/"
                 />
   </url><url>
@@ -442,7 +442,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-cn"
                 href="/zh/about-me/"
                 />
   </url><url>
@@ -508,7 +508,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-cn"
                 href="/zh/categories/"
                 />
   </url><url>
@@ -520,7 +520,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-cn"
                 href="/zh/archive/"
                 />
   </url><url>
@@ -532,7 +532,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-cn"
                 href="/zh/search/"
                 />
   </url>
