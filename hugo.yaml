@@ -182,7 +182,6 @@ outputFormats:
 # 这里的参数会被代码以 .Site.Params 的形式读取
 params:  
   author : "Qiran" 
-  images: /static/img/Avatar.jpg
   ShowShareButtons: true
   ShareButtons: ["linkedin","x","facebook","telegram","bilibili"]
   ShowPostNevLinks: true

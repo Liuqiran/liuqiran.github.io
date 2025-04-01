@@ -1,24 +1,24 @@
 ---
-title: 阅读书目
-author: Qiran
-type: page
+title:    阅读书目
+author:    Qiran
+type:    page
 url: /zh/reading-list-2/
-date: 2023-02-10T15:35:06+00:00
-featured_image: /wp-content/uploads/2023/09/books-1568x2367.jpg
+date:    2023-02-10
+cover_image: /static/uploads/2023/09/books-1568x2367.jpg
 ---
 读完的书:
 
 | No. | Title                                                                  | Author                        | Date of completion | Rating         |
 | --- | ---------------------------------------------------------------------- | ----------------------------- | ------------------ | -------------- |
-| 1   | Atomic Habits: Tiny Changes, Remarkable Results                        | James Clear                   | 2021               | ★★★★★     |
+| 1   | Atomic Habits:  Tiny Changes, Remarkable Results                       | James Clear                   | 2021               | ★★★★★     |
 | 2   | The Hobbit                                                             | J.R.R Tolkien                 | 2021               | ★★★★☆     |
 | 3   | Gods at War                                                            | Kyle Idleman                  | 2022               | ★★★★☆     |
-| 4   | The Almanack of Naval Ravikant: A Guide to Wealth and Happiness        |                               | 2022               | ★★★★★     |
+| 4   | The Almanack of Naval Ravikant:  A Guide to Wealth and Happiness       |                               | 2022               | ★★★★★     |
 | 5   | On Regular Investing                                                   | Xiaolai Li                    | 2022               | ★★★★★     |
 | 6   | Rich Dad Door Dad                                                      | Robert Kiyosaki               | 2022               | ★★★★☆     |
 | 7   | Animal Farm                                                            | George Orwell                 | 2022               | ★★★★★     |
 | 8   | The Shallows                                                           | Nicholas Carr                 | 2022               | ★★★★☆     |
-| 9   | Effortless English: Learn To Speak English Like A Native               | A.J. Hoge                     | 2022               | ★★★☆☆     |
+| 9   | Effortless English:  Learn To Speak English Like A Native              | A.J. Hoge                     | 2022               | ★★★☆☆     |
 | 10  | The Carnivore Diet                                                     | Shawn Baker                   | 2022               | ★★★★☆     |
 | 11  | Learn Enough HTML, CSS and Layout to Be Dangerous                      |                               | 2022               | ★★★★☆     |
 | 12  | Learn Enough JavaScript to be Dangerous                                |                               | 2022               | ★★★★☆     |
@@ -51,9 +51,7 @@ featured_image: /wp-content/uploads/2023/09/books-1568x2367.jpg
 | 39  | Easyway to Stop Smoking                                                | Allen Carr                    | 2024-04-14         | ★★★★☆     |
 | 40  | Why We Get Sick                                                        | Benjamin Bikman               | 2024-05-31         | ★★★⁠★⁠★ |
 | 41  | Rightly Divided                                                        | J. Michael Lester             | 2025-03-08         | ★★★★☆     |
-|42|Mind the Gap|Terrie Chappell|2025-03-16|★★★☆☆     |  
-|43|Paid in Full| Paul Chappell|2025-03-16|★★★☆☆     |
-
-
+| 42  | Mind the Gap                                                           | Terrie Chappell               | 2025-03-16         | ★★★☆☆     |
+| 43  | Paid in Full                                                           | Paul Chappell                 | 2025-03-16         | ★★★☆☆     |
 
 以上列表不定期更新……

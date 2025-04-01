@@ -4,11 +4,6 @@
     <title>建站 on 刘其然的部落格</title>
     <link>//localhost:1313/zh/tags/%E5%BB%BA%E7%AB%99/</link>
     <description>Recent content in 建站 on 刘其然的部落格</description>
-    <image>
-      <title>刘其然的部落格</title>
-      <url>//localhost:1313/47</url>
-      <link>//localhost:1313/47</link>
-    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 10 Feb 2023 14:31:32 +0000</lastBuildDate>
@@ -113,24 +108,9 @@
 &lt;p&gt;（可能无法两个站点都照顾到，建议全部订阅）&lt;/p&gt;</description>
     </item>
     <item>
-      <title>一个人的狂欢</title>
-      <link>//localhost:1313/zh/joined-foreverblog/</link>
-      <pubDate>Tue, 17 Sep 2019 13:46:47 +0000</pubDate>
-      <guid>//localhost:1313/zh/joined-foreverblog/</guid>
-      <description>&lt;p&gt;上个星期我提交了十年之约的申请，今天发现博客有了访问量，点击来源是十年之约，因此知道我的博客已经顺利进入成员名单了。&lt;/p&gt;
-&lt;p&gt;不过我并没有太多喜悦的情绪，也没有什么归属感。&lt;/p&gt;
-&lt;p&gt;可能我已经把博客当成日记本+笔记本了吧：&lt;/p&gt;
-&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
-  写博客只是记日记的延伸而已。
-&lt;/p&gt;
-&lt;p&gt;不知道为什么，从2010年开始，我开始保持每天写日记的习惯。在2017年年底，我突然想用英语写日记，从一个个蹦出的蹩脚的单词到现在能看懂的句子，还算是有所进步。&lt;/p&gt;
-&lt;p&gt;今年2月份建立自己的博客，刚开始不断写博文发博文获得留言与关注到后来新鲜感慢慢淡却。我突然觉得我可以在这里写日记，记笔记，并把以前的电子记录都搬过来，因此更新更快，但是已经没有人来看了，可能是因为我的博客里都是些乱七八糟的英文。反正也没人来看了，那么一个人想写什么就写什么，不过可能哪天心情不好就把博客锁了。&lt;/p&gt;
-&lt;p&gt;这&lt;a href=&#34;https://www.liuqiran.com/index.php/2019/04/09/record-my-life/&#34;&gt;九年&lt;/a&gt;，我是孤独的。那么接下来的日子也不算什么，我甚至可以每天更新，或者说，直到我死了不能写为止。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>友人</title>
       <link>//localhost:1313/zh/my-friends/</link>
-      <pubDate>Tue, 09 Jul 2019 07:51:36 +0000</pubDate>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/zh/my-friends/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）&lt;/p&gt;&lt;/blockquote&gt;

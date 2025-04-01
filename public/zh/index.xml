@@ -4,11 +4,6 @@
     <title>刘其然的部落格</title>
     <link>//localhost:1313/zh/</link>
     <description>Recent content on 刘其然的部落格</description>
-    <image>
-      <title>刘其然的部落格</title>
-      <url>//localhost:1313/47</url>
-      <link>//localhost:1313/47</link>
-    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 23 Dec 2024 00:36:01 +0000</lastBuildDate>
@@ -201,24 +196,18 @@
 摩西和曾经在埃及为奴的那一代以色列人，虽然逃离了埃及，但都看不到应许之地。只能等这一代人都死了，他们的后代才可以出发，到达应许之地。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>走向单极化的世界</title>
-      <link>//localhost:1313/zh/toward-a-unipolar-world/</link>
-      <pubDate>Tue, 14 Feb 2023 06:12:17 +0000</pubDate>
-      <guid>//localhost:1313/zh/toward-a-unipolar-world/</guid>
-      <description>&lt;p&gt;曾经的教材上说，“这个世界将走向多极化”。如今来看，真的是这样吗？其他国家是否成功成为世界秩序的挑战者？美国是否真的正在衰落？&lt;br&gt;
-与之相反，仅从总值和人均的 GDP 来看，[1][2]&lt;strong&gt;整个欧盟和其他发达国家，与美国的差距都在拉大。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果设想一个多极化的世界，可以设想南北战争没有发生，美国各州独立。&lt;strong&gt;南北战争极大地扩张了中央政府的权力，总体战的模式也影响了其他国家。&lt;/strong&gt; 如果中央政府的权力没有扩张，没有统一的美国不会影响第一次世界大战的局势，因此，德国和俄国就不一定会失败。甚至纳粹党和列宁党都不会兴起，那么第二次世界大战可能都不会发生。&lt;br&gt;
-世界还会维持着殖民者向外输出秩序的多国体系。&lt;br&gt;
-多国体系下的世界一定不会比一国主宰的世界更差。&lt;br&gt;
-如果是这样，历史将会被直接改写，二十世纪的那些事件可能将不会发生。&lt;br&gt;
-然而事实是往相反的方向走。&lt;/p&gt;
-&lt;p&gt;美国如今的地位可以用罗马来比喻：如果说希腊化对应着英国化，那么罗马就对应着今天的美国。但是，&lt;strong&gt;价值观的输出比在异国建立城邦的效果更好，信仰一神教的美国比多神教的罗马抵抗力更强。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;曾经的挑战者都失败了，罗马的权力已经强大到任何外部势力都无法挑战的地步。&lt;/strong&gt; 罗马何时衰落，要看罗马自身的古老传统何时从内部侵蚀与毁灭。&lt;/p&gt;</description>
+      <title>更新了 RSS 订阅地址</title>
+      <link>//localhost:1313/zh/updated-rss-feed-url/</link>
+      <pubDate>Fri, 10 Feb 2023 14:31:32 +0000</pubDate>
+      <guid>//localhost:1313/zh/updated-rss-feed-url/</guid>
+      <description>&lt;p&gt;&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://www.liuqiran.com/zh/feed&#34; target=&#34;_blank&#34;&gt;中文站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.liuqiran.com/feed&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;英文站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;（可能无法两个站点都照顾到，建议全部订阅）&lt;/p&gt;</description>
     </item>
     <item>
       <title>阅读书目</title>
       <link>//localhost:1313/zh/reading-list-2/</link>
-      <pubDate>Fri, 10 Feb 2023 15:35:06 +0000</pubDate>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/zh/reading-list-2/</guid>
       <description>&lt;p&gt;读完的书:&lt;/p&gt;
 &lt;table&gt;
@@ -234,7 +223,7 @@
   &lt;tbody&gt;
       &lt;tr&gt;
           &lt;td&gt;1&lt;/td&gt;
-          &lt;td&gt;Atomic Habits: Tiny Changes, Remarkable Results&lt;/td&gt;
+          &lt;td&gt;Atomic Habits:  Tiny Changes, Remarkable Results&lt;/td&gt;
           &lt;td&gt;James Clear&lt;/td&gt;
           &lt;td&gt;2021&lt;/td&gt;
           &lt;td&gt;★★★★★&lt;/td&gt;
@@ -255,7 +244,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;4&lt;/td&gt;
-          &lt;td&gt;The Almanack of Naval Ravikant: A Guide to Wealth and Happiness&lt;/td&gt;
+          &lt;td&gt;The Almanack of Naval Ravikant:  A Guide to Wealth and Happiness&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;2022&lt;/td&gt;
           &lt;td&gt;★★★★★&lt;/td&gt;
@@ -290,7 +279,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;9&lt;/td&gt;
-          &lt;td&gt;Effortless English: Learn To Speak English Like A Native&lt;/td&gt;
+          &lt;td&gt;Effortless English:  Learn To Speak English Like A Native&lt;/td&gt;
           &lt;td&gt;A.J. Hoge&lt;/td&gt;
           &lt;td&gt;2022&lt;/td&gt;
           &lt;td&gt;★★★☆☆&lt;/td&gt;
@@ -536,15 +525,6 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;以上列表不定期更新……&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>更新了 RSS 订阅地址</title>
-      <link>//localhost:1313/zh/updated-rss-feed-url/</link>
-      <pubDate>Fri, 10 Feb 2023 14:31:32 +0000</pubDate>
-      <guid>//localhost:1313/zh/updated-rss-feed-url/</guid>
-      <description>&lt;p&gt;&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://www.liuqiran.com/zh/feed&#34; target=&#34;_blank&#34;&gt;中文站&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.liuqiran.com/feed&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;英文站&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;（可能无法两个站点都照顾到，建议全部订阅）&lt;/p&gt;</description>
     </item>
     <item>
       <title>重新整理版面</title>
@@ -1798,21 +1778,6 @@
 &lt;p&gt;1992年逐渐出现民办博物馆，&lt;/p&gt;</description>
     </item>
     <item>
-      <title>一个人的狂欢</title>
-      <link>//localhost:1313/zh/joined-foreverblog/</link>
-      <pubDate>Tue, 17 Sep 2019 13:46:47 +0000</pubDate>
-      <guid>//localhost:1313/zh/joined-foreverblog/</guid>
-      <description>&lt;p&gt;上个星期我提交了十年之约的申请，今天发现博客有了访问量，点击来源是十年之约，因此知道我的博客已经顺利进入成员名单了。&lt;/p&gt;
-&lt;p&gt;不过我并没有太多喜悦的情绪，也没有什么归属感。&lt;/p&gt;
-&lt;p&gt;可能我已经把博客当成日记本+笔记本了吧：&lt;/p&gt;
-&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
-  写博客只是记日记的延伸而已。
-&lt;/p&gt;
-&lt;p&gt;不知道为什么，从2010年开始，我开始保持每天写日记的习惯。在2017年年底，我突然想用英语写日记，从一个个蹦出的蹩脚的单词到现在能看懂的句子，还算是有所进步。&lt;/p&gt;
-&lt;p&gt;今年2月份建立自己的博客，刚开始不断写博文发博文获得留言与关注到后来新鲜感慢慢淡却。我突然觉得我可以在这里写日记，记笔记，并把以前的电子记录都搬过来，因此更新更快，但是已经没有人来看了，可能是因为我的博客里都是些乱七八糟的英文。反正也没人来看了，那么一个人想写什么就写什么，不过可能哪天心情不好就把博客锁了。&lt;/p&gt;
-&lt;p&gt;这&lt;a href=&#34;https://www.liuqiran.com/index.php/2019/04/09/record-my-life/&#34;&gt;九年&lt;/a&gt;，我是孤独的。那么接下来的日子也不算什么，我甚至可以每天更新，或者说，直到我死了不能写为止。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>History of western museums</title>
       <link>//localhost:1313/zh/history-of/</link>
       <pubDate>Tue, 17 Sep 2019 01:14:08 +0000</pubDate>
@@ -2000,7 +1965,7 @@
     <item>
       <title>友人</title>
       <link>//localhost:1313/zh/my-friends/</link>
-      <pubDate>Tue, 09 Jul 2019 07:51:36 +0000</pubDate>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/zh/my-friends/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）&lt;/p&gt;&lt;/blockquote&gt;
@@ -2027,20 +1992,6 @@
 &lt;/ul&gt;</description>
     </item>
     <item>
-      <title>Letter in Slowly</title>
-      <link>//localhost:1313/zh/letter-in-slowly-3/</link>
-      <pubDate>Sun, 16 Jun 2019 04:59:34 +0000</pubDate>
-      <guid>//localhost:1313/zh/letter-in-slowly-3/</guid>
-      <description>&lt;p&gt;Silver:&lt;br&gt;
-最近过得怎么样？期末我必须准备应考了。&lt;br&gt;
-今天第一次把《道德经》看完了，是原文对照着英文翻译看完的；接下来准备看看柏拉图的对话集。我认为今天和千年以前的人并没有什么差别，我们面临的难题先哲一定思考过了，每个人都能从中得到启发。当然还准备看解决自身问题的一些书：《受虐狂与自我》、《感受恐惧》。&lt;br&gt;
-晚上看了“幻海航行”频道的科幻故事视频，剪辑和解说都很棒（小姐姐配音很好听～）。我没怎么接触过科幻，印象只停留在微信的那个启动页，我对它的感受是，就算拥有了最便捷快速的工具，他为何还是孤单的站在月球，自己和他人的连接还是像繁星间那么遥远。&lt;br&gt;
-对从《银河帝国》到《城市与群星》的想象力感慨万千，上帝的信仰遭到质疑，因为毁灭了一个星球的生命只是为了点亮伯利恒之星，时间和空间的尽头又回到了最初的哲学问题。。&lt;br&gt;
-看着看着居然睡着了。。&lt;/p&gt;
-&lt;p&gt;Ai Weikai&lt;br&gt;
-2019.6.16 21:50&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>《文征明与陈淳绘画风格比较研究》</title>
       <link>//localhost:1313/title/Wen-zhengming-and-chen-chun/</link>
       <pubDate>Mon, 10 Jun 2019 09:34:04 +0000</pubDate>
@@ -2063,19 +2014,6 @@
       <pubDate>Fri, 07 Jun 2019 08:00:53 +0000</pubDate>
       <guid>//localhost:1313/zh/cousinsdrawing/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2019/06/487ac2fdb33d3c31dcd7e.jpeg&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Letter in Slowly</title>
-      <link>//localhost:1313/zh/letter-in-slowly/</link>
-      <pubDate>Tue, 04 Jun 2019 12:14:00 +0000</pubDate>
-      <guid>//localhost:1313/zh/letter-in-slowly/</guid>
-      <description>&lt;p&gt;Silver:&lt;br&gt;
-最近几天更加敏感压抑，我买的服务器都被封了，昨天晚上一直在重装。&lt;br&gt;
-我不知道这些从事网络封锁的人的他们的内心到底是怎么想的，不过了解自己比了解别人重要的多，电击实验下每个人都有可能服从权威。&lt;br&gt;
-你说你想考心理语言学，我只知道乔姆斯基，而且是因为他的理论被用来作恶才知道的。&lt;br&gt;
-想起了之前出于好奇去听了**的心理学答辩，结果让我恶心了好一阵子，因为除了冷冰冰的数据就是毫无人文关怀的理论分析，这肯定不是我想学的，或者不是想要的学习成果。（不过我连画画都学不动还能学其他什么?）&lt;/p&gt;
-&lt;p&gt;Ai Weikai&lt;br&gt;
-2019.06.04 10:20&lt;/p&gt;</description>
     </item>
     <item>
       <title>以儒行恶</title>
@@ -2207,22 +2145,6 @@ I just wanna live while I’m alive&lt;br&gt;
 是的，那上面都是我的想法，相比社交账号，我写给自己还写给周围的blogger们，并且互联网上的每一个人都可以来看，就像一本书一样。&lt;/p&gt;
 &lt;p&gt;Ai Weikai&lt;br&gt;
 2019.5.19 10:16&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Reply to a person in Slowly</title>
-      <link>//localhost:1313/zh/reply-to-a-person-in-slowly/</link>
-      <pubDate>Thu, 09 May 2019 12:28:12 +0000</pubDate>
-      <guid>//localhost:1313/zh/reply-to-a-person-in-slowly/</guid>
-      <description>&lt;p&gt;(The first letter from China in Slowly is so Sang ：（ , he may have MDD )&lt;/p&gt;
-&lt;p&gt;你好老弟！&lt;/p&gt;
-&lt;p&gt;在夜深人静的时候最适合睡觉：）&lt;br&gt;
-在古人的眼中，一昼夜就是一轮回;甚至这个世界也是周而复始的循环，千年以前和千年以后都不会有太大变化，太阳照常东升西落（好像确实是这样）。&lt;/p&gt;
-&lt;p&gt;我不知道什么叫做好还是不好，有的人看起来成功，有的人看起来失败，有的人有的人会活成这样，有的人会活成那样。但每个人都过着自己的生活，每个人都有自己独一无二的路。&lt;/p&gt;
-&lt;p&gt;精神上的折磨需要找到折磨的来源，有时候来自外界，有时候来自内心；有时候是精神上的，有时候是生理上的。&lt;br&gt;
-如果我每天被揍，那我也在受折磨，我需要让自己停止被揍才行。如果自己无法解决，你需要他人的帮助。&lt;/p&gt;
-&lt;p&gt;我觉得求生欲就是怕死：因为死就是一种痛苦啊，就算身体能不痛苦，内心的痛苦也会有的。&lt;/p&gt;
-&lt;p&gt;活着就是度过一个又一个难关：）&lt;/p&gt;
-&lt;p&gt;Ai weikai&lt;/p&gt;</description>
     </item>
     <item>
       <title>发布至部落格</title>
@@ -2946,25 +2868,11 @@ quality time 的使用数据&lt;br&gt;
 最后，我画好了，和叔叔说再见了。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>我的照片，好看吧！</title>
-      <link>//localhost:1313/zh/%E6%88%91%E7%9A%84%E7%85%A7%E7%89%87%EF%BC%8C%E5%A5%BD%E7%9C%8B%E5%90%A7%EF%BC%81/</link>
-      <pubDate>Sat, 04 Feb 2006 07:20:00 +0000</pubDate>
-      <guid>//localhost:1313/zh/%E6%88%91%E7%9A%84%E7%85%A7%E7%89%87%EF%BC%8C%E5%A5%BD%E7%9C%8B%E5%90%A7%EF%BC%81/</guid>
-      <description>&lt;p&gt;（图裂了）&lt;br&gt;
-这是我第一幅四格漫画 &lt;figure class=&#34;wp-block-image size-full&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fdd82a6147de00f.jpeg&#34;&gt; &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;我和妈妈！&lt;figure class=&#34;wp-block-image size-full&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fd6eb461f751919.jpeg&#34;&gt; &lt;/figure&gt;&lt;figure class=&#34;wp-block-image&#34;&gt;&lt;img decoding=&#34;async&#34; src=&#34;http://blog.sina.com.cn/images/face/022.gif&#34; alt=&#34;我的照片，好看吧！&#34; title=&#34;我的照片，好看吧！&#34; /&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;（&lt;figure class=&#34;wp-block-image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img decoding=&#34;async&#34; src=&#34;http://blog.sina.com.cn/images/face/005.gif&#34; alt=&#34;我的照片，好看吧！&#34; title=&#34;我的照片，好看吧！&#34; /&gt; &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;）&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>这是我去年（２００５年）画的速写</title>
       <link>//localhost:1313/zh/%E8%BF%99%E6%98%AF%E6%88%91%E5%8E%BB%E5%B9%B4%EF%BC%88%EF%BC%92%EF%BC%90%EF%BC%90%EF%BC%95%E5%B9%B4%EF%BC%89%E7%94%BB%E7%9A%84%E9%80%9F%E5%86%99/</link>
       <pubDate>Sat, 04 Feb 2006 06:42:00 +0000</pubDate>
       <guid>//localhost:1313/zh/%E8%BF%99%E6%98%AF%E6%88%91%E5%8E%BB%E5%B9%B4%EF%BC%88%EF%BC%92%EF%BC%90%EF%BC%90%EF%BC%95%E5%B9%B4%EF%BC%89%E7%94%BB%E7%9A%84%E9%80%9F%E5%86%99/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fd9a2c6880e2239.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fde58f052b1ac81.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fd0133c337827f4.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fd1758ee2825411.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fd6bc9d2ef56777.jpeg&#34;&gt;&lt;/figure&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fd9a2c6880e2239.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fde58f052b1ac81.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fd0133c337827f4.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fd1758ee2825411.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2023/02/487ac2fd6bc9d2ef56777.jpeg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>我爱画画</title>

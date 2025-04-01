@@ -4,11 +4,6 @@
     <title>Life on Liu Qiran</title>
     <link>//localhost:1313/en/tags/life/</link>
     <description>Recent content in Life on Liu Qiran</description>
-    <image>
-      <title>Liu Qiran</title>
-      <url>//localhost:1313/47</url>
-      <link>//localhost:1313/47</link>
-    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 25 Jul 2023 12:24:20 +0000</lastBuildDate>
@@ -69,15 +64,6 @@ Practice is repeated action. Enough times of repetition is necessary in our life
       <guid>//localhost:1313/en/2023-02-08-update-home-page/</guid>
       <description>&lt;p&gt;Added progress bars and more social icons for home page.&lt;/p&gt;
 &lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>//localhost:1313/en/2019-05-16-sex-drugs-rock-roll/</link>
-      <pubDate>Thu, 16 May 2019 12:33:24 +0000</pubDate>
-      <guid>//localhost:1313/en/2019-05-16-sex-drugs-rock-roll/</guid>
-      <description>&lt;figure&gt;&lt;/figure&gt;
-&lt;p&gt;I may have a porn addiction recently. Watching pornography made me immersed in fantasies, not realities. Maybe I should control my desires.&lt;/p&gt;
-&lt;p&gt;There are a lot of noises make us surrender, TV dramas, and social media make us passive. The meaning of life should be like this, it should be like that. They just mention soft moralities (compassion, kindness) rather than hard moralities ( Powerful, justice). it makes us easy to control, let us succumb to desires.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

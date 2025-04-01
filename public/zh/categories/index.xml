@@ -4,11 +4,6 @@
     <title>Categories on 刘其然的部落格</title>
     <link>//localhost:1313/zh/categories/</link>
     <description>Recent content in Categories on 刘其然的部落格</description>
-    <image>
-      <title>刘其然的部落格</title>
-      <url>//localhost:1313/47</url>
-      <link>//localhost:1313/47</link>
-    </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-CN</language>
     <atom:link href="//localhost:1313/zh/categories/index.xml" rel="self" type="application/rss+xml" />
