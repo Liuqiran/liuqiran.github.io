@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Art Through the Ages on Liu Qiran</title>
-    <link>/en/tags/art-through-the-ages/</link>
+    <link>https://liuqiran.github.io/en/tags/art-through-the-ages/</link>
     <description>Recent content in Art Through the Ages on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 08 Sep 2020 12:49:47 +0000</lastBuildDate>
-    <atom:link href="/en/tags/art-through-the-ages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://liuqiran.github.io/en/tags/art-through-the-ages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ancient Greece</title>
-      <link>/en/2020-09-08-ancient-greece/</link>
+      <link>https://liuqiran.github.io/en/2020-09-08-ancient-greece/</link>
       <pubDate>Tue, 08 Sep 2020 12:49:47 +0000</pubDate>
-      <guid>/en/2020-09-08-ancient-greece/</guid>
+      <guid>https://liuqiran.github.io/en/2020-09-08-ancient-greece/</guid>
       <description>&lt;h3 class=&#34;wp-block-heading&#34; id=&#34;architecture-and-architectural-sculpture&#34;&gt;Architecture and Architectural Sculpture&lt;/h3&gt;
 &lt;p&gt;Doric and Ionic orders.&lt;br&gt;
 &lt;em&gt;Doric&lt;/em&gt; formulated on the mainland; the &lt;em&gt;Ionic&lt;/em&gt; was the order of choice in the Aegean Islans and coast of Asia Minor.&lt;br&gt;
@@ -25,9 +25,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basic concepts</title>
-      <link>/en/2019-07-17-basic-conceptions/</link>
+      <link>https://liuqiran.github.io/en/2019-07-17-basic-conceptions/</link>
       <pubDate>Wed, 17 Jul 2019 06:20:39 +0000</pubDate>
-      <guid>/en/2019-07-17-basic-conceptions/</guid>
+      <guid>https://liuqiran.github.io/en/2019-07-17-basic-conceptions/</guid>
       <description>&lt;p&gt;What is art history:&lt;/p&gt;
 &lt;p&gt;Art history aims to learn and find the history and development of art.&lt;/p&gt;
 &lt;p&gt;The questions art historians should ask:&lt;/p&gt;
