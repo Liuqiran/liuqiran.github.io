@@ -21,11 +21,11 @@ Hello! My name is LIU, Qiran. I hope to connect to the world and meet more frien
 
 My Bitcoin wallet address：1Lae6qzRkp62V6Tbfusv3fhtfKrXDZnoV9
 
-Blog’s birthday: Feb 9, 2019
+Blog’s birthday: Feb 9, 2019   
 
 [About this blog][1]
 
 Contact me: [Telegram: Contact @liuqiran][2]
 
- [1]: /categories/building-site/
+ [1]: /tags/building-site/
  [2]: https://t.me/liuqiran

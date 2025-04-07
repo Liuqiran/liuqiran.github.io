@@ -1,6 +1,7 @@
 ---
 Title: Migrated to Hugo   
 Date: 2025-04-01 
+aliases: ["/migrated-to-hugo/"]
 tags:
   - Building Site
 ---

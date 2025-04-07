@@ -2,444 +2,444 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Liu Qiran</title>
-    <link>https://liuqiran.github.io/en/tags/</link>
+    <link>http://localhost:1313/en/tags/</link>
     <description>Recent content in Tags on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building Site</title>
-      <link>https://liuqiran.github.io/en/tags/building-site/</link>
+      <link>http://localhost:1313/en/tags/building-site/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/building-site/</guid>
+      <guid>http://localhost:1313/en/tags/building-site/</guid>
       <description></description>
     </item>
     <item>
       <title>Journal</title>
-      <link>https://liuqiran.github.io/en/tags/journal/</link>
+      <link>http://localhost:1313/en/tags/journal/</link>
       <pubDate>Mon, 27 Nov 2023 12:41:28 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/journal/</guid>
+      <guid>http://localhost:1313/en/tags/journal/</guid>
       <description></description>
     </item>
     <item>
       <title>Log</title>
-      <link>https://liuqiran.github.io/en/tags/log/</link>
+      <link>http://localhost:1313/en/tags/log/</link>
       <pubDate>Wed, 25 Oct 2023 00:17:17 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/log/</guid>
+      <guid>http://localhost:1313/en/tags/log/</guid>
       <description></description>
     </item>
     <item>
       <title>Health</title>
-      <link>https://liuqiran.github.io/en/tags/health/</link>
+      <link>http://localhost:1313/en/tags/health/</link>
       <pubDate>Mon, 28 Aug 2023 16:03:02 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/health/</guid>
+      <guid>http://localhost:1313/en/tags/health/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>https://liuqiran.github.io/en/tags/technology/</link>
+      <link>http://localhost:1313/en/tags/technology/</link>
       <pubDate>Mon, 28 Aug 2023 16:03:02 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/technology/</guid>
+      <guid>http://localhost:1313/en/tags/technology/</guid>
       <description></description>
     </item>
     <item>
       <title>Podcast</title>
-      <link>https://liuqiran.github.io/en/tags/podcast/</link>
+      <link>http://localhost:1313/en/tags/podcast/</link>
       <pubDate>Tue, 22 Aug 2023 15:52:36 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/podcast/</guid>
+      <guid>http://localhost:1313/en/tags/podcast/</guid>
       <description></description>
     </item>
     <item>
       <title>Software</title>
-      <link>https://liuqiran.github.io/en/tags/software/</link>
+      <link>http://localhost:1313/en/tags/software/</link>
       <pubDate>Tue, 08 Aug 2023 13:44:33 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/software/</guid>
+      <guid>http://localhost:1313/en/tags/software/</guid>
       <description></description>
     </item>
     <item>
       <title>Reading</title>
-      <link>https://liuqiran.github.io/en/tags/reading/</link>
+      <link>http://localhost:1313/en/tags/reading/</link>
       <pubDate>Tue, 01 Aug 2023 15:06:51 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/reading/</guid>
+      <guid>http://localhost:1313/en/tags/reading/</guid>
       <description></description>
     </item>
     <item>
       <title>Life</title>
-      <link>https://liuqiran.github.io/en/tags/life/</link>
+      <link>http://localhost:1313/en/tags/life/</link>
       <pubDate>Tue, 25 Jul 2023 12:24:20 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/life/</guid>
+      <guid>http://localhost:1313/en/tags/life/</guid>
       <description></description>
     </item>
     <item>
       <title>English</title>
-      <link>https://liuqiran.github.io/en/tags/english/</link>
+      <link>http://localhost:1313/en/tags/english/</link>
       <pubDate>Tue, 11 Jul 2023 13:39:29 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/english/</guid>
+      <guid>http://localhost:1313/en/tags/english/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer</title>
-      <link>https://liuqiran.github.io/en/tags/computer/</link>
+      <link>http://localhost:1313/en/tags/computer/</link>
       <pubDate>Tue, 04 Jul 2023 14:39:59 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/computer/</guid>
+      <guid>http://localhost:1313/en/tags/computer/</guid>
       <description></description>
     </item>
     <item>
       <title>Relationship</title>
-      <link>https://liuqiran.github.io/en/tags/relationship/</link>
+      <link>http://localhost:1313/en/tags/relationship/</link>
       <pubDate>Tue, 27 Jun 2023 15:49:06 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/relationship/</guid>
+      <guid>http://localhost:1313/en/tags/relationship/</guid>
       <description></description>
     </item>
     <item>
       <title>Self-Development</title>
-      <link>https://liuqiran.github.io/en/tags/self-development/</link>
+      <link>http://localhost:1313/en/tags/self-development/</link>
       <pubDate>Tue, 20 Jun 2023 14:05:31 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/self-development/</guid>
+      <guid>http://localhost:1313/en/tags/self-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Habit</title>
-      <link>https://liuqiran.github.io/en/tags/habit/</link>
+      <link>http://localhost:1313/en/tags/habit/</link>
       <pubDate>Tue, 09 May 2023 15:09:09 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/habit/</guid>
+      <guid>http://localhost:1313/en/tags/habit/</guid>
       <description></description>
     </item>
     <item>
       <title>Efficiency</title>
-      <link>https://liuqiran.github.io/en/tags/efficiency/</link>
+      <link>http://localhost:1313/en/tags/efficiency/</link>
       <pubDate>Mon, 24 Apr 2023 14:03:12 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/efficiency/</guid>
+      <guid>http://localhost:1313/en/tags/efficiency/</guid>
       <description></description>
     </item>
     <item>
       <title>Bible</title>
-      <link>https://liuqiran.github.io/en/tags/bible/</link>
+      <link>http://localhost:1313/en/tags/bible/</link>
       <pubDate>Tue, 11 Apr 2023 09:55:03 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/bible/</guid>
+      <guid>http://localhost:1313/en/tags/bible/</guid>
       <description></description>
     </item>
     <item>
       <title>Internet</title>
-      <link>https://liuqiran.github.io/en/tags/internet/</link>
+      <link>http://localhost:1313/en/tags/internet/</link>
       <pubDate>Tue, 28 Mar 2023 11:18:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/internet/</guid>
+      <guid>http://localhost:1313/en/tags/internet/</guid>
       <description></description>
     </item>
     <item>
       <title>Fear</title>
-      <link>https://liuqiran.github.io/en/tags/fear/</link>
+      <link>http://localhost:1313/en/tags/fear/</link>
       <pubDate>Tue, 21 Mar 2023 11:34:28 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/fear/</guid>
+      <guid>http://localhost:1313/en/tags/fear/</guid>
       <description></description>
     </item>
     <item>
       <title>Psychology</title>
-      <link>https://liuqiran.github.io/en/tags/psychology/</link>
+      <link>http://localhost:1313/en/tags/psychology/</link>
       <pubDate>Mon, 13 Mar 2023 23:06:31 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/psychology/</guid>
+      <guid>http://localhost:1313/en/tags/psychology/</guid>
       <description></description>
     </item>
     <item>
       <title>Letter</title>
-      <link>https://liuqiran.github.io/en/tags/letter/</link>
+      <link>http://localhost:1313/en/tags/letter/</link>
       <pubDate>Wed, 08 Feb 2023 12:31:56 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/letter/</guid>
+      <guid>http://localhost:1313/en/tags/letter/</guid>
       <description></description>
     </item>
     <item>
       <title>Politics</title>
-      <link>https://liuqiran.github.io/en/tags/politics/</link>
+      <link>http://localhost:1313/en/tags/politics/</link>
       <pubDate>Wed, 08 Feb 2023 12:00:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/politics/</guid>
+      <guid>http://localhost:1313/en/tags/politics/</guid>
       <description></description>
     </item>
     <item>
       <title>Social Media</title>
-      <link>https://liuqiran.github.io/en/tags/social-media/</link>
+      <link>http://localhost:1313/en/tags/social-media/</link>
       <pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/social-media/</guid>
+      <guid>http://localhost:1313/en/tags/social-media/</guid>
       <description></description>
     </item>
     <item>
       <title>The 5 Love Languages</title>
-      <link>https://liuqiran.github.io/en/tags/the-5-love-languages/</link>
+      <link>http://localhost:1313/en/tags/the-5-love-languages/</link>
       <pubDate>Fri, 27 Nov 2020 13:32:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/the-5-love-languages/</guid>
+      <guid>http://localhost:1313/en/tags/the-5-love-languages/</guid>
       <description></description>
     </item>
     <item>
       <title>Atomic Habits</title>
-      <link>https://liuqiran.github.io/en/tags/atomic-habits/</link>
+      <link>http://localhost:1313/en/tags/atomic-habits/</link>
       <pubDate>Wed, 11 Nov 2020 01:44:56 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/atomic-habits/</guid>
+      <guid>http://localhost:1313/en/tags/atomic-habits/</guid>
       <description></description>
     </item>
     <item>
       <title>Ten Arguments for Deleting Your Social Media Accounts Right Now</title>
-      <link>https://liuqiran.github.io/en/tags/ten-arguments-for-deleting-your-social-media-accounts-right-now/</link>
+      <link>http://localhost:1313/en/tags/ten-arguments-for-deleting-your-social-media-accounts-right-now/</link>
       <pubDate>Sat, 31 Oct 2020 14:56:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/ten-arguments-for-deleting-your-social-media-accounts-right-now/</guid>
+      <guid>http://localhost:1313/en/tags/ten-arguments-for-deleting-your-social-media-accounts-right-now/</guid>
       <description></description>
     </item>
     <item>
       <title>The Four Agreements</title>
-      <link>https://liuqiran.github.io/en/tags/the-four-agreements/</link>
+      <link>http://localhost:1313/en/tags/the-four-agreements/</link>
       <pubDate>Thu, 01 Oct 2020 02:50:38 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/the-four-agreements/</guid>
+      <guid>http://localhost:1313/en/tags/the-four-agreements/</guid>
       <description></description>
     </item>
     <item>
       <title>Digital Minimalism</title>
-      <link>https://liuqiran.github.io/en/tags/digital-minimalism/</link>
+      <link>http://localhost:1313/en/tags/digital-minimalism/</link>
       <pubDate>Wed, 23 Sep 2020 06:16:17 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/digital-minimalism/</guid>
+      <guid>http://localhost:1313/en/tags/digital-minimalism/</guid>
       <description></description>
     </item>
     <item>
       <title>Art Through the Ages</title>
-      <link>https://liuqiran.github.io/en/tags/art-through-the-ages/</link>
+      <link>http://localhost:1313/en/tags/art-through-the-ages/</link>
       <pubDate>Tue, 08 Sep 2020 12:49:47 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/art-through-the-ages/</guid>
+      <guid>http://localhost:1313/en/tags/art-through-the-ages/</guid>
       <description></description>
     </item>
     <item>
       <title>Feel the Fear and Do It Anyway</title>
-      <link>https://liuqiran.github.io/en/tags/feel-the-fear-and-do-it-anyway/</link>
+      <link>http://localhost:1313/en/tags/feel-the-fear-and-do-it-anyway/</link>
       <pubDate>Mon, 27 Jul 2020 03:18:20 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/feel-the-fear-and-do-it-anyway/</guid>
+      <guid>http://localhost:1313/en/tags/feel-the-fear-and-do-it-anyway/</guid>
       <description></description>
     </item>
     <item>
       <title>The Hero With a Thousand Faces</title>
-      <link>https://liuqiran.github.io/en/tags/the-hero-with-a-thousand-faces/</link>
+      <link>http://localhost:1313/en/tags/the-hero-with-a-thousand-faces/</link>
       <pubDate>Sat, 20 Jun 2020 08:19:43 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/the-hero-with-a-thousand-faces/</guid>
+      <guid>http://localhost:1313/en/tags/the-hero-with-a-thousand-faces/</guid>
       <description></description>
     </item>
     <item>
       <title>Music</title>
-      <link>https://liuqiran.github.io/en/tags/music/</link>
+      <link>http://localhost:1313/en/tags/music/</link>
       <pubDate>Fri, 12 Jun 2020 15:27:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/music/</guid>
+      <guid>http://localhost:1313/en/tags/music/</guid>
       <description></description>
     </item>
     <item>
       <title>School</title>
-      <link>https://liuqiran.github.io/en/tags/school/</link>
+      <link>http://localhost:1313/en/tags/school/</link>
       <pubDate>Fri, 12 Jun 2020 15:27:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/school/</guid>
+      <guid>http://localhost:1313/en/tags/school/</guid>
       <description></description>
     </item>
     <item>
       <title>Sun Tzu&#39;s the Art of War</title>
-      <link>https://liuqiran.github.io/en/tags/sun-tzus-the-art-of-war/</link>
+      <link>http://localhost:1313/en/tags/sun-tzus-the-art-of-war/</link>
       <pubDate>Thu, 21 May 2020 05:57:40 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/sun-tzus-the-art-of-war/</guid>
+      <guid>http://localhost:1313/en/tags/sun-tzus-the-art-of-war/</guid>
       <description></description>
     </item>
     <item>
       <title>Hobbit</title>
-      <link>https://liuqiran.github.io/en/tags/hobbit/</link>
+      <link>http://localhost:1313/en/tags/hobbit/</link>
       <pubDate>Wed, 20 May 2020 05:48:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/hobbit/</guid>
+      <guid>http://localhost:1313/en/tags/hobbit/</guid>
       <description></description>
     </item>
     <item>
       <title>The Literary Mind and the Carving of Dragons</title>
-      <link>https://liuqiran.github.io/en/tags/the-literary-mind-and-the-carving-of-dragons/</link>
+      <link>http://localhost:1313/en/tags/the-literary-mind-and-the-carving-of-dragons/</link>
       <pubDate>Wed, 13 May 2020 01:52:25 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/the-literary-mind-and-the-carving-of-dragons/</guid>
+      <guid>http://localhost:1313/en/tags/the-literary-mind-and-the-carving-of-dragons/</guid>
       <description></description>
     </item>
     <item>
       <title>Are You Lights On</title>
-      <link>https://liuqiran.github.io/en/tags/are-you-lights-on/</link>
+      <link>http://localhost:1313/en/tags/are-you-lights-on/</link>
       <pubDate>Thu, 07 May 2020 09:29:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/are-you-lights-on/</guid>
+      <guid>http://localhost:1313/en/tags/are-you-lights-on/</guid>
       <description></description>
     </item>
     <item>
       <title>Loneliness</title>
-      <link>https://liuqiran.github.io/en/tags/loneliness/</link>
+      <link>http://localhost:1313/en/tags/loneliness/</link>
       <pubDate>Thu, 09 Apr 2020 04:19:59 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/loneliness/</guid>
+      <guid>http://localhost:1313/en/tags/loneliness/</guid>
       <description></description>
     </item>
     <item>
       <title>A Chinese-Foreign Exchange History of Fine Arts</title>
-      <link>https://liuqiran.github.io/en/tags/a-chinese-foreign-exchange-history-of-fine-arts/</link>
+      <link>http://localhost:1313/en/tags/a-chinese-foreign-exchange-history-of-fine-arts/</link>
       <pubDate>Sun, 05 Apr 2020 13:08:32 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/a-chinese-foreign-exchange-history-of-fine-arts/</guid>
+      <guid>http://localhost:1313/en/tags/a-chinese-foreign-exchange-history-of-fine-arts/</guid>
       <description></description>
     </item>
     <item>
       <title>Antifragile: Things That Gain From Disorder</title>
-      <link>https://liuqiran.github.io/en/tags/antifragile-things-that-gain-from-disorder/</link>
+      <link>http://localhost:1313/en/tags/antifragile-things-that-gain-from-disorder/</link>
       <pubDate>Sun, 08 Mar 2020 11:56:18 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/antifragile-things-that-gain-from-disorder/</guid>
+      <guid>http://localhost:1313/en/tags/antifragile-things-that-gain-from-disorder/</guid>
       <description></description>
     </item>
     <item>
       <title>The Screwtape Letters</title>
-      <link>https://liuqiran.github.io/en/tags/the-screwtape-letters/</link>
+      <link>http://localhost:1313/en/tags/the-screwtape-letters/</link>
       <pubDate>Tue, 03 Mar 2020 00:24:46 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/the-screwtape-letters/</guid>
+      <guid>http://localhost:1313/en/tags/the-screwtape-letters/</guid>
       <description></description>
     </item>
     <item>
       <title>Paintings</title>
-      <link>https://liuqiran.github.io/en/tags/paintings/</link>
+      <link>http://localhost:1313/en/tags/paintings/</link>
       <pubDate>Sat, 29 Feb 2020 11:23:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/paintings/</guid>
+      <guid>http://localhost:1313/en/tags/paintings/</guid>
       <description></description>
     </item>
     <item>
       <title>Emotional Intelligence</title>
-      <link>https://liuqiran.github.io/en/tags/emotional-intelligence/</link>
+      <link>http://localhost:1313/en/tags/emotional-intelligence/</link>
       <pubDate>Fri, 28 Feb 2020 14:07:47 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/emotional-intelligence/</guid>
+      <guid>http://localhost:1313/en/tags/emotional-intelligence/</guid>
       <description></description>
     </item>
     <item>
       <title>Art Theory</title>
-      <link>https://liuqiran.github.io/en/tags/art-theory/</link>
+      <link>http://localhost:1313/en/tags/art-theory/</link>
       <pubDate>Fri, 28 Feb 2020 10:20:04 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/art-theory/</guid>
+      <guid>http://localhost:1313/en/tags/art-theory/</guid>
       <description></description>
     </item>
     <item>
       <title>One Child: The Story of China&#39;s Most Radical Experiment</title>
-      <link>https://liuqiran.github.io/en/tags/one-child-the-story-of-chinas-most-radical-experiment/</link>
+      <link>http://localhost:1313/en/tags/one-child-the-story-of-chinas-most-radical-experiment/</link>
       <pubDate>Sat, 15 Feb 2020 15:12:27 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/one-child-the-story-of-chinas-most-radical-experiment/</guid>
+      <guid>http://localhost:1313/en/tags/one-child-the-story-of-chinas-most-radical-experiment/</guid>
       <description></description>
     </item>
     <item>
       <title>The Now Habit</title>
-      <link>https://liuqiran.github.io/en/tags/the-now-habit/</link>
+      <link>http://localhost:1313/en/tags/the-now-habit/</link>
       <pubDate>Sun, 09 Feb 2020 08:16:48 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/the-now-habit/</guid>
+      <guid>http://localhost:1313/en/tags/the-now-habit/</guid>
       <description></description>
     </item>
     <item>
       <title>Museology</title>
-      <link>https://liuqiran.github.io/en/tags/museology/</link>
+      <link>http://localhost:1313/en/tags/museology/</link>
       <pubDate>Fri, 10 Jan 2020 05:51:09 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/museology/</guid>
+      <guid>http://localhost:1313/en/tags/museology/</guid>
       <description></description>
     </item>
     <item>
       <title>Book of Poetry</title>
-      <link>https://liuqiran.github.io/en/tags/book-of-poetry/</link>
+      <link>http://localhost:1313/en/tags/book-of-poetry/</link>
       <pubDate>Thu, 09 Jan 2020 01:56:57 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/book-of-poetry/</guid>
+      <guid>http://localhost:1313/en/tags/book-of-poetry/</guid>
       <description></description>
     </item>
     <item>
       <title>Nothing to Envy</title>
-      <link>https://liuqiran.github.io/en/tags/nothing-to-envy/</link>
+      <link>http://localhost:1313/en/tags/nothing-to-envy/</link>
       <pubDate>Fri, 20 Dec 2019 08:23:34 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/nothing-to-envy/</guid>
+      <guid>http://localhost:1313/en/tags/nothing-to-envy/</guid>
       <description></description>
     </item>
     <item>
       <title>Chinese Art History</title>
-      <link>https://liuqiran.github.io/en/tags/chinese-art-history/</link>
+      <link>http://localhost:1313/en/tags/chinese-art-history/</link>
       <pubDate>Wed, 18 Dec 2019 02:02:45 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/chinese-art-history/</guid>
+      <guid>http://localhost:1313/en/tags/chinese-art-history/</guid>
       <description></description>
     </item>
     <item>
       <title>Your Money or Your Life</title>
-      <link>https://liuqiran.github.io/en/tags/your-money-or-your-life/</link>
+      <link>http://localhost:1313/en/tags/your-money-or-your-life/</link>
       <pubDate>Fri, 13 Dec 2019 09:17:12 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/your-money-or-your-life/</guid>
+      <guid>http://localhost:1313/en/tags/your-money-or-your-life/</guid>
       <description></description>
     </item>
     <item>
       <title>The Art of Invisibility</title>
-      <link>https://liuqiran.github.io/en/tags/the-art-of-invisibility/</link>
+      <link>http://localhost:1313/en/tags/the-art-of-invisibility/</link>
       <pubDate>Fri, 29 Nov 2019 11:55:35 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/the-art-of-invisibility/</guid>
+      <guid>http://localhost:1313/en/tags/the-art-of-invisibility/</guid>
       <description></description>
     </item>
     <item>
       <title>Chinese Fine Art Education in 20 Century</title>
-      <link>https://liuqiran.github.io/en/tags/chinese-fine-art-education-in-20-century/</link>
+      <link>http://localhost:1313/en/tags/chinese-fine-art-education-in-20-century/</link>
       <pubDate>Wed, 30 Oct 2019 11:19:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/chinese-fine-art-education-in-20-century/</guid>
+      <guid>http://localhost:1313/en/tags/chinese-fine-art-education-in-20-century/</guid>
       <description></description>
     </item>
     <item>
       <title>Analects</title>
-      <link>https://liuqiran.github.io/en/tags/analects/</link>
+      <link>http://localhost:1313/en/tags/analects/</link>
       <pubDate>Mon, 21 Oct 2019 06:14:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/analects/</guid>
+      <guid>http://localhost:1313/en/tags/analects/</guid>
       <description></description>
     </item>
     <item>
       <title>Masochism and the Self</title>
-      <link>https://liuqiran.github.io/en/tags/masochism-and-the-self/</link>
+      <link>http://localhost:1313/en/tags/masochism-and-the-self/</link>
       <pubDate>Wed, 17 Jul 2019 06:39:28 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/masochism-and-the-self/</guid>
+      <guid>http://localhost:1313/en/tags/masochism-and-the-self/</guid>
       <description></description>
     </item>
     <item>
       <title>Aesthetics</title>
-      <link>https://liuqiran.github.io/en/tags/aesthetics/</link>
+      <link>http://localhost:1313/en/tags/aesthetics/</link>
       <pubDate>Sat, 06 Jul 2019 00:21:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/aesthetics/</guid>
+      <guid>http://localhost:1313/en/tags/aesthetics/</guid>
       <description></description>
     </item>
     <item>
       <title>Chuang Tzu</title>
-      <link>https://liuqiran.github.io/en/tags/chuang-tzu/</link>
+      <link>http://localhost:1313/en/tags/chuang-tzu/</link>
       <pubDate>Sat, 06 Jul 2019 00:21:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/chuang-tzu/</guid>
+      <guid>http://localhost:1313/en/tags/chuang-tzu/</guid>
       <description></description>
     </item>
     <item>
       <title>Student</title>
-      <link>https://liuqiran.github.io/en/tags/student/</link>
+      <link>http://localhost:1313/en/tags/student/</link>
       <pubDate>Sat, 06 Jul 2019 00:21:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/student/</guid>
+      <guid>http://localhost:1313/en/tags/student/</guid>
       <description></description>
     </item>
     <item>
       <title>Category</title>
-      <link>https://liuqiran.github.io/en/tags/category/</link>
+      <link>http://localhost:1313/en/tags/category/</link>
       <pubDate>Sun, 23 Jun 2019 02:26:48 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/category/</guid>
+      <guid>http://localhost:1313/en/tags/category/</guid>
       <description></description>
     </item>
     <item>
       <title>Western Art History</title>
-      <link>https://liuqiran.github.io/en/tags/western-art-history/</link>
+      <link>http://localhost:1313/en/tags/western-art-history/</link>
       <pubDate>Mon, 10 Jun 2019 02:24:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/western-art-history/</guid>
+      <guid>http://localhost:1313/en/tags/western-art-history/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophy</title>
-      <link>https://liuqiran.github.io/en/tags/philosophy/</link>
+      <link>http://localhost:1313/en/tags/philosophy/</link>
       <pubDate>Thu, 06 Jun 2019 08:22:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/philosophy/</guid>
+      <guid>http://localhost:1313/en/tags/philosophy/</guid>
       <description></description>
     </item>
     <item>
       <title>Mood</title>
-      <link>https://liuqiran.github.io/en/tags/mood/</link>
+      <link>http://localhost:1313/en/tags/mood/</link>
       <pubDate>Thu, 30 May 2019 09:29:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/mood/</guid>
+      <guid>http://localhost:1313/en/tags/mood/</guid>
       <description></description>
     </item>
     <item>
       <title>Anki</title>
-      <link>https://liuqiran.github.io/en/tags/anki/</link>
+      <link>http://localhost:1313/en/tags/anki/</link>
       <pubDate>Mon, 25 Mar 2019 13:10:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/tags/anki/</guid>
+      <guid>http://localhost:1313/en/tags/anki/</guid>
       <description></description>
     </item>
   </channel>

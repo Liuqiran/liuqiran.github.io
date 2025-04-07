@@ -6,7 +6,6 @@ url: /zh/reading-list-2/
 date:    2023-02-10
 cover:
   image: /uploads/2023/09/books-scaled.jpg
-description: 以下是我读完的书……
 ---
 读完的书:
 
@@ -55,5 +54,6 @@ description: 以下是我读完的书……
 | 41  | Rightly Divided                                                        | J. Michael Lester             | 2025-03-08         | ★★★★☆     |
 | 42  | Mind the Gap                                                           | Terrie Chappell               | 2025-03-16         | ★★★☆☆     |
 | 43  | Paid in Full                                                           | Paul Chappell                 | 2025-03-16         | ★★★☆☆     |
+| 44  | First Steps For New Christians                                         | Paul Chappell                 | 2025-04-07         | ★★★☆☆     |
 
 以上列表不定期更新……

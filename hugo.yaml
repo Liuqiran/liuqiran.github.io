@@ -185,7 +185,8 @@ params:
   author : "Qiran" 
   ShowShareButtons: true
   ShareButtons: ["linkedin","x","facebook","telegram","bilibili"]
-  ShowPostNavLinks: true
+  ShowPostNavLinks: true  
+  ShowDraft: true
   mainSections: ["post", "zh", "en"]
   ShowWordCount: true
   comments: true  # 这里打开评论

@@ -5,7 +5,6 @@ type: page
 date: 2023-02-10  
 cover:
   image: /uploads/2023/09/books-scaled.jpg
-description: This is my reading list...
 ---
 The books I have finished reading:
 
@@ -54,5 +53,7 @@ The books I have finished reading:
 | 41  | Rightly Divided                                                        | J. Michael Lester             | 2025-03-08         | ★★★★☆     |
 | 42  | Mind the Gap                                                           | Terrie Chappell               | 2025-03-16         | ★★★☆☆     |
 | 43  | Paid in Full                                                           | Paul Chappell                 | 2025-03-16         | ★★★☆☆     |
+| 44  | First Steps For New Christians                                         | Paul Chappell                 | 2025-04-07         | ★★★☆☆     |
+
 
 It’s updated from time to time…
