@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Self-Development on Liu Qiran</title>
-    <link>http://localhost:1313/en/tags/self-development/</link>
+    <link>https://liuqiran.github.io/en/tags/self-development/</link>
     <description>Recent content in Self-Development on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 20 Jun 2023 14:05:31 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/self-development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://liuqiran.github.io/en/tags/self-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cashflow E-Game</title>
-      <link>http://localhost:1313/en/2023-06-20-cashflow-e-game/</link>
+      <link>https://liuqiran.github.io/en/2023-06-20-cashflow-e-game/</link>
       <pubDate>Tue, 20 Jun 2023 14:05:31 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-06-20-cashflow-e-game/</guid>
+      <guid>https://liuqiran.github.io/en/2023-06-20-cashflow-e-game/</guid>
       <description>&lt;p&gt;Based on the recommendation from Rich Dad’s book, I try to install the Cashflow game. But the desktop version of E-Game is difficult to install now. I tried my best to install it successfully in VirtualBox.&lt;/p&gt;
 &lt;p&gt;For the past few months, I have been playing the Cashflow 101 e-game. I have gradually become proficient at it. It’s very educational and I’ve gained some knowledge about cash. These days I started to try Cashflow 202. It’s more complicated compared to the 101 edition.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Thinking aloud</title>
-      <link>http://localhost:1313/en/2020-02-26-thinking-aloud/</link>
+      <link>https://liuqiran.github.io/en/2020-02-26-thinking-aloud/</link>
       <pubDate>Wed, 26 Feb 2020 02:08:27 +0000</pubDate>
-      <guid>http://localhost:1313/en/2020-02-26-thinking-aloud/</guid>
+      <guid>https://liuqiran.github.io/en/2020-02-26-thinking-aloud/</guid>
       <description>&lt;p&gt;Speak out your thinking, &lt;a href=&#34;https://www.lifehack.org/865493/cognitive-thinking&#34;&gt;thinking aloud&lt;/a&gt; can improve your cognitive thinking.&lt;/p&gt;</description>
     </item>
   </channel>
