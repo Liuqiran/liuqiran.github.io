@@ -7,18 +7,24 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     height: 80vh;
-    white-space: nowrap;
+    white-space: normal;
+    column-gap: 1rem;          
+    padding: 1rem;     
     display: block;
     direction: rtl; /* trick: 让起始位置在右边 */
+    column-fill: balance;         /* 平均分配列中的内容 */
   }
   
   .vertical-chinese {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    line-height: 2;
-    word-break: keep-all;
-    white-space: nowrap;
+    line-height: 2.4;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word; 
     font-family: "KingHwa_OldSong", regular;
+    column-fill: balance;         /* 平均填充列 */  
     direction: ltr; /* 保持内容本身从上到下、从右往左排 */
   }
+
   
