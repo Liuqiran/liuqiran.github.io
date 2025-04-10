@@ -14,7 +14,18 @@ body {
     direction: rtl; /* trick: 让起始位置在右边 */
     column-fill: balance;         /* 平均分配列中的内容 */
   }
+
+  .vertical-chinese a {
+    text-decoration: underline;     /* 添加下划线样式 */
+    word-break: break-word;         /* 防止链接文字溢出 */
+    overflow-wrap: break-word;      /* 保证链接换行 */
+  }
   
+  .vertical-chinese a:hover {
+    text-decoration: underline;     /* 保持下划线样式 */
+  }
+  
+
   .vertical-chinese {
     writing-mode: vertical-rl;
     text-orientation: mixed;
