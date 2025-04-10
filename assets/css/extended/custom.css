@@ -1,4 +1,24 @@
 
 body {
     font-family: 'KingHwa_OldSong', regular;
-}
+}  
+
+.vertical-chinese-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 80vh;
+    white-space: nowrap;
+    display: block;
+    direction: rtl; /* trick: 让起始位置在右边 */
+  }
+  
+  .vertical-chinese {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 2;
+    word-break: keep-all;
+    white-space: nowrap;
+    font-family: "KingHwa_OldSong", regular;
+    direction: ltr; /* 保持内容本身从上到下、从右往左排 */
+  }
+  

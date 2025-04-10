@@ -35,12 +35,26 @@
   {{- end }}
 
   {{- if .Content }}
-  <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
-  </div>
-  {{- end }}
+  {{ if .Params.vertical }}
+    <div class="vertical-chinese-wrapper">
+      <div class="vertical-chinese">
+        {{- if not (.Param "disableAnchoredHeadings") }}
+          {{- partial "anchored_headings.html" .Content -}}
+        {{- else }}
+          {{ .Content }}
+        {{- end }}
+      </div>
+    </div>
+  {{ else }}
+    <div class="post-content">
+      {{- if not (.Param "disableAnchoredHeadings") }}
+        {{- partial "anchored_headings.html" .Content -}}
+      {{- else }}
+        {{ .Content }}
+      {{- end }}
+    </div>
+  {{ end }}
+{{- end }}
 
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
