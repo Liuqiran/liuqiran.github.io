@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>社交媒体 on 刘其然的部落格</title>
-    <link>https://liuqiran.github.io/zh/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/</link>
+    <link>http://localhost:1313/zh/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/</link>
     <description>Recent content in 社交媒体 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 20 Feb 2021 02:29:16 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/zh/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zh/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>长毛象</title>
-      <link>https://liuqiran.github.io/zh/mastodon-button/</link>
+      <link>http://localhost:1313/zh/mastodon-button/</link>
       <pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/mastodon-button/</guid>
+      <guid>http://localhost:1313/zh/mastodon-button/</guid>
       <description>&lt;p&gt;添加长毛按钮。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reply in Slowly 2</title>
-      <link>https://liuqiran.github.io/zh/reply-in-slowly-2/</link>
+      <link>http://localhost:1313/zh/reply-in-slowly-2/</link>
       <pubDate>Sun, 19 May 2019 12:19:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/reply-in-slowly-2/</guid>
+      <guid>http://localhost:1313/zh/reply-in-slowly-2/</guid>
       <description>&lt;p&gt;Silver&lt;br&gt;
 来信已收到。&lt;br&gt;
 牧草是你种的吗？&lt;br&gt;
@@ -33,9 +33,9 @@
     </item>
     <item>
       <title>【学习笔记】为什么社交媒介深刻地影响了我们？</title>
-      <link>https://liuqiran.github.io/zh/how-social-media-affects-us/</link>
+      <link>http://localhost:1313/zh/how-social-media-affects-us/</link>
       <pubDate>Wed, 20 Feb 2019 08:05:55 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/how-social-media-affects-us/</guid>
+      <guid>http://localhost:1313/zh/how-social-media-affects-us/</guid>
       <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
   https://www.youtube.com/watch?v=x4Atnti70cM

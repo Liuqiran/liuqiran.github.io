@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>互联网 on 刘其然的部落格</title>
-    <link>https://liuqiran.github.io/zh/tags/%E4%BA%92%E8%81%94%E7%BD%91/</link>
+    <link>http://localhost:1313/zh/tags/%E4%BA%92%E8%81%94%E7%BD%91/</link>
     <description>Recent content in 互联网 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 08 Feb 2023 11:17:57 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/zh/tags/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zh/tags/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重新整理版面</title>
-      <link>https://liuqiran.github.io/zh/reorganize-home-page/</link>
+      <link>http://localhost:1313/zh/reorganize-home-page/</link>
       <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/reorganize-home-page/</guid>
+      <guid>http://localhost:1313/zh/reorganize-home-page/</guid>
       <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
   我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了……
 &lt;/p&gt;
@@ -20,34 +20,34 @@
     </item>
     <item>
       <title>创建电报频道</title>
-      <link>https://liuqiran.github.io/zh/created-telegram-channel/</link>
+      <link>http://localhost:1313/zh/created-telegram-channel/</link>
       <pubDate>Wed, 08 Feb 2023 10:12:49 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/created-telegram-channel/</guid>
+      <guid>http://localhost:1313/zh/created-telegram-channel/</guid>
       <description>&lt;p&gt;尝试开通了一下&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://t.me/qiranschannel&#34; target=&#34;_blank&#34;&gt;电报频道&lt;/a&gt;。&lt;br&gt;
 发现电报创建频道非常快捷，向他人广播也非常快。&lt;br&gt;
 最重要的是平台是开放的，添加机器人功能之后可以自动将个人网站的动态同步到频道当中。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ChatGPT</title>
-      <link>https://liuqiran.github.io/zh/chatgpt/</link>
+      <link>http://localhost:1313/zh/chatgpt/</link>
       <pubDate>Wed, 08 Feb 2023 04:44:31 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/chatgpt/</guid>
+      <guid>http://localhost:1313/zh/chatgpt/</guid>
       <description>&lt;p&gt;因为 OpenAI 不能用中国手机号注册，自己折腾了很久购买了一个泰国的临时手机号才能注册成功。&lt;br&gt;
 到真正尝鲜的时候还是感到眼前一亮。虽然很多刁钻的问题回答得不是很让人满意，但大都能回答出来。&lt;/p&gt;</description>
     </item>
     <item>
       <title>聚合资讯订阅</title>
-      <link>https://liuqiran.github.io/zh/rss-experience/</link>
+      <link>http://localhost:1313/zh/rss-experience/</link>
       <pubDate>Fri, 11 Jun 2021 05:14:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/rss-experience/</guid>
+      <guid>http://localhost:1313/zh/rss-experience/</guid>
       <description>&lt;p&gt;在如今信息泛滥的时代，我发现自己越来越被动地通过各种社交软件、短视频平台获取信息。 大部分社交网站的算法只提供读者喜好、能提高点击率的内容，同时大部分内容是浅薄而毫无营养的。自己也慢慢变成了像被投喂垃圾信息的“僵尸”。&lt;br&gt;
 也需要承认，某些平台上不乏一些有价值的内容，有些微信公众号会有一些高质量的文章，但是微信本身就会打断注意力，推送的时候平台也会经常带一些广告和私货。&lt;/p&gt;</description>
     </item>
     <item>
       <title>建站周年纪念日</title>
-      <link>https://liuqiran.github.io/zh/one-year-blogging-anniversary/</link>
+      <link>http://localhost:1313/zh/one-year-blogging-anniversary/</link>
       <pubDate>Sun, 09 Feb 2020 15:15:41 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/one-year-blogging-anniversary/</guid>
+      <guid>http://localhost:1313/zh/one-year-blogging-anniversary/</guid>
       <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
   今天是建站一周年纪念日。
 &lt;/p&gt;
