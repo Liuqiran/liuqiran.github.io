@@ -3,9 +3,11 @@
 {{- end -}}
 
 <!DOCTYPE html>
-<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+<html lang="{{ .Site.LanguageCode }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 
 <head>
+    <!-- 引入 Garamond 字体 -->
+    <link rel="stylesheet" href="/fonts/Garamond.css"> <!-- 如果你将 Garamond 字体放在 static/fonts 目录下 -->
     {{- partial "head.html" . }}
 </head>
 
