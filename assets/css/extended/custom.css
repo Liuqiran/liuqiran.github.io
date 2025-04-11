@@ -3,6 +3,7 @@ body {
     font-family: 'KingHwa_OldSong', regular;
 }  
 
+
 .vertical-chinese-wrapper {
     overflow-x: auto;
     overflow-y: hidden;
@@ -38,4 +39,9 @@ body {
     direction: ltr; /* 保持内容本身从上到下、从右往左排 */
   }
 
-  
+  /* 为图片设置最大宽度和高度 */
+.vertical-chinese img {
+  max-width: 100%;    /* 确保图片宽度不超过容器 */
+  max-height: 100%;   /* 确保图片高度不超过容器 */
+  object-fit: contain; /* 保证图片保持比例缩放 */
+}

@@ -3,9 +3,9 @@ title: 字体推荐——京华老宋体
 author: Qiran
 type: post
 date: 2025-04-11
-vertical: true
 cover:
   image: img/cover-kinghwa-oldsong.png
+vertical: true
 ---
 最近在折腾站点的时候，因为厌倦了系统默认的中文黑体，想找一款新的字体作为阅读字体。回想起了很久以前在赫赫文王的一篇文章当中了解到四个地区字形中文字形的差异：
 
@@ -23,9 +23,11 @@ cover:
 
 1961年北京新华字模厂设计了这一款字体，它改刻自日本筑地明朝体活字，并且印过大名鼎鼎的中华书局二十四史，各种点校的古籍、老课本都能见到其身影。在80年代采用新的字形并转为照排和电脑字体前，中国人对它是非常熟悉的。
 
-![1975年版《读通鉴论》](/home/qiran/Website/static/img/page-of-zizhi.png)
+1975年版《读通鉴论》
+![](/img/page-of-dutongjian.png)
 
-![《毛选》竖排本](/home/qiran/Website/static/img/page-of-selected-mao.png)
+《毛选》竖排本
+![](/img/page-of-selected-mao.png)
 
 特里王根据这款经典的字形制作了 **京华老宋体**。作者使用AI补全了统一码基础字库，完全没有缺字的担忧。它不仅包含了**所有基础汉字、**新字形和传统字形，它还收录了**日韩字形**、**所有已编码二简字**和**越南喃字**。
 

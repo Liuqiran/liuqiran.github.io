@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>绘画 on 刘其然的部落格</title>
-    <link>https://liuqiran.github.io/zh/tags/%E7%BB%98%E7%94%BB/</link>
+    <link>http://localhost:1313/zh/tags/%E7%BB%98%E7%94%BB/</link>
     <description>Recent content in 绘画 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 17 Jul 2019 10:24:53 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/zh/tags/%E7%BB%98%E7%94%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zh/tags/%E7%BB%98%E7%94%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重拾画笔</title>
-      <link>https://liuqiran.github.io/zh/pick-up-my-pen/</link>
+      <link>http://localhost:1313/zh/pick-up-my-pen/</link>
       <pubDate>Wed, 17 Jul 2019 10:24:53 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/pick-up-my-pen/</guid>
+      <guid>http://localhost:1313/zh/pick-up-my-pen/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/07/1_001.jpg&#34;&gt;&lt;/p&gt;
 &lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
   已经有两年没怎么画过画了。
