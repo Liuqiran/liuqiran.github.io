@@ -2,17 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>人生 on 刘其然的部落格</title>
-    <link>https://liuqiran.github.io/zh/tags/%E4%BA%BA%E7%94%9F/</link>
+    <link>http://localhost:1313/zh/tags/%E4%BA%BA%E7%94%9F/</link>
     <description>Recent content in 人生 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 08 Feb 2023 11:17:57 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/zh/tags/%E4%BA%BA%E7%94%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/tags/%E4%BA%BA%E7%94%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>過客記</title>
+      <link>http://localhost:1313/zh/2023-06-27-ep-10-temporary-guest/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/2023-06-27-ep-10-temporary-guest/</guid>
+      <description>&lt;p&gt;（注：此文智機所作。）
+近日整理通訊錄，見故人多矣，久不相聞。光陰荏苒，彼輩漸行漸遠，杳然無跡。雖存其名，恍若已逝，皆為過客耳。後會之期，未可知也。
+吾今雖能結新知，然與故人重敘之才尚缺。雖竭力求進，猶有未逮。觀世人多因羞澀而卻步，任其情誼，日就凋零。吾不願獨處一隅，故當力克畏懼之心。
+深省重建聯絡，端在吾志。苟能先發一言，方可續前緣耳。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>重新整理版面</title>
-      <link>https://liuqiran.github.io/zh/reorganize-home-page/</link>
+      <link>http://localhost:1313/zh/reorganize-home-page/</link>
       <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/reorganize-home-page/</guid>
+      <guid>http://localhost:1313/zh/reorganize-home-page/</guid>
       <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
   我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了……
 &lt;/p&gt;
@@ -20,25 +30,25 @@
     </item>
     <item>
       <title>为什么不买房</title>
-      <link>https://liuqiran.github.io/zh/why-dont-buy-a-house/</link>
+      <link>http://localhost:1313/zh/why-dont-buy-a-house/</link>
       <pubDate>Tue, 21 Jun 2022 16:57:43 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/why-dont-buy-a-house/</guid>
+      <guid>http://localhost:1313/zh/why-dont-buy-a-house/</guid>
       <description>&lt;p&gt;伴随着轰鸣声，附近的建筑工地又开工了。这几个月的进度很快， 高楼拔地而起，不出意外又会是一幢高层住宅楼。房子，应该是大部分国人绕不开的话题。&lt;br&gt;
 我对房子并不太感冒，甚至讨厌这些千篇一律的高层住宅楼。&lt;/p&gt;</description>
     </item>
     <item>
       <title>日記十年</title>
-      <link>https://liuqiran.github.io/zh/ten-years-of-journaling/</link>
+      <link>http://localhost:1313/zh/ten-years-of-journaling/</link>
       <pubDate>Fri, 03 Apr 2020 12:56:16 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/ten-years-of-journaling/</guid>
+      <guid>http://localhost:1313/zh/ten-years-of-journaling/</guid>
       <description>&lt;p&gt;不知不覺我已經寫了十年日記了，过去的&lt;a href=&#34;../../../zh/record-my-life/&#34;&gt;九年&lt;/a&gt;，我的九本紙質日記全部集中到了一起，雖然翻閱起來很方便，但是不易檢索。之后的电子版日記分散到了几個地方，要全部保存到這里還是一項大工程。&lt;/p&gt;
 &lt;p&gt;回頋過去的一年，在个人網站上寫日記檢索起來十分方便，並且每一天都能标出大的話題，我將之前的日記慢慢保存到這里，還是很不錯的一件事。有的內容還可以隨時同歩公開到部落格。&lt;/p&gt;</description>
     </item>
     <item>
       <title>重拾画笔</title>
-      <link>https://liuqiran.github.io/zh/pick-up-my-pen/</link>
+      <link>http://localhost:1313/zh/pick-up-my-pen/</link>
       <pubDate>Wed, 17 Jul 2019 10:24:53 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/pick-up-my-pen/</guid>
+      <guid>http://localhost:1313/zh/pick-up-my-pen/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/07/1_001.jpg&#34;&gt;&lt;/p&gt;
 &lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
   已经有两年没怎么画过画了。
@@ -48,9 +58,9 @@
     </item>
     <item>
       <title>It’s my life</title>
-      <link>https://liuqiran.github.io/zh/its-my-life/</link>
+      <link>http://localhost:1313/zh/its-my-life/</link>
       <pubDate>Thu, 23 May 2019 13:03:48 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/its-my-life/</guid>
+      <guid>http://localhost:1313/zh/its-my-life/</guid>
       <description>&lt;p&gt;实在想象不了十多年的时间，&lt;/p&gt;
 &lt;p&gt;一个人最美好的年华,&lt;/p&gt;
 &lt;p&gt;呆在监狱里。&lt;/p&gt;
@@ -60,9 +70,9 @@
     </item>
     <item>
       <title>Reply in Slowly 2</title>
-      <link>https://liuqiran.github.io/zh/reply-in-slowly-2/</link>
+      <link>http://localhost:1313/zh/reply-in-slowly-2/</link>
       <pubDate>Sun, 19 May 2019 12:19:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/reply-in-slowly-2/</guid>
+      <guid>http://localhost:1313/zh/reply-in-slowly-2/</guid>
       <description>&lt;p&gt;Silver&lt;br&gt;
 来信已收到。&lt;br&gt;
 牧草是你种的吗？&lt;br&gt;
@@ -76,9 +86,9 @@
     </item>
     <item>
       <title>2019.4.9 Record my life</title>
-      <link>https://liuqiran.github.io/zh/record-my-life/</link>
+      <link>http://localhost:1313/zh/record-my-life/</link>
       <pubDate>Tue, 09 Apr 2019 04:34:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/record-my-life/</guid>
+      <guid>http://localhost:1313/zh/record-my-life/</guid>
       <description>&lt;p class=&#34;has-background has-primary-background-color&#34;&gt;
   转眼间我已经写了9年日记了。
 &lt;/p&gt;
@@ -91,16 +101,16 @@
     </item>
     <item>
       <title>2019年3月13日</title>
-      <link>https://liuqiran.github.io/zh/log/</link>
+      <link>http://localhost:1313/zh/log/</link>
       <pubDate>Wed, 13 Mar 2019 13:33:27 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/log/</guid>
+      <guid>http://localhost:1313/zh/log/</guid>
       <description>&lt;p&gt;转眼间我用英语写日记已经1年多了，但是英语还是很渣。回过头来看自己的日记发现自己的写的量还是不够多，就几句话而已，很多东西没有写下来。和用中文写不一样，用英文写如果很多地方不知道怎么表达经常需要翻译，用中文写就非常流畅，看来还是要加大每天写的篇幅，尽量达到200词以上。&lt;/p&gt;</description>
     </item>
     <item>
       <title>2017-04-20</title>
-      <link>https://liuqiran.github.io/zh/2017-04-20/</link>
+      <link>http://localhost:1313/zh/2017-04-20/</link>
       <pubDate>Thu, 20 Apr 2017 09:52:20 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/2017-04-20/</guid>
+      <guid>http://localhost:1313/zh/2017-04-20/</guid>
       <description>&lt;p&gt;我喜欢看app上的统计数据，
 比如anki的复习统计图
 quality time 的使用数据

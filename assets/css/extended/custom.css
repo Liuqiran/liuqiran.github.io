@@ -7,7 +7,7 @@
 
 /* 应用 Garamond 字体到英文页面 */
 html[lang="en-US"] body {
-  font-family: 'KingHwa_OldSong', serif;
+  font-family: 'Garamond', serif;
   font-size: 19px;
 }
 
