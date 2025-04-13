@@ -1,8 +1,8 @@
 ---
 title: 過客記
 author: Qiran
+date: 2025-04-12
 type: post
-date: 2025-04-13
 aliases: ["/temporary-guest/"]
 tags: 
   - 人生
