@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://liuqiran.github.io/en/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -15,14 +15,11 @@
                 href="https://liuqiran.github.io/en/"
                 />
   </url><url>
-    <loc>https://liuqiran.github.io/en/tags/building-site/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://liuqiran.github.io/en/2025-01-07-migrated-to-hugo/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    <loc>https://liuqiran.github.io/en/tags/life/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://liuqiran.github.io/en/tags/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -33,6 +30,25 @@
                 hreflang="en-US"
                 href="https://liuqiran.github.io/en/tags/"
                 />
+  </url><url>
+    <loc>https://liuqiran.github.io/en/2025-05-10-why-do-people-find-it-harder-to-be--emotionally-stirred-as-they-grow-older/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://liuqiran.github.io/zh/2025-05-10-why-do-people-find-it-harder-to-be--emotionally-stirred-as-they-grow-older/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://liuqiran.github.io/en/2025-05-10-why-do-people-find-it-harder-to-be--emotionally-stirred-as-they-grow-older/"
+                />
+  </url><url>
+    <loc>https://liuqiran.github.io/en/tags/building-site/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://liuqiran.github.io/en/2025-01-07-migrated-to-hugo/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://liuqiran.github.io/en/2023-11-27-digitization/</loc>
     <lastmod>2023-11-27T12:41:28+00:00</lastmod>
@@ -77,9 +93,6 @@
     <lastmod>2023-08-01T15:06:51+00:00</lastmod>
   </url><url>
     <loc>https://liuqiran.github.io/en/2023-07-25-ep-12-repetition/</loc>
-    <lastmod>2023-07-25T12:24:20+00:00</lastmod>
-  </url><url>
-    <loc>https://liuqiran.github.io/en/tags/life/</loc>
     <lastmod>2023-07-25T12:24:20+00:00</lastmod>
   </url><url>
     <loc>https://liuqiran.github.io/en/2023-07-18-cash/</loc>
