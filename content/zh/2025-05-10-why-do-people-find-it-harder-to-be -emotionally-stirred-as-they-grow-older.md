@@ -1,5 +1,5 @@
 ---
-title: Why do people find it harder to be emotionally stirred as they grow older?
+title: 为什么越长大越难心动？
 date: 2025-05-10
 draft: false
 author: 红护
