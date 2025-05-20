@@ -59,4 +59,36 @@ body {
 img[aria-label="logo"] {
   border-radius: 50%;
   object-fit: cover;
+}  
+
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.profile-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.profile-image {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.profile-image img {
+  max-width: 100%;
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-image .caption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 0.5rem;
 }

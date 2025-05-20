@@ -9,6 +9,6 @@ cover:
 ---
 读完的书:
 
-{{< shared-content "reading-list" >}}
+{{< booktable >}}
 
 以上列表不定期更新……

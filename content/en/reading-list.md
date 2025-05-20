@@ -8,6 +8,6 @@ cover:
 ---
 The books I have finished reading:
 
-{{< shared-content "reading-list" >}}
+{{< booktable >}}
 
 It’s updated from time to time…

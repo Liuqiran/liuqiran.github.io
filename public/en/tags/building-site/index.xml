@@ -6,7 +6,7 @@
     <description>Recent content in Building Site on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 May 2025 13:24:30 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/en/tags/building-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrated to Hugo</title>
@@ -122,25 +122,24 @@ Tried out Mastodon, a decentralized social networking software. I think it is a 
       <link>http://localhost:1313/en/about-me/</link>
       <pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate>
       <guid>http://localhost:1313/en/about-me/</guid>
-      <description>&lt;p&gt;Hello! 👋, This is Qiran. I hope to connect to the world and meet more friends. :）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ℹ️ Basic info:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Surname: LIU&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Firstname: Qiran&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Age: Gen Z&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Hometown: &lt;a href=&#34;https://en.wikipedia.org/wiki/Hunan&#34;&gt;Hunan&lt;/a&gt;, China.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Personality type: &lt;a href=&#34;https://www.16personalities.com/infp-personality]&#34;&gt;INFP&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;p&gt;Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）&lt;/p&gt;
+&lt;div class=&#34;profile-section&#34;&gt;
+  &lt;div class=&#34;profile-text&#34;&gt;
+    &lt;p&gt;&lt;strong&gt;ℹ️ Basic Info:&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Surname:&lt;/strong&gt; LIU&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;First Name:&lt;/strong&gt; Qiran&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Gender:&lt;/strong&gt; ♂️&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Age:&lt;/strong&gt; Gen Z&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Hometown:&lt;/strong&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Hunan&#34; target=&#34;_blank&#34;&gt;Hunan&lt;/a&gt;, 🇨🇳&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Personality Type:&lt;/strong&gt; &lt;a href=&#34;https://www.16personalities.com/infp-personality&#34; target=&#34;_blank&#34;&gt;INFP&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;profile-image&#34;&gt;
+    &lt;img src=&#34;../../../img/2014-03-25-selfie.jpg&#34; alt=&#34;Qiran&#39;s selfie at age 16&#34;&gt;
+    &lt;center&gt;&lt;p class=&#34;caption&#34;&gt;When I was 16&lt;/p&gt;&lt;/center&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;🖥️ About this site&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Site’s birthday: Feb 9, 2019&lt;/li&gt;
@@ -150,7 +149,7 @@ Tried out Mastodon, a decentralized social networking software. I think it is a 
 &lt;li&gt;⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the &lt;a href=&#34;../../../zh/&#34;&gt;Chinese site&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../en/tags/building-site/&#34;&gt;Building site log&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;📈 Writing Heatmap&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;../../../en/reading-list/&#34;&gt;📈 Reading list&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

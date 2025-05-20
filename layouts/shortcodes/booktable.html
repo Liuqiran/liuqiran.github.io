@@ -1,0 +1,30 @@
+{{ $books := site.Data.books.list }}
+<div style="margin: auto; overflow-x: auto;">
+<table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Date of completion</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $books }}
+      <tr>
+        <td>{{ .No }}</td>
+        <td>{{ .Title }}</td>
+        <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
+        <td>{{ .Date }}</td>
+        <td style="white-space: nowrap;">
+          {{ $rating := .Rating }}
+          {{ range seq 1 5 }}
+            {{ if le . $rating }}⭐{{ else }}☆{{ end }}
+          {{ end }}
+        </td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>   

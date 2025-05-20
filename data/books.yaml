@@ -1,0 +1,221 @@
+list:
+  - "No": 1
+    Title: "Atomic Habits: Tiny Changes, Remarkable Results"
+    Author: "James Clear"
+    Date: "2021"
+    Rating: 5
+  - "No": 2
+    Title: "The Hobbit"
+    Author: "J.R.R Tolkien"
+    Date: "2021"
+    Rating: 4
+  - "No": 3
+    Title: "Gods at War"
+    Author: "Kyle Idleman"
+    Date: "2022"
+    Rating: 4
+  - "No": 4
+    Title: "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness"
+    Author: ""
+    Date: "2022"
+    Rating: 5
+  - "No": 5
+    Title: "On Regular Investing"
+    Author: "Xiaolai Li"
+    Date: "2022"
+    Rating: 5
+  - "No": 6
+    Title: "Rich Dad Door Dad"
+    Author: "Robert Kiyosaki"
+    Date: "2022"
+    Rating: 4
+  - "No": 7
+    Title: "Animal Farm"
+    Author: "George Orwell"
+    Date: "2022"
+    Rating: 5
+  - "No": 8
+    Title: "The Shallows"
+    Author: "Nicholas Carr"
+    Date: "2022"
+    Rating: 4
+  - "No": 9
+    Title: "Effortless English: Learn To Speak English Like A Native"
+    Author: "A.J. Hoge"
+    Date: "2022"
+    Rating: 3
+  - "No": 10
+    Title: "The Carnivore Diet"
+    Author: "Shawn Baker"
+    Date: "2022"
+    Rating: 4
+  - "No": 11
+    Title: "Learn Enough HTML, CSS and Layout to Be Dangerous"
+    Author: ""
+    Date: "2022"
+    Rating: 4
+  - "No": 12
+    Title: "Learn Enough JavaScript to be Dangerous"
+    Author: ""
+    Date: "2022"
+    Rating: 4
+  - "No": 13
+    Title: "Rich Dad’s Cashflow Quadrant"
+    Author: "Robert T. Kiyosaki"
+    Date: "2022"
+    Rating: 4
+  - "No": 14
+    Title: "The Richest Man in Bablylon"
+    Author: "Charles Conrad"
+    Date: "2022"
+    Rating: 3
+  - "No": 15
+    Title: "Rich Dad’s Before You Quit Your Job"
+    Author: "Robert T. Kiyosaki"
+    Date: "2022"
+    Rating: 3
+  - "No": 16
+    Title: "No More Mr. Nice Guy"
+    Author: "Dr. Robert A. Glover"
+    Date: "2022"
+    Rating: 5
+  - "No": 17
+    Title: "The Prince"
+    Author: "Machiavelli"
+    Date: "2022"
+    Rating: 3
+  - "No": 18
+    Title: "Practice Makes Perfect English Grammar for ESL Learners"
+    Author: "Ed Swick"
+    Date: "2023"
+    Rating: 4
+  - "No": 19
+    Title: "The Complete Idiot’s Guide to the TOEFL"
+    Author: ""
+    Date: "2023"
+    Rating: 4
+  - "No": 20
+    Title: "Mere Christianity"
+    Author: "C. S. Lewis"
+    Date: "2023"
+    Rating: 5
+  - "No": 21
+    Title: "Rich Dad’s Guide to Investing"
+    Author: "Robert T. Kiyosaki"
+    Date: "2023"
+    Rating: 3
+  - "No": 22
+    Title: "The 250 Sales Questions to Close The Deal"
+    Author: "Stephan Schiffman"
+    Date: "2023"
+    Rating: 2
+  - "No": 23
+    Title: "How to Have Confidence and Power in Dealing With People"
+    Author: "Leslie T. Giblin"
+    Date: "2023"
+    Rating: 3
+  - "No": 24
+    Title: "What To Say When You Talk To Self"
+    Author: "Dr. Shad Helmstetter"
+    Date: "2023"
+    Rating: 4
+  - "No": 25
+    Title: "The Road Less Traveled"
+    Author: "Peck, M. Scott"
+    Date: "2023"
+    Rating: 5
+  - "No": 26
+    Title: "Sex Is Not the Problem"
+    Author: "Joshua harris"
+    Date: "2023"
+    Rating: 5
+  - "No": 27
+    Title: "Becoming Human"
+    Author: "Jean Vanier"
+    Date: "2023-08"
+    Rating: 5
+  - "No": 28
+    Title: "Sales Dogs"
+    Author: "Blair Singer"
+    Date: "2023-09-11"
+    Rating: 4
+  - "No": 29
+    Title: "The Courage to Be Disliked"
+    Author: "Fumitake Koga; Ichiro Kishimi"
+    Date: "2023-10-15"
+    Rating: 5
+  - "No": 30
+    Title: "Critical Thinking Concepts and Tools"
+    Author: "Richard Paul; Linda Elder"
+    Date: "2023-10-17"
+    Rating: 5
+  - "No": 31
+    Title: "Sexual Detox"
+    Author: "Tim Challies"
+    Date: "2023-11-04"
+    Rating: 4
+  - "No": 32
+    Title: "American Accent Training"
+    Author: "Ann Cook"
+    Date: "2023-11-17"
+    Rating: 5
+  - "No": 33
+    Title: "How to Develop Self-Confidence and Influence People by Public Speaking"
+    Author: "Dale Carnegie"
+    Date: "2023-12-23"
+    Rating: 4
+  - "No": 34
+    Title: "How to Enjoy Your Life and Your Job"
+    Author: "Dale Carnegie"
+    Date: "2024-01-22"
+    Rating: 5
+  - "No": 35
+    Title: "Selected Stories by O.Henry"
+    Author: "O.Henry"
+    Date: "2024-01-27"
+    Rating: 3
+  - "No": 36
+    Title: "Linux in easy steps, illustrated using Linux Mint"
+    Author: "McGrath, Mike"
+    Date: "2024-02-29"
+    Rating: 3
+  - "No": 37
+    Title: "Unlocking German with Paul Noble"
+    Author: "Paul Noble"
+    Date: "2024-03-04"
+    Rating: 5
+  - "No": 38
+    Title: "Money Blog"
+    Author: "Nathaniel Branes"
+    Date: "2024-03-27"
+    Rating: 4
+  - "No": 39
+    Title: "Easyway to Stop Smoking"
+    Author: "Allen Carr"
+    Date: "2024-04-14"
+    Rating: 4
+  - "No": 40
+    Title: "Why We Get Sick"
+    Author: "Benjamin Bikman"
+    Date: "2024-05-31"
+    Rating: 5
+  - "No": 41
+    Title: "Rightly Divided"
+    Author: "J. Michael Lester"
+    Date: "2025-03-08"
+    Rating: 4
+  - "No": 42
+    Title: "Mind the Gap"
+    Author: "Terrie Chappell"
+    Date: "2025-03-16"
+    Rating: 3
+  - "No": 43
+    Title: "Paid in Full"
+    Author: "Paul Chappell"
+    Date: "2025-03-16"
+    Rating: 3
+  - "No": 44
+    Title: "First Steps For New Christians"
+    Author: "Paul Chappell"
+    Date: "2025-04-07"
+    Rating: 3

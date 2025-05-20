@@ -7,19 +7,25 @@ aliases: ["/en/about-me-2/"]
 tags:
   - Building Site
 ---
-Hello! 👋, This is Qiran. I hope to connect to the world and meet more friends. :）
+Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）
 
-**ℹ️ Basic info:**
-
-- Surname: LIU
-
-- Firstname: Qiran
-
-- Age: Gen Z
-
-- Hometown: [Hunan](https://en.wikipedia.org/wiki/Hunan), China.
-
-- Personality type: [INFP](https://www.16personalities.com/infp-personality]) 
+<div class="profile-section">
+  <div class="profile-text">
+    <p><strong>ℹ️ Basic Info:</strong></p>
+    <ul>
+      <li><strong>Surname:</strong> LIU</li>
+      <li><strong>First Name:</strong> Qiran</li>
+      <li><strong>Gender:</strong> ♂️</li>
+      <li><strong>Generation:</strong> Gen Z</li>
+      <li><strong>Hometown:</strong> <a href="https://en.wikipedia.org/wiki/Hunan" target="_blank">Hunan</a>, 🇨🇳</li>
+      <li><strong>Personality Type:</strong> <a href="https://www.16personalities.com/infp-personality" target="_blank">INFP</a></li>
+    </ul>
+  </div>
+  <div class="profile-image">
+    <img src="/img/2014-03-25-selfie.jpg" alt="Qiran's selfie at age 16">
+    <center><p class="caption">When I was 16</p></center>
+  </div>
+</div>
 
 **🖥️ About this site**:
 
@@ -30,14 +36,15 @@ Hello! 👋, This is Qiran. I hope to connect to the world and meet more friends
 - ⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the [Chinese site](/zh/).
 - [Building site log][1]
 
-📈 Writing Heatmap   
+[**📚 Reading list**](/en/reading-list/)
 
+**[🧑‍🤝‍🧑 Online Neighbors](http://localhost:1313/en/my-friends/)**
 
 **👣 Footprints:**
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1RbDEbfdLJfr9sjTnT5zqQvI2UP-nXz0&ehbc=2E312F" width="640" height="480"></iframe>
 
-My Bitcoin wallet address：1Lae6qzRkp62V6Tbfusv3fhtfKrXDZnoV9
+🪙BTC address: 1Lae6qzRkp62V6Tbfusv3fhtfKrXDZnoV9
 
 Contact me: [Telegram: Contact @liuqiran][2]
 
