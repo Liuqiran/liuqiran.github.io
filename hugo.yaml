@@ -34,7 +34,7 @@ languages:
           url: /en/archive/
           weight: 40
         - identifier: tags
-          name: 🏷️ tags
+          name: 🏷️ Tags
           url: /en/tags/
           weight: 50
         - identifier: friends
