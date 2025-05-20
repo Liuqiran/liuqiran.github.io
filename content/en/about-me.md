@@ -38,7 +38,7 @@ Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends.
 
 [**📚 Reading list**](/en/reading-list/)
 
-**[🧑‍🤝‍🧑 Online Neighbors](http://localhost:1313/en/my-friends/)**
+**[🧑‍🤝‍🧑 Online Neighbors](/en/my-friends/)**
 
 **👣 Footprints:**
 
@@ -46,7 +46,7 @@ Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends.
 
 🪙BTC address: 1Lae6qzRkp62V6Tbfusv3fhtfKrXDZnoV9
 
-Contact me: [Telegram: Contact @liuqiran][2]
+**Contact me**: [Telegram: Contact @liuqiran][2]
 
  [1]: /tags/building-site/
  [2]: https://t.me/liuqiran
