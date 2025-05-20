@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>科技 on 刘其然的部落格</title>
-    <link>http://localhost:1313/zh/tags/%E7%A7%91%E6%8A%80/</link>
+    <link>http://localhost:36573/zh/tags/%E7%A7%91%E6%8A%80/</link>
     <description>Recent content in 科技 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Nov 2019 08:25:08 +0000</lastBuildDate>
+    <atom:link href="http://localhost:36573/zh/tags/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>仓颉输入法体验</title>
-      <link>http://localhost:1313/zh/cangjie-input-method-review/</link>
+      <link>http://localhost:36573/zh/cangjie-input-method-review/</link>
       <pubDate>Thu, 28 Nov 2019 08:25:08 +0000</pubDate>
-      <guid>http://localhost:1313/zh/cangjie-input-method-review/</guid>
+      <guid>http://localhost:36573/zh/cangjie-input-method-review/</guid>
       <description>&lt;p&gt;在月初的时候我捡了一个Pixelbook，想尝试一下Chrome OS.&lt;/p&gt;
 &lt;p&gt;但是发现Chrome OS下不能使用小鹤音形（&lt;a href=&#34;https://www.liuqiran.com/index.php/2018/05/31/introduce-flypy/&#34;&gt;我写的有关小鹤音形的介绍&lt;/a&gt;）！只能用自带的输入法，也不能愉快的使用Android输入法。Chrome OS上的简体输入方案只有全拼和五笔——我对全拼输入的选字感到难以忍受，学了几天五笔觉得不太划算，已经会用小鹤音形快速输入简体字了，没有必要再学五笔了。因此想学一种新的形码输入法。&lt;/p&gt;</description>
     </item>
     <item>
       <title>提高你的输入效率——小鹤输入法介绍</title>
-      <link>http://localhost:1313/zh/introduce-flypy/</link>
+      <link>http://localhost:36573/zh/introduce-flypy/</link>
       <pubDate>Thu, 31 May 2018 07:44:05 +0000</pubDate>
-      <guid>http://localhost:1313/zh/introduce-flypy/</guid>
+      <guid>http://localhost:36573/zh/introduce-flypy/</guid>
       <description>&lt;p&gt;适用阅读人群：中文文字工作者，有意愿提高汉字输入效率。&lt;/p&gt;
 &lt;p&gt;五笔使用者可以参考阅读，如果同样正在使用其他双拼方案，如自然码方案，微软方案的，酌情阅读。还有酷友使用了更厉害的输入方式，请忽略本文章。&lt;/p&gt;</description>
     </item>

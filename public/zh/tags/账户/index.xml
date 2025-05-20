@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>账户 on 刘其然的部落格</title>
-    <link>http://localhost:1313/zh/tags/%E8%B4%A6%E6%88%B7/</link>
+    <link>http://localhost:36573/zh/tags/%E8%B4%A6%E6%88%B7/</link>
     <description>Recent content in 账户 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/%E8%B4%A6%E6%88%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Apr 2019 03:19:21 +0000</lastBuildDate>
+    <atom:link href="http://localhost:36573/zh/tags/%E8%B4%A6%E6%88%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>注销了我的QQ号</title>
-      <link>http://localhost:1313/zh/logout-qq/</link>
+      <link>http://localhost:36573/zh/logout-qq/</link>
       <pubDate>Tue, 30 Apr 2019 03:19:21 +0000</pubDate>
-      <guid>http://localhost:1313/zh/logout-qq/</guid>
+      <guid>http://localhost:36573/zh/logout-qq/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/04/screenshot_20190430-0934337091186603733862139.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;我在今天注销了自己9岁时注册的QQ号。备份文件和照片，发送短信，注销完成。和同学们互踩空间、曾经在群里聊天的快乐时光，这些记忆可能还在，但现在也可以烟消云散了。&lt;/p&gt;</description>
     </item>

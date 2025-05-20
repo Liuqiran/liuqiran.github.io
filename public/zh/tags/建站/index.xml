@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>建站 on 刘其然的部落格</title>
-    <link>http://localhost:1313/zh/tags/%E5%BB%BA%E7%AB%99/</link>
+    <link>http://localhost:36573/zh/tags/%E5%BB%BA%E7%AB%99/</link>
     <description>Recent content in 建站 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 20 May 2025 13:24:30 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Feb 2023 14:31:32 +0000</lastBuildDate>
+    <atom:link href="http://localhost:36573/zh/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>更新了 RSS 订阅地址</title>
-      <link>http://localhost:1313/zh/updated-rss-feed-url/</link>
+      <link>http://localhost:36573/zh/updated-rss-feed-url/</link>
       <pubDate>Fri, 10 Feb 2023 14:31:32 +0000</pubDate>
-      <guid>http://localhost:1313/zh/updated-rss-feed-url/</guid>
+      <guid>http://localhost:36573/zh/updated-rss-feed-url/</guid>
       <description>&lt;p&gt;&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://www.liuqiran.com/zh/feed&#34; target=&#34;_blank&#34;&gt;中文站&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.liuqiran.com/feed&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;英文站&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;（可能无法两个站点都照顾到，建议全部订阅）&lt;/p&gt;</description>
     </item>
     <item>
       <title>重新整理版面</title>
-      <link>http://localhost:1313/zh/reorganize-home-page/</link>
+      <link>http://localhost:36573/zh/reorganize-home-page/</link>
       <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
-      <guid>http://localhost:1313/zh/reorganize-home-page/</guid>
+      <guid>http://localhost:36573/zh/reorganize-home-page/</guid>
       <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
   我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了……
 &lt;/p&gt;
@@ -29,40 +29,40 @@
     </item>
     <item>
       <title>创建电报频道</title>
-      <link>http://localhost:1313/zh/created-telegram-channel/</link>
+      <link>http://localhost:36573/zh/created-telegram-channel/</link>
       <pubDate>Wed, 08 Feb 2023 10:12:49 +0000</pubDate>
-      <guid>http://localhost:1313/zh/created-telegram-channel/</guid>
+      <guid>http://localhost:36573/zh/created-telegram-channel/</guid>
       <description>&lt;p&gt;尝试开通了一下&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://t.me/qiranschannel&#34; target=&#34;_blank&#34;&gt;电报频道&lt;/a&gt;。&lt;br&gt;
 发现电报创建频道非常快捷，向他人广播也非常快。&lt;br&gt;
 最重要的是平台是开放的，添加机器人功能之后可以自动将个人网站的动态同步到频道当中。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Updated domain name  更新域名</title>
-      <link>http://localhost:1313/zh/updated-domain-name/</link>
+      <link>http://localhost:36573/zh/updated-domain-name/</link>
       <pubDate>Tue, 08 Jun 2021 08:06:09 +0000</pubDate>
-      <guid>http://localhost:1313/zh/updated-domain-name/</guid>
+      <guid>http://localhost:36573/zh/updated-domain-name/</guid>
       <description>&lt;p&gt;aiweikai.top → &lt;a href=&#34;http://liuqiran.com&#34;&gt;liuqiran.com&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>长毛象</title>
-      <link>http://localhost:1313/zh/mastodon-button/</link>
+      <link>http://localhost:36573/zh/mastodon-button/</link>
       <pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate>
-      <guid>http://localhost:1313/zh/mastodon-button/</guid>
+      <guid>http://localhost:36573/zh/mastodon-button/</guid>
       <description>&lt;p&gt;添加长毛按钮。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Change categories</title>
-      <link>http://localhost:1313/zh/change-categories/</link>
+      <link>http://localhost:36573/zh/change-categories/</link>
       <pubDate>Mon, 18 Jan 2021 10:13:15 +0000</pubDate>
-      <guid>http://localhost:1313/zh/change-categories/</guid>
+      <guid>http://localhost:36573/zh/change-categories/</guid>
       <description>&lt;p&gt;因为这几个月自己不在公开的部落格上更新。这两天才发现博客域名已经过期了，不得已暂时更换域名。&lt;/p&gt;
 &lt;p&gt;在翻看的文章的时候发现许多内容根本没有发布。同时，感到标签页面逐渐变得杂乱而难以维护。我觉得将文章分层归类是很失败的一件事。&lt;/p&gt;</description>
     </item>
     <item>
       <title>添加按鈕</title>
-      <link>http://localhost:1313/zh/add-button/</link>
+      <link>http://localhost:36573/zh/add-button/</link>
       <pubDate>Thu, 14 May 2020 23:42:07 +0000</pubDate>
-      <guid>http://localhost:1313/zh/add-button/</guid>
+      <guid>http://localhost:36573/zh/add-button/</guid>
       <description>&lt;p&gt;文章鏈接去除“index.php”。&lt;br&gt;
 添加分享按鈕和Wordpress.com社區喜歡按鈕。&lt;/p&gt;
 &lt;p&gt;添加&lt;a href=&#34;http://foreverblog.cn&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;十年之約&lt;/a&gt;標識：&lt;/p&gt;
@@ -70,18 +70,18 @@
     </item>
     <item>
       <title>重新开放部落格</title>
-      <link>http://localhost:1313/zh/reopen-my-blog/</link>
+      <link>http://localhost:36573/zh/reopen-my-blog/</link>
       <pubDate>Sun, 17 Nov 2019 09:42:34 +0000</pubDate>
-      <guid>http://localhost:1313/zh/reopen-my-blog/</guid>
+      <guid>http://localhost:36573/zh/reopen-my-blog/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.liuqiran.com/index.php/2019/10/30/lock-my-blog/&#34;&gt;关闭部落格&lt;/a&gt;已经半个月了.&lt;/p&gt;
 &lt;p&gt;在这段时间里,我将原来的博文全部搬运到了以blog开头的私密站点，之后将大这里的大部分博文都删除了。&lt;/p&gt;
 &lt;p&gt;学习是本来就是孤独的，但人还是需要交流，经历过一段时间的低谷期后,我决定重新开放部落格.&lt;/p&gt;</description>
     </item>
     <item>
       <title>关闭部落格</title>
-      <link>http://localhost:1313/zh/lock-my-blog/</link>
+      <link>http://localhost:36573/zh/lock-my-blog/</link>
       <pubDate>Wed, 30 Oct 2019 07:27:32 +0000</pubDate>
-      <guid>http://localhost:1313/zh/lock-my-blog/</guid>
+      <guid>http://localhost:36573/zh/lock-my-blog/</guid>
       <description>&lt;p class=&#34;has-white-color has-primary-background-color has-text-color has-background&#34;&gt;
   距部落格建立到现在已经9个月了。
 &lt;/p&gt;
@@ -89,18 +89,18 @@
     </item>
     <item>
       <title>RSS 订阅</title>
-      <link>http://localhost:1313/zh/rss-2/</link>
+      <link>http://localhost:36573/zh/rss-2/</link>
       <pubDate>Sun, 29 Sep 2019 09:00:50 +0000</pubDate>
-      <guid>http://localhost:1313/zh/rss-2/</guid>
+      <guid>http://localhost:36573/zh/rss-2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;../../../zh/index.xml&#34;&gt;中文站&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;../../../en/index.xml&#34;&gt;英文站&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;（可能无法两个站点都照顾到，建议全部订阅）&lt;/p&gt;</description>
     </item>
     <item>
       <title>友人</title>
-      <link>http://localhost:1313/zh/my-friends/</link>
+      <link>http://localhost:36573/zh/my-friends/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/my-friends/</guid>
+      <guid>http://localhost:36573/zh/my-friends/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）&lt;/p&gt;&lt;/blockquote&gt;
 
@@ -127,9 +127,9 @@
     </item>
     <item>
       <title>发布至部落格</title>
-      <link>http://localhost:1313/zh/post-to-my-blog/</link>
+      <link>http://localhost:36573/zh/post-to-my-blog/</link>
       <pubDate>Sat, 04 May 2019 06:46:58 +0000</pubDate>
-      <guid>http://localhost:1313/zh/post-to-my-blog/</guid>
+      <guid>http://localhost:36573/zh/post-to-my-blog/</guid>
       <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
   从今天开始，我的笔记和日记都到这里来写了。
 &lt;/p&gt;
@@ -137,9 +137,9 @@
     </item>
     <item>
       <title>建站有感</title>
-      <link>http://localhost:1313/zh/%E3%80%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%91%E6%88%91%E6%90%AD%E5%BB%BA%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link>
+      <link>http://localhost:36573/zh/%E3%80%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%91%E6%88%91%E6%90%AD%E5%BB%BA%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link>
       <pubDate>Sat, 09 Feb 2019 03:37:23 +0000</pubDate>
-      <guid>http://localhost:1313/zh/%E3%80%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%91%E6%88%91%E6%90%AD%E5%BB%BA%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid>
+      <guid>http://localhost:36573/zh/%E3%80%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%91%E6%88%91%E6%90%AD%E5%BB%BA%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid>
       <description>&lt;p&gt;之前写了一篇关于社交媒体的文章，不知不觉，我发现我逐渐被各种动态绑架了，每当我在上面发表一些东西，又想多次打开这些应用看收到了什么消息，除了喜欢刷别人的动态，也心怀期待自己的动态能收到回复、点赞，py个头条什么的，连学习软件也都在做社交。所有的应用都在做社交，酷安也不例外。&lt;br&gt;
 虽然说这能看做是一种趋势，人与人的连接变得更为方便快捷，但是碎片化的社交媒体还是有很多负面影响的。最主要的是持续不断的信息流，推送一些刺激你眼球和兴趣的东西，让你可以一直不断的刷下去，看似收获了不少，其实什么都没有学到。如果沉迷于其中，那这些就是精神的麻醉剂。&lt;br&gt;
 我一直想做点什么，因此我在去年6月强迫自己关闭了朋友圈。朋友圈是熟人分享自己光鲜靓丽的地方，我没有什么光鲜靓丽的东西可以炫耀的，并且我发现我的朋友圈广告越来越多，而且刷多了会变得颓废，那索性就不刷了，尽量多学习，给他人分享有价值的东西。&lt;br&gt;
@@ -152,9 +152,9 @@
     </item>
     <item>
       <title>👤 关于</title>
-      <link>http://localhost:1313/zh/about-me/</link>
+      <link>http://localhost:36573/zh/about-me/</link>
       <pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate>
-      <guid>http://localhost:1313/zh/about-me/</guid>
+      <guid>http://localhost:36573/zh/about-me/</guid>
       <description>&lt;p&gt;写作是应该是生活中必不可少的一部分，以网站的形式将自己的文字和作品整理出来，相比社交媒体式的分享，不再那么浮躁，也没有更多无意义的点赞；相比自己私密保存，又能分享需要的人。&lt;/p&gt;</description>
     </item>
   </channel>
