@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Categories on 刘其然的部落格</title>
-    <link>http://localhost:1313/zh/categories/</link>
-    <description>Recent content in Categories on 刘其然的部落格</description>
-    <generator>Hugo -- 0.145.0</generator>
-    <language>zh-cn</language>
-    <atom:link href="http://localhost:1313/zh/categories/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Categories on 刘其然的部落格</title><link>https://liuqiran.github.io/zh/categories/</link><description>Recent content in Categories on 刘其然的部落格</description><generator>Hugo -- 0.145.0</generator><language>zh-cn</language><atom:link href="https://liuqiran.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

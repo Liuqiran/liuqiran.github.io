@@ -1,396 +1,44 @@
-<!DOCTYPE html>
-<html lang="zh-cn" dir="auto">
-
-<head>
-	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    
-    <link rel="stylesheet" href="../../../fonts/Garamond.css"> <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>刘其然的部落格</title>
-
-<meta name="description" content="">
-<meta name="author" content="Qiran">
-<link rel="canonical" href="http://localhost:1313/zh/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/zh/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/zh/index.json">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/en/">
-<link rel="alternate" hreflang="zh" href="http://localhost:1313/zh/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript><link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/jhlst/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002/result.css' />
-<link rel="stylesheet" href="../../../fonts/Garamond.css">
-</head>
-
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/zh/" accesskey="h" title="刘其然的部落格 (Alt + H)">
-                <img src="http://localhost:1313/img/Avatar.jpg" alt="" aria-label="logo"
-                    height="30">刘其然的部落格</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-                <ul class="lang-switch"><li>|</li>
-                    <li>
-                        <a href="http://localhost:1313/en/" title="EN"
-                            aria-label="EN">EN</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/zh/" title="主页">
-                    <span class="active">主页</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/zh/about-me/" title="👤 关于">
-                    <span>👤 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/zh/reading-list-2/" title="📚 阅读书目">
-                    <span>📚 阅读书目</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/zh/archive/" title="🗂️ 归档">
-                    <span>🗂️ 归档</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/zh/tags/" title="🏷️ 标签">
-                    <span>🏷️ 标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/zh/my-friends/" title="🧑‍🤝‍🧑 友人">
-                    <span>🧑‍🤝‍🧑 友人</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/zh/search/" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
-                    <span>🔍 搜索</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Chinese Museum
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一、与宗法制度有关的收藏 1、与宗法制度有关的收藏
+<!doctype html><html lang=zh-cn dir=auto><head><meta name=generator content="Hugo 0.145.0"><link rel=stylesheet href=../../../fonts/Garamond.css><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>刘其然的部落格</title>
+<meta name=description content><meta name=author content="Qiran"><link rel=canonical href=https://liuqiran.github.io/zh/><link crossorigin=anonymous href=../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA+tdzxk=" rel="preload stylesheet" as=style><link rel=icon href=https://liuqiran.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://liuqiran.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://liuqiran.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://liuqiran.github.io/apple-touch-icon.png><link rel=mask-icon href=https://liuqiran.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://liuqiran.github.io/zh/index.xml><link rel=alternate type=application/json href=https://liuqiran.github.io/zh/index.json><link rel=alternate hreflang=en href=https://liuqiran.github.io/en/><link rel=alternate hreflang=zh href=https://liuqiran.github.io/zh/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><link rel=stylesheet href=https://chinese-fonts-cdn.deno.dev/packages/jhlst/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002/result.css><link rel=stylesheet href=../../../fonts/Garamond.css><meta property="og:url" content="https://liuqiran.github.io/zh/"><meta property="og:site_name" content="刘其然的部落格"><meta property="og:title" content="刘其然的部落格"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"刘其然的部落格","url":"https://liuqiran.github.io/zh/","description":"","logo":"https://liuqiran.github.io/favicon.ico","sameAs":["/zh/rss-2/","https://mastodon.social/@liuqiran","https://github.com/liuqiran","https://t.me/qiranschannel","https://twitter.com/qiran_liu","https://www.linkedin.com/in/liuqiran/","https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ","mailto:woshiniuziku@gmail.com"]}</script></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://liuqiran.github.io/zh/ accesskey=h title="刘其然的部落格 (Alt + H)"><img src=https://liuqiran.github.io/img/Avatar.jpg alt aria-label=logo height=30>刘其然的部落格</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button><ul class=lang-switch><li>|</li><li><a href=https://liuqiran.github.io/en/ title=EN aria-label=EN>EN</a></li></ul></div></div><ul id=menu><li><a href=https://liuqiran.github.io/zh/ title=主页><span class=active>主页</span></a></li><li><a href=https://liuqiran.github.io/zh/about-me/ title="👤 关于"><span>👤 关于</span></a></li><li><a href=https://liuqiran.github.io/zh/reading-list-2/ title="📚 阅读书目"><span>📚 阅读书目</span></a></li><li><a href=https://liuqiran.github.io/zh/archive/ title="🗂️ 归档"><span>🗂️ 归档</span></a></li><li><a href=https://liuqiran.github.io/zh/tags/ title="🏷️ 标签"><span>🏷️ 标签</span></a></li><li><a href=https://liuqiran.github.io/zh/my-friends/ title="🧑‍🤝‍🧑 友人"><span>🧑‍🤝‍🧑 友人</span></a></li><li><a href=https://liuqiran.github.io/zh/search/ title="🔍 搜索 (Alt + /)" accesskey=/><span>🔍 搜索</span></a></li></ul></nav></header><main class=main><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Introduction: A Historical Recall of Eastern and Western Fine Art Education</h2></header><div class=entry-content><p>中国的美术教育事业是基本上是从近代以来才起步的。
+在古代，先秦时期人们已开始注重艺术修养，不少技艺已经在民间流传，《考工记》记载的手工艺品品类已达三十余种。中古中国的美术教育方式主要是以师徒传授为主。在上层社会，以宋徽宗兴办的宣和画院为代表的艺术收藏、创作机构起到了重要的美术教育作用，古代美术教育的目的主要是宣传儒家思想、注重教化人伦。但是到后期文人画兴起，“技”与“艺”逐渐分野，绘画开始强调文人的地位、修养与品格而抛却了“技”的传承，文人绘画技法往往达不到职业画家的水平但能留名青史；而水平精湛的职业画工创作了大量精美的作品但地位却很低，生活穷困。同时师徒传授的方式也使得许多技法也很少公之于众，让世人学习，这种轻“技”的现象也让中国传统绘画走进了死胡同。
+...</p></div><footer class=entry-footer>2019年9月25日 · 更新于 2019年9月25日 · 1051 字 · Qiran</footer><a class=entry-link aria-label="post link to Introduction: A Historical Recall of  Eastern and Western Fine Art Education" href=https://liuqiran.github.io/zh/introduction-a-historical-recall-of-eastern-and-western-fine-art-education/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Chinese Museum</h2></header><div class=entry-content><p>一、与宗法制度有关的收藏 1、与宗法制度有关的收藏
 皇家收藏：“天府”、“玉府”都是收藏文物珍宝的地方。
 家族收藏：家庙、祖先之物
 庙堂收藏：孔庙，岳飞庙，功臣庙、万牲园
 夫画者，成教化，助人伦，穷神变，测幽微
-...</p>
-  </div>
-  <footer class="entry-footer">2019年9月24日 · 更新于 2025年4月1日 · 1296 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to Chinese Museum" href="http://localhost:1313/zh/chinese-museum/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">History of western museums
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一、西方博物馆起源——萌芽期
+...</p></div><footer class=entry-footer>2019年9月24日 · 更新于 2019年9月24日 · 1296 字 · Qiran</footer><a class=entry-link aria-label="post link to Chinese Museum" href=https://liuqiran.github.io/zh/chinese-museum/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>History of western museums</h2></header><div class=entry-content><p>一、西方博物馆起源——萌芽期
 最早的博物馆
 1、特尔费-奥林帕斯神殿
 2、亚历山大里亚学园
 3、古罗马万神庙——西方最早的人物纪念馆
 （2） 特点
 1、藏品数量十分有局限性，主要 是战利品、古物
-...</p>
-  </div>
-  <footer class="entry-footer">2019年9月17日 · 更新于 2025年4月1日 · 1332 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to History of western museums" href="http://localhost:1313/zh/history-of/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">外国美术 名词中英对照
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Egypt
+...</p></div><footer class=entry-footer>2019年9月17日 · 更新于 2019年9月17日 · 1332 字 · Qiran</footer><a class=entry-link aria-label="post link to History of western museums" href=https://liuqiran.github.io/zh/history-of/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>外国美术 名词中英对照</h2></header><div class=entry-content><p>Egypt
 Hatshepsut 哈特谢普苏
 Thutmose 图特摩斯
 Abu Simbel 阿布辛贝勒
 Osiris 俄西里斯
 Amen-Re 阿蒙-瑞
 Karnak 卡纳克
-Beni Hasan 贝尼哈桑
-</p>
-  </div>
-  <footer class="entry-footer">2019年9月12日 · 更新于 2019年9月12日 · 39 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to 外国美术 名词中英对照" href="http://localhost:1313/zh/%E5%A4%96%E5%9B%BD%E7%BE%8E%E6%9C%AF-%E5%90%8D%E8%AF%8D%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">第一讲
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>李茂森
+Beni Hasan 贝尼哈桑</p></div><footer class=entry-footer>2019年9月12日 · 更新于 2019年9月12日 · 39 字 · Qiran</footer><a class=entry-link aria-label="post link to 外国美术 名词中英对照" href=https://liuqiran.github.io/zh/%E5%A4%96%E5%9B%BD%E7%BE%8E%E6%9C%AF-%E5%90%8D%E8%AF%8D%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>第一讲</h2></header><div class=entry-content><p>李茂森
 [private container=”span”]ChineseEthics@gmail.com[/private]
 一、经验之谈
 The Art of Worldly Wisdom
 五点感言： 尊德行道问学；为生活而学习；我思，故我在；我素，故我行；用心，则快乐。
-...</p>
-  </div>
-  <footer class="entry-footer">2019年9月10日 · 更新于 2019年9月10日 · 409 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to 第一讲" href="http://localhost:1313/zh/%E7%AC%AC%E4%B8%80%E8%AE%B2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Museology
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>定义 中国： 博识多知；《博物志》
+...</p></div><footer class=entry-footer>2019年9月10日 · 更新于 2019年9月10日 · 409 字 · Qiran</footer><a class=entry-link aria-label="post link to 第一讲" href=https://liuqiran.github.io/zh/%E7%AC%AC%E4%B8%80%E8%AE%B2/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Museology</h2></header><div class=entry-content><p>定义 中国： 博识多知；《博物志》
 日本：保存管理文件或研究学问之地
 文化与历史的延续使民族保持活力
 国家文物局：文物和标本的主要收藏机构，宣传教育机构。
 《博物馆办法》：是指收藏保护研究展示人类活动和自然环境的见证物。
-...</p>
-  </div>
-  <footer class="entry-footer">2019年9月10日 · 更新于 2025年4月1日 · 1014 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to Museology" href="http://localhost:1313/zh/museology/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">重拾画笔
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>
-已经有两年没怎么画过画了。 13年前我就用过数位板，当我再次看到自己曾经写下的东西时，感到自己早已不是曾经的样子。当时的自己完全没有想过自己会走上这样这一条路。
+...</p></div><footer class=entry-footer>2019年9月10日 · 更新于 2019年9月10日 · 1014 字 · Qiran</footer><a class=entry-link aria-label="post link to Museology" href=https://liuqiran.github.io/zh/museology/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>重拾画笔</h2></header><div class=entry-content><p>已经有两年没怎么画过画了。 13年前我就用过数位板，当我再次看到自己曾经写下的东西时，感到自己早已不是曾经的样子。当时的自己完全没有想过自己会走上这样这一条路。
 但走在这条路的过程中，自己慢慢丧失了初心，随后只有独自面对数不清的痛苦与艰难。
-...</p>
-  </div>
-  <footer class="entry-footer">2019年7月17日 · 更新于 2025年4月1日 · 272 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to 重拾画笔" href="http://localhost:1313/zh/pick-up-my-pen/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">友人
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> “If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）
-Dylan Wu 陈仓颉 YIR FSpark Broca-Phenol 沉舟侧畔 非科学のカッ�… 大致 OSMH 青山 Dreamendy 梅塔特隆立方 Kira kqh Mars minuo 新世界的大门 </p>
-  </div>
-  <footer class="entry-footer">2019年7月9日 · 更新于 2025年4月1日 · 101 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to 友人" href="http://localhost:1313/zh/my-friends/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">《文征明与陈淳绘画风格比较研究》
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>《文征明与陈淳绘画风格比较研究》
+...</p></div><footer class=entry-footer>2019年7月17日 · 更新于 2019年7月17日 · 272 字 · Qiran</footer><a class=entry-link aria-label="post link to 重拾画笔" href=https://liuqiran.github.io/zh/pick-up-my-pen/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>友人</h2></header><div class=entry-content><p>“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）
+Dylan Wu 陈仓颉 YIR FSpark Broca-Phenol 沉舟侧畔 非科学のカッ�… 大致 OSMH 青山 Dreamendy 梅塔特隆立方 Kira kqh Mars minuo 新世界的大门</p></div><footer class=entry-footer>2019年7月9日 · 更新于 2019年7月9日 · 101 字 · Qiran</footer><a class=entry-link aria-label="post link to 友人" href=https://liuqiran.github.io/zh/my-friends/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>《文征明与陈淳绘画风格比较研究》</h2></header><div class=entry-content><p>《文征明与陈淳绘画风格比较研究》
 选题意义：
 文征明是吴门画派的代表人物，与沈周、唐寅、仇英并称“吴门四家”，山水、人物、花卉、兰竹皆工，早年和中年皆以工细为主，晚年逐渐形成细腻与粗放两种风格，他对明代文人画的发展起到了重要的作用；陈淳是明代著名画家，陈淳师从文征明，在其门下有的很高的声望，陈淳画风早年承袭文征明，中年后形成自己的写意风格，对写意花鸟画的发展产生极大影响，与徐渭并称“白阳”、“青藤”。
-...</p>
-  </div>
-  <footer class="entry-footer">2019年6月10日 · 更新于 2025年4月1日 · 659 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to 《文征明与陈淳绘画风格比较研究》" href="http://localhost:1313/title/Wen-zhengming-and-chen-chun/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">表哥的画
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>
-</p>
-  </div>
-  <footer class="entry-footer">2019年6月7日 · 更新于 2025年4月1日 · 0 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to 表哥的画" href="http://localhost:1313/zh/cousinsdrawing/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">以儒行恶
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> “秦汉以降，尧舜三王，周公孔子之道，未尝一日行于天地之间。” 听到这句话我被深深触动。这就奇怪了，中国古代不就是以儒治理天下吗？朱熹为什么这么说？
-...</p>
-  </div>
-  <footer class="entry-footer">2019年5月26日 · 更新于 2025年4月1日 · 417 字 · Qiran</footer>
-  <a class="entry-link" aria-label="post link to 以儒行恶" href="http://localhost:1313/zh/893/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/zh/page/5/">
-      «&nbsp;上一页&nbsp;
-    </a>
-    <a class="next" href="http://localhost:1313/zh/page/7/">下一页&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/zh/">刘其然的部落格</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+...</p></div><footer class=entry-footer>2019年6月10日 · 更新于 2019年6月10日 · 659 字 · Qiran</footer><a class=entry-link aria-label="post link to 《文征明与陈淳绘画风格比较研究》" href=https://liuqiran.github.io/title/Wen-zhengming-and-chen-chun/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>表哥的画</h2></header><div class=entry-content><p></p></div><footer class=entry-footer>2019年6月7日 · 更新于 2019年6月7日 · 0 字 · Qiran</footer><a class=entry-link aria-label="post link to 表哥的画" href=https://liuqiran.github.io/zh/cousinsdrawing/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://liuqiran.github.io/zh/page/5/>«&nbsp;上一页&nbsp;
+</a><a class=next href=https://liuqiran.github.io/zh/page/7/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://liuqiran.github.io/zh/>刘其然的部落格</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

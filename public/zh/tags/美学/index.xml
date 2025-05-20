@@ -1,70 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>美学 on 刘其然的部落格</title>
-    <link>http://localhost:1313/zh/tags/%E7%BE%8E%E5%AD%A6/</link>
-    <description>Recent content in 美学 on 刘其然的部落格</description>
-    <generator>Hugo -- 0.145.0</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/%E7%BE%8E%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>中國美學賞析</title>
-      <link>http://localhost:1313/zh/chinese-aesthetics-notes/</link>
-      <pubDate>Mon, 15 Jun 2020 15:04:20 +0000</pubDate>
-      <guid>http://localhost:1313/zh/chinese-aesthetics-notes/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;憂生和憂世&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;        憂生是人生觀、自我層面，憂世是世界觀，人間世層面。   &lt;/p&gt;
-&lt;p&gt;        首先是憂世，是社會性的自我實現。而憂生是進一步的追問我在這個世界怎麽實現自我，投入非政治的心態去創作。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>中國美學史 六 文心雕龍</title>
-      <link>http://localhost:1313/zh/chinese-aesthetics-6/</link>
-      <pubDate>Sun, 17 May 2020 07:06:33 +0000</pubDate>
-      <guid>http://localhost:1313/zh/chinese-aesthetics-6/</guid>
-      <description>&lt;p&gt;好好的去讀一下某一個篇章，文心雕龍注，讀的過程中要讀注释。 其實到現在已經不是美學範疇了，叶朗有些地方已經和現在不一樣了。&lt;br&gt;
-文心雕龍的意義在於 &lt;strong&gt;讀經典&lt;/strong&gt; ，學識修養是重要的。美學史的意義是和前人对話，我們不可能一個個朝代的去講。&lt;br&gt;
-未講的內容：六朝的書畫美學，更多地講文學問題。&lt;br&gt;
-因為文字是最普遍的藝術，由文學來看美學是中國美學的一個重要特徵。文是一種創造力，畫詩書都是輔助。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>十：明人的真性情</title>
-      <link>http://localhost:1313/zh/literary-intellectuals-in-ming/</link>
-      <pubDate>Wed, 13 May 2020 02:21:18 +0000</pubDate>
-      <guid>http://localhost:1313/zh/literary-intellectuals-in-ming/</guid>
-      <description>&lt;p&gt;“真性情”是明代的主線。背後的思想基礎還是以儒家為主，佛學的狂禪與道教的觀點到了儒家之中。&lt;br&gt;
-民間的趣向猶其的重要。&lt;br&gt;
-與六朝和唐的真不一樣。&lt;br&gt;
-先秦-漢 漢-宋 宋以後 分為三個階段&lt;br&gt;
-明末有一大批儒生，是近代以來傳統文化的中介。在國家滅亡的狀態之下有更為自覺的文化意識，體現強烈的亡天下的觀念，這樣一種體會使得宋末和明末的文人……，這樣一個過程開始反思這些問題。&lt;br&gt;
-&lt;strong&gt;元明以降近古思想的主線：心性之學&lt;/strong&gt;&lt;br&gt;
-文人的科舉還在。明代把考試作風往前一步，思想的正確正統性。&lt;br&gt;
-意識形態的向心力（xian zhi)，在這樣一種情況出現一種革新。&lt;br&gt;
-放在了內心的修煉上，是儒家養氣的延續，也是禪宗的內修。 牛毛繭絲，無不辨晰，未必是對的。&lt;br&gt;
-黃宗義：明代以來都延續理學，但王陽明至良知是一個大突破。&lt;br&gt;
-在王陽明的基礎上，人人可成聖。似乎就是一種宗教。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>questions about aesthetics</title>
-      <link>http://localhost:1313/zh/questions-about-aesthetics/</link>
-      <pubDate>Tue, 28 Apr 2020 14:09:08 +0000</pubDate>
-      <guid>http://localhost:1313/zh/questions-about-aesthetics/</guid>
-      <description>&lt;p&gt;（1）什麽是“規範詩學”？你認為其對於藝術創作有什麽積極意義？&lt;br&gt;
-是一種文學規範，研究“如何寫”詩歌的問題，是從語言的角度對詩歌的創作提出了一系列形式上的規範。&lt;br&gt;
-詩歌語言不斷的鍛造與錘煉，變得更加爽朗、凝煉。“規範詩學”蘊含的變通之術，為詩人的個性抒展開啟了門戶。同時也是文學理論和文學形式上的頁獻。&lt;br&gt;
-（2）《滄浪詩話》是不是“神韻說”？正反觀點各自的依據是什麽？&lt;br&gt;
-從文中的觀點來看，不是“神韻說”。“第一義之悟”和“透徹之悟”是對同一等級詩歌的不同表述，並非各有格調、神韻之二義；“興趣”與“神韻”不是一個含義，錢鐘書所謂“詩之有神韻者……”的引用，將興趣置換成了神韻；同時“以禪喻詩”的角度來看，別字理解也有誤，實質上是“教外別傳”的“別”，“別趣”實際上是不尚義理惟在興致的趣味。嚴羽的“妙悟”主要是為了把詩的創作與參禪進行類比，並沒有把禪與詩的一切進行類比，王魚洋將“以禪喻詩”變成“字字入禪，這種說法只是王漁洋所倡導的。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>第一讲</title>
-      <link>http://localhost:1313/zh/%E7%AC%AC%E4%B8%80%E8%AE%B2/</link>
-      <pubDate>Tue, 10 Sep 2019 09:56:01 +0000</pubDate>
-      <guid>http://localhost:1313/zh/%E7%AC%AC%E4%B8%80%E8%AE%B2/</guid>
-      <description>&lt;p&gt;李茂森&lt;/p&gt;
-&lt;p&gt;[private container=”span”]ChineseEthics@gmail.com[/private]&lt;/p&gt;
-&lt;p&gt;一、经验之谈&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;The Art of Worldly Wisdom&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;五点感言： 尊德行道问学；为生活而学习；我思，故我在；我素，故我行；用心，则快乐。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>美学 on 刘其然的部落格</title><link>https://liuqiran.github.io/zh/tags/%E7%BE%8E%E5%AD%A6/</link><description>Recent content in 美学 on 刘其然的部落格</description><generator>Hugo -- 0.145.0</generator><language>zh-cn</language><lastBuildDate>Mon, 15 Jun 2020 15:04:20 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/zh/tags/%E7%BE%8E%E5%AD%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>中國美學賞析</title><link>https://liuqiran.github.io/zh/chinese-aesthetics-notes/</link><pubDate>Mon, 15 Jun 2020 15:04:20 +0000</pubDate><guid>https://liuqiran.github.io/zh/chinese-aesthetics-notes/</guid><description>&lt;p>&lt;strong>憂生和憂世&lt;/strong>&lt;/p>
+&lt;p>        憂生是人生觀、自我層面，憂世是世界觀，人間世層面。   &lt;/p>
+&lt;p>        首先是憂世，是社會性的自我實現。而憂生是進一步的追問我在這個世界怎麽實現自我，投入非政治的心態去創作。&lt;/p></description></item><item><title>中國美學史 六 文心雕龍</title><link>https://liuqiran.github.io/zh/chinese-aesthetics-6/</link><pubDate>Sun, 17 May 2020 07:06:33 +0000</pubDate><guid>https://liuqiran.github.io/zh/chinese-aesthetics-6/</guid><description>&lt;p>好好的去讀一下某一個篇章，文心雕龍注，讀的過程中要讀注释。 其實到現在已經不是美學範疇了，叶朗有些地方已經和現在不一樣了。&lt;br>
+文心雕龍的意義在於 &lt;strong>讀經典&lt;/strong> ，學識修養是重要的。美學史的意義是和前人对話，我們不可能一個個朝代的去講。&lt;br>
+未講的內容：六朝的書畫美學，更多地講文學問題。&lt;br>
+因為文字是最普遍的藝術，由文學來看美學是中國美學的一個重要特徵。文是一種創造力，畫詩書都是輔助。&lt;/p></description></item><item><title>十：明人的真性情</title><link>https://liuqiran.github.io/zh/literary-intellectuals-in-ming/</link><pubDate>Wed, 13 May 2020 02:21:18 +0000</pubDate><guid>https://liuqiran.github.io/zh/literary-intellectuals-in-ming/</guid><description>&lt;p>“真性情”是明代的主線。背後的思想基礎還是以儒家為主，佛學的狂禪與道教的觀點到了儒家之中。&lt;br>
+民間的趣向猶其的重要。&lt;br>
+與六朝和唐的真不一樣。&lt;br>
+先秦-漢 漢-宋 宋以後 分為三個階段&lt;br>
+明末有一大批儒生，是近代以來傳統文化的中介。在國家滅亡的狀態之下有更為自覺的文化意識，體現強烈的亡天下的觀念，這樣一種體會使得宋末和明末的文人……，這樣一個過程開始反思這些問題。&lt;br>
+&lt;strong>元明以降近古思想的主線：心性之學&lt;/strong>&lt;br>
+文人的科舉還在。明代把考試作風往前一步，思想的正確正統性。&lt;br>
+意識形態的向心力（xian zhi)，在這樣一種情況出現一種革新。&lt;br>
+放在了內心的修煉上，是儒家養氣的延續，也是禪宗的內修。 牛毛繭絲，無不辨晰，未必是對的。&lt;br>
+黃宗義：明代以來都延續理學，但王陽明至良知是一個大突破。&lt;br>
+在王陽明的基礎上，人人可成聖。似乎就是一種宗教。&lt;/p></description></item><item><title>questions about aesthetics</title><link>https://liuqiran.github.io/zh/questions-about-aesthetics/</link><pubDate>Tue, 28 Apr 2020 14:09:08 +0000</pubDate><guid>https://liuqiran.github.io/zh/questions-about-aesthetics/</guid><description>&lt;p>（1）什麽是“規範詩學”？你認為其對於藝術創作有什麽積極意義？&lt;br>
+是一種文學規範，研究“如何寫”詩歌的問題，是從語言的角度對詩歌的創作提出了一系列形式上的規範。&lt;br>
+詩歌語言不斷的鍛造與錘煉，變得更加爽朗、凝煉。“規範詩學”蘊含的變通之術，為詩人的個性抒展開啟了門戶。同時也是文學理論和文學形式上的頁獻。&lt;br>
+（2）《滄浪詩話》是不是“神韻說”？正反觀點各自的依據是什麽？&lt;br>
+從文中的觀點來看，不是“神韻說”。“第一義之悟”和“透徹之悟”是對同一等級詩歌的不同表述，並非各有格調、神韻之二義；“興趣”與“神韻”不是一個含義，錢鐘書所謂“詩之有神韻者……”的引用，將興趣置換成了神韻；同時“以禪喻詩”的角度來看，別字理解也有誤，實質上是“教外別傳”的“別”，“別趣”實際上是不尚義理惟在興致的趣味。嚴羽的“妙悟”主要是為了把詩的創作與參禪進行類比，並沒有把禪與詩的一切進行類比，王魚洋將“以禪喻詩”變成“字字入禪，這種說法只是王漁洋所倡導的。&lt;/p></description></item><item><title>第一讲</title><link>https://liuqiran.github.io/zh/%E7%AC%AC%E4%B8%80%E8%AE%B2/</link><pubDate>Tue, 10 Sep 2019 09:56:01 +0000</pubDate><guid>https://liuqiran.github.io/zh/%E7%AC%AC%E4%B8%80%E8%AE%B2/</guid><description>&lt;p>李茂森&lt;/p>
+&lt;p>[private container=”span”]ChineseEthics@gmail.com[/private]&lt;/p>
+&lt;p>一、经验之谈&lt;/p>
+&lt;p>&lt;em>The Art of Worldly Wisdom&lt;/em>&lt;/p>
+&lt;p>五点感言： 尊德行道问学；为生活而学习；我思，故我在；我素，故我行；用心，则快乐。&lt;/p></description></item></channel></rss>

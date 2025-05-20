@@ -1,26 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>软件 on 刘其然的部落格</title>
-    <link>http://localhost:1313/zh/tags/%E8%BD%AF%E4%BB%B6/</link>
-    <description>Recent content in 软件 on 刘其然的部落格</description>
-    <generator>Hugo -- 0.145.0</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 08 Apr 2025 06:21:57 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2017-04-20</title>
-      <link>http://localhost:1313/zh/2017-04-20/</link>
-      <pubDate>Thu, 20 Apr 2017 09:52:20 +0000</pubDate>
-      <guid>http://localhost:1313/zh/2017-04-20/</guid>
-      <description>&lt;p&gt;我喜欢看app上的统计数据，
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>软件 on 刘其然的部落格</title><link>https://liuqiran.github.io/zh/tags/%E8%BD%AF%E4%BB%B6/</link><description>Recent content in 软件 on 刘其然的部落格</description><generator>Hugo -- 0.145.0</generator><language>zh-cn</language><lastBuildDate>Thu, 20 Apr 2017 09:52:20 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/zh/tags/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>2017-04-20</title><link>https://liuqiran.github.io/zh/2017-04-20/</link><pubDate>Thu, 20 Apr 2017 09:52:20 +0000</pubDate><guid>https://liuqiran.github.io/zh/2017-04-20/</guid><description>&lt;p>我喜欢看app上的统计数据，
 比如anki的复习统计图
 quality time 的使用数据
 和习惯的打卡，
 这样我就能知道我的生活不是一成不变的
 我才能知道这些是潜移默化的积累，
 知道自己在改变与充实，
-不会太过迷茫，这是一种馈赠。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+不会太过迷茫，这是一种馈赠。&lt;/p></description></item></channel></rss>

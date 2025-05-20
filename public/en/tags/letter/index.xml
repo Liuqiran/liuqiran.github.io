@@ -1,24 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Letter on Liu Qiran</title>
-    <link>http://localhost:1313/en/tags/letter/</link>
-    <description>Recent content in Letter on Liu Qiran</description>
-    <generator>Hugo -- 0.145.0</generator>
-    <language>en-US</language>
-    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/letter/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Reply to Chris</title>
-      <link>http://localhost:1313/en/2023-02-08-reply-to-chris/</link>
-      <pubDate>Wed, 08 Feb 2023 12:31:56 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-02-08-reply-to-chris/</guid>
-      <description>&lt;p&gt;Chris:&lt;br&gt;
-I definitely know Austria.&lt;br&gt;
-You can find out more about me on my personal website. By the way, why not leave a footprint there?&lt;/p&gt;
-&lt;p&gt;It’s great that you’re interested in learning a language. It’s a long way for learning something.&lt;/p&gt;
-&lt;p&gt;Yes, it is. I’m Qiran. Nice to meet you!&lt;/p&gt;
-&lt;p&gt;Qiran&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Letter on Liu Qiran</title><link>https://liuqiran.github.io/en/tags/letter/</link><description>Recent content in Letter on Liu Qiran</description><generator>Hugo -- 0.145.0</generator><language>en-US</language><lastBuildDate>Wed, 08 Feb 2023 12:31:56 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/en/tags/letter/index.xml" rel="self" type="application/rss+xml"/><item><title>Reply to Chris</title><link>https://liuqiran.github.io/en/2023-02-08-reply-to-chris/</link><pubDate>Wed, 08 Feb 2023 12:31:56 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-02-08-reply-to-chris/</guid><description>&lt;p>Chris:&lt;br>
+I definitely know Austria.&lt;br>
+You can find out more about me on my personal website. By the way, why not leave a footprint there?&lt;/p>
+&lt;p>It’s great that you’re interested in learning a language. It’s a long way for learning something.&lt;/p>
+&lt;p>Yes, it is. I’m Qiran. Nice to meet you!&lt;/p>
+&lt;p>Qiran&lt;/p></description></item></channel></rss>
