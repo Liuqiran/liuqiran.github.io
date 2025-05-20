@@ -122,19 +122,35 @@ Tried out Mastodon, a decentralized social networking software. I think it is a 
       <link>http://localhost:1313/en/about-me/</link>
       <pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate>
       <guid>http://localhost:1313/en/about-me/</guid>
-      <description>&lt;p&gt;Hello! 👋  I hope to connect to the world and meet more friends. :）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Basic info:&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Hello! 👋, This is Qiran. I hope to connect to the world and meet more friends. :）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ℹ️ Basic info:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Surname: LIU&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Firstname: Qiran&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Age: Gen Z&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;Hometown: &lt;a href=&#34;https://en.wikipedia.org/wiki/Hunan&#34;&gt;Hunan&lt;/a&gt;, China.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Personality type: &lt;a href=&#34;https://www.16personalities.com/infp-personality]&#34;&gt;INFP&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;🖥️ About this site&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Site’s birthday: Feb 9, 2019&lt;/li&gt;
 &lt;li&gt;Writing is supposed to be an essential part of life. Organizing one’s words and works in the form of a blog is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this blog to record myself and share my thoughts, articles and works. ：)&lt;/li&gt;
 &lt;li&gt;This site has joined the &lt;a href=&#34;https://foreverblog.cn/&#34;&gt;Ten-year Contract activities
 &lt;/a&gt;(that is, from joining this activity, our blog will not be closed for ten years, to maintain the update and vitality!)&lt;/li&gt;
-&lt;li&gt;⚠️The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the &lt;a href=&#34;../../../zh/&#34;&gt;Chinese site&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../en/tags/building-site/&#34;&gt;About this blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the &lt;a href=&#34;../../../zh/&#34;&gt;Chinese site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../en/tags/building-site/&#34;&gt;Building site log&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Footprints:&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;📈 Writing Heatmap&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

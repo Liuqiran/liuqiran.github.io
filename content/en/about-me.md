@@ -4,14 +4,10 @@ author: Qiran
 type: post
 date: 2019-02-09T03:14:24+00:00
 aliases: ["/en/about-me-2/"]
-views:
-  - 4
-wp_last_modified_info:
-  - 2019-04-16 @ 6:29 AM
 tags:
   - Building Site
 ---
-Hello! 👋  I hope to connect to the world and meet more friends. :）
+Hello! 👋, This is Qiran. I hope to connect to the world and meet more friends. :）
 
 **ℹ️ Basic info:**
 
@@ -33,6 +29,9 @@ Hello! 👋  I hope to connect to the world and meet more friends. :）
   ](https://foreverblog.cn/)(that is, from joining this activity, our blog will not be closed for ten years, to maintain the update and vitality!)
 - ⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the [Chinese site](/zh/).
 - [Building site log][1]
+
+📈 Writing Heatmap   
+
 
 **👣 Footprints:**
 
