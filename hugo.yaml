@@ -186,6 +186,8 @@ outputFormats:
 params:  
   css: ["css/custom.css"]
   enableGitInfo: true
+  ShowLastMod: true
+  ShowLastModOnlyIfDiff: true
   author : "Qiran" 
   ShowShareButtons: true
   ShareButtons: ["linkedin","x","facebook","telegram","bilibili"]

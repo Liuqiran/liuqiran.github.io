@@ -1,60 +1,157 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Building Site on Liu Qiran</title><link>https://liuqiran.github.io/en/tags/building-site/</link><description>Recent content in Building Site on Liu Qiran</description><generator>Hugo -- 0.145.0</generator><language>en-US</language><lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/en/tags/building-site/index.xml" rel="self" type="application/rss+xml"/><item><title>Migrated to Hugo</title><link>https://liuqiran.github.io/en/2025-01-07-migrated-to-hugo/</link><pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate><guid>https://liuqiran.github.io/en/2025-01-07-migrated-to-hugo/</guid><description>&lt;p>After several days of painstaking work, I finally moved from WordPress to Hugo.&lt;/p>
-&lt;p>Due to the fact that my server is very slow, I think I can focus on writing offline and concentrate on content, rather than adjusting features.&lt;/p>
-&lt;p>There are many features that I find unnecessary, such as commentator ranking. The tree map of categories is also not that useful, because it’s hard to maintain the database. After switching to Hugo to manage my &lt;em>posts&lt;/em>, I can organize them more easily.&lt;/p></description></item><item><title>EP 9 Technical breakdown</title><link>https://liuqiran.github.io/en/2023-06-13-ep-9-technical-breakdown/</link><pubDate>Tue, 13 Jun 2023 14:52:24 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-06-13-ep-9-technical-breakdown/</guid><description>&lt;p>Last week I went through a serious problem of my server, on which my website runs.&lt;br>
-It started with the problem of the version of PHP. The edition of the current PHP is very old and it couldn’t support the running of some plugins. Then I tried to install a new version of PHP, but it didn’t work. When I tried to uninstall the old version, the server crashed and could not be restarted due to an error called “kernel panic”.&lt;br>
-I’ve done my best to fix it myself until midnight. It’s useless. I could only ask other people for help. The technical staff couldn’t solve it either, but they helped me to backup the data. It’s a very tedious experience and I could restore my server after several days. Finally, I used the backup data and restored my website.&lt;/p></description></item><item><title>Change the title</title><link>https://liuqiran.github.io/en/2023-02-28-change-the-title/</link><pubDate>Tue, 28 Feb 2023 12:53:54 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-02-28-change-the-title/</guid><description>&lt;p>Changed the title of the English website.&lt;/p></description></item><item><title>Update home page</title><link>https://liuqiran.github.io/en/2023-02-08-update-home-page/</link><pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-02-08-update-home-page/</guid><description>&lt;p>Added progress bars and more social icons for home page.&lt;/p>
-&lt;p>Added the feature which can share posts on Mastodon.&lt;/p></description></item><item><title>Separation</title><link>https://liuqiran.github.io/en/2022-08-04-separation/</link><pubDate>Thu, 04 Aug 2022 15:37:39 +0000</pubDate><guid>https://liuqiran.github.io/en/2022-08-04-separation/</guid><description>&lt;p>Totally separated my blog into two subsites– English site and Chinese site. It’s more convenient for viewers to choose their familiar language.&lt;/p>
-&lt;p>Added the language switcher menu.&lt;/p></description></item><item><title>Mastodon</title><link>https://liuqiran.github.io/en/2021-02-20-mastodon/</link><pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate><guid>https://liuqiran.github.io/en/2021-02-20-mastodon/</guid><description>&lt;p>Removed some plugins from my blog. &lt;s>Added options for foreign languages&lt;/s>.&lt;br>
-Added the Mastodon icon and removed the YouTube icon.&lt;br>
-Tried out Mastodon, a decentralized social networking software. I think it is a good alternative to Twitter.&lt;/p></description></item><item><title>Delete “like”</title><link>https://liuqiran.github.io/en/2020-09-23-delete-like/</link><pubDate>Wed, 23 Sep 2020 05:41:08 +0000</pubDate><guid>https://liuqiran.github.io/en/2020-09-23-delete-like/</guid><description>&lt;p>Reference: &lt;em>&lt;a href="https://www.liuqiran.com/2020/08/12/dont-click-like/">Don’t Click “Like”&lt;/a>&lt;/em>&lt;/p></description></item><item><title>Chinese conversion</title><link>https://liuqiran.github.io/en/2020-04-03-chinese-conversion/</link><pubDate>Fri, 03 Apr 2020 13:13:35 +0000</pubDate><guid>https://liuqiran.github.io/en/2020-04-03-chinese-conversion/</guid><description>&lt;p>已開啓中文繁簡轉換和關键詞搜索轉換功能，感謝&lt;a href="https://wordpress.org/support/plugin/wp-chinese-conversion/reviews/">WP Chinese Conversion&lt;/a>插件作者。&lt;/p></description></item><item><title>RSS Feed</title><link>https://liuqiran.github.io/en/rss/</link><pubDate>Sun, 29 Sep 2019 09:00:50 +0000</pubDate><guid>https://liuqiran.github.io/en/rss/</guid><description>&lt;p>&lt;a href="../../../en/index.xml">English Site &lt;/a>&lt;/p>
-&lt;p>&lt;a href="../../../zh/index.xml">Chinese Site&lt;/a>&lt;/p></description></item><item><title>My friends</title><link>https://liuqiran.github.io/en/my-friends/</link><pubDate>Tue, 09 Jul 2019 07:51:36 +0000</pubDate><guid>https://liuqiran.github.io/en/my-friends/</guid><description>&lt;p class="has-contrast-color has-primary-background-color has-text-color has-background">
- “If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”
-&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://blog.dylanwu.space/">Dylan Wu&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://imzm.im">陈仓颉&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://yir.me">YIR&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fspark.me">FSpark&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">&lt;del>Broca-Phenol&lt;/del>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://springwood.me/">沉舟侧畔&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://bkryofu.xyz/">非科学のカッ�&amp;hellip;&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://pewae.com">大致&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://osmh.net">OSMH&lt;/a>&lt;/li>
-&lt;li>&lt;del>&lt;a href="">青山&lt;/a>&lt;/del>&lt;/li>
-&lt;li>&lt;a href="http://dreamendy.com">Dreamendy&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://www.cxwblog.com">梅塔特隆立方&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://blog.moekira.com">Kira&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://kqh.me">kqh&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.yanshihua.com/">Mars&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://minuo.me">minuo&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.xinshijiededa.men/">新世界的大门&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Categorize my blog</title><link>https://liuqiran.github.io/en/2019-06-23-categorize-my-blog/</link><pubDate>Sun, 23 Jun 2019 02:26:48 +0000</pubDate><guid>https://liuqiran.github.io/en/2019-06-23-categorize-my-blog/</guid><description>&lt;p>The most important decision is &lt;a href="https://www.liuqiran.com/index.php/2019/05/22/category/">changing categories&lt;/a>. so I think it is also important to categorize my writings, I improved the classification of my categories in my blog. I can read and found my writing through multi-level categories, classify them and reflect efficiently. I also can discover everything I wrote before through categories, like time traveling, know myself.&lt;/p></description></item><item><title>👤 About me</title><link>https://liuqiran.github.io/en/about-me/</link><pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate><guid>https://liuqiran.github.io/en/about-me/</guid><description>&lt;p>Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）&lt;/p>
-&lt;div class="profile-section">
-&lt;div class="profile-text">
-&lt;p>&lt;strong>ℹ️ Basic Info:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Surname:&lt;/strong> LIU&lt;/li>
-&lt;li>&lt;strong>First Name:&lt;/strong> Qiran&lt;/li>
-&lt;li>&lt;strong>Gender:&lt;/strong> ♂️&lt;/li>
-&lt;li>&lt;strong>Generation:&lt;/strong> Gen Z&lt;/li>
-&lt;li>&lt;strong>Hometown:&lt;/strong> &lt;a href="https://en.wikipedia.org/wiki/Hunan" target="_blank">Hunan&lt;/a>, 🇨🇳&lt;/li>
-&lt;li>&lt;strong>Personality Type:&lt;/strong> &lt;a href="https://www.16personalities.com/infp-personality" target="_blank">INFP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="profile-image">
-&lt;img src="../../../img/2014-03-25-selfie.jpg" alt="Qiran's selfie at age 16">
-&lt;center>&lt;p class="caption">When I was 16&lt;/p>&lt;/center>
-&lt;/div>
-&lt;/div>
-&lt;p>&lt;strong>🖥️ About this site&lt;/strong>:&lt;/p>
-&lt;ul>
-&lt;li>Site’s birthday: Feb 9, 2019&lt;/li>
-&lt;li>Writing is supposed to be an essential part of life. Organizing one’s words and works in the form of a site is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this site to record myself and share my thoughts, articles and works. ：)&lt;/li>
-&lt;li>This site has joined the &lt;a href="https://foreverblog.cn/">Ten-year Contract activities
-&lt;/a>(that is, from joining this activity, our site will not be closed for ten years, to maintain the update and vitality!)&lt;/li>
-&lt;li>This site is hosted on GitHub, with the alternate URL &lt;a href="liuqiran.github.io">liuqiran.github.io&lt;/a>.
-(It means that this site can exist for a long time!)&lt;/li>
-&lt;li>⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the &lt;a href="../../../zh/">Chinese site&lt;/a>.&lt;/li>
-&lt;li>&lt;a href="../../../en/tags/building-site/">Building site log&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;a href="../../../en/reading-list/">&lt;strong>📚 Reading list&lt;/strong>&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Building Site on Liu Qiran</title>
+    <link>http://localhost:1313/en/tags/building-site/</link>
+    <description>Recent content in Building Site on Liu Qiran</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 20 May 2025 18:29:51 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/building-site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrated to Hugo</title>
+      <link>http://localhost:1313/en/2025-01-07-migrated-to-hugo/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/2025-01-07-migrated-to-hugo/</guid>
+      <description>&lt;p&gt;After several days of painstaking work, I finally moved from WordPress to Hugo.&lt;/p&gt;
+&lt;p&gt;Due to the fact that my server is very slow, I think I can focus on writing offline and concentrate on content, rather than adjusting features.&lt;/p&gt;
+&lt;p&gt;There are many features that I find unnecessary, such as commentator ranking. The tree map of categories is also not that useful, because it’s hard to maintain the database. After switching to Hugo to manage my &lt;em&gt;posts&lt;/em&gt;, I can organize them more easily.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EP 9 Technical breakdown</title>
+      <link>http://localhost:1313/en/2023-06-13-ep-9-technical-breakdown/</link>
+      <pubDate>Tue, 13 Jun 2023 14:52:24 +0000</pubDate>
+      <guid>http://localhost:1313/en/2023-06-13-ep-9-technical-breakdown/</guid>
+      <description>&lt;p&gt;Last week I went through a serious problem of my server, on which my website runs.&lt;br&gt;
+It started with the problem of the version of PHP. The edition of the current PHP is very old and it couldn’t support the running of some plugins. Then I tried to install a new version of PHP, but it didn’t work. When I tried to uninstall the old version, the server crashed and could not be restarted due to an error called “kernel panic”.&lt;br&gt;
+I’ve done my best to fix it myself until midnight. It’s useless. I could only ask other people for help. The technical staff couldn’t solve it either, but they helped me to backup the data. It’s a very tedious experience and I could restore my server after several days. Finally, I used the backup data and restored my website.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Change the title</title>
+      <link>http://localhost:1313/en/2023-02-28-change-the-title/</link>
+      <pubDate>Tue, 28 Feb 2023 12:53:54 +0000</pubDate>
+      <guid>http://localhost:1313/en/2023-02-28-change-the-title/</guid>
+      <description>&lt;p&gt;Changed the title of the English website.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Update home page</title>
+      <link>http://localhost:1313/en/2023-02-08-update-home-page/</link>
+      <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
+      <guid>http://localhost:1313/en/2023-02-08-update-home-page/</guid>
+      <description>&lt;p&gt;Added progress bars and more social icons for home page.&lt;/p&gt;
+&lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Separation</title>
+      <link>http://localhost:1313/en/2022-08-04-separation/</link>
+      <pubDate>Thu, 04 Aug 2022 15:37:39 +0000</pubDate>
+      <guid>http://localhost:1313/en/2022-08-04-separation/</guid>
+      <description>&lt;p&gt;Totally separated my blog into two subsites– English site and Chinese site. It’s more convenient for viewers to choose their familiar language.&lt;/p&gt;
+&lt;p&gt;Added the language switcher menu.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mastodon</title>
+      <link>http://localhost:1313/en/2021-02-20-mastodon/</link>
+      <pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate>
+      <guid>http://localhost:1313/en/2021-02-20-mastodon/</guid>
+      <description>&lt;p&gt;Removed some plugins from my blog. &lt;s&gt;Added options for foreign languages&lt;/s&gt;.&lt;br&gt;
+Added the Mastodon icon and removed the YouTube icon.&lt;br&gt;
+Tried out Mastodon, a decentralized social networking software. I think it is a good alternative to Twitter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Delete “like”</title>
+      <link>http://localhost:1313/en/2020-09-23-delete-like/</link>
+      <pubDate>Wed, 23 Sep 2020 05:41:08 +0000</pubDate>
+      <guid>http://localhost:1313/en/2020-09-23-delete-like/</guid>
+      <description>&lt;p&gt;Reference: &lt;em&gt;&lt;a href=&#34;https://www.liuqiran.com/2020/08/12/dont-click-like/&#34;&gt;Don’t Click “Like”&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chinese conversion</title>
+      <link>http://localhost:1313/en/2020-04-03-chinese-conversion/</link>
+      <pubDate>Fri, 03 Apr 2020 13:13:35 +0000</pubDate>
+      <guid>http://localhost:1313/en/2020-04-03-chinese-conversion/</guid>
+      <description>&lt;p&gt;已開啓中文繁簡轉換和關键詞搜索轉換功能，感謝&lt;a href=&#34;https://wordpress.org/support/plugin/wp-chinese-conversion/reviews/&#34;&gt;WP Chinese Conversion&lt;/a&gt;插件作者。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RSS Feed</title>
+      <link>http://localhost:1313/en/rss/</link>
+      <pubDate>Sun, 29 Sep 2019 09:00:50 +0000</pubDate>
+      <guid>http://localhost:1313/en/rss/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;../../../en/index.xml&#34;&gt;English Site &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../../zh/index.xml&#34;&gt;Chinese Site&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My friends</title>
+      <link>http://localhost:1313/en/my-friends/</link>
+      <pubDate>Tue, 09 Jul 2019 07:51:36 +0000</pubDate>
+      <guid>http://localhost:1313/en/my-friends/</guid>
+      <description>&lt;p class=&#34;has-contrast-color has-primary-background-color has-text-color has-background&#34;&gt;
+   “If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”
+&lt;/p&gt;
+
+
+  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.dylanwu.space/&#34;&gt;Dylan Wu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://imzm.im&#34;&gt;陈仓颉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yir.me&#34;&gt;YIR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fspark.me&#34;&gt;FSpark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;del&gt;Broca-Phenol&lt;/del&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://springwood.me/&#34;&gt;沉舟侧畔&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bkryofu.xyz/&#34;&gt;非科学のカッ�&amp;hellip;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pewae.com&#34;&gt;大致&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://osmh.net&#34;&gt;OSMH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;&#34;&gt;青山&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dreamendy.com&#34;&gt;Dreamendy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cxwblog.com&#34;&gt;梅塔特隆立方&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.moekira.com&#34;&gt;Kira&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kqh.me&#34;&gt;kqh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.yanshihua.com/&#34;&gt;Mars&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://minuo.me&#34;&gt;minuo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.xinshijiededa.men/&#34;&gt;新世界的大门&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Categorize my blog</title>
+      <link>http://localhost:1313/en/2019-06-23-categorize-my-blog/</link>
+      <pubDate>Sun, 23 Jun 2019 02:26:48 +0000</pubDate>
+      <guid>http://localhost:1313/en/2019-06-23-categorize-my-blog/</guid>
+      <description>&lt;p&gt;The most important decision is &lt;a href=&#34;https://www.liuqiran.com/index.php/2019/05/22/category/&#34;&gt;changing categories&lt;/a&gt;. so I think it is also important to categorize my writings, I improved the classification of my categories in my blog. I can read and found my writing through multi-level categories, classify them and reflect efficiently. I also can discover everything I wrote before through categories, like time traveling, know myself.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>👤 About me</title>
+      <link>http://localhost:1313/en/about-me/</link>
+      <pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate>
+      <guid>http://localhost:1313/en/about-me/</guid>
+      <description>&lt;p&gt;Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）&lt;/p&gt;
+&lt;div class=&#34;profile-section&#34;&gt;
+  &lt;div class=&#34;profile-text&#34;&gt;
+    &lt;p&gt;&lt;strong&gt;ℹ️ Basic Info:&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Surname:&lt;/strong&gt; LIU&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;First Name:&lt;/strong&gt; Qiran&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Gender:&lt;/strong&gt; ♂️&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Generation:&lt;/strong&gt; Gen Z&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Hometown:&lt;/strong&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Hunan&#34; target=&#34;_blank&#34;&gt;Hunan&lt;/a&gt;, 🇨🇳&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Personality Type:&lt;/strong&gt; &lt;a href=&#34;https://www.16personalities.com/infp-personality&#34; target=&#34;_blank&#34;&gt;INFP&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;profile-image&#34;&gt;
+    &lt;img src=&#34;../../../img/2014-03-25-selfie.jpg&#34; alt=&#34;Qiran&#39;s selfie at age 16&#34;&gt;
+    &lt;center&gt;&lt;p class=&#34;caption&#34;&gt;When I was 16&lt;/p&gt;&lt;/center&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;🖥️ About this site&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Site’s birthday: Feb 9, 2019&lt;/li&gt;
+&lt;li&gt;Writing is supposed to be an essential part of life. Organizing one’s words and works in the form of a site is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this site to record myself and share my thoughts, articles and works. ：)&lt;/li&gt;
+&lt;li&gt;This site has joined the &lt;a href=&#34;https://foreverblog.cn/&#34;&gt;Ten-year Contract activities
+&lt;/a&gt;(that is, from joining this activity, our site will not be closed for ten years, to maintain the update and vitality!)&lt;/li&gt;
+&lt;li&gt;This site is hosted on GitHub, with the alternate URL &lt;a href=&#34;liuqiran.github.io&#34;&gt;liuqiran.github.io&lt;/a&gt;.
+(It means that this site can exist for a long time!)&lt;/li&gt;
+&lt;li&gt;⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the &lt;a href=&#34;../../../zh/&#34;&gt;Chinese site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../en/tags/building-site/&#34;&gt;Building site log&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;../../../en/reading-list/&#34;&gt;&lt;strong&gt;📚 Reading list&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

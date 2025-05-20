@@ -1,12 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Internet on Liu Qiran</title><link>https://liuqiran.github.io/en/tags/internet/</link><description>Recent content in Internet on Liu Qiran</description><generator>Hugo -- 0.145.0</generator><language>en-US</language><lastBuildDate>Tue, 28 Mar 2023 11:18:08 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/en/tags/internet/index.xml" rel="self" type="application/rss+xml"/><item><title>Stickers</title><link>https://liuqiran.github.io/en/2023-03-28-stickers/</link><pubDate>Tue, 28 Mar 2023 11:18:08 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-03-28-stickers/</guid><description>&lt;p>Why do I no longer use stickers? For me, the use of stickers distorts the understanding of others. I don’t think it’s an effective or appropriate way to communicate with others online. The Internet is already full of entertaining and useless information. Using stickers will make this situation worse. Using words is enough to convey accurate information. Although without stickers, some people will think that it will feel that there is no emotion. But the truth is that the Internet cannot emulate the real conversation. Calling and talking face to face may be a better way for communication.&lt;/p></description></item><item><title>Update home page</title><link>https://liuqiran.github.io/en/2023-02-08-update-home-page/</link><pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-02-08-update-home-page/</guid><description>&lt;p>Added progress bars and more social icons for home page.&lt;/p>
-&lt;p>Added the feature which can share posts on Mastodon.&lt;/p></description></item><item><title>Z-library in Nov. 2022</title><link>https://liuqiran.github.io/en/2022-11-04-z-library-in-nov-2022/</link><pubDate>Fri, 04 Nov 2022 02:49:11 +0000</pubDate><guid>https://liuqiran.github.io/en/2022-11-04-z-library-in-nov-2022/</guid><description>&lt;figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter">
-&lt;div class="wp-block-embed__wrapper">
-&lt;blockquote class="twitter-tweet" data-width="550" data-dnt="true">
-&lt;p lang="zh" dir="ltr">
-完蛋了，全世界最大的电子图书馆被 ban 。&lt;br />&lt;br />全世界最大的电子图书馆 z-lib 被美国警方查封，目前官方所有网址均无法访问。&lt;a href="https://twitter.com/hashtag/zlibrary?src=hash&amp;ref_src=twsrc%5Etfw">#zlibrary&lt;/a> &lt;a href="https://t.co/AyebO3xbK8">pic.twitter.com/AyebO3xbK8&lt;/a>
-&lt;/p>&amp;mdash; Bruce 小胡同学 𝕏 (@huhexian)
-&lt;pre>&lt;code>&amp;lt;a href=&amp;quot;https://twitter.com/huhexian/status/1588350395818311680?ref_src=twsrc%5Etfw&amp;quot;&amp;gt;November 4, 2022&amp;lt;/a&amp;gt;
-&lt;/code>&lt;/pre>
-&lt;/blockquote>
-&lt;/div>&lt;figcaption>Z-library&lt;/figcaption>&lt;/figure>
-&lt;p>&lt;a href="">&lt;/a>The official URL of Z-library is down.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Internet on Liu Qiran</title>
+    <link>http://localhost:1313/en/tags/internet/</link>
+    <description>Recent content in Internet on Liu Qiran</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stickers</title>
+      <link>http://localhost:1313/en/2023-03-28-stickers/</link>
+      <pubDate>Tue, 28 Mar 2023 11:18:08 +0000</pubDate>
+      <guid>http://localhost:1313/en/2023-03-28-stickers/</guid>
+      <description>&lt;p&gt;Why do I no longer use stickers? For me, the use of stickers distorts the understanding of others. I don’t think it’s an effective or appropriate way to communicate with others online. The Internet is already full of entertaining and useless information. Using stickers will make this situation worse. Using words is enough to convey accurate information. Although without stickers, some people will think that it will feel that there is no emotion. But the truth is that the Internet cannot emulate the real conversation. Calling and talking face to face may be a better way for communication.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Update home page</title>
+      <link>http://localhost:1313/en/2023-02-08-update-home-page/</link>
+      <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
+      <guid>http://localhost:1313/en/2023-02-08-update-home-page/</guid>
+      <description>&lt;p&gt;Added progress bars and more social icons for home page.&lt;/p&gt;
+&lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Z-library in Nov. 2022</title>
+      <link>http://localhost:1313/en/2022-11-04-z-library-in-nov-2022/</link>
+      <pubDate>Fri, 04 Nov 2022 02:49:11 +0000</pubDate>
+      <guid>http://localhost:1313/en/2022-11-04-z-library-in-nov-2022/</guid>
+      <description>&lt;figure class=&#34;wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter&#34;&gt;
+&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
+  &lt;blockquote class=&#34;twitter-tweet&#34; data-width=&#34;550&#34; data-dnt=&#34;true&#34;&gt;
+    &lt;p lang=&#34;zh&#34; dir=&#34;ltr&#34;&gt;
+      完蛋了，全世界最大的电子图书馆被 ban 。&lt;br /&gt;&lt;br /&gt;全世界最大的电子图书馆 z-lib 被美国警方查封，目前官方所有网址均无法访问。&lt;a href=&#34;https://twitter.com/hashtag/zlibrary?src=hash&amp;ref_src=twsrc%5Etfw&#34;&gt;#zlibrary&lt;/a&gt; &lt;a href=&#34;https://t.co/AyebO3xbK8&#34;&gt;pic.twitter.com/AyebO3xbK8&lt;/a&gt;
+    &lt;/p&gt;&amp;mdash; Bruce 小胡同学 𝕏 (@huhexian) 
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://twitter.com/huhexian/status/1588350395818311680?ref_src=twsrc%5Etfw&amp;quot;&amp;gt;November 4, 2022&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/blockquote&gt;
+&lt;/div&gt;&lt;figcaption&gt;Z-library&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;The official URL of Z-library is down.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

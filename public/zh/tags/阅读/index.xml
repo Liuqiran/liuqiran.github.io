@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>阅读 on 刘其然的部落格</title><link>https://liuqiran.github.io/zh/tags/%E9%98%85%E8%AF%BB/</link><description>Recent content in 阅读 on 刘其然的部落格</description><generator>Hugo -- 0.145.0</generator><language>zh-cn</language><lastBuildDate>Fri, 29 Mar 2019 09:34:15 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/zh/tags/%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml"/><item><title>《共产党宣言》阅读笔记</title><link>https://liuqiran.github.io/zh/manifesto-notes/</link><pubDate>Fri, 29 Mar 2019 09:34:15 +0000</pubDate><guid>https://liuqiran.github.io/zh/manifesto-notes/</guid><description>&lt;p>《共产党宣言》作为一百多年前共产主义经典的代表文献，指引和推动了共产主义运动的发展并对世界产生了非常深远的影响，对如今的时代也是有借鉴意义的。在阅读了《共产党宣言》以后，我有一些自己的思考和想法。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>阅读 on 刘其然的部落格</title>
+    <link>http://localhost:1313/zh/tags/%E9%98%85%E8%AF%BB/</link>
+    <description>Recent content in 阅读 on 刘其然的部落格</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/tags/%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《共产党宣言》阅读笔记</title>
+      <link>http://localhost:1313/zh/manifesto-notes/</link>
+      <pubDate>Fri, 29 Mar 2019 09:34:15 +0000</pubDate>
+      <guid>http://localhost:1313/zh/manifesto-notes/</guid>
+      <description>&lt;p&gt;《共产党宣言》作为一百多年前共产主义经典的代表文献，指引和推动了共产主义运动的发展并对世界产生了非常深远的影响，对如今的时代也是有借鉴意义的。在阅读了《共产党宣言》以后，我有一些自己的思考和想法。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

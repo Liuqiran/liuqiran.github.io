@@ -1,50 +1,161 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>建站 on 刘其然的部落格</title><link>https://liuqiran.github.io/zh/tags/%E5%BB%BA%E7%AB%99/</link><description>Recent content in 建站 on 刘其然的部落格</description><generator>Hugo -- 0.145.0</generator><language>zh-cn</language><lastBuildDate>Fri, 10 Feb 2023 14:31:32 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/zh/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>更新了 RSS 订阅地址</title><link>https://liuqiran.github.io/zh/updated-rss-feed-url/</link><pubDate>Fri, 10 Feb 2023 14:31:32 +0000</pubDate><guid>https://liuqiran.github.io/zh/updated-rss-feed-url/</guid><description>&lt;p>&lt;a rel="noreferrer noopener" href="https://www.liuqiran.com/zh/feed" target="_blank">中文站&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://www.liuqiran.com/feed" target="_blank" rel="noreferrer noopener">英文站&lt;/a>&lt;/p>
-&lt;p>（可能无法两个站点都照顾到，建议全部订阅）&lt;/p></description></item><item><title>重新整理版面</title><link>https://liuqiran.github.io/zh/reorganize-home-page/</link><pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate><guid>https://liuqiran.github.io/zh/reorganize-home-page/</guid><description>&lt;p class="has-primary-background-color has-background">
-我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了……
-&lt;/p>
-&lt;p>最近发现许多功能已经失效了，花了很长时间才修复好，不然这里已经长草了。&lt;/p></description></item><item><title>创建电报频道</title><link>https://liuqiran.github.io/zh/created-telegram-channel/</link><pubDate>Wed, 08 Feb 2023 10:12:49 +0000</pubDate><guid>https://liuqiran.github.io/zh/created-telegram-channel/</guid><description>&lt;p>尝试开通了一下&lt;a rel="noreferrer noopener" href="https://t.me/qiranschannel" target="_blank">电报频道&lt;/a>。&lt;br>
-发现电报创建频道非常快捷，向他人广播也非常快。&lt;br>
-最重要的是平台是开放的，添加机器人功能之后可以自动将个人网站的动态同步到频道当中。&lt;/p></description></item><item><title>Updated domain name 更新域名</title><link>https://liuqiran.github.io/zh/updated-domain-name/</link><pubDate>Tue, 08 Jun 2021 08:06:09 +0000</pubDate><guid>https://liuqiran.github.io/zh/updated-domain-name/</guid><description>&lt;p>aiweikai.top → &lt;a href="http://liuqiran.com">liuqiran.com&lt;/a>&lt;/p></description></item><item><title>长毛象</title><link>https://liuqiran.github.io/zh/mastodon-button/</link><pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate><guid>https://liuqiran.github.io/zh/mastodon-button/</guid><description>&lt;p>添加长毛按钮。&lt;/p></description></item><item><title>Change categories</title><link>https://liuqiran.github.io/zh/change-categories/</link><pubDate>Mon, 18 Jan 2021 10:13:15 +0000</pubDate><guid>https://liuqiran.github.io/zh/change-categories/</guid><description>&lt;p>因为这几个月自己不在公开的部落格上更新。这两天才发现博客域名已经过期了，不得已暂时更换域名。&lt;/p>
-&lt;p>在翻看的文章的时候发现许多内容根本没有发布。同时，感到标签页面逐渐变得杂乱而难以维护。我觉得将文章分层归类是很失败的一件事。&lt;/p></description></item><item><title>添加按鈕</title><link>https://liuqiran.github.io/zh/add-button/</link><pubDate>Thu, 14 May 2020 23:42:07 +0000</pubDate><guid>https://liuqiran.github.io/zh/add-button/</guid><description>&lt;p>文章鏈接去除“index.php”。&lt;br>
-添加分享按鈕和Wordpress.com社區喜歡按鈕。&lt;/p>
-&lt;p>添加&lt;a href="http://foreverblog.cn" target="_blank" rel="noreferrer noopener">十年之約&lt;/a>標識：&lt;/p>
-&lt;p>&lt;a href="https://www.foreverblog.cn/" target="_blank" rel="noopener noreferrer">&lt;img decoding="async" src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;" /> &lt;/a>&lt;/p></description></item><item><title>重新开放部落格</title><link>https://liuqiran.github.io/zh/reopen-my-blog/</link><pubDate>Sun, 17 Nov 2019 09:42:34 +0000</pubDate><guid>https://liuqiran.github.io/zh/reopen-my-blog/</guid><description>&lt;p>&lt;a href="https://www.liuqiran.com/index.php/2019/10/30/lock-my-blog/">关闭部落格&lt;/a>已经半个月了.&lt;/p>
-&lt;p>在这段时间里,我将原来的博文全部搬运到了以blog开头的私密站点，之后将大这里的大部分博文都删除了。&lt;/p>
-&lt;p>学习是本来就是孤独的，但人还是需要交流，经历过一段时间的低谷期后,我决定重新开放部落格.&lt;/p></description></item><item><title>关闭部落格</title><link>https://liuqiran.github.io/zh/lock-my-blog/</link><pubDate>Wed, 30 Oct 2019 07:27:32 +0000</pubDate><guid>https://liuqiran.github.io/zh/lock-my-blog/</guid><description>&lt;p class="has-white-color has-primary-background-color has-text-color has-background">
-距部落格建立到现在已经9个月了。
-&lt;/p>
-&lt;p>我发现现在不仅没有多少人来关注，我也没有继续写的动力。那么，我还是否有必要再开放博客呢？我建站的初衷是否真的是为了分享，还是希望获得别人的关注，还是一时的新鲜感？我建站的初衷是什么？&lt;/p></description></item><item><title>RSS 订阅</title><link>https://liuqiran.github.io/zh/rss-2/</link><pubDate>Sun, 29 Sep 2019 09:00:50 +0000</pubDate><guid>https://liuqiran.github.io/zh/rss-2/</guid><description>&lt;p>&lt;a href="../../../zh/index.xml">中文站&lt;/a>&lt;/p>
-&lt;p>&lt;a href="../../../en/index.xml">英文站&lt;/a>&lt;/p>
-&lt;p>（可能无法两个站点都照顾到，建议全部订阅）&lt;/p></description></item><item><title>友人</title><link>https://liuqiran.github.io/zh/my-friends/</link><pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate><guid>https://liuqiran.github.io/zh/my-friends/</guid><description>&lt;blockquote>
-&lt;p>“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）&lt;/p>&lt;/blockquote>
-&lt;ul>
-&lt;li>&lt;a href="https://blog.dylanwu.space/">Dylan Wu&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://imzm.im">陈仓颉&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://yir.me">YIR&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fspark.me">FSpark&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">&lt;del>Broca-Phenol&lt;/del>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://springwood.me/">沉舟侧畔&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://bkryofu.xyz/">非科学のカッ�&amp;hellip;&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://pewae.com">大致&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://osmh.net">OSMH&lt;/a>&lt;/li>
-&lt;li>&lt;del>&lt;a href="">青山&lt;/a>&lt;/del>&lt;/li>
-&lt;li>&lt;a href="http://dreamendy.com">Dreamendy&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://www.cxwblog.com">梅塔特隆立方&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://blog.moekira.com">Kira&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://kqh.me">kqh&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.yanshihua.com/">Mars&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://minuo.me">minuo&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.xinshijiededa.men/">新世界的大门&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>发布至部落格</title><link>https://liuqiran.github.io/zh/post-to-my-blog/</link><pubDate>Sat, 04 May 2019 06:46:58 +0000</pubDate><guid>https://liuqiran.github.io/zh/post-to-my-blog/</guid><description>&lt;p class="has-primary-background-color has-background">
-从今天开始，我的笔记和日记都到这里来写了。
-&lt;/p>
-&lt;p>如果有一些值得分享的东西，我会将我的日记公开，我的英语还不够好，希望大家能够指出我语法和语言上的问题。：P&lt;/p></description></item><item><title>建站有感</title><link>https://liuqiran.github.io/zh/%E3%80%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%91%E6%88%91%E6%90%AD%E5%BB%BA%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><pubDate>Sat, 09 Feb 2019 03:37:23 +0000</pubDate><guid>https://liuqiran.github.io/zh/%E3%80%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%91%E6%88%91%E6%90%AD%E5%BB%BA%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid><description>&lt;p>之前写了一篇关于社交媒体的文章，不知不觉，我发现我逐渐被各种动态绑架了，每当我在上面发表一些东西，又想多次打开这些应用看收到了什么消息，除了喜欢刷别人的动态，也心怀期待自己的动态能收到回复、点赞，py个头条什么的，连学习软件也都在做社交。所有的应用都在做社交，酷安也不例外。&lt;br>
-虽然说这能看做是一种趋势，人与人的连接变得更为方便快捷，但是碎片化的社交媒体还是有很多负面影响的。最主要的是持续不断的信息流，推送一些刺激你眼球和兴趣的东西，让你可以一直不断的刷下去，看似收获了不少，其实什么都没有学到。如果沉迷于其中，那这些就是精神的麻醉剂。&lt;br>
-我一直想做点什么，因此我在去年6月强迫自己关闭了朋友圈。朋友圈是熟人分享自己光鲜靓丽的地方，我没有什么光鲜靓丽的东西可以炫耀的，并且我发现我的朋友圈广告越来越多，而且刷多了会变得颓废，那索性就不刷了，尽量多学习，给他人分享有价值的东西。&lt;br>
-13年前的今天，那个时候博客还是很火爆的，我在新浪平台开通了人生中第一个博客，成为了一个网虫，发表了我的第一篇博文：《我爱画画》，并发表了自己用数位板的作品。 我前几天我再翻了一下自己的博客，13年过去了，我似乎已经放弃了自己的梦想，看着现在的自己，似乎一事无成。&lt;br>
-我不知道这些年是如何度过的，突然心血来潮，想重新再开通一个个人博客，把曾经的感觉给找回来。这一次我买了服务器和独立域名，并wordpress搭建了属于自己的个人博客。&lt;br>
-开通属于自己的独立博客很多益处:&lt;br>
-首先，独立网站和独立博客都是完全属于自己的，不会受到平台的限制—–自己的网站，对这里的一切都能随心所欲的控制。拿微信公众号来说，公众号的文章动不动就给你删贴、封号，用户和自媒体成为了平台的俘虏。也因为不可描述的原因新申请公众号已经没有评论功能了，而独立网站就没有这个困扰。&lt;br>
-第二，独立博客可以更好的归纳和组织自己的文字和作品并分享给大家。社交平台上不乏高质量的文章，但动态大都是碎片化的、简短的、吸引眼球的，并且不方便整理和归纳。如果常时间刷碎片化的社交平台和阅读质量较差的文字，对自己的深入思考能力有负面影响。而用博客可以整理自己的文字和作品，并且通过写作和记录，促进自己的深入思考。&lt;br>
-第三，独立博客的时效性强。社交平台的及时性、互动性强，但是随之而来的是碎片化、时效性差的问题。社交平台的动态经常一闪而过，容易让阅读者和自己都忘记。而博客上的东西可以一直沉淀下去仍然能方便搜索引擎检索，只要自己的东西有足够的价值，不管过多长时间也会有人来看的。因为以上这三点，博客能成为我进行思考归纳、分享价值的地方。&lt;/p></description></item><item><title>👤 关于</title><link>https://liuqiran.github.io/zh/about-me/</link><pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate><guid>https://liuqiran.github.io/zh/about-me/</guid><description>&lt;p>写作是应该是生活中必不可少的一部分，以网站的形式将自己的文字和作品整理出来，相比社交媒体式的分享，不再那么浮躁，也没有更多无意义的点赞；相比自己私密保存，又能分享需要的人。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>建站 on 刘其然的部落格</title>
+    <link>http://localhost:1313/zh/tags/%E5%BB%BA%E7%AB%99/</link>
+    <description>Recent content in 建站 on 刘其然的部落格</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 20 May 2025 13:24:30 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>更新了 RSS 订阅地址</title>
+      <link>http://localhost:1313/zh/updated-rss-feed-url/</link>
+      <pubDate>Fri, 10 Feb 2023 14:31:32 +0000</pubDate>
+      <guid>http://localhost:1313/zh/updated-rss-feed-url/</guid>
+      <description>&lt;p&gt;&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://www.liuqiran.com/zh/feed&#34; target=&#34;_blank&#34;&gt;中文站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.liuqiran.com/feed&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;英文站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;（可能无法两个站点都照顾到，建议全部订阅）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>重新整理版面</title>
+      <link>http://localhost:1313/zh/reorganize-home-page/</link>
+      <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
+      <guid>http://localhost:1313/zh/reorganize-home-page/</guid>
+      <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
+  我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了……
+&lt;/p&gt;
+&lt;p&gt;最近发现许多功能已经失效了，花了很长时间才修复好，不然这里已经长草了。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建电报频道</title>
+      <link>http://localhost:1313/zh/created-telegram-channel/</link>
+      <pubDate>Wed, 08 Feb 2023 10:12:49 +0000</pubDate>
+      <guid>http://localhost:1313/zh/created-telegram-channel/</guid>
+      <description>&lt;p&gt;尝试开通了一下&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://t.me/qiranschannel&#34; target=&#34;_blank&#34;&gt;电报频道&lt;/a&gt;。&lt;br&gt;
+发现电报创建频道非常快捷，向他人广播也非常快。&lt;br&gt;
+最重要的是平台是开放的，添加机器人功能之后可以自动将个人网站的动态同步到频道当中。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Updated domain name  更新域名</title>
+      <link>http://localhost:1313/zh/updated-domain-name/</link>
+      <pubDate>Tue, 08 Jun 2021 08:06:09 +0000</pubDate>
+      <guid>http://localhost:1313/zh/updated-domain-name/</guid>
+      <description>&lt;p&gt;aiweikai.top → &lt;a href=&#34;http://liuqiran.com&#34;&gt;liuqiran.com&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>长毛象</title>
+      <link>http://localhost:1313/zh/mastodon-button/</link>
+      <pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate>
+      <guid>http://localhost:1313/zh/mastodon-button/</guid>
+      <description>&lt;p&gt;添加长毛按钮。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Change categories</title>
+      <link>http://localhost:1313/zh/change-categories/</link>
+      <pubDate>Mon, 18 Jan 2021 10:13:15 +0000</pubDate>
+      <guid>http://localhost:1313/zh/change-categories/</guid>
+      <description>&lt;p&gt;因为这几个月自己不在公开的部落格上更新。这两天才发现博客域名已经过期了，不得已暂时更换域名。&lt;/p&gt;
+&lt;p&gt;在翻看的文章的时候发现许多内容根本没有发布。同时，感到标签页面逐渐变得杂乱而难以维护。我觉得将文章分层归类是很失败的一件事。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>添加按鈕</title>
+      <link>http://localhost:1313/zh/add-button/</link>
+      <pubDate>Thu, 14 May 2020 23:42:07 +0000</pubDate>
+      <guid>http://localhost:1313/zh/add-button/</guid>
+      <description>&lt;p&gt;文章鏈接去除“index.php”。&lt;br&gt;
+添加分享按鈕和Wordpress.com社區喜歡按鈕。&lt;/p&gt;
+&lt;p&gt;添加&lt;a href=&#34;http://foreverblog.cn&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;十年之約&lt;/a&gt;標識：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.foreverblog.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;img decoding=&#34;async&#34; src=&#34;https://img.foreverblog.cn/logo_en_default.png&#34; alt=&#34;&#34; style=&#34;width:auto;height:16px;&#34; /&gt; &lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>重新开放部落格</title>
+      <link>http://localhost:1313/zh/reopen-my-blog/</link>
+      <pubDate>Sun, 17 Nov 2019 09:42:34 +0000</pubDate>
+      <guid>http://localhost:1313/zh/reopen-my-blog/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.liuqiran.com/index.php/2019/10/30/lock-my-blog/&#34;&gt;关闭部落格&lt;/a&gt;已经半个月了.&lt;/p&gt;
+&lt;p&gt;在这段时间里,我将原来的博文全部搬运到了以blog开头的私密站点，之后将大这里的大部分博文都删除了。&lt;/p&gt;
+&lt;p&gt;学习是本来就是孤独的，但人还是需要交流，经历过一段时间的低谷期后,我决定重新开放部落格.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关闭部落格</title>
+      <link>http://localhost:1313/zh/lock-my-blog/</link>
+      <pubDate>Wed, 30 Oct 2019 07:27:32 +0000</pubDate>
+      <guid>http://localhost:1313/zh/lock-my-blog/</guid>
+      <description>&lt;p class=&#34;has-white-color has-primary-background-color has-text-color has-background&#34;&gt;
+  距部落格建立到现在已经9个月了。
+&lt;/p&gt;
+&lt;p&gt;我发现现在不仅没有多少人来关注，我也没有继续写的动力。那么，我还是否有必要再开放博客呢？我建站的初衷是否真的是为了分享，还是希望获得别人的关注，还是一时的新鲜感？我建站的初衷是什么？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RSS 订阅</title>
+      <link>http://localhost:1313/zh/rss-2/</link>
+      <pubDate>Sun, 29 Sep 2019 09:00:50 +0000</pubDate>
+      <guid>http://localhost:1313/zh/rss-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;../../../zh/index.xml&#34;&gt;中文站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../../en/index.xml&#34;&gt;英文站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;（可能无法两个站点都照顾到，建议全部订阅）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>友人</title>
+      <link>http://localhost:1313/zh/my-friends/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/my-friends/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）&lt;/p&gt;&lt;/blockquote&gt;
+
+
+  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.dylanwu.space/&#34;&gt;Dylan Wu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://imzm.im&#34;&gt;陈仓颉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yir.me&#34;&gt;YIR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fspark.me&#34;&gt;FSpark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;del&gt;Broca-Phenol&lt;/del&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://springwood.me/&#34;&gt;沉舟侧畔&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bkryofu.xyz/&#34;&gt;非科学のカッ�&amp;hellip;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pewae.com&#34;&gt;大致&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://osmh.net&#34;&gt;OSMH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;&#34;&gt;青山&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dreamendy.com&#34;&gt;Dreamendy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cxwblog.com&#34;&gt;梅塔特隆立方&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.moekira.com&#34;&gt;Kira&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kqh.me&#34;&gt;kqh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.yanshihua.com/&#34;&gt;Mars&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://minuo.me&#34;&gt;minuo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.xinshijiededa.men/&#34;&gt;新世界的大门&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>发布至部落格</title>
+      <link>http://localhost:1313/zh/post-to-my-blog/</link>
+      <pubDate>Sat, 04 May 2019 06:46:58 +0000</pubDate>
+      <guid>http://localhost:1313/zh/post-to-my-blog/</guid>
+      <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
+  从今天开始，我的笔记和日记都到这里来写了。
+&lt;/p&gt;
+&lt;p&gt;如果有一些值得分享的东西，我会将我的日记公开，我的英语还不够好，希望大家能够指出我语法和语言上的问题。：P&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>建站有感</title>
+      <link>http://localhost:1313/zh/%E3%80%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%91%E6%88%91%E6%90%AD%E5%BB%BA%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Sat, 09 Feb 2019 03:37:23 +0000</pubDate>
+      <guid>http://localhost:1313/zh/%E3%80%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%91%E6%88%91%E6%90%AD%E5%BB%BA%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid>
+      <description>&lt;p&gt;之前写了一篇关于社交媒体的文章，不知不觉，我发现我逐渐被各种动态绑架了，每当我在上面发表一些东西，又想多次打开这些应用看收到了什么消息，除了喜欢刷别人的动态，也心怀期待自己的动态能收到回复、点赞，py个头条什么的，连学习软件也都在做社交。所有的应用都在做社交，酷安也不例外。&lt;br&gt;
+虽然说这能看做是一种趋势，人与人的连接变得更为方便快捷，但是碎片化的社交媒体还是有很多负面影响的。最主要的是持续不断的信息流，推送一些刺激你眼球和兴趣的东西，让你可以一直不断的刷下去，看似收获了不少，其实什么都没有学到。如果沉迷于其中，那这些就是精神的麻醉剂。&lt;br&gt;
+我一直想做点什么，因此我在去年6月强迫自己关闭了朋友圈。朋友圈是熟人分享自己光鲜靓丽的地方，我没有什么光鲜靓丽的东西可以炫耀的，并且我发现我的朋友圈广告越来越多，而且刷多了会变得颓废，那索性就不刷了，尽量多学习，给他人分享有价值的东西。&lt;br&gt;
+13年前的今天，那个时候博客还是很火爆的，我在新浪平台开通了人生中第一个博客，成为了一个网虫，发表了我的第一篇博文：《我爱画画》，并发表了自己用数位板的作品。 我前几天我再翻了一下自己的博客，13年过去了，我似乎已经放弃了自己的梦想，看着现在的自己，似乎一事无成。&lt;br&gt;
+我不知道这些年是如何度过的，突然心血来潮，想重新再开通一个个人博客，把曾经的感觉给找回来。这一次我买了服务器和独立域名，并wordpress搭建了属于自己的个人博客。&lt;br&gt;
+开通属于自己的独立博客很多益处:&lt;br&gt;
+首先，独立网站和独立博客都是完全属于自己的，不会受到平台的限制—–自己的网站，对这里的一切都能随心所欲的控制。拿微信公众号来说，公众号的文章动不动就给你删贴、封号，用户和自媒体成为了平台的俘虏。也因为不可描述的原因新申请公众号已经没有评论功能了，而独立网站就没有这个困扰。&lt;br&gt;
+第二，独立博客可以更好的归纳和组织自己的文字和作品并分享给大家。社交平台上不乏高质量的文章，但动态大都是碎片化的、简短的、吸引眼球的，并且不方便整理和归纳。如果常时间刷碎片化的社交平台和阅读质量较差的文字，对自己的深入思考能力有负面影响。而用博客可以整理自己的文字和作品，并且通过写作和记录，促进自己的深入思考。&lt;br&gt;
+第三，独立博客的时效性强。社交平台的及时性、互动性强，但是随之而来的是碎片化、时效性差的问题。社交平台的动态经常一闪而过，容易让阅读者和自己都忘记。而博客上的东西可以一直沉淀下去仍然能方便搜索引擎检索，只要自己的东西有足够的价值，不管过多长时间也会有人来看的。因为以上这三点，博客能成为我进行思考归纳、分享价值的地方。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>👤 关于</title>
+      <link>http://localhost:1313/zh/about-me/</link>
+      <pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate>
+      <guid>http://localhost:1313/zh/about-me/</guid>
+      <description>&lt;p&gt;写作是应该是生活中必不可少的一部分，以网站的形式将自己的文字和作品整理出来，相比社交媒体式的分享，不再那么浮躁，也没有更多无意义的点赞；相比自己私密保存，又能分享需要的人。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

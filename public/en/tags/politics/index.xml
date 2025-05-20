@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Politics on Liu Qiran</title><link>https://liuqiran.github.io/en/tags/politics/</link><description>Recent content in Politics on Liu Qiran</description><generator>Hugo -- 0.145.0</generator><language>en-US</language><lastBuildDate>Wed, 08 Feb 2023 12:00:15 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/en/tags/politics/index.xml" rel="self" type="application/rss+xml"/><item><title>Share</title><link>https://liuqiran.github.io/en/2023-02-08-4299-2/</link><pubDate>Wed, 08 Feb 2023 12:00:15 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-02-08-4299-2/</guid><description>&lt;figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter">
-&lt;div class="wp-block-embed__wrapper">
-&lt;blockquote class="twitter-tweet" data-width="550" data-dnt="true">
-&lt;p lang="en" dir="ltr">
-i cannot believe this is actually real &lt;a href="https://t.co/zo9pl0bXjU">pic.twitter.com/zo9pl0bXjU&lt;/a>
-&lt;/p>&amp;mdash; delian (@zebulgar)
-&lt;pre>&lt;code>&amp;lt;a href=&amp;quot;https://twitter.com/zebulgar/status/1620436085376712705?ref_src=twsrc%5Etfw&amp;quot;&amp;gt;January 31, 2023&amp;lt;/a&amp;gt;
-&lt;/code>&lt;/pre>
-&lt;/blockquote>
-&lt;/div>&lt;/figure></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Politics on Liu Qiran</title>
+    <link>http://localhost:1313/en/tags/politics/</link>
+    <description>Recent content in Politics on Liu Qiran</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/politics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Share</title>
+      <link>http://localhost:1313/en/2023-02-08-4299-2/</link>
+      <pubDate>Wed, 08 Feb 2023 12:00:15 +0000</pubDate>
+      <guid>http://localhost:1313/en/2023-02-08-4299-2/</guid>
+      <description>&lt;figure class=&#34;wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter&#34;&gt;
+&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
+  &lt;blockquote class=&#34;twitter-tweet&#34; data-width=&#34;550&#34; data-dnt=&#34;true&#34;&gt;
+    &lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+      i cannot believe this is actually real &lt;a href=&#34;https://t.co/zo9pl0bXjU&#34;&gt;pic.twitter.com/zo9pl0bXjU&lt;/a&gt;
+    &lt;/p&gt;&amp;mdash; delian (@zebulgar) 
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://twitter.com/zebulgar/status/1620436085376712705?ref_src=twsrc%5Etfw&amp;quot;&amp;gt;January 31, 2023&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/blockquote&gt;
+&lt;/div&gt;&lt;/figure&gt;</description>
+    </item>
+  </channel>
+</rss>

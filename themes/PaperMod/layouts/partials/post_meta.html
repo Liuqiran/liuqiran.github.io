@@ -1,47 +1,23 @@
 {{- $scratch := newScratch }}
 
-{{- if not .Date.IsZero }}
-  {{- if eq .Lang "zh" }}
-    {{- $date := .Date.Format "2006年1月2日" }}
-    {{- $scratch.Add "meta" (slice $date) }}
-  {{- else }}
-    {{- $date := .Date.Format "January 2, 2006" }}
-    {{- $scratch.Add "meta" (slice $date) }}
-  {{- end }}
+{{- if not .Date.IsZero -}}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
 {{- end }}
 
-{{- if not .Lastmod.IsZero }}
-  {{- if eq .Lang "zh" }}
-    {{- $lastmod := .Lastmod.Format "2006年1月2日" }}
-    {{- $scratch.Add "meta" (slice (printf "更新于 %s" $lastmod)) }}
-  {{- else }}
-    {{- $lastmod := .Lastmod.Format "January 2, 2006" }}
-    {{- $scratch.Add "meta" (slice (printf "Updated %s" $lastmod)) }}
-  {{- end }}
+{{- if (.Param "ShowReadingTime") -}}
+{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
 {{- end }}
 
-{{- if (.Param "ShowReadingTime") }}
-  {{- if eq .Lang "zh" }}
-    {{- $scratch.Add "meta" (slice (printf "%d 分钟阅读" .ReadingTime)) }}
-  {{- else }}
-    {{- $scratch.Add "meta" (slice (printf "%d min read" .ReadingTime)) }}
-  {{- end }}
+{{- if (.Param "ShowWordCount") -}}
+{{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
 {{- end }}
 
-{{- if (.Param "ShowWordCount") }}
-  {{- if eq .Lang "zh" }}
-    {{- $scratch.Add "meta" (slice (printf "%d 字" .WordCount)) }}
-  {{- else }}
-    {{- $scratch.Add "meta" (slice (printf "%d words" .WordCount)) }}
-  {{- end }}
+{{- if not (.Param "hideAuthor") -}}
+{{- with (partial "author.html" .) }}
+{{- $scratch.Add "meta" (slice .) }}
 {{- end }}
-
-{{- if not (.Param "hideAuthor") }}
-  {{- with (partial "author.html" .) }}
-    {{- $scratch.Add "meta" (slice .) }}
-  {{- end }}
 {{- end }}
 
 {{- with ($scratch.Get "meta") }}
-  {{- delimit . " · " | safeHTML }}
-{{- end }}
+{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}

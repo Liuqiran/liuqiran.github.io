@@ -1,3 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Psychology on Liu Qiran</title><link>https://liuqiran.github.io/en/tags/psychology/</link><description>Recent content in Psychology on Liu Qiran</description><generator>Hugo -- 0.145.0</generator><language>en-US</language><lastBuildDate>Mon, 13 Mar 2023 23:06:31 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/en/tags/psychology/index.xml" rel="self" type="application/rss+xml"/><item><title>Why don’t lie</title><link>https://liuqiran.github.io/en/2023-03-14-why-dont-lie/</link><pubDate>Mon, 13 Mar 2023 23:06:31 +0000</pubDate><guid>https://liuqiran.github.io/en/2023-03-14-why-dont-lie/</guid><description>&lt;p>When we were kids, elders always tell us not to lie. But most of us lie because we are afraid of the consequences after telling the truths. As a child, lying is a good protection. &lt;/p>
-&lt;p>It’s always a bad habit to lie to yourself or to other people.&lt;/p>
-&lt;p>Lying can distort our understanding of reality. When we lie to ourselves, at first we think we can avoid the difficulties or solve some problems. But we will gradually lose the ability to face the real world.&lt;/p></description></item><item><title>Thinking aloud</title><link>https://liuqiran.github.io/en/2020-02-26-thinking-aloud/</link><pubDate>Wed, 26 Feb 2020 02:08:27 +0000</pubDate><guid>https://liuqiran.github.io/en/2020-02-26-thinking-aloud/</guid><description>&lt;p>Speak out your thinking, &lt;a href="https://www.lifehack.org/865493/cognitive-thinking">thinking aloud&lt;/a> can improve your cognitive thinking.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Psychology on Liu Qiran</title>
+    <link>http://localhost:1313/en/tags/psychology/</link>
+    <description>Recent content in Psychology on Liu Qiran</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why don’t lie</title>
+      <link>http://localhost:1313/en/2023-03-14-why-dont-lie/</link>
+      <pubDate>Mon, 13 Mar 2023 23:06:31 +0000</pubDate>
+      <guid>http://localhost:1313/en/2023-03-14-why-dont-lie/</guid>
+      <description>&lt;p&gt;When we were kids, elders always tell us not to lie. But most of us lie because we are afraid of the consequences after telling the truths. As a child, lying is a good protection. &lt;/p&gt;
+&lt;p&gt;It’s always a bad habit to lie to yourself or to other people.&lt;/p&gt;
+&lt;p&gt;Lying can distort our understanding of reality. When we lie to ourselves, at first we think we can avoid the difficulties or solve some problems. But we will gradually lose the ability to face the real world.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thinking aloud</title>
+      <link>http://localhost:1313/en/2020-02-26-thinking-aloud/</link>
+      <pubDate>Wed, 26 Feb 2020 02:08:27 +0000</pubDate>
+      <guid>http://localhost:1313/en/2020-02-26-thinking-aloud/</guid>
+      <description>&lt;p&gt;Speak out your thinking, &lt;a href=&#34;https://www.lifehack.org/865493/cognitive-thinking&#34;&gt;thinking aloud&lt;/a&gt; can improve your cognitive thinking.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

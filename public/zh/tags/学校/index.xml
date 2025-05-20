@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>学校 on 刘其然的部落格</title><link>https://liuqiran.github.io/zh/tags/%E5%AD%A6%E6%A0%A1/</link><description>Recent content in 学校 on 刘其然的部落格</description><generator>Hugo -- 0.145.0</generator><language>zh-cn</language><lastBuildDate>Fri, 12 Jun 2020 15:27:00 +0000</lastBuildDate><atom:link href="https://liuqiran.github.io/zh/tags/%E5%AD%A6%E6%A0%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>Music in high school</title><link>https://liuqiran.github.io/zh/2020-06-12-music-in-high-school/</link><pubDate>Fri, 12 Jun 2020 15:27:00 +0000</pubDate><guid>https://liuqiran.github.io/zh/2020-06-12-music-in-high-school/</guid><description>&lt;p>说实在话，现在网上的流行歌曲越来越“刺激”，什么生僻字、芒种，还有绿色，只是堆砌辞藻一点内涵都没有，00后和90后的差别应该已经很大了吧。&lt;code>&amp;lt;figure class=&amp;quot;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio&amp;quot;&amp;gt;&lt;/code>&lt;/p></description></item><item><title>文献综述写作方法</title><link>https://liuqiran.github.io/zh/research-review-writing/</link><pubDate>Sat, 16 Mar 2019 08:50:24 +0000</pubDate><guid>https://liuqiran.github.io/zh/research-review-writing/</guid><description>&lt;p>1、查找文献文献所用关键词、文献数量、文献整理分析角度。&lt;/p>
-&lt;p>2、文献年度数量分布——研究态势。&lt;/p>
-&lt;p>3、文献作者分布——核心人物及其研究和方向。&lt;/p>
-&lt;p>4、文献的类型分布——探索性/描述性/解释性比例&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>学校 on 刘其然的部落格</title>
+    <link>http://localhost:1313/zh/tags/%E5%AD%A6%E6%A0%A1/</link>
+    <description>Recent content in 学校 on 刘其然的部落格</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 20 May 2025 19:31:04 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/tags/%E5%AD%A6%E6%A0%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Music in high school</title>
+      <link>http://localhost:1313/zh/2020-06-12-music-in-high-school/</link>
+      <pubDate>Fri, 12 Jun 2020 15:27:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/2020-06-12-music-in-high-school/</guid>
+      <description>&lt;p&gt;说实在话，现在网上的流行歌曲越来越“刺激”，什么生僻字、芒种，还有绿色，只是堆砌辞藻一点内涵都没有，00后和90后的差别应该已经很大了吧。&lt;code&gt;&amp;lt;figure class=&amp;quot;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>文献综述写作方法</title>
+      <link>http://localhost:1313/zh/research-review-writing/</link>
+      <pubDate>Sat, 16 Mar 2019 08:50:24 +0000</pubDate>
+      <guid>http://localhost:1313/zh/research-review-writing/</guid>
+      <description>&lt;p&gt;1、查找文献文献所用关键词、文献数量、文献整理分析角度。&lt;/p&gt;
+&lt;p&gt;2、文献年度数量分布——研究态势。&lt;/p&gt;
+&lt;p&gt;3、文献作者分布——核心人物及其研究和方向。&lt;/p&gt;
+&lt;p&gt;4、文献的类型分布——探索性/描述性/解释性比例&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
