@@ -19,7 +19,7 @@ Hello! 👋, This is Qiran. I hope to connect to the world and meet more friends
 
 - Hometown: [Hunan](https://en.wikipedia.org/wiki/Hunan), China.
 
-- Personality type: [INFP](https://www.16personalities.com/infp-personality])
+- Personality type: [INFP](https://www.16personalities.com/infp-personality]) 
 
 **🖥️ About this site**:
 
