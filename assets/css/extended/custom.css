@@ -5,7 +5,7 @@ html[lang="en-US"] body {
   font-family: "Georgia", "Times New Roman", serif;
 }
 
-body {
+html[lang="zh-CN"] body {
   font-family: 'KingHwa_OldSong', sans-serif;
 } 
 
