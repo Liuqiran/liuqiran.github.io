@@ -46,9 +46,18 @@ Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends.
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1RbDEbfdLJfr9sjTnT5zqQvI2UP-nXz0&ehbc=2E312F" width="640" height="480"></iframe>
 
+- 
+
+- 
+
+
 🪙BTC address: 1Lae6qzRkp62V6Tbfusv3fhtfKrXDZnoV9
 
 **Contact me**: [Telegram: Contact @liuqiran][2]
+
+
+
+
 
  [1]: /tags/building-site/
  [2]: https://t.me/liuqiran

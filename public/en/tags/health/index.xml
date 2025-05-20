@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Health on Liu Qiran</title>
-    <link>https://liuqiran.github.io/en/tags/health/</link>
+    <link>http://localhost:1313/en/tags/health/</link>
     <description>Recent content in Health on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 28 Aug 2023 16:03:02 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/en/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/health/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Harm from technology</title>
-      <link>https://liuqiran.github.io/en/2023-08-29-harm-from-technology/</link>
+      <link>http://localhost:1313/en/2023-08-29-harm-from-technology/</link>
       <pubDate>Mon, 28 Aug 2023 16:03:02 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-08-29-harm-from-technology/</guid>
+      <guid>http://localhost:1313/en/2023-08-29-harm-from-technology/</guid>
       <description>&lt;p&gt;In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it’s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Healthy food</title>
-      <link>https://liuqiran.github.io/en/2023-08-15-healthy-food/</link>
+      <link>http://localhost:1313/en/2023-08-15-healthy-food/</link>
       <pubDate>Tue, 15 Aug 2023 15:45:01 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-08-15-healthy-food/</guid>
+      <guid>http://localhost:1313/en/2023-08-15-healthy-food/</guid>
       <description>&lt;p&gt;Healthy food: Salmon, saurekrout, pecan, olive oil, (cod) liver, arugula, hamburger meat. These foods have the highest nutrients.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Complicate physical activities</title>
-      <link>https://liuqiran.github.io/en/2023-05-23-complicate-physical-activities/</link>
+      <link>http://localhost:1313/en/2023-05-23-complicate-physical-activities/</link>
       <pubDate>Tue, 23 May 2023 15:02:06 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-05-23-complicate-physical-activities/</guid>
+      <guid>http://localhost:1313/en/2023-05-23-complicate-physical-activities/</guid>
       <description>&lt;p&gt;In my opinion, simple physical activities are not enough to improve mental health.&lt;br&gt;
 As human beings, we get used to coordinate with our mind and body. Repeated and easy activities are boring. If the activities are more complicated, it’s better for our mentality. We can also combine different activities.&lt;/p&gt;</description>
     </item>

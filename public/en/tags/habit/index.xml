@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Habit on Liu Qiran</title>
-    <link>https://liuqiran.github.io/en/tags/habit/</link>
+    <link>http://localhost:1313/en/tags/habit/</link>
     <description>Recent content in Habit on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 09 May 2023 15:09:09 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/en/tags/habit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Apr 2025 19:03:44 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/habit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Loop Habits Tracker</title>
-      <link>https://liuqiran.github.io/en/2023-05-09-loop-habits-tracker/</link>
+      <link>http://localhost:1313/en/2023-05-09-loop-habits-tracker/</link>
       <pubDate>Tue, 09 May 2023 15:09:09 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-05-09-loop-habits-tracker/</guid>
+      <guid>http://localhost:1313/en/2023-05-09-loop-habits-tracker/</guid>
       <description>&lt;p&gt;Maybe I can use plain text instead of software to track my habits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 2 The tree of habits</title>
-      <link>https://liuqiran.github.io/en/2023-03-07-ep-2-the-tree-of-habits/</link>
+      <link>http://localhost:1313/en/2023-03-07-ep-2-the-tree-of-habits/</link>
       <pubDate>Tue, 07 Mar 2023 03:37:57 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-03-07-ep-2-the-tree-of-habits/</guid>
+      <guid>http://localhost:1313/en/2023-03-07-ep-2-the-tree-of-habits/</guid>
       <description>&lt;p&gt;Hi, I’m Qiran. Today I would like to share with you some of my understanding about habits.&lt;br&gt;
 In my life, the concept of cultivating habits is gradually becoming one of the most important parts.&lt;/p&gt;
 &lt;p&gt;In my opinion, habit is a compound interest. The fruits or effects of habits will grow faster and faster in the long run.&lt;/p&gt;
@@ -27,9 +27,9 @@ In my life, the concept of cultivating habits is gradually becoming one of the m
     </item>
     <item>
       <title>Two Years Anniversary of Using Anki</title>
-      <link>https://liuqiran.github.io/en/2019-03-25-two-years-anniversary-of-using-anki/</link>
+      <link>http://localhost:1313/en/2019-03-25-two-years-anniversary-of-using-anki/</link>
       <pubDate>Mon, 25 Mar 2019 13:10:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-03-25-two-years-anniversary-of-using-anki/</guid>
+      <guid>http://localhost:1313/en/2019-03-25-two-years-anniversary-of-using-anki/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2019/03/Anki.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I have been using Anki for two years.
 It is one of the best learning and memorizing software I have ever met. It is open-source, freedom and personal.&lt;/p&gt;

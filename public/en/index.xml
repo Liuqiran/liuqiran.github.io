@@ -2,41 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Liu Qiran</title>
-    <link>https://liuqiran.github.io/en/</link>
+    <link>http://localhost:1313/en/</link>
     <description>Recent content on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why do people find it harder to be emotionally stirred as they grow older?</title>
-      <link>https://liuqiran.github.io/en/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</link>
+      <link>http://localhost:1313/en/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</guid>
+      <guid>http://localhost:1313/en/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</guid>
       <description>&lt;p&gt;Because you came late, too late, even past mealtime.&lt;/p&gt;
 &lt;p&gt;The cost of entering someone&amp;rsquo;s heart doubles with age. At fifteen, a simple glance back can become a lifelong precious memory. At forty, even someone who manages both work and housework is just another part of life&amp;rsquo;s struggles. As children, playing in the dirt could create lifelong friendships, but as adults, today&amp;rsquo;s sworn brothers might stab you in the back tomorrow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Migrated to Hugo</title>
-      <link>https://liuqiran.github.io/en/2025-01-07-migrated-to-hugo/</link>
+      <link>http://localhost:1313/en/2025-01-07-migrated-to-hugo/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2025-01-07-migrated-to-hugo/</guid>
+      <guid>http://localhost:1313/en/2025-01-07-migrated-to-hugo/</guid>
       <description>&lt;p&gt;After several days of painstaking work, I finally moved from WordPress to Hugo.&lt;/p&gt;
 &lt;p&gt;Due to the fact that my server is very slow, I think I can focus on writing offline and concentrate on content, rather than adjusting features.&lt;/p&gt;
 &lt;p&gt;There are many features that I find unnecessary, such as commentator ranking. The tree map of categories is also not that useful, because it’s hard to maintain the database. After switching to Hugo to manage my &lt;em&gt;posts&lt;/em&gt;, I can organize them more easily.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digitization</title>
-      <link>https://liuqiran.github.io/en/2023-11-27-digitization/</link>
+      <link>http://localhost:1313/en/2023-11-27-digitization/</link>
       <pubDate>Mon, 27 Nov 2023 12:41:28 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-11-27-digitization/</guid>
+      <guid>http://localhost:1313/en/2023-11-27-digitization/</guid>
       <description>&lt;p&gt;I will try to digitize all of my diaries. It’s a very big project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Writing freely</title>
-      <link>https://liuqiran.github.io/en/2023-10-25-writing-freely/</link>
+      <link>http://localhost:1313/en/2023-10-25-writing-freely/</link>
       <pubDate>Wed, 25 Oct 2023 00:17:17 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-10-25-writing-freely/</guid>
+      <guid>http://localhost:1313/en/2023-10-25-writing-freely/</guid>
       <description>&lt;p&gt;Now I find my writing skill is gradually improving. My writing speed is faster than before. The problem is that I face some stress when I need to post publicly. I’m still afraid of showing the errors and flaws of my article.&lt;br&gt;
 But I know no one can be perfect. Modifying the article and checking the grammar incessantly will kill the interest and motivation of writing.&lt;br&gt;
 In addition, It’s my own website. I think if other people don’t like, they can unfollow me.&lt;br&gt;
@@ -44,16 +43,16 @@ In any case, I will try our best to practice more and share my thoughts which I 
     </item>
     <item>
       <title>Harm from technology</title>
-      <link>https://liuqiran.github.io/en/2023-08-29-harm-from-technology/</link>
+      <link>http://localhost:1313/en/2023-08-29-harm-from-technology/</link>
       <pubDate>Mon, 28 Aug 2023 16:03:02 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-08-29-harm-from-technology/</guid>
+      <guid>http://localhost:1313/en/2023-08-29-harm-from-technology/</guid>
       <description>&lt;p&gt;In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it’s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 14 Information quality</title>
-      <link>https://liuqiran.github.io/en/2023-08-22-ep-14-information-quality/</link>
+      <link>http://localhost:1313/en/2023-08-22-ep-14-information-quality/</link>
       <pubDate>Tue, 22 Aug 2023 15:52:36 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-08-22-ep-14-information-quality/</guid>
+      <guid>http://localhost:1313/en/2023-08-22-ep-14-information-quality/</guid>
       <description>&lt;p&gt;In my own opinion, there are three kinds of information in our life.&lt;br&gt;
 The first one is text, the second is audio, the last one is video.&lt;br&gt;
 Let’s talk about the first one. The content of texts is based on words. It’s the most abstract form of information. If we are literate, we can understand words, then we can understand road signs, posters, magazines, and books. It’s simplest to save texts for us. It’s also a form that can save the best information quality. But it’s maybe the hardest information to understand. Books contain the deepest information quality.&lt;br&gt;
@@ -62,32 +61,32 @@ The third one is video. It combines sound and image. We can understand it very w
     </item>
     <item>
       <title>Healthy food</title>
-      <link>https://liuqiran.github.io/en/2023-08-15-healthy-food/</link>
+      <link>http://localhost:1313/en/2023-08-15-healthy-food/</link>
       <pubDate>Tue, 15 Aug 2023 15:45:01 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-08-15-healthy-food/</guid>
+      <guid>http://localhost:1313/en/2023-08-15-healthy-food/</guid>
       <description>&lt;p&gt;Healthy food: Salmon, saurekrout, pecan, olive oil, (cod) liver, arugula, hamburger meat. These foods have the highest nutrients.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 13 Anki and offline</title>
-      <link>https://liuqiran.github.io/en/2023-08-08-ep-13-anki-and-offline/</link>
+      <link>http://localhost:1313/en/2023-08-08-ep-13-anki-and-offline/</link>
       <pubDate>Tue, 08 Aug 2023 13:44:33 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-08-08-ep-13-anki-and-offline/</guid>
+      <guid>http://localhost:1313/en/2023-08-08-ep-13-anki-and-offline/</guid>
       <description>&lt;p&gt;I had been using Anki as my reviewing tool from 2017.&lt;br&gt;
 Anki is a very powerful and effective tool, it’s also one of the best tools for learning a language. There is also no alternative of Anki as a tool for creating your own database.&lt;/p&gt;
 &lt;p&gt;But I gradually felt its disadvantages. It’s a software. I always need to use it on computer or on smartphone. To form a habit, I need to open it everyday.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Communication</title>
-      <link>https://liuqiran.github.io/en/2023-08-01-communication/</link>
+      <link>http://localhost:1313/en/2023-08-01-communication/</link>
       <pubDate>Tue, 01 Aug 2023 15:06:51 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-08-01-communication/</guid>
+      <guid>http://localhost:1313/en/2023-08-01-communication/</guid>
       <description>&lt;p&gt;Communication is necessary in our life. Reading is also a form of communication. When I’m reading, it just like I’m talking with the author.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 12 Repetition</title>
-      <link>https://liuqiran.github.io/en/2023-07-25-ep-12-repetition/</link>
+      <link>http://localhost:1313/en/2023-07-25-ep-12-repetition/</link>
       <pubDate>Tue, 25 Jul 2023 12:24:20 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-07-25-ep-12-repetition/</guid>
+      <guid>http://localhost:1313/en/2023-07-25-ep-12-repetition/</guid>
       <description>&lt;p&gt;Repetition is an essential part in our life.&lt;br&gt;
 Life is started from one cell. But just by copying itself, one cell can grow into a complicate system with different features. It’s a form of repetition.&lt;/p&gt;
 &lt;p&gt;When we need to memorize something, we aIso need a lot of repetitions. Maybe it’s very boring, but I can’t deny it’s a very effective way.&lt;br&gt;
@@ -96,18 +95,18 @@ At first, even a basic skill is challenging to us, After enough repetition, it w
     </item>
     <item>
       <title>Cash</title>
-      <link>https://liuqiran.github.io/en/2023-07-18-cash/</link>
+      <link>http://localhost:1313/en/2023-07-18-cash/</link>
       <pubDate>Tue, 18 Jul 2023 15:24:01 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-07-18-cash/</guid>
+      <guid>http://localhost:1313/en/2023-07-18-cash/</guid>
       <description>&lt;p&gt;I bought a wallet and started using cash again recently.
 It’s a very interesting try. I’ve been getting used to pay by smartphone for many years. It’s feeling weird after suddenly giving up E-pay. But now I found that I can still be relaxed when I going out without smartphone.
 When I was paying, the feeling of “touching money” is very authentic. Compare with just tapping on the phone, I prefer the feeling of real money.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 11 Pure writing</title>
-      <link>https://liuqiran.github.io/en/2023-07-11-ep-11-pure-writing/</link>
+      <link>http://localhost:1313/en/2023-07-11-ep-11-pure-writing/</link>
       <pubDate>Tue, 11 Jul 2023 13:39:29 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-07-11-ep-11-pure-writing/</guid>
+      <guid>http://localhost:1313/en/2023-07-11-ep-11-pure-writing/</guid>
       <description>&lt;figure class=&#34;wp-block-embed is-type-wp-embed is-provider-anchor-fm-inc wp-block-embed-anchor-fm-inc&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 &lt;/div&gt;&lt;/figure&gt;
@@ -122,42 +121,42 @@ Recently I started writing in plain text. I can write in any note-taking softwar
     </item>
     <item>
       <title>Switched to Windows</title>
-      <link>https://liuqiran.github.io/en/2023-07-04-switched-to-windows/</link>
+      <link>http://localhost:1313/en/2023-07-04-switched-to-windows/</link>
       <pubDate>Tue, 04 Jul 2023 14:39:59 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-07-04-switched-to-windows/</guid>
+      <guid>http://localhost:1313/en/2023-07-04-switched-to-windows/</guid>
       <description>&lt;p&gt;I don’t need to be too stubborn and stick to the Linux. Tools are used for improving efficiency instead of for playing. Some ideas are not so that important.&lt;br&gt;
 Windows is very powerful now especially after the coming of Android Subsystem. On Linux, I can’t find a similar software as stable as Subsystem. Waydroid and Genymotion have a lot of problems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 10 Temporary guest</title>
-      <link>https://liuqiran.github.io/en/2023-06-27-ep-10-temporary-guest/</link>
+      <link>http://localhost:1313/en/2023-06-27-ep-10-temporary-guest/</link>
       <pubDate>Tue, 27 Jun 2023 15:49:06 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-06-27-ep-10-temporary-guest/</guid>
+      <guid>http://localhost:1313/en/2023-06-27-ep-10-temporary-guest/</guid>
       <description>&lt;p&gt;Recently I was organizing my contact information. I found a lot of people I haven’t contacted in a long time. As time goes by, they disappear from my life and never reappear. It’s as if they died even though I have their information. Each of them is like a temporary guest. I don’t know if there will be a chance for us to meet in the future.&lt;/p&gt;
 &lt;p&gt;I’m gradually able to start a new relationship. But at the moment I still don’t have the ability to reconnect with old people, but I’m trying my best. I feel that many people don’t have this ability because of embarrassment. We just let these relationships die one by one. I don’t want to be isolated, so to avoid that situation, I also have to overcome my fear.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cashflow E-Game</title>
-      <link>https://liuqiran.github.io/en/2023-06-20-cashflow-e-game/</link>
+      <link>http://localhost:1313/en/2023-06-20-cashflow-e-game/</link>
       <pubDate>Tue, 20 Jun 2023 14:05:31 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-06-20-cashflow-e-game/</guid>
+      <guid>http://localhost:1313/en/2023-06-20-cashflow-e-game/</guid>
       <description>&lt;p&gt;Based on the recommendation from Rich Dad’s book, I try to install the Cashflow game. But the desktop version of E-Game is difficult to install now. I tried my best to install it successfully in VirtualBox.&lt;/p&gt;
 &lt;p&gt;For the past few months, I have been playing the Cashflow 101 e-game. I have gradually become proficient at it. It’s very educational and I’ve gained some knowledge about cash. These days I started to try Cashflow 202. It’s more complicated compared to the 101 edition.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 9 Technical breakdown</title>
-      <link>https://liuqiran.github.io/en/2023-06-13-ep-9-technical-breakdown/</link>
+      <link>http://localhost:1313/en/2023-06-13-ep-9-technical-breakdown/</link>
       <pubDate>Tue, 13 Jun 2023 14:52:24 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-06-13-ep-9-technical-breakdown/</guid>
+      <guid>http://localhost:1313/en/2023-06-13-ep-9-technical-breakdown/</guid>
       <description>&lt;p&gt;Last week I went through a serious problem of my server, on which my website runs.&lt;br&gt;
 It started with the problem of the version of PHP. The edition of the current PHP is very old and it couldn’t support the running of some plugins. Then I tried to install a new version of PHP, but it didn’t work. When I tried to uninstall the old version, the server crashed and could not be restarted due to an error called “kernel panic”.&lt;br&gt;
 I’ve done my best to fix it myself until midnight. It’s useless. I could only ask other people for help. The technical staff couldn’t solve it either, but they helped me to backup the data. It’s a very tedious experience and I could restore my server after several days. Finally, I used the backup data and restored my website.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Twenty books</title>
-      <link>https://liuqiran.github.io/en/2023-06-08-twenty-books/</link>
+      <link>http://localhost:1313/en/2023-06-08-twenty-books/</link>
       <pubDate>Thu, 08 Jun 2023 14:52:35 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-06-08-twenty-books/</guid>
+      <guid>http://localhost:1313/en/2023-06-08-twenty-books/</guid>
       <description>&lt;p&gt;Until today I finished reading 20 books written in English.&lt;br&gt;
 Twenty books is not a lot, but it’s a big step for me.&lt;br&gt;
 It’s a good accomplishment.&lt;br&gt;
@@ -165,9 +164,9 @@ Just keep going.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 8 Real wealth</title>
-      <link>https://liuqiran.github.io/en/2023-05-30-ep-8-real-wealth/</link>
+      <link>http://localhost:1313/en/2023-05-30-ep-8-real-wealth/</link>
       <pubDate>Tue, 30 May 2023 15:07:06 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-05-30-ep-8-real-wealth/</guid>
+      <guid>http://localhost:1313/en/2023-05-30-ep-8-real-wealth/</guid>
       <description>&lt;p&gt;Wealth is usually considered to be money. But in my opinion, true wealth does not only contain money. It can contain many things, such as health, wisdom, and experience.&lt;br&gt;
 An essential part of wealth is health. We inherited our health from our ancestors when we were born. It’s innate and priceless. But we can partially change it. We can destroy health, but we can also increase it.&lt;br&gt;
 Another part of wealth is wisdom. Although our health can be inherited, we can’t inherit wisdom. Through learning, reading, and education, we can gradually get wisdom. Everyone has their own wisdom. It’s also priceless in different people’s lives.&lt;br&gt;
@@ -175,17 +174,17 @@ Finally, experience is also a part of wealth. Good experience is wealth, and bad
     </item>
     <item>
       <title>Complicate physical activities</title>
-      <link>https://liuqiran.github.io/en/2023-05-23-complicate-physical-activities/</link>
+      <link>http://localhost:1313/en/2023-05-23-complicate-physical-activities/</link>
       <pubDate>Tue, 23 May 2023 15:02:06 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-05-23-complicate-physical-activities/</guid>
+      <guid>http://localhost:1313/en/2023-05-23-complicate-physical-activities/</guid>
       <description>&lt;p&gt;In my opinion, simple physical activities are not enough to improve mental health.&lt;br&gt;
 As human beings, we get used to coordinate with our mind and body. Repeated and easy activities are boring. If the activities are more complicated, it’s better for our mentality. We can also combine different activities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 7 Practice</title>
-      <link>https://liuqiran.github.io/en/2023-05-16-ep-7-practice/</link>
+      <link>http://localhost:1313/en/2023-05-16-ep-7-practice/</link>
       <pubDate>Mon, 15 May 2023 17:39:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-05-16-ep-7-practice/</guid>
+      <guid>http://localhost:1313/en/2023-05-16-ep-7-practice/</guid>
       <description>&lt;p&gt;Practice is one of the most important things in our life.&lt;br&gt;
 In order to gain our skill or improve our ability, we all need to have enough practice.&lt;br&gt;
 Practice is repeated action. Enough times of repetition is necessary in our life. If we do a lot of practice, we will definitely get some improvements unconsciously.&lt;/p&gt;
@@ -193,34 +192,34 @@ Practice is repeated action. Enough times of repetition is necessary in our life
     </item>
     <item>
       <title>Loop Habits Tracker</title>
-      <link>https://liuqiran.github.io/en/2023-05-09-loop-habits-tracker/</link>
+      <link>http://localhost:1313/en/2023-05-09-loop-habits-tracker/</link>
       <pubDate>Tue, 09 May 2023 15:09:09 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-05-09-loop-habits-tracker/</guid>
+      <guid>http://localhost:1313/en/2023-05-09-loop-habits-tracker/</guid>
       <description>&lt;p&gt;Maybe I can use plain text instead of software to track my habits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 6 Plain text</title>
-      <link>https://liuqiran.github.io/en/2023-05-02-ep-6-plain-text/</link>
+      <link>http://localhost:1313/en/2023-05-02-ep-6-plain-text/</link>
       <pubDate>Tue, 02 May 2023 15:03:53 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-05-02-ep-6-plain-text/</guid>
+      <guid>http://localhost:1313/en/2023-05-02-ep-6-plain-text/</guid>
       <description>&lt;p&gt;I have used a lot of software to store my notes and data. But gradually I found that although these softwares are very convenient and they offer a lot of good services. They also caused me a lot of trouble in the long run.&lt;br&gt;
 One important reason is that you cannot export your data freely. I tried a lot of softwares after I decided to write online. Many of them don’t provide good export service. Your files can only be exported to some special formats. What’s more, these files can only be viewed in some special forms. We can probably convert them to other formats we want, but it’s not that easy.&lt;br&gt;
 Another reason is that I realized that some tools and services could give you a lot of convenience and unique features, but when you get used to it. You are also limited by these tools. Your choice would be less, and it’s also very inconvenient if you want to change your tool. Especially for a person who is always curious about new tools. Technology is a double-edged sword. I always want to find a suitable tool for writing, learning, productivity, etc. But the result is not so good.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automated system</title>
-      <link>https://liuqiran.github.io/en/2023-04-24-automated-system/</link>
+      <link>http://localhost:1313/en/2023-04-24-automated-system/</link>
       <pubDate>Mon, 24 Apr 2023 14:03:12 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-04-24-automated-system/</guid>
+      <guid>http://localhost:1313/en/2023-04-24-automated-system/</guid>
       <description>&lt;p&gt;Creating an effective and automated system is very important.&lt;br&gt;
 I always look at the tools. But any tools should be built on a good system. Tools are medium. I must know how to use these tools.&lt;br&gt;
 With an effective and stable system, you don’t even need a tool with high technology.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 5 Thirteen years of journaling</title>
-      <link>https://liuqiran.github.io/en/2023-04-18-ep-5-thirteen-years-of-journaling/</link>
+      <link>http://localhost:1313/en/2023-04-18-ep-5-thirteen-years-of-journaling/</link>
       <pubDate>Tue, 18 Apr 2023 09:52:12 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-04-18-ep-5-thirteen-years-of-journaling/</guid>
+      <guid>http://localhost:1313/en/2023-04-18-ep-5-thirteen-years-of-journaling/</guid>
       <description>&lt;p&gt;I’ve been journaling for thirteen years.&lt;br&gt;
 I started journaling in April 2010.&lt;/p&gt;
 &lt;p&gt;It’s one of the most important habits in my life.&lt;br&gt;
@@ -231,9 +230,9 @@ Looking back to my childhood, I realized that I already have the talent to colle
     </item>
     <item>
       <title>Reading the first five books of the Bible</title>
-      <link>https://liuqiran.github.io/en/2023-04-11-reading-the-first-five-books-of-the-bible/</link>
+      <link>http://localhost:1313/en/2023-04-11-reading-the-first-five-books-of-the-bible/</link>
       <pubDate>Tue, 11 Apr 2023 09:55:03 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-04-11-reading-the-first-five-books-of-the-bible/</guid>
+      <guid>http://localhost:1313/en/2023-04-11-reading-the-first-five-books-of-the-bible/</guid>
       <description>&lt;p&gt;After almost a year of intermittent reading, I have finally finished the first five books of the Old Testament. The first five books are also called the books of Moses.&lt;br&gt;
 I suddenly realized that probably seventy percent of the Bible is the Old Testament. Only a small part of it is the New Testament. The Old Testament is written in Hebrew, and the New Testament is written in Greek.&lt;/p&gt;
 &lt;p&gt;There are some stories that impressed me a lot. Killing and punishment may be the theme during the time of Moses. There is a city called Sodom, which is a city that indulges in lust and sin. People run away before Yahweh destroys this city completely. But the people who turned their heads and looked back at Sodom, still became pillars of salt.&lt;br&gt;
@@ -241,24 +240,24 @@ Moses and the generation of Israel living in Egypt ran away from it, all could n
     </item>
     <item>
       <title>EP 4 AI tool for learning</title>
-      <link>https://liuqiran.github.io/en/2023-04-04-ep-4-ai-tool-for-learning/</link>
+      <link>http://localhost:1313/en/2023-04-04-ep-4-ai-tool-for-learning/</link>
       <pubDate>Mon, 03 Apr 2023 20:33:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-04-04-ep-4-ai-tool-for-learning/</guid>
+      <guid>http://localhost:1313/en/2023-04-04-ep-4-ai-tool-for-learning/</guid>
       <description>&lt;p&gt;I’m Qiran. Today, I would like to share with you my understanding of Artificial Intelligence.&lt;/p&gt;
 &lt;p&gt;I gradually realized that AI has already entered my life. Some people may think that AI is very destructive to the lives of ordinary people. But in my opinion, the most distinct characteristic that humans possess and surpass other creatures is the ability to use tools. AI is a very useful tool now, and it would be highly beneficial if we can learn to use it effectively.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stickers</title>
-      <link>https://liuqiran.github.io/en/2023-03-28-stickers/</link>
+      <link>http://localhost:1313/en/2023-03-28-stickers/</link>
       <pubDate>Tue, 28 Mar 2023 11:18:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-03-28-stickers/</guid>
+      <guid>http://localhost:1313/en/2023-03-28-stickers/</guid>
       <description>&lt;p&gt;Why do I no longer use stickers? For me, the use of stickers distorts the understanding of others. I don’t think it’s an effective or appropriate way to communicate with others online. The Internet is already full of entertaining and useless information. Using stickers will make this situation worse. Using words is enough to convey accurate information. Although without stickers, some people will think that it will feel that there is no emotion. But the truth is that the Internet cannot emulate the real conversation. Calling and talking face to face may be a better way for communication.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 3 Feel the fear</title>
-      <link>https://liuqiran.github.io/en/2023-03-21-ep-3-feel-the-fear/</link>
+      <link>http://localhost:1313/en/2023-03-21-ep-3-feel-the-fear/</link>
       <pubDate>Tue, 21 Mar 2023 11:34:28 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-03-21-ep-3-feel-the-fear/</guid>
+      <guid>http://localhost:1313/en/2023-03-21-ep-3-feel-the-fear/</guid>
       <description>&lt;p&gt;Hi, I’m Qiran. Today I would like to share with you my understanding of fear.&lt;/p&gt;
 &lt;p&gt;Fear is one of the basic human emotions. We all have fears. As for me, fear is one of my biggest difficulties in life.&lt;/p&gt;
 &lt;p&gt;There are different kinds of fear.&lt;br&gt;
@@ -268,18 +267,18 @@ I knew I had to accept disappointments. Maybe I’m able to collect them in orde
     </item>
     <item>
       <title>Why don’t lie</title>
-      <link>https://liuqiran.github.io/en/2023-03-14-why-dont-lie/</link>
+      <link>http://localhost:1313/en/2023-03-14-why-dont-lie/</link>
       <pubDate>Mon, 13 Mar 2023 23:06:31 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-03-14-why-dont-lie/</guid>
+      <guid>http://localhost:1313/en/2023-03-14-why-dont-lie/</guid>
       <description>&lt;p&gt;When we were kids, elders always tell us not to lie. But most of us lie because we are afraid of the consequences after telling the truths. As a child, lying is a good protection. &lt;/p&gt;
 &lt;p&gt;It’s always a bad habit to lie to yourself or to other people.&lt;/p&gt;
 &lt;p&gt;Lying can distort our understanding of reality. When we lie to ourselves, at first we think we can avoid the difficulties or solve some problems. But we will gradually lose the ability to face the real world.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP 2 The tree of habits</title>
-      <link>https://liuqiran.github.io/en/2023-03-07-ep-2-the-tree-of-habits/</link>
+      <link>http://localhost:1313/en/2023-03-07-ep-2-the-tree-of-habits/</link>
       <pubDate>Tue, 07 Mar 2023 03:37:57 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-03-07-ep-2-the-tree-of-habits/</guid>
+      <guid>http://localhost:1313/en/2023-03-07-ep-2-the-tree-of-habits/</guid>
       <description>&lt;p&gt;Hi, I’m Qiran. Today I would like to share with you some of my understanding about habits.&lt;br&gt;
 In my life, the concept of cultivating habits is gradually becoming one of the most important parts.&lt;/p&gt;
 &lt;p&gt;In my opinion, habit is a compound interest. The fruits or effects of habits will grow faster and faster in the long run.&lt;/p&gt;
@@ -287,34 +286,34 @@ In my life, the concept of cultivating habits is gradually becoming one of the m
     </item>
     <item>
       <title>Change the title</title>
-      <link>https://liuqiran.github.io/en/2023-02-28-change-the-title/</link>
+      <link>http://localhost:1313/en/2023-02-28-change-the-title/</link>
       <pubDate>Tue, 28 Feb 2023 12:53:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-02-28-change-the-title/</guid>
+      <guid>http://localhost:1313/en/2023-02-28-change-the-title/</guid>
       <description>&lt;p&gt;Changed the title of the English website.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EP-01 Why I start my podcast</title>
-      <link>https://liuqiran.github.io/en/2023-02-21-ep-01-why-i-start-my-podcast/</link>
+      <link>http://localhost:1313/en/2023-02-21-ep-01-why-i-start-my-podcast/</link>
       <pubDate>Tue, 21 Feb 2023 15:47:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-02-21-ep-01-why-i-start-my-podcast/</guid>
+      <guid>http://localhost:1313/en/2023-02-21-ep-01-why-i-start-my-podcast/</guid>
       <description>&lt;p&gt;Hello everyone. I’m Qiran. This is the first episode of my podcast. Today’s topic is that, I want to share reasons about why I start my podcast.&lt;/p&gt;
 &lt;p&gt;The first reason is, it’s a place of sharing my thoughts and my understanding covering a lot of topics. It’s an opportunity to exchange ideas with others, maybe I can meet new friends and learn a lot from others in the future.&lt;/p&gt;
 &lt;p&gt;Second, I think I can cover a lot of topics that I’m interested in. Forcing myself to write something is a good habit to learn, and it’ll also help me improve my thinking.&lt;/p&gt;</description>
     </item>
     <item>
       <title>1: EP-01 Why I start my podcast</title>
-      <link>https://liuqiran.github.io/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</link>
+      <link>http://localhost:1313/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</link>
       <pubDate>Tue, 21 Feb 2023 07:29:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</guid>
+      <guid>http://localhost:1313/en/2023-02-21-1-ep-01-why-i-start-my-podcast/</guid>
       <description>&lt;!--[if lt IE 9]&gt;&lt;![endif]--&gt;&lt;audio class=&#34;wp-audio-shortcode&#34; id=&#34;audio-4600-1&#34; preload=&#34;none&#34; style=&#34;width: 100%;&#34; controls=&#34;controls&#34;&gt;&lt;source type=&#34;audio/mpeg&#34; src=&#34;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a?_=1&#34; /&gt;
 &lt;p&gt;&lt;a href=&#34;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a&#34;&gt;https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a&lt;/a&gt;&lt;/audio&gt;&lt;/p&gt;
 &lt;p&gt;Hello everyone. I’m Qiran. This is the first episode of my podcast. Today’s topic is that, I want to share reasons about why I start my podcast.&lt;/p&gt;</description>
     </item>
     <item>
       <title>📚 Reading list</title>
-      <link>https://liuqiran.github.io/en/reading-list/</link>
+      <link>http://localhost:1313/en/reading-list/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/reading-list/</guid>
+      <guid>http://localhost:1313/en/reading-list/</guid>
       <description>&lt;p&gt;The books I have finished reading:&lt;/p&gt;
 
 &lt;div style=&#34;margin: auto; overflow-x: auto;&#34;&gt;
@@ -1261,9 +1260,9 @@ In my life, the concept of cultivating habits is gradually becoming one of the m
     </item>
     <item>
       <title>Reply to Chris</title>
-      <link>https://liuqiran.github.io/en/2023-02-08-reply-to-chris/</link>
+      <link>http://localhost:1313/en/2023-02-08-reply-to-chris/</link>
       <pubDate>Wed, 08 Feb 2023 12:31:56 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-02-08-reply-to-chris/</guid>
+      <guid>http://localhost:1313/en/2023-02-08-reply-to-chris/</guid>
       <description>&lt;p&gt;Chris:&lt;br&gt;
 I definitely know Austria.&lt;br&gt;
 You can find out more about me on my personal website. By the way, why not leave a footprint there?&lt;/p&gt;
@@ -1273,9 +1272,9 @@ You can find out more about me on my personal website. By the way, why not leave
     </item>
     <item>
       <title>Share</title>
-      <link>https://liuqiran.github.io/en/2023-02-08-4299-2/</link>
+      <link>http://localhost:1313/en/2023-02-08-4299-2/</link>
       <pubDate>Wed, 08 Feb 2023 12:00:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-02-08-4299-2/</guid>
+      <guid>http://localhost:1313/en/2023-02-08-4299-2/</guid>
       <description>&lt;figure class=&#34;wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-width=&#34;550&#34; data-dnt=&#34;true&#34;&gt;
@@ -1289,17 +1288,17 @@ You can find out more about me on my personal website. By the way, why not leave
     </item>
     <item>
       <title>Update home page</title>
-      <link>https://liuqiran.github.io/en/2023-02-08-update-home-page/</link>
+      <link>http://localhost:1313/en/2023-02-08-update-home-page/</link>
       <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2023-02-08-update-home-page/</guid>
+      <guid>http://localhost:1313/en/2023-02-08-update-home-page/</guid>
       <description>&lt;p&gt;Added progress bars and more social icons for home page.&lt;/p&gt;
 &lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Z-library in Nov. 2022</title>
-      <link>https://liuqiran.github.io/en/2022-11-04-z-library-in-nov-2022/</link>
+      <link>http://localhost:1313/en/2022-11-04-z-library-in-nov-2022/</link>
       <pubDate>Fri, 04 Nov 2022 02:49:11 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2022-11-04-z-library-in-nov-2022/</guid>
+      <guid>http://localhost:1313/en/2022-11-04-z-library-in-nov-2022/</guid>
       <description>&lt;figure class=&#34;wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-width=&#34;550&#34; data-dnt=&#34;true&#34;&gt;
@@ -1314,26 +1313,26 @@ You can find out more about me on my personal website. By the way, why not leave
     </item>
     <item>
       <title>Separation</title>
-      <link>https://liuqiran.github.io/en/2022-08-04-separation/</link>
+      <link>http://localhost:1313/en/2022-08-04-separation/</link>
       <pubDate>Thu, 04 Aug 2022 15:37:39 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2022-08-04-separation/</guid>
+      <guid>http://localhost:1313/en/2022-08-04-separation/</guid>
       <description>&lt;p&gt;Totally separated my blog into two subsites– English site and Chinese site. It’s more convenient for viewers to choose their familiar language.&lt;/p&gt;
 &lt;p&gt;Added the language switcher menu.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mastodon</title>
-      <link>https://liuqiran.github.io/en/2021-02-20-mastodon/</link>
+      <link>http://localhost:1313/en/2021-02-20-mastodon/</link>
       <pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2021-02-20-mastodon/</guid>
+      <guid>http://localhost:1313/en/2021-02-20-mastodon/</guid>
       <description>&lt;p&gt;Removed some plugins from my blog. &lt;s&gt;Added options for foreign languages&lt;/s&gt;.&lt;br&gt;
 Added the Mastodon icon and removed the YouTube icon.&lt;br&gt;
 Tried out Mastodon, a decentralized social networking software. I think it is a good alternative to Twitter.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Love Languages</title>
-      <link>https://liuqiran.github.io/en/2020-11-27-introduction-4/</link>
+      <link>http://localhost:1313/en/2020-11-27-introduction-4/</link>
       <pubDate>Fri, 27 Nov 2020 13:32:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-11-27-introduction-4/</guid>
+      <guid>http://localhost:1313/en/2020-11-27-introduction-4/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;h3 class=&#34;wp-block-heading&#34; id=&#34;what-happens-to-love-after-the-wedding&#34;&gt;What happens to love after the wedding?&lt;/h3&gt;
 &lt;p&gt;Like languages in linguistic, there are also 5 languages in love. If we cannot understand the love in other’s love language, we cannot communicate love.&lt;/p&gt;
@@ -1345,9 +1344,9 @@ The in-love experience is not our own growth. It’s a sense that we arrived.&lt
     </item>
     <item>
       <title>How Your Habits Shape Your Identity (and Vice Versa)</title>
-      <link>https://liuqiran.github.io/en/2020-11-11-how-your-habits-shape-your-identity-and-vice-versa/</link>
+      <link>http://localhost:1313/en/2020-11-11-how-your-habits-shape-your-identity-and-vice-versa/</link>
       <pubDate>Wed, 11 Nov 2020 01:44:56 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-11-11-how-your-habits-shape-your-identity-and-vice-versa/</guid>
+      <guid>http://localhost:1313/en/2020-11-11-how-your-habits-shape-your-identity-and-vice-versa/</guid>
       <description>&lt;p&gt;There are three layers: outcomes; process; identity.&lt;br&gt;
 Identity is the deepest.&lt;br&gt;
 “I’m not a smoker” is better than “I don’t smoke.”&lt;/p&gt;
@@ -1358,9 +1357,9 @@ Identity is the deepest.&lt;br&gt;
     </item>
     <item>
       <title>Introduction and Chapter 1</title>
-      <link>https://liuqiran.github.io/en/2020-11-10-introduction-and-chapter-1/</link>
+      <link>http://localhost:1313/en/2020-11-10-introduction-and-chapter-1/</link>
       <pubDate>Tue, 10 Nov 2020 06:54:48 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-11-10-introduction-and-chapter-1/</guid>
+      <guid>http://localhost:1313/en/2020-11-10-introduction-and-chapter-1/</guid>
       <description>&lt;h3 class=&#34;wp-block-heading&#34; id=&#34;introduction-my-story&#34;&gt;Introduction: My Story&lt;/h3&gt;
 &lt;p&gt;The writer shared the exprience when he was in high school. He was hit by a baseball bat.&lt;/p&gt;
 &lt;h3 class=&#34;wp-block-heading&#34; id=&#34;the-fundamentals-why-tiny-changes-make-a-big-difference&#34;&gt;THE FUNDAMENTALS Why Tiny Changes Make a Big Difference&lt;/h3&gt;
@@ -1376,9 +1375,9 @@ Identity is the deepest.&lt;br&gt;
     </item>
     <item>
       <title>ARGUMENT THREE: SOCIAL MEDIA IS MAKING YOU INTO AN ASSHOLE</title>
-      <link>https://liuqiran.github.io/en/2020-10-31-argument-three-social-media-is-making-you-into-an-asshole-2/</link>
+      <link>http://localhost:1313/en/2020-10-31-argument-three-social-media-is-making-you-into-an-asshole-2/</link>
       <pubDate>Sat, 31 Oct 2020 14:56:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-10-31-argument-three-social-media-is-making-you-into-an-asshole-2/</guid>
+      <guid>http://localhost:1313/en/2020-10-31-argument-three-social-media-is-making-you-into-an-asshole-2/</guid>
       <description>&lt;p&gt;&lt;strong&gt;SOOTY SNOW&lt;/strong&gt;&lt;br&gt;
 You are more vulnerable when you get addicted.&lt;br&gt;
 You will become a poor or little snowflake.&lt;br&gt;
@@ -1397,9 +1396,9 @@ BUMMER made people believe fake things. Some people don’t believe vaccines, th
     </item>
     <item>
       <title>Chapter 5-6</title>
-      <link>https://liuqiran.github.io/en/2020-10-01-chapter-5-6/</link>
+      <link>http://localhost:1313/en/2020-10-01-chapter-5-6/</link>
       <pubDate>Thu, 01 Oct 2020 02:50:38 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-10-01-chapter-5-6/</guid>
+      <guid>http://localhost:1313/en/2020-10-01-chapter-5-6/</guid>
       <description>&lt;h3 class=&#34;wp-block-heading&#34; id=&#34;the-toltec-path-to-freedom&#34;&gt;The Toltec path to freedom&lt;/h3&gt;
 &lt;p&gt;Awareness, transformation and intent are three masteries that lead people to become Toltecs.&lt;br&gt;
 &lt;strong&gt;Death is a angel&lt;/strong&gt;, teaches us live everyday as if it is the last day of our lives.&lt;/p&gt;
@@ -1411,9 +1410,9 @@ We can be a prayer for love, a prayer for freedom.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Join the Attention Resistance</title>
-      <link>https://liuqiran.github.io/en/2020-09-23-join-the-attention-resistance/</link>
+      <link>http://localhost:1313/en/2020-09-23-join-the-attention-resistance/</link>
       <pubDate>Wed, 23 Sep 2020 06:16:17 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-09-23-join-the-attention-resistance/</guid>
+      <guid>http://localhost:1313/en/2020-09-23-join-the-attention-resistance/</guid>
       <description>&lt;p&gt;&lt;strong&gt;DAVID AND GOLIATH 2.0&lt;/strong&gt;&lt;br&gt;
 Use your attention intentionally.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PRACTICE: DELETE SOCIAL MEDIA FROM YOUR PHONE&lt;/strong&gt;&lt;br&gt;
@@ -1427,16 +1426,16 @@ The writer suspect the European focus on slowness is more likely to succeed in t
     </item>
     <item>
       <title>Delete “like”</title>
-      <link>https://liuqiran.github.io/en/2020-09-23-delete-like/</link>
+      <link>http://localhost:1313/en/2020-09-23-delete-like/</link>
       <pubDate>Wed, 23 Sep 2020 05:41:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-09-23-delete-like/</guid>
+      <guid>http://localhost:1313/en/2020-09-23-delete-like/</guid>
       <description>&lt;p&gt;Reference: &lt;em&gt;&lt;a href=&#34;https://www.liuqiran.com/2020/08/12/dont-click-like/&#34;&gt;Don’t Click “Like”&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chapter 1-4</title>
-      <link>https://liuqiran.github.io/en/2020-09-16-chapter-1-4/</link>
+      <link>http://localhost:1313/en/2020-09-16-chapter-1-4/</link>
       <pubDate>Wed, 16 Sep 2020 05:49:06 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-09-16-chapter-1-4/</guid>
+      <guid>http://localhost:1313/en/2020-09-16-chapter-1-4/</guid>
       <description>&lt;h3 class=&#34;wp-block-heading&#34; id=&#34;chapter-1&#34;&gt;Chapter 1&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;True justice is paying only once for each mistake. True injustice is paying more than once for each mistake.&lt;/em&gt;&lt;/p&gt;
 &lt;h3 class=&#34;wp-block-heading&#34; id=&#34;the-first-agreement&#34;&gt;The first agreement&lt;/h3&gt;
@@ -1449,9 +1448,9 @@ Self-rejection is the biggest sin.&lt;br&gt;
     </item>
     <item>
       <title>Ancient Greece</title>
-      <link>https://liuqiran.github.io/en/2020-09-08-ancient-greece/</link>
+      <link>http://localhost:1313/en/2020-09-08-ancient-greece/</link>
       <pubDate>Tue, 08 Sep 2020 12:49:47 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-09-08-ancient-greece/</guid>
+      <guid>http://localhost:1313/en/2020-09-08-ancient-greece/</guid>
       <description>&lt;h3 class=&#34;wp-block-heading&#34; id=&#34;architecture-and-architectural-sculpture&#34;&gt;Architecture and Architectural Sculpture&lt;/h3&gt;
 &lt;p&gt;Doric and Ionic orders.&lt;br&gt;
 &lt;em&gt;Doric&lt;/em&gt; formulated on the mainland; the &lt;em&gt;Ionic&lt;/em&gt; was the order of choice in the Aegean Islans and coast of Asia Minor.&lt;br&gt;
@@ -1464,9 +1463,9 @@ It’s a hard task for Greek sculptor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reclaim Leisure</title>
-      <link>https://liuqiran.github.io/en/2020-08-27-reclaim-leisure/</link>
+      <link>http://localhost:1313/en/2020-08-27-reclaim-leisure/</link>
       <pubDate>Thu, 27 Aug 2020 12:54:04 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-08-27-reclaim-leisure/</guid>
+      <guid>http://localhost:1313/en/2020-08-27-reclaim-leisure/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Leisure and the good life&lt;/strong&gt;&lt;br&gt;
 As Aristotle’s lead, joyful activities is a “source of inward joy”. We can call them high-quality leisure.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Bennett principle&lt;/strong&gt;&lt;br&gt;
@@ -1475,9 +1474,9 @@ When you gain FI at a young age, you gain much leisure hours.&lt;/p&gt;</descrip
     </item>
     <item>
       <title>Don’t Click “Like”</title>
-      <link>https://liuqiran.github.io/en/2020-08-12-dont-click-like/</link>
+      <link>http://localhost:1313/en/2020-08-12-dont-click-like/</link>
       <pubDate>Wed, 12 Aug 2020 13:34:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-08-12-dont-click-like/</guid>
+      <guid>http://localhost:1313/en/2020-08-12-dont-click-like/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Practice: leave your phone at home&lt;/strong&gt;&lt;br&gt;
 Having your phone is not a crisis.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Practice: Take long walks&lt;/strong&gt;&lt;br&gt;
@@ -1489,9 +1488,9 @@ Broaden your definition of “good weather”! You can get big rewards.&lt;/p&gt
     </item>
     <item>
       <title>A Lopsided Arms Race</title>
-      <link>https://liuqiran.github.io/en/2020-07-27-a-lopsided-arms-race/</link>
+      <link>http://localhost:1313/en/2020-07-27-a-lopsided-arms-race/</link>
       <pubDate>Mon, 27 Jul 2020 03:46:43 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-07-27-a-lopsided-arms-race/</guid>
+      <guid>http://localhost:1313/en/2020-07-27-a-lopsided-arms-race/</guid>
       <description>&lt;p&gt;&lt;strong&gt;WE DIDN’T SIGN UP FOR THIS&lt;/strong&gt;&lt;br&gt;
 Smartphones changed our life, but they changed us drastically and no one predicted that.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TOBACCO FARMERS IN T-SHIRTS&lt;/strong&gt;&lt;br&gt;
@@ -1505,9 +1504,9 @@ We need solitude to thrive and make important desicions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Whether You Want It or Not…It’s Yours</title>
-      <link>https://liuqiran.github.io/en/2020-07-27-whether-you-want-it-or-not-its-yours-2/</link>
+      <link>http://localhost:1313/en/2020-07-27-whether-you-want-it-or-not-its-yours-2/</link>
       <pubDate>Mon, 27 Jul 2020 03:18:20 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-07-27-whether-you-want-it-or-not-its-yours-2/</guid>
+      <guid>http://localhost:1313/en/2020-07-27-whether-you-want-it-or-not-its-yours-2/</guid>
       <description>&lt;p&gt;THE TRUTH IS THAT YOU REALLY ARE IN CONTROL—IN TOTAL CONTROL. You are consciously or unconsciously choosing to be in that lousy job.&lt;/p&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;
   &lt;li&gt;
@@ -1529,9 +1528,9 @@ We need solitude to thrive and make important desicions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>From Pain to Power</title>
-      <link>https://liuqiran.github.io/en/2020-06-23-from-pain-to-power/</link>
+      <link>http://localhost:1313/en/2020-06-23-from-pain-to-power/</link>
       <pubDate>Mon, 22 Jun 2020 17:10:44 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-06-23-from-pain-to-power/</guid>
+      <guid>http://localhost:1313/en/2020-06-23-from-pain-to-power/</guid>
       <description>&lt;p&gt;Pain to power; Helplessness to choice; Depression to Energy; Paralysis to action;&lt;/p&gt;
 &lt;p&gt;It’s a power of love yourself, power of good love.&lt;/p&gt;
 &lt;p&gt;love and power go together.&lt;/p&gt;
@@ -1544,9 +1543,9 @@ We need solitude to thrive and make important desicions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Myth and Dream</title>
-      <link>https://liuqiran.github.io/en/2020-06-20-myth-and-dream/</link>
+      <link>http://localhost:1313/en/2020-06-20-myth-and-dream/</link>
       <pubDate>Sat, 20 Jun 2020 08:19:43 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-06-20-myth-and-dream/</guid>
+      <guid>http://localhost:1313/en/2020-06-20-myth-and-dream/</guid>
       <description>&lt;p&gt;&lt;em&gt;By the sacrilege of the refusal of the rite, however, the individual cut himself as a unit off from the larger unit of the whole community&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The hero is the man of self-achieved submission, …only birth can conquer death&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;We shall come to the center of our own existence&lt;/em&gt;&lt;br&gt;
@@ -1554,16 +1553,16 @@ like the labyrinth, it’s a path of hero&lt;/p&gt;</description>
     </item>
     <item>
       <title>Music in high school</title>
-      <link>https://liuqiran.github.io/en/2020-06-12-music-in-high-school/</link>
+      <link>http://localhost:1313/en/2020-06-12-music-in-high-school/</link>
       <pubDate>Fri, 12 Jun 2020 15:27:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-06-12-music-in-high-school/</guid>
+      <guid>http://localhost:1313/en/2020-06-12-music-in-high-school/</guid>
       <description>&lt;p&gt;说实在话，现在网上的流行歌曲越来越“刺激”，什么生僻字、芒种，还有绿色，只是堆砌辞藻一点内涵都没有，00后和90后的差别应该已经很大了吧。&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chapter 5 Energy 埶篇第五</title>
-      <link>https://liuqiran.github.io/en/2020-05-21-chapter-5-energy-%E5%9F%B6%E7%AF%87%E7%AC%AC%E4%BA%94/</link>
+      <link>http://localhost:1313/en/2020-05-21-chapter-5-energy-%E5%9F%B6%E7%AF%87%E7%AC%AC%E4%BA%94/</link>
       <pubDate>Thu, 21 May 2020 05:57:40 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-05-21-chapter-5-energy-%E5%9F%B6%E7%AF%87%E7%AC%AC%E4%BA%94/</guid>
+      <guid>http://localhost:1313/en/2020-05-21-chapter-5-energy-%E5%9F%B6%E7%AF%87%E7%AC%AC%E4%BA%94/</guid>
       <description>&lt;p&gt;&lt;em&gt;我之正使敵視之為奇我之奇使敵視之為正正亦為奇奇亦為正.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;凡戰者, 以正合, 以奇勝。&lt;/em&gt;&lt;br&gt;
 In order to secure victory, indirect methods are also important.&lt;/p&gt;
@@ -1573,9 +1572,9 @@ It’s hard for me to use Zheng, but Qi is also useful.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chapter V RIDDLES IN THE DARK</title>
-      <link>https://liuqiran.github.io/en/2020-05-20-chapter-v-riddles-in-the-dark/</link>
+      <link>http://localhost:1313/en/2020-05-20-chapter-v-riddles-in-the-dark/</link>
       <pubDate>Wed, 20 May 2020 05:48:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-05-20-chapter-v-riddles-in-the-dark/</guid>
+      <guid>http://localhost:1313/en/2020-05-20-chapter-v-riddles-in-the-dark/</guid>
       <description>&lt;p&gt;Bilbo met a Gollum. Gollum lived on a slimy island in the dark lake. Gollum can eat goblins, but he also likes riddle.&lt;br&gt;
 &lt;q&gt;What have I got in my pocket?&lt;/q&gt; This riddle is not fair for Gollum.&lt;br&gt;
 Bilbo got a ring! It’s Gollum’s birthday present! Bilbo Baggins, he is a thief!&lt;br&gt;
@@ -1583,9 +1582,9 @@ Now the ring made Bilbo invisible. He escaped the cave from goblins!&lt;/p&gt;</
     </item>
     <item>
       <title>Introduction 1</title>
-      <link>https://liuqiran.github.io/en/2020-05-13-introduction-1/</link>
+      <link>http://localhost:1313/en/2020-05-13-introduction-1/</link>
       <pubDate>Wed, 13 May 2020 01:52:25 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-05-13-introduction-1/</guid>
+      <guid>http://localhost:1313/en/2020-05-13-introduction-1/</guid>
       <description>&lt;p&gt;Wang Ch’ung displays a liberalism unique. He thik the present is better than the past, same as Ge Hong.&lt;br&gt;
 Cao Cao, was a competent poet. Cao Pi, 典論論文&lt;br&gt;
 蕭統，he accounted for excluding the Classics and historical works from his anthology, because they were not pure literature.&lt;br&gt;
@@ -1594,16 +1593,16 @@ Cao Pi consider that Qi, is born with us, it cannot be changed by instruction.&l
     </item>
     <item>
       <title>Chapter 2</title>
-      <link>https://liuqiran.github.io/en/2020-05-07-chapter-2/</link>
+      <link>http://localhost:1313/en/2020-05-07-chapter-2/</link>
       <pubDate>Thu, 07 May 2020 09:29:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-05-07-chapter-2/</guid>
+      <guid>http://localhost:1313/en/2020-05-07-chapter-2/</guid>
       <description>&lt;p&gt;現在的問題已經從提高電梯服務轉移到了其他地方，老板抱怨、客戶也在抱怨。&lt;/p&gt;</description>
     </item>
     <item>
       <title>CHAPTER 4 Tactical Dispositions</title>
-      <link>https://liuqiran.github.io/en/2020-04-25-chapter-4-tactical-dispositions/</link>
+      <link>http://localhost:1313/en/2020-04-25-chapter-4-tactical-dispositions/</link>
       <pubDate>Sat, 25 Apr 2020 13:25:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-04-25-chapter-4-tactical-dispositions/</guid>
+      <guid>http://localhost:1313/en/2020-04-25-chapter-4-tactical-dispositions/</guid>
       <description>&lt;p&gt;&lt;em&gt;見勝不過思人之所知, 非善之善者也。&lt;/em&gt;&lt;br&gt;
 Know the ken of the common herd is not enough.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;故善戰者, 立於不敗之地, 而不失敵之敗也。&lt;/em&gt;&lt;br&gt;
@@ -1613,9 +1612,9 @@ We need to lay plans before the battle.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Connection</title>
-      <link>https://liuqiran.github.io/en/2020-04-09-connection/</link>
+      <link>http://localhost:1313/en/2020-04-09-connection/</link>
       <pubDate>Thu, 09 Apr 2020 04:19:59 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-04-09-connection/</guid>
+      <guid>http://localhost:1313/en/2020-04-09-connection/</guid>
       <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 &lt;/div&gt;&lt;/figure&gt;
@@ -1631,18 +1630,18 @@ We need to lay plans before the battle.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Questions about Wenxin Diaolong</title>
-      <link>https://liuqiran.github.io/en/2020-04-08-questions-about-wenxin-diaolong/</link>
+      <link>http://localhost:1313/en/2020-04-08-questions-about-wenxin-diaolong/</link>
       <pubDate>Wed, 08 Apr 2020 00:17:47 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-04-08-questions-about-wenxin-diaolong/</guid>
+      <guid>http://localhost:1313/en/2020-04-08-questions-about-wenxin-diaolong/</guid>
       <description>&lt;p&gt;一、此文中如何理解“气”的美学意义？“气”这个概念为何对于艺术创作来说格外重要？&lt;br&gt;
 天地人的世界，不僅遵循著一致性原則，同樣也遵循類比性原則。它是一種主客互攝式的一體式的關係。“傍及萬品，动植皆文……”氣學的解释話語可涵蓋文學活动的各個方面。氣的這種自由出入、實象與虛境化合、包容萬有的質性十分契合藝術活动的本質特征。“神远”與“虛靜”开啓了客體與主體整體融和的一種境界，是中國式的意會體悟的言說方式。氣的一體兩面的特征貫通文學世界與形上世界。&lt;br&gt;
 造藝者的知、情、志、意的心理活动的整體性消融與化合，是需要借助于氣之關聯與貫通，纔可達致內外世界的和諧統一。“氣無奇類，文乏異采”、“氣偉而采奇”說明氣乃是構建文字、語言、辞采的前提。&lt;/p&gt;</description>
     </item>
     <item>
       <title>2: Six dynasties</title>
-      <link>https://liuqiran.github.io/en/2020-04-05-2-six-dynasties/</link>
+      <link>http://localhost:1313/en/2020-04-05-2-six-dynasties/</link>
       <pubDate>Sun, 05 Apr 2020 13:08:32 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-04-05-2-six-dynasties/</guid>
+      <guid>http://localhost:1313/en/2020-04-05-2-six-dynasties/</guid>
       <description>&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;第一節-犍陀羅藝術與笈多藝術的東漸&#34;&gt;第一節 犍陀羅藝術與笈多藝術的東漸&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;犍陀羅藝術&lt;/strong&gt;&lt;br&gt;
 前期：貴霜王朝統治時期，約從公元1世紀初至3世紀中葉，以片巖石雕為主。&lt;br&gt;
@@ -1653,38 +1652,38 @@ We need to lay plans before the battle.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chinese conversion</title>
-      <link>https://liuqiran.github.io/en/2020-04-03-chinese-conversion/</link>
+      <link>http://localhost:1313/en/2020-04-03-chinese-conversion/</link>
       <pubDate>Fri, 03 Apr 2020 13:13:35 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-04-03-chinese-conversion/</guid>
+      <guid>http://localhost:1313/en/2020-04-03-chinese-conversion/</guid>
       <description>&lt;p&gt;已開啓中文繁簡轉換和關键詞搜索轉換功能，感謝&lt;a href=&#34;https://wordpress.org/support/plugin/wp-chinese-conversion/reviews/&#34;&gt;WP Chinese Conversion&lt;/a&gt;插件作者。&lt;/p&gt;</description>
     </item>
     <item>
       <title>CHAPTER IV Over Hill and Under Hill</title>
-      <link>https://liuqiran.github.io/en/2020-03-27-chapter-iv-over-hill-and-under-hill/</link>
+      <link>http://localhost:1313/en/2020-03-27-chapter-iv-over-hill-and-under-hill/</link>
       <pubDate>Fri, 27 Mar 2020 05:25:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-27-chapter-iv-over-hill-and-under-hill/</guid>
+      <guid>http://localhost:1313/en/2020-03-27-chapter-iv-over-hill-and-under-hill/</guid>
       <description>&lt;p&gt;“Why, O why did I ever leave my hobbit-hole!” said poor Mr. Baggins.&lt;br&gt;
 They were chased by Goblins. Bilbo wished that he can stay in his comfort zone, but things worse happened.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CHAPTER III A Short Rest</title>
-      <link>https://liuqiran.github.io/en/2020-03-11-chapter-iii-a-short-rest-2/</link>
+      <link>http://localhost:1313/en/2020-03-11-chapter-iii-a-short-rest-2/</link>
       <pubDate>Wed, 11 Mar 2020 10:39:58 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-11-chapter-iii-a-short-rest-2/</guid>
+      <guid>http://localhost:1313/en/2020-03-11-chapter-iii-a-short-rest-2/</guid>
       <description>&lt;p&gt;It’s a long and hard journey. They all knew the adventure full of dangers. They were no food, no water, caught in the rain. In the last, they had a rest in Elrond’s house.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CHAPTER II Roast Mutton</title>
-      <link>https://liuqiran.github.io/en/2020-03-11-chapter-ii-roast-mutton/</link>
+      <link>http://localhost:1313/en/2020-03-11-chapter-ii-roast-mutton/</link>
       <pubDate>Wed, 11 Mar 2020 10:33:58 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-11-chapter-ii-roast-mutton/</guid>
+      <guid>http://localhost:1313/en/2020-03-11-chapter-ii-roast-mutton/</guid>
       <description>&lt;p&gt;Bilbo, as a burglar, wanted to see and steal some foods from trolls, but Bilbo Baggins and dwarves captured by trolls. In the end, they were saved by Gandalf.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CHAPTER 6 Tell Them I Love (Some) Randomness</title>
-      <link>https://liuqiran.github.io/en/2020-03-08-chapter-6-tell-them-i-love-some-randomness/</link>
+      <link>http://localhost:1313/en/2020-03-08-chapter-6-tell-them-i-love-some-randomness/</link>
       <pubDate>Sun, 08 Mar 2020 11:56:18 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-08-chapter-6-tell-them-i-love-some-randomness/</guid>
+      <guid>http://localhost:1313/en/2020-03-08-chapter-6-tell-them-i-love-some-randomness/</guid>
       <description>&lt;p&gt;When the variation comes, people will rush into the door.&lt;br&gt;
 &lt;strong&gt;HUNGRY DONKEYS&lt;/strong&gt;&lt;br&gt;
 Equal distance between food and water makes donkey die of hunger or thirst.&lt;br&gt;
@@ -1700,9 +1699,9 @@ The taxman, fear of the boss, and separate the work and leisure.&lt;/p&gt;</d
     </item>
     <item>
       <title>ARGUMENT TWO: QUITTING SOCIAL MEDIA IS THE MOST FINELY TARGETED WAY TO RESIST THE INSANITY OF OUR TIMES</title>
-      <link>https://liuqiran.github.io/en/2020-03-07-argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times/</link>
+      <link>http://localhost:1313/en/2020-03-07-argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times/</link>
       <pubDate>Sat, 07 Mar 2020 14:05:27 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-07-argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times/</guid>
+      <guid>http://localhost:1313/en/2020-03-07-argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times/</guid>
       <description>&lt;p&gt;&lt;strong&gt;THE BUMMER MACHINE&lt;/strong&gt;&lt;br&gt;
 The better analogy for social media is paint contains lead in a house.&lt;br&gt;
 BUMMER: “Behaviors of Users Modified, and Made into an Empire for Rent”&lt;br&gt;
@@ -1715,33 +1714,33 @@ BUMMER is the problem to avoid, we need to delete BUMMER accounts.&lt;/p&gt;</de
     </item>
     <item>
       <title>CHAPTER I: AN UNEXPECTED PARTY</title>
-      <link>https://liuqiran.github.io/en/2020-03-07-chapter-i-an-unexpected-party/</link>
+      <link>http://localhost:1313/en/2020-03-07-chapter-i-an-unexpected-party/</link>
       <pubDate>Sat, 07 Mar 2020 10:33:09 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-07-chapter-i-an-unexpected-party/</guid>
+      <guid>http://localhost:1313/en/2020-03-07-chapter-i-an-unexpected-party/</guid>
       <description>&lt;p&gt;Bilbo Baggins, the hobbit, met dwarves and the wizard Gandalf.&lt;/p&gt;
 &lt;p&gt;Bilbo lives in his comfortable cave, it’s a fantastic, cozy zone. But the wizard choose him. What’s more, his Tookish mind in his heart pushes him to the beginning of the adventure.&lt;/p&gt;</description>
     </item>
     <item>
       <title>XXVII. Style and Nature</title>
-      <link>https://liuqiran.github.io/en/2020-03-07-xxvii-style-and-nature/</link>
+      <link>http://localhost:1313/en/2020-03-07-xxvii-style-and-nature/</link>
       <pubDate>Sat, 07 Mar 2020 10:25:01 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-07-xxvii-style-and-nature/</guid>
+      <guid>http://localhost:1313/en/2020-03-07-xxvii-style-and-nature/</guid>
       <description>&lt;p&gt;The style and nature need to be fitted with each other, the outer and the inner realities always correspond.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Han dynasties</title>
-      <link>https://liuqiran.github.io/en/2020-03-06-han-dynasties/</link>
+      <link>http://localhost:1313/en/2020-03-06-han-dynasties/</link>
       <pubDate>Fri, 06 Mar 2020 13:11:03 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-06-han-dynasties/</guid>
+      <guid>http://localhost:1313/en/2020-03-06-han-dynasties/</guid>
       <description>&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;第一節-外來工藝品與佛教藝術的東傳&#34;&gt;第一節 外來工藝品與佛教藝術的東傳&lt;/h4&gt;
 &lt;p&gt;西漢時期對外交流：絲綢之路；可能的海上航道。&lt;br&gt;
 &lt;strong&gt;將域外想象為神秘的超自然的世界&lt;/strong&gt;，激發了社會對於域外物質與文化的興趣。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ARGUMENT ONE: YOU ARE LOSING YOUR FREE WILL</title>
-      <link>https://liuqiran.github.io/en/2020-03-04-argument-one-you-are-losing-your-free-will/</link>
+      <link>http://localhost:1313/en/2020-03-04-argument-one-you-are-losing-your-free-will/</link>
       <pubDate>Wed, 04 Mar 2020 05:50:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-04-argument-one-you-are-losing-your-free-will/</guid>
+      <guid>http://localhost:1313/en/2020-03-04-argument-one-you-are-losing-your-free-will/</guid>
       <description>&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;welcome-to-the-cage-that-goes-everywhere-with-you&#34;&gt;WELCOME TO THE CAGE THAT GOES EVERYWHERE WITH YOU&lt;/h4&gt;
 &lt;p&gt;We are remotely controlled like animals in cages. We even don’t know that.&lt;/p&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;the-mad-scientist-turns-out-to-care-about-the-dog-in-the-cage&#34;&gt;THE MAD SCIENTIST TURNS OUT TO CARE ABOUT THE DOG IN THE CAGE&lt;/h4&gt;
@@ -1751,24 +1750,24 @@ BUMMER is the problem to avoid, we need to delete BUMMER accounts.&lt;/p&gt;</de
     </item>
     <item>
       <title>VI</title>
-      <link>https://liuqiran.github.io/en/2020-03-03-vi/</link>
+      <link>http://localhost:1313/en/2020-03-03-vi/</link>
       <pubDate>Tue, 03 Mar 2020 00:24:46 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-03-03-vi/</guid>
+      <guid>http://localhost:1313/en/2020-03-03-vi/</guid>
       <description>&lt;p&gt;Fear becomes easier to master when our mind is diverted from the things feared to fear itself.&lt;br&gt;
 Unconscious and concentrate on the objects is perilous.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Practice digital drawing</title>
-      <link>https://liuqiran.github.io/en/2020-02-29-practice-digital-drawing/</link>
+      <link>http://localhost:1313/en/2020-02-29-practice-digital-drawing/</link>
       <pubDate>Sat, 29 Feb 2020 11:23:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-29-practice-digital-drawing/</guid>
+      <guid>http://localhost:1313/en/2020-02-29-practice-digital-drawing/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2020/02/Project-4_2.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Are Emotions For?</title>
-      <link>https://liuqiran.github.io/en/2020-02-28-what-are-emotions-for/</link>
+      <link>http://localhost:1313/en/2020-02-28-what-are-emotions-for/</link>
       <pubDate>Fri, 28 Feb 2020 14:07:47 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-28-what-are-emotions-for/</guid>
+      <guid>http://localhost:1313/en/2020-02-28-what-are-emotions-for/</guid>
       <description>&lt;p&gt;From the story that a parent rescued their daughter and perished, we can learn that self-sacrifice is an irrational urge from emotion. Our emotion is an extraordinary power that guides us to handle the challenges of life.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;WHEN PASSIONS OVERWHELM REASON&lt;/strong&gt;&lt;br&gt;
 From the tragedy that happened in Crabtree, we can learn that passions always overwhelm ration time and again.&lt;/p&gt;
@@ -1777,9 +1776,9 @@ From the tragedy that happened in Crabtree, we can learn that passions always ov
     </item>
     <item>
       <title>Read notes</title>
-      <link>https://liuqiran.github.io/en/2020-02-28-read-notes/</link>
+      <link>http://localhost:1313/en/2020-02-28-read-notes/</link>
       <pubDate>Fri, 28 Feb 2020 10:20:04 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-28-read-notes/</guid>
+      <guid>http://localhost:1313/en/2020-02-28-read-notes/</guid>
       <description>&lt;pre class=&#34;wp-block-preformatted&#34;&gt;作者认为柏拉图对艺术的看法不妥。但在柏拉图的观点中，可以说艺术和他要建立的真理与乌托邦是对立的，本身就是有局限性的。柏拉图认为艺术应被禁止再现罪恶性情、放荡、粗鲁，是否也可以说柏拉图在批判摹仿性艺术满足人低劣的那一部分？&lt;/pre&gt;
 &lt;p&gt;在古希腊中常有和欲望有关的故事，如对于古希腊神话中常有的身体幻化，我认为是很好的例子，如宙斯的幻化、阿波罗幻化成月桂树、牛头怪，人马兽也是其中之一，比如人马兽是国王伊克西翁被宙斯所塑造的涅斐勒所生，最终半人马被神所杀死。&lt;br&gt;
 喀戎是一个例外具有良好的品格，被徒弟赫拉克勒斯在追杀半人马强盗时误伤，喀戎本是不死之身，但赫拉克勒斯的箭浸泡了九头蛇的血，喀戎感到疼痛最终放弃永生换取普罗米修斯的自由。&lt;br&gt;
@@ -1787,9 +1786,9 @@ From the tragedy that happened in Crabtree, we can learn that passions always ov
     </item>
     <item>
       <title>Plato and Aristotle</title>
-      <link>https://liuqiran.github.io/en/2020-02-28-plato-and-aristotle/</link>
+      <link>http://localhost:1313/en/2020-02-28-plato-and-aristotle/</link>
       <pubDate>Fri, 28 Feb 2020 10:17:02 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-28-plato-and-aristotle/</guid>
+      <guid>http://localhost:1313/en/2020-02-28-plato-and-aristotle/</guid>
       <description>&lt;p&gt;柏拉图和亚历士多德艺术思想的比较：&lt;br&gt;
 柏拉图认为，艺术只是完美、永恒的本原的一种有缺陷的再模仿，人们从这种虚假模仿中是得不到真理（美）的；亚历士多德则肯定艺术家创作过程本身的作用，同时通过艺术作品对自然的模仿，人们更能深刻理解对象的美。&lt;br&gt;
 柏拉图认为，因为来自“灵感”、“礼物”，艺术是有力量的，同时也是危险的。为了保护理想的公民和理想的社会，艺术等级不高，必须严格控制；亚历士多德则认为艺术的模仿是一种教育和学习形式，是有价值的。&lt;br&gt;
@@ -1797,16 +1796,16 @@ From the tragedy that happened in Crabtree, we can learn that passions always ov
     </item>
     <item>
       <title>Thinking aloud</title>
-      <link>https://liuqiran.github.io/en/2020-02-26-thinking-aloud/</link>
+      <link>http://localhost:1313/en/2020-02-26-thinking-aloud/</link>
       <pubDate>Wed, 26 Feb 2020 02:08:27 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-26-thinking-aloud/</guid>
+      <guid>http://localhost:1313/en/2020-02-26-thinking-aloud/</guid>
       <description>&lt;p&gt;Speak out your thinking, &lt;a href=&#34;https://www.lifehack.org/865493/cognitive-thinking&#34;&gt;thinking aloud&lt;/a&gt; can improve your cognitive thinking.&lt;/p&gt;</description>
     </item>
     <item>
       <title>And the Clock Struck 8/8/08</title>
-      <link>https://liuqiran.github.io/en/2020-02-15-and-the-clock-struck-8-8-08/</link>
+      <link>http://localhost:1313/en/2020-02-15-and-the-clock-struck-8-8-08/</link>
       <pubDate>Sat, 15 Feb 2020 15:12:27 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-15-and-the-clock-struck-8-8-08/</guid>
+      <guid>http://localhost:1313/en/2020-02-15-and-the-clock-struck-8-8-08/</guid>
       <description>&lt;p&gt;&lt;strong&gt;I&lt;/strong&gt;&lt;br&gt;
 The author got in touch with a man who had a vasectomy. Zhu lost her only daughter, he full of regrets that he followed the rule.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;II&lt;/strong&gt;&lt;br&gt;
@@ -1816,9 +1815,9 @@ When the count ran down, the author had a miscarriage, the game is over. During 
     </item>
     <item>
       <title>After the Quake</title>
-      <link>https://liuqiran.github.io/en/2020-02-14-after-the-quake/</link>
+      <link>http://localhost:1313/en/2020-02-14-after-the-quake/</link>
       <pubDate>Fri, 14 Feb 2020 12:31:28 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-14-after-the-quake/</guid>
+      <guid>http://localhost:1313/en/2020-02-14-after-the-quake/</guid>
       <description>&lt;p&gt;&lt;strong&gt;I&lt;/strong&gt;&lt;br&gt;
 After the quake, The parent lost their own child.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;II&lt;/strong&gt;&lt;br&gt;
@@ -1828,9 +1827,9 @@ This policy may be made China less productive, some people fired and lose their 
     </item>
     <item>
       <title>CHAPTER 5 The Souk and the Office Building</title>
-      <link>https://liuqiran.github.io/en/2020-02-14-chapter-5-the-souk-and-the-office-building/</link>
+      <link>http://localhost:1313/en/2020-02-14-chapter-5-the-souk-and-the-office-building/</link>
       <pubDate>Fri, 14 Feb 2020 12:04:06 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-14-chapter-5-the-souk-and-the-office-building/</guid>
+      <guid>http://localhost:1313/en/2020-02-14-chapter-5-the-souk-and-the-office-building/</guid>
       <description>&lt;p&gt;&lt;strong&gt;TWO TYPES OF PROFESSIONS&lt;/strong&gt;&lt;br&gt;
 There are two types of professions, employee and taxi driver, though the first one has a high salary and stable, it’s fragile. This profession is in a system of artificial and human-made. But the second one is antifragile, same kind profession corporates artisan, prostitute, etc. Nature like small mistakes and variability.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Lenin in Zurich&lt;/strong&gt;&lt;br&gt;
@@ -1838,9 +1837,9 @@ Because Swiss have no government, it formed a bottom-up system that causes stabi
     </item>
     <item>
       <title>CHAPTER 3 Attack By Strategem</title>
-      <link>https://liuqiran.github.io/en/2020-02-11-chapter-3-attack-by-strategem/</link>
+      <link>http://localhost:1313/en/2020-02-11-chapter-3-attack-by-strategem/</link>
       <pubDate>Tue, 11 Feb 2020 12:54:19 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-11-chapter-3-attack-by-strategem/</guid>
+      <guid>http://localhost:1313/en/2020-02-11-chapter-3-attack-by-strategem/</guid>
       <description>&lt;p&gt;&lt;em&gt;故上兵伐謀, 其次伐交, 其次伐兵, 下政攻城&lt;/em&gt;&lt;br&gt;
 Destroy the enemy’s plan is the best.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;攻城之法為不得已。修槽鎮輕、具器械、三月而後成&lt;/em&gt;&lt;br&gt;
@@ -1848,9 +1847,9 @@ During the war, we need a full preparation to besiege a walled city. It will spe
     </item>
     <item>
       <title>THE PROCRASTINATOR IN YOUR LIFE</title>
-      <link>https://liuqiran.github.io/en/2020-02-09-the-procrastinator-in-your-life/</link>
+      <link>http://localhost:1313/en/2020-02-09-the-procrastinator-in-your-life/</link>
       <pubDate>Sun, 09 Feb 2020 08:16:48 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-09-the-procrastinator-in-your-life/</guid>
+      <guid>http://localhost:1313/en/2020-02-09-the-procrastinator-in-your-life/</guid>
       <description>&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;managing-people-who-procrastinate&#34;&gt;MANAGING PEOPLE WHO PROCRASTINATE&lt;/h4&gt;
 &lt;p&gt;Due to procrastination, employees lose their productivities and cause companies billions of dollars lost.&lt;/p&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;commitment-vs-compliance&#34;&gt;COMMITMENT VS. COMPLIANCE&lt;/h4&gt;
@@ -1872,9 +1871,9 @@ Go ahead! Don’t say I’ll try or it’s not working, just be open-minded 
     </item>
     <item>
       <title>FINE-TUNING YOUR PROGRESS</title>
-      <link>https://liuqiran.github.io/en/2020-02-08-fine-tuning-your-progress/</link>
+      <link>http://localhost:1313/en/2020-02-08-fine-tuning-your-progress/</link>
       <pubDate>Sat, 08 Feb 2020 10:31:04 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-08-fine-tuning-your-progress/</guid>
+      <guid>http://localhost:1313/en/2020-02-08-fine-tuning-your-progress/</guid>
       <description>&lt;p&gt;&lt;strong&gt;PLANNED SETBACKS&lt;/strong&gt;&lt;br&gt;
 You can try to plan procrastination when you meet a big project, and record your self-statement, these statements may be your old pattern.&lt;/p&gt;
 &lt;h3 class=&#34;wp-block-heading&#34; id=&#34;resilience-and-hardiness&#34;&gt;RESILIENCE AND HARDINESS&lt;/h3&gt;
@@ -1883,9 +1882,9 @@ Resilience is very important when you fail, every time you fail you can bounce b
     </item>
     <item>
       <title>Waging War</title>
-      <link>https://liuqiran.github.io/en/2020-01-19-waging-war/</link>
+      <link>http://localhost:1313/en/2020-01-19-waging-war/</link>
       <pubDate>Sat, 18 Jan 2020 16:02:27 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-01-19-waging-war/</guid>
+      <guid>http://localhost:1313/en/2020-01-19-waging-war/</guid>
       <description>&lt;p&gt;&lt;em&gt;故兵聞拙速，未睹巧之久也。&lt;/em&gt;&lt;br&gt;
 If you exposed a war too long, even you are ingenious, you will make a mistake. leave a little to your opponent.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;力屈，財襌（殫），中原內需於家，百姓之費，十去其七&lt;/em&gt;&lt;br&gt;
@@ -1893,9 +1892,9 @@ Waging a war, you need to forage on your enemy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>WORKING IN THE FLOW STATE</title>
-      <link>https://liuqiran.github.io/en/2020-01-18-working-in-the-flow-state/</link>
+      <link>http://localhost:1313/en/2020-01-18-working-in-the-flow-state/</link>
       <pubDate>Sat, 18 Jan 2020 15:00:22 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-01-18-working-in-the-flow-state/</guid>
+      <guid>http://localhost:1313/en/2020-01-18-working-in-the-flow-state/</guid>
       <description>&lt;p&gt;Being into the state of flow is beneficial to your mental and physical health.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;USING MORE OF YOUR BRAIN&lt;/strong&gt;&lt;br&gt;
 Using your left side of your brain is important, you need to shift into a state of flow. You need to stop your linear thought.&lt;/p&gt;
@@ -1904,9 +1903,9 @@ Creativity is important, how to get into it? You need to suspend criticism and l
     </item>
     <item>
       <title>Curator and exhibition</title>
-      <link>https://liuqiran.github.io/en/2020-01-10-curator-and-exhibition/</link>
+      <link>http://localhost:1313/en/2020-01-10-curator-and-exhibition/</link>
       <pubDate>Fri, 10 Jan 2020 05:51:09 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-01-10-curator-and-exhibition/</guid>
+      <guid>http://localhost:1313/en/2020-01-10-curator-and-exhibition/</guid>
       <description>&lt;p&gt;Curator 是一个专有名称，曾经被作为“博物馆馆长”之意。&lt;/p&gt;
 &lt;p&gt;做一个策展人要具备资金筹措能力。&lt;/p&gt;
 &lt;p&gt;故宫的展览负责人以前是一个机构，以前很稳定。&lt;/p&gt;
@@ -1914,9 +1913,9 @@ Creativity is important, how to get into it? You need to suspend criticism and l
     </item>
     <item>
       <title>What Kills Me Makes Others Stronger</title>
-      <link>https://liuqiran.github.io/en/2020-01-10-what-kills-me-makes-others-stronger/</link>
+      <link>http://localhost:1313/en/2020-01-10-what-kills-me-makes-others-stronger/</link>
       <pubDate>Fri, 10 Jan 2020 05:33:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-01-10-what-kills-me-makes-others-stronger/</guid>
+      <guid>http://localhost:1313/en/2020-01-10-what-kills-me-makes-others-stronger/</guid>
       <description>&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;antifragility-by-layers&#34;&gt;Antifragility by layers&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;Some parts on the inside of a system may be required to be fragile in order to make the system antifragile as a result.&lt;/em&gt; All restaurants are combating with each other in order to form the antifragility of the whole group. If a single restaurant is too robust when the crisis happens, all reasons are boil down to the fragile of this restaurant.&lt;/p&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;evolution-and-unpredictability&#34;&gt;Evolution and Unpredictability&lt;/h4&gt;
@@ -1926,18 +1925,18 @@ So I need to build some new systems different than the habit system, such as an 
     </item>
     <item>
       <title>THE ODES OF ZHOU AND THE SOUTH</title>
-      <link>https://liuqiran.github.io/en/2020-01-09-the-odes-of-zhou-and-the-south/</link>
+      <link>http://localhost:1313/en/2020-01-09-the-odes-of-zhou-and-the-south/</link>
       <pubDate>Thu, 09 Jan 2020 01:56:57 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-01-09-the-odes-of-zhou-and-the-south/</guid>
+      <guid>http://localhost:1313/en/2020-01-09-the-odes-of-zhou-and-the-south/</guid>
       <description>&lt;p&gt;&lt;strong&gt;葛覃  GE TAN&lt;/strong&gt;&lt;br&gt;
 刈yì 濩huò 絺xī 綌yì 斁yì 薄污wù我私&lt;br&gt;
 Why does she want to go back to her home? Maybe her life is very hard, though she was hardworking, she didn’t get any respects. In this chapter, I think this woman was from a high ranking family, not like the propaganda from the government. Even though she is elite, but she also gets distresses.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Alone</title>
-      <link>https://liuqiran.github.io/en/2019-12-25-alone/</link>
+      <link>http://localhost:1313/en/2019-12-25-alone/</link>
       <pubDate>Wed, 25 Dec 2019 12:28:29 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-12-25-alone/</guid>
+      <guid>http://localhost:1313/en/2019-12-25-alone/</guid>
       <description>&lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 &lt;/div&gt;&lt;/figure&gt;
@@ -1948,17 +1947,17 @@ I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=
     </item>
     <item>
       <title>Tainted Blood</title>
-      <link>https://liuqiran.github.io/en/2019-12-20-tainted-blood/</link>
+      <link>http://localhost:1313/en/2019-12-20-tainted-blood/</link>
       <pubDate>Fri, 20 Dec 2019 08:23:34 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-12-20-tainted-blood/</guid>
+      <guid>http://localhost:1313/en/2019-12-20-tainted-blood/</guid>
       <description>&lt;p&gt;In this chapter, the author introduced the families of Mi-ran and Jun-sang, Mi-ran’s father is a warrior from South Korea and he was captive by North army, he was forced to be a miner in Chojin (that town in northeastern), but he never told this to his daughters and son, until this tainted blood effects their life.&lt;/p&gt;
 &lt;p&gt;Jun-sang’s family is from Japan, they are wealthy as Japanese-Korean. when Korea divided, some Japanese-Korean thought the North government is better than South as a group battled with Japanese, so they went to North, but after the regime formed, they noticed everything changed, Kim Il-sung, never believe them, they were purged because God Kim didn’t allow them to be wealthier than common North Korea people and to connect their relatives in Japan. They couldn’t go back to Japan forever.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chinese modern art history notes 1</title>
-      <link>https://liuqiran.github.io/en/2019-12-18-chinese-morden-art-history-notes-1/</link>
+      <link>http://localhost:1313/en/2019-12-18-chinese-morden-art-history-notes-1/</link>
       <pubDate>Wed, 18 Dec 2019 02:02:45 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-12-18-chinese-morden-art-history-notes-1/</guid>
+      <guid>http://localhost:1313/en/2019-12-18-chinese-morden-art-history-notes-1/</guid>
       <description>&lt;p&gt;&lt;strong&gt;《点石斋画报》&lt;/strong&gt;&lt;br&gt;
 编者：由吴友如主编，主要作者有吴友如，田子琳，金蟾香，周慕桥。&lt;br&gt;
 特点：配合新闻；注重时事；图文互释&lt;br&gt;
@@ -1970,9 +1969,9 @@ I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=
     </item>
     <item>
       <title>Museum and public</title>
-      <link>https://liuqiran.github.io/en/2019-12-17-museum-and-public/</link>
+      <link>http://localhost:1313/en/2019-12-17-museum-and-public/</link>
       <pubDate>Tue, 17 Dec 2019 09:32:09 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-12-17-museum-and-public/</guid>
+      <guid>http://localhost:1313/en/2019-12-17-museum-and-public/</guid>
       <description>&lt;p&gt;公众态度公众责任如何建立？&lt;br&gt;
 很多民间的组织开始带领公众参观博物馆。&lt;/p&gt;
 &lt;p&gt;我们可以从社会端参与到其中。&lt;/p&gt;
@@ -1984,18 +1983,18 @@ I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=
     </item>
     <item>
       <title>Holding Hands in the Dark</title>
-      <link>https://liuqiran.github.io/en/2019-12-16-holding-hands-in-the-dark/</link>
+      <link>http://localhost:1313/en/2019-12-16-holding-hands-in-the-dark/</link>
       <pubDate>Mon, 16 Dec 2019 05:16:11 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-12-16-holding-hands-in-the-dark/</guid>
+      <guid>http://localhost:1313/en/2019-12-16-holding-hands-in-the-dark/</guid>
       <description>&lt;p&gt;This is a love story between two teenagers, Mi-ran and Jun-Sang, although it happened in the most totalitarian country in the world–North Korea.&lt;/p&gt;
 &lt;p&gt;Mi-ran is a girl, her father is a miner, Jun-Sang is a student belongs to a family at a high level.&lt;/p&gt;
 &lt;p&gt;In the 1990s, the country’s economy broke down, and there is not enough electric power to keep the night be lighten, but the night in North Korea, it’s more natural and beautiful than other countries, no noises, no neons. What’s more, no one can spy the two teenagers, holding hands in the dark.&lt;/p&gt;</description>
     </item>
     <item>
       <title>THE MONEY TRAP: THE OLD ROAD MAP FOR MONEY</title>
-      <link>https://liuqiran.github.io/en/2019-12-13-the-money-trap-the-old-road-map-for-money/</link>
+      <link>http://localhost:1313/en/2019-12-13-the-money-trap-the-old-road-map-for-money/</link>
       <pubDate>Fri, 13 Dec 2019 09:17:12 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-12-13-the-money-trap-the-old-road-map-for-money/</guid>
+      <guid>http://localhost:1313/en/2019-12-13-the-money-trap-the-old-road-map-for-money/</guid>
       <description>&lt;p&gt;We seem like we don’t work for a living but work for dying.&lt;/p&gt;
 &lt;p&gt;We need to think about how to see our jobs, in this world, we have a caste system of job, we divide them from their salaries.&lt;/p&gt;
 &lt;p&gt;In America, though most people make 6,000$ a month still not happy.&lt;/p&gt;
@@ -2004,9 +2003,9 @@ I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=
     </item>
     <item>
       <title>Written Assignment #2</title>
-      <link>https://liuqiran.github.io/en/2019-12-09-written-assignment-2/</link>
+      <link>http://localhost:1313/en/2019-12-09-written-assignment-2/</link>
       <pubDate>Mon, 09 Dec 2019 00:01:04 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-12-09-written-assignment-2/</guid>
+      <guid>http://localhost:1313/en/2019-12-09-written-assignment-2/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Translation&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The Master said to Yan Yuan, “If I’m employed, I’ll show my talent; If not, I’ll hide my light under a bushel, only you and I have the ability to do it!”&lt;/li&gt;
@@ -2017,25 +2016,25 @@ I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=
     </item>
     <item>
       <title>The Cat and the Washing Machine</title>
-      <link>https://liuqiran.github.io/en/2019-11-29-the-cat-and-the-washing-machine/</link>
+      <link>http://localhost:1313/en/2019-11-29-the-cat-and-the-washing-machine/</link>
       <pubDate>Fri, 29 Nov 2019 12:59:49 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-11-29-the-cat-and-the-washing-machine/</guid>
+      <guid>http://localhost:1313/en/2019-11-29-the-cat-and-the-washing-machine/</guid>
       <description>&lt;p&gt;organic and mechanical are different, organisms are antifragile, also for human-beings. But in modern society, humans all live longer but weak, because the environment is so fragile. Unlike natural environment, their working environment, medicine and living quarters all making them weaker and weaker. Unlike mechanicals, organisms will become stronger because of self-repair in some point.&lt;/p&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;the-complex&#34;&gt;The Complex&lt;/h4&gt;
 &lt;p&gt;The man-made mechanicals are complicated but not complex, If you break them down, they don’t cause a ripple effect. But human society or ecology is complex, if you exterminate a specific animal, you will disrupt a food chain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Your Password Can Be Cracked!</title>
-      <link>https://liuqiran.github.io/en/2019-11-29-your-password-can-be-cracked/</link>
+      <link>http://localhost:1313/en/2019-11-29-your-password-can-be-cracked/</link>
       <pubDate>Fri, 29 Nov 2019 11:55:35 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-11-29-your-password-can-be-cracked/</guid>
+      <guid>http://localhost:1313/en/2019-11-29-your-password-can-be-cracked/</guid>
       <description>&lt;p&gt;Open the 2FA when it is possible, set a strong password (at least 25 digits).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction: Time to Disappear</title>
-      <link>https://liuqiran.github.io/en/2019-11-27-introduction-time-to-disappear/</link>
+      <link>http://localhost:1313/en/2019-11-27-introduction-time-to-disappear/</link>
       <pubDate>Wed, 27 Nov 2019 12:43:10 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-11-27-introduction-time-to-disappear/</guid>
+      <guid>http://localhost:1313/en/2019-11-27-introduction-time-to-disappear/</guid>
       <description>&lt;p&gt;We live in a world of low-privacy, and we also had an illusion about privacy, so many people said it’s not important to hide my privacy, so many people don’t care. but it’s a choice for yourself as for privacy, if you don’t care, your privacy may be going around the internet, maybe forever.&lt;/p&gt;
 &lt;p&gt;This book will help you to learn how to:&lt;/p&gt;
 &lt;ol&gt;
@@ -2049,9 +2048,9 @@ I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=
     </item>
     <item>
       <title>Overcompensation and Overreaction Everywhere</title>
-      <link>https://liuqiran.github.io/en/2019-11-27-overcompensation-and-overreaction-everywhere/</link>
+      <link>http://localhost:1313/en/2019-11-27-overcompensation-and-overreaction-everywhere/</link>
       <pubDate>Wed, 27 Nov 2019 06:24:04 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-11-27-overcompensation-and-overreaction-everywhere/</guid>
+      <guid>http://localhost:1313/en/2019-11-27-overcompensation-and-overreaction-everywhere/</guid>
       <description>&lt;p&gt;If as want to innovate and get creativities, we must get in trouble first, we cannot get invention from comfort.&lt;/p&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;how-to-win-a-horse-race&#34;&gt;HOW TO WIN A HORSE RACE&lt;/h4&gt;
 &lt;p&gt;If we want to finish a task, we must finish it in our busiest time.&lt;/p&gt;
@@ -2060,9 +2059,9 @@ I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=
     </item>
     <item>
       <title>6. THE UNSCHEDULE</title>
-      <link>https://liuqiran.github.io/en/2019-11-24-6-the-unschedule/</link>
+      <link>http://localhost:1313/en/2019-11-24-6-the-unschedule/</link>
       <pubDate>Sun, 24 Nov 2019 13:06:41 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-11-24-6-the-unschedule/</guid>
+      <guid>http://localhost:1313/en/2019-11-24-6-the-unschedule/</guid>
       <description>&lt;p&gt;When things start, we find the projects take less time than your thinking.&lt;/p&gt;
 &lt;h4 class=&#34;wp-block-heading&#34; id=&#34;even-producers-need-a-system&#34;&gt;EVEN PRODUCERS NEED A SYSTEM&lt;/h4&gt;
 &lt;p&gt;This system is recording your time in the period of working, record every time in your period, you will reduce your fear about your so-called threatening subject.&lt;/p&gt;
@@ -2071,9 +2070,9 @@ I’m so alone, try to find my way back home to you&lt;/em&gt;.&lt;figure class=
     </item>
     <item>
       <title>A Brief Overview of 19th Century English</title>
-      <link>https://liuqiran.github.io/en/2019-11-04-a-brief-overview-of-19th-century-english/</link>
+      <link>http://localhost:1313/en/2019-11-04-a-brief-overview-of-19th-century-english/</link>
       <pubDate>Mon, 04 Nov 2019 12:13:17 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-11-04-a-brief-overview-of-19th-century-english/</guid>
+      <guid>http://localhost:1313/en/2019-11-04-a-brief-overview-of-19th-century-english/</guid>
       <description>&lt;p&gt;Google Books Ngram Viewer&lt;br&gt;
 &lt;strong&gt;Ngram&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -2091,9 +2090,9 @@ default time period: 1800 to 2000 output: graph representing use of  searched i
     </item>
     <item>
       <title>5: Education in Public Fine Art Schools</title>
-      <link>https://liuqiran.github.io/en/2019-10-30-5-education-in-public-fine-art-schools/</link>
+      <link>http://localhost:1313/en/2019-10-30-5-education-in-public-fine-art-schools/</link>
       <pubDate>Wed, 30 Oct 2019 11:19:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-30-5-education-in-public-fine-art-schools/</guid>
+      <guid>http://localhost:1313/en/2019-10-30-5-education-in-public-fine-art-schools/</guid>
       <description>&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;蔡元培与美术教育&#34;&gt;蔡元培与美术教育&lt;/h4&gt;
 &lt;p&gt;蔡元培在留学期间，康德“美的超越性与普遍性”的理念对他产生了深远影响。&lt;br&gt;
 1916年辞去教育总长职务&lt;br&gt;
@@ -2105,9 +2104,9 @@ default time period: 1800 to 2000 output: graph representing use of  searched i
     </item>
     <item>
       <title>4: Emergence of Private Fine Art Schools</title>
-      <link>https://liuqiran.github.io/en/2019-10-28-4-emergence-of-private-fine-art-schools/</link>
+      <link>http://localhost:1313/en/2019-10-28-4-emergence-of-private-fine-art-schools/</link>
       <pubDate>Mon, 28 Oct 2019 11:52:46 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-28-4-emergence-of-private-fine-art-schools/</guid>
+      <guid>http://localhost:1313/en/2019-10-28-4-emergence-of-private-fine-art-schools/</guid>
       <description>&lt;h4 class=&#34;wp-block-heading&#34; id=&#34;第一节-上海美专与刘海粟的美术教育活动&#34;&gt;第一节 上海美专与刘海粟的美术教育活动&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;早期上海美专的美术教育&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;周湘&lt;/strong&gt;是开风气之先的人物&lt;br&gt;
@@ -2118,16 +2117,16 @@ default time period: 1800 to 2000 output: graph representing use of  searched i
     </item>
     <item>
       <title>Letter 4</title>
-      <link>https://liuqiran.github.io/en/2019-10-26-letter-4/</link>
+      <link>http://localhost:1313/en/2019-10-26-letter-4/</link>
       <pubDate>Sat, 26 Oct 2019 07:41:21 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-26-letter-4/</guid>
+      <guid>http://localhost:1313/en/2019-10-26-letter-4/</guid>
       <description>&lt;p&gt;When human in the prayers, they always want to pretend to be honest to the god, but they don’t in their heart. they always pretend to stick with their purposes but they always forget when they fell in some trivial things and some messinesses in reality, this is evil’s work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pa Yih 13 analysis</title>
-      <link>https://liuqiran.github.io/en/2019-10-21-pa-yih-13-analysis/</link>
+      <link>http://localhost:1313/en/2019-10-21-pa-yih-13-analysis/</link>
       <pubDate>Mon, 21 Oct 2019 06:14:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-21-pa-yih-13-analysis/</guid>
+      <guid>http://localhost:1313/en/2019-10-21-pa-yih-13-analysis/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Tranlation’s words&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;谓：Legge’s translation: “meaning”, Eno’s translation: “sense”.&lt;/p&gt;
 &lt;p&gt;媚：Legge: pay court to; Eno: appeal to; Lau: be obsequious to&lt;/p&gt;
@@ -2135,23 +2134,23 @@ default time period: 1800 to 2000 output: graph representing use of  searched i
     </item>
     <item>
       <title>Letter 3</title>
-      <link>https://liuqiran.github.io/en/2019-10-19-letter-3/</link>
+      <link>http://localhost:1313/en/2019-10-19-letter-3/</link>
       <pubDate>Sat, 19 Oct 2019 12:40:38 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-19-letter-3/</guid>
+      <guid>http://localhost:1313/en/2019-10-19-letter-3/</guid>
       <description>&lt;p&gt;Evil making us misunderstanding others, always focus on build some image of others but don’t really true. If we make things trouble, we fell into illusions more we put others to meet our illusions more, then we destroyed our relationship with family, friends.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Letter 2</title>
-      <link>https://liuqiran.github.io/en/2019-10-19-letter-2/</link>
+      <link>http://localhost:1313/en/2019-10-19-letter-2/</link>
       <pubDate>Sat, 19 Oct 2019 11:52:03 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-19-letter-2/</guid>
+      <guid>http://localhost:1313/en/2019-10-19-letter-2/</guid>
       <description>&lt;p&gt;Evil making yourself always thinking about reality, always focus on small things, in reality, and you always focus on other’s flaws, you maybe don’t believe truths and gods.&lt;/p&gt;</description>
     </item>
     <item>
       <title>OVERCOMING BLOCKS TO ACTION</title>
-      <link>https://liuqiran.github.io/en/2019-10-19-overcoming-blocks-to-action/</link>
+      <link>http://localhost:1313/en/2019-10-19-overcoming-blocks-to-action/</link>
       <pubDate>Sat, 19 Oct 2019 10:55:48 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-19-overcoming-blocks-to-action/</guid>
+      <guid>http://localhost:1313/en/2019-10-19-overcoming-blocks-to-action/</guid>
       <description>&lt;p&gt;&lt;strong&gt;THREE MAJOR BLOCKS&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;fear of failure, fear of not finishing, terror of being overwhelmed, these are the three blocks to action, if you solved one of them, it will be quiker to solve all.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TOOL #1: THREE-DIMENSIONAL THINKING AND THE REVERSE CALENDAR&lt;/strong&gt;&lt;/p&gt;
@@ -2161,26 +2160,26 @@ Reversing the calendar gives you control of this project.&lt;/p&gt;</description
     </item>
     <item>
       <title>Pa Yih 13 translations</title>
-      <link>https://liuqiran.github.io/en/2019-10-12-pa-yih-13-translations/</link>
+      <link>http://localhost:1313/en/2019-10-12-pa-yih-13-translations/</link>
       <pubDate>Sat, 12 Oct 2019 11:16:19 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-12-pa-yih-13-translations/</guid>
+      <guid>http://localhost:1313/en/2019-10-12-pa-yih-13-translations/</guid>
       <description>&lt;p&gt;【十三章】【一節】王孫賈問曰、與其媚於奧、寧媚於竈、何謂也。【二節】子曰、不然、獲罪於天、無所禱也。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Legge’s translation:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Chapter XIII. 1. Wang-sun Chia asked, saying, “What is the meaning of the saying, ‘It is better to pay court to the furnace than to the south-west corner?&amp;rsquo;”&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belonging</title>
-      <link>https://liuqiran.github.io/en/2019-10-11-belonging/</link>
+      <link>http://localhost:1313/en/2019-10-11-belonging/</link>
       <pubDate>Fri, 11 Oct 2019 06:04:29 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-11-belonging/</guid>
+      <guid>http://localhost:1313/en/2019-10-11-belonging/</guid>
       <description>&lt;p&gt;The author thinks we cannot just live alone, we need to have a belonging, but maybe love other people is hurt other people’s freedom. What’s more, we think we are in a group or a community, we can feel we are superior than others. we all need help, but sometimes we always hide this and think we are better than others.&lt;/p&gt;
 &lt;p&gt;In order to think we are superior to others, we build walls, make our group against other groups, prejudice cultivates.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GUILT-FREE PLAY, QUALITY WORK</title>
-      <link>https://liuqiran.github.io/en/2019-10-11-guilt-free-play-quality-work/</link>
+      <link>http://localhost:1313/en/2019-10-11-guilt-free-play-quality-work/</link>
       <pubDate>Fri, 11 Oct 2019 04:07:34 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-11-guilt-free-play-quality-work/</guid>
+      <guid>http://localhost:1313/en/2019-10-11-guilt-free-play-quality-work/</guid>
       <description>&lt;p&gt;If you see your work insatiable and infinite, you fell into a negative mind.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;THE IMPORTANCE OF PLAY&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Play can make us more effective, more creative, producers have more time to play than procrastinators.&lt;/p&gt;
@@ -2188,9 +2187,9 @@ Reversing the calendar gives you control of this project.&lt;/p&gt;</description
     </item>
     <item>
       <title>New Museology</title>
-      <link>https://liuqiran.github.io/en/2019-10-08-new-museology/</link>
+      <link>http://localhost:1313/en/2019-10-08-new-museology/</link>
       <pubDate>Tue, 08 Oct 2019 02:19:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-08-new-museology/</guid>
+      <guid>http://localhost:1313/en/2019-10-08-new-museology/</guid>
       <description>&lt;p&gt;学期最重要的问题：作为一个个体与这个事物的关系。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;新博物馆学视野下博物馆认知&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;《当卢浮宫遇见紫禁城》&lt;/p&gt;
@@ -2199,9 +2198,9 @@ Reversing the calendar gives you control of this project.&lt;/p&gt;</description
     </item>
     <item>
       <title>Reply in Slowly</title>
-      <link>https://liuqiran.github.io/en/2019-10-08-replay-in-slowly/</link>
+      <link>http://localhost:1313/en/2019-10-08-replay-in-slowly/</link>
       <pubDate>Mon, 07 Oct 2019 22:06:10 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-08-replay-in-slowly/</guid>
+      <guid>http://localhost:1313/en/2019-10-08-replay-in-slowly/</guid>
       <description>&lt;p&gt;I also feel lonely last week, but I walked out recently.
 I’m sorry to hear that you didn’t live with your parents 🙁
 I think maybe it’s the reason you still struggling against loneliness.
@@ -2210,49 +2209,49 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Analects notes 1</title>
-      <link>https://liuqiran.github.io/en/2019-10-06-analects-notes-1/</link>
+      <link>http://localhost:1313/en/2019-10-06-analects-notes-1/</link>
       <pubDate>Sun, 06 Oct 2019 08:33:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-06-analects-notes-1/</guid>
+      <guid>http://localhost:1313/en/2019-10-06-analects-notes-1/</guid>
       <description>&lt;p&gt;&lt;em&gt;力不足者，中道而废，今女画。&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;如何达到自己的目标？有时候并不是我们没有能力达到，而是我们总是在中途放弃了。我们在跌倒的时候不断的质疑自己，如果我们爬起了，再次起来，我们总有可能到达最终的目的地，而当我们放弃了，我们就真的会认为：我们没有能力去做了。我们不断编织这样的谎言去否定自己，最终我们将自己囚禁在谎言的牢笼中。&lt;/p&gt;</description>
     </item>
     <item>
       <title>3: Upsurge in Study Art Aboard and Fine Art Education in Early 20th Century</title>
-      <link>https://liuqiran.github.io/en/2019-09-30-upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-century/</link>
+      <link>http://localhost:1313/en/2019-09-30-upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-century/</link>
       <pubDate>Mon, 30 Sep 2019 10:37:11 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-09-30-upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-century/</guid>
+      <guid>http://localhost:1313/en/2019-09-30-upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-century/</guid>
       <description>&lt;p&gt;&lt;strong&gt;留学日本的中国学生与美术教育&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;西方文化进入近代中国后，也冲击着传统的教育制度，洋务运动时期清政府即派学生赴美留学。1905年，清政府废弃科举制度，延续千年的文人传统升迁之途就此废弃，留学海外、学习西方文化与知识便成为读书人新的目标。&lt;/p&gt;</description>
     </item>
     <item>
       <title>RSS Feed</title>
-      <link>https://liuqiran.github.io/en/rss/</link>
+      <link>http://localhost:1313/en/rss/</link>
       <pubDate>Sun, 29 Sep 2019 09:00:50 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/rss/</guid>
+      <guid>http://localhost:1313/en/rss/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;../en/index.xml&#34;&gt;English Site &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;../zh/index.xml&#34;&gt;Chinese Site&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Masochism, Culture, and History</title>
-      <link>https://liuqiran.github.io/en/2019-09-22-masochism-culture-and-history/</link>
+      <link>http://localhost:1313/en/2019-09-22-masochism-culture-and-history/</link>
       <pubDate>Sat, 21 Sep 2019 22:05:00 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-09-22-masochism-culture-and-history/</guid>
+      <guid>http://localhost:1313/en/2019-09-22-masochism-culture-and-history/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Self in history&lt;/strong&gt;: Before the Renaissance, self is not appeared by the control of religion.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Free is tough</title>
-      <link>https://liuqiran.github.io/en/2019-09-21-free-is-tough/</link>
+      <link>http://localhost:1313/en/2019-09-21-free-is-tough/</link>
       <pubDate>Sat, 21 Sep 2019 12:22:01 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-09-21-free-is-tough/</guid>
+      <guid>http://localhost:1313/en/2019-09-21-free-is-tough/</guid>
       <description>&lt;p&gt;Today I browsed many articles about free software, especially &lt;a href=&#34;https://tech.sina.cn/it/2014-05-27/detail-iavxeafs2072085.d.html?from=wap&#34;&gt;this article&lt;/a&gt;, Stallman is sort of extreme, why I always care about extremely security and privacy too?&lt;/p&gt;
 &lt;p&gt;I’m not an extreme person in any topic, I need to have my life and my own goal, but because of my personality, I stick to some thinking that makes me different from others, in the end, it doesn’t make me very happy.&lt;/p&gt;
 &lt;p&gt;My dreams(like become a native speaker or improve my skill and knowledge reserve very fast) are building in the air, not in the reality, why I cannot enjoy the road?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Touched</title>
-      <link>https://liuqiran.github.io/en/2019-09-18-touched/</link>
+      <link>http://localhost:1313/en/2019-09-18-touched/</link>
       <pubDate>Wed, 18 Sep 2019 04:36:10 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-09-18-touched/</guid>
+      <guid>http://localhost:1313/en/2019-09-18-touched/</guid>
       <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 &lt;/div&gt;&lt;/figure&gt;
@@ -2266,16 +2265,16 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Waging war 2</title>
-      <link>https://liuqiran.github.io/en/2019-09-18-waging-war-2/</link>
+      <link>http://localhost:1313/en/2019-09-18-waging-war-2/</link>
       <pubDate>Wed, 18 Sep 2019 01:30:27 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-09-18-waging-war-2/</guid>
+      <guid>http://localhost:1313/en/2019-09-18-waging-war-2/</guid>
       <description>&lt;p&gt;If we need t raising a good army, we need a big cost, such as time, money, but when army needs to go to the war, we cannot be exposed in the war for too long.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HOW TO TALK TO YOURSELF</title>
-      <link>https://liuqiran.github.io/en/2019-09-13-how-to-talk-to-yourself/</link>
+      <link>http://localhost:1313/en/2019-09-13-how-to-talk-to-yourself/</link>
       <pubDate>Fri, 13 Sep 2019 07:17:42 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-09-13-how-to-talk-to-yourself/</guid>
+      <guid>http://localhost:1313/en/2019-09-13-how-to-talk-to-yourself/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2019/09/image.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;the-have-tosmessages-of-stress&#34;&gt;The “Have To’s”—Messages of Stress&lt;/h4&gt;
 &lt;p&gt;We need to change the self-talk of ‘I have to’.&lt;/p&gt;
@@ -2286,9 +2285,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>EGYPT UNDER THE PHARAOHS</title>
-      <link>https://liuqiran.github.io/en/2019-09-13-egypt-under-the-pharaohs/</link>
+      <link>http://localhost:1313/en/2019-09-13-egypt-under-the-pharaohs/</link>
       <pubDate>Thu, 12 Sep 2019 23:42:27 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-09-13-egypt-under-the-pharaohs/</guid>
+      <guid>http://localhost:1313/en/2019-09-13-egypt-under-the-pharaohs/</guid>
       <description>&lt;h3 id=&#34;predynastic-and-early-dynastic-periods&#34;&gt;PREDYNASTIC AND EARLY DYNASTIC PERIODS&lt;/h3&gt;
 &lt;h3 id=&#34;painting-and-sculpture&#34;&gt;Painting and Sculpture&lt;/h3&gt;
 &lt;h4 id=&#34;palette-of-king-narmer&#34;&gt;PALETTE OF KING NARMER&lt;/h4&gt;
@@ -2299,9 +2298,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Prologue: Managing your life as an integrated whole</title>
-      <link>https://liuqiran.github.io/en/2019-09-12-prologue-managing-your-life-as-an-integrated-whole/</link>
+      <link>http://localhost:1313/en/2019-09-12-prologue-managing-your-life-as-an-integrated-whole/</link>
       <pubDate>Thu, 12 Sep 2019 08:57:01 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-09-12-prologue-managing-your-life-as-an-integrated-whole/</guid>
+      <guid>http://localhost:1313/en/2019-09-12-prologue-managing-your-life-as-an-integrated-whole/</guid>
       <description>&lt;p&gt;&lt;strong&gt;The old road map&lt;/strong&gt;: Our planet face a lot of problems since the Industry Revolution, seems like we are using the old road map from the 19th century as for money and our life.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Creating a new road &lt;code&gt;&amp;lt;g class=&amp;quot;gr_ gr\_5 gr-alert gr\_spell gr\_inline\_cards gr\_run\_anim ContextualSpelling ins-del multiReplace&amp;quot; id=&amp;quot;5&amp;quot; data-gr-id=&amp;quot;5&amp;quot;&amp;gt;&lt;/code&gt;map&lt;code&gt;&amp;lt;/g&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;g class=&amp;quot;gr_ gr\_5 gr-alert gr\_spell gr\_inline\_cards gr\_disable\_anim_appear ContextualSpelling ins-del multiReplace&amp;quot; id=&amp;quot;5&amp;quot; data-gr-id=&amp;quot;5&amp;quot;&amp;gt;&lt;/code&gt;Thinking&lt;code&gt;&amp;lt;/g&amp;gt;&lt;/code&gt; in new ways&lt;/p&gt;
@@ -2310,16 +2309,16 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Painting for aunt</title>
-      <link>https://liuqiran.github.io/en/2019-08-30-painting-for-aunt/</link>
+      <link>http://localhost:1313/en/2019-08-30-painting-for-aunt/</link>
       <pubDate>Fri, 30 Aug 2019 13:24:26 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-30-painting-for-aunt/</guid>
+      <guid>http://localhost:1313/en/2019-08-30-painting-for-aunt/</guid>
       <description>&lt;p&gt;These days I painting for aunt, making my painting more figurative is a cool thing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Self</title>
-      <link>https://liuqiran.github.io/en/2019-08-30-self/</link>
+      <link>http://localhost:1313/en/2019-08-30-self/</link>
       <pubDate>Fri, 30 Aug 2019 02:17:02 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-30-self/</guid>
+      <guid>http://localhost:1313/en/2019-08-30-self/</guid>
       <description>&lt;p&gt;High levels are abstract. People alway want to go higher level thinking.&lt;/p&gt;
 &lt;p&gt;Shifting to low levels has two benefits, the first is people can avoid the control of high levels, the second is, people escape from strong emotions like anxiety.&lt;/p&gt;
 &lt;p&gt;People usually change between high levels and low levels.&lt;/p&gt;
@@ -2328,9 +2327,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>MESOPOTAMIA  AND PERSIA</title>
-      <link>https://liuqiran.github.io/en/2019-08-29-mesopotamia-and-persia/</link>
+      <link>http://localhost:1313/en/2019-08-29-mesopotamia-and-persia/</link>
       <pubDate>Thu, 29 Aug 2019 05:27:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-29-mesopotamia-and-persia/</guid>
+      <guid>http://localhost:1313/en/2019-08-29-mesopotamia-and-persia/</guid>
       <description>&lt;h3 id=&#34;sumer&#34;&gt;Sumer&lt;/h3&gt;
 &lt;p&gt;The Sumerians developed city-states and formed a white temple for rituals. Sumerians also produced great literature.&lt;/p&gt;
 &lt;h4 id=&#34;inanna&#34;&gt;INANNA&lt;/h4&gt;
@@ -2344,18 +2343,18 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>How We Procrastinate</title>
-      <link>https://liuqiran.github.io/en/2019-08-29-how-we-procrastinate/</link>
+      <link>http://localhost:1313/en/2019-08-29-how-we-procrastinate/</link>
       <pubDate>Wed, 28 Aug 2019 17:01:23 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-29-how-we-procrastinate/</guid>
+      <guid>http://localhost:1313/en/2019-08-29-how-we-procrastinate/</guid>
       <description>&lt;h4 id=&#34;creating-safety-the-first-major-step-out-of-procrastination&#34;&gt;CREATING SAFETY: THE FIRST MAJOR STEP OUT OF PROCRASTINATION&lt;/h4&gt;
 &lt;p&gt;Imaging that we always transform the task to a board before ourself, we can perform well if this board is on the land, but if the board is suspended between two buildings 100 feet above the pavement, then we are fearful to pass it.What’s more, we always feel a fire behind ourself.&lt;/p&gt;
 &lt;p&gt;We always fell in self-criticism so we use procrastinate to put off tasks until the deadline. It’s a victim mentality that we think we have to, no we will.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Loneliness</title>
-      <link>https://liuqiran.github.io/en/2019-08-28-loneliness/</link>
+      <link>http://localhost:1313/en/2019-08-28-loneliness/</link>
       <pubDate>Wed, 28 Aug 2019 04:19:44 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-28-loneliness/</guid>
+      <guid>http://localhost:1313/en/2019-08-28-loneliness/</guid>
       <description>&lt;p&gt;The author got some experiences which saw so many disabilities, they full of loneliness, painful.&lt;/p&gt;
 &lt;p&gt;A human being needs a companion, and we need truths and make our worlds or communities better.&lt;/p&gt;
 &lt;h4 id=&#34;community-and-rigid-order&#34;&gt;Community and Rigid Order&lt;/h4&gt;
@@ -2365,9 +2364,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Between Damocles and Hydra</title>
-      <link>https://liuqiran.github.io/en/2019-08-27-between-damocles-and-hydra/</link>
+      <link>http://localhost:1313/en/2019-08-27-between-damocles-and-hydra/</link>
       <pubDate>Mon, 26 Aug 2019 16:59:31 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-27-between-damocles-and-hydra/</guid>
+      <guid>http://localhost:1313/en/2019-08-27-between-damocles-and-hydra/</guid>
       <description>&lt;h4 id=&#34;half-of-life-has-no-name&#34;&gt;HALF OF LIFE HAS NO NAME&lt;/h4&gt;
 &lt;p&gt;The opposite of fragile is not robust, half of our life has no name for.&lt;/p&gt;
 &lt;h4 id=&#34;please-behead-me&#34;&gt;PLEASE BEHEAD ME&lt;/h4&gt;
@@ -2377,16 +2376,16 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Swimming pool</title>
-      <link>https://liuqiran.github.io/en/2019-08-26-swimming-pool/</link>
+      <link>http://localhost:1313/en/2019-08-26-swimming-pool/</link>
       <pubDate>Mon, 26 Aug 2019 12:35:51 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-26-swimming-pool/</guid>
+      <guid>http://localhost:1313/en/2019-08-26-swimming-pool/</guid>
       <description>&lt;p&gt;Last night I had a dream that I heard some news about Song Qingling, then my dad fell into a swamp suddenly, the next scene, two girls had a battle in the dirty swimming pool but we can see the bottom of the pool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prologue</title>
-      <link>https://liuqiran.github.io/en/2019-08-16-antifragile-1/</link>
+      <link>http://localhost:1313/en/2019-08-16-antifragile-1/</link>
       <pubDate>Thu, 15 Aug 2019 21:19:42 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-16-antifragile-1/</guid>
+      <guid>http://localhost:1313/en/2019-08-16-antifragile-1/</guid>
       <description>&lt;p&gt;Formal education cannot bring discovery and progress, only aggressive risk can.&lt;/p&gt;
 &lt;p&gt;In modern times, so many people avoid fragility through the expences of others.&lt;/p&gt;
 &lt;h4 id=&#34;the-antidote-to-the-black-swan&#34;&gt;The Antidote to The Black Swan&lt;/h4&gt;
@@ -2397,9 +2396,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Neolithic Art</title>
-      <link>https://liuqiran.github.io/en/2019-08-13-neolithic-art/</link>
+      <link>http://localhost:1313/en/2019-08-13-neolithic-art/</link>
       <pubDate>Tue, 13 Aug 2019 15:55:13 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-13-neolithic-art/</guid>
+      <guid>http://localhost:1313/en/2019-08-13-neolithic-art/</guid>
       <description>&lt;h4 id=&#34;anatolia-and-mesopotamia&#34;&gt;Anatolia and Mesopotamia&lt;/h4&gt;
 &lt;p&gt;The agriculture developed, many towns developed, so the&lt;/p&gt;
 &lt;h4 id=&#34;jericho&#34;&gt;JERICHO&lt;/h4&gt;
@@ -2411,18 +2410,18 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Why We Procrastinate</title>
-      <link>https://liuqiran.github.io/en/2019-08-13-why-we-procrastinate/</link>
+      <link>http://localhost:1313/en/2019-08-13-why-we-procrastinate/</link>
       <pubDate>Tue, 13 Aug 2019 12:29:42 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-13-why-we-procrastinate/</guid>
+      <guid>http://localhost:1313/en/2019-08-13-why-we-procrastinate/</guid>
       <description>&lt;p&gt;I think the reason I always want to text with others is that maybe I want a connection with others to replace my relatives, but I should fish or cut the bait between the connection with others (the emotion relationship build by my parents) or my self-development.&lt;/p&gt;
 &lt;p&gt;The story of Dorothy shows that procrastination is the choice between the self-improvement and others jealousy.&lt;/p&gt;
 &lt;p&gt;I need to unlearn the pattern that my tasks are associated with the mind that I am lazy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paleolithic Art</title>
-      <link>https://liuqiran.github.io/en/2019-08-11-paleolithic-art/</link>
+      <link>http://localhost:1313/en/2019-08-11-paleolithic-art/</link>
       <pubDate>Sun, 11 Aug 2019 11:17:14 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-11-paleolithic-art/</guid>
+      <guid>http://localhost:1313/en/2019-08-11-paleolithic-art/</guid>
       <description>&lt;h4 id=&#34;africa&#34;&gt;Africa&lt;/h4&gt;
 &lt;p&gt;What shall be my subject? -animals, but men are rare. They’re almost profiled because the only profile can show the essence.&lt;/p&gt;
 &lt;h4 id=&#34;western-europe&#34;&gt;Western Europe&lt;/h4&gt;
@@ -2435,33 +2434,33 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Observe my life</title>
-      <link>https://liuqiran.github.io/en/2019-08-10-observe-my-life/</link>
+      <link>http://localhost:1313/en/2019-08-10-observe-my-life/</link>
       <pubDate>Sat, 10 Aug 2019 12:01:45 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-10-observe-my-life/</guid>
+      <guid>http://localhost:1313/en/2019-08-10-observe-my-life/</guid>
       <description>&lt;p&gt;I should record my life to observe and analyze why I will do these things.&lt;/p&gt;
 &lt;p&gt;The reason I always want to chat online is that I want to connect with others but I don’t want to talk.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Free and Easy Wandering</title>
-      <link>https://liuqiran.github.io/en/2019-08-02-free-and-easy-wandering/</link>
+      <link>http://localhost:1313/en/2019-08-02-free-and-easy-wandering/</link>
       <pubDate>Fri, 02 Aug 2019 11:46:14 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-02-free-and-easy-wandering/</guid>
+      <guid>http://localhost:1313/en/2019-08-02-free-and-easy-wandering/</guid>
       <description>&lt;p&gt;Different types of creatures cannot understand each other. It’s because there are different factors affecting, such as longevity and the environment.&lt;/p&gt;
 &lt;p&gt;Xu You’s saying means name is the only guest of reality. We should think about whether we can fit it.&lt;/p&gt;
 &lt;p&gt;Which is useless in one place can be very useful in other places, like the cream.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Krita practice 2</title>
-      <link>https://liuqiran.github.io/en/2019-08-01-krita-practice-2/</link>
+      <link>http://localhost:1313/en/2019-08-01-krita-practice-2/</link>
       <pubDate>Thu, 01 Aug 2019 13:29:42 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-01-krita-practice-2/</guid>
+      <guid>http://localhost:1313/en/2019-08-01-krita-practice-2/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2019/08/manhua-girl-1.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basic concepts 4</title>
-      <link>https://liuqiran.github.io/en/2019-08-01-basic-concepts-4/</link>
+      <link>http://localhost:1313/en/2019-08-01-basic-concepts-4/</link>
       <pubDate>Thu, 01 Aug 2019 09:25:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-01-basic-concepts-4/</guid>
+      <guid>http://localhost:1313/en/2019-08-01-basic-concepts-4/</guid>
       <description>&lt;p&gt;Carving and Casting: Subtractive, and addictive.&lt;/p&gt;
 &lt;p&gt;Relief sculpture: some sculpture is very boldly.&lt;/p&gt;
 &lt;p&gt;Art historian should learn in other disciplines.&lt;/p&gt;
@@ -2469,18 +2468,18 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Socrate</title>
-      <link>https://liuqiran.github.io/en/2019-08-01-socrate/</link>
+      <link>http://localhost:1313/en/2019-08-01-socrate/</link>
       <pubDate>Thu, 01 Aug 2019 05:26:38 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-08-01-socrate/</guid>
+      <guid>http://localhost:1313/en/2019-08-01-socrate/</guid>
       <description>&lt;p&gt;People should not act on the basis of opinion, but true knowledge.&lt;/p&gt;
 &lt;p&gt;“The unexamined life is not worth living” (Apology 38A).&lt;/p&gt;
 &lt;p&gt;It’s not by art, but by divine power.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basic concept 3</title>
-      <link>https://liuqiran.github.io/en/2019-07-27-basic-concept-3/</link>
+      <link>http://localhost:1313/en/2019-07-27-basic-concept-3/</link>
       <pubDate>Sat, 27 Jul 2019 09:29:57 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-07-27-basic-concept-3/</guid>
+      <guid>http://localhost:1313/en/2019-07-27-basic-concept-3/</guid>
       <description>&lt;p&gt;Texture reflects the material.&lt;/p&gt;
 &lt;p&gt;SPACE, MASS, and VOLUME&lt;/p&gt;
 &lt;p&gt;Perspective, Foreshortening Foreshortening is one form of perspective, Rubens use it, Egyptian artists don’t use it, neither is the correct.&lt;/p&gt;
@@ -2488,9 +2487,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Basic concepts 2</title>
-      <link>https://liuqiran.github.io/en/2019-07-23-basic-concepts-2/</link>
+      <link>http://localhost:1313/en/2019-07-23-basic-concepts-2/</link>
       <pubDate>Tue, 23 Jul 2019 11:02:13 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-07-23-basic-concepts-2/</guid>
+      <guid>http://localhost:1313/en/2019-07-23-basic-concepts-2/</guid>
       <description>&lt;p&gt;Who made it? From the personal style, art historian can attribute who made these art works.&lt;/p&gt;
 &lt;p&gt;Who paid for it? Patrons always have a big influence when artists are commissioned. They can change subjects and style in an artwork, under these circumstances, personal style is not important. So it is necessary to know who paid for it?&lt;/p&gt;
 &lt;p&gt;Basic words for art historian:&lt;/p&gt;
@@ -2498,9 +2497,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Laying plans 1</title>
-      <link>https://liuqiran.github.io/en/2019-07-18-laying-plans-1/</link>
+      <link>http://localhost:1313/en/2019-07-18-laying-plans-1/</link>
       <pubDate>Thu, 18 Jul 2019 08:18:04 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-07-18-laying-plans-1/</guid>
+      <guid>http://localhost:1313/en/2019-07-18-laying-plans-1/</guid>
       <description>&lt;p&gt;sovereign should have moral law.&lt;/p&gt;
 &lt;p&gt;Before the war, you should think about whether moral law is sit on your side, if not, you lose Heaven.&lt;/p&gt;
 &lt;p&gt;Before the war, you should create the situation for success, and make the plan for better circumstances.&lt;/p&gt;
@@ -2512,9 +2511,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Masochism and sadism</title>
-      <link>https://liuqiran.github.io/en/2019-07-17-masochism-and-sadism/</link>
+      <link>http://localhost:1313/en/2019-07-17-masochism-and-sadism/</link>
       <pubDate>Wed, 17 Jul 2019 06:39:28 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-07-17-masochism-and-sadism/</guid>
+      <guid>http://localhost:1313/en/2019-07-17-masochism-and-sadism/</guid>
       <description>&lt;p&gt;In Freud’s theory, masochism is from sadism, another theory said that sadism and masochism are two faces of one coin.&lt;/p&gt;
 &lt;p&gt;But the recent study shows that maybe masochism is more fundamental. The number of Masochists are much more than sadists’.&lt;/p&gt;
 &lt;p&gt;The submissive partners are really in control during SM, because it is the submissive’s desire shapes the sex play.&lt;/p&gt;
@@ -2522,9 +2521,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Basic concepts</title>
-      <link>https://liuqiran.github.io/en/2019-07-17-basic-conceptions/</link>
+      <link>http://localhost:1313/en/2019-07-17-basic-conceptions/</link>
       <pubDate>Wed, 17 Jul 2019 06:20:39 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-07-17-basic-conceptions/</guid>
+      <guid>http://localhost:1313/en/2019-07-17-basic-conceptions/</guid>
       <description>&lt;p&gt;What is art history:&lt;/p&gt;
 &lt;p&gt;Art history aims to learn and find the history and development of art.&lt;/p&gt;
 &lt;p&gt;The questions art historians should ask:&lt;/p&gt;
@@ -2533,9 +2532,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>My friends</title>
-      <link>https://liuqiran.github.io/en/my-friends/</link>
+      <link>http://localhost:1313/en/my-friends/</link>
       <pubDate>Tue, 09 Jul 2019 07:51:36 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/my-friends/</guid>
+      <guid>http://localhost:1313/en/my-friends/</guid>
       <description>&lt;p class=&#34;has-contrast-color has-primary-background-color has-text-color has-background&#34;&gt;
    “If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”
 &lt;/p&gt;
@@ -2563,9 +2562,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Return to dreamland</title>
-      <link>https://liuqiran.github.io/en/2019-07-06-return-to-dreamland/</link>
+      <link>http://localhost:1313/en/2019-07-06-return-to-dreamland/</link>
       <pubDate>Sat, 06 Jul 2019 00:21:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-07-06-return-to-dreamland/</guid>
+      <guid>http://localhost:1313/en/2019-07-06-return-to-dreamland/</guid>
       <description>&lt;figure class=&#34;wp-block-embed-youtube aligncenter wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 &lt;/div&gt;&lt;/figure&gt;
@@ -2575,16 +2574,16 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Categorize my blog</title>
-      <link>https://liuqiran.github.io/en/2019-06-23-categorize-my-blog/</link>
+      <link>http://localhost:1313/en/2019-06-23-categorize-my-blog/</link>
       <pubDate>Sun, 23 Jun 2019 02:26:48 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-06-23-categorize-my-blog/</guid>
+      <guid>http://localhost:1313/en/2019-06-23-categorize-my-blog/</guid>
       <description>&lt;p&gt;The most important decision is &lt;a href=&#34;https://www.liuqiran.com/index.php/2019/05/22/category/&#34;&gt;changing categories&lt;/a&gt;. so I think it is also important to categorize my writings, I improved the classification of my categories in my blog. I can read and found my writing through multi-level categories, classify them and reflect efficiently. I also can discover everything I wrote before through categories, like time traveling, know myself.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://liuqiran.github.io/en/2019-06-10-1263/</link>
+      <link>http://localhost:1313/en/2019-06-10-1263/</link>
       <pubDate>Mon, 10 Jun 2019 02:24:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-06-10-1263/</guid>
+      <guid>http://localhost:1313/en/2019-06-10-1263/</guid>
       <description>&lt;p&gt;第一章比较好&lt;/p&gt;
 &lt;p&gt;阿拉伯数字点汉字是顿&lt;/p&gt;
 &lt;p&gt;严格的按照专业写作的格式（学校也有格式）&lt;/p&gt;
@@ -2593,9 +2592,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Zizek</title>
-      <link>https://liuqiran.github.io/en/2019-06-06-zizek/</link>
+      <link>http://localhost:1313/en/2019-06-06-zizek/</link>
       <pubDate>Thu, 06 Jun 2019 08:22:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-06-06-zizek/</guid>
+      <guid>http://localhost:1313/en/2019-06-06-zizek/</guid>
       <description>&lt;p&gt;意识形态批评&lt;/p&gt;
 &lt;p&gt;意识形态不是强加在我们上面的。&lt;/p&gt;
 &lt;p&gt;走出意识形态是痛苦的，意识形态会使你看到真相。自由是痛苦的。&lt;/p&gt;
@@ -2603,9 +2602,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Tropic love</title>
-      <link>https://liuqiran.github.io/en/2019-05-30-tropic-love/</link>
+      <link>http://localhost:1313/en/2019-05-30-tropic-love/</link>
       <pubDate>Thu, 30 May 2019 09:29:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-05-30-tropic-love/</guid>
+      <guid>http://localhost:1313/en/2019-05-30-tropic-love/</guid>
       <description>&lt;figure class=&#34;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 &lt;/div&gt;&lt;/figure&gt;
@@ -2614,17 +2613,17 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Lu Zhi</title>
-      <link>https://liuqiran.github.io/en/2019-05-25-lu-zhi/</link>
+      <link>http://localhost:1313/en/2019-05-25-lu-zhi/</link>
       <pubDate>Fri, 24 May 2019 22:19:04 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-05-25-lu-zhi/</guid>
+      <guid>http://localhost:1313/en/2019-05-25-lu-zhi/</guid>
       <description>&lt;p&gt;吴门画派的文人画家都有着和文征明一样早年仕儒、晚年隐居不仕的经历，陆治也不例外。&lt;/p&gt;
 &lt;p&gt;陆治与文征明的交往大约于嘉靖二年（1523年）开始，他同文征明一同交游，并创作了大量的游记作品，并学习文氏画风陆治还与陈淳、王毂祥等同门关系甚好。文征明和陆治虽然没有明确的师生关系，但是陆治的早期风格受到文的影响。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Category</title>
-      <link>https://liuqiran.github.io/en/2019-05-22-category/</link>
+      <link>http://localhost:1313/en/2019-05-22-category/</link>
       <pubDate>Wed, 22 May 2019 13:26:07 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-05-22-category/</guid>
+      <guid>http://localhost:1313/en/2019-05-22-category/</guid>
       <description>&lt;p class=&#34;has-background has-primary-background-color&#34;&gt;
   The most important decision you’ll ever make: Change your categories.
 &lt;/p&gt;
@@ -2636,16 +2635,16 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title></title>
-      <link>https://liuqiran.github.io/en/2019-05-21-611/</link>
+      <link>http://localhost:1313/en/2019-05-21-611/</link>
       <pubDate>Tue, 21 May 2019 13:24:41 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-05-21-611/</guid>
+      <guid>http://localhost:1313/en/2019-05-21-611/</guid>
       <description>&lt;p&gt;These days I started listening the podcast, A.J. Hoge is very good, his talking is understandable and knowledgable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Notes: The Now Habit (1)</title>
-      <link>https://liuqiran.github.io/en/2019-03-26-notes-the-now-habit-1/</link>
+      <link>http://localhost:1313/en/2019-03-26-notes-the-now-habit-1/</link>
       <pubDate>Tue, 26 Mar 2019 07:44:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-03-26-notes-the-now-habit-1/</guid>
+      <guid>http://localhost:1313/en/2019-03-26-notes-the-now-habit-1/</guid>
       <description>&lt;p style=&#34;text-align: right;&#34;&gt;
   Goal: supportive of yourself
 &lt;/p&gt;
@@ -2662,9 +2661,9 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
     </item>
     <item>
       <title>Two Years Anniversary of Using Anki</title>
-      <link>https://liuqiran.github.io/en/2019-03-25-two-years-anniversary-of-using-anki/</link>
+      <link>http://localhost:1313/en/2019-03-25-two-years-anniversary-of-using-anki/</link>
       <pubDate>Mon, 25 Mar 2019 13:10:15 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-03-25-two-years-anniversary-of-using-anki/</guid>
+      <guid>http://localhost:1313/en/2019-03-25-two-years-anniversary-of-using-anki/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2019/03/Anki.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I have been using Anki for two years.
 It is one of the best learning and memorizing software I have ever met. It is open-source, freedom and personal.&lt;/p&gt;
@@ -2676,9 +2675,9 @@ The next steps are to improve my knowledge base of my major: create cards I shou
     </item>
     <item>
       <title>👤 About me</title>
-      <link>https://liuqiran.github.io/en/about-me/</link>
+      <link>http://localhost:1313/en/about-me/</link>
       <pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/about-me/</guid>
+      <guid>http://localhost:1313/en/about-me/</guid>
       <description>&lt;p&gt;Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）&lt;/p&gt;
 &lt;div class=&#34;profile-section&#34;&gt;
   &lt;div class=&#34;profile-text&#34;&gt;

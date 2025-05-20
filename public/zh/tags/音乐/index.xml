@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>音乐 on 刘其然的部落格</title>
-    <link>https://liuqiran.github.io/zh/tags/%E9%9F%B3%E4%B9%90/</link>
+    <link>http://localhost:1313/zh/tags/%E9%9F%B3%E4%B9%90/</link>
     <description>Recent content in 音乐 on 刘其然的部落格</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 23 May 2019 13:03:48 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/zh/tags/%E9%9F%B3%E4%B9%90/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Apr 2025 06:21:57 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/tags/%E9%9F%B3%E4%B9%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>It’s my life</title>
-      <link>https://liuqiran.github.io/zh/its-my-life/</link>
+      <link>http://localhost:1313/zh/its-my-life/</link>
       <pubDate>Thu, 23 May 2019 13:03:48 +0000</pubDate>
-      <guid>https://liuqiran.github.io/zh/its-my-life/</guid>
+      <guid>http://localhost:1313/zh/its-my-life/</guid>
       <description>&lt;p&gt;实在想象不了十多年的时间，&lt;/p&gt;
 &lt;p&gt;一个人最美好的年华,&lt;/p&gt;
 &lt;p&gt;呆在监狱里。&lt;/p&gt;

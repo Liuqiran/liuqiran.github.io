@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Are You Lights On on Liu Qiran</title>
-    <link>https://liuqiran.github.io/en/tags/are-you-lights-on/</link>
+    <link>http://localhost:1313/en/tags/are-you-lights-on/</link>
     <description>Recent content in Are You Lights On on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 07 May 2020 09:29:08 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/en/tags/are-you-lights-on/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/are-you-lights-on/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chapter 2</title>
-      <link>https://liuqiran.github.io/en/2020-05-07-chapter-2/</link>
+      <link>http://localhost:1313/en/2020-05-07-chapter-2/</link>
       <pubDate>Thu, 07 May 2020 09:29:08 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-05-07-chapter-2/</guid>
+      <guid>http://localhost:1313/en/2020-05-07-chapter-2/</guid>
       <description>&lt;p&gt;現在的問題已經從提高電梯服務轉移到了其他地方，老板抱怨、客戶也在抱怨。&lt;/p&gt;</description>
     </item>
   </channel>

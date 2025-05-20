@@ -1,19 +1,14 @@
-/* 引用本地的 Garamond 字体 */
-@font-face {
-  font-family: 'Garamond';
-  src: url('/fonts/Garamond.ttf') format('truetype');
-  font-style: normal ;
-}
+
 
 /* 应用 Garamond 字体到英文页面 */
 html[lang="en-US"] body {
-  font-family: 'Garamond', "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 19px;
+  font-family: "Georgia", "Times New Roman", serif;
 }
 
 body {
-  font-family: 'KingHwa_OldSong', /* 保持中文字体配置 */ "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-}
+  font-family: 'KingHwa_OldSong', sans-serif;
+} 
+
 
 .vertical-chinese-wrapper {
   overflow-x: auto;

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Museology on Liu Qiran</title>
-    <link>https://liuqiran.github.io/en/tags/museology/</link>
+    <link>http://localhost:1313/en/tags/museology/</link>
     <description>Recent content in Museology on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 10 Jan 2020 05:51:09 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/en/tags/museology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/museology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curator and exhibition</title>
-      <link>https://liuqiran.github.io/en/2020-01-10-curator-and-exhibition/</link>
+      <link>http://localhost:1313/en/2020-01-10-curator-and-exhibition/</link>
       <pubDate>Fri, 10 Jan 2020 05:51:09 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-01-10-curator-and-exhibition/</guid>
+      <guid>http://localhost:1313/en/2020-01-10-curator-and-exhibition/</guid>
       <description>&lt;p&gt;Curator 是一个专有名称，曾经被作为“博物馆馆长”之意。&lt;/p&gt;
 &lt;p&gt;做一个策展人要具备资金筹措能力。&lt;/p&gt;
 &lt;p&gt;故宫的展览负责人以前是一个机构，以前很稳定。&lt;/p&gt;
@@ -20,9 +20,9 @@
     </item>
     <item>
       <title>Museum and public</title>
-      <link>https://liuqiran.github.io/en/2019-12-17-museum-and-public/</link>
+      <link>http://localhost:1313/en/2019-12-17-museum-and-public/</link>
       <pubDate>Tue, 17 Dec 2019 09:32:09 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-12-17-museum-and-public/</guid>
+      <guid>http://localhost:1313/en/2019-12-17-museum-and-public/</guid>
       <description>&lt;p&gt;公众态度公众责任如何建立？&lt;br&gt;
 很多民间的组织开始带领公众参观博物馆。&lt;/p&gt;
 &lt;p&gt;我们可以从社会端参与到其中。&lt;/p&gt;
@@ -34,9 +34,9 @@
     </item>
     <item>
       <title>New Museology</title>
-      <link>https://liuqiran.github.io/en/2019-10-08-new-museology/</link>
+      <link>http://localhost:1313/en/2019-10-08-new-museology/</link>
       <pubDate>Tue, 08 Oct 2019 02:19:52 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2019-10-08-new-museology/</guid>
+      <guid>http://localhost:1313/en/2019-10-08-new-museology/</guid>
       <description>&lt;p&gt;学期最重要的问题：作为一个个体与这个事物的关系。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;新博物馆学视野下博物馆认知&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;《当卢浮宫遇见紫禁城》&lt;/p&gt;
