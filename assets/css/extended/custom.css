@@ -7,12 +7,12 @@
 
 /* 应用 Garamond 字体到英文页面 */
 html[lang="en-US"] body {
-  font-family: 'Garamond', serif;
+  font-family: 'Garamond', serif, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",;
   font-size: 19px;
 }
 
 body {
-  font-family: 'KingHwa_OldSong', regular;  /* 保持中文字体配置 */
+  font-family: 'KingHwa_OldSong', regular;  /* 保持中文字体配置 */ "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
 }
 
 .vertical-chinese-wrapper {
