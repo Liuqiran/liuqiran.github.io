@@ -1,4 +1,5 @@
 defaultContentLanguage: "en"
+enableGitInfo: true
 hasCJKLanguage: true
 defaultContentLanguageInSubdir: true  
 theme: "PaperMod"  
@@ -185,7 +186,6 @@ outputFormats:
 # 这里的参数会被代码以 .Site.Params 的形式读取
 params:  
   css: ["css/custom.css"]
-  enableGitInfo: true
   ShowLastMod: true
   ShowLastModOnlyIfDiff: true
   author : "Qiran" 
