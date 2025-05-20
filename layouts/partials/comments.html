@@ -7,11 +7,17 @@
 
 <script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
 <script>
-    twikoo.init({
-        envId: {{ .Site.Params.twikoo.id }},
-        el: "#tcomment",
-        region: {{ .Site.Params.twikoo.region }},   
-        lang: {{ .Site.Language.Lang }},
-        path: window.TWIKOO_MAGIC_PATH || window.location.pathname,
-    })
+  {{ $path := .RelPermalink }}
+
+  {{ if eq .Lang "en" }}
+    {{ $path = replace $path "/en/" "/zh/" }}
+  {{ end }}
+
+  twikoo.init({
+    envId: {{ .Site.Params.twikoo.id }},
+    el: "#tcomment",
+    region: {{ .Site.Params.twikoo.region }},
+    lang: "{{ .Site.Language.Lang }}",
+    path: "{{ $path }}",
+  })
 </script>

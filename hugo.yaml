@@ -22,30 +22,32 @@ languages:
           url: /en/
           weight: 1
         - identifier: about
-          name: About
+          name: 👤 About
           url: /en/about-me-2/
           weight: 10
         - identifier: Reading list
-          name: Reading list
+          name: 📚 Reading list
           url: /en/reading-list/
           weight: 20
         - identifier: archive
-          name: Archive
+          name: 🗂️ Archive
           url: /en/archive/
           weight: 40
         - identifier: tags
-          name: tags
+          name: 🏷️ tags
           url: /en/tags/
           weight: 50
         - identifier: friends
-          name: Friends
+          name: 🧑‍🤝‍🧑 Friends
           url: /en/my-friends/
           weight: 60
         - identifier: search
-          name: Search
+          name: 🔍 Search
           url: /en/search/
           weight: 70
     params:
+      label:
+        icon: "/img/Avatar.jpg"
       displayFullLangName: true
       ShowPostNavLinks: true
       alternatelang: 'zh'
@@ -80,7 +82,7 @@ languages:
         - name: email
           url: 'mailto:woshiniuziku@gmail.com'    
         - name: facebook
-          url: 'https://web.facebook.com/woshiniuziku'
+          url: 'https://web.facebook.com/liuqiran'
     ShowFullTextinRSS: true
   zh:
     languageName: "中文"   
@@ -98,32 +100,32 @@ languages:
           weight: 1
           url: /zh/
         - identifier: about
-          name: 关于
+          name: 👤 关于
           url: /zh/about-me/
           weight: 2
         - identifier: reading-list
-          name: 阅读书目
+          name: 📚 阅读书目 
           url: /zh/reading-list-2/    
           weight: 3
         - identifier: archive 
-          name: 归档
+          name: 🗂️ 归档
           url: /zh/archive/
           weight: 4
         - identifier: 标签
-          name: 标签
+          name: 🏷️ 标签
           url: /zh/tags/
           weight: 5
         - identifier: links
-          name: 友人
+          name: 🧑‍🤝‍🧑 友人
           url: /zh/my-friends/
           weight: 6
         - identifier: search
-          name: 搜索
+          name: 🔍 搜索
           url: /zh/search/
           weight: 7
-
-
     params:
+      label:
+        icon: "/img/Avatar.jpg"
       displayFullLangName: true
       ShowPostnevLinks: true
       alternatelang: 'en' 
@@ -182,6 +184,8 @@ outputFormats:
 
 # 这里的参数会被代码以 .Site.Params 的形式读取
 params:  
+  css: ["css/custom.css"]
+  enableGitInfo: true
   author : "Qiran" 
   ShowShareButtons: true
   ShareButtons: ["linkedin","x","facebook","telegram","bilibili"]

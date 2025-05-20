@@ -54,4 +54,9 @@ body {
   max-width: 100%;    /* 确保图片宽度不超过容器 */
   max-height: 100%;   /* 确保图片高度不超过容器 */
   object-fit: contain; /* 保证图片保持比例缩放 */
+}   
+
+img[aria-label="logo"] {
+  border-radius: 50%;
+  object-fit: cover;
 }

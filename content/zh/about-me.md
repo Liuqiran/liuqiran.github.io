@@ -1,5 +1,5 @@
 ---
-title: 关于
+title: 👤 关于
 author: Qiran
 type: post
 url: /zh/about-me

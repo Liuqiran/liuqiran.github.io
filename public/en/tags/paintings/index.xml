@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Paintings on Liu Qiran</title>
-    <link>https://liuqiran.github.io/en/tags/paintings/</link>
+    <link>http://localhost:1313/en/tags/paintings/</link>
     <description>Recent content in Paintings on Liu Qiran</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 29 Feb 2020 11:23:54 +0000</lastBuildDate>
-    <atom:link href="https://liuqiran.github.io/en/tags/paintings/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/paintings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Practice digital drawing</title>
-      <link>https://liuqiran.github.io/en/2020-02-29-practice-digital-drawing/</link>
+      <link>http://localhost:1313/en/2020-02-29-practice-digital-drawing/</link>
       <pubDate>Sat, 29 Feb 2020 11:23:54 +0000</pubDate>
-      <guid>https://liuqiran.github.io/en/2020-02-29-practice-digital-drawing/</guid>
+      <guid>http://localhost:1313/en/2020-02-29-practice-digital-drawing/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../uploads/2020/02/Project-4_2.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
