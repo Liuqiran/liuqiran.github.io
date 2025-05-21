@@ -11,7 +11,7 @@ image: "/img/clock-wall.jpg"
 
 [**📚 Reading list**](/en/reading-list/)
 
-**Bible:** 🟩🟩🟩🟩🟩⬜⬜⬜⬜ 65%
+**Bible:** 🟩🟩🟩🟩🟩⬜⬜⬜ 65%
 
 # 🌳 Building Habits
 
