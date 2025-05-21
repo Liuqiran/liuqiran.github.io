@@ -1,0 +1,9 @@
+<canvas id="{{ .Get "id" }}" width="400" height="200"></canvas>
+<script>
+  const ctx = document.getElementById('{{ .Get "id" }}').getContext('2d');
+  new Chart(ctx, {
+    type: '{{ .Get "type" | default "line" }}',
+    data: {{ .Get "data" | safeJS }},
+    options: {{ .Get "options" | default "{}" | safeJS }}
+  });
+</script>

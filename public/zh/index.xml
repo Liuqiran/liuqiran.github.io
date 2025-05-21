@@ -82,7 +82,7 @@
       <guid>http://localhost:1313/zh/reading-list-2/</guid>
       <description>&lt;p&gt;读完的书:&lt;/p&gt;
 
-&lt;div style=&#34;margin: auto; overflow-x: auto;&#34;&gt;
+&lt;div style=&#34;font-size: 0.95rem; margin: auto; overflow-x: auto;&#34;&gt;
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -1545,7 +1545,7 @@
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/zh/my-friends/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧。）&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;“If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”—（思想在碰撞中产生火花，留下你的足迹吧~）&lt;/p&gt;&lt;/blockquote&gt;
 
 
   &lt;ul&gt;
@@ -1583,6 +1583,16 @@
       <pubDate>Fri, 07 Jun 2019 08:00:53 +0000</pubDate>
       <guid>http://localhost:1313/zh/cousinsdrawing/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../uploads/2019/06/487ac2fdb33d3c31dcd7e.jpeg&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Zizek</title>
+      <link>http://localhost:1313/zh/2019-06-06-zizek/</link>
+      <pubDate>Thu, 06 Jun 2019 08:22:15 +0000</pubDate>
+      <guid>http://localhost:1313/zh/2019-06-06-zizek/</guid>
+      <description>&lt;p&gt;意识形态批评&lt;/p&gt;
+&lt;p&gt;意识形态不是强加在我们上面的。&lt;/p&gt;
+&lt;p&gt;走出意识形态是痛苦的，意识形态会使你看到真相。自由是痛苦的。&lt;/p&gt;
+&lt;p&gt;幻想正是组成意识形态的重要材料。幻想提供了简单的解答。&lt;/p&gt;</description>
     </item>
     <item>
       <title>以儒行恶</title>

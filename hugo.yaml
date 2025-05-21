@@ -19,7 +19,7 @@ languages:
     menu:
       main:
         - identifier: home
-          name: Home
+          name: 🏠 Home
           url: /en/
           weight: 1
         - identifier: about
@@ -60,10 +60,12 @@ languages:
         imageWidth: 150
         imageHeight: 150
         buttons:
-          - name: about
+          - name: 👤 About me 
             url: /en/about-me-2/
-          - name: posts 
+          - name: 🗂️ posts 
             url: /en/archive/
+          - name: 🧭 Now
+            url: /en/now/
 
       socialIcons:
         - name: rss
@@ -97,7 +99,7 @@ languages:
     menu:
       main:
         - identifier: homepage 
-          name: 主页
+          name: 🏠 主页
           weight: 1
           url: /zh/
         - identifier: about

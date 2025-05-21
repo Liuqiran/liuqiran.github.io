@@ -8,6 +8,24 @@
     <language>en-US</language>
     <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>🧭 What I&#39;m Doing Now</title>
+      <link>http://localhost:1313/en/now/</link>
+      <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/now/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;This is what I’m currently focused on. Inspired by &lt;a href=&#34;https://nownownow.com/&#34;&gt;nownownow.com&lt;/a&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;-reading-status&#34;&gt;📖 Reading Status&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../en/reading-list/&#34;&gt;&lt;strong&gt;📚 Reading list&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bible:&lt;/strong&gt; 🟩🟩🟩🟩🟩⬜⬜⬜⬜ 65%&lt;/p&gt;
+&lt;h1 id=&#34;-building-habits&#34;&gt;🌳 Building Habits&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;Overall Habit Score&lt;/strong&gt; is the total score of all habits recorded using the Loop Habit Tracker.&lt;/li&gt;
+&lt;li&gt;The habits &lt;strong&gt;&amp;ldquo;Clean Diet&amp;rdquo;&lt;/strong&gt;, &lt;strong&gt;&amp;ldquo;Timely Sleep&amp;rdquo;&lt;/strong&gt;, and &lt;strong&gt;&amp;ldquo;Regular Exercise&amp;rdquo;&lt;/strong&gt; are shown as examples, each with a maximum score of 100. Their data is also sourced from Loop Habit Tracker.&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;I&amp;rsquo;d love to hear your thoughts — please leave a comment!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Why do people find it harder to be emotionally stirred as they grow older?</title>
       <link>http://localhost:1313/en/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
@@ -316,7 +334,7 @@ In my life, the concept of cultivating habits is gradually becoming one of the m
       <guid>http://localhost:1313/en/reading-list/</guid>
       <description>&lt;p&gt;The books I have finished reading:&lt;/p&gt;
 
-&lt;div style=&#34;margin: auto; overflow-x: auto;&#34;&gt;
+&lt;div style=&#34;font-size: 0.95rem; margin: auto; overflow-x: auto;&#34;&gt;
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -2584,16 +2602,6 @@ I’m so sorry my language is not very well? but I’m willing to hear your stor
 &lt;p&gt;标准的是（英）贡布里希：《艺术的故事》，北京：……出版社，2013年版，第xx页&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Zizek</title>
-      <link>http://localhost:1313/en/2019-06-06-zizek/</link>
-      <pubDate>Thu, 06 Jun 2019 08:22:15 +0000</pubDate>
-      <guid>http://localhost:1313/en/2019-06-06-zizek/</guid>
-      <description>&lt;p&gt;意识形态批评&lt;/p&gt;
-&lt;p&gt;意识形态不是强加在我们上面的。&lt;/p&gt;
-&lt;p&gt;走出意识形态是痛苦的，意识形态会使你看到真相。自由是痛苦的。&lt;/p&gt;
-&lt;p&gt;幻想正是组成意识形态的重要材料。幻想提供了简单的解答。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Tropic love</title>
       <link>http://localhost:1313/en/2019-05-30-tropic-love/</link>
       <pubDate>Thu, 30 May 2019 09:29:54 +0000</pubDate>
@@ -2680,7 +2688,7 @@ The next steps are to improve my knowledge base of my major: create cards I shou
       &lt;li&gt;&lt;strong&gt;First Name:&lt;/strong&gt; Qiran&lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;Gender:&lt;/strong&gt; ♂️&lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;Generation:&lt;/strong&gt; Gen Z&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Hometown:&lt;/strong&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Hunan&#34; target=&#34;_blank&#34;&gt;Hunan&lt;/a&gt;, 🇨🇳&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Hometown:&lt;/strong&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Hunan&#34; target=&#34;_blank&#34;&gt;Hunan&lt;/a&gt;, South 🇨🇳&lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;Personality Type:&lt;/strong&gt; &lt;a href=&#34;https://www.16personalities.com/infp-personality&#34; target=&#34;_blank&#34;&gt;INFP&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
@@ -2695,12 +2703,12 @@ The next steps are to improve my knowledge base of my major: create cards I shou
 &lt;li&gt;Writing is supposed to be an essential part of life. Organizing one’s words and works in the form of a site is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this site to record myself and share my thoughts, articles and works. ：)&lt;/li&gt;
 &lt;li&gt;This site has joined the &lt;a href=&#34;https://foreverblog.cn/&#34;&gt;Ten-year Contract activities
 &lt;/a&gt;(that is, from joining this activity, our site will not be closed for ten years, to maintain the update and vitality!)&lt;/li&gt;
-&lt;li&gt;This site is hosted on GitHub, with the alternate URL &lt;a href=&#34;liuqiran.github.io&#34;&gt;liuqiran.github.io&lt;/a&gt;.
+&lt;li&gt;This site is hosted on GitHub, with the alternate URL &lt;a href=&#34;https://liuqiran.github.io&#34;&gt;liuqiran.github.io&lt;/a&gt;.
 (It means that this site can exist for a long time!)&lt;/li&gt;
 &lt;li&gt;⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the &lt;a href=&#34;../zh/&#34;&gt;Chinese site&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../en/tags/building-site/&#34;&gt;Building site log&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;../en/reading-list/&#34;&gt;&lt;strong&gt;📚 Reading list&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;../en/now&#34;&gt;🧭 What I’m doing now&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

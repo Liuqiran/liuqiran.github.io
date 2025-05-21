@@ -1,0 +1,170 @@
+<style>
+
+.weektable-wrapper {
+  max-height: 300px;      /* 限制最大高度，数字可调 */
+  overflow-y: auto;       /* 超过高度显示垂直滚动条 */
+  border-radius: 12px;    /* 保持圆角 */
+  border: 2px solid #a8dadc;  /* 原表格的边框改到这里 */
+  box-shadow: 0 4px 8px rgba(168, 218, 220, 0.3); /* 原表格阴影改到这里 */
+}
+    .weektable {
+      border-collapse: separate; /* 必须用separate才能生效圆角 */
+      border-spacing: 0;
+      border: 1px solid #a8dadc;
+      border-radius: 12px;
+      width: 100%;
+
+    }
+  
+    .weektable th, .weektable td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #a8dadc;
+      text-align: center;
+      color: #264653;
+    }
+  
+    .weektable thead th {
+      background-color: #457b9d;
+      color: #f1faee;
+      font-weight: 600;
+    }
+  
+    .weektable tbody tr:last-child td {
+      border-bottom: none;
+    }
+  
+    .weektable tbody tr:hover {
+      background-color: #f1faee;
+      cursor: default;
+    }
+  
+    .weektable tbody tr.hide-row {
+      display: none;
+    }
+  
+    .weektable-toggle {
+      cursor: pointer;
+      color: #1d3557;
+      user-select: none;
+      margin-bottom: 0.5em;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    .cell-content {
+    display: flex;
+    justify-content: center; /* 水平居中整体内容 */
+    align-items: center;     /* 垂直居中 */
+    gap: 6px;                /* 数字和箭头间距 */
+  }
+  .cell-value {
+    flex: none;              /* 数字不伸缩 */
+    text-align: center;
+    min-width: 30px;         /* 固定宽度，确保数字列宽一致 */
+  }
+  .arrow {
+    flex: none;
+  }
+  .arrow.up {
+    color: green;
+  }
+  .arrow.down {
+    color: red;
+  }
+
+  </style>
+  
+  <span class="weektable-toggle" onclick="toggleWeekRows(this)">Show more weeks ▼</span>
+
+  <div class="weektable-wrapper" tabindex="0" style="outline:none;">
+
+  
+  <table class="weektable">
+    <thead>
+      <tr>
+        <th>Week No.</th>
+        <th>🔄 Overall Habit Score</th>
+        <th>🍲 Clean diet (%)</th>
+        <th>🛏️ Timely Sleep (%)</th>
+        <th>👟 Regular Exercise (%)</th>
+        <th>📖 Reading Time (mins)</th>
+      </tr>
+    </thead>
+    <tbody>
+        {{ $rows := split .Inner "\n" }}
+        {{ range $index, $row := $rows }}
+          {{ if gt $index 0 }}
+            {{ $cells := split $row "," }}
+            <tr class="{{ if ge $index 4 }}hide-row{{ end }}">
+              {{ range $i, $cell := $cells }}
+                {{ $val := trim $cell " " }}
+                <td>
+                    <div class="cell-content">
+                      <div class="cell-value">{{ $val }}</div>
+                  
+                      {{ if and (ge $i 1) (lt $index (sub (len $rows) 1)) }}
+                        {{/* 箭头逻辑不变，只是把箭头放这里 */}}
+                        {{ $nextRow := index $rows (add $index 1) }}
+                        {{ $nextCells := split $nextRow "," }}
+                        {{ $nextVal := 0 }}
+                        {{ if lt $i (len $nextCells) }}
+                          {{ $nextVal = (float (trim (index $nextCells $i) " ")) }}
+                        {{ end }}
+                        {{ $currVal := float (replace $val "%" "") }}
+                  
+                        {{ if and (ne $nextVal 0) (ne $currVal 0) }}
+                          {{ $diff := sub $currVal $nextVal }}
+                          {{ $absDiff := cond (lt $diff 0) (mul $diff -1) $diff }}
+                          {{ $percentChange := div (mul $absDiff 100) $nextVal }}
+                  
+                          {{ $arrowCount := 1 }}
+                          {{ if ge $percentChange 75 }}
+                            {{ $arrowCount = 3 }}
+                          {{ else if ge $percentChange 50 }}
+                            {{ $arrowCount = 2 }}
+                          {{ end }}
+                  
+                          {{ if lt $currVal $nextVal }}
+                            {{ range seq 1 $arrowCount }}
+                              <span class="arrow down">▼</span>
+                            {{ end }}
+                          {{ else if gt $currVal $nextVal }}
+                            {{ range seq 1 $arrowCount }}
+                              <span class="arrow up">▲</span>
+                            {{ end }}
+                          {{ end }}
+                        {{ end }}
+                      {{ end }}
+                  
+                    </div>
+                  </td>
+                  
+              {{ end }}
+            </tr>
+          {{ end }}
+        {{ end }}
+      </tbody>
+  </table>  
+
+</div>
+  
+  <script>
+    function toggleWeekRows(el) {
+      const hiddenRows = document.querySelectorAll(".weektable tbody tr.hide-row");
+      if (hiddenRows.length === 0) return;
+  
+      let isHidden = hiddenRows[0].style.display === "none" || hiddenRows[0].style.display === "";
+      hiddenRows.forEach(row => {
+        row.style.display = isHidden ? "table-row" : "none";
+      });
+      el.textContent = isHidden ? "Show fewer weeks ▲" : "Show more weeks ▼";
+    }
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      const hiddenRows = document.querySelectorAll(".weektable tbody tr.hide-row");
+      hiddenRows.forEach(row => {
+        row.style.display = "none";
+      });
+    });
+  </script>
+  
