@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/zh/tags/%E5%8D%9A%E7%89%A9%E9%A6%86%E5%AD%A6/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -171,7 +171,10 @@
 系统的收藏开始了，温克尔曼的《古代艺术史》
 ...</p>
   </div>
-  <footer class="entry-footer">2020年1月6日 · 146 字 · Qiran</footer>
+  <footer class="entry-footer">
+
+2020年1月6日 · 146 字 · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to 第八讲 博物馆与传统艺术" href="http://localhost:1313/zh/%E7%AC%AC%E5%85%AB%E8%AE%B2-%E5%8D%9A%E7%89%A9%E9%A6%86%E4%B8%8E%E4%BC%A0%E7%BB%9F%E8%89%BA%E6%9C%AF/"></a>
 </article>
 
@@ -188,7 +191,10 @@
 3、20世纪50年代以后：大多数博物馆分道扬镳。
 ...</p>
   </div>
-  <footer class="entry-footer">2019年10月15日 · 更新于 2025年4月1日 · 1004 字 · Qiran</footer>
+  <footer class="entry-footer">
+
+2019年10月15日 · 更新于 2025年4月1日 · 1004 字 · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Museology category and organization" href="http://localhost:1313/zh/museology-category-and-organization/"></a>
 </article>
 
@@ -205,7 +211,10 @@
 夫画者，成教化，助人伦，穷神变，测幽微
 ...</p>
   </div>
-  <footer class="entry-footer">2019年9月24日 · 更新于 2025年4月1日 · 1296 字 · Qiran</footer>
+  <footer class="entry-footer">
+
+2019年9月24日 · 更新于 2025年4月1日 · 1296 字 · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Chinese Museum" href="http://localhost:1313/zh/chinese-museum/"></a>
 </article>
 
@@ -224,7 +233,10 @@
 1、藏品数量十分有局限性，主要 是战利品、古物
 ...</p>
   </div>
-  <footer class="entry-footer">2019年9月17日 · 更新于 2025年4月1日 · 1332 字 · Qiran</footer>
+  <footer class="entry-footer">
+
+2019年9月17日 · 更新于 2025年4月1日 · 1332 字 · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to History of western museums" href="http://localhost:1313/zh/history-of/"></a>
 </article>
 
@@ -241,7 +253,10 @@
 《博物馆办法》：是指收藏保护研究展示人类活动和自然环境的见证物。
 ...</p>
   </div>
-  <footer class="entry-footer">2019年9月10日 · 更新于 2025年4月1日 · 1014 字 · Qiran</footer>
+  <footer class="entry-footer">
+
+2019年9月10日 · 更新于 2025年4月1日 · 1014 字 · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Museology" href="http://localhost:1313/zh/museology/"></a>
 </article>
     </main>
@@ -256,10 +271,23 @@
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')

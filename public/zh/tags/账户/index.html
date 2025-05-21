@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/zh/tags/%E8%B4%A6%E6%88%B7/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -167,7 +167,10 @@
 我在今天注销了自己9岁时注册的QQ号。备份文件和照片，发送短信，注销完成。和同学们互踩空间、曾经在群里聊天的快乐时光，这些记忆可能还在，但现在也可以烟消云散了。
 ...</p>
   </div>
-  <footer class="entry-footer">2019年4月30日 · 更新于 2025年4月1日 · 644 字 · Qiran</footer>
+  <footer class="entry-footer">
+
+2019年4月30日 · 更新于 2025年4月1日 · 644 字 · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to 注销了我的QQ号" href="http://localhost:1313/zh/logout-qq/"></a>
 </article>
     </main>
@@ -182,10 +185,23 @@
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')

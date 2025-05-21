@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/en/tags/aesthetics/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -165,7 +165,10 @@
   <div class="entry-content">
     <p> 梦饮酒者，旦而哭泣；梦哭泣者，旦而田猎。方其梦也，不知其梦也。梦之中又占其梦焉，觉而后知其梦也。且有大觉而后知此其大梦也，而愚者自以为觉，窃窃然知之。君乎，牧乎，固哉！丘也与女，皆梦也；予谓女梦，亦梦也。是其言也，其名为吊诡。万世之后而一遇大圣，知其解者，是旦暮遇之也。 ...</p>
   </div>
-  <footer class="entry-footer">July 6, 2019 · Updated April 1, 2025 · 957 words · Qiran</footer>
+  <footer class="entry-footer">
+
+July 6, 2019 · Updated April 1, 2025 · 957 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Return to dreamland" href="http://localhost:1313/en/2019-07-06-return-to-dreamland/"></a>
 </article>
     </main>
@@ -180,10 +183,23 @@
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')

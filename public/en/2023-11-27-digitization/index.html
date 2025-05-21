@@ -12,7 +12,7 @@
 <meta name="description" content="I will try to digitize all of my diaries. It’s a very big project.">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/en/2023-11-27-digitization/">
-<link crossorigin="anonymous" href="../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -157,7 +157,10 @@
     <h1 class="post-title entry-hint-parent">
       Digitization
     </h1>
-    <div class="post-meta">November 27, 2023 · Updated April 1, 2025 · 14 words · Qiran
+    <div class="post-meta">
+
+November 27, 2023 · Updated April 1, 2025 · 14 words · Qiran
+
 
 </div>
   </header> 
@@ -221,26 +224,128 @@
     </li>
 </ul>
 
-  </footer>
-
-<div id="tcomment"></div>
-
-<script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
-<script>
+  </footer><style>
+  .comment-toggle {
+    margin-bottom: 1em;
+    text-align: center;
+  }
   
-
+  .comment-toggle button {
+    padding: 0.5em 1.2em;
+    margin: 0 0.3em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    color: #555;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
   
+  .comment-toggle button:hover {
+    background: #e2e2e2;
+    border-color: #999;
+    color: #333;
+  }
+  
+  .comment-toggle button.active {
+    background: #ccc;
+    border-color: #999;
+    color: #222;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  .comment-system {
+    display: none;
+  }
+  
+  .comment-system.active {
+    display: block;
+  }
+  </style>
+  
+  <div class="comment-toggle">
+    <button id="btn-twikoo">Twikoo 💬</button>
+    <button id="btn-giscus">Giscus 💬</button>
+  </div>
+  
+  <div id="twikoo-container" class="comment-system">
     
+    <div id="twikoo"></div>
+    <script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
+    <script>
+      
+      
+        
+      
   
-
-  twikoo.init({
-    envId: "https://twikoo-gamma-red.vercel.app/",
-    el: "#tcomment",
-    region:  null ,
-    lang: "en",
-    path: "\/zh\/2023-11-27-digitization\/",
-  })
-</script>
+      twikoo.init({
+        envId: "https:\/\/twikoo-gamma-red.vercel.app\/",
+        el: "#twikoo",
+        region: "",
+        lang: "en",
+        path: "\/zh\/2023-11-27-digitization\/",
+      })
+    </script>
+  </div>
+  
+  <div id="giscus-container" class="comment-system">
+    
+    <div id="giscus-comment"></div>
+    <script src="https://giscus.app/client.js"
+            data-repo="Liuqiran/liuqiran.github.io"
+            data-repo-id="R_kgDONiVddQ"
+            data-category="General"
+            data-category-id="DIC_kwDONiVddc4CljSp"
+            data-mapping="title"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+  
+  <script>
+    const btnTwikoo = document.getElementById('btn-twikoo');
+    const btnGiscus = document.getElementById('btn-giscus');
+    const twikooContainer = document.getElementById('twikoo-container');
+    const giscusContainer = document.getElementById('giscus-container');
+  
+    function showTwikoo() {
+      btnTwikoo.classList.add('active');
+      btnGiscus.classList.remove('active');
+      twikooContainer.classList.add('active');
+      giscusContainer.classList.remove('active');
+      localStorage.setItem('preferredComment', 'twikoo');
+    }
+  
+    function showGiscus() {
+      btnGiscus.classList.add('active');
+      btnTwikoo.classList.remove('active');
+      giscusContainer.classList.add('active');
+      twikooContainer.classList.remove('active');
+      localStorage.setItem('preferredComment', 'giscus');
+    }
+  
+    btnTwikoo.onclick = showTwikoo;
+    btnGiscus.onclick = showGiscus;
+  
+    window.addEventListener('DOMContentLoaded', () => {
+      const preferred = localStorage.getItem('preferredComment');
+      if (preferred === 'giscus') {
+        showGiscus();
+      } else {
+        
+        showTwikoo();
+      }
+    });
+  </script>
 </article>
     </main>
     
@@ -254,10 +359,23 @@
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')

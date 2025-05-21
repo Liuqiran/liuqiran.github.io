@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/en/tags/sun-tzus-the-art-of-war/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -171,7 +171,10 @@ There are unending series maneuvers derived from 奇 and 正. In a war, we can u
 It’s hard for me to use Zheng, but Qi is also useful.
 ...</p>
   </div>
-  <footer class="entry-footer">May 21, 2020 · 196 words · Qiran</footer>
+  <footer class="entry-footer">
+
+May 21, 2020 · 196 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Chapter 5 Energy 埶篇第五" href="http://localhost:1313/en/2020-05-21-chapter-5-energy-%E5%9F%B6%E7%AF%87%E7%AC%AC%E4%BA%94/"></a>
 </article>
 
@@ -189,7 +192,10 @@ Know the ken of the common herd is not enough.
 We need to lay plans before the battle.
 ...</p>
   </div>
-  <footer class="entry-footer">April 25, 2020 · Updated April 1, 2025 · 119 words · Qiran</footer>
+  <footer class="entry-footer">
+
+April 25, 2020 · Updated April 1, 2025 · 119 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to CHAPTER 4 Tactical Dispositions" href="http://localhost:1313/en/2020-04-25-chapter-4-tactical-dispositions/"></a>
 </article>
 
@@ -205,7 +211,10 @@ Destroy the enemy’s plan is the best.
 During the war, we need a full preparation to besiege a walled city. It will spend a lot of time.
 ...</p>
   </div>
-  <footer class="entry-footer">February 11, 2020 · Updated April 1, 2025 · 260 words · Qiran</footer>
+  <footer class="entry-footer">
+
+February 11, 2020 · Updated April 1, 2025 · 260 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to CHAPTER 3 Attack By Strategem" href="http://localhost:1313/en/2020-02-11-chapter-3-attack-by-strategem/"></a>
 </article>
 
@@ -221,7 +230,10 @@ If you exposed a war too long, even you are ingenious, you will make a mistake. 
 Waging a war, you need to forage on your enemy.
 ...</p>
   </div>
-  <footer class="entry-footer">January 18, 2020 · Updated April 1, 2025 · 101 words · Qiran</footer>
+  <footer class="entry-footer">
+
+January 18, 2020 · Updated April 1, 2025 · 101 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Waging War" href="http://localhost:1313/en/2020-01-19-waging-war/"></a>
 </article>
 
@@ -238,7 +250,10 @@ Before the war, you should create the situation for success, and make the plan f
 If your opponent is bad temper, irritate him. Observe your enemy, if they are in ease, make him not rest, if they are united, separate him.
 ...</p>
   </div>
-  <footer class="entry-footer">July 18, 2019 · Updated April 1, 2025 · 128 words · Qiran</footer>
+  <footer class="entry-footer">
+
+July 18, 2019 · Updated April 1, 2025 · 128 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Laying plans 1" href="http://localhost:1313/en/2019-07-18-laying-plans-1/"></a>
 </article>
     </main>
@@ -253,10 +268,23 @@ If your opponent is bad temper, irritate him. Observe your enemy, if they are in
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')

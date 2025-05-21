@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/en/tags/ten-arguments-for-deleting-your-social-media-accounts-right-now/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -180,7 +180,10 @@ BUMMER kills
 BUMMER made people believe fake things. Some people don’t believe vaccines, then once-defeated diseases revived.
 ...</p>
   </div>
-  <footer class="entry-footer">October 31, 2020 · Updated April 1, 2025 · 146 words · Qiran</footer>
+  <footer class="entry-footer">
+
+October 31, 2020 · Updated April 1, 2025 · 146 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to ARGUMENT THREE: SOCIAL MEDIA IS MAKING YOU INTO AN ASSHOLE" href="http://localhost:1313/en/2020-10-31-argument-three-social-media-is-making-you-into-an-asshole-2/"></a>
 </article>
 
@@ -201,7 +204,10 @@ THE PROBLEM IS LIMITED, SO WE CAN CONTAIN IT
 BUMMER is the problem to avoid, we need to delete BUMMER accounts.
 ...</p>
   </div>
-  <footer class="entry-footer">March 7, 2020 · Updated April 1, 2025 · 94 words · Qiran</footer>
+  <footer class="entry-footer">
+
+March 7, 2020 · Updated April 1, 2025 · 94 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to ARGUMENT TWO: QUITTING SOCIAL MEDIA IS THE MOST FINELY TARGETED WAY TO RESIST THE INSANITY OF OUR TIMES" href="http://localhost:1313/en/2020-03-07-argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times/"></a>
 </article>
 
@@ -216,7 +222,10 @@ THE MAD SCIENTIST TURNS OUT TO CARE ABOUT THE DOG IN THE CAGE The silicon valley
 Carrot and shtick Not only the pleasing kind, but punishment can also play an important role in addiction.
 ...</p>
   </div>
-  <footer class="entry-footer">March 4, 2020 · Updated April 1, 2025 · 205 words · Qiran</footer>
+  <footer class="entry-footer">
+
+March 4, 2020 · Updated April 1, 2025 · 205 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to ARGUMENT ONE: YOU ARE LOSING YOUR FREE WILL" href="http://localhost:1313/en/2020-03-04-argument-one-you-are-losing-your-free-will/"></a>
 </article>
     </main>
@@ -231,10 +240,23 @@ Carrot and shtick Not only the pleasing kind, but punishment can also play an im
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')

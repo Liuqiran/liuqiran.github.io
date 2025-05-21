@@ -2,7 +2,7 @@
 title: Art through the Ages
 author: Qiran
 type: post
-date: 2019-07-17T06:20:39+00:00
+date: 2019-07-17T06:20:39+00:00  
 lastmod: 2020-09-08
 aliases: ["/basic-conceptions/"]
 tags:

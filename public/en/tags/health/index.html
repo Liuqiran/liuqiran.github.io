@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/en/tags/health/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -166,7 +166,10 @@
     <p>In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it’s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.
 </p>
   </div>
-  <footer class="entry-footer">August 28, 2023 · Updated April 1, 2025 · 54 words · Qiran</footer>
+  <footer class="entry-footer">
+
+August 28, 2023 · Updated April 1, 2025 · 54 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Harm from technology" href="http://localhost:1313/en/2023-08-29-harm-from-technology/"></a>
 </article>
 
@@ -179,7 +182,10 @@
     <p>Healthy food: Salmon, saurekrout, pecan, olive oil, (cod) liver, arugula, hamburger meat. These foods have the highest nutrients.
 </p>
   </div>
-  <footer class="entry-footer">August 15, 2023 · Updated April 1, 2025 · 18 words · Qiran</footer>
+  <footer class="entry-footer">
+
+August 15, 2023 · Updated April 1, 2025 · 18 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Healthy food" href="http://localhost:1313/en/2023-08-15-healthy-food/"></a>
 </article>
 
@@ -193,7 +199,10 @@
 As human beings, we get used to coordinate with our mind and body. Repeated and easy activities are boring. If the activities are more complicated, it’s better for our mentality. We can also combine different activities.
 </p>
   </div>
-  <footer class="entry-footer">May 23, 2023 · Updated April 1, 2025 · 49 words · Qiran</footer>
+  <footer class="entry-footer">
+
+May 23, 2023 · Updated April 1, 2025 · 49 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Complicate physical activities" href="http://localhost:1313/en/2023-05-23-complicate-physical-activities/"></a>
 </article>
     </main>
@@ -208,10 +217,23 @@ As human beings, we get used to coordinate with our mind and body. Repeated and 
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')

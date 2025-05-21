@@ -1,23 +1,140 @@
-<!-- {{- /* Comments area start */ -}}
-{{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
-{{- /* Comments area end */ -}}
- -->
-<!-- Twikoo -->
-<div id="tcomment"></div>
+<style>
+  .comment-toggle {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  .comment-toggle button {
+    padding: 0.5em 1.2em;
+    margin: 0 0.3em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    color: #555;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  
+  .comment-toggle button:hover {
+    background: #e2e2e2;
+    border-color: #999;
+    color: #333;
+  }
+  
+  .comment-toggle button.active {
+    background: #ccc;
+    border-color: #999;
+    color: #222;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  .comment-system {
+    display: none;
+  }
+  
+  .comment-system.active {
+    display: block;
+  }
+  /* （放在你现有的 <style> 之后） */
+/* 让评论区继承正文的字体、字号和字重 */
+html[lang="en-US"] .comment-system,
+html[lang="en-US"] .comment-system * {
+  font-family: "Georgia", "Times New Roman", serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
 
-<script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
-<script>
-  {{ $path := .RelPermalink }}
-
-  {{ if eq .Lang "en" }}
-    {{ $path = replace $path "/en/" "/zh/" }}
-  {{ end }}
-
-  twikoo.init({
-    envId: {{ .Site.Params.twikoo.id }},
-    el: "#tcomment",
-    region: {{ .Site.Params.twikoo.region }},
-    lang: "{{ .Site.Language.Lang }}",
-    path: "{{ $path }}",
-  })
-</script>
+/* 如果你也希望中文区（Giscus）在中文页面用默认中文字体，可以这样 */
+html[lang="zh-CN"] .comment-system,
+html[lang="zh-CN"] .comment-system * {
+  font-family: 'KingHwa_OldSong', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.8 !important;
+}
+  </style>
+  
+  <div class="comment-toggle">
+    <button id="btn-twikoo">Twikoo 💬</button>
+    <button id="btn-giscus">Giscus 💬</button>
+  </div>
+  
+  <div id="twikoo-container" class="comment-system">
+    <!-- Twikoo 评论代码 -->
+    <div id="twikoo"></div>
+    <script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
+    <script>
+      {{ $path := .RelPermalink }}
+      {{ if eq .Lang "en" }}
+        {{ $path = replace $path "/en/" "/zh/" }}
+      {{ end }}
+  
+      twikoo.init({
+        envId: "{{ .Site.Params.twikoo.id }}",
+        el: "#twikoo",
+        region: "{{ .Site.Params.twikoo.region }}",
+        lang: "{{ .Site.Language.Lang }}",
+        path: "{{ $path }}",
+      })
+    </script>
+  </div>
+  
+  <div id="giscus-container" class="comment-system">
+    <!-- Giscus 评论代码 -->
+    <div id="giscus-comment"></div>
+    <script src="https://giscus.app/client.js"
+            data-repo="Liuqiran/liuqiran.github.io"
+            data-repo-id="R_kgDONiVddQ"
+            data-category="General"
+            data-category-id="DIC_kwDONiVddc4CljSp"
+            data-mapping="title"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="{{ if eq .Site.Language.Lang "zh" }}zh-CN{{ else }}en{{ end }}"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+  
+  <script>
+    const btnTwikoo = document.getElementById('btn-twikoo');
+    const btnGiscus = document.getElementById('btn-giscus');
+    const twikooContainer = document.getElementById('twikoo-container');
+    const giscusContainer = document.getElementById('giscus-container');
+  
+    function showTwikoo() {
+      btnTwikoo.classList.add('active');
+      btnGiscus.classList.remove('active');
+      twikooContainer.classList.add('active');
+      giscusContainer.classList.remove('active');
+      localStorage.setItem('preferredComment', 'twikoo');
+    }
+  
+    function showGiscus() {
+      btnGiscus.classList.add('active');
+      btnTwikoo.classList.remove('active');
+      giscusContainer.classList.add('active');
+      twikooContainer.classList.remove('active');
+      localStorage.setItem('preferredComment', 'giscus');
+    }
+  
+    btnTwikoo.onclick = showTwikoo;
+    btnGiscus.onclick = showGiscus;
+  
+    window.addEventListener('DOMContentLoaded', () => {
+      const preferred = localStorage.getItem('preferredComment');
+      if (preferred === 'giscus') {
+        showGiscus();
+      } else {
+        // 默认 Twikoo
+        showTwikoo();
+      }
+    });
+  </script>

@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/zh/tags/%E4%BF%A1%E4%BB%B6/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -166,7 +166,10 @@
     <p>感谢来信 我也有享受独处的时候，享受独处并不意味着自己没有归属感，只是最近我的状态不太好，曾经的某种归属感和安逸的状态丧失了，这也可能意味着我需要调整自己的状态了。 除了最近我和父母通话变多了以外，我没有几个能够深入聊下去的人。最近某个初中的老“朋友”慰问了我一下，我说了很多我的想法，最后他没有回复我。 然后下载了很多很多社交软件，想找个人聊天，以为这样就能让自己舒服一些，但是我找不到话题也主动不起来，碎片化的文字和浮躁的动态让我退却。难怪有人说，“陌生人社交就是荷尔蒙社交，不会有其他的存在，社交界没有新故事，人的本性没有改变”。但到这里能够写单纯的文字交流，如果它对你的文字不感兴趣的话，它是不会也没有能力回复你的。不过我比较懒，写长文字花时间，折腾自己的文章就要费半天功夫。 没有谁能够真正的懂一个人，了解自己也是很难的。 我可能需要看书解决自己的一些问题，如果有什么心得我会写出来。《四种爱》里将爱的概念分为亲爱、友爱、情爱和神爱，我觉得我缺少对它们的感受，也不理解其中的含义。
 ...</p>
   </div>
-  <footer class="entry-footer">2019年10月6日 · 更新于 2025年4月8日 · 440 字 · Qiran</footer>
+  <footer class="entry-footer">
+
+2019年10月6日 · 更新于 2025年4月8日 · 440 字 · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Reply in Slowly" href="http://localhost:1313/zh/reply-in-slowly-5/"></a>
 </article>
 
@@ -188,7 +191,10 @@
 2.如果有一天，科技发展，有一副vr眼镜，可以让你进入想要的任何一部电影、任何一部小说中的世界、可以实现你的任何愿望与幻想。但是戴上后就再也取不下来了，你会戴上它吗？
 ...</p>
   </div>
-  <footer class="entry-footer">2019年5月19日 · 更新于 2025年4月1日 · 1905 字 · Qiran</footer>
+  <footer class="entry-footer">
+
+2019年5月19日 · 更新于 2025年4月1日 · 1905 字 · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Reply in Slowly 2" href="http://localhost:1313/zh/reply-in-slowly-2/"></a>
 </article>
     </main>
@@ -203,10 +209,23 @@
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')

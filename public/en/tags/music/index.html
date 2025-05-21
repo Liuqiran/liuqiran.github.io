@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/en/tags/music/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -175,7 +175,10 @@ Can you bring me back home where I am not alone?
 I’m lost inside, the night and I cannot find you
 Bring me back ...</p>
   </div>
-  <footer class="entry-footer">April 9, 2020 · Updated April 1, 2025 · 336 words · Qiran</footer>
+  <footer class="entry-footer">
+
+April 9, 2020 · Updated April 1, 2025 · 336 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Connection" href="http://localhost:1313/en/2020-04-09-connection/"></a>
 </article>
 
@@ -189,7 +192,10 @@ Bring me back ...</p>
 I’m so alone, try to find my way back home to you.
 </p>
   </div>
-  <footer class="entry-footer">December 25, 2019 · Updated April 1, 2025 · 19 words · Qiran</footer>
+  <footer class="entry-footer">
+
+December 25, 2019 · Updated April 1, 2025 · 19 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Alone" href="http://localhost:1313/en/2019-12-25-alone/"></a>
 </article>
 
@@ -207,7 +213,10 @@ RonhiMusic
 “The loneliest people are the kindest, the saddest people smile the brightest, and the most damaged people are the wisest. All because they don’t wish to see others suffer
 like they do.” -Anonymous ...</p>
   </div>
-  <footer class="entry-footer">September 18, 2019 · Updated April 1, 2025 · 472 words · Qiran</footer>
+  <footer class="entry-footer">
+
+September 18, 2019 · Updated April 1, 2025 · 472 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Touched" href="http://localhost:1313/en/2019-09-18-touched/"></a>
 </article>
 
@@ -219,7 +228,10 @@ like they do.” -Anonymous ...</p>
   <div class="entry-content">
     <p> 梦饮酒者，旦而哭泣；梦哭泣者，旦而田猎。方其梦也，不知其梦也。梦之中又占其梦焉，觉而后知其梦也。且有大觉而后知此其大梦也，而愚者自以为觉，窃窃然知之。君乎，牧乎，固哉！丘也与女，皆梦也；予谓女梦，亦梦也。是其言也，其名为吊诡。万世之后而一遇大圣，知其解者，是旦暮遇之也。 ...</p>
   </div>
-  <footer class="entry-footer">July 6, 2019 · Updated April 1, 2025 · 957 words · Qiran</footer>
+  <footer class="entry-footer">
+
+July 6, 2019 · Updated April 1, 2025 · 957 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Return to dreamland" href="http://localhost:1313/en/2019-07-06-return-to-dreamland/"></a>
 </article>
 
@@ -233,7 +245,10 @@ like they do.” -Anonymous ...</p>
 I remember the ocean, Memories die out so hard. We were traveling the mountains, just to find the loudest seas. We settled down by the fire, knowing we could aim higher, but we didn’t know that yet. So if you want something to hold on to, gotta find it first. But here I am.
 ...</p>
   </div>
-  <footer class="entry-footer">May 30, 2019 · Updated April 1, 2025 · 158 words · Qiran</footer>
+  <footer class="entry-footer">
+
+May 30, 2019 · Updated April 1, 2025 · 158 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Tropic love" href="http://localhost:1313/en/2019-05-30-tropic-love/"></a>
 </article>
     </main>
@@ -248,10 +263,23 @@ I remember the ocean, Memories die out so hard. We were traveling the mountains,
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')

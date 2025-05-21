@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="Qiran">
 <link rel="canonical" href="http://localhost:1313/en/tags/nothing-to-envy/">
-<link crossorigin="anonymous" href="../../../assets/css/stylesheet.c2e1bd478cc2eea84094c5021c2951d3c83ca4abe3ad21dac5602603eb5dcf19.css" integrity="sha256-wuG9R4zC7qhAlMUCHClR08g8pKvjrSHaxWAmA&#43;tdzxk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.113720d375dd30ba388885475dd6eb71b9e13bd88b3c4c1cafab21ede647ac64.css" integrity="sha256-ETcg03XdMLo4iIVHXdbrcbnhO9iLPEwcr6sh7eZHrGQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -167,7 +167,10 @@
 Jun-sang’s family is from Japan, they are wealthy as Japanese-Korean. when Korea divided, some Japanese-Korean thought the North government is better than South as a group battled with Japanese, so they went to North, but after the regime formed, they noticed everything changed, Kim Il-sung, never believe them, they were purged because God Kim didn’t allow them to be wealthier than common North Korea people and to connect their relatives in Japan. They couldn’t go back to Japan forever.
 ...</p>
   </div>
-  <footer class="entry-footer">December 20, 2019 · Updated April 1, 2025 · 136 words · Qiran</footer>
+  <footer class="entry-footer">
+
+December 20, 2019 · Updated April 1, 2025 · 136 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Tainted Blood" href="http://localhost:1313/en/2019-12-20-tainted-blood/"></a>
 </article>
 
@@ -182,7 +185,10 @@ Mi-ran is a girl, her father is a miner, Jun-Sang is a student belongs to a fami
 In the 1990s, the country’s economy broke down, and there is not enough electric power to keep the night be lighten, but the night in North Korea, it’s more natural and beautiful than other countries, no noises, no neons. What’s more, no one can spy the two teenagers, holding hands in the dark.
 ...</p>
   </div>
-  <footer class="entry-footer">December 16, 2019 · Updated April 1, 2025 · 97 words · Qiran</footer>
+  <footer class="entry-footer">
+
+December 16, 2019 · Updated April 1, 2025 · 97 words · Qiran
+</footer>
   <a class="entry-link" aria-label="post link to Holding Hands in the Dark" href="http://localhost:1313/en/2019-12-16-holding-hands-in-the-dark/"></a>
 </article>
     </main>
@@ -197,10 +203,23 @@ In the 1990s, the country’s economy broke down, and there is not enough electr
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
 </a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
 
 <script>
     let menu = document.getElementById('menu')
