@@ -87,31 +87,3 @@ img[aria-label="logo"] {
   color: #666;
   margin-top: 0.5rem;
 }  
-
-
-/* 容器：100%宽度，可横向滚动 */
-.trello-fullboard-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* iOS 滚动更顺滑 */
-  margin: 2rem 0;
-  /* 可选：在大屏上居中 */
-  display: flex;
-  justify-content: center;
-}
-
-/* iframe 本身保持原看板的宽度比例 */
-.trello-fullboard {
-  width: 1024px;  /* 根据你看板的实际宽度调整 */
-  height: 600px;  /* 根据需要调整高度 */
-  border: none;
-}
-
-/* 移动端：把 iframe 缩到屏宽，用户能左右滑动看内容 */
-@media (max-width: 640px) {
-  .trello-fullboard {
-    width: 100vw;  /* 占满视口宽度 */
-    height: calc(100vw * 0.6); /* 按原来 1024×600 的比例计算高度 */
-    min-width: 640px; /* 保证横向滚动区域不要太窄 */
-  }
-}

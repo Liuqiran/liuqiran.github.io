@@ -9,7 +9,15 @@ image: "/img/clock-wall.jpg"
 >
 > A website with a link that says “now” goes to a page that tells you what this person is focused on at this point in their life.
 
-{{< trello-full >}}
+
+
+```
+<blockquote class="trello-board-compact">
+  <a href="https://trello.com/b/1lWQVUT6/">Trello Board</a>
+</blockquote>
+<script src="https://p.trellocdn.com/embed.min.js"></script>
+```
+
 
 # 🌳 Building Habits
 
@@ -23,4 +31,4 @@ image: "/img/clock-wall.jpg"
 
 {{< /weektable >}}  
 
-*If you have any thoughts about what’s been going on with me lately, please feel free to leave a comment!*
+> *If you have any thoughts about what’s been going on with me lately, please feel free to leave a comment!*

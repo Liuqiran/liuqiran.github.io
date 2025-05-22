@@ -14,24 +14,366 @@
       <guid>http://localhost:1313/en/now/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;This is what I’m currently focused on. Inspired by &lt;a href=&#34;https://nownownow.com/about&#34;&gt;nownownow.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;A website with a link that says “now” goes to a page that tells you what this person is focused on at this point in their life.&lt;/p&gt;
-&lt;p&gt;If you have any thoughts about what’s been going on with me lately, please feel free to leave a comment.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;div class=&#34;trello-fullboard-wrapper&#34;&gt;
-    &lt;iframe
-      class=&#34;trello-fullboard&#34;
-      src=&#34;https://trello.com/b/1lWQVUT6.html&#34;
-      frameborder=&#34;0&#34;
-      allowfullscreen
-      loading=&#34;lazy&#34;&gt;
-    &lt;/iframe&gt;
-  &lt;/div&gt;
-&lt;h1 id=&#34;-building-habits&#34;&gt;🌳 Building Habits&lt;/h1&gt;
+&lt;p&gt;A website with a link that says “now” goes to a page that tells you what this person is focused on at this point in their life.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;blockquote class=&amp;#34;trello-board-compact&amp;#34;&amp;gt;
+  &amp;lt;a href=&amp;#34;https://trello.com/b/1lWQVUT6/&amp;#34;&amp;gt;Trello Board&amp;lt;/a&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;script src=&amp;#34;https://p.trellocdn.com/embed.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;-building-habits&#34;&gt;🌳 Building Habits&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;strong&gt;Overall Habit Score&lt;/strong&gt; is the total score of all habits recorded using the &lt;a href=&#34;https://loophabits.org/&#34;&gt;Loop Habit Tracker&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;The habits &lt;strong&gt;&amp;ldquo;Clean Diet&amp;rdquo;&lt;/strong&gt;, &lt;strong&gt;&amp;ldquo;Timely Sleep&amp;rdquo;&lt;/strong&gt;, and &lt;strong&gt;&amp;ldquo;Regular Exercise&amp;rdquo;&lt;/strong&gt; are shown as examples, each with a maximum score of 100. Their data is also sourced from Loop Habit Tracker.&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;em&gt;I&amp;rsquo;d love to hear your thoughts — please leave a comment!&lt;/em&gt;&lt;/p&gt;</description>
+&lt;style&gt;
+
+.weektable-wrapper {
+  max-height: 300px;       
+  overflow-y: auto;        
+  border-radius: 12px;     
+  border: 2px solid #a8dadc;   
+  box-shadow: 0 4px 8px rgba(168, 218, 220, 0.3);  
+}
+    .weektable {
+      border-collapse: separate;  
+      border-spacing: 0;
+      border: 1px solid #a8dadc;
+      border-radius: 12px;
+      width: 100%;
+
+    }
+  
+    .weektable th, .weektable td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #a8dadc;
+      text-align: center;
+      color: #264653;
+    }
+  
+    .weektable thead th {
+      background-color: #457b9d;
+      color: #f1faee;
+      font-weight: 600;
+    }
+  
+    .weektable tbody tr:last-child td {
+      border-bottom: none;
+    }
+  
+    .weektable tbody tr:hover {
+      background-color: #f1faee;
+      cursor: default;
+    }
+  
+    .weektable tbody tr.hide-row {
+      display: none;
+    }
+  
+    .weektable-toggle {
+      cursor: pointer;
+      color: #1d3557;
+      user-select: none;
+      margin-bottom: 0.5em;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    .cell-content {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 6px;                 
+  }
+  .cell-value {
+    flex: none;               
+    text-align: center;
+    min-width: 30px;          
+  }
+  .arrow {
+    flex: none;
+  }
+  .arrow.up {
+    color: green;
+  }
+  .arrow.down {
+    color: red;
+  }
+
+  &lt;/style&gt;
+  
+  &lt;span class=&#34;weektable-toggle&#34; onclick=&#34;toggleWeekRows(this)&#34;&gt;Show more weeks ▼&lt;/span&gt;
+
+  &lt;div class=&#34;weektable-wrapper&#34; tabindex=&#34;0&#34; style=&#34;outline:none;&#34;&gt;
+
+  
+  &lt;table class=&#34;weektable&#34;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Week No.&lt;/th&gt;
+        &lt;th&gt;🔄 Overall Habit Score&lt;/th&gt;
+        &lt;th&gt;🍲 Clean diet (%)&lt;/th&gt;
+        &lt;th&gt;🛏️ Timely Sleep (%)&lt;/th&gt;
+        &lt;th&gt;👟 Regular Exercise (%)&lt;/th&gt;
+        &lt;th&gt;📖 Reading Time (mins)&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        
+        
+          
+        
+          
+            
+            &lt;tr class=&#34;&#34;&gt;
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;&lt;/div&gt;
+                  
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+            &lt;/tr&gt;
+          
+        
+          
+            
+            &lt;tr class=&#34;&#34;&gt;
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;2025-05-21&lt;/div&gt;
+                  
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;16.7&lt;/div&gt;
+                  
+                      
+                        
+                        
+                        
+                        
+                        
+                          
+                        
+                        
+                  
+                        
+                          
+                          
+                          
+                  
+                          
+                          
+                  
+                          
+                            
+                              &lt;span class=&#34;arrow down&#34;&gt;▼&lt;/span&gt;
+                            
+                          
+                        
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;17&lt;/div&gt;
+                  
+                      
+                        
+                        
+                        
+                        
+                        
+                        
+                  
+                        
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;14&lt;/div&gt;
+                  
+                      
+                        
+                        
+                        
+                        
+                        
+                        
+                  
+                        
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;4&lt;/div&gt;
+                  
+                      
+                        
+                        
+                        
+                        
+                        
+                        
+                  
+                        
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;0&lt;/div&gt;
+                  
+                      
+                        
+                        
+                        
+                        
+                        
+                        
+                  
+                        
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+            &lt;/tr&gt;
+          
+        
+          
+            
+            &lt;tr class=&#34;&#34;&gt;
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;2025 W20&lt;/div&gt;
+                  
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;17.34&lt;/div&gt;
+                  
+                      
+                        
+                        
+                        
+                        
+                        
+                        
+                  
+                        
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+            &lt;/tr&gt;
+          
+        
+          
+            
+            &lt;tr class=&#34;hide-row&#34;&gt;
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;&lt;/div&gt;
+                  
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+            &lt;/tr&gt;
+          
+        
+          
+            
+            &lt;tr class=&#34;hide-row&#34;&gt;
+              
+                
+                &lt;td&gt;
+                    &lt;div class=&#34;cell-content&#34;&gt;
+                      &lt;div class=&#34;cell-value&#34;&gt;&lt;/div&gt;
+                  
+                      
+                  
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  
+              
+            &lt;/tr&gt;
+          
+        
+      &lt;/tbody&gt;
+  &lt;/table&gt;  
+
+&lt;/div&gt;
+  
+  &lt;script&gt;
+    function toggleWeekRows(el) {
+      const hiddenRows = document.querySelectorAll(&#34;.weektable tbody tr.hide-row&#34;);
+      if (hiddenRows.length === 0) return;
+  
+      let isHidden = hiddenRows[0].style.display === &#34;none&#34; || hiddenRows[0].style.display === &#34;&#34;;
+      hiddenRows.forEach(row =&gt; {
+        row.style.display = isHidden ? &#34;table-row&#34; : &#34;none&#34;;
+      });
+      el.textContent = isHidden ? &#34;Show fewer weeks ▲&#34; : &#34;Show more weeks ▼&#34;;
+    }
+  
+    document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
+      const hiddenRows = document.querySelectorAll(&#34;.weektable tbody tr.hide-row&#34;);
+      hiddenRows.forEach(row =&gt; {
+        row.style.display = &#34;none&#34;;
+      });
+    });
+  &lt;/script&gt;
+  
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;If you have any thoughts about what’s been going on with me lately, please feel free to leave a comment!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why do people find it harder to be emotionally stirred as they grow older?</title>
