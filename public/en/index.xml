@@ -13,14 +13,22 @@
       <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/now/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;This is what I’m currently focused on. Inspired by &lt;a href=&#34;https://nownownow.com/&#34;&gt;nownownow.com&lt;/a&gt;.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h1 id=&#34;-reading-status&#34;&gt;📖 Reading Status&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;../en/reading-list/&#34;&gt;&lt;strong&gt;📚 Reading list&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Bible:&lt;/strong&gt; 🟩🟩🟩🟩🟩⬜⬜⬜ 65%&lt;/p&gt;
+&lt;p&gt;This is what I’m currently focused on. Inspired by &lt;a href=&#34;https://nownownow.com/about&#34;&gt;nownownow.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A website with a link that says “now” goes to a page that tells you what this person is focused on at this point in their life.&lt;/p&gt;
+&lt;p&gt;If you have any thoughts about what’s been going on with me lately, please feel free to leave a comment.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;div class=&#34;trello-fullboard-wrapper&#34;&gt;
+    &lt;iframe
+      class=&#34;trello-fullboard&#34;
+      src=&#34;https://trello.com/b/1lWQVUT6.html&#34;
+      frameborder=&#34;0&#34;
+      allowfullscreen
+      loading=&#34;lazy&#34;&gt;
+    &lt;/iframe&gt;
+  &lt;/div&gt;
 &lt;h1 id=&#34;-building-habits&#34;&gt;🌳 Building Habits&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;The &lt;strong&gt;Overall Habit Score&lt;/strong&gt; is the total score of all habits recorded using the Loop Habit Tracker.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;Overall Habit Score&lt;/strong&gt; is the total score of all habits recorded using the &lt;a href=&#34;https://loophabits.org/&#34;&gt;Loop Habit Tracker&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;The habits &lt;strong&gt;&amp;ldquo;Clean Diet&amp;rdquo;&lt;/strong&gt;, &lt;strong&gt;&amp;ldquo;Timely Sleep&amp;rdquo;&lt;/strong&gt;, and &lt;strong&gt;&amp;ldquo;Regular Exercise&amp;rdquo;&lt;/strong&gt; are shown as examples, each with a maximum score of 100. Their data is also sourced from Loop Habit Tracker.&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;em&gt;I&amp;rsquo;d love to hear your thoughts — please leave a comment!&lt;/em&gt;&lt;/p&gt;</description>

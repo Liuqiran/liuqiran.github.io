@@ -185,90 +185,53 @@
 <script>
     let activeElement;
     let elements;
-    
-    document.addEventListener('DOMContentLoaded', function (event) {
+    window.addEventListener('DOMContentLoaded', function (event) {
         checkTocPosition();
-    
+
         elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-        if (elements.length > 0) {
-            
-            activeElement = elements[0];
-            const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-            document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-        }
-    
-        
-        const topLink = document.getElementById('top-link');
-        if (topLink) {
-            topLink.addEventListener('click', (event) => {
-                
-                event.preventDefault();
-    
-                
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        }
-    }, false);
-    
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
     window.addEventListener('resize', function(event) {
         checkTocPosition();
     }, false);
-    
+
     window.addEventListener('scroll', () => {
         
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    
-        
-        if (scrollPosition === 0) {
-            return;
-        }
-    
-        
-        if (elements && elements.length > 0) {
-            
-            activeElement = Array.from(elements).find((element) => {
-                if ((getOffsetTop(element) - scrollPosition) > 0 && 
-                    (getOffsetTop(element) - scrollPosition) < window.innerHeight / 2) {
-                    return element;
-                }
-            }) || activeElement;
-    
-            elements.forEach(element => {
-                const id = encodeURI(element.getAttribute('id')).toLowerCase();
-                const tocLink = document.querySelector(`.inner ul li a[href="#${id}"]`);
-                if (element === activeElement){
-                    tocLink.classList.add('active');
-    
-                    
-                    const tocContainer = document.querySelector('.toc .inner');
-                    const linkOffsetTop = tocLink.offsetTop;
-                    const containerHeight = tocContainer.clientHeight;
-                    const linkHeight = tocLink.clientHeight;
-    
-                    
-                    const scrollPosition = linkOffsetTop - (containerHeight / 2) + (linkHeight / 2);
-                    tocContainer.scrollTo({ top: scrollPosition, behavior: 'smooth' });
-                } else {
-                    tocLink.classList.remove('active');
-                }
-            });
-        }
-    }, false);
-    
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
     const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
     const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
     const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-    
+
     function checkTocPosition() {
         const width = document.body.scrollWidth;
-    
+
         if (width - main - (toc * 2) - (gap * 4) > 0) {
             document.getElementById("toc-container").classList.add("wide");
         } else {
             document.getElementById("toc-container").classList.remove("wide");
         }
     }
-    
+
     function getOffsetTop(element) {
         if (!element.getClientRects().length) {
             return 0;
@@ -277,9 +240,7 @@
         let win = element.ownerDocument.defaultView;
         return rect.top + win.pageYOffset;   
     }
-    
 </script>
-
   
     <div class="post-content"><pre class="wp-block-preformatted">文征明作为吴门画派的代表人物，他的文人色彩尽显，其个人性格对绘画创作的风格、题材、内容上都有深远的影响，文征明的追求隐逸、渴慕园林的志趣塑造了他的细笔风格，而尊师重道的传统让文征明在题材广度和粗笔风格上有所突破。<br /></pre>
 <p>      文征明作为吴门四家之一、和吴门画派的核心人物，诗文、书法、山水、人物、花鸟无不精通，对明代文人艺坛的影响非常深远。何以让文征明拥有清润淡雅的绘画风格？本文认为和文征明恬静平和的个人性格和品茶、游园等兴趣爱好有关，并从几个方面阐述文征明性格特点对文征明绘画风格的影响。</p>
@@ -464,6 +425,24 @@
   .comment-system.active {
     display: block;
   }
+   
+ 
+html[lang="en-US"] .comment-system,
+html[lang="en-US"] .comment-system * {
+  font-family: "Georgia", "Times New Roman", serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+ 
+html[lang="zh-CN"] .comment-system,
+html[lang="zh-CN"] .comment-system * {
+  font-family: 'KingHwa_OldSong', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.8 !important;
+}
   </style>
   
   <div class="comment-toggle">

@@ -190,90 +190,53 @@
 <script>
     let activeElement;
     let elements;
-    
-    document.addEventListener('DOMContentLoaded', function (event) {
+    window.addEventListener('DOMContentLoaded', function (event) {
         checkTocPosition();
-    
+
         elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-        if (elements.length > 0) {
-            
-            activeElement = elements[0];
-            const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-            document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-        }
-    
-        
-        const topLink = document.getElementById('top-link');
-        if (topLink) {
-            topLink.addEventListener('click', (event) => {
-                
-                event.preventDefault();
-    
-                
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        }
-    }, false);
-    
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
     window.addEventListener('resize', function(event) {
         checkTocPosition();
     }, false);
-    
+
     window.addEventListener('scroll', () => {
         
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    
-        
-        if (scrollPosition === 0) {
-            return;
-        }
-    
-        
-        if (elements && elements.length > 0) {
-            
-            activeElement = Array.from(elements).find((element) => {
-                if ((getOffsetTop(element) - scrollPosition) > 0 && 
-                    (getOffsetTop(element) - scrollPosition) < window.innerHeight / 2) {
-                    return element;
-                }
-            }) || activeElement;
-    
-            elements.forEach(element => {
-                const id = encodeURI(element.getAttribute('id')).toLowerCase();
-                const tocLink = document.querySelector(`.inner ul li a[href="#${id}"]`);
-                if (element === activeElement){
-                    tocLink.classList.add('active');
-    
-                    
-                    const tocContainer = document.querySelector('.toc .inner');
-                    const linkOffsetTop = tocLink.offsetTop;
-                    const containerHeight = tocContainer.clientHeight;
-                    const linkHeight = tocLink.clientHeight;
-    
-                    
-                    const scrollPosition = linkOffsetTop - (containerHeight / 2) + (linkHeight / 2);
-                    tocContainer.scrollTo({ top: scrollPosition, behavior: 'smooth' });
-                } else {
-                    tocLink.classList.remove('active');
-                }
-            });
-        }
-    }, false);
-    
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
     const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
     const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
     const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-    
+
     function checkTocPosition() {
         const width = document.body.scrollWidth;
-    
+
         if (width - main - (toc * 2) - (gap * 4) > 0) {
             document.getElementById("toc-container").classList.add("wide");
         } else {
             document.getElementById("toc-container").classList.remove("wide");
         }
     }
-    
+
     function getOffsetTop(element) {
         if (!element.getClientRects().length) {
             return 0;
@@ -282,9 +245,7 @@
         let win = element.ownerDocument.defaultView;
         return rect.top + win.pageYOffset;   
     }
-    
 </script>
-
   
     <div class="post-content"><p><img loading="lazy" src="../../uploads/2019/03/7cbb8f013af35f70329862d9ee6c631164a8a36f.jpg"></p>
 <pre class="wp-block-preformatted">《我们从何处来？我们是谁？我们往何处去？》是法国19世纪法国后印象派画家保罗高更的代表作品。画面可以分为“我们从何处来”、“我们是谁”、“我们往何处去”三个部分，高更通过这几个部分展现人的不同的阶段。通过解读高更的代表作和作品中各个事物，来探寻高更的绘画风格、人生历程和他对现代艺术的影响。<br /></pre>
@@ -442,6 +403,24 @@
   .comment-system.active {
     display: block;
   }
+   
+ 
+html[lang="en-US"] .comment-system,
+html[lang="en-US"] .comment-system * {
+  font-family: "Georgia", "Times New Roman", serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+ 
+html[lang="zh-CN"] .comment-system,
+html[lang="zh-CN"] .comment-system * {
+  font-family: 'KingHwa_OldSong', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.8 !important;
+}
   </style>
   
   <div class="comment-toggle">

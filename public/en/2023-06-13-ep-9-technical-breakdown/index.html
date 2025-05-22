@@ -166,7 +166,6 @@ June 13, 2023 · Updated April 1, 2025 · 303 words · Qiran
 
 </div>
   </header> 
-
   
     <div class="post-content"><p>Last week I went through a serious problem of my server, on which my website runs.<br>
 It started with the problem of the version of PHP. The edition of the current PHP is very old and it couldn’t support the running of some plugins. Then I tried to install a new version of PHP, but it didn’t work. When I tried to uninstall the old version, the server crashed and could not be restarted due to an error called “kernel panic”.<br>
@@ -276,6 +275,24 @@ I’ve done my best to fix it myself until midnight. It’s useless. I could onl
   .comment-system.active {
     display: block;
   }
+   
+ 
+html[lang="en-US"] .comment-system,
+html[lang="en-US"] .comment-system * {
+  font-family: "Georgia", "Times New Roman", serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+ 
+html[lang="zh-CN"] .comment-system,
+html[lang="zh-CN"] .comment-system * {
+  font-family: 'KingHwa_OldSong', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.8 !important;
+}
   </style>
   
   <div class="comment-toggle">
