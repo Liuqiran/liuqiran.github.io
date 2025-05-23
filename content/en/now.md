@@ -10,7 +10,7 @@ image: "/img/clock-wall.jpg"
 > A website with a link that says “now” goes to a page that tells you what this person is focused on at this point in their life.
 
 <div style="clear: both;">
-<iframe src="https://twisty-change-610.notion.site/ebd/1fc21e6176cd8080be08ea1b2214e8b3?v=1fc21e6176cd813b966e000c20634f61" width="100%" height="600" frameborder="0" allowfullscreen />   
+<iframe src="https://twisty-change-610.notion.site/ebd/1fc21e6176cd8080be08ea1b2214e8b3?v=1fc21e6176cd813b966e000c20634f61" width="100%" height="600" frameborder="0" allowfullscreen></iframe>   
 </div>
 
 
