@@ -1,32 +1,28 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // 使用不同的选择器尝试查找英文版本的元素
-    const profileSubtitle = document.querySelector('.profile_inner h2') || 
-                          document.querySelector('.profile-subtitle') ||
-                          document.querySelector('.profile_inner > :nth-child(2)');
-    
+    // 英文版本：精确定位 subtitle
+    const profileSubtitle = document.querySelector('.profile_inner > h2:nth-child(2)') || 
+                          document.querySelector('.profile_inner > .subtitle');
+
     if (profileSubtitle) {
-        console.log("Found English subtitle element"); // 调试用
         new TypeIt(profileSubtitle, {
             strings: [
                 "Welcome to my personal site",
                 "Life is a...",
                 "Life is but a walking shadow"
             ],
-            speed: 100,
-            deleteSpeed: 75,
+            speed: 100,           // 打字速度
+            deleteSpeed: 75,      // 删除速度
             waitUntilVisible: true,
             breakLines: false,
             lifeLike: true,
-            startDelay: 1000,
-            nextStringDelay: 2000,
+            startDelay: 1000,     // 开始前等待时间
+            nextStringDelay: 2000, // 每句话之间的停顿时间
             startDelete: true
         }).go();
-    } else {
-        console.log("English subtitle element not found"); // 调试用
     }
 
-    // 中文版本代码保持不变
+    // 中文版本保持不变
     const homeContent = document.querySelector('.home-info .entry-content');
     if (homeContent) {
         new TypeIt(homeContent, {
