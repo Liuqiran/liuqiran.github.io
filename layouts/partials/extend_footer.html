@@ -1,22 +1,32 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // 检查是否在英文版本页面
-    const profileSubtitle = document.querySelector('.profile_inner h2');
+    // 使用不同的选择器尝试查找英文版本的元素
+    const profileSubtitle = document.querySelector('.profile_inner h2') || 
+                          document.querySelector('.profile-subtitle') ||
+                          document.querySelector('.profile_inner > :nth-child(2)');
+    
     if (profileSubtitle) {
+        console.log("Found English subtitle element"); // 调试用
         new TypeIt(profileSubtitle, {
             strings: [
                 "Welcome to my personal site",
                 "Life is a...",
                 "Life is but a walking shadow"
             ],
-            speed: 50,
+            speed: 100,
+            deleteSpeed: 75,
             waitUntilVisible: true,
             breakLines: false,
-            lifeLike: true
+            lifeLike: true,
+            startDelay: 1000,
+            nextStringDelay: 2000,
+            startDelete: true
         }).go();
+    } else {
+        console.log("English subtitle element not found"); // 调试用
     }
 
-    // 检查是否在中文版本页面
+    // 中文版本代码保持不变
     const homeContent = document.querySelector('.home-info .entry-content');
     if (homeContent) {
         new TypeIt(homeContent, {
@@ -25,12 +35,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 "生命如同...",
                 "生命不过是行走的影子"
             ],
-            speed: 50,
+            speed: 100,
+            deleteSpeed: 75,
             waitUntilVisible: true,
             breakLines: false,
-            lifeLike: true
+            lifeLike: true,
+            startDelay: 1000,
+            nextStringDelay: 2000,
+            startDelete: true
         }).go();
     }
 });
 </script>
-
