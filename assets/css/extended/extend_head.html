@@ -1,2 +1,27 @@
-<!-- layouts/partials/extend_head.html -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<style>
+/* 英文版本的subtitle样式 */
+html[lang="en-US"] .profile_inner > span {
+    font-size: 1.5em;
+    display: block;
+    margin: 10px 0;
+    font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* 中文版本样式 */
+html[lang="zh-CN"] .home-info .entry-content {
+    font-size: 1.5em;
+    display: block;
+    margin: 10px 0;
+    font-family: 'KingHwa_OldSong', sans-serif;
+}
+
+/* 打字机光标样式 */
+.typed-cursor {
+    font-size: 1.3em;
+}
+
+[theme="dark"] .typed-cursor {
+    color: var(--primary);
+}
+</style>
