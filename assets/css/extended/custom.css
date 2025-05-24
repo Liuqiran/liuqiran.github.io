@@ -89,7 +89,7 @@ img[aria-label="logo"] {
 }     
 
 .typed-cursor {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 [theme="dark"] .typed-cursor {
@@ -98,7 +98,7 @@ img[aria-label="logo"] {
 
 /*/* 打字机效果样式 */
 /*html[lang="en-US"] .profile_inner > span {
-    font-size: 1.2em;
+    font-size: 1.4em;
     display: block;
     margin: 10px 0;
     font-family: "Georgia", "Times New Roman", serif;
