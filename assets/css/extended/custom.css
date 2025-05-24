@@ -88,21 +88,10 @@ img[aria-label="logo"] {
   margin-top: 0.5rem;
 }     
 
-/* assets/css/extended/custom.css */
-.typed-title {
-    text-align: center;
-    min-height: 80px;
-    margin: 30px auto;
-    padding: 20px 0;
-    font-size: 2.5em;
-}
-
 .typed-cursor {
-    font-size: 2.5em;
+    font-size: 1.3em;
 }
 
-/* 适配深色模式 */
-[theme="dark"] .typed-title {
+[theme="dark"] .typed-cursor {
     color: var(--primary);
 }
-
