@@ -1,9 +1,8 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // 英文版本：精确定位 subtitle
-    const profileSubtitle = document.querySelector('.profile_inner > h2:nth-child(2)') || 
-                          document.querySelector('.profile_inner > .subtitle');
-
+    // 英文版本：精确定位 span
+    const profileSubtitle = document.querySelector('.profile_inner > span');
+    
     if (profileSubtitle) {
         new TypeIt(profileSubtitle, {
             strings: [
@@ -11,18 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Life is a...",
                 "Life is but a walking shadow"
             ],
-            speed: 100,           // 打字速度
-            deleteSpeed: 75,      // 删除速度
+            speed: 90,            // 稍快的速度（原来是100）
+            deleteSpeed: 65,      // 稍快的删除速度（原来是75）
             waitUntilVisible: true,
             breakLines: false,
             lifeLike: true,
-            startDelay: 1000,     // 开始前等待时间
-            nextStringDelay: 2000, // 每句话之间的停顿时间
+            startDelay: 1000,     
+            nextStringDelay: 2000,
             startDelete: true
         }).go();
     }
 
-    // 中文版本保持不变
+    // 中文版本的代码，速度也相应调整
     const homeContent = document.querySelector('.home-info .entry-content');
     if (homeContent) {
         new TypeIt(homeContent, {
@@ -31,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 "生命如同...",
                 "生命不过是行走的影子"
             ],
-            speed: 100,
-            deleteSpeed: 75,
+            speed: 90,
+            deleteSpeed: 65,
             waitUntilVisible: true,
             breakLines: false,
             lifeLike: true,
