@@ -1,0 +1,34 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 获取原始的subtitle元素
+        const subtitleElement = document.querySelector('.profile_inner h2');
+        if (subtitleElement) {
+            // 创建新的span元素
+            const typedElement = document.createElement('span');
+            typedElement.id = 'typed';
+            // 替换原始内容
+            subtitleElement.innerHTML = '';
+            subtitleElement.appendChild(typedElement);
+
+            var typed = new Typed('#typed', {
+                strings: [
+                    'Welcome to my personal site.',
+                    'Life is a...',
+                    'Life is but a walking shadow'
+                ],
+                typeSpeed: 70,
+                backSpeed: 40,
+                startDelay: 1000,
+                backDelay: 2000,
+                loop: false,
+                showCursor: true,
+                cursorChar: '|',
+                onComplete: (self) => {
+                    setTimeout(() => {
+                        self.cursor.style.display = 'none';
+                    }, 1500);
+                }
+            });
+        }
+    });
+</script>
