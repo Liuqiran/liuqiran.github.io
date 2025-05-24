@@ -3,6 +3,8 @@
         // 获取原始的subtitle元素
         const subtitleElement = document.querySelector('.profile_inner h2');
         if (subtitleElement) {
+            // 保存原始文本
+            const originalText = subtitleElement.textContent;
             // 创建新的span元素
             const typedElement = document.createElement('span');
             typedElement.id = 'typed';
@@ -12,7 +14,7 @@
 
             var typed = new Typed('#typed', {
                 strings: [
-                    'Welcome to my personal site.',
+                    originalText,
                     'Life is a...',
                     'Life is but a walking shadow'
                 ],
@@ -32,3 +34,4 @@
         }
     });
 </script>
+
