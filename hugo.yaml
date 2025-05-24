@@ -55,7 +55,7 @@ languages:
       profileMode:
         enabled: true
         title: Liu Qiran
-        subtitle:  "Welcome to my personal site."
+        subtitle:  ""
         imageUrl: '/img/Avatar.jpg'
         imageWidth: 150
         imageHeight: 150
