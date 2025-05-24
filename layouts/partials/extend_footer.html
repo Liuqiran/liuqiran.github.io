@@ -1,53 +1,36 @@
 <script>
-window.addEventListener('DOMContentLoaded', (event) => {
-    // 处理英文版本（profileMode）
+document.addEventListener('DOMContentLoaded', function() {
+    // 检查是否在英文版本页面
     const profileSubtitle = document.querySelector('.profile_inner h2');
     if (profileSubtitle) {
-        profileSubtitle.innerHTML = '<span id="typed-profile"></span>';
-        new Typed('#typed-profile', {
+        new TypeIt(profileSubtitle, {
             strings: [
-                'Welcome to my personal site',
-                'Life is a...',
-                'Life is but a walking shadow'
+                "Welcome to my personal site",
+                "Life is a...",
+                "Life is but a walking shadow"
             ],
-            typeSpeed: 50,
-            backSpeed: 30,
-            startDelay: 1000,
-            backDelay: 2000,
-            loop: false,
-            showCursor: true,
-            cursorChar: '|',
-            onComplete: (self) => {
-                setTimeout(() => {
-                    self.cursor.style.display = 'none';
-                }, 1500);
-            }
-        });
+            speed: 50,
+            waitUntilVisible: true,
+            breakLines: false,
+            lifeLike: true
+        }).go();
     }
 
-    // 处理中文版本（homeInfoParams）
+    // 检查是否在中文版本页面
     const homeContent = document.querySelector('.home-info .entry-content');
     if (homeContent) {
-        homeContent.innerHTML = '<span id="typed-home"></span>';
-        new Typed('#typed-home', {
+        new TypeIt(homeContent, {
             strings: [
-                '欢迎访问本人站点！',
-                '生命如同...',
-                '生命不过是行走的影子'
+                "欢迎访问本人站点！",
+                "生命如同...",
+                "生命不过是行走的影子"
             ],
-            typeSpeed: 50,
-            backSpeed: 30,
-               startDelay: 1000,
-            backDelay: 2000,
-            loop: false,
-            showCursor: true,
-            cursorChar: '|',
-            onComplete: (self) => {
-                setTimeout(() => {
-                    self.cursor.style.display = 'none';
-                }, 1500);
-            }
-        });
+            speed: 50,
+            waitUntilVisible: true,
+            breakLines: false,
+            lifeLike: true
+        }).go();
     }
 });
 </script>
+
