@@ -96,17 +96,10 @@ img[aria-label="logo"] {
     color: var(--primary);
 }   
 
-/* 打字机效果样式 */
-html[lang="en-US"] .profile_inner > span {
-    font-size: 1.5em;
+/*/* 打字机效果样式 */
+/*html[lang="en-US"] .profile_inner > span {
+    font-size: 1.2em;
     display: block;
     margin: 10px 0;
     font-family: "Georgia", "Times New Roman", serif;
-}
-
-html[lang="zh-CN"] .home-info .entry-content {
-    font-size: 1.5em;
-    display: block;
-    margin: 10px 0;
-    font-family: 'KingHwa_OldSong', sans-serif;
 }
