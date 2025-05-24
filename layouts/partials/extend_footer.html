@@ -1,37 +1,53 @@
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // 获取原始的subtitle元素
-        const subtitleElement = document.querySelector('.profile_inner h2');
-        if (subtitleElement) {
-            // 保存原始文本
-            const originalText = subtitleElement.textContent;
-            // 创建新的span元素
-            const typedElement = document.createElement('span');
-            typedElement.id = 'typed';
-            // 替换原始内容
-            subtitleElement.innerHTML = '';
-            subtitleElement.appendChild(typedElement);
+window.addEventListener('DOMContentLoaded', (event) => {
+    // 处理英文版本（profileMode）
+    const profileSubtitle = document.querySelector('.profile_inner h2');
+    if (profileSubtitle) {
+        profileSubtitle.innerHTML = '<span id="typed-profile"></span>';
+        new Typed('#typed-profile', {
+            strings: [
+                'Welcome to my personal site',
+                'Life is a...',
+                'Life is but a walking shadow'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            startDelay: 1000,
+            backDelay: 2000,
+            loop: false,
+            showCursor: true,
+            cursorChar: '|',
+            onComplete: (self) => {
+                setTimeout(() => {
+                    self.cursor.style.display = 'none';
+                }, 1500);
+            }
+        });
+    }
 
-            var typed = new Typed('#typed', {
-                strings: [
-                    originalText,
-                    'Life is a...',
-                    'Life is but a walking shadow'
-                ],
-                typeSpeed: 70,
-                backSpeed: 40,
-                startDelay: 1000,
-                backDelay: 2000,
-                loop: false,
-                showCursor: true,
-                cursorChar: '|',
-                onComplete: (self) => {
-                    setTimeout(() => {
-                        self.cursor.style.display = 'none';
-                    }, 1500);
-                }
-            });
-        }
-    });
+    // 处理中文版本（homeInfoParams）
+    const homeContent = document.querySelector('.home-info .entry-content');
+    if (homeContent) {
+        homeContent.innerHTML = '<span id="typed-home"></span>';
+        new Typed('#typed-home', {
+            strings: [
+                '欢迎访问本人站点！',
+                '生命如同...',
+                '生命不过是行走的影子'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+               startDelay: 1000,
+            backDelay: 2000,
+            loop: false,
+            showCursor: true,
+            cursorChar: '|',
+            onComplete: (self) => {
+                setTimeout(() => {
+                    self.cursor.style.display = 'none';
+                }, 1500);
+            }
+        });
+    }
+});
 </script>
-
