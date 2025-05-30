@@ -1,31 +1,10 @@
 {{ $books := site.Data.books.list }}
 
 <style>
-/* 添加一个外层容器来控制最大宽度 */
-.table-outer-container {
-  max-width: 850px; /* 设置一个合适的最大宽度 */
-  margin: 0 auto;
-  position: relative;
-}
-
-/* 滚动提示阴影 */
-.table-scroll-container {
-  overflow-x: auto;
-  background:
-    linear-gradient(to right, #f2f0e6 30%, rgba(242, 240, 230, 0)),
-    linear-gradient(to right, rgba(242, 240, 230, 0), #f2f0e6 70%) 100% 0,
-    radial-gradient(farthest-side at 0 50%, rgba(0,0,0,0.2), rgba(0,0,0,0)),
-    radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,0.2), rgba(0,0,0,0)) 100% 0;
-  background-repeat: no-repeat;
-  background-color: #f2f0e6;
-  background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
-  background-attachment: local, local, scroll, scroll;
-}
-
 /* 羊皮纸效果和表格样式 */
 .reading-table-container {
   padding: 2rem;
-  background: #f2f0e6;
+  background: #f2f0e6; /* 更偏灰白的背景色 */
   border-radius: 8px;
   box-shadow: 
     0 2px 4px rgba(0,0,0,0.1),
@@ -35,9 +14,9 @@
     linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
   background-size: 20px 20px;
   position: relative;
-  border: 1px solid #e0ded5;
-  min-width: 800px; /* 设置最小宽度确保内容不会挤压 */
+  border: 1px solid #e0ded5; /* 更淡的边框色 */
 }
+
 /* 装饰性边框 */
 .reading-table-container::before {
   content: "";
@@ -165,41 +144,38 @@ tr:hover {
 }
 </style>
 
-<div class="table-outer-container">
-  <div class="table-scroll-container">
-    <div class="reading-table-container">
-      <div class="corner corner-top-left"><div class="corner-decoration"></div></div>
-      <div class="corner corner-top-right"><div class="corner-decoration"></div></div>
-      <div class="corner corner-bottom-left"><div class="corner-decoration"></div></div>
-      <div class="corner corner-bottom-right"><div class="corner-decoration"></div></div>
-      <table>
-        <thead>
+<div class="reading-table-container">
+  <div class="corner corner-top-left"><div class="corner-decoration"></div></div>
+  <div class="corner corner-top-right"><div class="corner-decoration"></div></div>
+  <div class="corner corner-bottom-left"><div class="corner-decoration"></div></div>
+  <div class="corner corner-bottom-right"><div class="corner-decoration"></div></div>
+  <div style="overflow-x: auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Date of completion</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $books }}
           <tr>
-            <th>No.</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Date of completion</th>
-            <th>Rating</th>
+            <td>{{ .No }}</td>
+            <td>{{ .Title }}</td>
+            <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
+            <td>{{ .Date }}</td>
+            <td class="rating-cell">
+              {{- $rating := .Rating -}}
+              {{- range seq 1 5 -}}
+                <span class="star">{{- if le . $rating -}}⭐{{- else -}}☆{{- end -}}</span>
+              {{- end -}}
+            </td>
           </tr>
-        </thead>
-        <tbody>
-          {{ range $books }}
-            <tr>
-              <td>{{ .No }}</td>
-              <td>{{ .Title }}</td>
-              <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
-              <td>{{ .Date }}</td>
-              <td class="rating-cell">
-                {{- $rating := .Rating -}}
-                {{- range seq 1 5 -}}
-                  <span class="star">{{- if le . $rating -}}⭐{{- else -}}☆{{- end -}}</span>
-                {{- end -}}
-              </td>
-            </tr>
-          {{ end }}
-        </tbody>
-      </table>
-    </div>
+        {{ end }}
+      </tbody>
+    </table>
   </div>
 </div>
-
