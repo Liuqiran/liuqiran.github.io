@@ -1,5 +1,5 @@
 {{ $books := site.Data.books.list }}
-<div class="book-table">
+<div style="font-size: 0.95rem; margin: auto; overflow-x: auto;">
 <table>
   <thead>
     <tr>
@@ -17,13 +17,15 @@
         <td>{{ .Title }}</td>
         <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
         <td>{{ .Date }}</td>
-        <td style="white-space: nowrap;">
-          {{ $rating := .Rating }}
-          {{ range seq 1 5 }}
-            <span class="rating-star">
-              {{ if le . $rating }}⭐{{ else }}☆{{ end }}
-            </span>
-          {{ end }}
+        <td>
+          <div class="rating-container">
+            {{ $rating := .Rating }}
+            {{ range seq 1 5 }}
+              <span class="rating-star">
+                {{ if le . $rating }}⭐{{ else }}☆{{ end }}
+              </span>
+            {{ end }}
+          </div>
         </td>
       </tr>
     {{ end }}
