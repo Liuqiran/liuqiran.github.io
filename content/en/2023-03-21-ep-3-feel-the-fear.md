@@ -10,8 +10,6 @@ boomdevs_metabox:
   - 's:41:"a:1:{s:19:"disable_auto_insert";s:1:"0";}";'
 tags:
   - Fear
-  - Podcast
-
 ---
 Hi, I&#8217;m Qiran. Today I would like to share with you my understanding of fear.
 
