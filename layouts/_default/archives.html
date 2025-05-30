@@ -1,8 +1,30 @@
 {{- define "main" }}
 
 <header class="page-header">
-  <!-- 保持原有的 header 部分不变 -->
-  ... 
+<h1>
+{{ .Title }}
+{{- if (.Param "ShowRssButtonInSectionTermList") }}
+{{- $rss := (.OutputFormats.Get "rss") }}
+{{- if (eq .Kind page) }}
+{{- $rss = (.Parent.OutputFormats.Get "rss") }}
+{{- end }}
+{{- with $rss }}
+<a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+stroke-linecap="round" stroke-linejoin="round" height="23">
+<path d="M4 11a9 9 0 0 1 9 9" />
+<path d="M4 4a16 16 0 0 1 16 16" />
+<circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+{{- end }}
+{{- end }}
+</h1>
+{{- if .Description }}
+<div class="post-description">
+{{ .Description }}
+</div>
+{{- end }}
 </header>
 
 {{- $pages := where site.RegularPages "Lang" "in" (slice "en" "zh") }}
@@ -14,97 +36,48 @@
 {{- range $pages.GroupByPublishDate "2006" }}
 {{- if ne .Key "0001" }}
 <div class="archive-year">
-  {{- $year := replace .Key "0001" "" }}
-  <h2 class="archive-year-header" id="{{ $year }}">
-    <button class="collapse-button" onclick="toggleYear(this, '{{ $year }}')" aria-label="折叠/展开 {{ $year }}">
-      <span class="collapse-icon">▼</span>
-    </button>
-    <a class="archive-header-link" href="#{{ $year }}">
-      {{- $year -}}
-    </a>
-    <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
-  </h2>
-  <div id="year-content-{{ $year }}" class="year-content">
-    {{- range .Pages.GroupByDate "January" }}
-    <div class="archive-month">
-      <h3 class="archive-month-header" id="{{ $year }}-{{ .Key }}">
-        <a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">
-          {{- .Key -}}
-        </a>
-        <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
-      </h3>
-      <div class="archive-posts">
-        {{- range .Pages }}
-        {{- if eq .Kind "page" }}
-        <div class="archive-entry">
-          <!-- 保持原有的 entry 部分不变 -->
-          ...
-        </div>
-        {{- end }}
-        {{- end }}
-      </div>
-    </div>
-    {{- end }}
-  </div>
+{{- $year := replace .Key "0001" "" }}
+<h2 class="archive-year-header" id="{{ $year }}">
+<a class="archive-header-link" href="#{{ $year }}">
+{{- $year -}}
+</a>
+<sup class="archive-count"> {{ len .Pages }}</sup>
+</h2>
+{{- range .Pages.GroupByDate "January" }}
+<div class="archive-month">
+<h3 class="archive-month-header" id="{{ $year }}-{{ .Key }}">
+<a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">
+{{- .Key -}}
+</a>
+<sup class="archive-count"> {{ len .Pages }}</sup>
+</h3>
+<div class="archive-posts">
+{{- range .Pages }}
+{{- if eq .Kind "page" }}
+<div class="archive-entry">
+<h3 class="archive-entry-title entry-hint-parent">
+{{- .Title | markdownify }}
+{{- if .Draft }}
+<span class="entry-hint" title="Draft">
+<svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" fill="currentColor">
+<path
+d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+</svg>
+</span>
+{{- end }}
+</h3>
+<div class="archive-meta">
+{{- partial "post_meta.html" . -}}
+</div>
+<a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </div>
 {{- end }}
 {{- end }}
-
-<!-- 添加 JavaScript 代码 -->
-<script>
-function toggleYear(button, year) {
-    const content = document.getElementById(`year-content-${year}`);
-    const icon = button.querySelector('.collapse-icon');
-    
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
-        icon.textContent = '▼';
-    } else {
-        content.style.display = 'none';
-        icon.textContent = '▶';
-    }
-}
-
-// 页面加载时默认折叠所有年份（可选）
-document.addEventListener('DOMContentLoaded', function() {
-    const yearContents = document.querySelectorAll('.year-content');
-    yearContents.forEach(content => {
-        content.style.display = 'none';
-    });
-    const icons = document.querySelectorAll('.collapse-icon');
-    icons.forEach(icon => {
-        icon.textContent = '▶';
-    });
-});
-</script>
-
-<!-- 添加样式 -->
-<style>
-.collapse-button {
-    background: none;
-    border: none;
-    padding: 0 8px;
-    cursor: pointer;
-    color: var(--primary);
-}
-
-.collapse-button:hover {
-    color: var(--secondary);
-}
-
-.collapse-icon {
-    display: inline-block;
-    transition: transform 0.2s;
-}
-
-.archive-year-header {
-    display: flex;
-    align-items: center;
-}
-
-.year-content {
-    margin-left: 20px;
-}
-</style>
+</div>
+</div>
+{{- end }}
+</div>
+{{- end }}
+{{- end }}
 
 {{- end }}{{/* end main */}}
