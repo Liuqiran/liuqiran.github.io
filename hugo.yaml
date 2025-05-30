@@ -48,7 +48,8 @@ languages:
           weight: 70
     params:
       editPost:
-          URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/en"
+          URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/en" 
+          appendFilePath: true
           Text: "Suggest Changes"
       label:
         icon: "/img/Avatar.jpg"
@@ -131,7 +132,8 @@ languages:
           weight: 7
     params:  
       editPost:
-          URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/zh"
+          URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/zh" 
+          appendFilePath: true
           Text: "查看源码"
       label:
         icon: "/img/Avatar.jpg"
