@@ -18,10 +18,10 @@
         <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
         <td>{{ .Date }}</td>
         <td class="rating-cell">
-          <div class="rating-wrapper">
-            <div class="empty-stars">☆☆☆☆☆</div>
-            <div class="filled-stars" style="width: {{ mul .Rating 20 }}%">⭐⭐⭐⭐⭐</div>
-          </div>
+          {{- $rating := .Rating -}}
+          {{- range seq 1 5 -}}
+            <span class="star">{{- if le . $rating -}}★{{- else -}}☆{{- end -}}</span>
+          {{- end -}}
         </td>
       </tr>
     {{ end }}
@@ -32,27 +32,12 @@
 <style>
 .rating-cell {
   white-space: nowrap;
-  width: 100px; /* 调整合适的宽度 */
+  font-family: monospace; /* 使用等宽字体 */
+  font-size: 1.2rem;
+  letter-spacing: 2px;
 }
 
-.rating-wrapper {
-  position: relative;
-  display: inline-block;
-  unicode-bidi: bidi-override;
-  direction: ltr;
-}
-
-.empty-stars {
-  display: inline-block;
-  letter-spacing: 1px; /* 调整星星间距 */
-}
-
-.filled-stars {
-  position: absolute;
-  left: 0;
-  top: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  letter-spacing: 1px; /* 与empty-stars相同的间距 */
+.star {
+  color: #FFD700; /* 金色 */
 }
 </style>
