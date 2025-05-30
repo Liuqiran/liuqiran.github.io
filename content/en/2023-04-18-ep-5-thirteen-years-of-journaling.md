@@ -8,7 +8,6 @@ xyz_twap:
   - 1
 tags:
   - Journal
-  - Podcast
 
 ---
 I&#8217;ve been journaling for thirteen years.  
