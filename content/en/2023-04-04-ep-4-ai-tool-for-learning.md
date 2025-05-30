@@ -7,9 +7,7 @@ aliases: ["/ep-4-ai-tool-for-learning/"]
 xyz_twap:
   - 1
 tags:
-  - Podcast
   - Technology
-
 ---
 I&#8217;m Qiran. Today, I would like to share with you my understanding of Artificial Intelligence.
 
