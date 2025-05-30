@@ -21,7 +21,11 @@
           <div class="rating-container">
             {{- $rating := .Rating -}}
             {{- range seq 1 5 -}}
-              <span class="rating-star">{{- if le . $rating -}}⭐{{- else -}}🕳️{{- end -}}</span>
+              {{- if le . $rating -}}
+                <span class="star">⭐</span>
+              {{- else -}}
+                <span class="star empty-star">☆</span>
+              {{- end -}}
             {{- end -}}
           </div>
         </td>
@@ -30,3 +34,31 @@
   </tbody>
 </table>
 </div>
+
+<style>
+.rating-cell {
+  white-space: nowrap;
+}
+
+.rating-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.star {
+  display: inline-block;
+  line-height: 1;
+}
+
+.empty-star {
+  display: inline-block;
+  transform: scale(1.3);
+  position: relative;
+  top: -0.5px; /* 微调垂直对齐 */
+}
+
+/* 可选：添加鼠标悬停效果 */
+.rating-container:hover .star {
+  opacity: 0.8;
+}
+</style>
