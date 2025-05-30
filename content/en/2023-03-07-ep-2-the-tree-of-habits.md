@@ -8,8 +8,6 @@ xyz_twap:
   - 1
 tags:
   - Habit
-  - Podcast
-
 ---
 Hi, I&#8217;m Qiran. Today I would like to share with you some of my understanding about habits.  
 In my life, the concept of cultivating habits is gradually becoming one of the most important parts.
