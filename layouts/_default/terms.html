@@ -13,12 +13,23 @@
 
 <ul class="terms-tags">
     {{- $type := .Type }}
-    {{- range $key, $value := .Data.Terms.Alphabetical }}
+    {{- $maxCount := 0 }}
+    {{- range $key, $value := .Data.Terms }}
+        {{- if gt $value.Count $maxCount }}
+            {{- $maxCount = $value.Count }}
+        {{- end }}
+    {{- end }}
+    
+    {{- range $key, $value := .Data.Terms.ByCount }}
     {{- $name := .Name }}
     {{- $count := .Count }}
+    {{- $ratio := math.Div (math.Mul $count 100) $maxCount }}
+    {{- $fontSize := add 0.8 (math.Div $ratio 100.0) }}
     {{- with site.GetPage (printf "/%s/%s" $type $name) }}
     <li>
-        <a href="{{ .Permalink }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+        <a href="{{ .Permalink }}" style="font-size: {{ $fontSize }}rem">
+            {{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup>
+        </a>
     </li>
     {{- end }}
     {{- end }}
