@@ -187,6 +187,9 @@ outputFormats:
 
 # 这里的参数会被代码以 .Site.Params 的形式读取
 params:  
+  editPost:
+    URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content"
+    appendFilePath: true
   css: ["css/custom.css"]
   ShowLastMod: true
   ShowLastModOnlyIfDiff: true
