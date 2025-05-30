@@ -47,6 +47,9 @@ languages:
           url: /en/search/
           weight: 70
     params:
+      editPost:
+          URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/en"
+          Text: "Suggest Changes"
       label:
         icon: "/img/Avatar.jpg"
       displayFullLangName: true
@@ -126,7 +129,10 @@ languages:
           name: 🔍 搜索
           url: /zh/search/
           weight: 7
-    params:
+    params:  
+      editPost:
+          URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/zh"
+          Text: "查看源码"
       label:
         icon: "/img/Avatar.jpg"
       displayFullLangName: true
@@ -187,9 +193,6 @@ outputFormats:
 
 # 这里的参数会被代码以 .Site.Params 的形式读取
 params:  
-  editPost:
-    URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content"
-    appendFilePath: true
   css: ["css/custom.css"]
   ShowLastMod: true
   ShowLastModOnlyIfDiff: true
