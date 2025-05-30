@@ -5,7 +5,6 @@ type: post
 date: 2019-03-25T13:10:15+00:00
 aliases: ["/two-years-anniversary-of-using-anki/"]
 tags:
-  - Anki
   - Habit
 ---
 
