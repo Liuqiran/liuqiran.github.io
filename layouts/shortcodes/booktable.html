@@ -17,7 +17,7 @@
         <td>{{ .Title }}</td>
         <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
         <td>{{ .Date }}</td>
-        <td>
+        <td class="rating-cell>
           <div class="rating-container">
             {{ $rating := .Rating }}
             {{ range seq 1 5 }}
