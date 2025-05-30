@@ -104,20 +104,19 @@ img[aria-label="logo"] {
     font-family: "Georgia", "Times New Roman", serif;
 }   
 
-
 .rating-container {
     display: inline-flex;
-    width: 7.5em;  /* 调整这个值直到适合你的需要 */
-    justify-content: flex-start;  
- white-space: nowrap;  /* 防止换行 */
-}  
-
-.rating-cell {  /* 添加这个类到对应的 td 元素上 */
+    width: 7.5em;
+    justify-content: flex-start;
     white-space: nowrap;
 }
 
 .rating-star {
-    width: 1.5em;  /* 每个星星的宽度 */
+    width: 1.5em;
     text-align: center;
+}
+
+.rating-cell {
+    white-space: nowrap;
 }
 
