@@ -118,5 +118,31 @@ img[aria-label="logo"] {
 
 .rating-cell {
     white-space: nowrap;
+}   
+
+.terms-tags {
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
+
+.terms-tags li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.terms-tags a {
+    display: inline-block;
+    padding: 5px 10px;
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.terms-tags a:hover {
+    background: var(--primary);
+    color: var(--theme);
+    border-radius: 4px;
+}
+
 
