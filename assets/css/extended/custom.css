@@ -106,13 +106,13 @@ img[aria-label="logo"] {
 
 .rating-container {
     display: inline-flex;
-    width: 7.5em;
-    justify-content: flex-start;
+    width: 8em;       /* 调整总宽度 */
+    justify-content: space-between;  /* 改为均匀分布 */
     white-space: nowrap;
 }
 
 .rating-star {
-    width: 1.5em;
+    display: inline-block;
     text-align: center;
 }
 
