@@ -4,17 +4,17 @@
 /* 羊皮纸效果和表格样式 */
 .reading-table-container {
   padding: 2rem;
-  background: #f4e9d7; /* 更灰的背景色 */
+  background: #f2f0e6; /* 更偏灰白的背景色 */
   border-radius: 8px;
   box-shadow: 
     0 2px 4px rgba(0,0,0,0.1),
     0 8px 16px rgba(0,0,0,0.1);
   background-image: 
-    linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px);
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
   background-size: 20px 20px;
   position: relative;
-  border: 1px solid #d3c4a9;
+  border: 1px solid #e0ded5; /* 更淡的边框色 */
 }
 
 /* 装饰性边框 */
@@ -25,7 +25,7 @@
   left: 5px;
   right: 5px;
   bottom: 5px;
-  border: 2px solid #d3c4a9;
+  border: 2px solid #e0ded5;
   border-radius: 6px;
   pointer-events: none;
 }
@@ -38,11 +38,11 @@ table {
 }
 
 th {
-  background: rgba(139, 69, 19, 0.08); /* 更淡的标题背景 */
+  background: rgba(0, 0, 0, 0.04); /* 更淡的标题背景 */
   padding: 12px;
   text-align: left;
-  border-bottom: 2px solid rgba(139, 69, 19, 0.2);
-  color: #5c3317;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  color: #4a4a4a; /* 更深的灰色文字 */
 }
 
 th:first-child {
@@ -55,11 +55,12 @@ th:last-child {
 
 td {
   padding: 12px;
-  border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  color: #565656;
 }
 
 tr:hover {
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.5);
 }
 
 .rating-cell {
@@ -74,45 +75,80 @@ tr:hover {
   text-align: center;
 }
 
-/* 装饰性角落 */
+/* 装饰性角落 - 更精美的设计 */
 .corner {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #d3c4a9;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.corner::before,
+.corner::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #c8c6bd;
   border-radius: 50%;
 }
 
+.corner::after {
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 4px;
+  border-color: #d5d3c9;
+}
+
+/* 角落装饰件的花纹 */
+.corner-decoration {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e0ded5;
+  top: 8px;
+  left: 8px;
+}
+
 .corner-top-left {
-  top: -10px;
-  left: -10px;
-  border-bottom-right-radius: 0;
+  top: -12px;
+  left: -12px;
 }
 
 .corner-top-right {
-  top: -10px;
-  right: -10px;
-  border-bottom-left-radius: 0;
+  top: -12px;
+  right: -12px;
+  transform: rotate(90deg);
 }
 
 .corner-bottom-left {
-  bottom: -10px;
-  left: -10px;
-  border-top-right-radius: 0;
+  bottom: -12px;
+  left: -12px;
+  transform: rotate(-90deg);
 }
 
 .corner-bottom-right {
-  bottom: -10px;
-  right: -10px;
-  border-top-left-radius: 0;
+  bottom: -12px;
+  right: -12px;
+  transform: rotate(180deg);
+}
+
+/* 添加装饰性线条 */
+.corner::before {
+  background: 
+    radial-gradient(circle at center, #c8c6bd 2px, transparent 2px),
+    radial-gradient(circle at 30% 30%, #c8c6bd 2px, transparent 2px),
+    radial-gradient(circle at 70% 70%, #c8c6bd 2px, transparent 2px);
 }
 </style>
 
 <div class="reading-table-container">
-  <div class="corner corner-top-left"></div>
-  <div class="corner corner-top-right"></div>
-  <div class="corner corner-bottom-left"></div>
-  <div class="corner corner-bottom-right"></div>
+  <div class="corner corner-top-left"><div class="corner-decoration"></div></div>
+  <div class="corner corner-top-right"><div class="corner-decoration"></div></div>
+  <div class="corner corner-bottom-left"><div class="corner-decoration"></div></div>
+  <div class="corner corner-bottom-right"><div class="corner-decoration"></div></div>
   <div style="overflow-x: auto;">
     <table>
       <thead>
