@@ -1,35 +1,44 @@
 {{ $books := site.Data.books.list }}
-<div style="font-size: 0.95rem; margin: auto; overflow-x: auto;">
-<table>
-  <thead>
-    <tr>
-      <th>No.</th>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Date of completion</th>
-      <th>Rating</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{ range $books }}
-      <tr>
-        <td>{{ .No }}</td>
-        <td>{{ .Title }}</td>
-        <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
-        <td>{{ .Date }}</td>
-        <td class="rating-cell">
-          {{- $rating := .Rating -}}
-          {{- range seq 1 5 -}}
-            <span class="star">{{- if le . $rating -}}⭐{{- else -}}☆{{- end -}}</span>
-          {{- end -}}
-        </td>
-      </tr>
-    {{ end }}
-  </tbody>
-</table>
-</div>
 
 <style>
+/* 羊皮纸效果和表格样式 */
+.reading-table-container {
+  padding: 2rem;
+  background: #fdf1dc;
+  border-radius: 8px;
+  box-shadow: 
+    0 2px 4px rgba(0,0,0,0.1),
+    0 8px 16px rgba(0,0,0,0.1);
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem;
+}
+
+th {
+  background: rgba(139, 69, 19, 0.1);
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid rgba(139, 69, 19, 0.2);
+  color: #5c3317;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+tr:hover {
+  background: rgba(255,255,255,0.4);
+}
+
 .rating-cell {
   white-space: nowrap;
   letter-spacing: 1px;
@@ -38,7 +47,39 @@
 
 .star {
   display: inline-block;
-  width: 1.2em;  /* 固定宽度 */
-  text-align: center;  
+  width: 1.2em;
+  text-align: center;
 }
 </style>
+
+<div class="reading-table-container">
+  <div style="overflow-x: auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Date of completion</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $books }}
+          <tr>
+            <td>{{ .No }}</td>
+            <td>{{ .Title }}</td>
+            <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
+            <td>{{ .Date }}</td>
+            <td class="rating-cell">
+              {{- $rating := .Rating -}}
+              {{- range seq 1 5 -}}
+                <span class="star">{{- if le . $rating -}}⭐{{- else -}}☆{{- end -}}</span>
+              {{- end -}}
+            </td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+</div>
