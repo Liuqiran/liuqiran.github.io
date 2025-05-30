@@ -4,7 +4,7 @@
 /* 羊皮纸效果和表格样式 */
 .reading-table-container {
   padding: 2rem;
-  background: #fdf1dc;
+  background: #f4e9d7; /* 更灰的背景色 */
   border-radius: 8px;
   box-shadow: 
     0 2px 4px rgba(0,0,0,0.1),
@@ -13,6 +13,21 @@
     linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px);
   background-size: 20px 20px;
+  position: relative;
+  border: 1px solid #d3c4a9;
+}
+
+/* 装饰性边框 */
+.reading-table-container::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid #d3c4a9;
+  border-radius: 6px;
+  pointer-events: none;
 }
 
 table {
@@ -23,11 +38,19 @@ table {
 }
 
 th {
-  background: rgba(139, 69, 19, 0.1);
+  background: rgba(139, 69, 19, 0.08); /* 更淡的标题背景 */
   padding: 12px;
   text-align: left;
   border-bottom: 2px solid rgba(139, 69, 19, 0.2);
   color: #5c3317;
+}
+
+th:first-child {
+  border-top-left-radius: 6px;
+}
+
+th:last-child {
+  border-top-right-radius: 6px;
 }
 
 td {
@@ -50,9 +73,46 @@ tr:hover {
   width: 1.2em;
   text-align: center;
 }
+
+/* 装饰性角落 */
+.corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d3c4a9;
+  border-radius: 50%;
+}
+
+.corner-top-left {
+  top: -10px;
+  left: -10px;
+  border-bottom-right-radius: 0;
+}
+
+.corner-top-right {
+  top: -10px;
+  right: -10px;
+  border-bottom-left-radius: 0;
+}
+
+.corner-bottom-left {
+  bottom: -10px;
+  left: -10px;
+  border-top-right-radius: 0;
+}
+
+.corner-bottom-right {
+  bottom: -10px;
+  right: -10px;
+  border-top-left-radius: 0;
+}
 </style>
 
 <div class="reading-table-container">
+  <div class="corner corner-top-left"></div>
+  <div class="corner corner-top-right"></div>
+  <div class="corner corner-bottom-left"></div>
+  <div class="corner corner-bottom-right"></div>
   <div style="overflow-x: auto;">
     <table>
       <thead>
