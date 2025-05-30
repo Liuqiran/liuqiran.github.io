@@ -105,15 +105,14 @@ img[aria-label="logo"] {
 }   
 
 
-.rating-star {
-    display: inline-block;
-    width: 1.5em;
-    text-align: center;
+.rating-container {
+    display: inline-flex;
+    width: 7.5em;  /* 调整这个值直到适合你的需要 */
+    justify-content: flex-start;
 }
 
-.book-table {
-    font-size: 0.95rem;
-    margin: auto;
-    overflow-x: auto;
+.rating-star {
+    width: 1.5em;  /* 每个星星的宽度 */
+    text-align: center;
 }
 
