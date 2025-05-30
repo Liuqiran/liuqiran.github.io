@@ -20,7 +20,7 @@
         <td class="rating-cell">
           {{- $rating := .Rating -}}
           {{- range seq 1 5 -}}
-            <span class="star">{{- if le . $rating -}}⭐{{- else -}}☆{{- end -}}</span>
+            <span class="star">{{- if le . $rating -}}⭐{{- else -}}✰{{- end -}}</span>
           {{- end -}}
         </td>
       </tr>
