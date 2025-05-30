@@ -1,7 +1,7 @@
 {{ $books := site.Data.books.list }}
 
 <style>
-/* 定义亮色和暗色模式的颜色变量 */
+/* 定义亮色模式的颜色变量 */
 :root {
   --paper-bg: #f2f0e6;
   --paper-grid: rgba(0,0,0,0.03);
@@ -16,33 +16,17 @@
 }
 
 /* 暗色模式的颜色变量 */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper-bg: #2a2826;
-    --paper-grid: rgba(255,255,255,0.03);
-    --border-color: #3d3a36;
-    --border-dark: #4a4642;
-    --text-color: #e0ded5;
-    --text-secondary: #c8c6bd;
-    --th-bg: rgba(255, 255, 255, 0.04);
-    --th-border: rgba(255, 255, 255, 0.08);
-    --td-border: rgba(255, 255, 255, 0.06);
-    --hover-bg: rgba(255,255,255,0.05);
-  }
-}
-
-/* 为 PaperMod 主题特别适配 */
-[theme="dark"] {
-    --paper-bg: #2a2826;
-    --paper-grid: rgba(255,255,255,0.03);
-    --border-color: #3d3a36;
-    --border-dark: #4a4642;
-    --text-color: #e0ded5;
-    --text-secondary: #c8c6bd;
-    --th-bg: rgba(255, 255, 255, 0.04);
-    --th-border: rgba(255, 255, 255, 0.08);
-    --td-border: rgba(255, 255, 255, 0.06);
-    --hover-bg: rgba(255,255,255,0.05);
+.dark {
+  --paper-bg: #2a2826;
+  --paper-grid: rgba(255,255,255,0.03);
+  --border-color: #3d3a36;
+  --border-dark: #4a4642;
+  --text-color: #e0ded5;
+  --text-secondary: #c8c6bd;
+  --th-bg: rgba(255, 255, 255, 0.04);
+  --th-border: rgba(255, 255, 255, 0.08);
+  --td-border: rgba(255, 255, 255, 0.06);
+  --hover-bg: rgba(255,255,255,0.05);
 }
 
 /* 羊皮纸效果和表格样式 */
@@ -59,6 +43,7 @@
   background-size: 20px 20px;
   position: relative;
   border: 1px solid var(--border-color);
+  transition: all 0.3s ease; /* 添加过渡效果 */
 }
 
 /* 装饰性边框 */
