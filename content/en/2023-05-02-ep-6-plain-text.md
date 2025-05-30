@@ -7,7 +7,6 @@ aliases: ["/ep-6-plain-text/"]
 xyz_twap:
   - 1
 tags:
-  - Podcast
   - Technology
 
 ---
