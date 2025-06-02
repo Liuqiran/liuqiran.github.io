@@ -24,7 +24,7 @@ languages:
           weight: 1
         - identifier: about
           name: 👤 About
-          url: /en/about-me-2/
+          url: /en/about-me/
           weight: 10
         - identifier: Reading list
           name: 📚 Reading list
@@ -50,7 +50,7 @@ languages:
       editPost:
           URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/en" 
           appendFilePath: true
-          Text: "Suggest Changes"
+          Text: "View on GitHub"
       label:
         icon: "/img/Avatar.jpg"
       displayFullLangName: true
