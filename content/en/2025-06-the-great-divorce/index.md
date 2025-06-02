@@ -8,7 +8,7 @@ cover:
   image: cover.jpg
 ---   
 
-This is the second book by C.S. Lewis I've read after Mere Christianity. Though short, it took me several days to finish.
+This is the second book by C.S. Lewis I've read after *Mere Christianity*. Though short, it took me several days to finish.
 
 In heaven, everything is solid and real. The ghosts can't handle this reality, mainly because of their own mindset. Hell starts from a tiny thought and grows when exposed to heaven's truth. These thoughts can grow until they take over the soul, making the ghosts unable to bear heaven's reality, forcing them back to Earth. This shows why no sin is truly small.
 
