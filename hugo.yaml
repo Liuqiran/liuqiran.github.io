@@ -50,7 +50,7 @@ languages:
       editPost:
           URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/en" 
           appendFilePath: true
-          Text: "View on GitHub"
+          Text: "View Code"
       label:
         icon: "/img/Avatar.jpg"
       displayFullLangName: true
