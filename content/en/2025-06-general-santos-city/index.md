@@ -1,6 +1,5 @@
 ---
 title: General Santos City  
-draft: true  
 date: 2025-06-07  
 tags:
   - travel
