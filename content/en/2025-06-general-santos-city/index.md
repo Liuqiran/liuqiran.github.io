@@ -89,7 +89,7 @@ Services were conducted in Bisaya. I met Jirehson, who said he was introverted a
 
 I had many conversations with Leslie. I told her that Jirehson considered her one of the smartest girls here.  She disagreed, and she responded to that question remarkably well. When she said "再见" , I really appreciated it. She was the  local I knew who could pop out many Chinese words. She gave me a letter, asking me to open it only after boarding the plane.
 
-Three days went by so fast. I am one of the seeds dispersed from the dandelion, but what I already see is branches that have taken root and sprouted, growing into a forest. Until now, it's my best memory of life in the Philippines.
+Three days went by so fast. I am one of the seeds dispersed from the dandelion, but what I already see is branches that have taken root and sprouted, growing into a forest. I’m grateful for everyone I’ve met here. Until now, it's my best memory of life in the Philippines.
 
 I thought I'd lost the letter because I was distributing pamphlets and rushing to board. I was searching through my bag when I found it had been tucked in the Book all along:    
 
