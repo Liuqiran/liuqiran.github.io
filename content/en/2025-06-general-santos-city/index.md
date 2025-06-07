@@ -18,7 +18,7 @@ I'm lazy about going out, but if I hadn't suddenly decided to stroll that street
 
 I've never considered visiting another city just for entertainment. This time I bought the ticket, though expensive, to keep my promise to attend the Singles' camp.    
 
-![](plane.img)
+![](plane.jpg)
 
 I'm not much of a traveler, especially the hardships during trips. I still remember the good memory from when I was 8 years old, lying on the upper berth of the standard train heading south from my hometown. I watched moonlight shine on the white bed and saw tree shadows from rural areas sprinkle over the sandstone road and window. As the train started slowly, shadows moved behind slowly then sped up. Twinkling city lights faded away as the train left the Transfer City Station.
 
@@ -52,13 +52,13 @@ The seaside was close to the park. I walked there, seeing kids playing basketbal
 
 ![](basketball.jpg)        
 
-![](gensanpicture.jpg)    
+![](family.jpg)  
 
-![](clothes.jpg)
+![](gensanpicture.jpg)    
 
 In the afternoon, I walked around and visited a small restaurant (a shirt from Qingdao team...What exactly did people from Qingdao do wrong?).
 
-![](family.jpg)  
+![](clothes.jpg)
 
 On the 5th morning, the singles' camp began. I received my ID and schedule. Many people joined. I also met Miles and Christian, whom I'd met in SLC and who had been praying for me.    
 
