@@ -105,7 +105,7 @@ You have a good and great skills in Fine arts. Continue doing it! Hope those pra
 
 Sorry for my so could letter, and my penmanship. But I want to say Thank you so much, you taught me something. You are a Blessing.   
  
-See you somewhere, else, take care "Amping permi" in Bisaya. Have a good rest! Read your Bible everyday, that world help you a lot. If you don't know the answer; ASK HIM through his word.    
+See you somewhere, else, take care "Amping permi" in Bisaya. Have a good rest! Read your Bible everyday, that would help you a lot. If you don't know the answer; ASK HIM through his word.    
 
 <p style="text-align: right">
 Truly the servant of the Lord<br>
