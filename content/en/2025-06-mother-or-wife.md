@@ -17,7 +17,7 @@ Question: If both my mother and my wife fell into the water and I could only sav
 
 
 
-For me personally, I now realize that if my father hadn’t chosen to put my mother first—if he hadn’t taken his wife and moved out of his parents’ home back then—my parents might have separated.
+For me personally, I now realize that if my father hadn’t chosen to put my mother first—if he hadn’t taken his wife and moved out of his parents’ home back then—my parents might have also separated.
 
 Perhaps one reason I left my hometown was that I wanted to get away from my mother and become an independent person. 
 
