@@ -113,6 +113,6 @@ Jesus Christ; 你的朋友<br>
 Leslie   ◁：<br>
 Life verses:<br>
 Lamentation 3:21,<br>
-Philippines 3:10
+Philippians 3:10
 </p>
 </blockquote>
