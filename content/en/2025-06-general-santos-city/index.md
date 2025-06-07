@@ -85,7 +85,7 @@ At night, there was an outdoor bonfire. Everyone could write a wish on paper and
 
 ![](platform.jpg)  
 
-Services were conducted in Visayan. I met Jirehson, who said he was introverted and always nervous talking with others. Though he claimed this, he was the one who approached me and helped translate topics intuitively - he was the friendliest person I met here. Faith supports him now, and that's what a real faithful soul looks like. It feels like a lost child finding their way home.
+Services were conducted in Bisaya. I met Jirehson, who said he was introverted and always nervous talking with others. Though he claimed this, he was the one who approached me and helped translate topics intuitively on the second day - he was the friendliest person I met here. Faith supports him now, and that's what a real faithful soul looks like. It feels like a lost child finding their way home.
 
 I had many conversations with Leslie. I told her that Jirehson considered her one of the smartest girls here.  She disagreed, and she responded to that question remarkably well. When she said "再见" , I really appreciated it. She was the  local I knew who could pop out many Chinese words. She gave me a letter, asking me to open it only after boarding the plane.
 
