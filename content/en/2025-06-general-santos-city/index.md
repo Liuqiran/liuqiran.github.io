@@ -98,26 +98,24 @@ I thought I'd lost the letter because I was distributing pamphlets and rushing t
 
 ![](letter.jpg)  
 
-> Dear Qiran,                                                               
->
->                                                                                                                                                6/6/35 1:07 am
->
-> Frist, I think the Lord you come here in Gensan. It held with prayers and knees. Everyone is shock about it. I know you have a great time here in Gensan. And thank you for accepting the invitation to join in our singles' camp 1026. This is our 4th singles' camp.    
->
-> You have a good and great skills in  Fine arts. Continue doing it! Hope those praching even if Bisaya. I know God speak to your heart. You must know the truest friend the Holy Spirit.   
->
-> Sorry for my so could letter, and my penmanship. But I want to say Thank you so much, you taught me something. You are a Blessing.   
->  
-> See you somewhere, else, take care "Amping permi in Bisaya."  Have a good rest! Read your Bible everyday, that world help you a lot. If you don't know the answer; ASK HIM through his word.    
->
->                                                                                                                        Truly the servant of the Lord   
->
->                                                                                                                            Jesus Christ; 你的朋友              
->
->                                                                                                                                       Leslie    >◁：         
->
->                                                                                                                                              Life verses: 
->
->                                                                                                                                               Lamentation 3:21,  
->
->                                                                                                                                               Philippines 3:10
+<blockquote>
+Dear Qiran,
+<p style="text-align: right">6/6/35 1:07 am</p>
+
+First, I think the Lord you come here in Gensan. It held with prayers and knees. Everyone is shock about it. I know you have a great time here in Gensan. And thank you for accepting the invitation to join in our singles' camp 2026. This is our 4th singles' camp.    
+
+You have a good and great skills in Fine arts. Continue doing it! Hope those praching even if Bisaya. I know God speak to your heart. You must know the truest friend the Holy Spirit.   
+
+Sorry for my so could letter, and my penmanship. But I want to say Thank you so much, you taught me something. You are a Blessing.   
+ 
+See you somewhere, else, take care "Amping permi in Bisaya." Have a good rest! Read your Bible everyday, that world help you a lot. If you don't know the answer; ASK HIM through his word.    
+
+<p style="text-align: right">
+Truly the servant of the Lord<br>
+Jesus Christ; 你的朋友<br>
+Leslie   ◁：<br>
+Life verses:<br>
+Lamentation 3:21,<br>
+Philippines 3:10
+</p>
+</blockquote>
