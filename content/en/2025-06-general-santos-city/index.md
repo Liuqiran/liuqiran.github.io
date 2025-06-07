@@ -5,6 +5,9 @@ date: 2025-06-07
 tags:
   - travel
   - life
+cover:
+  image: "cover.jpg"
+  relative: true
 ---
 
 There is a divine will guiding things in the unseen.
