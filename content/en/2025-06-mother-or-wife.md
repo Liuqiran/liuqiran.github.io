@@ -1,9 +1,13 @@
 ---
 title: If both my mother and my wife fell into the water and I could only save one, who would you consider more important, and why? 
 hidden: true   
-date: 2025-06-07  
+date: 2024-06-07  
 noindex: true
 archive: false
+_build:
+  list: false
+  render: true
+type: "page"
 ---
 
 Question: If both my mother and my wife fell into the water and I could only save one, who would you consider more important, and why?    
