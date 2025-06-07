@@ -7,9 +7,6 @@ tags:
 cover:
   image: "cover.jpg"
   relative: true
-_build:
-  list: false   
-  render: true   
 ---
 
 There is a divine will guiding things in the unseen.
