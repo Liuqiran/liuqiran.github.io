@@ -5,9 +5,8 @@ date: 2024-06-07
 noindex: true
 archive: false
 _build:
-  list: false
-  render: true
-type: "page"
+  list: false   
+  render: true   
 ---
 
 Question: If both my mother and my wife fell into the water and I could only save one, who would you consider more important, and why?    
