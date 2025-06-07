@@ -100,9 +100,9 @@ I thought I'd lost the letter because I was distributing pamphlets and rushing t
 
 <blockquote>
 Dear Qiran,
-<p style="text-align: right">6/6/35 1:07 am</p>
+<p style="text-align: right">6/6/25 1:07 am</p>
 
-First, I think the Lord you come here in Gensan. It held with prayers and knees. Everyone is shock about it. I know you have a great time here in Gensan. And thank you for accepting the invitation to join in our singles' camp 2026. This is our 4th singles' camp.    
+First, I think the Lord you come here in Gensan. It held with prayers and knees. Everyone is shock about it. I know you have a great time here in Gensan. And thank you for accepting the invitation to join in our singles' camp 2025. This is our 4th singles' camp.    
 
 You have a good and great skills in Fine arts. Continue doing it! Hope those praching even if Bisaya. I know God speak to your heart. You must know the truest friend the Holy Spirit.   
 
