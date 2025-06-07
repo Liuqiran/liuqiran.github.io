@@ -53,13 +53,19 @@ The seaside was close to the park. I walked there, seeing kids playing basketbal
 
 ![](basketball.jpg)        
 
-![](gensanpicture.jpg)  
+![](gensanpicture.jpg)    
+
+![](clothes.jpg)
 
 In the afternoon, I walked around and visited a small restaurant (a shirt from Qingdao team...What exactly did people from Qingdao do wrong?).
 
 ![](family.jpg)  
 
-On the 5th morning, the singles' camp began. I received my ID and schedule. Many people joined. I also met Miles and Christian, whom I'd met in SLC and who had been praying for me.
+On the 5th morning, the singles' camp began. I received my ID and schedule. Many people joined. I also met Miles and Christian, whom I'd met in SLC and who had been praying for me.    
+
+![](ID.jpg)  
+
+![](schedule.jpg)
 
 I visited room by room where children were nurtured, from infants just months old to toddlers of several years, all sorted into different rooms. Pastor Doug, the church's founder, left his hometown and took root in this city with his family. He devoted his life to his mission and this city. The theories I previously could only learn from books, I now witnessed firsthand: how a strong and stable community is built.
 
