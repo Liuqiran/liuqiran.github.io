@@ -19,7 +19,7 @@ Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends.
       <li><strong>Gender:</strong> ♂️</li>
       <li><strong>Generation:</strong> Gen Z</li>
       <li><strong>Hometown:</strong> <a href="https://en.wikipedia.org/wiki/Hunan" target="_blank">Hunan</a>, South 🇨🇳</li>
-      <li><strong>Personality Type:</strong> <a href="https://www.16personalities.com/infp-personality" target="_blank">INFP</a></li>
+      <li><strong>Personality Type:</strong> <a href="https://www.16personalities.com/infp-personality" target="_blank">INXP</a></li>
     </ul>
   </div>
   <div class="profile-image">
