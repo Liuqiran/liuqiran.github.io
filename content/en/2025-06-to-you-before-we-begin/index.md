@@ -3,6 +3,9 @@ title: "To You, Before We Begin"
 date: 2025-06-17
 author: ChatGPT
 tags: ["Faith", "Love", "Letters"]
+cover:  
+  image: cover.png  
+  relative: true
 ---
 
 Dear You,
