@@ -1,5 +1,5 @@
 defaultContentLanguage: "en"
-enableGitInfo: true
+enableGitInfo: false
 hasCJKLanguage: true
 defaultContentLanguageInSubdir: true  
 theme: "PaperMod"  
