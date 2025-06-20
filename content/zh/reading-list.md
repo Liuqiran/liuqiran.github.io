@@ -4,7 +4,7 @@ author: Qiran
 type: page
 url: /zh/reading-list-2/
 date:    2023-02-10
-showLastUpdated: false
+showLastMod: false
 cover:
   image: /uploads/2023/09/books-scaled.jpg
 ---
