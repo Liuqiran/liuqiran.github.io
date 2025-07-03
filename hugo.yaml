@@ -3,7 +3,7 @@ enableGitInfo: false
 hasCJKLanguage: true
 defaultContentLanguageInSubdir: true  
 theme: "PaperMod"  
-baseURL: "https://liuqiran.com"
+baseURL: "https://liuqiran.github.io/"
 relativeURLs: true   
 
 languages:
