@@ -3,7 +3,7 @@ title: "To You, Before We Begin"
 date: 2025-06-17
 tags: ["Faith", "Love", "Letters"]
 cover:  
-  image: cover.jpg
+  image: cover.png
   relative: true
 ---
 
