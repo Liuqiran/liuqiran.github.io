@@ -1,7 +1,6 @@
 ---
 title: "It’s all my fault"
 date: 2025-08-09
-author: ChatGPT
 tags: ["Music"]
 cover:  
   image: cover.jpg  
