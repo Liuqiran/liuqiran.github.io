@@ -5,6 +5,7 @@ tags: ["Music"]
 cover:  
   image: cover.jpg  
   relative: true
+  hiddenInSingle: true
 ---   
 
 {{< youtube 0mc6pNaqJ7Q >}}
