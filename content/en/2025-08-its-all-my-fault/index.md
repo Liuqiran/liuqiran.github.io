@@ -4,7 +4,7 @@ date: 2025-08-09
 author: ChatGPT
 tags: ["Music"]
 cover:  
-  image: cover.png  
+  image: cover.jpg  
   relative: true
 ---   
 
