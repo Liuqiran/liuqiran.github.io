@@ -16,7 +16,7 @@ image: "/img/clock-wall.jpg"
 
 # 🌏 Language Learning 
 
-[Anki Statistics](stats.png)
+![Anki Statistics](stats.png)
 
 
 Position in Scripture: ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜ 65%
