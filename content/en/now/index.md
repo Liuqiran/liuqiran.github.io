@@ -2,7 +2,7 @@
 title: 🧭 What I'm Doing Now
 author: Qiran
 type: page
-date: 2025-05-21
+date: 2025-11-07
 image: "/img/clock-wall.jpg"
 ---
 > This is what I’m currently focused on. Inspired by [nownownow.com](https://nownownow.com/about).
@@ -13,6 +13,10 @@ image: "/img/clock-wall.jpg"
 <!--<iframe src="https://twisty-change-610.notion.site/ebd/1fc21e6176cd8080be08ea1b2214e8b3?v=1fc21e6176cd813b966e000c20634f61" width="100%" height="600" frameborder="0" allowfullscreen></iframe>-->   
 <!--</div>-->
 
+
+# 🌏 Language Learning 
+
+(Anki Statistics)[stats.png]
 
 
 Position in Scripture: ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜ 65%
