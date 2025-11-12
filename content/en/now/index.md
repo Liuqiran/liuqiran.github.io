@@ -2,7 +2,7 @@
 title: 🧭 What I'm Doing Now
 author: Qiran
 type: page
-date: 2025-11-07
+date: 2025-11-12
 image: "/img/clock-wall.jpg"
 ---
 > This is what I’m currently focused on. Inspired by [nownownow.com](https://nownownow.com/about).
@@ -19,8 +19,7 @@ image: "/img/clock-wall.jpg"
 ![Anki Statistics](stats.png)
 
 
-Position in Scripture: ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜ 65%
-
+Position in New Testament: ⬛⬛⬛⬜⬜⬜⬜⬜ 
 
 
 # 🌳 Building Habits
@@ -31,7 +30,7 @@ Position in Scripture: ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜ 65%
 {{< weektable >}}
 
 2025-05-21,16.7,17,14,4,0
-2025 W20, 17.34
+2025-11-12, 17.34
 
 {{< /weektable >}}  
 
