@@ -19,14 +19,19 @@ Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends.
       <li><strong>Gender:</strong> ♂️</li>  
       <li><strong>Generation:</strong> Gen Z</li>
       <li><strong>Hometown:</strong> <a href="https://en.wikipedia.org/wiki/Hunan" target="_blank">Hunan</a>, South 🇨🇳</li>
-      <li><strong>Personality Type:</strong> <a href="https://www.16personalities.com/infp-personality" target="_blank">INXP</a></li>
+      <li><strong>Personality Type:</strong> <a href="https://www.16personalities.com/infp-personality" target="_blank">INFP</a></li>
     </ul>
   </div>
   <div class="profile-image">
     <img src="/img/2014-03-25-selfie.jpg" alt="Qiran's selfie at age 16">
     <center><p class="caption">When I was 16</p></center>
   </div>
-</div>
+</div>   
+
+**The Big Five Result**   
+- **[O+C+E−A+N−](https://bigfive-test.com/result/692293bdf2aeb4f99975b6e5)**
+
+![](/img/big5.png)
 
 **🖥️ About this site**:
 
