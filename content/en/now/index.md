@@ -2,8 +2,9 @@
 title: 🧭 What I'm Doing Now
 author: Qiran
 type: page
-date: 2025-12-22
-image: "/img/clock-wall.jpg"
+date: 2025-10-01  
+lastmod: 2025-12-22 
+limage: "/img/clock-wall.jpg"
 ---
 > This is what I’m currently focused on. Inspired by [nownownow.com](https://nownownow.com/about).
 >
