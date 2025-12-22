@@ -2,7 +2,7 @@
 title: 🧭 What I'm Doing Now
 author: Qiran
 type: page
-date: 2025-11-12
+date: 2025-12-22
 image: "/img/clock-wall.jpg"
 ---
 > This is what I’m currently focused on. Inspired by [nownownow.com](https://nownownow.com/about).
@@ -14,7 +14,7 @@ image: "/img/clock-wall.jpg"
 <!--</div>-->
 
 
-# 🌏 Language Learning 
+# 🌏 Language Learning Process (Until 2025-12-22)
 
 ![Anki Statistics](stats.png)
 
