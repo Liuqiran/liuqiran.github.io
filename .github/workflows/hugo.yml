@@ -61,7 +61,6 @@ jobs:
         with:
           path: ./public
 
-step：Generate redirects   
 
 - name: Generate redirects (all languages)
   run: |
