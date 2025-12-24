@@ -115,7 +115,7 @@
       const summary = {{ (.Summary | plainify) | jsonify | safeJS }};
 
       // 语言无关的“还有下文”提示：省略号 + 链接
-      const text = `${title}\n\n${summary}\n\n… ${url}`;
+      const text = `${title}\n\n${summary}\n\n …\n${url}`;
 
       const el = document.getElementById("copy-summary");
       if (!el) return;
@@ -147,6 +147,7 @@
 
 
 </ul>   
+
 
 
 
