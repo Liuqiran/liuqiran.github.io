@@ -73,8 +73,7 @@ html[lang="zh-CN"] .comment-system * {
         {{ $path = replace $path "/en/" "/zh/" }}
       {{ end }}
   
-      twikoo.init({
-        {{- /* Twikoo 线程 key：优先 translationKey；没有就去掉语言前缀；最后回退原链接 */ -}}
+{{- /* Twikoo 线程 key：优先 translationKey；没有就去掉语言前缀；最后回退原链接 */ -}}
 {{- $path := .RelPermalink -}}
 
 {{- with .Params.translationKey -}}
@@ -96,7 +95,6 @@ html[lang="zh-CN"] .comment-system * {
     path: {{ $path | jsonify }},
   })
 </script>
-      })
     </script>  
   </div>
   
