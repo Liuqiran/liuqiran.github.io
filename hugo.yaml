@@ -197,6 +197,8 @@ outputFormats:
 
 # 这里的参数会被代码以 .Site.Params 的形式读取
 params:  
+  assets:
+    favicon: "favicon.ico"
   css: ["css/custom.css"]
   ShowLastMod: true
   ShowLastModOnlyIfDiff: true
