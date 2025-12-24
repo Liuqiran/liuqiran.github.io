@@ -89,7 +89,7 @@ languages:
         - name: email
           url: 'mailto:woshiniuziku@gmail.com'    
         - name: facebook
-          url: 'https://web.facebook.com/liuqiran'
+          url: 'https://web.facebook.com/liuqiran123'
     ShowFullTextinRSS: true
   zh:
     languageName: "中文"   
