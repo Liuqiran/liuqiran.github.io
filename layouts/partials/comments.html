@@ -74,13 +74,30 @@ html[lang="zh-CN"] .comment-system * {
       {{ end }}
   
       twikoo.init({
-        envId: "{{ .Site.Params.twikoo.id }}",
-        el: "#twikoo",
-        region: "{{ .Site.Params.twikoo.region }}",
-        lang: "{{ .Site.Language.Lang }}",
-        path: "{{ $path }}",
+        {{- /* Twikoo 线程 key：优先 translationKey；没有就去掉语言前缀；最后回退原链接 */ -}}
+{{- $path := .RelPermalink -}}
+
+{{- with .Params.translationKey -}}
+  {{- $path = printf "/t/%s/" (. | urlize) -}}
+{{- else -}}
+  {{- $path = $path | replaceRE "^/(en|zh|ja)/" "/" -}}
+{{- end -}}
+
+{{- /* Twikoo UI 语言：中文建议 zh-CN */ -}}
+{{- $twlang := .Site.Language.Lang -}}
+{{- if eq $twlang "zh" -}}{{- $twlang = "zh-CN" -}}{{- end -}}
+
+<script>
+  twikoo.init({
+    envId: {{ .Site.Params.twikoo.id | jsonify }},
+    el: "#twikoo",
+    region: {{ .Site.Params.twikoo.region | jsonify }},
+    lang: {{ $twlang | jsonify }},
+    path: {{ $path | jsonify }},
+  })
+</script>
       })
-    </script>
+    </script>  
   </div>
   
   <div id="giscus-container" class="comment-system">
