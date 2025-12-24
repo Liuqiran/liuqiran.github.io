@@ -27,7 +27,8 @@
     {{- $lastmodFormatted := $lastmodDate.Format "January 2, 2006" }}
     {{- $scratch.Add "meta" (slice (printf "Updated %s" $lastmodFormatted)) }}
   {{- end }}
-{{- end }}
+{{- end }}   
+
 
 <!-- 其他元信息如阅读时间、字数等保持不变 -->
 {{- if (.Param "ShowReadingTime") }}
