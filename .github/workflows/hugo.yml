@@ -56,63 +56,59 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Generate redirects (all languages)
+        run: |
+          python3 - <<'PY'
+          import pathlib
+
+          ROOT = pathlib.Path("public")
+
+          def write_redirect(dst: pathlib.Path, target: str):
+              dst.parent.mkdir(parents=True, exist_ok=True)
+              html = f"""<!doctype html><meta charset="utf-8">
+          <meta http-equiv="refresh" content="0; url={target}">
+          <link rel="canonical" href="{target}">
+          <title>Redirecting…</title>
+          <a href="{target}">Redirecting…</a>"""
+              dst.write_text(html, encoding="utf-8")
+
+          def gen_for(base: pathlib.Path, prefix: str):
+              posts_dir = base / "posts"
+              if not posts_dir.exists():
+                  return 0
+
+              seen = set()
+              for src in posts_dir.rglob("index.html"):
+                  rel = src.relative_to(posts_dir)
+                  parts = rel.parts[:-1]
+                  if not parts:
+                      continue
+                  slug = parts[-1]
+                  if slug in seen:
+                      continue
+                  seen.add(slug)
+
+                  old = base / slug / "index.html"
+                  if old.exists():
+                      continue
+                  target = prefix + "/posts/" + "/".join(parts) + "/"
+                  write_redirect(old, target)
+              return len(seen)
+
+          total = 0
+          for d in ROOT.iterdir():
+              if d.is_dir():
+                  total += gen_for(d, f"/{d.name}")
+
+          print("redirects generated total:", total)
+          PY
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
-
-- name: Generate redirects (all languages)
-  run: |
-    python - <<'PY'
-    import pathlib
-
-    ROOT = pathlib.Path("public")
-
-    def write_redirect(dst: pathlib.Path, target: str):
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        html = f"""<!doctype html><meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url={target}">
-<link rel="canonical" href="{target}">
-<title>Redirecting…</title>
-<a href="{target}">Redirecting…</a>"""
-        dst.write_text(html, encoding="utf-8")
-
-    def gen_for(base: pathlib.Path, prefix: str):
-        posts_dir = base / "posts"
-        if not posts_dir.exists():
-            return 0
-
-        seen = set()
-        for src in posts_dir.rglob("index.html"):
-            rel = src.relative_to(posts_dir)
-            parts = rel.parts[:-1]
-            if not parts:
-                continue
-            slug = parts[-1]
-            if slug in seen:
-                continue
-            seen.add(slug)
-
-            old = base / slug / "index.html"
-            if old.exists():
-                continue
-            target = prefix + "/posts/" + "/".join(parts) + "/"
-            write_redirect(old, target)
-        return len(seen)
-
-    total = 0
-
-    # 1) 子语言目录：public/en, public/zh ...
-    for d in ROOT.iterdir():
-        if d.is_dir():
-            total += gen_for(d, f"/{d.name}")
-
-    # 2) 默认语言在根目录（如果你需要就打开这行）
-    # total += gen_for(ROOT, "")
-
-    print("redirects generated total:", total)
-    PY
 
   # Deployment job
   deploy:
