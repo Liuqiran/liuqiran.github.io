@@ -46,7 +46,19 @@ html[lang="zh-CN"] body {
 }
 } 
 
+/* 1) 不要 hidden（Firefox 会裁字）*/
+.vertical-chinese-wrapper{
+  overflow-x: auto;
+  overflow-y: visible;     /* 或 auto，但先用 visible 排除裁剪 */
+  height: auto;            /* 先别固定高度，排除“列/高度裁剪” */
+  max-height: none;
+}
 
+/* 2) 竖排底部留白要用 logical padding（inline-end=竖排的下方）*/
+.vertical-chinese{
+  padding-inline-end: 1em; /* 这行通常就是“最后几个像素被裁”的解药 */
+}
+   
 /* 为图片设置最大宽度和高度 */
 .vertical-chinese img {
   max-width: 100%;    /* 确保图片宽度不超过容器 */
