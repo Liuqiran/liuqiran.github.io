@@ -63,5 +63,3 @@ Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends.
 
  [1]: /tags/building-site/
  [2]: https://t.me/liuqiran    
-
-<span id="twikoo_visitors">0</span>
