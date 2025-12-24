@@ -36,14 +36,58 @@
 
 <div id="twikoo-container" class="comment-system">
   <div id="twikoo"></div>
-  <script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
 </div>
 
 <div id="giscus-container" class="comment-system">
   <div id="giscus-comment"></div>
 </div>
 
-{{- /* ===== 统一 Twikoo 线程 key（A/B 合并）===== */ -}}
+<style>
+  .comment-toggle { margin-bottom: 1em; text-align: center; }
+  .comment-toggle button {
+    padding: 0.5em 1.2em; margin: 0 0.3em; cursor: pointer;
+    border: 1px solid #ccc; background: #f8f8f8; color: #555;
+    font-weight: 500; border-radius: 4px; font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .comment-toggle button:hover { background: #e2e2e2; border-color: #999; color: #333; }
+  .comment-toggle button.active {
+    background: #ccc; border-color: #999; color: #222;
+    cursor: default; pointer-events: none;
+  }
+
+  .comment-system { display: none; }
+  .comment-system.active { display: block; }
+
+  /* 你原来的字体样式（可留可删） */
+  html[lang="en-US"] .comment-system, html[lang="en-US"] .comment-system * {
+    font-family: "Georgia", "Times New Roman", serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+  }
+  html[lang="zh-CN"] .comment-system, html[lang="zh-CN"] .comment-system * {
+    font-family: 'KingHwa_OldSong', sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.8 !important;
+  }
+</style>
+
+<div class="comment-toggle">
+  <button id="btn-twikoo" type="button">Twikoo 💬</button>
+  <button id="btn-giscus" type="button">Giscus 💬</button>
+</div>
+
+<div id="twikoo-container" class="comment-system">
+  <div id="twikoo"></div>
+</div>
+
+<div id="giscus-container" class="comment-system">
+  <div id="giscus-comment"></div>
+</div>
+
+{{- /* ===== Twikoo path：A/B 组合 ===== */ -}}
 {{- $twPath := .RelPermalink -}}
 {{- with .Params.translationKey -}}
   {{- $twPath = printf "/t/%s/" (. | urlize) -}}
@@ -51,13 +95,20 @@
   {{- $twPath = $twPath | replaceRE "^/(en|zh|ja)/" "/" -}}
 {{- end -}}
 
-{{- /* ===== Twikoo 界面语言（UI 语言不影响线程）===== */ -}}
-{{- $twLang := .Site.Language.Lang -}}
-{{- if eq $twLang "zh" -}}{{- $twLang = "zh-CN" -}}{{- end -}}
+{{- /* ===== Twikoo lang 映射（en-US/zh 等都稳）===== */ -}}
+{{- $twLangRaw := .Site.Language.Lang -}}
+{{- $twLang := "en" -}}
+{{- if hasPrefix (lower $twLangRaw) "zh" -}}
+  {{- $twLang = "zh-CN" -}}
+{{- else if hasPrefix (lower $twLangRaw) "en" -}}
+  {{- $twLang = "en" -}}
+{{- end -}}
 
-{{- /* ===== Giscus 界面语言 ===== */ -}}
+{{- /* ===== Giscus lang ===== */ -}}
 {{- $giscusLang := "en" -}}
-{{- if eq .Site.Language.Lang "zh" -}}{{- $giscusLang = "zh-CN" -}}{{- end -}}
+{{- if hasPrefix (lower .Site.Language.Lang) "zh" -}}
+  {{- $giscusLang = "zh-CN" -}}
+{{- end -}}
 
 <script>
   const btnTwikoo = document.getElementById('btn-twikoo');
@@ -68,38 +119,62 @@
   let twikooInited = false;
   let giscusLoaded = false;
 
-  function activateTwikooUI() {
-    btnTwikoo.classList.add('active');
-    btnGiscus.classList.remove('active');
-    twikooContainer.classList.add('active');
-    giscusContainer.classList.remove('active');
-    localStorage.setItem('preferredComment', 'twikoo');
+  function setActive(which) {
+    const isTw = which === 'twikoo';
+    btnTwikoo.classList.toggle('active', isTw);
+    btnGiscus.classList.toggle('active', !isTw);
+    twikooContainer.classList.toggle('active', isTw);
+    giscusContainer.classList.toggle('active', !isTw);
+    localStorage.setItem('preferredComment', which);
   }
 
-  function activateGiscusUI() {
-    btnGiscus.classList.add('active');
-    btnTwikoo.classList.remove('active');
-    giscusContainer.classList.add('active');
-    twikooContainer.classList.remove('active');
-    localStorage.setItem('preferredComment', 'giscus');
+  function loadScript(urls) {
+    return new Promise((resolve, reject) => {
+      let i = 0;
+      const tryNext = () => {
+        if (i >= urls.length) return reject(new Error("All CDN failed: " + urls.join(", ")));
+        const s = document.createElement('script');
+        s.src = urls[i++];
+        s.async = true;
+        s.onload = () => resolve();
+        s.onerror = () => tryNext();
+        document.head.appendChild(s);
+      };
+      tryNext();
+    });
   }
 
-  function initTwikooOnce() {
+  async function initTwikooOnceVisible() {
     if (twikooInited) return;
-    if (!window.twikoo) return; // twikoo 脚本还没加载完成时先不 init
-    twikoo.init({
+
+    // 关键：init 前必须“可布局”，不能 display:none
+    twikooContainer.classList.add('active');
+    const oldVis = twikooContainer.style.visibility;
+    twikooContainer.style.visibility = 'hidden'; // 不闪现，但仍有布局尺寸
+
+    await loadScript([
+      "https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js",
+      "https://unpkg.com/twikoo@1.6.40/dist/twikoo.all.min.js"
+    ]);
+
+    if (!window.twikoo) throw new Error("twikoo not found on window after loading script");
+
+    window.twikoo.init({
       envId: {{ .Site.Params.twikoo.id | jsonify }},
       el: "#twikoo",
       region: {{ .Site.Params.twikoo.region | jsonify }},
       lang: {{ $twLang | jsonify }},
       path: {{ $twPath | jsonify }}
     });
+
     twikooInited = true;
+
+    // 恢复可见性（后面由 showTwikoo/showGiscus 控制显示）
+    twikooContainer.style.visibility = oldVis || '';
   }
 
-  function loadGiscusOnce() {
+  async function loadGiscusOnce() {
     if (giscusLoaded) return;
-
     const s = document.createElement('script');
     s.src = "https://giscus.app/client.js";
     s.setAttribute("data-repo", "Liuqiran/liuqiran.github.io");
@@ -115,29 +190,29 @@
     s.setAttribute("data-lang", {{ $giscusLang | jsonify }});
     s.crossOrigin = "anonymous";
     s.async = true;
-
     document.getElementById("giscus-comment").appendChild(s);
     giscusLoaded = true;
   }
 
-  function showTwikoo() {
-    activateTwikooUI();
-    // 让容器先显示出来，再 init（避免 display:none 初始化失败）
-    requestAnimationFrame(() => initTwikooOnce());
+  async function showTwikoo() {
+    setActive('twikoo');
+    try { await initTwikooOnceVisible(); } catch (e) { console.error(e); }
   }
 
-  function showGiscus() {
-    activateGiscusUI();
-    requestAnimationFrame(() => loadGiscusOnce());
+  async function showGiscus() {
+    setActive('giscus');
+    try { await loadGiscusOnce(); } catch (e) { console.error(e); }
   }
 
   btnTwikoo.addEventListener('click', showTwikoo);
   btnGiscus.addEventListener('click', showGiscus);
 
-  // 初始选择：按 localStorage
-  (function boot() {
+  (async function boot() {
+    // 为了让阅读量 #twikoo_visitors 能更新：先 init 一次 twikoo（不闪现）
+    try { await initTwikooOnceVisible(); } catch (e) { console.error(e); }
+
     const preferred = localStorage.getItem('preferredComment');
-    if (preferred === 'giscus') showGiscus();
-    else showTwikoo();
+    if (preferred === 'giscus') await showGiscus();
+    else await showTwikoo();
   })();
 </script>
