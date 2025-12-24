@@ -15,8 +15,8 @@
 
 {{- if and $lastmodFromParam (ne $lastmodFromParam "") }}
   {{- $lastmodDate = time $lastmodFromParam }}
-{{- else if .GitInfo.Lastmod }}
-  {{- $lastmodDate = .GitInfo.Lastmod }}
+{{- else if .Lastmod }}
+  {{- $lastmodDate = .Lastmod }}
 {{- end }}
 
 {{- if and (not $lastmodDate.IsZero) (ne $lastmodDate.Unix .Date.Unix) }}
