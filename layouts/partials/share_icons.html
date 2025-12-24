@@ -92,4 +92,60 @@
         </a>
     </li>
     {{- end }}
-</ul>
+</ul>   
+
+<!-- Copy Summary (S) -->
+    <li>
+        <a href="#" id="copy-summary" aria-label="copy title + summary + link" title="Copy summary">
+            <!-- clipboard icon -->
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true">
+                <path d="M16 1H8a2 2 0 0 0-2 2v2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7l-5-6Zm-2 20H5V9h9v12Zm4-3h-2V7H8V3h7v4h3v11Z"/>
+            </svg>
+        </a>
+    </li>
+
+    <script>
+        (() => {
+            const title = {{ $title | plainify | jsonify | safeJS }};
+            const url = {{ $pageurl | jsonify | safeJS }};
+            const tagsCsv = {{ ($.Scratch.Get "tags") | jsonify | safeJS }};
+            const summary = {{ (.Summary | plainify) | jsonify | safeJS }};
+
+            const hashtags = (tagsCsv || "")
+                .split(",")
+                .map(s => s.trim())
+                .filter(Boolean)
+                .map(t => `#${t}`)
+                .join(" ");
+
+            // 你不想带 hashtags 就把下面两行里 hashtags 的部分删掉即可
+            const text =
+                `${title}\n\n${summary}\n\n${url}` + (hashtags ? `\n\n${hashtags}` : "");
+
+            const btn = document.getElementById("copy-summary");
+            if (!btn) return;
+
+            const copy = async (t) => {
+                try {
+                    await navigator.clipboard.writeText(t);
+                } catch (e) {
+                    const ta = document.createElement("textarea");
+                    ta.value = t;
+                    document.body.appendChild(ta);
+                    ta.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(ta);
+                }
+            };
+
+            btn.addEventListener("click", async (e) => {
+                e.preventDefault();
+                await copy(text);
+                // 轻提示：1秒钟把 title 改一下
+                const oldTitle = btn.getAttribute("title");
+                btn.setAttribute("title", "Copied!");
+                setTimeout(() => btn.setAttribute("title", oldTitle || "Copy summary"), 900);
+            });
+        })();
+    </script>
+
