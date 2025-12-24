@@ -49,11 +49,11 @@
 
 {{- /* Twikoo 阅读量 */ -}}
 {{- if eq .Lang "zh" }}
-  {{- $scratch.Add "meta" (slice (printf "阅读 <span id=\"twikoo_visitors\">0</span>")) }}
+  {{- $scratch.Add "meta" (slice (printf "访问数： <span id=\"twikoo_visitors\">0</span>")) }}
 {{- else if eq .Lang "ja" }}
-  {{- $scratch.Add "meta" (slice (printf "閲覧 <span id=\"twikoo_visitors\">0</span>")) }}
+  {{- $scratch.Add "meta" (slice (printf "閲覧： <span id=\"twikoo_visitors\">0</span>")) }}
 {{- else }}
-  {{- $scratch.Add "meta" (slice (printf "Views <span id=\"twikoo_visitors\">0</span>")) }}
+  {{- $scratch.Add "meta" (slice (printf "Views: <span id=\"twikoo_visitors\">0</span> ")) }}
 {{- end }}  
 
 {{- if not (.Param "hideAuthor") }}
