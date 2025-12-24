@@ -42,7 +42,10 @@ html[lang="zh-CN"] body {
   font-family: "KingHwa_OldSong", regular;  /* 中文竖排字体 */
   column-fill: balance; /* 平均填充列 */
   direction: ltr;  /* 保持内容本身从上到下、从右往左排 */
+  padding-bottom: 0.5em; /* 或者先试 6px/10px */
 }
+} 
+
 
 /* 为图片设置最大宽度和高度 */
 .vertical-chinese img {
