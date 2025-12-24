@@ -12,7 +12,7 @@ xyz_twap_insert_twitter_card:
   - 1
 tags:
   - 健康
-
+vertical: true
 ---
 来源：伯格医生
 
