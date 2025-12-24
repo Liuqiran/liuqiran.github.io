@@ -205,7 +205,7 @@ params:
   ShareButtons: ["linkedin","x","facebook","telegram","bilibili"]
   ShowPostNavLinks: true  
   ShowDraft: true
-  mainSections: ["post", "zh", "en"]
+  mainSections: ["post"]
   ShowWordCount: true
   comments: true  # 这里打开评论
   showtoc: true
@@ -218,4 +218,11 @@ params:
   twikoo:
     version: 1.6.40
     id: https://twikoo-gamma-red.vercel.app/
-    region:  # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数，请看twikoo官方文档  
+    region:  # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数，请看twikoo官方文档       
+
+
+permalinks:
+  page:
+    posts: /:slug/
+  section:
+    posts: /posts/
