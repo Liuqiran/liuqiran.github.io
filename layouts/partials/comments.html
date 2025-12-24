@@ -66,23 +66,18 @@ html[lang="zh-CN"] .comment-system * {
   <div id="twikoo-container" class="comment-system">
     <!-- Twikoo 评论代码 -->
     <div id="twikoo"></div>
-    <script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
-    <script>
-      {{ $path := .RelPermalink }}
-      {{ if eq .Lang "en" }}
-        {{ $path = replace $path "/en/" "/zh/" }}
-      {{ end }}
-  
-{{- /* Twikoo 线程 key：优先 translationKey；没有就去掉语言前缀；最后回退原链接 */ -}}
-{{- $path := .RelPermalink -}}
+<div id="twikoo"></div>
+<script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
 
+{{- /* 线程 key：优先 translationKey；否则去掉语言前缀；最后回退原链接 */ -}}
+{{- $path := .RelPermalink -}}
 {{- with .Params.translationKey -}}
   {{- $path = printf "/t/%s/" (. | urlize) -}}
 {{- else -}}
   {{- $path = $path | replaceRE "^/(en|zh|ja)/" "/" -}}
 {{- end -}}
 
-{{- /* Twikoo UI 语言：中文建议 zh-CN */ -}}
+{{- /* UI 语言：中文建议 zh-CN */ -}}
 {{- $twlang := .Site.Language.Lang -}}
 {{- if eq $twlang "zh" -}}{{- $twlang = "zh-CN" -}}{{- end -}}
 
@@ -92,11 +87,9 @@ html[lang="zh-CN"] .comment-system * {
     el: "#twikoo",
     region: {{ .Site.Params.twikoo.region | jsonify }},
     lang: {{ $twlang | jsonify }},
-    path: {{ $path | jsonify }},
+    path: {{ $path | jsonify }}
   })
 </script>
-    </script>  
-  </div>
   
   <div id="giscus-container" class="comment-system">
     <!-- Giscus 评论代码 -->
