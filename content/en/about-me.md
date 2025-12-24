@@ -1,7 +1,7 @@
 ﻿---
 title: 👤 About me
 author: Qiran
-type: post
+type: page
 date: 2019-02-09T03:14:24+00:00
 lastmod: 2025-11-24
 aliases: ["/en/about-me-2/"]
