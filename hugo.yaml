@@ -202,7 +202,7 @@ params:
   ShowLastModOnlyIfDiff: true
   author : "Qiran" 
   ShowShareButtons: true
-  ShareButtons: ["linkedin","x","facebook","telegram","bilibili"]
+  ShareButtons: ["linkedin","x","facebook","telegram","copy"]
   ShowPostNavLinks: true  
   ShowDraft: true
   mainSections: ["post","zh","en"]
