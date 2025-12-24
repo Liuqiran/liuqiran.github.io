@@ -1,148 +1,143 @@
 <style>
-  .comment-toggle {
-    margin-bottom: 1em;
-    text-align: center;
-  }
-  
+  .comment-toggle { margin-bottom: 1em; text-align: center; }
   .comment-toggle button {
-    padding: 0.5em 1.2em;
-    margin: 0 0.3em;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    background: #f8f8f8;
-    color: #555;
-    font-weight: 500;
-    border-radius: 4px;
-    font-size: 0.9rem;
+    padding: 0.5em 1.2em; margin: 0 0.3em; cursor: pointer;
+    border: 1px solid #ccc; background: #f8f8f8; color: #555;
+    font-weight: 500; border-radius: 4px; font-size: 0.9rem;
     transition: background 0.2s, color 0.2s, border-color 0.2s;
   }
-  
-  .comment-toggle button:hover {
-    background: #e2e2e2;
-    border-color: #999;
-    color: #333;
-  }
-  
+  .comment-toggle button:hover { background: #e2e2e2; border-color: #999; color: #333; }
   .comment-toggle button.active {
-    background: #ccc;
-    border-color: #999;
-    color: #222;
-    cursor: default;
-    pointer-events: none;
+    background: #ccc; border-color: #999; color: #222;
+    cursor: default; pointer-events: none;
   }
-  
-  .comment-system {
-    display: none;
-  }
-  
-  .comment-system.active {
-    display: block;
-  }
-  /* （放在你现有的 <style> 之后） */
-/* 让评论区继承正文的字体、字号和字重 */
-html[lang="en-US"] .comment-system,
-html[lang="en-US"] .comment-system * {
-  font-family: "Georgia", "Times New Roman", serif !important;
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  line-height: 1.6 !important;
-}
+  .comment-system { display: none; }
+  .comment-system.active { display: block; }
 
-/* 如果你也希望中文区（Giscus）在中文页面用默认中文字体，可以这样 */
-html[lang="zh-CN"] .comment-system,
-html[lang="zh-CN"] .comment-system * {
-  font-family: 'KingHwa_OldSong', sans-serif !important;
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  line-height: 1.8 !important;
-}
-  </style>
-  
-  <div class="comment-toggle">
-    <button id="btn-twikoo">Twikoo 💬</button>
-    <button id="btn-giscus">Giscus 💬</button>
-  </div>
-  
-  <div id="twikoo-container" class="comment-system">
-    <!-- Twikoo 评论代码 -->
-    <div id="twikoo"></div>
-<div id="twikoo"></div>
-<script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
+  /* 让评论区继承正文风格（按你的需要保留/修改） */
+  html[lang="en-US"] .comment-system, html[lang="en-US"] .comment-system * {
+    font-family: "Georgia", "Times New Roman", serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+  }
+  html[lang="zh-CN"] .comment-system, html[lang="zh-CN"] .comment-system * {
+    font-family: 'KingHwa_OldSong', sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.8 !important;
+  }
+</style>
 
-{{- /* 线程 key：优先 translationKey；否则去掉语言前缀；最后回退原链接 */ -}}
-{{- $path := .RelPermalink -}}
+<div class="comment-toggle">
+  <button id="btn-twikoo" type="button">Twikoo 💬</button>
+  <button id="btn-giscus" type="button">Giscus 💬</button>
+</div>
+
+<div id="twikoo-container" class="comment-system">
+  <div id="twikoo"></div>
+  <script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
+</div>
+
+<div id="giscus-container" class="comment-system">
+  <div id="giscus-comment"></div>
+</div>
+
+{{- /* ===== 统一 Twikoo 线程 key（A/B 合并）===== */ -}}
+{{- $twPath := .RelPermalink -}}
 {{- with .Params.translationKey -}}
-  {{- $path = printf "/t/%s/" (. | urlize) -}}
+  {{- $twPath = printf "/t/%s/" (. | urlize) -}}
 {{- else -}}
-  {{- $path = $path | replaceRE "^/(en|zh|ja)/" "/" -}}
+  {{- $twPath = $twPath | replaceRE "^/(en|zh|ja)/" "/" -}}
 {{- end -}}
 
-{{- /* UI 语言：中文建议 zh-CN */ -}}
-{{- $twlang := .Site.Language.Lang -}}
-{{- if eq $twlang "zh" -}}{{- $twlang = "zh-CN" -}}{{- end -}}
+{{- /* ===== Twikoo 界面语言（UI 语言不影响线程）===== */ -}}
+{{- $twLang := .Site.Language.Lang -}}
+{{- if eq $twLang "zh" -}}{{- $twLang = "zh-CN" -}}{{- end -}}
+
+{{- /* ===== Giscus 界面语言 ===== */ -}}
+{{- $giscusLang := "en" -}}
+{{- if eq .Site.Language.Lang "zh" -}}{{- $giscusLang = "zh-CN" -}}{{- end -}}
 
 <script>
-  twikoo.init({
-    envId: {{ .Site.Params.twikoo.id | jsonify }},
-    el: "#twikoo",
-    region: {{ .Site.Params.twikoo.region | jsonify }},
-    lang: {{ $twlang | jsonify }},
-    path: {{ $path | jsonify }}
-  })
-</script>
-  
-  <div id="giscus-container" class="comment-system">
-    <!-- Giscus 评论代码 -->
-    <div id="giscus-comment"></div>
-    <script src="https://giscus.app/client.js"
-            data-repo="Liuqiran/liuqiran.github.io"
-            data-repo-id="R_kgDONiVddQ"
-            data-category="General"
-            data-category-id="DIC_kwDONiVddc4CljSp"
-            data-mapping="title"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="preferred_color_scheme"
-            data-lang="{{ if eq .Site.Language.Lang "zh" }}zh-CN{{ else }}en{{ end }}"
-            crossorigin="anonymous"
-            async>
-    </script>
-  </div>
-  
-  <script>
-    const btnTwikoo = document.getElementById('btn-twikoo');
-    const btnGiscus = document.getElementById('btn-giscus');
-    const twikooContainer = document.getElementById('twikoo-container');
-    const giscusContainer = document.getElementById('giscus-container');
-  
-    function showTwikoo() {
-      btnTwikoo.classList.add('active');
-      btnGiscus.classList.remove('active');
-      twikooContainer.classList.add('active');
-      giscusContainer.classList.remove('active');
-      localStorage.setItem('preferredComment', 'twikoo');
-    }
-  
-    function showGiscus() {
-      btnGiscus.classList.add('active');
-      btnTwikoo.classList.remove('active');
-      giscusContainer.classList.add('active');
-      twikooContainer.classList.remove('active');
-      localStorage.setItem('preferredComment', 'giscus');
-    }
-  
-    btnTwikoo.onclick = showTwikoo;
-    btnGiscus.onclick = showGiscus;
-  
-    window.addEventListener('DOMContentLoaded', () => {
-      const preferred = localStorage.getItem('preferredComment');
-      if (preferred === 'giscus') {
-        showGiscus();
-      } else {
-        // 默认 Twikoo
-        showTwikoo();
-      }
+  const btnTwikoo = document.getElementById('btn-twikoo');
+  const btnGiscus = document.getElementById('btn-giscus');
+  const twikooContainer = document.getElementById('twikoo-container');
+  const giscusContainer = document.getElementById('giscus-container');
+
+  let twikooInited = false;
+  let giscusLoaded = false;
+
+  function activateTwikooUI() {
+    btnTwikoo.classList.add('active');
+    btnGiscus.classList.remove('active');
+    twikooContainer.classList.add('active');
+    giscusContainer.classList.remove('active');
+    localStorage.setItem('preferredComment', 'twikoo');
+  }
+
+  function activateGiscusUI() {
+    btnGiscus.classList.add('active');
+    btnTwikoo.classList.remove('active');
+    giscusContainer.classList.add('active');
+    twikooContainer.classList.remove('active');
+    localStorage.setItem('preferredComment', 'giscus');
+  }
+
+  function initTwikooOnce() {
+    if (twikooInited) return;
+    if (!window.twikoo) return; // twikoo 脚本还没加载完成时先不 init
+    twikoo.init({
+      envId: {{ .Site.Params.twikoo.id | jsonify }},
+      el: "#twikoo",
+      region: {{ .Site.Params.twikoo.region | jsonify }},
+      lang: {{ $twLang | jsonify }},
+      path: {{ $twPath | jsonify }}
     });
-  </script>
+    twikooInited = true;
+  }
+
+  function loadGiscusOnce() {
+    if (giscusLoaded) return;
+
+    const s = document.createElement('script');
+    s.src = "https://giscus.app/client.js";
+    s.setAttribute("data-repo", "Liuqiran/liuqiran.github.io");
+    s.setAttribute("data-repo-id", "R_kgDONiVddQ");
+    s.setAttribute("data-category", "General");
+    s.setAttribute("data-category-id", "DIC_kwDONiVddc4CljSp");
+    s.setAttribute("data-mapping", "title");
+    s.setAttribute("data-strict", "0");
+    s.setAttribute("data-reactions-enabled", "1");
+    s.setAttribute("data-emit-metadata", "0");
+    s.setAttribute("data-input-position", "bottom");
+    s.setAttribute("data-theme", "preferred_color_scheme");
+    s.setAttribute("data-lang", {{ $giscusLang | jsonify }});
+    s.crossOrigin = "anonymous";
+    s.async = true;
+
+    document.getElementById("giscus-comment").appendChild(s);
+    giscusLoaded = true;
+  }
+
+  function showTwikoo() {
+    activateTwikooUI();
+    // 让容器先显示出来，再 init（避免 display:none 初始化失败）
+    requestAnimationFrame(() => initTwikooOnce());
+  }
+
+  function showGiscus() {
+    activateGiscusUI();
+    requestAnimationFrame(() => loadGiscusOnce());
+  }
+
+  btnTwikoo.addEventListener('click', showTwikoo);
+  btnGiscus.addEventListener('click', showGiscus);
+
+  // 初始选择：按 localStorage
+  (function boot() {
+    const preferred = localStorage.getItem('preferredComment');
+    if (preferred === 'giscus') showGiscus();
+    else showTwikoo();
+  })();
+</script>
