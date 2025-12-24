@@ -207,7 +207,7 @@ params:
   ShareButtons: ["linkedin","x","facebook","telegram","copy"]
   ShowPostNavLinks: true  
   ShowDraft: true
-  mainSections: ["post","zh","en"]
+  mainSections: ["post","posts","zh","en"]
   ShowWordCount: true
   comments: true  # 这里打开评论
   showtoc: true
