@@ -1,13 +1,18 @@
 <style>
   .comment-toggle { margin-bottom: 1em; text-align: center; }
-  .comment-toggle button {
-    padding: 0.5em 1.2em; margin: 0 0.3em; cursor: pointer;
-    border: 1px solid #ccc; background: #f8f8f8; color: #555;
-    font-weight: 500; border-radius: 4px; font-size: 0.9rem;
+  .comment-toggle button{
+    padding:.5em 1.2em; margin:0 .3em; cursor:pointer;
+    border:1px solid #ccc; background:#f8f8f8; color:#555;
+    font-weight:500; border-radius:4px; font-size:.9rem;
+    transition:background .2s,color .2s,border-color .2s;
   }
-  .comment-toggle button.active { background: #ccc; border-color: #999; color: #222; pointer-events: none; }
-  .comment-system { display: none; }
-  .comment-system.active { display: block; }
+  .comment-toggle button:hover{ background:#e2e2e2; border-color:#999; color:#333; }
+  .comment-toggle button.active{
+    background:#ccc; border-color:#999; color:#222;
+    cursor:default; pointer-events:none;
+  }
+  .comment-system{ display:none; }
+  .comment-system.active{ display:block; }
 </style>
 
 <div class="comment-toggle">
@@ -15,7 +20,7 @@
   <button id="btn-giscus" type="button">Giscus 💬</button>
 </div>
 
-<!-- Twikoo 默认先显示，保证初始化不在 display:none 下失败 -->
+<!-- 关键：Twikoo 默认显示，避免在 display:none 下初始化失败 -->
 <div id="twikoo-container" class="comment-system active">
   <div id="twikoo"></div>
 </div>
@@ -24,7 +29,7 @@
   <div id="giscus-comment"></div>
 </div>
 
-{{- /* ===== 统一 Twikoo 线程 key：translationKey 优先；否则去语言前缀兜底 ===== */ -}}
+{{- /* ========== 统一评论线程（A/B）：translationKey 优先；否则去语言前缀兜底 ========== */ -}}
 {{- $twPath := .RelPermalink -}}
 {{- with .Params.translationKey -}}
   {{- $twPath = printf "/t/%s/" (. | urlize) -}}
@@ -32,22 +37,28 @@
   {{- $twPath = $twPath | replaceRE "^/(en|zh|ja)/" "/" -}}
 {{- end -}}
 
-{{- /* ===== envId：去掉末尾 /，并“免疫”头尾引号 ===== */ -}}
+{{- /* ========== envId：去掉头尾引号 + 去掉末尾 /（防止你之前的 https://"https://... 问题） ========== */ -}}
 {{- $twEnv := .Site.Params.twikoo.id | default "" -}}
 {{- $twEnv = $twEnv | strings.Trim " \"'" | strings.TrimSuffix "/" -}}
 {{- $isURL := hasPrefix $twEnv "http" -}}
 
-{{- /* ===== Twikoo UI 语言 ===== */ -}}
+{{- /* ========== UI 语言 ========== */ -}}
 {{- $twLang := "en" -}}
 {{- if hasPrefix (lower .Site.Language.Lang) "zh" -}}{{- $twLang = "zh-CN" -}}{{- end -}}
 
-{{- /* ===== Giscus UI 语言 ===== */ -}}
 {{- $gLang := "en" -}}
 {{- if hasPrefix (lower .Site.Language.Lang) "zh" -}}{{- $gLang = "zh-CN" -}}{{- end -}}
+
+{{- /* ========== 用 dict+jsonify 生成 Twikoo 配置，避免模板把 JS 语法搞断 ========== */ -}}
+{{- $twCfg := dict "envId" $twEnv "el" "#twikoo" "lang" $twLang "path" $twPath -}}
+{{- if not $isURL -}}
+  {{- $twCfg = merge $twCfg (dict "region" (.Site.Params.twikoo.region | default "ap-shanghai")) -}}
+{{- end -}}
 
 <script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
 
 <script>
+(function () {
   const btnTwikoo = document.getElementById('btn-twikoo');
   const btnGiscus = document.getElementById('btn-giscus');
   const twikooContainer = document.getElementById('twikoo-container');
@@ -64,23 +75,14 @@
     localStorage.setItem('preferredComment', which);
   }
 
-  // 1) Twikoo：先初始化（阅读量 twikoo_visitors 也靠这个填充） :contentReference[oaicite:0]{index=0}
-  if (!window.twikoo) {
-    console.error("twikoo script not loaded");
+  // 先 init Twikoo：评论 + 阅读量 twikoo_visitors 都依赖它
+  const twikooConfig = {{ $twCfg | jsonify }};
+  if (window.twikoo) {
+    window.twikoo.init(twikooConfig);
   } else {
-    window.twikoo.init({
-      envId: {{ $twEnv | jsonify }},
-      el: "#twikoo",
-      lang: {{ $twLang | jsonify }},
-      path: {{ $twPath | jsonify }}
-      // Vercel URL 模式：不要传 region（避免 .null.tcb-api...）
-      {{- if not $isURL -}}
-      ,region: {{ (.Site.Params.twikoo.region | default "ap-shanghai") | jsonify }}
-      {{- end -}}
-    });
+    console.error("twikoo script not loaded");
   }
 
-  // 2) Giscus：选中才加载
   function loadGiscusOnce() {
     if (giscusLoaded) return;
     const s = document.createElement('script');
@@ -95,21 +97,22 @@
     s.setAttribute("data-emit-metadata", "0");
     s.setAttribute("data-input-position", "bottom");
     s.setAttribute("data-theme", "preferred_color_scheme");
-    s.setAttribute("data-lang", {{ $gLang | jsonify }}); // 这里不会变成 "en" 字符串再套一层引号
+    s.setAttribute("data-lang", {{ $gLang | jsonify }}); // 不会再变成 /"en"/
     s.crossOrigin = "anonymous";
     s.async = true;
     document.getElementById("giscus-comment").appendChild(s);
     giscusLoaded = true;
   }
 
-  function showTwikoo(){ setActive('twikoo'); }
-  function showGiscus(){ setActive('giscus'); loadGiscusOnce(); }
+  function showTwikoo() { setActive('twikoo'); }
+  function showGiscus() { setActive('giscus'); loadGiscusOnce(); }
 
   btnTwikoo.addEventListener('click', showTwikoo);
   btnGiscus.addEventListener('click', showGiscus);
 
-  // 3) 记住访客选择
+  // 记住访客选择
   const preferred = localStorage.getItem('preferredComment');
   if (preferred === 'giscus') showGiscus();
   else showTwikoo();
+})();
 </script>
