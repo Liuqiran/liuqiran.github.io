@@ -23,7 +23,8 @@ jobs:
 
       - name: Apply changes
         run: |
-          python3 scripts/add_slug_from_filename.py --apply
+          python3 scripts/add_slug_from_filename.py --roots content/en content/zh
+          python3 scripts/add_slug_from_filename.py --roots content/en content/zh --apply
 
       - name: Commit & push if changed
         run: |
