@@ -1,5 +1,6 @@
---- 
+---
 title: The Great Divorce  
+slug: "2025-06-the-great-divorce"
 date: 2025-06-02  
 draft: false 
 tags:
@@ -7,7 +8,7 @@ tags:
 cover:
   image: "cover.jpg"
   relative: true
----   
+---
 
 This is the second book by C.S. Lewis I've read after *Mere Christianity*. Though short, it took me several days to finish.
 

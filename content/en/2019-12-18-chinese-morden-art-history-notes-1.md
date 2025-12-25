@@ -1,5 +1,6 @@
-﻿---
+---
 title: Chinese modern art history notes 1
+slug: "chinese-morden-art-history-notes-1"
 author: Qiran
 type: post
 date: 2019-12-18T02:02:45+00:00
@@ -8,7 +9,7 @@ tags:
   - Chinese art history
 
 ---
-**《点石斋画报》**  
+﻿**《点石斋画报》**  
 编者：由吴友如主编，主要作者有吴友如，田子琳，金蟾香，周慕桥。  
 特点：配合新闻；注重时事；图文互释  
 表现形式：追求传统技法，汲取明清时期木刻版画艺术特点，同时采纳西洋绘画透视和人物解剖的特点，新颖活泼，时代气息强。  

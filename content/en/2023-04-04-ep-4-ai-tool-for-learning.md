@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 4 AI tool for learning
+slug: "ep-4-ai-tool-for-learning"
 author: Qiran
 type: post
 date: 2023-04-03T20:33:00+00:00
@@ -9,7 +10,7 @@ xyz_twap:
 tags:
   - Technology
 ---
-I&#8217;m Qiran. Today, I would like to share with you my understanding of Artificial Intelligence.
+﻿I&#8217;m Qiran. Today, I would like to share with you my understanding of Artificial Intelligence.
 
 I gradually realized that AI has already entered my life. Some people may think that AI is very destructive to the lives of ordinary people. But in my opinion, the most distinct characteristic that humans possess and surpass other creatures is the ability to use tools. AI is a very useful tool now, and it would be highly beneficial if we can learn to use it effectively.
 

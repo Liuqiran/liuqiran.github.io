@@ -1,5 +1,6 @@
-﻿---
+---
 title: 'MESOPOTAMIA  AND PERSIA'
+slug: "mesopotamia-and-persia"
 author: Qiran
 type: post
 date: 2019-08-29T05:27:52+00:00
@@ -7,7 +8,7 @@ aliases: ["/mesopotamia-and-persia/"]
 s:
   - Art through the Ages
 ---
-### Sumer
+﻿### Sumer
 
 The Sumerians developed city-states and formed a white temple for rituals. Sumerians also produced great literature.
 

@@ -1,5 +1,6 @@
-﻿---
+---
 title: Laying plans 1
+slug: "laying-plans-1"
 author: Qiran
 type: post
 date: 2019-07-18T08:18:04+00:00
@@ -7,7 +8,7 @@ aliases: ["/laying-plans-1/"]
 tags:
   - "Sun Tzu's The Art of War"
 ---
-sovereign should have moral law.
+﻿sovereign should have moral law.
 
 Before the war, you should think about whether moral law is sit on your side, if not, you lose Heaven.
 

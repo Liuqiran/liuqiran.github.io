@@ -1,5 +1,6 @@
-﻿---
+---
 title: What Are Emotions For?
+slug: "what-are-emotions-for"
 author: Qiran
 type: post
 date: 2020-02-28T14:07:47+00:00
@@ -8,7 +9,7 @@ tags:
   - Emotional Intelligence
 
 ---
-From the story that a parent rescued their daughter and perished, we can learn that self-sacrifice is an irrational urge from emotion. Our emotion is an extraordinary power that guides us to handle the challenges of life.
+﻿From the story that a parent rescued their daughter and perished, we can learn that self-sacrifice is an irrational urge from emotion. Our emotion is an extraordinary power that guides us to handle the challenges of life.
 
 **WHEN PASSIONS OVERWHELM REASON**  
 From the tragedy that happened in Crabtree, we can learn that passions always overwhelm ration time and again.

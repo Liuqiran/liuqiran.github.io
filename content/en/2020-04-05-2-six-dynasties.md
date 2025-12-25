@@ -1,5 +1,6 @@
-﻿---
+---
 title: '2: Six dynasties'
+slug: "2-six-dynasties"
 author: Qiran
 type: post
 date: 2020-04-05T13:08:32+00:00
@@ -8,7 +9,7 @@ tags:
   - A Chinese-foreign exchange history of fine arts
 
 ---
-#### 第一節 犍陀羅藝術與笈多藝術的東漸 {.wp-block-heading}
+﻿#### 第一節 犍陀羅藝術與笈多藝術的東漸 {.wp-block-heading}
 
 **犍陀羅藝術**  
 前期：貴霜王朝統治時期，約從公元1世紀初至3世紀中葉，以片巖石雕為主。  

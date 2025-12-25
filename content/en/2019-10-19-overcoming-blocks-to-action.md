@@ -1,5 +1,6 @@
-﻿---
+---
 title: OVERCOMING BLOCKS TO ACTION
+slug: "overcoming-blocks-to-action"
 author: Qiran
 type: post
 date: 2019-10-19T10:55:48+00:00
@@ -8,7 +9,7 @@ tags:
   - The Now Habit
 
 ---
-**THREE MAJOR BLOCKS**
+﻿**THREE MAJOR BLOCKS**
 
 fear of failure, fear of not finishing, terror of being overwhelmed, these are the three blocks to action, if you solved one of them, it will be quiker to solve all.
 

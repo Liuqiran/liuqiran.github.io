@@ -1,5 +1,6 @@
-﻿---
+---
 title: WORKING IN THE FLOW STATE
+slug: "working-in-the-flow-state"
 author: Qiran
 type: post
 date: 2020-01-18T15:00:22+00:00
@@ -8,7 +9,7 @@ tags:
   - The Now Habit
 
 ---
-Being into the state of flow is beneficial to your mental and physical health.
+﻿Being into the state of flow is beneficial to your mental and physical health.
 
 **USING MORE OF YOUR BRAIN**  
 Using your left side of your brain is important, you need to shift into a state of flow. You need to stop your linear thought.

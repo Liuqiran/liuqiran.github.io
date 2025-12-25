@@ -1,5 +1,6 @@
-﻿---
+---
 title: From Pain to Power
+slug: "from-pain-to-power"
 author: Qiran
 type: post
 date: 2020-06-22T17:10:44+00:00
@@ -8,7 +9,7 @@ tags:
   - Feel The Fear And Do It Anyway
 
 ---
-Pain to power; Helplessness to choice; Depression to Energy; Paralysis to action;
+﻿Pain to power; Helplessness to choice; Depression to Energy; Paralysis to action;
 
 It&#8217;s a power of love yourself, power of good love.
 

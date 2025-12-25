@@ -1,5 +1,6 @@
-﻿---
+---
 title: What Kills Me Makes Others Stronger
+slug: "what-kills-me-makes-others-stronger"
 author: Qiran
 type: post
 date: 2020-01-10T05:33:52+00:00
@@ -8,7 +9,7 @@ tags:
   - 'Antifragile: Things That Gain From Disorder'
 
 ---
-#### Antifragility by layers {.wp-block-heading}
+﻿#### Antifragility by layers {.wp-block-heading}
 
 _Some parts on the inside of a system may be required to be fragile in order to make the system antifragile as a result._ All restaurants are combating with each other in order to form the antifragility of the whole group. If a single restaurant is too robust when the crisis happens, all reasons are boil down to the fragile of this restaurant.
 

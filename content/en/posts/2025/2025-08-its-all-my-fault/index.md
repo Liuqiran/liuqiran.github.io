@@ -1,12 +1,13 @@
 ---
 title: "It’s all my fault"
+slug: "2025-08-its-all-my-fault"
 date: 2025-08-09
 tags: ["Music"]
 cover:  
   image: cover.jpg  
   relative: true
   hiddenInSingle: true
----   
+---
 
 {{< youtube 0mc6pNaqJ7Q >}} 
 

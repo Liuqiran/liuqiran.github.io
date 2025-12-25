@@ -1,5 +1,6 @@
-﻿---
+---
 title: Overcompensation and Overreaction Everywhere
+slug: "overcompensation-and-overreaction-everywhere"
 author: Qiran
 type: post
 date: 2019-11-27T06:24:04+00:00
@@ -8,7 +9,7 @@ tags:
   - 'Antifragile: Things That Gain From Disorder'
 
 ---
-If as want to innovate and get creativities, we must get in trouble first, we cannot get invention from comfort.
+﻿If as want to innovate and get creativities, we must get in trouble first, we cannot get invention from comfort.
 
 #### HOW TO WIN A HORSE RACE {.wp-block-heading}
 

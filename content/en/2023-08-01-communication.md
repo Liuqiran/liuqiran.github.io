@@ -1,5 +1,6 @@
-﻿---
+---
 title: Communication
+slug: "communication"
 author: Qiran
 type: post
 date: 2023-08-01T15:06:51+00:00
@@ -16,4 +17,4 @@ tags:
   - Reading
 
 ---
-Communication is necessary in our life. Reading is also a form of communication. When I&#8217;m reading, it just like I&#8217;m talking with the author.
+﻿Communication is necessary in our life. Reading is also a form of communication. When I&#8217;m reading, it just like I&#8217;m talking with the author.

@@ -1,5 +1,6 @@
-﻿---
+---
 title: Museum and public
+slug: "museum-and-public"
 author: Qiran
 type: post
 date: 2019-12-17T09:32:09+00:00
@@ -8,7 +9,7 @@ tags:
   - Museology
 
 ---
-公众态度公众责任如何建立？  
+﻿公众态度公众责任如何建立？  
 很多民间的组织开始带领公众参观博物馆。
 
 我们可以从社会端参与到其中。

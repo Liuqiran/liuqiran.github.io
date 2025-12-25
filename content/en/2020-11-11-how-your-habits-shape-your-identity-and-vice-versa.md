@@ -1,5 +1,6 @@
-﻿---
+---
 title: How Your Habits Shape Your Identity (and Vice Versa)
+slug: "how-your-habits-shape-your-identity-and-vice-versa"
 author: Qiran
 type: post
 date: 2020-11-11T01:44:56+00:00
@@ -8,7 +9,7 @@ tags:
   - Atomic Habits
 
 ---
-There are three layers: outcomes; process; identity.  
+﻿There are three layers: outcomes; process; identity.  
 Identity is the deepest.  
 &#8220;I&#8217;m not a smoker&#8221; is better than &#8220;I don&#8217;t smoke.&#8221;
 

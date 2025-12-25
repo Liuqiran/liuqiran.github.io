@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 7 Practice
+slug: "ep-7-practice"
 author: Qiran
 type: post
 date: 2023-05-15T17:39:00+00:00
@@ -11,7 +12,7 @@ tags:
   - Podcast
 
 ---
-Practice is one of the most important things in our life.  
+﻿Practice is one of the most important things in our life.  
 In order to gain our skill or improve our ability, we all need to have enough practice.  
 Practice is repeated action. Enough times of repetition is necessary in our life. If we do a lot of practice, we will definitely get some improvements unconsciously.
 

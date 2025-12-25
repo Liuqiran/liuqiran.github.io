@@ -1,5 +1,6 @@
-﻿---
+---
 title: THE ODES OF ZHOU AND THE SOUTH
+slug: "the-odes-of-zhou-and-the-south"
 author: Qiran
 type: post
 date: 2020-01-09T01:56:57+00:00
@@ -8,7 +9,7 @@ tags:
   - Book of Poetry
 
 ---
-**葛覃  GE TAN**  
+﻿**葛覃  GE TAN**  
 刈yì 濩huò 絺xī 綌yì 斁yì 薄污wù我私  
 Why does she want to go back to her home? Maybe her life is very hard, though she was hardworking, she didn&#8217;t get any respects. In this chapter, I think this woman was from a high ranking family, not like the propaganda from the government. Even though she is elite, but she also gets distresses.
 

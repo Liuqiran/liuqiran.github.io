@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 14 Information quality
+slug: "ep-14-information-quality"
 author: Qiran
 type: post
 date: 2023-08-22T15:52:36+00:00
@@ -17,7 +18,7 @@ tags:
   - Technology
 
 ---
-In my own opinion, there are three kinds of information in our life.  
+﻿In my own opinion, there are three kinds of information in our life.  
 The first one is text, the second is audio, the last one is video.  
 Let&#8217;s talk about the first one. The content of texts is based on words. It&#8217;s the most abstract form of information. If we are literate, we can understand words, then we can understand road signs, posters, magazines, and books. It&#8217;s simplest to save texts for us. It&#8217;s also a form that can save the best information quality. But it&#8217;s maybe the hardest information to understand. Books contain the deepest information quality.  
 Audio is another kind of information, it&#8217;s based on sounds. It&#8217;s more natural to us because we can use our ear to understand. But we can&#8217;t control the speed of understanding. We probably also receive some useless information.  

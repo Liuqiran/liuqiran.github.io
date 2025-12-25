@@ -1,5 +1,6 @@
-﻿---
+---
 title: Masochism, Culture, and History
+slug: "masochism-culture-and-history"
 author: Qiran
 type: post
 date: 2019-09-21T22:05:00+00:00
@@ -9,4 +10,4 @@ boomdevs_metabox:
 s:
   - Masochism And the Self
 ---
-**Self in history**: Before the Renaissance, self is not appeared by the control of religion.
+﻿**Self in history**: Before the Renaissance, self is not appeared by the control of religion.

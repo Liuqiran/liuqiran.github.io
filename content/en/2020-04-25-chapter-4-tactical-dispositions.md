@@ -1,5 +1,6 @@
-﻿---
+---
 title: CHAPTER 4 Tactical Dispositions
+slug: "chapter-4-tactical-dispositions"
 author: Qiran
 type: post
 date: 2020-04-25T13:25:15+00:00
@@ -8,7 +9,7 @@ tags:
   - "Sun Tzu's The Art of War"
 
 ---
-_見勝不過思人之所知, 非善之善者也。_  
+﻿_見勝不過思人之所知, 非善之善者也。_  
 Know the ken of the common herd is not enough.
 
 _故善戰者, 立於不敗之地, 而不失敵之敗也。_  

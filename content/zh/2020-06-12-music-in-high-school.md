@@ -1,5 +1,6 @@
-﻿---
+---
 title: Music in high school
+slug: "music-in-high-school"
 author: Qiran
 type: post
 date: 2020-06-12T15:27:00+00:00
@@ -8,7 +9,7 @@ tags:
   - 音乐
   - 学校
 ---
-说实在话，现在网上的流行歌曲越来越“刺激”，什么生僻字、芒种，还有绿色，只是堆砌辞藻一点内涵都没有，00后和90后的差别应该已经很大了吧。`<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">`
+﻿说实在话，现在网上的流行歌曲越来越“刺激”，什么生僻字、芒种，还有绿色，只是堆砌辞藻一点内涵都没有，00后和90后的差别应该已经很大了吧。`<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">`
 
 <div class="wp-block-embed__wrapper">
 </div></figure>

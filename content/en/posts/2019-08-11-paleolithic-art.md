@@ -1,5 +1,6 @@
-﻿---
+---
 title: Paleolithic Art
+slug: "paleolithic-art"
 author: Qiran
 type: post
 date: 2019-08-11T11:17:14+00:00
@@ -7,7 +8,7 @@ aliases: ["/paleolithic-art/"]
 s:
   - Art through the Ages
 ---
-#### Africa
+﻿#### Africa
 
 What shall be my subject? -animals, but men are rare. They&#8217;re almost profiled because the only profile can show the essence.
 

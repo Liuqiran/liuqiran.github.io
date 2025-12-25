@@ -1,5 +1,6 @@
-﻿---
+---
 title: Belonging
+slug: "belonging"
 author: Qiran
 type: post
 date: 2019-10-11T06:04:29+00:00
@@ -7,7 +8,7 @@ aliases: ["/belonging/"]
 s:
   - Becoming Human
 ---
-The author thinks we cannot just live alone, we need to have a belonging, but maybe love other people is hurt other people&#8217;s freedom. What&#8217;s more, we think we are in a group or a community, we can feel we are superior than others. we all need help, but sometimes we always hide this and think we are better than others.
+﻿The author thinks we cannot just live alone, we need to have a belonging, but maybe love other people is hurt other people&#8217;s freedom. What&#8217;s more, we think we are in a group or a community, we can feel we are superior than others. we all need help, but sometimes we always hide this and think we are better than others.
 
 In order to think we are superior to others, we build walls, make our group against other groups, prejudice cultivates.
 

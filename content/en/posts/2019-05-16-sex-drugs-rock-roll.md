@@ -1,5 +1,6 @@
-﻿---
+---
 tags:title: 'Sex, drugs, rock & roll'
+slug: "sex-drugs-rock-roll"
 author: Qiran
 type: post
 date: 2019-05-16T12:33:24+00:00
@@ -11,7 +12,7 @@ tags:
   - Life
   - Porn
 ---
-<figure></figure>
+﻿<figure></figure>
 
 I may have a porn addiction recently. Watching pornography made me immersed in fantasies, not realities. Maybe I should control my desires.
 

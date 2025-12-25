@@ -1,5 +1,6 @@
-﻿---
+---
 title: Chapter 5 Energy 埶篇第五
+slug: "chapter-5-energy-埶篇第五"
 author: Qiran
 type: post
 date: 2020-05-21T05:57:40+00:00
@@ -8,7 +9,7 @@ tags:
   - "Sun Tzu's The Art of War"
 
 ---
-_我之正使敵視之為奇我之奇使敵視之為正正亦為奇奇亦為正._
+﻿_我之正使敵視之為奇我之奇使敵視之為正正亦為奇奇亦為正._
 
 _凡戰者, 以正合, 以奇勝。_  
 In order to secure victory, indirect methods are also important.

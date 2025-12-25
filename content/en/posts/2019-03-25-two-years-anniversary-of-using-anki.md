@@ -1,5 +1,6 @@
-﻿---
+---
 title: Two Years Anniversary of Using Anki
+slug: "two-years-anniversary-of-using-anki"
 author: Qiran
 type: post
 date: 2019-03-25T13:10:15+00:00
@@ -7,7 +8,7 @@ aliases: ["/two-years-anniversary-of-using-anki/"]
 tags:
   - Habit
 ---
-
+﻿
 ![](/uploads/2019/03/Anki.png)
 
 I have been using Anki for two years.

@@ -1,5 +1,6 @@
-﻿---
+---
 title: 'ARGUMENT ONE: YOU ARE LOSING YOUR FREE WILL'
+slug: "argument-one-you-are-losing-your-free-will"
 author: Qiran
 type: post
 date: 2020-03-04T05:50:54+00:00
@@ -8,7 +9,7 @@ tags:
   - Ten Arguments for Deleting Your Social Media Accounts Right Now
 
 ---
-#### WELCOME TO THE CAGE THAT GOES EVERYWHERE WITH YOU {.wp-block-heading}
+﻿#### WELCOME TO THE CAGE THAT GOES EVERYWHERE WITH YOU {.wp-block-heading}
 
 We are remotely controlled like animals in cages. We even don&#8217;t know that.
 

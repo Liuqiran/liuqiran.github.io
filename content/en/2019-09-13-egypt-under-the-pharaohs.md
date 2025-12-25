@@ -1,5 +1,6 @@
-﻿---
+---
 title: EGYPT UNDER THE PHARAOHS
+slug: "egypt-under-the-pharaohs"
 author: Qiran
 type: post
 date: 2019-09-12T23:42:27+00:00
@@ -7,7 +8,7 @@ aliases: ["/egypt-under-the-pharaohs/"]
 s:
   - Art through the Ages
 ---
-### PREDYNASTIC AND EARLY DYNASTIC PERIODS
+﻿### PREDYNASTIC AND EARLY DYNASTIC PERIODS
 
 ### Painting and Sculpture
 

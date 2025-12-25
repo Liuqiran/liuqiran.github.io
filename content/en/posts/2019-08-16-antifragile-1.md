@@ -1,5 +1,6 @@
-﻿---
+---
 title: Prologue
+slug: "antifragile-1"
 author: Qiran
 type: post
 date: 2019-08-15T21:19:42+00:00
@@ -7,7 +8,7 @@ aliases: ["/antifragile-1/"]
 s:
   - 'Antifragile: Things That Gain From Disorder'
 ---
-Formal education cannot bring discovery and progress, only aggressive risk can.
+﻿Formal education cannot bring discovery and progress, only aggressive risk can.
 
 In modern times, so many people avoid fragility through the expences of others.
 

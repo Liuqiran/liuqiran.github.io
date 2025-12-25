@@ -1,5 +1,6 @@
-﻿---
+---
 title: Healthy food
+slug: "healthy-food"
 author: Qiran
 type: post
 date: 2023-08-15T15:45:01+00:00
@@ -16,4 +17,4 @@ tags:
   - Health
 
 ---
-Healthy food: Salmon, saurekrout, pecan, olive oil, (cod) liver, arugula, hamburger meat. These foods have the highest nutrients.
+﻿Healthy food: Salmon, saurekrout, pecan, olive oil, (cod) liver, arugula, hamburger meat. These foods have the highest nutrients.

@@ -1,5 +1,6 @@
-﻿---
+---
 title: Waging War
+slug: "waging-war"
 author: Qiran
 type: post
 date: 2020-01-18T16:02:27+00:00
@@ -8,7 +9,7 @@ tags:
   - "Sun Tzu's The Art of War"
 
 ---
-_故兵聞拙速，未睹巧之久也。_  
+﻿_故兵聞拙速，未睹巧之久也。_  
 If you exposed a war too long, even you are ingenious, you will make a mistake. leave a little to your opponent.
 
 _力屈，財襌（殫），中原內需於家，百姓之費，十去其七_  

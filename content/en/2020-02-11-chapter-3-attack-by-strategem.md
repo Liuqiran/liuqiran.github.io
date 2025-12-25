@@ -1,5 +1,6 @@
-﻿---
+---
 title: CHAPTER 3 Attack By Strategem
+slug: "chapter-3-attack-by-strategem"
 author: Qiran
 type: post
 date: 2020-02-11T12:54:19+00:00
@@ -8,7 +9,7 @@ tags:
   - "Sun Tzu's The Art of War"
 
 ---
-_故上兵伐謀, 其次伐交, 其次伐兵, 下政攻城_  
+﻿_故上兵伐謀, 其次伐交, 其次伐兵, 下政攻城_  
 Destroy the enemy&#8217;s plan is the best.
 
 _攻城之法為不得已。修槽鎮輕、具器械、三月而後成_  

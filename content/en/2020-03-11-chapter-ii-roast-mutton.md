@@ -1,5 +1,6 @@
-﻿---
+---
 title: CHAPTER II Roast Mutton
+slug: "chapter-ii-roast-mutton"
 author: Qiran
 type: post
 date: 2020-03-11T10:33:58+00:00
@@ -8,4 +9,4 @@ tags:
   - Hobbit
 
 ---
-Bilbo, as a burglar, wanted to see and steal some foods from trolls, but Bilbo Baggins and dwarves captured by trolls. In the end, they were saved by Gandalf.
+﻿Bilbo, as a burglar, wanted to see and steal some foods from trolls, but Bilbo Baggins and dwarves captured by trolls. In the end, they were saved by Gandalf.

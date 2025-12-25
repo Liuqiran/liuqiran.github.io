@@ -1,5 +1,6 @@
-﻿---
+---
 title: '5: Education in Public Fine Art Schools'
+slug: "5-education-in-public-fine-art-schools"
 author: Qiran
 type: post
 date: 2019-10-30T11:19:54+00:00
@@ -10,7 +11,7 @@ tags:
   - Chinese Fine Art Education in 20 Century
 
 ---
-#### 蔡元培与美术教育 {.wp-block-heading}
+﻿#### 蔡元培与美术教育 {.wp-block-heading}
 
 蔡元培在留学期间，康德“美的超越性与普遍性”的理念对他产生了深远影响。  
 1916年辞去教育总长职务  

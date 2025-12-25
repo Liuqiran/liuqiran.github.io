@@ -1,5 +1,6 @@
-﻿---
+---
 title: '3: Upsurge in Study Art Aboard and Fine Art Education in Early 20th Century'
+slug: "upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-century"
 author: Qiran
 type: post
 date: 2019-09-30T10:37:11+00:00
@@ -7,7 +8,7 @@ aliases: ["/upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-cen
 s:
   - Chinese Fine Art Education in 20 Century
 ---
-**留学日本的中国学生与美术教育**
+﻿**留学日本的中国学生与美术教育**
 
 西方文化进入近代中国后，也冲击着传统的教育制度，洋务运动时期清政府即派学生赴美留学。1905年，清政府废弃科举制度，延续千年的文人传统升迁之途就此废弃，留学海外、学习西方文化与知识便成为读书人新的目标。
 

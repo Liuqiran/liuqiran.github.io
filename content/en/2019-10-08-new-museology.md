@@ -1,5 +1,6 @@
-﻿---
+---
 title: New Museology
+slug: "new-museology"
 author: Qiran
 type: post
 date: 2019-10-08T02:19:52+00:00
@@ -7,7 +8,7 @@ aliases: ["/new-museology/"]
 tags:
   - Museology
 ---
-学期最重要的问题：作为一个个体与这个事物的关系。
+﻿学期最重要的问题：作为一个个体与这个事物的关系。
 
 **新博物馆学视野下博物馆认知**
 

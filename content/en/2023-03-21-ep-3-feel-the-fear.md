@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 3 Feel the fear
+slug: "ep-3-feel-the-fear"
 author: Qiran
 type: post
 date: 2023-03-21T11:34:28+00:00
@@ -11,7 +12,7 @@ boomdevs_metabox:
 tags:
   - Fear
 ---
-Hi, I&#8217;m Qiran. Today I would like to share with you my understanding of fear.
+﻿Hi, I&#8217;m Qiran. Today I would like to share with you my understanding of fear.
 
 Fear is one of the basic human emotions. We all have fears. As for me, fear is one of my biggest difficulties in life.
 

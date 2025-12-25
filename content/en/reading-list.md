@@ -1,5 +1,6 @@
 ---
 title: 📚 Reading list
+slug: "reading-list"
 author: Qiran
 type: page
 date: 2023-02-10  

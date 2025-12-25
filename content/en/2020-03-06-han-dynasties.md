@@ -1,5 +1,6 @@
-﻿---
+---
 title: Han dynasties
+slug: "han-dynasties"
 author: Qiran
 type: post
 date: 2020-03-06T13:11:03+00:00
@@ -8,7 +9,7 @@ tags:
   - A Chinese-foreign exchange history of fine arts
 
 ---
-#### 第一節 外來工藝品與佛教藝術的東傳 {.wp-block-heading}
+﻿#### 第一節 外來工藝品與佛教藝術的東傳 {.wp-block-heading}
 
 西漢時期對外交流：絲綢之路；可能的海上航道。  
 **將域外想象為神秘的超自然的世界**，激發了社會對於域外物質與文化的興趣。

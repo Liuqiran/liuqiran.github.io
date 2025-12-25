@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 13 Anki and offline
+slug: "ep-13-anki-and-offline"
 author: Qiran
 type: post
 date: 2023-08-08T13:44:33+00:00
@@ -16,7 +17,7 @@ tags:
   - Software
 
 ---
-I had been using Anki as my reviewing tool from 2017.  
+﻿I had been using Anki as my reviewing tool from 2017.  
 Anki is a very powerful and effective tool, it&#8217;s also one of the best tools for learning a language. There is also no alternative of Anki as a tool for creating your own database.
 
 But I gradually felt its disadvantages. It&#8217;s a software. I always need to use it on computer or on smartphone. To form a habit, I need to open it everyday.

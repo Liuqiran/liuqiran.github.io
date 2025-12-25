@@ -1,5 +1,6 @@
-﻿---
+---
 title: Your Password Can Be Cracked!
+slug: "your-password-can-be-cracked"
 author: Qiran
 type: post
 date: 2019-11-29T11:55:35+00:00
@@ -10,4 +11,4 @@ tags:
   - The Art of Invisibility
 
 ---
-Open the 2FA when it is possible, set a strong password (at least 25 digits).
+﻿Open the 2FA when it is possible, set a strong password (at least 25 digits).

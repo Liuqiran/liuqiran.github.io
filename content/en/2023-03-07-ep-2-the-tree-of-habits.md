@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 2 The tree of habits
+slug: "ep-2-the-tree-of-habits"
 author: Qiran
 type: post
 date: 2023-03-07T03:37:57+00:00
@@ -9,7 +10,7 @@ xyz_twap:
 tags:
   - Habit
 ---
-Hi, I&#8217;m Qiran. Today I would like to share with you some of my understanding about habits.  
+﻿Hi, I&#8217;m Qiran. Today I would like to share with you some of my understanding about habits.  
 In my life, the concept of cultivating habits is gradually becoming one of the most important parts.
 
 In my opinion, habit is a compound interest. The fruits or effects of habits will grow faster and faster in the long run.

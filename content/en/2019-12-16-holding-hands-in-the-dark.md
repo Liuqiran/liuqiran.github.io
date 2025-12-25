@@ -1,5 +1,6 @@
-﻿---
+---
 title: Holding Hands in the Dark
+slug: "holding-hands-in-the-dark"
 author: Qiran
 type: post
 date: 2019-12-16T05:16:11+00:00
@@ -8,7 +9,7 @@ tags:
   - Nothing to Envy
 
 ---
-This is a love story between two teenagers, Mi-ran and Jun-Sang, although it happened in the most totalitarian country in the world&#8211;North Korea.
+﻿This is a love story between two teenagers, Mi-ran and Jun-Sang, although it happened in the most totalitarian country in the world&#8211;North Korea.
 
 Mi-ran is a girl, her father is a miner, Jun-Sang is a student belongs to a family at a high level.
 

@@ -1,5 +1,6 @@
-﻿---
+---
 title: CHAPTER 6 Tell Them I Love (Some) Randomness
+slug: "chapter-6-tell-them-i-love-some-randomness"
 author: Qiran
 type: post
 date: 2020-03-08T11:56:18+00:00
@@ -8,7 +9,7 @@ tags:
   - 'Antifragile: Things That Gain From Disorder'
 
 ---
-When the variation comes, people will rush into the door.  
+﻿When the variation comes, people will rush into the door.  
 **HUNGRY DONKEYS**  
 Equal distance between food and water makes donkey die of hunger or thirst.  
 **Political Annealing**  

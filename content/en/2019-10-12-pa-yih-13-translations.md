@@ -1,5 +1,6 @@
-﻿---
+---
 title: Pa Yih 13 translations
+slug: "pa-yih-13-translations"
 author: Qiran
 type: post
 date: 2019-10-12T11:16:19+00:00
@@ -8,7 +9,7 @@ tags:
   - Analects
 
 ---
-【十三章】【一節】王孫賈問曰、與其媚於奧、寧媚於竈、何謂也。【二節】子曰、不然、獲罪於天、無所禱也。 
+﻿【十三章】【一節】王孫賈問曰、與其媚於奧、寧媚於竈、何謂也。【二節】子曰、不然、獲罪於天、無所禱也。 
 
 **Legge&#8217;s translation:**
 

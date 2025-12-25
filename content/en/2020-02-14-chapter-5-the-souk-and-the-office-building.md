@@ -1,5 +1,6 @@
-﻿---
+---
 title: CHAPTER 5 The Souk and the Office Building
+slug: "chapter-5-the-souk-and-the-office-building"
 author: Qiran
 type: post
 date: 2020-02-14T12:04:06+00:00
@@ -8,7 +9,7 @@ tags:
   - 'Antifragile: Things That Gain From Disorder'
 
 ---
-**TWO TYPES OF PROFESSIONS**  
+﻿**TWO TYPES OF PROFESSIONS**  
 There are two types of professions, employee and taxi driver, though the first one has a high salary and stable, it&#8217;s fragile. This profession is in a system of artificial and human-made. But the second one is antifragile, same kind profession corporates artisan, prostitute, etc. Nature like small mistakes and variability.
 
 **Lenin in Zurich**  

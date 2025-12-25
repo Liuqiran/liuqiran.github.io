@@ -1,5 +1,6 @@
-﻿---
+---
 title: A Lopsided Arms Race
+slug: "a-lopsided-arms-race"
 author: Qiran
 type: post
 date: 2020-07-27T03:46:43+00:00
@@ -8,7 +9,7 @@ tags:
   - Digital Minimalism
 
 ---
-**WE DIDN’T SIGN UP FOR THIS**  
+﻿**WE DIDN’T SIGN UP FOR THIS**  
 Smartphones changed our life, but they changed us drastically and no one predicted that.
 
 **TOBACCO FARMERS IN T-SHIRTS**  

@@ -1,5 +1,6 @@
-﻿---
+---
 title: 'ARGUMENT THREE: SOCIAL MEDIA IS MAKING YOU INTO AN ASSHOLE'
+slug: "argument-three-social-media-is-making-you-into-an-asshole-2"
 author: Qiran
 type: post
 date: 2020-10-31T14:56:52+00:00
@@ -8,7 +9,7 @@ tags:
   - Ten Arguments for Deleting Your Social Media Accounts Right Now
 
 ---
-**SOOTY SNOW**  
+﻿**SOOTY SNOW**  
 You are more vulnerable when you get addicted.  
 You will become a poor or little snowflake.  
 **MEETING MY INNER TROLL**  

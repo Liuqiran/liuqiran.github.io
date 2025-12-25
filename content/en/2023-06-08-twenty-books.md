@@ -1,5 +1,6 @@
-﻿---
+---
 title: Twenty books
+slug: "twenty-books"
 author: Qiran
 type: post
 date: 2023-06-08T14:52:35+00:00
@@ -14,7 +15,7 @@ tags:
   - Reading
 
 ---
-Until today I finished reading 20 books written in English.  
+﻿Until today I finished reading 20 books written in English.  
 Twenty books is not a lot, but it&#8217;s a big step for me.  
 It&#8217;s a good accomplishment.  
 Just keep going.

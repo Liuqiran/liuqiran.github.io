@@ -1,5 +1,6 @@
-﻿---
+---
 title: 'Notes: The Now Habit (1)'
+slug: "notes-the-now-habit-1"
 author: Qiran
 type: post
 date: 2019-03-26T07:44:15+00:00
@@ -8,7 +9,7 @@ tags:
   - Efficiency
   - The Now Habit
 ---
-<p style="text-align: right;">
+﻿<p style="text-align: right;">
   Goal: supportive of yourself
 </p>
 

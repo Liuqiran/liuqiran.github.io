@@ -1,5 +1,6 @@
-﻿---
+---
 title: Introduction and Chapter 1
+slug: "introduction-and-chapter-1"
 author: Qiran
 type: post
 date: 2020-11-10T06:54:48+00:00
@@ -8,7 +9,7 @@ tags:
   - Atomic Habits
 
 ---
-### Introduction: My Story {.wp-block-heading}
+﻿### Introduction: My Story {.wp-block-heading}
 
 The writer shared the exprience when he was in high school. He was hit by a baseball bat.
 

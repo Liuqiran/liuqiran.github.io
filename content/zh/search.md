@@ -1,5 +1,6 @@
 ---
 title:    "搜索" # in any language you want
+slug: "search"
 layout:    "search" # necessary for search
 summary:    "搜索"
 placeholder:    "搜索"

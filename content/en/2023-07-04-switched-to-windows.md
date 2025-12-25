@@ -1,5 +1,6 @@
-﻿---
+---
 title: Switched to Windows
+slug: "switched-to-windows"
 author: Qiran
 type: post
 date: 2023-07-04T14:39:59+00:00
@@ -14,5 +15,5 @@ tags:
   - Computer
 
 ---
-I don&#8217;t need to be too stubborn and stick to the Linux. Tools are used for improving efficiency instead of for playing. Some ideas are not so that important.  
+﻿I don&#8217;t need to be too stubborn and stick to the Linux. Tools are used for improving efficiency instead of for playing. Some ideas are not so that important.  
 Windows is very powerful now especially after the coming of Android Subsystem. On Linux, I can&#8217;t find a similar software as stable as Subsystem. Waydroid and Genymotion have a lot of problems.

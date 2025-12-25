@@ -1,5 +1,6 @@
-﻿---
+---
 title: THE PROCRASTINATOR IN YOUR LIFE
+slug: "the-procrastinator-in-your-life"
 author: Qiran
 type: post
 date: 2020-02-09T08:16:48+00:00
@@ -10,7 +11,7 @@ tags:
   - The Now Habit
 
 ---
-#### MANAGING PEOPLE WHO PROCRASTINATE {.wp-block-heading}
+﻿#### MANAGING PEOPLE WHO PROCRASTINATE {.wp-block-heading}
 
 Due to procrastination, employees lose their productivities and cause companies billions of dollars lost.
 

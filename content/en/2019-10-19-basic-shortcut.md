@@ -1,5 +1,6 @@
-﻿---
+---
 title: basic shortcut
+slug: "basic-shortcut"
 author: Qiran
 type: post
 date: 2019-10-19T10:55:48+00:00
@@ -9,4 +10,4 @@ tags:
   - Journal
 
 ---
-reset rotation: 5
+﻿reset rotation: 5

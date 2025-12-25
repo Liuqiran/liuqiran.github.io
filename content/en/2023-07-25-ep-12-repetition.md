@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 12 Repetition
+slug: "ep-12-repetition"
 author: Qiran
 type: post
 date: 2023-07-25T12:24:20+00:00
@@ -17,7 +18,7 @@ tags:
   - Podcast
 
 ---
-Repetition is an essential part in our life.  
+﻿Repetition is an essential part in our life.  
 Life is started from one cell. But just by copying itself, one cell can grow into a complicate system with different features. It&#8217;s a form of repetition.
 
 When we need to memorize something, we aIso need a lot of repetitions. Maybe it&#8217;s very boring, but I can&#8217;t deny it&#8217;s a very effective way.  

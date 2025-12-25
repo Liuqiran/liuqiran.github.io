@@ -1,5 +1,6 @@
-﻿---
+---
 title: Writing freely
+slug: "writing-freely"
 author: Qiran
 type: post
 date: 2023-10-25T00:17:17+00:00
@@ -16,7 +17,7 @@ tags:
   - Log
 
 ---
-Now I find my writing skill is gradually improving. My writing speed is faster than before. The problem is that I face some stress when I need to post publicly. I&#8217;m still afraid of showing the errors and flaws of my article.  
+﻿Now I find my writing skill is gradually improving. My writing speed is faster than before. The problem is that I face some stress when I need to post publicly. I&#8217;m still afraid of showing the errors and flaws of my article.  
 But I know no one can be perfect. Modifying the article and checking the grammar incessantly will kill the interest and motivation of writing.  
 In addition, It&#8217;s my own website. I think if other people don&#8217;t like, they can unfollow me.  
 In any case, I will try our best to practice more and share my thoughts which I think valuable.
