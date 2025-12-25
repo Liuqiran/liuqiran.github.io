@@ -33,7 +33,10 @@
 {{- else -}}
   {{- $commentPath = .RelPermalink | replaceRE "^/(en|zh|ja)/" "/" -}}
 {{- end -}}
-{{- $commentPath = $commentPath | replaceRE "/$" "" -}}
+{{- $commentPath = $commentPath | replaceRE "/$" "" -}}   
+{{- $commentPath = $commentPath | replaceRE `^\s+|\s+$` "" -}}
+{{- $commentPath = $commentPath | replaceRE `^["']+|["']+$` "" -}}
+{{- $commentPath = $commentPath | replaceRE `/+$` "" -}}
 
 <!-- waline.serverURL={{ printf "%q" $server }} -->    
 
