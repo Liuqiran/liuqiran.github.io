@@ -171,7 +171,3 @@ img[aria-label="logo"] {
   white-space: normal !important;
 }    
 .post-meta-item { display: inline; }
-.post-meta-item {
-  margin-right: .6em;   /* 你想更松就 0.8em / 1em */
-}  
-.meta-sep { opacity: .5; margin: 0 .5em; }
