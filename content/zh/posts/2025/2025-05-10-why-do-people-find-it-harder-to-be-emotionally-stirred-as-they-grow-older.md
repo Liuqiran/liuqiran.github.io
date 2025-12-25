@@ -29,4 +29,4 @@ aliases: ["/why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-
 常山赵子龙虽然赤胆忠心，七进七出，终究不及桃园结义的情谊。 许昌曹操对关羽以诚相待，最终却只换得对方弃官寻兄。
 
 
-他们做错了什么？ 不，只是来得太迟罢了。
+他们做错了什么？ 不，只是来得太迟罢了。  
