@@ -6,7 +6,8 @@ author: Hong Hu
 tags:
  - life
 cover: 
-  image: /img/black-white-road.jpg
+  image: /img/black-white-road.jpg  
+translation-key: why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older
 aliases: ["/why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/"]
 ---
 Because you came late, too late, even past mealtime.
