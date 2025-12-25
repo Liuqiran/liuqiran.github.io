@@ -223,7 +223,7 @@ params:
     id: https://twikoo-gamma-red.vercel.app/
     region:  # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数，请看twikoo官方文档       
   waline:
-    serverURL: "https://waline.liuqiran.com"
+    serverURL: https://waline.liuqiran.com
 
 
 permalinks:
