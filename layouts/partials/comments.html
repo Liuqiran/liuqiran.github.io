@@ -121,8 +121,12 @@ body.dark #waline{
 
 {{- $tk := .TranslationKey -}}
 {{- if not $tk -}}
-  {{- $tk = .File.ContentBaseName -}}  {{/* 没写 translationKey 就用文件名 */}}
+  {{- $tk = .File.ContentBaseName -}}   {{/* 没写 translationKey 就用文件名 */}}
 {{- end -}}
+
+{{- /* 关键：清洗，去掉可能出现的前缀 */ -}}
+{{- $tk = $tk | replaceRE "^tk:" "" | replaceRE "^/" "" -}}
+
 {{- $commentPath := printf "tk:%s" $tk -}}
 
 {{- /* ===== Waline 容器：只有配置了 serverURL 才渲染 ===== */ -}}
