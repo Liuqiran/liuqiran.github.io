@@ -34,7 +34,39 @@ stroke-linecap="round" stroke-linejoin="round" height="23">
 {{- end }}
 
 
-{{- range $pages.GroupByPublishDate "2006" }}
+{{/* 统计：篇数 + 总字数 */}}
+{{- $s := newScratch -}}
+{{- $s.Set "words" 0 -}}
+{{- range $pages -}}
+  {{- $s.Add "words" .WordCount -}}
+{{- end -}}
+{{- $totalWords := $s.Get "words" -}}   
+
+
+{{- $recent := first 10 (sort $pages "Lastmod" "desc") -}}
+<div class="archive-updated">
+  <div class="archive-updated-title">最近更新</div>
+  <ul class="archive-updated-list">
+    {{- range $recent -}}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="archive-updated-meta">更新于 {{ .Lastmod.Format "01-02" }}</span>
+    </li>
+    {{- end -}}
+  </ul>
+</div>
+
+<div class="archive-topbox">
+  <div class="archive-stats">
+    <span>归档 {{ len $pages }}</span>
+    <span>总计约 {{ printf "%.2fK" (div (float $totalWords) 1000) }} 字</span>
+  </div>
+</div>
+
+{{- $p := .Paginate $pages 50 -}}  {{/* 每页 200 篇，自行改 */}}
+
+
+{{- range $p.Pages.GroupByPublishDate "2006" }}
 {{- if ne .Key "0001" }}
 <div class="archive-year">
 {{- $year := replace .Key "0001" "" }}
@@ -80,5 +112,7 @@ d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v
 </div>
 {{- end }}
 {{- end }}
+
+{{ template "_internal/pagination.html" . }}  
 
 {{- end }}{{/* end main */}}
