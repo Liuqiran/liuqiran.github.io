@@ -133,7 +133,7 @@ body.dark #waline{
   <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
+    console.log("Waline path =", "{{ $commentPath }}");
     init({
       el: '#waline',
       serverURL: '{{ $server }}',
