@@ -1,6 +1,6 @@
-readmore: 
-  other = "阅读全文："
-
+- id: readmore
+  translation:
+    other: "阅读全文："
 - id: archive_label
   translation: "归档"
 - id: archive_total
