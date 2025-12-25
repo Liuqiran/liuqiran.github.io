@@ -183,12 +183,12 @@ html[lang="zh-CN"] .comment-system *{
       serverURL: '{{ $server }}',
       path: '{{ $path }}',
       lang: '{{ .Site.Language.Lang }}',
-
+      locale: { reactionTitle: "" }
       // ✅ 文章“表情反应/点赞”
       reaction: true,
 
       // 可选：跟随 PaperMod 深色模式（按你站点实际 class 调整）
-      // dark: 'html.dark'
+      dark: 'html.dark'
     });
   </script>
 {{- end -}}
