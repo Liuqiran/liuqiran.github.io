@@ -6,4 +6,6 @@ type: post
 date: 2025-12-25
 tags:
   - Life  
----      
+---          
+
+After 
