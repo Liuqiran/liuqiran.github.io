@@ -228,6 +228,6 @@ params:
 
 permalinks:
   page:
-    posts: /posts/:slug/
+    posts: /:slug/
   section:
     posts: /posts/
