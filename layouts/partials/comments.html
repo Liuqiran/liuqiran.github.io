@@ -119,13 +119,32 @@ body.dark #waline{
   <button id="btn-giscus">Giscus 💬</button>
 </div>
 
-{{- $tk := .TranslationKey -}}
-{{- if not $tk -}}
-  {{- $tk = .File.ContentBaseName -}}   {{/* 没写 translationKey 就用文件名 */}}
+{{/* --- Waline 开关与基础变量 --- */}}
+{{- $server := "" -}}
+{{- with .Site.Params.waline -}}
+  {{- with .serverURL -}}
+    {{- $server = . -}}
+  {{- end -}}
+{{- end -}}
+{{- $hasWaline := ne $server "" -}}
+{{- $lang := .Lang -}}
+
+{{/* --- commentPath（线程ID）优先级 --- */}}
+{{- $commentPath := "" -}}
+{{- with .Params.waline_path -}}
+  {{- $commentPath = . -}}
+{{- else if .Params.url -}}
+  {{- $commentPath = .Params.url -}}
+{{- else if .Params.aliases -}}
+  {{- $commentPath = index .Params.aliases 0 -}}
+{{- else if .Params.translationKey -}}
+  {{- $commentPath = printf "t:%s" .Params.translationKey -}}
+{{- else -}}
+  {{- $commentPath = .RelPermalink | replaceRE "^/(en|zh)/" "/" -}}
 {{- end -}}
 
-{{- /* 关键：清洗，去掉可能出现的前缀 */ -}}
-{{- $tk = $tk | replaceRE "^tk:" "" | replaceRE "^/" "" -}}
+{{/* 可选：统一去掉末尾 /，减少“/about-me” vs “/about-me/” 不一致 */}}
+{{- $commentPath = $commentPath | replaceRE "/$" "" -}}
 
 {{- $server := site.Params.waline.serverURL -}}
 {{- $lang := site.Language.Lang -}}
