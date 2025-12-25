@@ -1,33 +1,81 @@
+{{/* layouts/partials/comments.html */}}
+
+{{- /* --- Waline 开关与基础变量 --- */ -}}
+{{- $server := "" -}}
+{{- with .Site.Params.waline.serverURL -}}
+  {{- $server = . -}}
+{{- end -}}
+{{- $hasWaline := ne $server "" -}}
+{{- $path := .RelPermalink | replaceRE "/$" "" -}}
+{{- $lang := .Lang -}}
+
 <style>
-.comment-toggle { margin-bottom: 1em; text-align: center; }
+/* ===== Toggle UI ===== */
+.comment-toggle { margin: 1em 0; text-align: center; }
 
 .comment-toggle button{
   padding:.5em 1.2em; margin:0 .3em; cursor:pointer;
-  border:1px solid #ccc; background:#f8f8f8; color:#555;
-  font-weight:500; border-radius:4px; font-size:.9rem;
+  border:1px solid var(--border, #ccc);
+  background: var(--entry, #f8f8f8);
+  color: var(--content, #555);
+  font-weight:500; border-radius:8px; font-size:.9rem;
   transition: background .2s, color .2s, border-color .2s;
 }
-.comment-toggle button:hover{ background:#e2e2e2; border-color:#999; color:#333; }
-.comment-toggle button.active{ background:#ccc; border-color:#999; color:#222; cursor:default; pointer-events:none; }
+.comment-toggle button:hover{
+  background: var(--code-bg, #eaeaea);
+  border-color: var(--border, #999);
+}
+.comment-toggle button.active{
+  background: var(--code-bg, #ddd);
+  border-color: var(--border, #999);
+  color: var(--content, #222);
+  cursor:default; pointer-events:none;
+}
 
 .comment-system{ display:none; }
 .comment-system.active{ display:block; }
 
-/* 邀请文案 */
+/* ===== Invite copy ===== */
 .comment-invite{ text-align:center; margin:1.2em 0 .6em; }
 .comment-invite__title{ font-size:1rem; font-weight:500; }
 .comment-invite__sub{ margin-top:.25em; font-size:.9rem; opacity:.75; }
 
-/* 评论区字体 */
-html[lang="en-US"] .comment-system,
-html[lang="en-US"] .comment-system *{
+/* ===== 评论区字体：用 lang 前缀匹配更稳 ===== */
+html[lang^="en"] .comment-system,
+html[lang^="en"] .comment-system *{
   font-family:"Georgia","Times New Roman",serif !important;
   font-size:1rem !important; font-weight:400 !important; line-height:1.6 !important;
 }
-html[lang="zh-CN"] .comment-system,
-html[lang="zh-CN"] .comment-system *{
+html[lang^="zh"] .comment-system,
+html[lang^="zh"] .comment-system *{
   font-family:'KingHwa_OldSong',sans-serif !important;
   font-size:1rem !important; font-weight:400 !important; line-height:1.8 !important;
+}
+html[lang^="ja"] .comment-system,
+html[lang^="ja"] .comment-system *{
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif !important;
+  font-size:1rem !important; font-weight:400 !important; line-height:1.8 !important;
+}
+
+/* ===== Waline：用 PaperMod 变量接管主题色（去掉默认蓝）===== */
+#waline{
+  --waline-theme-color: var(--primary);
+  --waline-active-color: var(--primary);
+
+  --waline-color: var(--content);
+  --waline-bg-color: var(--entry);
+  --waline-bg-color-light: var(--code-bg);
+  --waline-border-color: var(--border);
+  --waline-box-shadow: none;
+}
+
+/* PaperMod 暗色一般是 body.dark（如果你是 html.dark，可以把 body.dark 改成 html.dark） */
+body.dark #waline{
+  /* 可选：想更黑就解除注释
+  --waline-bg-color: #16181a;
+  --waline-bg-color-light: #1f2225;
+  --waline-border-color: #2a2e33;
+  */
 }
 </style>
 
@@ -50,7 +98,6 @@ html[lang="zh-CN"] .comment-system *{
   )
 -}}
 
-{{- $lang := .Lang -}}
 {{- $list := index $invites $lang -}}
 {{- if not $list -}}{{- $list = index $invites "en" -}}{{- end -}}
 
@@ -63,43 +110,50 @@ html[lang="zh-CN"] .comment-system *{
 <div class="comment-invite">
   <div class="comment-invite__title">{{ $pick.t }}</div>
   <div class="comment-invite__sub">{{ $pick.s }}</div>
-</div>      
-  
+</div>
+
 <div class="comment-toggle">
-  <button id="btn-waline">Waline 💬</button>
+  {{- if $hasWaline -}}
+    <button id="btn-waline">Waline 💬</button>
+  {{- end -}}
   <button id="btn-giscus">Giscus 💬</button>
 </div>
 
+{{- /* ===== Waline 容器：只有配置了 serverURL 才渲染 ===== */ -}}
+{{- if $hasWaline -}}
 <div id="waline-container" class="comment-system">
   <div id="waline"></div>
 
-  {{- $server := .Site.Params.waline.serverURL -}}
-  {{- if $server -}}
-    {{- $path := .RelPermalink | replaceRE "/$" "" -}}
+  <!-- 如果你已经本地化了 Waline，请把下面两行改成你自己的路径：
+       <link rel="stylesheet" href="/vendor/waline/v3/waline.css" />
+       import { init } from '/vendor/waline/v3/waline.js';
+  -->
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
-    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
-    <script type="module">
-      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    init({
+      el: '#waline',
+      serverURL: '{{ $server }}',
+      path: '{{ $path }}',
 
-      init({
-        el: '#waline',
-        serverURL: '{{ $server }}',
-        path: '{{ $path }}',
-        lang: '{{ .Lang }}',
+      // Waline 语言：zh/en/ja 都能用
+      lang: '{{ $lang }}',
 
-        // 去掉“你认为这篇文章怎么样？”
-        locale: { reactionTitle: "" },
+      // 去掉“你认为这篇文章怎么样？”
+      locale: { reactionTitle: "" },
 
-        // 反应（点赞/表情）要不要：true/false
-        reaction: true,
+      // 文章反应（表情/点赞）开关
+      reaction: true,
 
-        // PaperMod 通常是 body.dark；如果你实际是 html.dark 就改这里
-        dark: 'body.dark',
-      });
-    </script>
-  {{- end -}}
+      // PaperMod 暗色跟随（通常是 body.dark；若你是 html.dark 改这里）
+      dark: 'body.dark',
+    });
+  </script>
 </div>
+{{- end -}}
 
+{{- /* ===== Giscus 容器 ===== */ -}}
 <div id="giscus-container" class="comment-system">
   <div id="giscus-comment"></div>
   <script src="https://giscus.app/client.js"
@@ -113,7 +167,7 @@ html[lang="zh-CN"] .comment-system *{
           data-emit-metadata="0"
           data-input-position="bottom"
           data-theme="preferred_color_scheme"
-          data-lang="{{ if eq .Site.Language.Lang "zh" }}zh-CN{{ else }}en{{ end }}"
+          data-lang="{{ if eq $lang "zh" }}zh-CN{{ else if eq $lang "ja" }}ja{{ else }}en{{ end }}"
           crossorigin="anonymous"
           async>
   </script>
@@ -126,6 +180,7 @@ html[lang="zh-CN"] .comment-system *{
   const giscusContainer = document.getElementById('giscus-container');
 
   function showWaline() {
+    if (!btnWaline || !walineContainer) return;
     btnWaline.classList.add('active');
     btnGiscus.classList.remove('active');
     walineContainer.classList.add('active');
@@ -135,19 +190,24 @@ html[lang="zh-CN"] .comment-system *{
 
   function showGiscus() {
     btnGiscus.classList.add('active');
-    btnWaline.classList.remove('active');
+    if (btnWaline) btnWaline.classList.remove('active');
     giscusContainer.classList.add('active');
-    walineContainer.classList.remove('active');
+    if (walineContainer) walineContainer.classList.remove('active');
     localStorage.setItem('preferredComment', 'giscus');
   }
 
-  btnWaline.onclick = showWaline;
+  if (btnWaline) btnWaline.onclick = showWaline;
   btnGiscus.onclick = showGiscus;
 
   window.addEventListener('DOMContentLoaded', () => {
     const preferred = localStorage.getItem('preferredComment');
-    if (preferred === 'giscus') showGiscus();
-    else showWaline();
+
+    if (preferred === 'giscus') {
+      showGiscus();
+      return;
+    }
+    // 默认：有 Waline 就 Waline；没有就 Giscus
+    if (btnWaline) showWaline();
+    else showGiscus();
   });
 </script>
-{{- end -}}
