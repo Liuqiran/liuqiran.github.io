@@ -124,10 +124,6 @@ body.dark #waline{
 <div id="waline-container" class="comment-system">
   <div id="waline"></div>
 
-  <!-- 如果你已经本地化了 Waline，请把下面两行改成你自己的路径：
-       <link rel="stylesheet" href="/vendor/waline/v3/waline.css" />
-       import { init } from '/vendor/waline/v3/waline.js';
-  -->
   <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
@@ -135,18 +131,11 @@ body.dark #waline{
     init({
       el: '#waline',
       serverURL: '{{ $server }}',
-      path: '{{ $path }}',
+      path: '{{ $commentPath }}',  /* ✅ 这里就是“中英共用”的关键 */
 
-      // Waline 语言：zh/en/ja 都能用
       lang: '{{ $lang }}',
-
-      // 去掉“你认为这篇文章怎么样？”
       locale: { reactionTitle: "" },
-
-      // 文章反应（表情/点赞）开关
       reaction: true,
-
-      // PaperMod 暗色跟随（通常是 body.dark；若你是 html.dark 改这里）
       dark: 'body.dark',
     });
   </script>
