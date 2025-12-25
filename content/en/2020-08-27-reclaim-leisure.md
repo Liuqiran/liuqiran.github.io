@@ -1,5 +1,6 @@
-﻿---
+---
 title: Reclaim Leisure
+slug: "reclaim-leisure"
 author: Qiran
 type: post
 date: 2020-08-27T12:54:04+00:00
@@ -8,7 +9,7 @@ tags:
   - Digital Minimalism
 
 ---
-**Leisure and the good life**  
+﻿**Leisure and the good life**  
 As Aristotle&#8217;s lead, joyful activities is a &#8220;source of inward joy&#8221;. We can call them high-quality leisure.
 
 **The Bennett principle**  

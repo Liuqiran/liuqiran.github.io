@@ -1,5 +1,6 @@
-﻿---
+---
 title: Free is tough
+slug: "free-is-tough"
 author: Qiran
 type: post
 date: 2019-09-21T12:22:01+00:00
@@ -10,7 +11,7 @@ s:
   - Loneliness
   - Self-development
 ---
-Today I browsed many articles about free software, especially [this article][1], Stallman is sort of extreme, why I always care about extremely security and privacy too?
+﻿Today I browsed many articles about free software, especially [this article][1], Stallman is sort of extreme, why I always care about extremely security and privacy too?
 
 I&#8217;m not an extreme person in any topic, I need to have my life and my own goal, but because of my personality, I stick to some thinking that makes me different from others, in the end, it doesn&#8217;t make me very happy.
 

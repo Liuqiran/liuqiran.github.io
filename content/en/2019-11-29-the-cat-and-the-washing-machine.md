@@ -1,5 +1,6 @@
-﻿---
+---
 title: The Cat and the Washing Machine
+slug: "the-cat-and-the-washing-machine"
 author: Qiran
 type: post
 date: 2019-11-29T12:59:49+00:00
@@ -8,7 +9,7 @@ tags:
   - 'Antifragile: Things That Gain From Disorder'
 
 ---
-organic and mechanical are different, organisms are antifragile, also for human-beings. But in modern society, humans all live longer but weak, because the environment is so fragile. Unlike natural environment, their working environment, medicine and living quarters all making them weaker and weaker. Unlike mechanicals, organisms will become stronger because of self-repair in some point.
+﻿organic and mechanical are different, organisms are antifragile, also for human-beings. But in modern society, humans all live longer but weak, because the environment is so fragile. Unlike natural environment, their working environment, medicine and living quarters all making them weaker and weaker. Unlike mechanicals, organisms will become stronger because of self-repair in some point.
 
 #### The Complex {.wp-block-heading}
 

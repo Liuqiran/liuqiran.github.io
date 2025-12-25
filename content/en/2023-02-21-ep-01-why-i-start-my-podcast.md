@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP-01 Why I start my podcast
+slug: "ep-01-why-i-start-my-podcast"
 author: Qiran
 type: post
 date: 2023-02-21T15:47:15+00:00
@@ -10,7 +11,7 @@ tags:
   - English
 
 ---
-Hello everyone. I&#8217;m Qiran. This is the first episode of my podcast. Today&#8217;s topic is that, I want to share reasons about why I start my podcast.
+﻿Hello everyone. I&#8217;m Qiran. This is the first episode of my podcast. Today&#8217;s topic is that, I want to share reasons about why I start my podcast.
 
 The first reason is, it&#8217;s a place of sharing my thoughts and my understanding covering a lot of topics. It&#8217;s an opportunity to exchange ideas with others, maybe I can meet new friends and learn a lot from others in the future.
 

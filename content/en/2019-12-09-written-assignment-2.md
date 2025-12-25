@@ -1,5 +1,6 @@
-﻿---
+---
 title: 'Written Assignment #2'
+slug: "written-assignment-2"
 author: Qiran
 type: post
 date: 2019-12-09T00:01:04+00:00
@@ -8,7 +9,7 @@ tags:
   - English
 
 ---
-**Translation**  
+﻿**Translation**  
 1. The Master said to Yan Yuan, “If I’m employed, I’ll show my talent; If not, I’ll hide my light under a bushel, only you and I have the ability to do it!”  
 2. Zi Lu said, “If you lead troops, whom do you want to work with you?”   
 3. The Master Said, “If someone attacks a tiger unarmed or crosses a river without a boat, and he died without any regret, I would not work with him. What I need definitely is someone who is careful and fond of making plans for success.”

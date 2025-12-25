@@ -1,5 +1,6 @@
-﻿---
+---
 title: 'ARGUMENT TWO: QUITTING SOCIAL MEDIA IS THE MOST FINELY TARGETED WAY TO RESIST THE INSANITY OF OUR TIMES'
+slug: "argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times"
 author: Qiran
 type: post
 date: 2020-03-07T14:05:27+00:00
@@ -8,7 +9,7 @@ tags:
   - Ten Arguments for Deleting Your Social Media Accounts Right Now
 
 ---
-**THE BUMMER MACHINE**  
+﻿**THE BUMMER MACHINE**  
 The better analogy for social media is paint contains lead in a house.  
 BUMMER: “Behaviors of Users Modified, and Made into an Empire for Rent”  
 **THE PARTS THAT MAKE UP THE BUMMER MACHINE**  

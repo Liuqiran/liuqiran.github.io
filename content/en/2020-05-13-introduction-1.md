@@ -1,5 +1,6 @@
-﻿---
+---
 title: Introduction 1
+slug: "introduction-1"
 author: Qiran
 type: post
 date: 2020-05-13T01:52:25+00:00
@@ -8,7 +9,7 @@ tags:
   - The Literary Mind and the Carving of Dragons
 
 ---
-Wang Ch&#8217;ung displays a liberalism unique. He thik the present is better than the past, same as Ge Hong.  
+﻿Wang Ch&#8217;ung displays a liberalism unique. He thik the present is better than the past, same as Ge Hong.  
 Cao Cao, was a competent poet. Cao Pi, 典論論文  
 蕭統，he accounted for excluding the Classics and historical works from his anthology, because they were not pure literature.  
 徐陵，玉臺新詠  

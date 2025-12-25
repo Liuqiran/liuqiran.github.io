@@ -1,5 +1,6 @@
-﻿---
+---
 title: Harm from technology
+slug: "harm-from-technology"
 author: Qiran
 type: post
 date: 2023-08-28T16:03:02+00:00
@@ -17,4 +18,4 @@ tags:
   - Technology
 
 ---
-In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it&#8217;s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.
+﻿In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it&#8217;s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.

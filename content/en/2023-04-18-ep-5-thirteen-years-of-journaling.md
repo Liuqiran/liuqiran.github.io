@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 5 Thirteen years of journaling
+slug: "ep-5-thirteen-years-of-journaling"
 author: Qiran
 type: post
 date: 2023-04-18T09:52:12+00:00
@@ -10,7 +11,7 @@ tags:
   - Journal
 
 ---
-I&#8217;ve been journaling for thirteen years.  
+﻿I&#8217;ve been journaling for thirteen years.  
 I started journaling in April 2010.
 
 It&#8217;s one of the most important habits in my life.  

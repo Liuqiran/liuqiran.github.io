@@ -1,5 +1,6 @@
-﻿---
+---
 title: Masochism and sadism
+slug: "masochism-and-sadism"
 author: Qiran
 type: post
 date: 2019-07-17T06:39:28+00:00
@@ -7,7 +8,7 @@ aliases: ["/masochism-and-sadism/"]
 tags:
   - Masochism And the Self
 ---
-In Freud&#8217;s theory, masochism is from sadism, another theory said that sadism and masochism are two faces of one coin.
+﻿In Freud&#8217;s theory, masochism is from sadism, another theory said that sadism and masochism are two faces of one coin.
 
 But the recent study shows that maybe masochism is more fundamental. The number of Masochists are much more than sadists&#8217;.
 

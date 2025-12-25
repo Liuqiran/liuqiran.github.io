@@ -1,5 +1,6 @@
-﻿---
+---
 title: Curator and exhibition
+slug: "curator-and-exhibition"
 author: Qiran
 type: post
 date: 2020-01-10T05:51:09+00:00
@@ -8,7 +9,7 @@ tags:
   - Museology
 
 ---
-Curator 是一个专有名称，曾经被作为“博物馆馆长”之意。
+﻿Curator 是一个专有名称，曾经被作为“博物馆馆长”之意。
 
 做一个策展人要具备资金筹措能力。 
 

@@ -1,5 +1,6 @@
-﻿---
+---
 title: Connection
+slug: "connection"
 author: Qiran
 type: post
 date: 2020-04-09T04:19:59+00:00
@@ -10,7 +11,7 @@ tags:
   - Social media
 
 ---
-<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">
+﻿<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">
 
 <div class="wp-block-embed__wrapper">
 </div></figure>

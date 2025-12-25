@@ -1,5 +1,6 @@
-﻿---
+---
 title: HOW TO TALK TO YOURSELF
+slug: "how-to-talk-to-yourself"
 author: Qiran
 type: post
 date: 2019-09-13T07:17:42+00:00
@@ -7,7 +8,7 @@ aliases: ["/how-to-talk-to-yourself/"]
 s:
   - The Now Habit
 ---
-![](/uploads/2019/09/image.png)
+﻿![](/uploads/2019/09/image.png)
 
 #### The “Have To’s”—Messages of Stress
 

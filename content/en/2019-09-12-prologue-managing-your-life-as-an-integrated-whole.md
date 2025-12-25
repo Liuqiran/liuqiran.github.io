@@ -1,5 +1,6 @@
-﻿---
+---
 title: 'Prologue: Managing your life as an integrated whole'
+slug: "prologue-managing-your-life-as-an-integrated-whole"
 author: Qiran
 type: post
 date: 2019-09-12T08:57:01+00:00
@@ -7,7 +8,7 @@ aliases: ["/prologue-managing-your-life-as-an-integrated-whole/"]
 s:
   - Your Money or Your Life
 ---
-**The old road map**: Our planet face a lot of problems since the Industry Revolution, seems like we are using the old road map from the 19th century as for money and our life.
+﻿**The old road map**: Our planet face a lot of problems since the Industry Revolution, seems like we are using the old road map from the 19th century as for money and our life.
 
 **Creating a new road `<g class="gr_ gr\_5 gr-alert gr\_spell gr\_inline\_cards gr\_run\_anim ContextualSpelling ins-del multiReplace" id="5" data-gr-id="5">`map`</g>`**
 

@@ -1,5 +1,6 @@
-﻿---
+---
 title: FINE-TUNING YOUR PROGRESS
+slug: "fine-tuning-your-progress"
 author: Qiran
 type: post
 date: 2020-02-08T10:31:04+00:00
@@ -8,7 +9,7 @@ tags:
   - The Now Habit
 
 ---
-**PLANNED SETBACKS**  
+﻿**PLANNED SETBACKS**  
 You can try to plan procrastination when you meet a big project, and record your self-statement, these statements may be your old pattern.
 
 ### RESILIENCE AND HARDINESS {.wp-block-heading}

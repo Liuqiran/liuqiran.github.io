@@ -1,5 +1,6 @@
-﻿---
+---
 title: Whether You Want It or Not…It’s Yours
+slug: "whether-you-want-it-or-not-its-yours-2"
 author: Qiran
 type: post
 date: 2020-07-27T03:18:20+00:00
@@ -8,7 +9,7 @@ tags:
   - Feel The Fear And Do It Anyway
 
 ---
-THE TRUTH IS THAT YOU REALLY ARE IN CONTROL—IN TOTAL CONTROL. You are consciously or unconsciously choosing to be in that lousy job.
+﻿THE TRUTH IS THAT YOU REALLY ARE IN CONTROL—IN TOTAL CONTROL. You are consciously or unconsciously choosing to be in that lousy job.
 
 <ol class="wp-block-list">
   <li>

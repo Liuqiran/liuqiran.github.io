@@ -1,5 +1,6 @@
 ---
 title: 🧭 What I'm Doing Now
+slug: "now"
 author: Qiran
 type: page
 date: 2025-10-01  

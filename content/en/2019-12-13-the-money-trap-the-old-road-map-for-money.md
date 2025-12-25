@@ -1,5 +1,6 @@
-﻿---
+---
 title: 'THE MONEY TRAP: THE OLD ROAD MAP FOR MONEY'
+slug: "the-money-trap-the-old-road-map-for-money"
 author: Qiran
 type: post
 date: 2019-12-13T09:17:12+00:00
@@ -8,7 +9,7 @@ tags:
   - Your Money or Your Life
 
 ---
-We seem like we don&#8217;t work for a living but work for dying.
+﻿We seem like we don&#8217;t work for a living but work for dying.
 
 We need to think about how to see our jobs, in this world, we have a caste system of job, we divide them from their salaries. 
 

@@ -1,5 +1,6 @@
-﻿---
+---
 title: Neolithic Art
+slug: "neolithic-art"
 author: Qiran
 type: post
 date: 2019-08-13T15:55:13+00:00
@@ -7,7 +8,7 @@ aliases: ["/neolithic-art/"]
 s:
   - Art through the Ages
 ---
-#### Anatolia and Mesopotamia
+﻿#### Anatolia and Mesopotamia
 
 The agriculture developed, many towns developed, so the
 

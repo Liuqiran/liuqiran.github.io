@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 9 Technical breakdown
+slug: "ep-9-technical-breakdown"
 author: Qiran
 type: post
 date: 2023-06-13T14:52:24+00:00
@@ -15,7 +16,7 @@ tags:
   - Podcast
 
 ---
-Last week I went through a serious problem of my server, on which my website runs.  
+﻿Last week I went through a serious problem of my server, on which my website runs.  
 It started with the problem of the version of PHP. The edition of the current PHP is very old and it couldn&#8217;t support the running of some plugins. Then I tried to install a new version of PHP, but it didn&#8217;t work. When I tried to uninstall the old version, the server crashed and could not be restarted due to an error called &#8220;kernel panic&#8221;.  
 I&#8217;ve done my best to fix it myself until midnight. It&#8217;s useless. I could only ask other people for help. The technical staff couldn&#8217;t solve it either, but they helped me to backup the data. It&#8217;s a very tedious experience and I could restore my server after several days. Finally, I used the backup data and restored my website.
 

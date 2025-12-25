@@ -1,5 +1,6 @@
-﻿---
+---
 title: Art through the Ages
+slug: "basic-conceptions"
 author: Qiran
 type: post
 date: 2019-07-17T06:20:39+00:00  
@@ -8,7 +9,7 @@ aliases: ["/basic-conceptions/"]
 tags:
 - Western Art history
 ---
-# Basic concepts
+﻿# Basic concepts
 
 What is art history:
 

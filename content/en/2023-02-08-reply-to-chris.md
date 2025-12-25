@@ -1,5 +1,6 @@
-﻿---
+---
 title: Reply to Chris
+slug: "reply-to-chris"
 author: Qiran
 type: post
 date: 2023-02-08T12:31:56+00:00
@@ -10,7 +11,7 @@ tags:
   - Letter
 
 ---
-Chris:  
+﻿Chris:  
 I definitely know Austria.  
 You can find out more about me on my personal website. By the way, why not leave a footprint there?
 

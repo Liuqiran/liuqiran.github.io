@@ -1,5 +1,6 @@
-﻿---
+---
 title: Why don’t lie
+slug: "why-dont-lie"
 author: Qiran
 type: post
 date: 2023-03-13T23:06:31+00:00
@@ -11,7 +12,7 @@ tags:
   - Psychology
 
 ---
-When we were kids, elders always tell us not to lie. But most of us lie because we are afraid of the consequences after telling the truths. As a child, lying is a good protection.&nbsp;
+﻿When we were kids, elders always tell us not to lie. But most of us lie because we are afraid of the consequences after telling the truths. As a child, lying is a good protection.&nbsp;
 
 It&#8217;s always a bad habit to lie to yourself or to other people.
 

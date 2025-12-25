@@ -1,5 +1,6 @@
-﻿---
+---
 title: GUILT-FREE PLAY, QUALITY WORK
+slug: "guilt-free-play-quality-work"
 author: Qiran
 type: post
 date: 2019-10-11T04:07:34+00:00
@@ -8,7 +9,7 @@ tags:
   - The Now Habit
 
 ---
-If you see your work insatiable and infinite, you fell into a negative mind.
+﻿If you see your work insatiable and infinite, you fell into a negative mind.
 
 **THE IMPORTANCE OF PLAY**
 

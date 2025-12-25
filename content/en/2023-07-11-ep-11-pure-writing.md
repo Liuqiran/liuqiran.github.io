@@ -1,5 +1,6 @@
-﻿---
+---
 title: EP 11 Pure writing
+slug: "ep-11-pure-writing"
 author: Qiran
 type: post
 date: 2023-07-11T13:39:29+00:00
@@ -17,7 +18,7 @@ tags:
   - Podcast
 
 ---
-<figure class="wp-block-embed is-type-wp-embed is-provider-anchor-fm-inc wp-block-embed-anchor-fm-inc">
+﻿<figure class="wp-block-embed is-type-wp-embed is-provider-anchor-fm-inc wp-block-embed-anchor-fm-inc">
 
 <div class="wp-block-embed__wrapper">
 </div></figure>

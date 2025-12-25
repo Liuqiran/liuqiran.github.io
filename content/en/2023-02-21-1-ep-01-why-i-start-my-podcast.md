@@ -1,5 +1,6 @@
-﻿---
+---
 title: '1: EP-01 Why I start my podcast'
+slug: "1-ep-01-why-i-start-my-podcast"
 author: Qiran
 type: post
 date: 2023-02-21T07:29:08+00:00
@@ -20,7 +21,7 @@ tags:
   - Journal
 
 ---
-<!--[if lt IE 9]><![endif]--><audio class="wp-audio-shortcode" id="audio-4600-1" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a?_=1" />
+﻿<!--[if lt IE 9]><![endif]--><audio class="wp-audio-shortcode" id="audio-4600-1" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a?_=1" />
 <!-- -->
 <https://anchor.fm/s/db2d53e4/podcast/play/65408337/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-21%2F31aaec7e-c25d-72f6-6051-835f196df83e.m4a></audio>
 <!-- -->

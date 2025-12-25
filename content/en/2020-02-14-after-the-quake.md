@@ -1,5 +1,6 @@
-﻿---
+---
 title: After the Quake
+slug: "after-the-quake"
 author: Qiran
 type: post
 date: 2020-02-14T12:31:28+00:00
@@ -8,7 +9,7 @@ tags:
   - "One Child: The Story of China's Most Radical Experiment"
 
 ---
-**I**  
+﻿**I**  
 After the quake, The parent lost their own child.
 
 **II**  

@@ -1,5 +1,6 @@
-﻿---
+---
 title: A Brief Overview of 19th Century English
+slug: "a-brief-overview-of-19th-century-english"
 author: Qiran
 type: post
 date: 2019-11-04T12:13:17+00:00
@@ -8,7 +9,7 @@ tags:
   - English
 
 ---
-Google Books Ngram Viewer  
+﻿Google Books Ngram Viewer  
 **Ngram**  
 1. Commonly called an Ngram  
 2. Statistical analysis of text or speech  

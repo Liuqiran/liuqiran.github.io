@@ -1,5 +1,6 @@
-﻿---
+---
 title: Loop Habits Tracker
+slug: "loop-habits-tracker"
 author: Qiran
 type: post
 date: 2023-05-09T15:09:09+00:00
@@ -11,4 +12,4 @@ tags:
   - Software
 
 ---
-Maybe I can use plain text instead of software to track my habits.
+﻿Maybe I can use plain text instead of software to track my habits.

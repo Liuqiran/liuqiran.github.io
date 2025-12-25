@@ -1,5 +1,6 @@
-﻿---
+---
 title: 👤 About me
+slug: "about-me"
 author: Qiran
 type: page
 date: 2019-02-09T03:14:24+00:00
@@ -8,7 +9,7 @@ aliases: ["/en/about-me-2/"]
 tags:
   - Building Site
 ---
-Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）
+﻿Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）
 
 <div class="profile-section">
   <div class="profile-text">

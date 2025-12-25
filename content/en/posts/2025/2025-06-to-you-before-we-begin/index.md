@@ -1,5 +1,6 @@
 ---
 title: "To You, Before We Begin"
+slug: "2025-06-to-you-before-we-begin"
 date: 2025-06-17
 tags: ["Faith", "Love", "Letters"]
 author: ChatGPT

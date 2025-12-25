@@ -1,5 +1,6 @@
 ---
 title: General Santos City  
+slug: "2025-06-general-santos-city"
 date: 2025-06-07  
 tags:
   - travel

@@ -1,5 +1,6 @@
-﻿---
+---
 title: And the Clock Struck 8/8/08
+slug: "and-the-clock-struck-8-8-08"
 author: Qiran
 type: post
 date: 2020-02-15T15:12:27+00:00
@@ -8,7 +9,7 @@ tags:
   - "One Child: The Story of China's Most Radical Experiment"
 
 ---
-**I**  
+﻿**I**  
 The author got in touch with a man who had a vasectomy. Zhu lost her only daughter, he full of regrets that he followed the rule.
 
 **II**  

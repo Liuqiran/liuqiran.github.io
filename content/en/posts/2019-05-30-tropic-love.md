@@ -1,5 +1,6 @@
-﻿---
+---
 title: Tropic love
+slug: "tropic-love"
 author: Qiran
 type: post
 date: 2019-05-30T09:29:54+00:00
@@ -9,7 +10,7 @@ tags:
   - Mood
   - Music
 ---
-<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+﻿<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
 
 <div class="wp-block-embed__wrapper">
 </div></figure>

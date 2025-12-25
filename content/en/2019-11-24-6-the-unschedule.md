@@ -1,5 +1,6 @@
-﻿---
+---
 title: 6. THE UNSCHEDULE
+slug: "6-the-unschedule"
 author: Qiran
 type: post
 date: 2019-11-24T13:06:41+00:00
@@ -7,7 +8,7 @@ aliases: ["/6-the-unschedule/"]
 tags:
   - The Now Habit
 ---
-When things start, we find the projects take less time than your thinking.
+﻿When things start, we find the projects take less time than your thinking.
 
 #### EVEN PRODUCERS NEED A SYSTEM {.wp-block-heading}
 

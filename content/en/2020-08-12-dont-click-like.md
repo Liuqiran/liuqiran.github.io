@@ -1,5 +1,6 @@
-﻿---
+---
 title: Don’t Click “Like”
+slug: "dont-click-like"
 author: Qiran
 type: post
 date: 2020-08-12T13:34:08+00:00
@@ -8,7 +9,7 @@ tags:
   - Digital Minimalism
 
 ---
-**Practice: leave your phone at home**  
+﻿**Practice: leave your phone at home**  
 Having your phone is not a crisis.
 
 **Practice: Take long walks**  

@@ -1,11 +1,12 @@
---- 
+---
 title: Auntie's view on Marriage
+slug: "2025-06-auntie-on-marriage"
 author: Liu Zhongjing
 draft: false
 date: 2025-06-01  
 tags: 
   - Auntology
----   
+---
 
 The so-called conflict between traditional society and modern society is actually a conflict between Christian society and modern society. What we call modern society's features were actually commonplace in pre-modern non-Christian societies. Progressive/leftist culture spreads to non-Christian societies with much less resistance than to Christian societies. For example, homosexuality was never an issue in Confucian society, transgender people have existed since ancient times in the Philippines, Thailand and Southeast Asia, liberal marriage and sexual liberation with no-fault divorce was more prevalent in the Roman Empire than in the modern West, and cross-species identification and marriage frequently appeared in African and worldwide primitive tribes.
 

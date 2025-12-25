@@ -1,5 +1,6 @@
-﻿---
+---
 title: Digitization
+slug: "digitization"
 author: Qiran
 type: post
 date: 2023-11-27T12:41:28+00:00
@@ -11,4 +12,4 @@ xyz_twap:
 tags:
   - Journal
 ---
-I will try to digitize all of my diaries. It&#8217;s a very big project.
+﻿I will try to digitize all of my diaries. It&#8217;s a very big project.

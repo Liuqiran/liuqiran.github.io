@@ -1,5 +1,6 @@
-﻿---
+---
 title: '4: Emergence of Private Fine Art Schools'
+slug: "4-emergence-of-private-fine-art-schools"
 author: Qiran
 type: post
 date: 2019-10-28T11:52:46+00:00
@@ -8,7 +9,7 @@ tags:
   - Chinese Fine Art Education in 20 Century
 
 ---
-#### 第一节 上海美专与刘海粟的美术教育活动 {.wp-block-heading}
+﻿#### 第一节 上海美专与刘海粟的美术教育活动 {.wp-block-heading}
 
 **早期上海美专的美术教育**
 

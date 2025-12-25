@@ -1,5 +1,6 @@
-﻿---
+---
 title: Between Damocles and Hydra
+slug: "between-damocles-and-hydra"
 author: Qiran
 type: post
 date: 2019-08-26T16:59:31+00:00
@@ -7,7 +8,7 @@ aliases: ["/between-damocles-and-hydra/"]
 s:
   - 'Antifragile: Things That Gain From Disorder'
 ---
-#### HALF OF LIFE HAS NO NAME
+﻿#### HALF OF LIFE HAS NO NAME
 
 The opposite of fragile is not robust, half of our life has no name for.
 

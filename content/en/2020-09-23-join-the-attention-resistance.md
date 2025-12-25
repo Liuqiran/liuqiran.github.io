@@ -1,5 +1,6 @@
-﻿---
+---
 title: Join the Attention Resistance
+slug: "join-the-attention-resistance"
 author: Qiran
 type: post
 date: 2020-09-23T06:16:17+00:00
@@ -8,7 +9,7 @@ tags:
   - Digital Minimalism
 
 ---
-**DAVID AND GOLIATH 2.0**  
+﻿**DAVID AND GOLIATH 2.0**  
 Use your attention intentionally.
 
 **PRACTICE: DELETE SOCIAL MEDIA FROM YOUR PHONE**  

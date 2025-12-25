@@ -1,5 +1,6 @@
-﻿---
+---
 title: Legality of Party
+slug: "legality-of-party"
 author: Qiran
 type: post
 date: 2019-06-12T20:56:54+00:00
@@ -10,7 +11,7 @@ tags:
   - China
   - Journal
 ---
-原文：https://pincong.rocks/question/4825
+﻿原文：https://pincong.rocks/question/4825
 
 <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
   <p>

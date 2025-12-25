@@ -1,5 +1,6 @@
-﻿---
+---
 title: Loneliness
+slug: "loneliness"
 author: Qiran
 type: post
 date: 2019-08-28T04:19:44+00:00
@@ -7,7 +8,7 @@ aliases: ["/loneliness/"]
 s:
   - Becoming Human
 ---
-The author got some experiences which saw so many disabilities, they full of loneliness, painful.
+﻿The author got some experiences which saw so many disabilities, they full of loneliness, painful.
 
 A human being needs a companion, and we need truths and make our worlds or communities better.
 
