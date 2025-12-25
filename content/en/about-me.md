@@ -3,7 +3,7 @@ title: 👤 About me
 author: Qiran
 type: page
 date: 2019-02-09T03:14:24+00:00
-lastmod: 2025-11-24
+lastmod: 2025-12-25
 aliases: ["/en/about-me-2/"]
 tags:
   - Building Site
@@ -48,7 +48,7 @@ Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends.
 
 - **MBTI**: [INFP](https://www.16personalities.com/infp-personality)
 
-**🫂Relationship Status**: With [Sheena Mae Mejos Ucab](https://www.facebook.com/sheenamae.ucab/) since Sep 27, 2025
+**🫂Relationship Status**: With [Sheena](https://www.facebook.com/sheenamae.ucab/) since Sep 27, 2025
 
 **[🧑‍🤝‍🧑 Online Neighbors](/en/my-friends/)**
 
