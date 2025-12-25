@@ -4,16 +4,26 @@
 {{- $lang := .Lang -}}
 
 {{- $server := "" -}}
-{{- with site.Params.waline -}}
-  {{- with .serverURL -}}
-    {{- $server = . -}}
-  {{- end -}}
+{{- with site.Params.waline.serverURL -}}
+  {{- $server = . -}}
 {{- end -}}
 {{- $hasWaline := ne $server "" -}}
 
+{{/* Waline / Giscus 的语言映射 */}}
+{{- $walineLang := "en" -}}
+{{- $giscusLang := "en" -}}
+{{- if eq $lang "zh" -}}
+  {{- $walineLang = "zh-CN" -}}
+  {{- $giscusLang = "zh-CN" -}}
+{{- else if eq $lang "ja" -}}
+  {{- $walineLang = "ja" -}}
+  {{- $giscusLang = "ja" -}}
+{{- end -}}
+
+{{/* commentPath（线程ID）优先级：用 if/else-if 链，避免 with/else-if 解析报错 */}}
 {{- $commentPath := "" -}}
-{{- with .Params.waline_path -}}
-  {{- $commentPath = . -}}
+{{- if .Params.waline_path -}}
+  {{- $commentPath = .Params.waline_path -}}
 {{- else if .Params.url -}}
   {{- $commentPath = .Params.url -}}
 {{- else if .Params.aliases -}}
@@ -21,7 +31,7 @@
 {{- else if .Params.translationKey -}}
   {{- $commentPath = printf "t:%s" .Params.translationKey -}}
 {{- else -}}
-  {{- $commentPath = .RelPermalink | replaceRE "^/(en|zh)/" "/" -}}
+  {{- $commentPath = .RelPermalink | replaceRE "^/(en|zh|ja)/" "/" -}}
 {{- end -}}
 {{- $commentPath = $commentPath | replaceRE "/$" "" -}}
 
@@ -81,6 +91,7 @@ html[lang^="ja"] .comment-system *{
   --waline-border-color: var(--border);
   --waline-box-shadow: none;
 }
+/* PaperMod 暗色一般是 body.dark */
 body.dark #waline{
   /* 可选：想更黑就解除注释
   --waline-bg-color: #16181a;
@@ -90,7 +101,7 @@ body.dark #waline{
 }
 </style>
 
-{{/* ===== 2) Invite 文案（现在 $lang 已经可用）===== */}}
+{{/* ===== 2) Invite 文案 ===== */}}
 {{- $invites := dict
   "zh" (slice
     (dict "t" "你的留言，是我继续写下去的动力 👇" "s" "短句也很珍贵，我会认真读。")
@@ -143,15 +154,12 @@ body.dark #waline{
     const serverURL = {{ $server | jsonify }};
     const commentPath = {{ $commentPath | jsonify }};
 
-    console.log("Waline serverURL =", serverURL);
-    console.log("Waline path =", commentPath);
-
     init({
       el: '#waline',
       serverURL,
       path: commentPath,
       requiredMeta: ['nick', 'mail'],
-      lang: {{ $lang | jsonify }},
+      lang: {{ $walineLang | jsonify }},
       locale: { reactionTitle: "" },
       reaction: true,
       dark: 'body.dark',
@@ -174,7 +182,7 @@ body.dark #waline{
           data-emit-metadata="0"
           data-input-position="bottom"
           data-theme="preferred_color_scheme"
-          data-lang="{{ if eq $lang "zh" }}zh-CN{{ else if eq $lang "ja" }}ja{{ else }}en{{ end }}"
+          data-lang="{{ $giscusLang }}"
           crossorigin="anonymous"
           async>
   </script>
