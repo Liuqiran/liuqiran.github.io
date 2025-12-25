@@ -1,5 +1,6 @@
 ---
 title: EP 6 Plain text
+translationKey: ep-6-plain-text
 slug: "ep-6-plain-text"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: What Are Emotions For?
+translationKey: what-are-emotions-for
 slug: "what-are-emotions-for"
 author: Qiran
 type: post

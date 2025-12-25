@@ -1,5 +1,6 @@
 ---
 title: 《文征明对吴门画派的贡献》文献综述与大纲
+translationKey: 2019-03-24-wen-zhengming-of-wumen
 author: Qiran
 type: post
 date: 2019-03-24T13:17:11+00:00

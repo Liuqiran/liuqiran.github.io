@@ -1,5 +1,6 @@
 ---
 title: Two Years Anniversary of Using Anki
+translationKey: two-years-anniversary-of-using-anki
 slug: "two-years-anniversary-of-using-anki"
 author: Qiran
 type: post

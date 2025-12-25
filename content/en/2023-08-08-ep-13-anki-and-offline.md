@@ -1,5 +1,6 @@
 ---
 title: EP 13 Anki and offline
+translationKey: ep-13-anki-and-offline
 slug: "ep-13-anki-and-offline"
 author: Qiran
 type: post

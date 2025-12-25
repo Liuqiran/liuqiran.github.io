@@ -1,5 +1,6 @@
 ---
 title: EP 5 Thirteen years of journaling
+translationKey: ep-5-thirteen-years-of-journaling
 slug: "ep-5-thirteen-years-of-journaling"
 author: Qiran
 type: post

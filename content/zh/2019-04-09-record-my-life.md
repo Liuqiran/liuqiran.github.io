@@ -1,5 +1,6 @@
 ---
 title: 2019.4.9 Record my life
+translationKey: 2019-04-09-record-my-life
 author: Qiran
 type: post
 date: 2019-04-09T04:34:54+00:00

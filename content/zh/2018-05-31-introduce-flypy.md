@@ -1,5 +1,6 @@
 ---
 title: 提高你的输入效率——小鹤输入法介绍
+translationKey: 2018-05-31-introduce-flypy
 author: Qiran
 type: post
 date: 2018-05-31T07:44:05+00:00

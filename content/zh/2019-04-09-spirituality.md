@@ -1,5 +1,6 @@
 ---
 title: 【读书笔记】《当代艺术的主题》：精神性
+translationKey: 2019-04-09-spirituality
 author: Qiran
 type: post
 date: 2019-04-09T11:42:36+00:00

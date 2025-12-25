@@ -1,5 +1,6 @@
 ---
 title: 'ARGUMENT THREE: SOCIAL MEDIA IS MAKING YOU INTO AN ASSHOLE'
+translationKey: argument-three-social-media-is-making-you-into-an-asshole-2
 slug: "argument-three-social-media-is-making-you-into-an-asshole-2"
 author: Qiran
 type: post

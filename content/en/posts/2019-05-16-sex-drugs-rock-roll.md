@@ -1,4 +1,5 @@
----
+---translationKey: sex-drugs-rock-roll
+
 tags:title: 'Sex, drugs, rock & roll'
 slug: "sex-drugs-rock-roll"
 author: Qiran

@@ -1,5 +1,6 @@
 ---
 title: Writing freely
+translationKey: writing-freely
 slug: "writing-freely"
 author: Qiran
 type: post

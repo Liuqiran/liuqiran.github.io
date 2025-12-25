@@ -1,5 +1,6 @@
 ---
 title: Whether You Want It or Not…It’s Yours
+translationKey: whether-you-want-it-or-not-its-yours-2
 slug: "whether-you-want-it-or-not-its-yours-2"
 author: Qiran
 type: post

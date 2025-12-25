@@ -1,5 +1,6 @@
 ---
 title: Thinking aloud
+translationKey: thinking-aloud
 slug: "thinking-aloud"
 author: Qiran
 type: post

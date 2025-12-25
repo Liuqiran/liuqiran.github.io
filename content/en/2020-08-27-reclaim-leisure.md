@@ -1,5 +1,6 @@
 ---
 title: Reclaim Leisure
+translationKey: reclaim-leisure
 slug: "reclaim-leisure"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Chinese conversion
+translationKey: chinese-conversion
 slug: "chinese-conversion"
 author: Qiran
 type: post

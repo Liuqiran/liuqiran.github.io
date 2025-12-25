@@ -1,5 +1,6 @@
 ---
 title: EP-01 Why I start my podcast
+translationKey: ep-01-why-i-start-my-podcast
 slug: "ep-01-why-i-start-my-podcast"
 author: Qiran
 type: post

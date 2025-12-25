@@ -1,5 +1,6 @@
 ---
 title: EP 3 Feel the fear
+translationKey: ep-3-feel-the-fear
 slug: "ep-3-feel-the-fear"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Switched to Windows
+translationKey: switched-to-windows
 slug: "switched-to-windows"
 author: Qiran
 type: post

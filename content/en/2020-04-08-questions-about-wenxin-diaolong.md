@@ -1,5 +1,6 @@
 ---
 title: Questions about Wenxin Diaolong
+translationKey: questions-about-wenxin-diaolong
 slug: "questions-about-wenxin-diaolong"
 author: Qiran
 type: post

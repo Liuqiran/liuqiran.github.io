@@ -1,5 +1,6 @@
 ---
 title: CHAPTER 4 Tactical Dispositions
+translationKey: chapter-4-tactical-dispositions
 slug: "chapter-4-tactical-dispositions"
 author: Qiran
 type: post

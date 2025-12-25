@@ -1,5 +1,6 @@
 ---
 title: Loneliness
+translationKey: loneliness
 slug: "loneliness"
 author: Qiran
 type: post

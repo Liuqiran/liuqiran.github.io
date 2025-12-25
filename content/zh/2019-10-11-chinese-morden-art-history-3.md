@@ -1,5 +1,6 @@
 ---
 title: 中国近现代美术史（1840-1949）3 社团缘起与中国画的变革
+translationKey: 2019-10-11-chinese-morden-art-history-3
 author: Qiran
 type: post
 date: 2019-10-11T03:44:31+00:00

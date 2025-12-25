@@ -1,5 +1,6 @@
 ---
 title: Year-end Update 
+translationKey: 2025-year-end-update
 slug: "2025-year-end-update"
 draft: true 
 author: Qiran

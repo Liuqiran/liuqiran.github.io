@@ -1,5 +1,6 @@
 ---
 title: EP 14 Information quality
+translationKey: ep-14-information-quality
 slug: "ep-14-information-quality"
 author: Qiran
 type: post

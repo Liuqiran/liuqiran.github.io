@@ -1,5 +1,6 @@
 ---
 title: FINE-TUNING YOUR PROGRESS
+translationKey: fine-tuning-your-progress
 slug: "fine-tuning-your-progress"
 author: Qiran
 type: post

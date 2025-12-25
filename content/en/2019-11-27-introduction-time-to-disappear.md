@@ -1,5 +1,6 @@
 ---
 title: 'Introduction: Time to Disappear'
+translationKey: introduction-time-to-disappear
 slug: "introduction-time-to-disappear"
 author: Qiran
 type: post

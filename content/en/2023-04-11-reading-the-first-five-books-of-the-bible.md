@@ -1,5 +1,6 @@
 ---
 title: Reading the first five books of the Bible
+translationKey: reading-the-first-five-books-of-the-bible
 slug: "reading-the-first-five-books-of-the-bible"
 author: Qiran
 type: post

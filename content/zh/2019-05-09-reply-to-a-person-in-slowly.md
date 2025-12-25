@@ -1,5 +1,6 @@
 ---
 title: Reply to a person in Slowly
+translationKey: 2019-05-09-reply-to-a-person-in-slowly
 author: Qiran
 type: post
 date: 2019-05-09T12:28:12+00:00

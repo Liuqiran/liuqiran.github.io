@@ -1,5 +1,6 @@
 ---
 title: 寒假调研个人总结
+translationKey: 2019-03-29-winter-research-notes
 author: Qiran
 type: post
 date: 2019-03-29T00:59:16+00:00

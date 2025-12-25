@@ -1,5 +1,6 @@
 ---
 title: Update home page
+translationKey: update-home-page
 slug: "update-home-page"
 author: Qiran
 type: post

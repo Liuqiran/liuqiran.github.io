@@ -1,5 +1,6 @@
 ---
 title: 6. THE UNSCHEDULE
+translationKey: 6-the-unschedule
 slug: "6-the-unschedule"
 author: Qiran
 type: post

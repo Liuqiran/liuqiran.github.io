@@ -1,5 +1,6 @@
 ---
 title: 长毛象
+translationKey: 2021-02-20-mastodon-button
 author: Qiran
 type: post
 date: 2021-02-20T02:29:16+00:00

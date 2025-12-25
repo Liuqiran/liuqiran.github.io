@@ -1,5 +1,6 @@
 ---
 title: Overcompensation and Overreaction Everywhere
+translationKey: overcompensation-and-overreaction-everywhere
 slug: "overcompensation-and-overreaction-everywhere"
 author: Qiran
 type: post

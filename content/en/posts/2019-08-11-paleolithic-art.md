@@ -1,5 +1,6 @@
 ---
 title: Paleolithic Art
+translationKey: paleolithic-art
 slug: "paleolithic-art"
 author: Qiran
 type: post

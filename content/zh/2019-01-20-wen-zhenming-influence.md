@@ -1,5 +1,6 @@
 ---
 title: 文征明的儒雅情趣对绘画创作的影响
+translationKey: 2019-01-20-wen-zhenming-influence
 author: Qiran
 type: post
 date: 2019-01-20T08:41:29+00:00

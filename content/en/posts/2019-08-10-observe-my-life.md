@@ -1,5 +1,6 @@
 ---
 title: Observe my life
+translationKey: observe-my-life
 slug: "observe-my-life"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Holding Hands in the Dark
+translationKey: holding-hands-in-the-dark
 slug: "holding-hands-in-the-dark"
 author: Qiran
 type: post

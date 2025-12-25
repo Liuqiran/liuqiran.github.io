@@ -1,5 +1,6 @@
 ---
 title: Separation
+translationKey: separation
 slug: "separation"
 author: Qiran
 type: post

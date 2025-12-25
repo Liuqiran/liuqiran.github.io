@@ -1,5 +1,6 @@
 ---
 title: The Cat and the Washing Machine
+translationKey: the-cat-and-the-washing-machine
 slug: "the-cat-and-the-washing-machine"
 author: Qiran
 type: post

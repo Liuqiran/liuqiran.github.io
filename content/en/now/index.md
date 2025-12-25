@@ -1,5 +1,6 @@
 ---
 title: 🧭 What I'm Doing Now
+translationKey: now
 slug: "now"
 author: Qiran
 type: page

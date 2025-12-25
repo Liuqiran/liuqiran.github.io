@@ -1,5 +1,6 @@
 ---
 title: 📚 Reading list
+translationKey: reading-list
 slug: "reading-list"
 author: Qiran
 type: page

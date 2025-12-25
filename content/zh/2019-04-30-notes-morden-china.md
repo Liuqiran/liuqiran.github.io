@@ -1,5 +1,6 @@
 ---
 title: 读书笔记：《近代中国社会的新陈代谢》
+translationKey: 2019-04-30-notes-morden-china
 author: Qiran
 type: post
 date: 2019-04-30T03:00:41+00:00

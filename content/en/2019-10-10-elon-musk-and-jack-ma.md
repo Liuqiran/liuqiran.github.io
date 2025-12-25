@@ -1,5 +1,6 @@
 ---
 title: Elon Musk and Jack Ma
+translationKey: elon-musk-and-jack-ma
 slug: "elon-musk-and-jack-ma"
 author: Qiran
 type: post

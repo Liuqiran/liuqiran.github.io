@@ -1,5 +1,6 @@
 ---
 title: Prologue
+translationKey: antifragile-1
 slug: "antifragile-1"
 author: Qiran
 type: post

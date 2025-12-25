@@ -1,5 +1,6 @@
 ---
 title: Reply in Slowly
+translationKey: replay-in-slowly
 slug: "replay-in-slowly"
 author: Qiran
 type: post

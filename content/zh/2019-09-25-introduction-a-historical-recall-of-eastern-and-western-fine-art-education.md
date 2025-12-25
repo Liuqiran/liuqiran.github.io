@@ -1,5 +1,6 @@
 ---
 title: 'Introduction: A Historical Recall of  Eastern and Western Fine Art Education'
+translationKey: 2019-09-25-introduction-a-historical-recall-of-eastern-and-western-fine-art-education
 author: Qiran
 type: post
 date: 2019-09-25T02:27:33+00:00

@@ -1,5 +1,6 @@
 ---
 title: 建站周年纪念日
+translationKey: 2020-02-09-one-year-blogging-anniversary
 author: Qiran
 type: post
 date: 2020-02-09T15:15:41+00:00

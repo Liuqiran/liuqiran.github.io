@@ -1,5 +1,6 @@
 ---
 title: 摘录：阿姨对中国一线城市的评论
+translationKey: 2022-06-21-liuzhongjings-opinion-about-first-tier-cities
 author: 阿姨
 type: post
 date: 2022-06-21T11:25:37+00:00

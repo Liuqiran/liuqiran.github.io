@@ -1,5 +1,6 @@
 ---
 title: Chapter V RIDDLES IN THE DARK
+translationKey: chapter-v-riddles-in-the-dark
 slug: "chapter-v-riddles-in-the-dark"
 author: Qiran
 type: post

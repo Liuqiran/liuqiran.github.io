@@ -1,5 +1,6 @@
 ---
 title: Automated system
+translationKey: automated-system
 slug: "automated-system"
 author: Qiran
 type: post

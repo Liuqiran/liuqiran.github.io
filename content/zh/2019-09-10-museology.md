@@ -1,5 +1,6 @@
 ---
 title: Museology
+translationKey: 2019-09-10-museology
 author: Qiran
 type: post
 date: 2019-09-10T00:18:36+00:00

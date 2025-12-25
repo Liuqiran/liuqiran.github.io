@@ -1,5 +1,6 @@
 ---
 title: 【读书笔记】《当代艺术的主题》第三章：身体
+translationKey: 2019-03-14-contemporrary-art-body
 author: Qiran
 type: post
 date: 2019-03-14T02:33:47+00:00

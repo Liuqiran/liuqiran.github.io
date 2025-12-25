@@ -1,5 +1,6 @@
 ---
 title: Painting for aunt
+translationKey: painting-for-aunt
 slug: "painting-for-aunt"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Analects notes 1
+translationKey: analects-notes-1
 slug: "analects-notes-1"
 author: Qiran
 type: post

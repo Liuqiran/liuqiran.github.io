@@ -1,5 +1,6 @@
 ---
 title: Pa Yih 13 translations
+translationKey: pa-yih-13-translations
 slug: "pa-yih-13-translations"
 author: Qiran
 type: post

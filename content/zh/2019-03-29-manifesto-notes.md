@@ -1,5 +1,6 @@
 ---
 title: 《共产党宣言》阅读笔记
+translationKey: 2019-03-29-manifesto-notes
 author: Qiran
 type: post
 date: 2019-03-29T09:34:15+00:00

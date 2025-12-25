@@ -1,5 +1,6 @@
 ---
 title: 添加按鈕
+translationKey: 2020-05-15-add-button
 author: Qiran
 type: post
 date: 2020-05-14T23:42:07+00:00

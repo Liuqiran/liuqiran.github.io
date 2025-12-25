@@ -1,5 +1,6 @@
 ---
 title: 2:Chinese Art Education in the Turn of 20th Century
+translationKey: 2019-09-29-chinese-art-education-in-the-turn-of-20th-century
 author: Qiran
 type: post
 date: 2019-09-29T02:15:38+00:00

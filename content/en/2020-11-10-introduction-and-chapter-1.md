@@ -1,5 +1,6 @@
 ---
 title: Introduction and Chapter 1
+translationKey: introduction-and-chapter-1
 slug: "introduction-and-chapter-1"
 author: Qiran
 type: post

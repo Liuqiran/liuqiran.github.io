@@ -1,5 +1,6 @@
 ---
 title: Change the title
+translationKey: change-the-title
 slug: "change-the-title"
 author: Qiran
 type: post

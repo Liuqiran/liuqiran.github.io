@@ -1,5 +1,6 @@
 ---
 title: EP 12 Repetition
+translationKey: ep-12-repetition
 slug: "ep-12-repetition"
 author: Qiran
 type: post

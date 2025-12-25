@@ -1,5 +1,6 @@
 ---
 title: Swimming pool
+translationKey: swimming-pool
 slug: "swimming-pool"
 author: Qiran
 type: post

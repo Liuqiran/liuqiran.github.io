@@ -1,5 +1,6 @@
 ---
 title: Art through the Ages
+translationKey: basic-conceptions
 slug: "basic-conceptions"
 author: Qiran
 type: post

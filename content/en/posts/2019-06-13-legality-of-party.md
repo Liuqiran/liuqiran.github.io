@@ -1,5 +1,6 @@
 ---
 title: Legality of Party
+translationKey: legality-of-party
 slug: "legality-of-party"
 author: Qiran
 type: post

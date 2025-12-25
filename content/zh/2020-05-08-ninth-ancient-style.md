@@ -1,5 +1,6 @@
 ---
 title: 九：復古與文人趣味
+translationKey: 2020-05-08-ninth-ancient-style
 author: Qiran
 type: post
 date: 2020-05-08T07:25:40+00:00

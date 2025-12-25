@@ -1,5 +1,6 @@
 ---
 title: 'CHAPTER I: AN UNEXPECTED PARTY'
+translationKey: chapter-i-an-unexpected-party
 slug: "chapter-i-an-unexpected-party"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: 中国近现代美术史 中西美术的混流 第二节 国画和西画
+translationKey: 2019-11-21-chinese-modern-art-history-6-part-2
 author: Qiran
 type: post
 date: 2019-11-21T02:01:41+00:00

@@ -1,5 +1,6 @@
 ---
 title: 20世纪表现北京的绘画
+translationKey: 2019-10-11-20th-art-in-beijing
 author: Qiran
 type: post
 date: 2019-10-11T00:04:21+00:00

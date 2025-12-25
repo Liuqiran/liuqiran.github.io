@@ -1,5 +1,6 @@
 ---
 title: Loop Habits Tracker
+translationKey: loop-habits-tracker
 slug: "loop-habits-tracker"
 author: Qiran
 type: post

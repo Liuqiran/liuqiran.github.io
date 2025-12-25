@@ -1,5 +1,6 @@
 ---
 title: Why We Procrastinate
+translationKey: why-we-procrastinate
 slug: "why-we-procrastinate"
 author: Qiran
 type: post

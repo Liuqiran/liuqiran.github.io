@@ -1,5 +1,6 @@
 ---
 title: 【读书笔记】视觉快感与叙事电影
+translationKey: 2019-03-21-visual-pleasure-and-narrative-cinema
 author: Qiran
 type: post
 date: 2019-03-21T05:37:16+00:00

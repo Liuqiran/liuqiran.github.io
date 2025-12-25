@@ -1,5 +1,6 @@
 ---
 title: Z-library in Nov. 2022
+translationKey: z-library-in-nov-2022
 slug: "z-library-in-nov-2022"
 author: Qiran
 type: post

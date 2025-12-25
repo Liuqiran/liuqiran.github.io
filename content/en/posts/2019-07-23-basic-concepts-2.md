@@ -1,5 +1,6 @@
 ---
 title: Basic concepts 2
+translationKey: basic-concepts-2
 slug: "basic-concepts-2"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: From Pain to Power
+translationKey: from-pain-to-power
 slug: "from-pain-to-power"
 author: Qiran
 type: post

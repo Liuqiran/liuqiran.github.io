@@ -1,5 +1,6 @@
 ---
 title: Journaling for 15 years
+translationKey: journaling-for-15-years
 slug: "journaling-for-15-years"
 date: 2025-04-02
 draft: true

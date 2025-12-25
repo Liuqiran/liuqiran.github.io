@@ -1,5 +1,6 @@
 ---
 title: Change categories
+translationKey: 2021-01-18-change-categories
 author: Qiran
 type: post
 date: 2021-01-18T10:13:15+00:00

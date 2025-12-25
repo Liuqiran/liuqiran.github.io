@@ -1,5 +1,6 @@
 ---
 title: “古意”：善于学习古人
+translationKey: 2019-04-19-ancient-themes
 author: Qiran
 type: post
 date: 2019-04-18T22:38:38+00:00

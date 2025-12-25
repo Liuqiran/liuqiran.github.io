@@ -1,5 +1,6 @@
 ---
 title: If both my mother and my wife fell into the water and I could only save one, who would you consider more important, and why? 
+translationKey: 2025-06-mother-or-wife
 slug: "2025-06-mother-or-wife"
 hidden: true   
 date: 2025-06-07  

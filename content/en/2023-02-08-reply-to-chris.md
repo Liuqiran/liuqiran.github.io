@@ -1,5 +1,6 @@
 ---
 title: Reply to Chris
+translationKey: reply-to-chris
 slug: "reply-to-chris"
 author: Qiran
 type: post

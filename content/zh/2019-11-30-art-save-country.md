@@ -1,5 +1,6 @@
 ---
 title: 中国近现代美术史（1840-1949） 现实主义美术的鼎盛
+translationKey: 2019-11-30-art-save-country
 author: Qiran
 type: post
 date: 2019-11-30T08:42:49+00:00

@@ -1,5 +1,6 @@
 ---
 title: My friends
+translationKey: my-friends
 slug: "my-friends"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: And the Clock Struck 8/8/08
+translationKey: and-the-clock-struck-8-8-08
 slug: "and-the-clock-struck-8-8-08"
 author: Qiran
 type: post

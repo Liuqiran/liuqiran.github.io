@@ -1,5 +1,6 @@
 ---
 title: Chapter 5 Energy 埶篇第五
+translationKey: chapter-5-energy-埶篇第五
 slug: "chapter-5-energy-埶篇第五"
 author: Qiran
 type: post

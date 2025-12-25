@@ -1,5 +1,6 @@
 ---
 title: Music in high school
+translationKey: music-in-high-school
 slug: "music-in-high-school"
 author: Qiran
 type: post

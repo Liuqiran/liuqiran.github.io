@@ -1,5 +1,6 @@
 ---
 title: CHAPTER 6 Tell Them I Love (Some) Randomness
+translationKey: chapter-6-tell-them-i-love-some-randomness
 slug: "chapter-6-tell-them-i-love-some-randomness"
 author: Qiran
 type: post

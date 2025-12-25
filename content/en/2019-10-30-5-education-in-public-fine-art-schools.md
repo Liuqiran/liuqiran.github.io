@@ -1,5 +1,6 @@
 ---
 title: '5: Education in Public Fine Art Schools'
+translationKey: 5-education-in-public-fine-art-schools
 slug: "5-education-in-public-fine-art-schools"
 author: Qiran
 type: post

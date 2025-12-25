@@ -1,5 +1,6 @@
 ---
 title: basic shortcut
+translationKey: basic-shortcut
 slug: "basic-shortcut"
 author: Qiran
 type: post

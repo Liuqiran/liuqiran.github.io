@@ -1,5 +1,6 @@
 ---
 title: 更新了 RSS 订阅地址
+translationKey: 2023-02-10-updated-rss-feed-url
 author: Qiran
 type: post
 date: 2023-02-10T14:31:32+00:00

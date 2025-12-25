@@ -1,5 +1,6 @@
 ---
 title: Free and Easy Wandering
+translationKey: free-and-easy-wandering
 slug: "free-and-easy-wandering"
 author: Qiran
 type: post

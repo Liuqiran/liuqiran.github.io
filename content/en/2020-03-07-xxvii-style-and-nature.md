@@ -1,5 +1,6 @@
 ---
 title: XXVII. Style and Nature
+translationKey: xxvii-style-and-nature
 slug: "xxvii-style-and-nature"
 author: Qiran
 type: post

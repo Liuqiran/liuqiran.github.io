@@ -1,5 +1,6 @@
 ---
 title: Masochism, Culture, and History
+translationKey: masochism-culture-and-history
 slug: "masochism-culture-and-history"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: 重新开放部落格
+translationKey: 2019-11-17-reopen-my-blog
 author: Qiran
 type: post
 date: 2019-11-17T09:42:34+00:00

@@ -1,5 +1,6 @@
 ---
 title: 在Manjaro下使用小鹤音形
+translationKey: 2019-03-20-manjaro-flypy
 author: Qiran
 type: post
 date: 2019-03-19T22:15:57+00:00

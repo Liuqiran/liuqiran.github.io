@@ -1,5 +1,6 @@
 ---
 title: EP 9 Technical breakdown
+translationKey: ep-9-technical-breakdown
 slug: "ep-9-technical-breakdown"
 author: Qiran
 type: post

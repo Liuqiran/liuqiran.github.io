@@ -1,5 +1,6 @@
 ---
 title: 一个人的狂欢
+translationKey: 2019-09-17-joined-foreverblog
 author: Qiran
 type: post
 date: 2019-09-17T13:46:47+00:00

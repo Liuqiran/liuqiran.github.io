@@ -1,5 +1,6 @@
 ---
 title: GUILT-FREE PLAY, QUALITY WORK
+translationKey: guilt-free-play-quality-work
 slug: "guilt-free-play-quality-work"
 author: Qiran
 type: post

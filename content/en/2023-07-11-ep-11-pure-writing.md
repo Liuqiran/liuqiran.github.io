@@ -1,5 +1,6 @@
 ---
 title: EP 11 Pure writing
+translationKey: ep-11-pure-writing
 slug: "ep-11-pure-writing"
 author: Qiran
 type: post

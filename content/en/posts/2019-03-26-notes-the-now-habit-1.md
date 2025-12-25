@@ -1,5 +1,6 @@
 ---
 title: 'Notes: The Now Habit (1)'
+translationKey: notes-the-now-habit-1
 slug: "notes-the-now-habit-1"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Laying plans 1
+translationKey: laying-plans-1
 slug: "laying-plans-1"
 author: Qiran
 type: post

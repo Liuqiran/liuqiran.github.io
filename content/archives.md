@@ -1,4 +1,5 @@
----
+---translationKey: archives
+
 slug: "archives"
 
 

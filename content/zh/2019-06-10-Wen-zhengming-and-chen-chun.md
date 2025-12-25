@@ -1,5 +1,6 @@
 ---
 title: 《文征明与陈淳绘画风格比较研究》
+translationKey: 2019-06-10-Wen-zhengming-and-chen-chun
 author: Qiran
 type: post
 date: 2019-06-10T09:34:04+00:00

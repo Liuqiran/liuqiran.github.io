@@ -1,5 +1,6 @@
 ---
 title: EP 7 Practice
+translationKey: ep-7-practice
 slug: "ep-7-practice"
 author: Qiran
 type: post

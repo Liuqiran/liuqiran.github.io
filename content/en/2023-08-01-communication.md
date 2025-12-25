@@ -1,5 +1,6 @@
 ---
 title: Communication
+translationKey: communication
 slug: "communication"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Practice Wen Zhengming Caotang Shizhi
+translationKey: practice-wen-zhengming-caotang-shizhi
 slug: "practice-wen-zhengming-caotang-shizhi"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Complicate physical activities
+translationKey: complicate-physical-activities
 slug: "complicate-physical-activities"
 author: Qiran
 type: post

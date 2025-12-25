@@ -1,5 +1,6 @@
 ---
 title: 中国近现代美术史 6 中西美术混流（1928-1937）第一节 画坛三重臣
+translationKey: 2019-11-15-chinese-morden-art-history-6-part-1
 author: Qiran
 type: post
 date: 2019-11-15T11:51:42+00:00

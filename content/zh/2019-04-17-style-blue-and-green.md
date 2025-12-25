@@ -1,5 +1,6 @@
 ---
 title: 风格的确立：粗放细腻两种风格与青绿画的创新
+translationKey: 2019-04-17-style-blue-and-green
 author: Qiran
 type: post
 date: 2019-04-17T05:29:44+00:00

@@ -1,5 +1,6 @@
 ---
 title: Connection
+translationKey: connection
 slug: "connection"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: 走向单极化的世界
+translationKey: 2023-02-14-toward-a-unipolar-world
 author: Qiran
 type: post
 date: 2023-02-14T06:12:17+00:00

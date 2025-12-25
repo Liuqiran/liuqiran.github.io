@@ -1,5 +1,6 @@
 ---
 title: 'ARGUMENT ONE: YOU ARE LOSING YOUR FREE WILL'
+translationKey: argument-one-you-are-losing-your-free-will
 slug: "argument-one-you-are-losing-your-free-will"
 author: Qiran
 type: post

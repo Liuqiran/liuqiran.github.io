@@ -1,5 +1,6 @@
 ---
 title: EP 4 AI tool for learning
+translationKey: ep-4-ai-tool-for-learning
 slug: "ep-4-ai-tool-for-learning"
 author: Qiran
 type: post

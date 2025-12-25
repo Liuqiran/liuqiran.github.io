@@ -1,5 +1,6 @@
 ---
 title: Twenty books
+translationKey: twenty-books
 slug: "twenty-books"
 author: Qiran
 type: post

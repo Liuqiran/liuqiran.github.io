@@ -1,5 +1,6 @@
 ---
 title: WORKING IN THE FLOW STATE
+translationKey: working-in-the-flow-state
 slug: "working-in-the-flow-state"
 author: Qiran
 type: post

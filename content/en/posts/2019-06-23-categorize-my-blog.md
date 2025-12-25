@@ -1,5 +1,6 @@
 ---
 title: Categorize my blog
+translationKey: categorize-my-blog
 slug: "categorize-my-blog"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: 📚 阅读书目   
+translationKey: reading-list
 author: Qiran
 type: page
 url: /zh/reading-list-2/

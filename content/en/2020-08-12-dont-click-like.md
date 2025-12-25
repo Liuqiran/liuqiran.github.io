@@ -1,5 +1,6 @@
 ---
 title: Don’t Click “Like”
+translationKey: dont-click-like
 slug: "dont-click-like"
 author: Qiran
 type: post

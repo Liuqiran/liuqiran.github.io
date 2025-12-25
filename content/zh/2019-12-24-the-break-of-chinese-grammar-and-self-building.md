@@ -1,5 +1,6 @@
 ---
 title: 中国语法的崩溃与交互凝视中的自我身份建构–中西艺术交汇中的审美经验或知识形成
+translationKey: 2019-12-24-the-break-of-chinese-grammar-and-self-building
 author: Qiran
 type: post
 date: 2019-12-24T14:23:51+00:00

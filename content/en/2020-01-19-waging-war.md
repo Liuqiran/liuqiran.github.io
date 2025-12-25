@@ -1,5 +1,6 @@
 ---
 title: Waging War
+translationKey: waging-war
 slug: "waging-war"
 author: Qiran
 type: post

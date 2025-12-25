@@ -1,5 +1,6 @@
 ---
 title: 【学习笔记】为什么社交媒介深刻地影响了我们？
+translationKey: 2019-02-20-how-social-media-affects-us
 author: Qiran
 type: post
 date: 2019-02-20T08:05:55+00:00

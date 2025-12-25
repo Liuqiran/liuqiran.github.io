@@ -1,5 +1,6 @@
 ---
 title: Auntie's view on Marriage
+translationKey: 2025-06-auntie-on-marriage
 slug: "2025-06-auntie-on-marriage"
 author: Liu Zhongjing
 draft: false

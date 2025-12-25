@@ -1,5 +1,6 @@
 ---
 title: 另一種真實
+translationKey: 2020-05-07-another-true
 author: Qiran
 type: post
 date: 2020-05-07T12:35:01+00:00

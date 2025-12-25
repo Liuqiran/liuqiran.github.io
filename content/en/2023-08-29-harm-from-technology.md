@@ -1,5 +1,6 @@
 ---
 title: Harm from technology
+translationKey: harm-from-technology
 slug: "harm-from-technology"
 author: Qiran
 type: post

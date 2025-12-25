@@ -1,5 +1,6 @@
 ---
 title: Masochism and sadism
+translationKey: masochism-and-sadism
 slug: "masochism-and-sadism"
 author: Qiran
 type: post

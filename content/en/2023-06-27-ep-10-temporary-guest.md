@@ -1,5 +1,6 @@
 ---
 title: EP 10 Temporary guest
+translationKey: ep-10-temporary-guest
 slug: "ep-10-temporary-guest"
 author: Qiran
 type: post

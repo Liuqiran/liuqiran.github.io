@@ -1,5 +1,6 @@
 ---
 title: 'THE MONEY TRAP: THE OLD ROAD MAP FOR MONEY'
+translationKey: the-money-trap-the-old-road-map-for-money
 slug: "the-money-trap-the-old-road-map-for-money"
 author: Qiran
 type: post

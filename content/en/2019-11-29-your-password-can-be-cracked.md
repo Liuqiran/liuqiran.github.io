@@ -1,5 +1,6 @@
 ---
 title: Your Password Can Be Cracked!
+translationKey: your-password-can-be-cracked
 slug: "your-password-can-be-cracked"
 author: Qiran
 type: post

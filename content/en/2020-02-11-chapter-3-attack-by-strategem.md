@@ -1,5 +1,6 @@
 ---
 title: CHAPTER 3 Attack By Strategem
+translationKey: chapter-3-attack-by-strategem
 slug: "chapter-3-attack-by-strategem"
 author: Qiran
 type: post

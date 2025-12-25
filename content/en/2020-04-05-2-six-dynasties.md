@@ -1,5 +1,6 @@
 ---
 title: '2: Six dynasties'
+translationKey: 2-six-dynasties
 slug: "2-six-dynasties"
 author: Qiran
 type: post

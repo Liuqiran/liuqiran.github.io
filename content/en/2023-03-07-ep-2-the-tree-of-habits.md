@@ -1,5 +1,6 @@
 ---
 title: EP 2 The tree of habits
+translationKey: ep-2-the-tree-of-habits
 slug: "ep-2-the-tree-of-habits"
 author: Qiran
 type: post

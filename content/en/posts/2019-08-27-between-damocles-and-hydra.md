@@ -1,5 +1,6 @@
 ---
 title: Between Damocles and Hydra
+translationKey: between-damocles-and-hydra
 slug: "between-damocles-and-hydra"
 author: Qiran
 type: post

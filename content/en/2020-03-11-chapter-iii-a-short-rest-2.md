@@ -1,5 +1,6 @@
 ---
 title: CHAPTER III A Short Rest
+translationKey: chapter-iii-a-short-rest-2
 slug: "chapter-iii-a-short-rest-2"
 author: Qiran
 type: post

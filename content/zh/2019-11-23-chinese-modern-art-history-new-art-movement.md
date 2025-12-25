@@ -1,5 +1,6 @@
 ---
 title: 中国近代美史 中西美术的混流（1928-1937） 第三节 新兴美术运动
+translationKey: 2019-11-23-chinese-modern-art-history-new-art-movement
 author: Qiran
 type: post
 date: 2019-11-23T11:45:50+00:00

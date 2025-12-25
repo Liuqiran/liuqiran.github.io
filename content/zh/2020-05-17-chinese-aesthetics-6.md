@@ -1,5 +1,6 @@
 ---
 title: 中國美學史 六 文心雕龍
+translationKey: 2020-05-17-chinese-aesthetics-6
 author: Qiran
 type: post
 date: 2020-05-17T07:06:33+00:00

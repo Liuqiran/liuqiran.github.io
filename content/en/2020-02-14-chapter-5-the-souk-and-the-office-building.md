@@ -1,5 +1,6 @@
 ---
 title: CHAPTER 5 The Souk and the Office Building
+translationKey: chapter-5-the-souk-and-the-office-building
 slug: "chapter-5-the-souk-and-the-office-building"
 author: Qiran
 type: post

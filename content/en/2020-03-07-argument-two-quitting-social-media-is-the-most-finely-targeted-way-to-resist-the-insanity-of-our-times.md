@@ -1,5 +1,6 @@
 ---
 title: 'ARGUMENT TWO: QUITTING SOCIAL MEDIA IS THE MOST FINELY TARGETED WAY TO RESIST THE INSANITY OF OUR TIMES'
+translationKey: argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times
 slug: "argument-two-quitting-social-media-is-the-most-finely-targeted-way-to-resist-the-insanity-of-our-times"
 author: Qiran
 type: post

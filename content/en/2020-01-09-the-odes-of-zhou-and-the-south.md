@@ -1,5 +1,6 @@
 ---
 title: THE ODES OF ZHOU AND THE SOUTH
+translationKey: the-odes-of-zhou-and-the-south
 slug: "the-odes-of-zhou-and-the-south"
 author: Qiran
 type: post

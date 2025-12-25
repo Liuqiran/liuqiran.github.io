@@ -1,5 +1,6 @@
 ---
 title: Free is tough
+translationKey: free-is-tough
 slug: "free-is-tough"
 author: Qiran
 type: post

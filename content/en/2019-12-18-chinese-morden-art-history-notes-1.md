@@ -1,5 +1,6 @@
 ---
 title: Chinese modern art history notes 1
+translationKey: chinese-morden-art-history-notes-1
 slug: "chinese-morden-art-history-notes-1"
 author: Qiran
 type: post

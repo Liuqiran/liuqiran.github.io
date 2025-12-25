@@ -1,5 +1,6 @@
 ---
 title: 寒假调研总结
+translationKey: 2019-03-15-winter-research-questionnaire
 author: Qiran
 type: post
 date: 2019-03-15T05:53:59+00:00

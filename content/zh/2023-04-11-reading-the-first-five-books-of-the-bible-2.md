@@ -1,5 +1,6 @@
 ---
 title: 《摩西五经》
+translationKey: 2023-04-11-reading-the-first-five-books-of-the-bible-2
 author: Qiran
 type: post
 date: 2023-04-11T09:55:03+00:00

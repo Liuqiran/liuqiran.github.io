@@ -1,5 +1,6 @@
 ---
 title: Krita practice 2
+translationKey: krita-practice-2
 slug: "krita-practice-2"
 author: Qiran
 type: post

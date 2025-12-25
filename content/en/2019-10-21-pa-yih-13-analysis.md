@@ -1,5 +1,6 @@
 ---
 title: Pa Yih 13 analysis
+translationKey: pa-yih-13-analysis
 slug: "pa-yih-13-analysis"
 author: Qiran
 type: post

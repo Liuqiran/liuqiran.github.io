@@ -1,5 +1,6 @@
 ---
 title: After the Quake
+translationKey: after-the-quake
 slug: "after-the-quake"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: 发布至部落格
+translationKey: 2019-05-04-post-to-my-blog
 author: Qiran
 type: post
 date: 2019-05-04T06:46:58+00:00

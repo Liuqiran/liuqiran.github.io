@@ -1,5 +1,6 @@
 ---
 title: Read notes
+translationKey: read-notes
 slug: "read-notes"
 author: Qiran
 type: post

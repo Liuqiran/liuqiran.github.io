@@ -1,5 +1,6 @@
 ---
 title: Han dynasties
+translationKey: han-dynasties
 slug: "han-dynasties"
 author: Qiran
 type: post

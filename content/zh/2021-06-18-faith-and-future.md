@@ -1,5 +1,6 @@
 ---
 title: 信仰与未来
+translationKey: 2021-06-18-faith-and-future
 author: Qiran
 type: post
 date: 2021-06-18T10:08:31+00:00

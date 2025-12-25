@@ -1,5 +1,6 @@
 ---
 title: EP 8 Real wealth
+translationKey: ep-8-real-wealth
 slug: "ep-8-real-wealth"
 author: Qiran
 type: post

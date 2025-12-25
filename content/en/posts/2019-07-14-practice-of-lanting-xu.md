@@ -1,5 +1,6 @@
 ---
 title: Practice of Lanting Xu
+translationKey: practice-of-lanting-xu
 slug: "practice-of-lanting-xu"
 author: Qiran
 type: post

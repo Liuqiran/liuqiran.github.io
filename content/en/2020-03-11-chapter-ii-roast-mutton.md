@@ -1,5 +1,6 @@
 ---
 title: CHAPTER II Roast Mutton
+translationKey: chapter-ii-roast-mutton
 slug: "chapter-ii-roast-mutton"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: OVERCOMING BLOCKS TO ACTION
+translationKey: overcoming-blocks-to-action
 slug: "overcoming-blocks-to-action"
 author: Qiran
 type: post

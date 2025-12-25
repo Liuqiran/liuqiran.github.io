@@ -1,5 +1,6 @@
 ---
 title: Curator and exhibition
+translationKey: curator-and-exhibition
 slug: "curator-and-exhibition"
 author: Qiran
 type: post

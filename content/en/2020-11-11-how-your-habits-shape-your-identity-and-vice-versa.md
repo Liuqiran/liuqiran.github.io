@@ -1,5 +1,6 @@
 ---
 title: How Your Habits Shape Your Identity (and Vice Versa)
+translationKey: how-your-habits-shape-your-identity-and-vice-versa
 slug: "how-your-habits-shape-your-identity-and-vice-versa"
 author: Qiran
 type: post

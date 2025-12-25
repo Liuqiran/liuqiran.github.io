@@ -1,5 +1,6 @@
 ---
 title: Museology category and organization
+translationKey: 2019-10-15-museology-category-and-organization
 author: Qiran
 type: post
 date: 2019-10-15T06:10:06+00:00

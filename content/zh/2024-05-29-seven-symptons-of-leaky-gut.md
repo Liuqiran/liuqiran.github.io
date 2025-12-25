@@ -1,5 +1,6 @@
 ---
 title: 转载：肠漏的七个症状
+translationKey: 2024-05-29-seven-symptons-of-leaky-gut
 author: Qiran
 type: post
 date: 2024-05-29T10:28:20+00:00

@@ -1,5 +1,6 @@
 ---
 title: A Lopsided Arms Race
+translationKey: a-lopsided-arms-race
 slug: "a-lopsided-arms-race"
 author: Qiran
 type: post

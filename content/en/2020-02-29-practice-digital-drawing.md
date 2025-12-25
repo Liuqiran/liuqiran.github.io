@@ -1,5 +1,6 @@
 ---
 title: Practice digital drawing
+translationKey: practice-digital-drawing
 slug: "practice-digital-drawing"
 author: Qiran
 type: post

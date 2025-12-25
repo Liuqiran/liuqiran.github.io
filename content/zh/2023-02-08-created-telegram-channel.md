@@ -1,5 +1,6 @@
 ---
 title: 创建电报频道
+translationKey: 2023-02-08-created-telegram-channel
 author: Qiran
 type: post
 date: 2023-02-08T10:12:49+00:00

@@ -1,5 +1,6 @@
 ---
 title: '1: New voice of Chinese fine art education'
+translationKey: 2019-09-29-1-new-voice-of-chinese-fine-art-education
 author: Qiran
 type: post
 date: 2019-09-29T00:54:26+00:00

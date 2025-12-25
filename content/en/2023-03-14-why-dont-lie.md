@@ -1,5 +1,6 @@
 ---
 title: Why don’t lie
+translationKey: why-dont-lie
 slug: "why-dont-lie"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Myth and Dream
+translationKey: myth-and-dream
 slug: "myth-and-dream"
 author: Qiran
 type: post

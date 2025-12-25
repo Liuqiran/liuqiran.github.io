@@ -1,5 +1,6 @@
 ---
 title: Join the Attention Resistance
+translationKey: join-the-attention-resistance
 slug: "join-the-attention-resistance"
 author: Qiran
 type: post

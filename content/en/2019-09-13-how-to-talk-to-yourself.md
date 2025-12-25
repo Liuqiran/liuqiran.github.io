@@ -1,5 +1,6 @@
 ---
 title: HOW TO TALK TO YOURSELF
+translationKey: how-to-talk-to-yourself
 slug: "how-to-talk-to-yourself"
 author: Qiran
 type: post

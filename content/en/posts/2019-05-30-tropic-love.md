@@ -1,5 +1,6 @@
 ---
 title: Tropic love
+translationKey: tropic-love
 slug: "tropic-love"
 author: Qiran
 type: post

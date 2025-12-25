@@ -1,5 +1,6 @@
 ---
 title: questions about aesthetics
+translationKey: 2020-04-28-questions-about-aesthetics
 author: Qiran
 type: post
 date: 2020-04-28T14:09:08+00:00

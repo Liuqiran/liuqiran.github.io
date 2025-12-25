@@ -1,5 +1,6 @@
 ---
 title: Digitization
+translationKey: digitization
 slug: "digitization"
 author: Qiran
 type: post

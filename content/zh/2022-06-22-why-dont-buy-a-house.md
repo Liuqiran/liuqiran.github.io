@@ -1,5 +1,6 @@
 ---
 title: 为什么不买房
+translationKey: 2022-06-22-why-dont-buy-a-house
 author: Qiran
 type: post
 date: 2022-06-21T16:57:43+00:00

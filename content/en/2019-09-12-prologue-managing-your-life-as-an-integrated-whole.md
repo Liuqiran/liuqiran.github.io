@@ -1,5 +1,6 @@
 ---
 title: 'Prologue: Managing your life as an integrated whole'
+translationKey: prologue-managing-your-life-as-an-integrated-whole
 slug: "prologue-managing-your-life-as-an-integrated-whole"
 author: Qiran
 type: post

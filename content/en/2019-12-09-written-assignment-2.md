@@ -1,5 +1,6 @@
 ---
 title: 'Written Assignment #2'
+translationKey: written-assignment-2
 slug: "written-assignment-2"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: RSS Feed
+translationKey: rss
 slug: "rss"
 author: Qiran
 type: post

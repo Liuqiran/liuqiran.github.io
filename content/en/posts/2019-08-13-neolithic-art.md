@@ -1,5 +1,6 @@
 ---
 title: Neolithic Art
+translationKey: neolithic-art
 slug: "neolithic-art"
 author: Qiran
 type: post

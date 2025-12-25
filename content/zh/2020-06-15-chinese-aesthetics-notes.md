@@ -1,5 +1,6 @@
 ---
 title: 中國美學賞析
+translationKey: 2020-06-15-chinese-aesthetics-notes
 author: Qiran
 type: post
 date: 2020-06-15T15:04:20+00:00

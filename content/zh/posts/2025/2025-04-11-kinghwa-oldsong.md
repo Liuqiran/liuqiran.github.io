@@ -1,5 +1,6 @@
 ---
 title: 字体推荐——京华老宋体
+translationKey: kinghwa-oldsong
 slug: "kinghwa-oldsong"
 author: Qiran
 type: post

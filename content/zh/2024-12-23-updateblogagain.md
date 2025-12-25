@@ -1,5 +1,6 @@
 ---
 title: 重新更新
+translationKey: 2024-12-23-updateblogagain
 author: Qiran
 type: post
 date: 2024-12-23T00:36:01+00:00

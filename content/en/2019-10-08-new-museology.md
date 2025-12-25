@@ -1,5 +1,6 @@
 ---
 title: New Museology
+translationKey: new-museology
 slug: "new-museology"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Plato and Aristotle
+translationKey: plato-and-aristotle
 slug: "plato-and-aristotle"
 author: Qiran
 type: post

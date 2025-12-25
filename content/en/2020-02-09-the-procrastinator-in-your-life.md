@@ -1,5 +1,6 @@
 ---
 title: THE PROCRASTINATOR IN YOUR LIFE
+translationKey: the-procrastinator-in-your-life
 slug: "the-procrastinator-in-your-life"
 author: Qiran
 type: post

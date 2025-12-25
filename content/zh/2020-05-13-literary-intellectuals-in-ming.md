@@ -1,5 +1,6 @@
 ---
 title: 十：明人的真性情
+translationKey: 2020-05-13-literary-intellectuals-in-ming
 author: Qiran
 type: post
 date: 2020-05-13T02:21:18+00:00

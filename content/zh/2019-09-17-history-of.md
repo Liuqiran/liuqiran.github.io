@@ -1,5 +1,6 @@
 ---
 title: History of western museums
+translationKey: 2019-09-17-history-of
 author: Qiran
 type: post
 date: 2019-09-17T01:14:08+00:00

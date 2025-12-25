@@ -1,5 +1,6 @@
 ---
 title: 友人
+translationKey: my-friends
 author: Qiran
 type: post
 date: 2019-07-09

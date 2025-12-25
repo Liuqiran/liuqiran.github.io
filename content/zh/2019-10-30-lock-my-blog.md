@@ -1,5 +1,6 @@
 ---
 title: 关闭部落格
+translationKey: 2019-10-30-lock-my-blog
 author: Qiran
 type: post
 date: 2019-10-30T07:27:32+00:00

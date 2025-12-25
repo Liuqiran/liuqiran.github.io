@@ -1,5 +1,6 @@
 ---
 title: EGYPT UNDER THE PHARAOHS
+translationKey: egypt-under-the-pharaohs
 slug: "egypt-under-the-pharaohs"
 author: Qiran
 type: post

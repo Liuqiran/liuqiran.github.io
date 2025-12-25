@@ -1,5 +1,6 @@
 ---
 title: It’s my life
+translationKey: 2019-05-23-its-my-life
 author: Qiran
 type: post
 date: 2019-05-23T13:03:48+00:00

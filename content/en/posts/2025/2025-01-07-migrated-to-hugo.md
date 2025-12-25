@@ -1,4 +1,5 @@
----
+---translationKey: migrated-to-hugo
+
 Title: Migrated to Hugo   
 slug: "migrated-to-hugo"
 Date: 2025-04-01 

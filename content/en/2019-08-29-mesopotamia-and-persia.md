@@ -1,5 +1,6 @@
 ---
 title: 'MESOPOTAMIA  AND PERSIA'
+translationKey: mesopotamia-and-persia
 slug: "mesopotamia-and-persia"
 author: Qiran
 type: post

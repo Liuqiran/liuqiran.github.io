@@ -1,5 +1,6 @@
 ---
 title: Museum and public
+translationKey: museum-and-public
 slug: "museum-and-public"
 author: Qiran
 type: post

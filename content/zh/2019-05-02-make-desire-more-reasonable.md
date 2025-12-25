@@ -1,5 +1,6 @@
 ---
 title: 让欲望更加合理
+translationKey: 2019-05-02-make-desire-more-reasonable
 author: Qiran
 type: post
 date: 2019-05-02T03:43:06+00:00

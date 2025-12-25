@@ -1,5 +1,6 @@
 ---
 title: 《文征明》阅读笔记
+translationKey: 2019-04-12-wen-zhengming-notes
 author: Qiran
 type: post
 date: 2019-04-12T11:10:20+00:00

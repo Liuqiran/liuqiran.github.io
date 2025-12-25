@@ -1,5 +1,6 @@
 ---
 title: 文征明和吴门画派介绍
+translationKey: 2019-04-07-style-of-wen
 author: Qiran
 type: post
 date: 2019-04-07T07:37:24+00:00

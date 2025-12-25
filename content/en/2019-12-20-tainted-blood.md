@@ -1,5 +1,6 @@
 ---
 title: Tainted Blood
+translationKey: tainted-blood
 slug: "tainted-blood"
 author: Qiran
 type: post

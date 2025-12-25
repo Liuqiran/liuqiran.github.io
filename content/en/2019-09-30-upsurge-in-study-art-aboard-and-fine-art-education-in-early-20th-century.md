@@ -1,5 +1,6 @@
 ---
 title: '3: Upsurge in Study Art Aboard and Fine Art Education in Early 20th Century'
+translationKey: upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-century
 slug: "upsurge-in-study-art-aboard-and-fine-art-education-in-early-20th-century"
 author: Qiran
 type: post

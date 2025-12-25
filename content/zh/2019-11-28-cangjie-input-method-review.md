@@ -1,5 +1,6 @@
 ---
 title: 仓颉输入法体验
+translationKey: 2019-11-28-cangjie-input-method-review
 author: Qiran
 type: post
 date: 2019-11-28T08:25:08+00:00

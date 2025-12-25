@@ -1,5 +1,6 @@
 ---
 title: What Kills Me Makes Others Stronger
+translationKey: what-kills-me-makes-others-stronger
 slug: "what-kills-me-makes-others-stronger"
 author: Qiran
 type: post

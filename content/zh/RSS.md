@@ -1,5 +1,6 @@
 ---
 title: RSS 订阅
+translationKey: RSS
 author: Qiran
 type: post
 date: 2019-09-29T09:00:50+00:00

@@ -1,5 +1,6 @@
 ---
 title: Cashflow E-Game
+translationKey: cashflow-e-game
 slug: "cashflow-e-game"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: The Great Divorce  
+translationKey: 2025-06-the-great-divorce
 slug: "2025-06-the-great-divorce"
 date: 2025-06-02  
 draft: false 

@@ -1,5 +1,6 @@
 ---
 title: 5 Love Languages
+translationKey: introduction-4
 slug: "introduction-4"
 author: Qiran
 type: post

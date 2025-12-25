@@ -1,5 +1,6 @@
 ---
 title: 题材的拓展：以园林画为代表的文人题材
+translationKey: 2019-04-14-garden-literati
 author: Qiran
 type: post
 date: 2019-04-14T07:23:59+00:00

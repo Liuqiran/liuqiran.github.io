@@ -1,5 +1,6 @@
 ---
 title: Healthy food
+translationKey: healthy-food
 slug: "healthy-food"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title: 日記十年
+translationKey: 2020-04-03-ten-years-of-journaling
 author: Qiran
 type: post
 date: 2020-04-03T12:56:16+00:00

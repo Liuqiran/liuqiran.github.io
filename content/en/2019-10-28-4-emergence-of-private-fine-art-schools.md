@@ -1,5 +1,6 @@
 ---
 title: '4: Emergence of Private Fine Art Schools'
+translationKey: 4-emergence-of-private-fine-art-schools
 slug: "4-emergence-of-private-fine-art-schools"
 author: Qiran
 type: post

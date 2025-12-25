@@ -1,5 +1,6 @@
 ---
 title: Delete “like”
+translationKey: delete-like
 slug: "delete-like"
 author: Qiran
 type: post

@@ -1,5 +1,6 @@
 ---
 title:    "Search" # in any language you want
+translationKey: search
 slug: "search"
 layout:    "search" # necessary for search
 summary:    "search"
