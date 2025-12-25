@@ -46,6 +46,7 @@
   {{- end -}}
 {{- end -}}
 
+<!------>
 {{- if .IsPage -}}
   {{- if eq .Lang "zh" -}}
     {{- $meta = $meta | append "访问数: <span id=\"twikoo_visitors\"> 0</span>" -}}
@@ -55,6 +56,7 @@
     {{- $meta = $meta | append "Views：<span id=\"twikoo_visitors\"> 0</span>" -}}
   {{- end -}}
 {{- end -}}
+<!----->
 
 {{- range $i, $v := $meta -}}
   {{- if gt $i 0 -}} ;&nbsp;·&nbsp; {{- end -}}
