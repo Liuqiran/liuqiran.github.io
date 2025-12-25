@@ -5,7 +5,7 @@ draft: false
 author: Hong Hu
 tags:
  - life
-cover: 
+slug: why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-oldercover: 
   image: /img/black-white-road.jpg  
 translation-key: why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older
 aliases: ["/why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/"]
