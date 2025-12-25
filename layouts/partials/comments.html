@@ -54,7 +54,12 @@
   cursor:default; pointer-events:none;
 }
 .comment-system{ display:none; }
-.comment-system.active{ display:block; }
+.comment-system.active{ display:block; }  
+
+/* ===== Invite copy ===== */
+.comment-invite{ text-align:center; margin:1.2em 0 .6em; }
+.comment-invite__title{ font-size:1rem; font-weight:500; }
+.comment-invite__sub{ margin-top:.25em; font-size:.9rem; opacity:.75; }
 
 #waline{
   --waline-theme-color: var(--primary);
@@ -66,6 +71,40 @@
   --waline-box-shadow: none;
 }
 </style>
+
+
+{{/* ===== Invite 文案（按语言随机，但同一页稳定）===== */}}
+{{- $invites := dict
+  "zh" (slice
+    (dict "t" "你的留言，是我继续写下去的动力 👇" "s" "短句也很珍贵，我会认真读。")
+    (dict "t" "如果这篇对你有一点帮助，欢迎留一句话让我知道 👇" "s" "哪怕一个表情也可以。")
+    (dict "t" "一句话就好：你看完最大的收获是什么？👇" "s" "我想知道你带走了什么。")
+    (dict "t" "看到你参与，我就知道这篇没有白写 👇" "s" "谢谢你把时间留在这里。")
+  )
+  "en" (slice
+    (dict "t" "Thanks for being here—this wasn’t written into the void. 👇" "s" "I read every note.")
+    (dict "t" "Your comment keeps me writing. 👇" "s" "Even a short note means a lot.")
+    (dict "t" "One line is enough: what’s your biggest takeaway? 👇" "s" "I’d love to hear what you took from this.")
+  )
+  "ja" (slice
+    (dict "t" "コメントが、書き続ける力になります 👇" "s" "短くても大丈夫。全部読みます。")
+    (dict "t" "少しでも役に立ったら、一言だけでも残してくれると嬉しいです 👇" "s" "絵文字だけでもOKです。")
+  )
+-}}
+
+{{- $list := index $invites $lang -}}
+{{- if not $list -}}{{- $list = index $invites "en" -}}{{- end -}}
+
+{{- $seedBase := .RelPermalink -}}
+{{- with .File -}}{{- $seedBase = .Path -}}{{- end -}}
+{{- $seed := printf "%s|%s" $lang $seedBase -}}
+{{- $idx := int (mod (crypto.FNV32a $seed) (len $list)) -}}
+{{- $pick := index $list $idx -}}
+
+<div class="comment-invite">
+  <div class="comment-invite__title">{{ $pick.t }}</div>
+  <div class="comment-invite__sub">{{ $pick.s }}</div>
+</div>
 
 <div class="comment-toggle">
   {{- if $hasWaline -}}<button id="btn-waline">Waline 💬</button>{{- end -}}
