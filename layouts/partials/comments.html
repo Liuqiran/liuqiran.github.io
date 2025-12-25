@@ -1,67 +1,35 @@
 <style>
-  .comment-toggle {
-    margin-bottom: 1em;
-    text-align: center;
-  }
-  
-  .comment-toggle button {
-    padding: 0.5em 1.2em;
-    margin: 0 0.3em;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    background: #f8f8f8;
-    color: #555;
-    font-weight: 500;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: background 0.2s, color 0.2s, border-color 0.2s;
-  }
-  
-  .comment-toggle button:hover {
-    background: #e2e2e2;
-    border-color: #999;
-    color: #333;
-  }
-  
-  .comment-toggle button.active {
-    background: #ccc;
-    border-color: #999;
-    color: #222;
-    cursor: default;
-    pointer-events: none;
-  }
-  
-  .comment-system {
-    display: none;
-  }
-  
-  .comment-system.active {
-    display: block;
+.comment-toggle { margin-bottom: 1em; text-align: center; }
 
-  .comment-invite{
-  text-align:center;
-  margin: 1.2em 0 .6em;
+.comment-toggle button{
+  padding:.5em 1.2em; margin:0 .3em; cursor:pointer;
+  border:1px solid #ccc; background:#f8f8f8; color:#555;
+  font-weight:500; border-radius:4px; font-size:.9rem;
+  transition: background .2s, color .2s, border-color .2s;
 }
-.comment-invite__title{
-  font-size: 1rem;
-  font-weight: 500;
-}
-.comment-invite__sub{
-  margin-top: .25em;
-  font-size: .9rem;
-  opacity: .75;
-}  
-  }
-  /* （放在你现有的 <style> 之后） */
-/* 让评论区继承正文的字体、字号和字重 */
+.comment-toggle button:hover{ background:#e2e2e2; border-color:#999; color:#333; }
+.comment-toggle button.active{ background:#ccc; border-color:#999; color:#222; cursor:default; pointer-events:none; }
+
+.comment-system{ display:none; }
+.comment-system.active{ display:block; }
+
+/* 邀请文案 */
+.comment-invite{ text-align:center; margin:1.2em 0 .6em; }
+.comment-invite__title{ font-size:1rem; font-weight:500; }
+.comment-invite__sub{ margin-top:.25em; font-size:.9rem; opacity:.75; }
+
+/* 评论区字体 */
 html[lang="en-US"] .comment-system,
-html[lang="en-US"] .comment-system * {
-  font-family: "Georgia", "Times New Roman", serif !important;
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  line-height: 1.6 !important;
+html[lang="en-US"] .comment-system *{
+  font-family:"Georgia","Times New Roman",serif !important;
+  font-size:1rem !important; font-weight:400 !important; line-height:1.6 !important;
 }
-</style>   
+html[lang="zh-CN"] .comment-system,
+html[lang="zh-CN"] .comment-system *{
+  font-family:'KingHwa_OldSong',sans-serif !important;
+  font-size:1rem !important; font-weight:400 !important; line-height:1.8 !important;
+}
+</style>
 
 {{/* ---- Comment invite (no JS) ---- */}}
 {{- $invites := dict
@@ -72,8 +40,9 @@ html[lang="en-US"] .comment-system * {
     (dict "t" "看到你参与，我就知道这篇没有白写 👇" "s" "谢谢你把时间留在这里。")
   )
   "en" (slice
-    (dict "t" "One line is enough: what’s your biggest takeaway? 👇" "s" "I’d love to hear what you took from this.")
     (dict "t" "Thanks for being here—this wasn’t written into the void. 👇" "s" "I read every note.")
+    (dict "t" "Your comment keeps me writing. 👇" "s" "Even a short note means a lot.")
+    (dict "t" "One line is enough: what’s your biggest takeaway? 👇" "s" "I’d love to hear what you took from this.")
   )
   "ja" (slice
     (dict "t" "コメントが、書き続ける力になります 👇" "s" "短くても大丈夫。全部読みます。")
@@ -94,36 +63,7 @@ html[lang="en-US"] .comment-system * {
 <div class="comment-invite">
   <div class="comment-invite__title">{{ $pick.t }}</div>
   <div class="comment-invite__sub">{{ $pick.s }}</div>
-</div>   
-
-
-{{- $lang := .Lang -}}
-{{- $list := index $invites $lang -}}
-{{- if not $list -}}
-  {{- $list = index $invites "en" -}}
-{{- end -}}
-
-{{- $seedBase := (default .RelPermalink .File.Path) -}}
-{{- $seed := printf "%s|%s" $lang $seedBase -}}
-{{- $idx := int (mod (crypto.FNV32a $seed) (len $list)) -}}
-{{- $pick := index $list $idx -}}
-
-<div class="comment-invite">
-  <div class="comment-invite__title">{{ $pick.t }}</div>
-  <div class="comment-invite__sub">{{ $pick.s }}</div>
-</div>
-
-
-
-/* 如果你也希望中文区（Giscus）在中文页面用默认中文字体，可以这样 */
-html[lang="zh-CN"] .comment-system,
-html[lang="zh-CN"] .comment-system * {
-  font-family: 'KingHwa_OldSong', sans-serif !important;
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  line-height: 1.8 !important;
-}
-
+</div>      
   
   <div class="comment-toggle">
     <button id="btn-twikoo">Twikoo 💬</button>
