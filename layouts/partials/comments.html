@@ -1,6 +1,6 @@
 {{/* layouts/partials/comments.html */}}
 
-{{- $lang := .Lang -}}
+{{- $langRaw := .Lang | lower -}}
 
 {{/* ===== serverURL（强力清洗）===== */}}
 {{- $server := "" -}}
@@ -13,15 +13,20 @@
 {{- $server = $server | replaceRE `/+$` "" -}}
 {{- $hasWaline := ne $server "" -}}
 
-{{/* ===== 语言映射（只定义一次）===== */}}
+{{/* ===== baseLang：用于 invite 文案（zh/en/ja）===== */}}
+{{- $baseLang := "en" -}}
+{{- if hasPrefix $langRaw "zh" -}}
+  {{- $baseLang = "zh" -}}
+{{- else if or (hasPrefix $langRaw "ja") (hasPrefix $langRaw "jp") -}}
+  {{- $baseLang = "ja" -}}
+{{- end -}}
+
+{{/* ===== 语言映射（给 data 输出一个默认值；真正以 JS 运行时 html lang 为准）===== */}}
 {{- $walineLang := "en" -}}
-{{- $giscusLang := "en" -}}
-{{- if eq $lang "zh" -}}
+{{- if eq $baseLang "zh" -}}
   {{- $walineLang = "zh-CN" -}}
-  {{- $giscusLang = "zh-CN" -}}
-{{- else if eq $lang "ja" -}}
+{{- else if eq $baseLang "ja" -}}
   {{- $walineLang = "ja" -}}
-  {{- $giscusLang = "ja" -}}
 {{- end -}}
 
 {{/* ===== commentPath：永远 t:translationKey（没有就用文件名）===== */}}
@@ -54,7 +59,7 @@
   cursor:default; pointer-events:none;
 }
 .comment-system{ display:none; }
-.comment-system.active{ display:block; }  
+.comment-system.active{ display:block; }
 
 /* ===== Invite copy ===== */
 .comment-invite{ text-align:center; margin:1.2em 0 .6em; }
@@ -71,7 +76,6 @@
   --waline-box-shadow: none;
 }
 </style>
-
 
 {{/* ===== Invite 文案（按语言随机，但同一页稳定）===== */}}
 {{- $invites := dict
@@ -92,12 +96,12 @@
   )
 -}}
 
-{{- $list := index $invites $lang -}}
+{{- $list := index $invites $baseLang -}}
 {{- if not $list -}}{{- $list = index $invites "en" -}}{{- end -}}
 
 {{- $seedBase := .RelPermalink -}}
 {{- with .File -}}{{- $seedBase = .Path -}}{{- end -}}
-{{- $seed := printf "%s|%s" $lang $seedBase -}}
+{{- $seed := printf "%s|%s" $baseLang $seedBase -}}
 {{- $idx := int (mod (crypto.FNV32a $seed) (len $list)) -}}
 {{- $pick := index $list $idx -}}
 
@@ -107,8 +111,8 @@
 </div>
 
 <div class="comment-toggle">
-  {{- if $hasWaline -}}<button id="btn-waline">Waline 💬</button>{{- end -}}
-  <button id="btn-giscus">Giscus 💬</button>
+  {{- if $hasWaline -}}<button id="btn-waline" type="button">Waline 💬</button>{{- end -}}
+  <button id="btn-giscus" type="button">Giscus 💬</button>
 </div>
 
 {{- if $hasWaline -}}
@@ -119,6 +123,18 @@
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
+    const hugoDefaultLang = {{ $walineLang | jsonify }};
+
+    // --- 运行时语言（以 <html lang=""> 为准，避免 partialCached 等导致的“语言固定”）---
+    function normalizeLang(raw) {
+      const l = String(raw || "").toLowerCase();
+      if (l.startsWith("zh")) return "zh-CN";
+      if (l.startsWith("ja") || l.startsWith("jp")) return "ja";
+      return "en";
+    }
+    const pageLang = normalizeLang(document.documentElement.lang || hugoDefaultLang || "en");
+
+    // --- serverURL 清洗 ---
     let serverURL = {{ $server | jsonify }};
     serverURL = String(serverURL || "")
       .replace(/\\/g, "")
@@ -126,48 +142,43 @@
       .trim()
       .replace(/\/+$/, "");
 
+    // --- path 清洗 ---
     let commentPath = {{ $commentPath | jsonify }};
     commentPath = String(commentPath || "")
       .replace(/\\/g, "")
       .replace(/["']/g, "")
       .trim();
 
-    console.log("Waline serverURL =", serverURL);
-    console.log("Waline path =", commentPath);
+    let walineInited = false;
+    function ensureWaline() {
+      if (walineInited) return;
+      walineInited = true;
 
-    init({
-      el: '#waline',
-      serverURL,
-      path: commentPath,
-      requiredMeta: ['nick', 'mail'],
-      lang: {{ $walineLang | jsonify }},
-      locale: { reactionTitle: "" },
-      reaction: true,
-      dark: 'body.dark',
-      imageUploader: false,
-    });
+      console.log("[Waline] serverURL =", serverURL);
+      console.log("[Waline] path =", commentPath);
+      console.log("[Waline] lang =", pageLang);
+
+      init({
+        el: '#waline',
+        serverURL,
+        path: commentPath,
+        requiredMeta: ['nick', 'mail'],
+        lang: pageLang,
+        locale: { reactionTitle: "" },
+        reaction: true,
+        dark: 'body.dark',
+        imageUploader: false,
+      });
+    }
+
+    // 暴露给非 module 脚本调用（用于 toggle 懒加载）
+    window.__ensureWaline = ensureWaline;
   </script>
 </div>
 {{- end -}}
 
 <div id="giscus-container" class="comment-system">
   <div id="giscus-comment"></div>
-  <script src="https://giscus.app/client.js"
-          data-repo="Liuqiran/liuqiran.github.io"
-          data-repo-id="R_kgDONiVddQ"
-          data-category="General"
-          data-category-id="DIC_kwDONiVddc4CljSp"
-          data-mapping="specific"
-          data-term="{{ $commentPath }}"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="preferred_color_scheme"
-          data-lang="{{ $giscusLang }}"
-          crossorigin="anonymous"
-          async>
-  </script>
 </div>
 
 <script>
@@ -176,30 +187,82 @@
   const walineContainer = document.getElementById('waline-container');
   const giscusContainer = document.getElementById('giscus-container');
 
+  const GISCUS_TERM = {{ $commentPath | jsonify }};
+  const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
+  const GISCUS_REPO_ID = "R_kgDONiVddQ";
+  const GISCUS_CATEGORY = "General";
+  const GISCUS_CATEGORY_ID = "DIC_kwDONiVddc4CljSp";
+
+  function normalizeLang(raw) {
+    const l = String(raw || "").toLowerCase();
+    if (l.startsWith("zh")) return "zh-CN";
+    if (l.startsWith("ja") || l.startsWith("jp")) return "ja";
+    return "en";
+  }
+
+  let giscusLoaded = false;
+  function ensureGiscus() {
+    if (giscusLoaded) return;
+    giscusLoaded = true;
+
+    const lang = normalizeLang(document.documentElement.lang);
+    const host = document.getElementById('giscus-comment');
+    if (!host) return;
+
+    const s = document.createElement('script');
+    s.src = 'https://giscus.app/client.js';
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+
+    s.setAttribute('data-repo', GISCUS_REPO);
+    s.setAttribute('data-repo-id', GISCUS_REPO_ID);
+    s.setAttribute('data-category', GISCUS_CATEGORY);
+    s.setAttribute('data-category-id', GISCUS_CATEGORY_ID);
+    s.setAttribute('data-mapping', 'specific');
+    s.setAttribute('data-term', GISCUS_TERM);
+    s.setAttribute('data-strict', '0');
+    s.setAttribute('data-reactions-enabled', '1');
+    s.setAttribute('data-emit-metadata', '0');
+    s.setAttribute('data-input-position', 'bottom');
+    s.setAttribute('data-theme', 'preferred_color_scheme');
+    s.setAttribute('data-lang', lang);
+
+    host.appendChild(s);
+    console.log("[Giscus] term =", GISCUS_TERM, "lang =", lang);
+  }
+
   function showWaline() {
     if (!btnWaline || !walineContainer) return;
     btnWaline.classList.add('active');
-    btnGiscus.classList.remove('active');
+    if (btnGiscus) btnGiscus.classList.remove('active');
     walineContainer.classList.add('active');
-    giscusContainer.classList.remove('active');
+    if (giscusContainer) giscusContainer.classList.remove('active');
     localStorage.setItem('preferredComment', 'waline');
+
+    if (window.__ensureWaline) window.__ensureWaline();
   }
 
   function showGiscus() {
+    if (!btnGiscus || !giscusContainer) return;
     btnGiscus.classList.add('active');
     if (btnWaline) btnWaline.classList.remove('active');
     giscusContainer.classList.add('active');
     if (walineContainer) walineContainer.classList.remove('active');
     localStorage.setItem('preferredComment', 'giscus');
+
+    ensureGiscus();
   }
 
   if (btnWaline) btnWaline.onclick = showWaline;
-  btnGiscus.onclick = showGiscus;
+  if (btnGiscus) btnGiscus.onclick = showGiscus;
 
   window.addEventListener('DOMContentLoaded', () => {
     const preferred = localStorage.getItem('preferredComment');
+
+    // 没 Waline 的情况下，默认 Giscus
+    if (!btnWaline || !walineContainer) return showGiscus();
+
     if (preferred === 'giscus') return showGiscus();
-    if (btnWaline) return showWaline();
-    showGiscus();
+    return showWaline();
   });
 </script>
