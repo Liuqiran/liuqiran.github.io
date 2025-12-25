@@ -1,73 +1,62 @@
-{{- $scratch := newScratch }}
+{{- $meta := slice -}}
 
-{{- if not .Date.IsZero }}
-  {{- if eq .Lang "zh" }}
-    {{- $date := .Date.Format "2006年1月2日" }}
-    {{- $scratch.Add "meta" (slice $date) }}
-  {{- else }}
-    {{- $date := .Date.Format "January 2, 2006" }}
-    {{- $scratch.Add "meta" (slice $date) }}
-  {{- end }}
-{{- end }}
-
-{{- $lastmodFromParam := .Params.lastmod }}
-{{- $lastmodDate := .Date }}
-
-{{- if and $lastmodFromParam (ne $lastmodFromParam "") }}
-  {{- $lastmodDate = time $lastmodFromParam }}
-{{- else if .Lastmod }}
-  {{- $lastmodDate = .Lastmod }}
-{{- end }}
-
-{{- if and (not $lastmodDate.IsZero) (ne $lastmodDate.Unix .Date.Unix) }}
-  {{- if eq .Lang "zh" }}
-    {{- $lastmodFormatted := $lastmodDate.Format "2006年1月2日" }}
-    {{- $scratch.Add "meta" (slice (printf "更新于 %s" $lastmodFormatted)) }}
-  {{- else }}
-    {{- $lastmodFormatted := $lastmodDate.Format "January 2, 2006" }}
-    {{- $scratch.Add "meta" (slice (printf "Updated %s" $lastmodFormatted)) }}
-  {{- end }}
-{{- end }}   
-
-
-<!-- 其他元信息如阅读时间、字数等保持不变 -->
-{{- if (.Param "ShowReadingTime") }}
-  {{- if eq .Lang "zh" }}
-    {{- $scratch.Add "meta" (slice (printf "%d 分钟阅读" .ReadingTime)) }}
-  {{- else }}
-    {{- $scratch.Add "meta" (slice (printf "%d min read" .ReadingTime)) }}
-  {{- end }}
-{{- end }}
-
-{{- if not (.Param "hideAuthor") }}
-  {{- with (partial "author.html" .) }}
-    {{- $scratch.Add "meta" (slice .) }}
-  {{- end }}
-{{- end }}
-
-{{- if (.Param "ShowWordCount") }}
-  {{- if eq .Lang "zh" }}
-    {{- $scratch.Add "meta" (slice (printf "%d 字" .WordCount)) }}
-  {{- else }}
-    {{- $scratch.Add "meta" (slice (printf "%d words" .WordCount)) }}
-  {{- end }}
-{{- end }}   
-
-<!--  /* Twikoo 阅读量 */ -->   
-{{- if .IsPage -}}
-  {{- if eq .Lang "zh" }}
-    {{- $scratch.Add "meta" (slice (printf "访问数<span id=\"twikoo_visitors\"> 0</span>")) }}
-  {{- else if eq .Lang "ja" }}
-    {{- $scratch.Add "meta" (slice (printf "閲覧<span id=\"twikoo_visitors\"> 0</span>")) }}
-  {{- else }}
-    {{- $scratch.Add "meta" (slice (printf "Views<span id=\"twikoo_visitors\"> 0</span>")) }}
-  {{- end }}
-{{- end -}}    
-
-{{- $meta := $scratch.Get "meta" -}}
-{{- with $meta -}}
-  {{- range $i, $v := . -}}
-    {{- if gt $i 0 -}} · {{- end -}}
-    <span class="post-meta-item">{{- $v | safeHTML -}}</span>
+{{- if not .Date.IsZero -}}
+  {{- if eq .Lang "zh" -}}
+    {{- $meta = $meta | append (.Date.Format "2006年1月2日") -}}
+  {{- else -}}
+    {{- $meta = $meta | append (.Date.Format "January 2, 2006") -}}
   {{- end -}}
+{{- end -}}
+
+{{- $lastmodFromParam := .Params.lastmod -}}
+{{- $lastmodDate := .Date -}}
+{{- if and $lastmodFromParam (ne $lastmodFromParam "") -}}
+  {{- $lastmodDate = time $lastmodFromParam -}}
+{{- else if .Lastmod -}}
+  {{- $lastmodDate = .Lastmod -}}
+{{- end -}}
+
+{{- if and (not $lastmodDate.IsZero) (ne $lastmodDate.Unix .Date.Unix) -}}
+  {{- if eq .Lang "zh" -}}
+    {{- $meta = $meta | append (printf "更新于 %s" ($lastmodDate.Format "2006年1月2日")) -}}
+  {{- else -}}
+    {{- $meta = $meta | append (printf "Updated %s" ($lastmodDate.Format "January 2, 2006")) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if (.Param "ShowReadingTime") -}}
+  {{- if eq .Lang "zh" -}}
+    {{- $meta = $meta | append (printf "%d 分钟阅读" .ReadingTime) -}}
+  {{- else -}}
+    {{- $meta = $meta | append (printf "%d min read" .ReadingTime) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not (.Param "hideAuthor") -}}
+  {{- with (partial "author.html" .) -}}
+    {{- $meta = $meta | append (printf "%s" .) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if (.Param "ShowWordCount") -}}
+  {{- if eq .Lang "zh" -}}
+    {{- $meta = $meta | append (printf "%d 字" .WordCount) -}}
+  {{- else -}}
+    {{- $meta = $meta | append (printf "%d words" .WordCount) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if .IsPage -}}
+  {{- if eq .Lang "zh" -}}
+    {{- $meta = $meta | append "访问数<span id=\"twikoo_visitors\"> 0</span>" -}}
+  {{- else if eq .Lang "ja" -}}
+    {{- $meta = $meta | append "閲覧<span id=\"twikoo_visitors\"> 0</span>" -}}
+  {{- else -}}
+    {{- $meta = $meta | append "Views<span id=\"twikoo_visitors\"> 0</span>" -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range $i, $v := $meta -}}
+  {{- if gt $i 0 -}} · {{- end -}}
+  <span class="post-meta-item">{{- $v | safeHTML -}}</span>
 {{- end -}}
