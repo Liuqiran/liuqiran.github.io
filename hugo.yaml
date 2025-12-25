@@ -46,7 +46,8 @@ languages:
           name: 🔍 Search
           url: /en/search/
           weight: 70
-    params:
+    params: 
+      ShowFullTextinRSS: true
       editPost:
           URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/en" 
           appendFilePath: true
@@ -90,7 +91,7 @@ languages:
           url: 'mailto:woshiniuziku@gmail.com'    
         - name: facebook
           url: 'https://web.facebook.com/liuqiran123'
-    ShowFullTextinRSS: true
+    
   zh:
     languageName: "中文"   
     Title: "刘其然的部落格"
