@@ -131,17 +131,19 @@ body.dark #waline{
 {{- $lang := site.Language.Lang -}}
 
 {{- $commentPath := "" -}}
-{{- if .Params.waline_path -}}
-  {{- $commentPath = .Params.waline_path -}}
+
+{{- with .Params.waline_path -}}
+  {{- $commentPath = . -}}
+{{- else if .Params.url -}}
+  {{- $commentPath = .Params.url -}}
+{{- else if .Params.aliases -}}
+  {{- $commentPath = index .Params.aliases 0 -}}
 {{- else if .Params.translationKey -}}
   {{- $commentPath = printf "t:%s" .Params.translationKey -}}
-{{- else if .Params.slug -}}
-  {{- $commentPath = printf "s:%s" .Params.slug -}}
-{{- else if .File -}}
-  {{- $commentPath = printf "f:%s" .File.ContentBaseName -}}
 {{- else -}}
   {{- $commentPath = .RelPermalink | replaceRE "^/(en|zh)/" "/" -}}
 {{- end -}}
+
 
 {{- /* ===== Waline 容器：只有配置了 serverURL 才渲染 ===== */ -}}
 {{- if $hasWaline -}}
@@ -161,7 +163,7 @@ body.dark #waline{
   init({
     el: '#waline',
     serverURL: {{ $server | jsonify }},
-    path: commentPath,                 // ✅ 稳定线程 ID
+    path: {{ $commentPath | jsonify }},       // ✅ 稳定线程 ID
     requiredMeta: ['nick', 'mail'],
     lang: {{ $lang | jsonify }},
     locale: { reactionTitle: "" },
