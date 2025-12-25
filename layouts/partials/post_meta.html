@@ -64,6 +64,10 @@
   {{- end }}
 {{- end -}}    
 
-{{- with ($scratch.Get "meta") }}
-  {{- delimit . " · " | safeHTML }}
-{{- end }}
+{{- $meta := $scratch.Get "meta" -}}
+{{- with $meta -}}
+  {{- range $i, $v := . -}}
+    {{- if gt $i 0 -}} · {{- end -}}
+    <span class="post-meta-item">{{- $v | safeHTML -}}</span>
+  {{- end -}}
+{{- end -}}

@@ -160,4 +160,16 @@ img[aria-label="logo"] {
     border-radius: 4px;
 }
 
+.post-meta {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  flex-wrap: wrap !important;   /* PaperMod 常用 flex */
+}
 
+.post-meta a,
+.post-meta span {
+  white-space: normal !important;
+}    
+
+.post-meta-item { display: inline; }
