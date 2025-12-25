@@ -61,10 +61,9 @@ html[lang="en-US"] .comment-system * {
   font-weight: 400 !important;
   line-height: 1.6 !important;
 }
-
+</style>   
 
 {{/* ---- Comment invite (no JS) ---- */}}
-
 {{- $invites := dict
   "zh" (slice
     (dict "t" "你的留言，是我继续写下去的动力 👇" "s" "短句也很珍贵，我会认真读。")
@@ -73,7 +72,6 @@ html[lang="en-US"] .comment-system * {
     (dict "t" "看到你参与，我就知道这篇没有白写 👇" "s" "谢谢你把时间留在这里。")
   )
   "en" (slice
-    (dict "t" "Your comment keeps me writing. 👇" "s" "Even a short note means a lot.")
     (dict "t" "One line is enough: what’s your biggest takeaway? 👇" "s" "I’d love to hear what you took from this.")
     (dict "t" "Thanks for being here—this wasn’t written into the void. 👇" "s" "I read every note.")
   )
@@ -82,6 +80,22 @@ html[lang="en-US"] .comment-system * {
     (dict "t" "少しでも役に立ったら、一言だけでも残してくれると嬉しいです 👇" "s" "絵文字だけでもOKです。")
   )
 -}}
+
+{{- $lang := .Lang -}}
+{{- $list := index $invites $lang -}}
+{{- if not $list -}}{{- $list = index $invites "en" -}}{{- end -}}
+
+{{- $seedBase := .RelPermalink -}}
+{{- with .File -}}{{- $seedBase = .Path -}}{{- end -}}
+{{- $seed := printf "%s|%s" $lang $seedBase -}}
+{{- $idx := int (mod (crypto.FNV32a $seed) (len $list)) -}}
+{{- $pick := index $list $idx -}}
+
+<div class="comment-invite">
+  <div class="comment-invite__title">{{ $pick.t }}</div>
+  <div class="comment-invite__sub">{{ $pick.s }}</div>
+</div>   
+
 
 {{- $lang := .Lang -}}
 {{- $list := index $invites $lang -}}
@@ -109,7 +123,7 @@ html[lang="zh-CN"] .comment-system * {
   font-weight: 400 !important;
   line-height: 1.8 !important;
 }
-  </style>
+
   
   <div class="comment-toggle">
     <button id="btn-twikoo">Twikoo 💬</button>
