@@ -150,27 +150,33 @@ body.dark #waline{
 <div id="waline-container" class="comment-system">
   <div id="waline"></div>
 
-  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />  
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 
-  
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 <script type="module">
   import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
+  const serverURL = {{ $server | jsonify }};
   const commentPath = {{ $commentPath | jsonify }};
+
+  console.log("Waline serverURL =", serverURL);
   console.log("Waline path =", commentPath);
 
-  init({
-    el: '#waline',
-    serverURL: {{ $server | jsonify }},
-    path: {{ $commentPath | jsonify }},       // ✅ 稳定线程 ID
-    requiredMeta: ['nick', 'mail'],
-    lang: {{ $lang | jsonify }},
-    locale: { reactionTitle: "" },
-    reaction: true,
-    dark: 'body.dark',
-  });
+  try {
+    init({
+      el: '#waline',
+      serverURL,
+      path: commentPath,
+      requiredMeta: ['nick', 'mail'],
+      lang: {{ $lang | jsonify }},
+      locale: { reactionTitle: "" },
+      reaction: true,
+      dark: 'body.dark',
+    });
+  } catch (e) {
+    console.error("Waline init failed:", e);
+  }
 </script>
+
 
 </div>
 {{- end -}}
