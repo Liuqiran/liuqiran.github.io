@@ -2,17 +2,18 @@
 
 {{- $lang := .Lang -}}
 
-{{/* ===== Waline serverURL ===== */}}
+{{/* ===== serverURL（强力清洗）===== */}}
 {{- $server := "" -}}
 {{- with site.Params.waline.serverURL -}}
   {{- $server = . -}}
 {{- end -}}
+{{- $server = $server | replaceRE `\\` "" -}}
+{{- $server = $server | replaceRE `["']` "" -}}
 {{- $server = $server | replaceRE `^\s+|\s+$` "" -}}
-{{- $server = $server | replaceRE `^["']+|["']+$` "" -}}
 {{- $server = $server | replaceRE `/+$` "" -}}
 {{- $hasWaline := ne $server "" -}}
 
-{{/* ===== Language map ===== */}}
+{{/* ===== 语言映射（只定义一次）===== */}}
 {{- $walineLang := "en" -}}
 {{- $giscusLang := "en" -}}
 {{- if eq $lang "zh" -}}
@@ -23,32 +24,28 @@
   {{- $giscusLang = "ja" -}}
 {{- end -}}
 
-{{/* ===== commentPath: ALWAYS t:translationKey (fallback to filename) ===== */}}
+{{/* ===== commentPath：永远 t:translationKey（没有就用文件名）===== */}}
 {{- $tkey := "" -}}
 {{- with .Params.translationKey -}}
   {{- $tkey = . -}}
 {{- else -}}
   {{- with .File -}}{{- $tkey = .BaseFileName -}}{{- end -}}
 {{- end -}}
+
+{{- $tkey = $tkey | replaceRE `\\` "" -}}
+{{- $tkey = $tkey | replaceRE `["']` "" -}}
 {{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
-{{- $tkey = $tkey | replaceRE `^["']+|["']+$` "" -}}
 
 {{- $commentPath := printf "t:%s" $tkey -}}
 
 <style>
-/* ===== Toggle UI ===== */
-.comment-toggle { margin: 1em 0; text-align: center; }
+.comment-toggle{ margin:1em 0; text-align:center; }
 .comment-toggle button{
   padding:.5em 1.2em; margin:0 .3em; cursor:pointer;
   border:1px solid var(--border, #ccc);
   background: var(--entry, #f8f8f8);
   color: var(--content, #555);
   font-weight:500; border-radius:8px; font-size:.9rem;
-  transition: background .2s, color .2s, border-color .2s;
-}
-.comment-toggle button:hover{
-  background: var(--code-bg, #eaeaea);
-  border-color: var(--border, #999);
 }
 .comment-toggle button.active{
   background: var(--code-bg, #ddd);
@@ -59,29 +56,6 @@
 .comment-system{ display:none; }
 .comment-system.active{ display:block; }
 
-/* ===== Invite copy ===== */
-.comment-invite{ text-align:center; margin:1.2em 0 .6em; }
-.comment-invite__title{ font-size:1rem; font-weight:500; }
-.comment-invite__sub{ margin-top:.25em; font-size:.9rem; opacity:.75; }
-
-/* ===== 评论区字体 ===== */
-html[lang^="en"] .comment-system,
-html[lang^="en"] .comment-system *{
-  font-family:"Georgia","Times New Roman",serif !important;
-  font-size:1rem !important; font-weight:400 !important; line-height:1.55 !important;
-}
-html[lang^="zh"] .comment-system,
-html[lang^="zh"] .comment-system *{
-  font-family:'KingHwa_OldSong',sans-serif !important;
-  font-size:0.95rem !important; font-weight:400 !important; line-height:1.75 !important;
-}
-html[lang^="ja"] .comment-system,
-html[lang^="ja"] .comment-system *{
-  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif !important;
-  font-size:0.95rem !important; font-weight:400 !important; line-height:1.78 !important;
-}
-
-/* ===== Waline theme sync with PaperMod ===== */
 #waline{
   --waline-theme-color: var(--primary);
   --waline-active-color: var(--primary);
@@ -91,49 +65,13 @@ html[lang^="ja"] .comment-system *{
   --waline-border-color: var(--border);
   --waline-box-shadow: none;
 }
-body.dark #waline{}
 </style>
 
-{{/* ===== Invite 文案 ===== */}}
-{{- $invites := dict
-  "zh" (slice
-    (dict "t" "你的留言，是我继续写下去的动力 👇" "s" "短句也很珍贵，我会认真读。")
-    (dict "t" "如果这篇对你有一点帮助，欢迎留一句话让我知道 👇" "s" "哪怕一个表情也可以。")
-    (dict "t" "一句话就好：你看完最大的收获是什么？👇" "s" "我想知道你带走了什么。")
-    (dict "t" "看到你参与，我就知道这篇没有白写 👇" "s" "谢谢你把时间留在这里。")
-  )
-  "en" (slice
-    (dict "t" "Thanks for being here—this wasn’t written into the void. 👇" "s" "I read every note.")
-    (dict "t" "Your comment keeps me writing. 👇" "s" "Even a short note means a lot.")
-    (dict "t" "One line is enough: what’s your biggest takeaway? 👇" "s" "I’d love to hear what you took from this.")
-  )
-  "ja" (slice
-    (dict "t" "コメントが、書き続ける力になります 👇" "s" "短くても大丈夫。全部読みます。")
-    (dict "t" "少しでも役に立ったら、一言だけでも残してくれると嬉しいです 👇" "s" "絵文字だけでもOKです。")
-  )
--}}
-
-{{- $list := index $invites $lang -}}
-{{- if not $list -}}{{- $list = index $invites "en" -}}{{- end -}}
-{{- $seedBase := .RelPermalink -}}
-{{- with .File -}}{{- $seedBase = .Path -}}{{- end -}}
-{{- $seed := printf "%s|%s" $lang $seedBase -}}
-{{- $idx := int (mod (crypto.FNV32a $seed) (len $list)) -}}
-{{- $pick := index $list $idx -}}
-
-<div class="comment-invite">
-  <div class="comment-invite__title">{{ $pick.t }}</div>
-  <div class="comment-invite__sub">{{ $pick.s }}</div>
-</div>
-
 <div class="comment-toggle">
-  {{- if $hasWaline -}}
-    <button id="btn-waline">Waline 💬</button>
-  {{- end -}}
+  {{- if $hasWaline -}}<button id="btn-waline">Waline 💬</button>{{- end -}}
   <button id="btn-giscus">Giscus 💬</button>
 </div>
 
-{{/* ===== Waline ===== */}}
 {{- if $hasWaline -}}
 <div id="waline-container" class="comment-system">
   <div id="waline"></div>
@@ -142,8 +80,18 @@ body.dark #waline{}
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
-    const serverURL = {{ $server | jsonify }};
-    const commentPath = {{ $commentPath | jsonify }};
+    let serverURL = {{ $server | jsonify }};
+    serverURL = String(serverURL || "")
+      .replace(/\\/g, "")
+      .replace(/["']/g, "")
+      .trim()
+      .replace(/\/+$/, "");
+
+    let commentPath = {{ $commentPath | jsonify }};
+    commentPath = String(commentPath || "")
+      .replace(/\\/g, "")
+      .replace(/["']/g, "")
+      .trim();
 
     console.log("Waline serverURL =", serverURL);
     console.log("Waline path =", commentPath);
@@ -162,7 +110,6 @@ body.dark #waline{}
 </div>
 {{- end -}}
 
-{{/* ===== Giscus (merged by translationKey) ===== */}}
 <div id="giscus-container" class="comment-system">
   <div id="giscus-comment"></div>
   <script src="https://giscus.app/client.js"
