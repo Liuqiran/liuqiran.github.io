@@ -67,20 +67,43 @@ html[lang="zh-CN"] .comment-system * {
     <!-- Twikoo 评论代码 -->
     <div id="twikoo"></div>
     <script src="https://registry.npmmirror.com/twikoo/1.6.40/files/dist/twikoo.all.min.js"></script>
-    <script>
-      {{ $path := .RelPermalink }}
-      {{ if eq .Lang "en" }}
-        {{ $path = replace $path "/en/" "/zh/" }}
+ <script>
+  /* 1) UI 语言：随页面语言 */
+  {{ $twikooLang := "en" }}
+  {{ if eq .Lang "zh" }}{{ $twikooLang = "zh-CN" }}{{ end }}
+
+  /* 2) 评论线程ID：优先 translationKey；否则维持你现在的“统一到中文URL”做法 */
+  {{ $twikooPath := "" }}
+
+  {{ with .Params.translationKey }}
+    {{/* 你自己在 front matter 写了 translationKey */}}
+    {{ $twikooPath = printf "tk:%s" . }}
+  {{ else }}
+    {{/* 没写 translationKey：保持现状，统一到中文 permalink */}}
+    {{ $twikooPath = .RelPermalink }}
+    {{ if eq .Lang "en" }}
+      {{/* 有中文译文就用它（最稳），没有再 replace */}}
+      {{ $found := false }}
+      {{ range .Translations }}
+        {{ if eq .Lang "zh" }}
+          {{ $twikooPath = .RelPermalink }}
+          {{ $found = true }}
+        {{ end }}
       {{ end }}
-  
-      twikoo.init({
-        envId: "{{ .Site.Params.twikoo.id }}",
-        el: "#twikoo",
-        region: "{{ .Site.Params.twikoo.region }}",
-        lang: "{{ .Site.Language.Lang }}",
-        path: "{{ $path }}",
-      })
-    </script>
+      {{ if not $found }}
+        {{ $twikooPath = replace $twikooPath "/en/" "/zh/" }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  twikoo.init({
+    envId: "{{ .Site.Params.twikoo.id }}",
+    el: "#twikoo",
+    region: "{{ .Site.Params.twikoo.region }}",
+    lang: "{{ $twikooLang }}",
+    path: "{{ $twikooPath }}",
+  })
+</script>  
   </div>
   
   <div id="giscus-container" class="comment-system">
