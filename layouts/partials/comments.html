@@ -1,20 +1,41 @@
 {{/* layouts/partials/comments.html */}}
 
+{{- $lang := .Lang -}}   {{/* 一定要放最前面 */}}
+
 {{- $server := "" -}}
 {{- with .Site.Params.waline.serverURL -}}
   {{- $server = . -}}
 {{- end -}}
-
-{{/* 清洗：去首尾空白 */}}
 {{- $server = $server | replaceRE `^\s+|\s+$` "" -}}
-{{/* 清洗：去首尾引号（单引号/双引号） */}}
 {{- $server = $server | replaceRE `^["']+|["']+$` "" -}}
-{{/* 清洗：去末尾斜杠 */}}
 {{- $server = $server | replaceRE `/+$` "" -}}
-
 {{- $hasWaline := ne $server "" -}}
 
-<!-- waline.serverURL={{ printf "%q" $server }} -->
+{{- $walineLang := "en" -}}
+{{- $giscusLang := "en" -}}
+{{- if eq $lang "zh" -}}
+  {{- $walineLang = "zh-CN" -}}
+  {{- $giscusLang = "zh-CN" -}}
+{{- else if eq $lang "ja" -}}
+  {{- $walineLang = "ja" -}}
+  {{- $giscusLang = "ja" -}}
+{{- end -}}
+
+{{- $commentPath := "" -}}
+{{- if .Params.waline_path -}}
+  {{- $commentPath = .Params.waline_path -}}
+{{- else if .Params.url -}}
+  {{- $commentPath = .Params.url -}}
+{{- else if .Params.aliases -}}
+  {{- $commentPath = index .Params.aliases 0 -}}
+{{- else if .Params.translationKey -}}
+  {{- $commentPath = printf "t:%s" .Params.translationKey -}}
+{{- else -}}
+  {{- $commentPath = .RelPermalink | replaceRE "^/(en|zh|ja)/" "/" -}}
+{{- end -}}
+{{- $commentPath = $commentPath | replaceRE "/$" "" -}}
+
+<!-- waline.serverURL={{ printf "%q" $server }} -->    
 
 {{/* Waline / Giscus 的语言映射 */}}
 {{- $walineLang := "en" -}}
