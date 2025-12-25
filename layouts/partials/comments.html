@@ -1,9 +1,10 @@
 {{/* layouts/partials/comments.html */}}
 
-{{- $lang := .Lang -}}   {{/* 一定要放最前面 */}}
+{{- $lang := .Lang -}}
 
+{{/* ===== Waline serverURL ===== */}}
 {{- $server := "" -}}
-{{- with .Site.Params.waline.serverURL -}}
+{{- with site.Params.waline.serverURL -}}
   {{- $server = . -}}
 {{- end -}}
 {{- $server = $server | replaceRE `^\s+|\s+$` "" -}}
@@ -11,6 +12,7 @@
 {{- $server = $server | replaceRE `/+$` "" -}}
 {{- $hasWaline := ne $server "" -}}
 
+{{/* ===== Language map ===== */}}
 {{- $walineLang := "en" -}}
 {{- $giscusLang := "en" -}}
 {{- if eq $lang "zh" -}}
@@ -21,47 +23,17 @@
   {{- $giscusLang = "ja" -}}
 {{- end -}}
 
-{{/* ===== commentPath：统一用 t:translationKey ===== */}}
-{{- $commentPath := "" -}}
-
-{{- if .Params.waline_path -}}
-  {{- $commentPath = .Params.waline_path -}}   {{/* 极少数页面手动兜底 */}}
-{{- else if .Params.translationKey -}}
-  {{- $commentPath = printf "t:%s" .Params.translationKey -}}
+{{/* ===== commentPath: ALWAYS t:translationKey (fallback to filename) ===== */}}
+{{- $tkey := "" -}}
+{{- with .Params.translationKey -}}
+  {{- $tkey = . -}}
 {{- else -}}
-  {{- $commentPath = .RelPermalink | replaceRE "^/(en|zh|ja)/" "/" -}}
+  {{- with .File -}}{{- $tkey = .BaseFileName -}}{{- end -}}
 {{- end -}}
+{{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
+{{- $tkey = $tkey | replaceRE `^["']+|["']+$` "" -}}
 
-{{/* 清洗（防止出现 "\"/zh/about-me\"" 这种坑） */}}
-{{- $commentPath = $commentPath | replaceRE `^\s+|\s+$` "" -}}
-{{- $commentPath = $commentPath | replaceRE `^["']+|["']+$` "" -}}
-{{- $commentPath = $commentPath | replaceRE `/+$` "" -}}
-
-{{/* Waline / Giscus 的语言映射 */}}
-{{- $walineLang := "en" -}}
-{{- $giscusLang := "en" -}}
-{{- if eq $lang "zh" -}}
-  {{- $walineLang = "zh-CN" -}}
-  {{- $giscusLang = "zh-CN" -}}
-{{- else if eq $lang "ja" -}}
-  {{- $walineLang = "ja" -}}
-  {{- $giscusLang = "ja" -}}
-{{- end -}}
-
-{{/* commentPath（线程ID）优先级：用 if/else-if 链，避免 with/else-if 解析报错 */}}
-{{- $commentPath := "" -}}
-{{- if .Params.waline_path -}}
-  {{- $commentPath = .Params.waline_path -}}
-{{- else if .Params.url -}}
-  {{- $commentPath = .Params.url -}}
-{{- else if .Params.aliases -}}
-  {{- $commentPath = index .Params.aliases 0 -}}
-{{- else if .Params.translationKey -}}
-  {{- $commentPath = printf "t:%s" .Params.translationKey -}}
-{{- else -}}
-  {{- $commentPath = .RelPermalink | replaceRE "^/(en|zh|ja)/" "/" -}}
-{{- end -}}
-{{- $commentPath = $commentPath | replaceRE "/$" "" -}}
+{{- $commentPath := printf "t:%s" $tkey -}}
 
 <style>
 /* ===== Toggle UI ===== */
@@ -92,7 +64,7 @@
 .comment-invite__title{ font-size:1rem; font-weight:500; }
 .comment-invite__sub{ margin-top:.25em; font-size:.9rem; opacity:.75; }
 
-/* ===== 评论区字体：用 lang 前缀匹配更稳 ===== */
+/* ===== 评论区字体 ===== */
 html[lang^="en"] .comment-system,
 html[lang^="en"] .comment-system *{
   font-family:"Georgia","Times New Roman",serif !important;
@@ -109,7 +81,7 @@ html[lang^="ja"] .comment-system *{
   font-size:0.95rem !important; font-weight:400 !important; line-height:1.78 !important;
 }
 
-/* ===== Waline：用 PaperMod 变量接管主题色（去掉默认蓝）===== */
+/* ===== Waline theme sync with PaperMod ===== */
 #waline{
   --waline-theme-color: var(--primary);
   --waline-active-color: var(--primary);
@@ -119,17 +91,10 @@ html[lang^="ja"] .comment-system *{
   --waline-border-color: var(--border);
   --waline-box-shadow: none;
 }
-/* PaperMod 暗色一般是 body.dark */
-body.dark #waline{
-  /* 可选：想更黑就解除注释
-  --waline-bg-color: #16181a;
-  --waline-bg-color-light: #1f2225;
-  --waline-border-color: #2a2e33;
-  */
-}
+body.dark #waline{}
 </style>
 
-{{/* ===== 2) Invite 文案 ===== */}}
+{{/* ===== Invite 文案 ===== */}}
 {{- $invites := dict
   "zh" (slice
     (dict "t" "你的留言，是我继续写下去的动力 👇" "s" "短句也很珍贵，我会认真读。")
@@ -150,7 +115,6 @@ body.dark #waline{
 
 {{- $list := index $invites $lang -}}
 {{- if not $list -}}{{- $list = index $invites "en" -}}{{- end -}}
-
 {{- $seedBase := .RelPermalink -}}
 {{- with .File -}}{{- $seedBase = .Path -}}{{- end -}}
 {{- $seed := printf "%s|%s" $lang $seedBase -}}
@@ -169,26 +133,20 @@ body.dark #waline{
   <button id="btn-giscus">Giscus 💬</button>
 </div>
 
-{{/* ===== 3) Waline 容器 ===== */}}
+{{/* ===== Waline ===== */}}
 {{- if $hasWaline -}}
 <div id="waline-container" class="comment-system">
   <div id="waline"></div>
-
   <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
-const rawServerURL = {{ $server | jsonify }};
-let serverURL = String(rawServerURL || "").trim();
-serverURL = serverURL.replace(/^["']+|["']+$/g, "").replace(/["']/g, "");
-serverURL = serverURL.replace(/\/+$/, "");
+    const serverURL = {{ $server | jsonify }};
+    const commentPath = {{ $commentPath | jsonify }};
 
-const commentPath = {{ $commentPath | jsonify }};
-
-console.log("Waline rawServerURL =", rawServerURL);
-console.log("Waline normalized serverURL =", serverURL);
-
+    console.log("Waline serverURL =", serverURL);
+    console.log("Waline path =", commentPath);
 
     init({
       el: '#waline',
@@ -204,7 +162,7 @@ console.log("Waline normalized serverURL =", serverURL);
 </div>
 {{- end -}}
 
-{{/* ===== 4) Giscus 容器 ===== */}}
+{{/* ===== Giscus (merged by translationKey) ===== */}}
 <div id="giscus-container" class="comment-system">
   <div id="giscus-comment"></div>
   <script src="https://giscus.app/client.js"
@@ -213,7 +171,7 @@ console.log("Waline normalized serverURL =", serverURL);
           data-category="General"
           data-category-id="DIC_kwDONiVddc4CljSp"
           data-mapping="specific"
-          data-term="{{ printf "t:%s" .Params.translationKey }}"
+          data-term="{{ $commentPath }}"
           data-strict="0"
           data-reactions-enabled="1"
           data-emit-metadata="0"
