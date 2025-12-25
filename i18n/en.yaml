@@ -1,5 +1,5 @@
-[readMore]
-other = "Read more:"
+readMore:
+  other: "Read more:"
 
 - id: archive_label
   translation: "Archive"

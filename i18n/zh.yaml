@@ -1,8 +1,7 @@
-[readMore]
-other = "阅读全文："
+readmore: 
+  other = "阅读全文："
 
-
- id: archive_label
+- id: archive_label
   translation: "归档"
 - id: archive_total
   translation: "总计约"
