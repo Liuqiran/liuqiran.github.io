@@ -5,7 +5,7 @@
 {{ .Title }}
 {{- if (.Param "ShowRssButtonInSectionTermList") }}
 {{- $rss := (.OutputFormats.Get "rss") }}
-{{- if (eq .Kind page) }}
+{{- if eq .Kind "page" }}
 {{- $rss = (.Parent.OutputFormats.Get "rss") }}
 {{- end }}
 {{- with $rss }}
@@ -27,11 +27,12 @@ stroke-linecap="round" stroke-linejoin="round" height="23">
 {{- end }}
 </header>
 
-{{- $pages := where site.RegularPages "Lang" "in" (slice "en" "zh") }}
+{{- $pages := .Site.RegularPages -}}
 
-{{- if site.Params.ShowAllPagesInArchive }}
-{{- $pages = site.RegularPages }}
+{{- if .Site.Params.ShowAllPagesInArchive }}
+  {{- $pages = .Site.RegularPages }}
 {{- end }}
+
 
 {{- range $pages.GroupByPublishDate "2006" }}
 {{- if ne .Key "0001" }}
@@ -53,7 +54,7 @@ stroke-linecap="round" stroke-linejoin="round" height="23">
 </h3>
 <div class="archive-posts">
 {{- range .Pages }}
-{{- if eq .Kind "page" }}
+{{- if eq .Kind "page" }} 
 <div class="archive-entry">
 <h3 class="archive-entry-title entry-hint-parent">
 {{- .Title | markdownify }}
