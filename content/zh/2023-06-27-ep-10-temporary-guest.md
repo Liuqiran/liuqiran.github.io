@@ -1,7 +1,8 @@
 ---
 title: 過客記
 author: Qiran
-date: 2025-04-12
+date: 2025-04-12  
+lastmod: 2025-10-28
 type: post
 aliases: ["/temporary-guest/"]
 tags: 
