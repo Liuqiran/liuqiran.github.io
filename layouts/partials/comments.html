@@ -91,7 +91,7 @@ html[lang="en-US"] .comment-system * {
 
 {{- $seedBase := (default .RelPermalink .File.Path) -}}
 {{- $seed := printf "%s|%s" $lang $seedBase -}}
-{{- $idx := int (mod (hash.FNV32a $seed) (len $list)) -}}
+{{- $idx := int (mod (crypto.FNV32a $seed) (len $list)) -}}
 {{- $pick := index $list $idx -}}
 
 <div class="comment-invite">
