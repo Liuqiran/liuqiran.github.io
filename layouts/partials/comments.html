@@ -44,7 +44,7 @@
 html[lang^="en"] .comment-system,
 html[lang^="en"] .comment-system *{
   font-family:"Georgia","Times New Roman",serif !important;
-  font-size:0.95rem !important; font-weight:400 !important; line-height:1.55 !important;
+  font-size:1rem !important; font-weight:400 !important; line-height:1.55 !important;
 }
 html[lang^="zh"] .comment-system,
 html[lang^="zh"] .comment-system *{
@@ -119,6 +119,12 @@ body.dark #waline{
   <button id="btn-giscus">Giscus 💬</button>
 </div>
 
+{{- $tk := .TranslationKey -}}
+{{- if not $tk -}}
+  {{- $tk = .File.ContentBaseName -}}  {{/* 没写 translationKey 就用文件名 */}}
+{{- end -}}
+{{- $commentPath := printf "tk:%s" $tk -}}
+
 {{- /* ===== Waline 容器：只有配置了 serverURL 才渲染 ===== */ -}}
 {{- if $hasWaline -}}
 <div id="waline-container" class="comment-system">
@@ -131,11 +137,12 @@ body.dark #waline{
     init({
       el: '#waline',
       serverURL: '{{ $server }}',
-      path: '{{ $commentPath }}',  /* ✅ 这里就是“中英共用”的关键 */
-
+      path: '{{ $commentPath }}', /* ✅ 这里就是“中英共用”的关键 */
+      requiredMeta: ['nick', 'mail'],
       lang: '{{ $lang }}',
       locale: { reactionTitle: "" },
-      reaction: true,
+      reaction: true,  
+      
       dark: 'body.dark',
     });
   </script>
