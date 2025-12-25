@@ -1,2 +1,15 @@
 [readMore]
 other = "Read more:"
+
+- id: archive_label
+  translation: "Archive"
+- id: archive_total
+  translation: "Total ~"
+- id: archive_recent
+  translation: "Recently updated"
+- id: archive_updated_on
+  translation: "Updated"
+- id: archive_unit_cjk
+  translation: "chars"
+- id: archive_unit_words
+  translation: "words"

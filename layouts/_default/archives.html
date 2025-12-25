@@ -1,118 +1,108 @@
 {{- define "main" }}
 
 <header class="page-header">
-<h1>
-{{ .Title }}
-{{- if (.Param "ShowRssButtonInSectionTermList") }}
-{{- $rss := (.OutputFormats.Get "rss") }}
-{{- if eq .Kind "page" }}
-{{- $rss = (.Parent.OutputFormats.Get "rss") }}
-{{- end }}
-{{- with $rss }}
-<a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-stroke-linecap="round" stroke-linejoin="round" height="23">
-<path d="M4 11a9 9 0 0 1 9 9" />
-<path d="M4 4a16 16 0 0 1 16 16" />
-<circle cx="5" cy="19" r="1" />
-</svg>
-</a>
-{{- end }}
-{{- end }}
-</h1>
-{{- if .Description }}
-<div class="post-description">
-{{ .Description }}
-</div>
-{{- end }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Summary }}
+    <div class="post-description">{{ .Summary }}</div>
+  {{- else if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+  {{- end }}
 </header>
 
-{{- $pages := .Site.RegularPages -}}
-
-{{- if .Site.Params.ShowAllPagesInArchive }}
-  {{- $pages = .Site.RegularPages }}
-{{- end }}
-
-
-{{/* 统计：篇数 + 总字数 */}}
-{{- $s := newScratch -}}
-{{- $s.Set "words" 0 -}}
-{{- range $pages -}}
-  {{- $s.Add "words" .WordCount -}}
+{{/* 只取“当前语言站点”的页面（不会中英混算） */}}
+{{- $main := site.Params.mainSections | default (slice "posts" "post") -}}
+{{- $pages := where site.RegularPages "Type" "in" $main -}}
+{{- if site.Params.ShowAllPagesInArchive -}}
+  {{- $pages = site.RegularPages -}}
 {{- end -}}
-{{- $totalWords := $s.Get "words" -}}   
 
+{{/* 分页（只调用一次） */}}
+{{- $perPage := site.Params.archivePaginate | default 200 -}}
+{{- $p := .Paginate ($pages.ByPublishDate.Reverse) $perPage -}}
 
-{{- $recent := first 10 (sort $pages "Lastmod" "desc") -}}
-<div class="archive-updated">
-  <div class="archive-updated-title">最近更新</div>
-  <ul class="archive-updated-list">
-    {{- range $recent -}}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <span class="archive-updated-meta">更新于 {{ .Lastmod.Format "01-02" }}</span>
-    </li>
-    {{- end -}}
-  </ul>
+{{/* 语言与计数口径：CJK 用“字数”(CJK字符+英文词)，非CJK用 WordCount */}}
+{{- $lang := site.Language.Lang -}}
+{{- $isCJK := in (slice "zh" "ja" "ko") $lang -}}
+
+{{/* 总计 */}}
+{{- $s := newScratch -}}
+{{- $s.Set "total" 0 -}}
+{{- range $pages -}}
+  {{- $n := .WordCount -}}
+  {{- if $isCJK -}}
+    {{- $plain := .Plain -}}
+    {{- $cjk := len (findRE "[\\p{Han}\\p{Hiragana}\\p{Katakana}\\p{Hangul}]" $plain) -}}
+    {{- $latin := len (findRE "[A-Za-z0-9]+" $plain) -}}
+    {{- $n = add $cjk $latin -}}
+  {{- end -}}
+  {{- $s.Add "total" $n -}}
+{{- end -}}
+{{- $total := $s.Get "total" -}}
+{{- $unit := cond $isCJK (i18n "archive_unit_cjk") (i18n "archive_unit_words") -}}
+
+{{/* 统计（先显示在最上方） */}}
+<div class="post-description archive-stats">
+  {{ i18n "archive_label" }} {{ len $pages }} ·
+  {{ i18n "archive_total" }} {{ printf "%.2fK" (div (float $total) 1000) }} {{ $unit }}
 </div>
 
-<div class="archive-topbox">
-  <div class="archive-stats">
-    <span>归档 {{ len $pages }}</span>
-    <span>总计约 {{ printf "%.2fK" (div (float $totalWords) 1000) }} 字</span>
-  </div>
-</div>
+{{/* 最近更新：只显示最近半年、最多5篇、只在第一页出现 */}}
+{{- if eq $p.PageNumber 1 -}}
+  {{- $cutoff := now.AddDate 0 -6 0 -}}
+  {{- $recent := where $pages "Lastmod" "ge" $cutoff -}}
+  {{- $recent = first 5 (sort $recent "Lastmod" "desc") -}}
 
-{{- $p := .Paginate $pages 50 -}}  {{/* 每页 200 篇，自行改 */}}
+  {{- if gt (len $recent) 0 -}}
+    <div class="archive-year">
+      <h2 class="archive-year-header">{{ i18n "archive_recent" }}</h2>
+      <div class="archive-posts">
+        {{- range $recent -}}
+          <div class="archive-entry">
+            <h3 class="archive-entry-title entry-hint-parent">{{ .Title | markdownify }}</h3>
+            <div class="archive-meta">
+              {{ i18n "archive_updated_on" }} {{ .Lastmod.Format "01-02" }}
+            </div>
+            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+          </div>
+        {{- end -}}
+      </div>
+    </div>
+  {{- end -}}
+{{- end -}}
 
+{{/* 下面是归档正文（按年/月） */}}
+{{- range $p.Pages.GroupByPublishDate "2006" -}}
+  {{- if ne .Key "0001" -}}
+    <div class="archive-year">
+      {{- $year := replace .Key "0001" "" -}}
+      <h2 class="archive-year-header" id="{{ $year }}">
+        <a class="archive-header-link" href="#{{ $year }}">{{ $year }}</a>
+        <sup class="archive-count"> {{ len .Pages }}</sup>
+      </h2>
 
-{{- range $p.Pages.GroupByPublishDate "2006" }}
-{{- if ne .Key "0001" }}
-<div class="archive-year">
-{{- $year := replace .Key "0001" "" }}
-<h2 class="archive-year-header" id="{{ $year }}">
-<a class="archive-header-link" href="#{{ $year }}">
-{{- $year -}}
-</a>
-<sup class="archive-count"> {{ len .Pages }}</sup>
-</h2>
-{{- range .Pages.GroupByDate "January" }}
-<div class="archive-month">
-<h3 class="archive-month-header" id="{{ $year }}-{{ .Key }}">
-<a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">
-{{- .Key -}}
-</a>
-<sup class="archive-count"> {{ len .Pages }}</sup>
-</h3>
-<div class="archive-posts">
-{{- range .Pages }}
-{{- if eq .Kind "page" }} 
-<div class="archive-entry">
-<h3 class="archive-entry-title entry-hint-parent">
-{{- .Title | markdownify }}
-{{- if .Draft }}
-<span class="entry-hint" title="Draft">
-<svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" fill="currentColor">
-<path
-d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-</svg>
-</span>
+      {{- range (.Pages.ByPublishDate.Reverse).GroupByDate "January" -}}
+        <div class="archive-month">
+          <h3 class="archive-month-header" id="{{ $year }}-{{ .Key }}">
+            <a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">{{ .Key }}</a>
+            <sup class="archive-count"> {{ len .Pages }}</sup>
+          </h3>
+
+          <div class="archive-posts">
+            {{- range .Pages.ByPublishDate.Reverse -}}
+              <div class="archive-entry">
+                <h3 class="archive-entry-title entry-hint-parent">{{ .Title | markdownify }}</h3>
+                <div class="archive-meta">{{- partial "post_meta.html" . -}}</div>
+                <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+              </div>
+            {{- end -}}
+          </div>
+        </div>
+      {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}
+
+{{/* 纯数字分页 */}}
+{{- partial "pagination-digits.html" $p -}}
+
 {{- end }}
-</h3>
-<div class="archive-meta">
-{{- partial "post_meta.html" . -}}
-</div>
-<a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-</div>
-{{- end }}
-{{- end }}
-</div>
-</div>
-{{- end }}
-</div>
-{{- end }}
-{{- end }}
-
-{{ template "_internal/pagination.html" . }}  
-
-{{- end }}{{/* end main */}}

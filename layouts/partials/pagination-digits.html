@@ -1,0 +1,14 @@
+{{- $p := . -}}
+{{- if gt $p.TotalPages 1 -}}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- range $pager := $p.Pagers -}}
+      {{- if eq $pager.PageNumber $p.PageNumber -}}
+        <span class="page-num current">{{ $pager.PageNumber }}</span>
+      {{- else -}}
+        <a class="page-num" href="{{ $pager.URL | absURL }}">{{ $pager.PageNumber }}</a>
+      {{- end -}}
+    {{- end -}}
+  </nav>
+</footer>
+{{- end -}}

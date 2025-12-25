@@ -1,2 +1,16 @@
 [readMore]
 other = "阅读全文："
+
+
+ id: archive_label
+  translation: "归档"
+- id: archive_total
+  translation: "总计约"
+- id: archive_recent
+  translation: "最近更新"
+- id: archive_updated_on
+  translation: "更新于"
+- id: archive_unit_cjk
+  translation: "字"
+- id: archive_unit_words
+  translation: "words"
