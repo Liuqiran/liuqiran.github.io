@@ -1,0 +1,105 @@
+name: Add translationKey to content
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add-translationkey:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Add translationKey (only when missing)
+        shell: bash
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+
+          ROOT = Path("content")
+
+          def extract_front_matter(text: str):
+            if not text.startswith("---"):
+              return None
+            parts = text.split("---", 2)
+            if len(parts) < 3:
+              return None
+            return parts[1], parts[2]
+
+          def has_translation_key(fm: str) -> bool:
+            return re.search(r"(?m)^translationKey:\s*", fm) is not None
+
+          def guess_key(md_path: Path, fm: str) -> str:
+            # prefer slug if present
+            m = re.search(r"(?m)^slug:\s*['\"]?([^'\"]+)['\"]?\s*$", fm)
+            if m:
+              return m.group(1).strip()
+            return md_path.stem  # filename without .md
+
+          def insert_translation_key(fm: str, key: str) -> str:
+            line = f"translationKey: {key}\n"
+            lines = fm.splitlines(keepends=True)
+
+            out = []
+            inserted = False
+            for ln in lines:
+              out.append(ln)
+              if (not inserted) and re.match(r"^title:\s*", ln):
+                out.append(line)
+                inserted = True
+            if not inserted:
+              out.insert(0, line)
+            return "".join(out)
+
+          changed = 0
+          scanned = 0
+
+          if not ROOT.exists():
+            print("No content/ directory, exit.")
+            raise SystemExit(0)
+
+          for md in ROOT.rglob("*.md"):
+            text = md.read_text(encoding="utf-8", errors="ignore")
+            fm_rest = extract_front_matter(text)
+            if not fm_rest:
+              continue
+
+            fm, rest = fm_rest
+            scanned += 1
+            if has_translation_key(fm):
+              continue
+
+            key = guess_key(md, fm)
+            new_fm = insert_translation_key(fm, key)
+            new_text = f"---{new_fm}---{rest}"
+
+            if new_text != text:
+              md.write_text(new_text, encoding="utf-8")
+              changed += 1
+
+          print(f"Scanned: {scanned} markdown files with front matter.")
+          print(f"Updated: {changed} files (added translationKey).")
+          PY
+
+      - name: Commit changes (if any)
+        shell: bash
+        run: |
+          set -eux
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: add translationKey to content"
+          git push
