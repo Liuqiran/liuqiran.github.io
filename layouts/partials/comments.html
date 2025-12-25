@@ -8,8 +8,10 @@
   {{- $server = . -}}
 {{- end -}}
 
-{{/* 强制去掉值里的引号/空白/末尾斜杠 */}}
-{{- $server = $server | trim | replaceRE `^["']+|["']+$` "" | replaceRE `/+$` "" -}}
+{{/* 清洗：去首尾空白、去首尾引号、去末尾 / */}}
+{{- $server = $server | strings.TrimSpace -}}
+{{- $server = $server | replaceRE `^["']+|["']+$` "" -}}
+{{- $server = $server | replaceRE `/+$` "" -}}
 
 {{- $hasWaline := ne $server "" -}}
 
