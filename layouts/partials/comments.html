@@ -21,24 +21,25 @@
   {{- $giscusLang = "ja" -}}
 {{- end -}}
 
+{{/* ===== commentPath 统一规则：t:translationKey ===== */}}
 {{- $commentPath := "" -}}
+
 {{- if .Params.waline_path -}}
-  {{- $commentPath = .Params.waline_path -}}
+  {{- $commentPath = .Params.waline_path -}}   {{/* 手动兜底/临时兼容 */}}
+{{- else if .Params.translationKey -}}
+  {{- $commentPath = printf "t:%s" .Params.translationKey -}}
 {{- else if .Params.url -}}
   {{- $commentPath = .Params.url -}}
 {{- else if .Params.aliases -}}
   {{- $commentPath = index .Params.aliases 0 -}}
-{{- else if .Params.translationKey -}}
-  {{- $commentPath = printf "t:%s" .Params.translationKey -}}
 {{- else -}}
   {{- $commentPath = .RelPermalink | replaceRE "^/(en|zh|ja)/" "/" -}}
 {{- end -}}
-{{- $commentPath = $commentPath | replaceRE "/$" "" -}}   
+
+{{/* 清洗：去首尾空白/引号/末尾斜杠（防止出现 "\"/zh/about-me\"" 这种坑） */}}
 {{- $commentPath = $commentPath | replaceRE `^\s+|\s+$` "" -}}
 {{- $commentPath = $commentPath | replaceRE `^["']+|["']+$` "" -}}
-{{- $commentPath = $commentPath | replaceRE `/+$` "" -}}
-
-<!-- waline.serverURL={{ printf "%q" $server }} -->    
+{{- $commentPath = $commentPath | replaceRE `/+$` "" -}}  
 
 {{/* Waline / Giscus 的语言映射 */}}
 {{- $walineLang := "en" -}}

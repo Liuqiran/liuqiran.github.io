@@ -4,7 +4,8 @@ slug: "about-me"
 author: Qiran
 type: page
 date: 2019-02-09T03:14:24+00:00
-lastmod: 2025-12-25
+lastmod: 2025-12-25  
+translationKey: about-me
 aliases: ["/en/about-me-2/"]
 tags:
   - Building Site
