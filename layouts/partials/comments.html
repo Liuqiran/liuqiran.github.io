@@ -4,9 +4,13 @@
 {{- $lang := .Lang -}}
 
 {{- $server := "" -}}
-{{- with site.Params.waline.serverURL -}}
+{{- with .Site.Params.waline.serverURL -}}
   {{- $server = . -}}
 {{- end -}}
+
+{{/* 强制去掉值里的引号/空白/末尾斜杠 */}}
+{{- $server = $server | trim | replaceRE `^["']+|["']+$` "" | replaceRE `/+$` "" -}}
+
 {{- $hasWaline := ne $server "" -}}
 
 {{/* Waline / Giscus 的语言映射 */}}
@@ -151,8 +155,17 @@ body.dark #waline{
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
-    const serverURL = {{ $server | jsonify }};
-    const commentPath = {{ $commentPath | jsonify }};
+const rawServerURL = {{ $server | jsonify }};
+let serverURL = String(rawServerURL || "").trim();
+
+// 兜底：再剥一次引号（防止值里还残留）
+serverURL = serverURL.replace(/^["']+|["']+$/g, "").replace(/["']/g, "");
+serverURL = serverURL.replace(/\/+$/, "");
+
+const commentPath = {{ $commentPath | jsonify }};
+
+console.log("Waline rawServerURL =", rawServerURL);
+console.log("Waline normalized serverURL =", serverURL);
 
     init({
       el: '#waline',
