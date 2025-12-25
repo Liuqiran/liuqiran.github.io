@@ -1,19 +1,20 @@
 {{/* layouts/partials/comments.html */}}
 
-{{/* ===== 1) 提前定义：lang / waline server / hasWaline / commentPath（只定义一次）===== */}}
-{{- $lang := .Lang -}}
-
 {{- $server := "" -}}
 {{- with .Site.Params.waline.serverURL -}}
   {{- $server = . -}}
 {{- end -}}
 
-{{/* 清洗：去首尾空白、去首尾引号、去末尾 / */}}
-{{- $server = $server | strings.TrimSpace -}}
+{{/* 清洗：去首尾空白 */}}
+{{- $server = $server | replaceRE `^\s+|\s+$` "" -}}
+{{/* 清洗：去首尾引号（单引号/双引号） */}}
 {{- $server = $server | replaceRE `^["']+|["']+$` "" -}}
+{{/* 清洗：去末尾斜杠 */}}
 {{- $server = $server | replaceRE `/+$` "" -}}
 
 {{- $hasWaline := ne $server "" -}}
+
+<!-- waline.serverURL={{ printf "%q" $server }} -->
 
 {{/* Waline / Giscus 的语言映射 */}}
 {{- $walineLang := "en" -}}
@@ -159,8 +160,6 @@ body.dark #waline{
 
 const rawServerURL = {{ $server | jsonify }};
 let serverURL = String(rawServerURL || "").trim();
-
-// 兜底：再剥一次引号（防止值里还残留）
 serverURL = serverURL.replace(/^["']+|["']+$/g, "").replace(/["']/g, "");
 serverURL = serverURL.replace(/\/+$/, "");
 
@@ -168,6 +167,7 @@ const commentPath = {{ $commentPath | jsonify }};
 
 console.log("Waline rawServerURL =", rawServerURL);
 console.log("Waline normalized serverURL =", serverURL);
+
 
     init({
       el: '#waline',
