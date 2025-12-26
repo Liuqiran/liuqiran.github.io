@@ -120,7 +120,7 @@
   <div id="waline"></div>
   <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 
- <script type="module">
+<script type="module">
   import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
   // ✅ 把 Hugo 变量喂给 JS（否则 serverURL/commentPath 都是 undefined）
@@ -179,8 +179,15 @@
   }
 
   window.__ensureWaline = ensureWaline;
-</script>  
+</script> 
+</div>
+{{- end -}}
 
+<div id="giscus-container" class="comment-system">
+  <div id="giscus-comment"></div>
+</div>
+
+<script>
   const btnWaline = document.getElementById('btn-waline');
   const btnGiscus = document.getElementById('btn-giscus');
   const walineContainer = document.getElementById('waline-container');
