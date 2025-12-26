@@ -119,26 +119,6 @@
                 {{- end }}
             </div>
         </div>
-
-        {{/* ===== Mobile hamburger menu (no JS) ===== */}}
-<details class="kq-mobile-menu" role="navigation">
-  <summary aria-label="Open menu">☰</summary>
-
-  <div class="kq-mobile-menu-panel">
-    <ul class="kq-mobile-menu-list">
-      {{- range site.Menus.main }}
-        {{- $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
-        <li>
-          <a href="{{ .URL | absLangURL }}" class="{{ if $active }}active{{ end }}">
-            {{- with .Pre }}{{ . }}{{ end -}}
-            <span class="kq-mobile-menu-text">{{ .Name }}</span>
-          </a>
-        </li>
-      {{- end }}
-    </ul>
-  </div>
-</details>
-
         {{- $currentPage := . }}
         <ul id="menu">
             {{- range site.Menus.main }}
