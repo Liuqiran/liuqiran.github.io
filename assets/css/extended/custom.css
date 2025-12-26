@@ -10,59 +10,54 @@ html[lang="zh-CN"] body {
 } 
 
 
-/* 竖排：只允许横向滚动 */
 .vertical-chinese-wrapper {
-  height: 85vh;
-  max-height: 85vh;
-
   overflow-x: auto;
-  overflow-y: hidden;          /* ✅ 不要竖向滚动 */
-
-  padding: 1rem;
-  box-sizing: border-box;
-
+  overflow-y: hidden;         /* ✅ 只横向滚动 */
+  height: 85vh;
+  max-height: 85vh;           /* ✅ 和 height 一致，防止后面覆盖 */
+  white-space: normal;
   column-gap: 1rem;
-  column-fill: balance;
-
-  direction: rtl;              /* 起始列在右边 */
+  padding: 1rem;
+  display: block;
+  direction: rtl;             /* trick: 让起始位置在右边 */
+  column-fill: balance;       /* 平均分配列中的内容 */
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x;
 }
 
-/* 竖排内容 */
-.vertical-chinese {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  line-height: 2.4;
-
-  word-break: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-
-  /* ✅ 防 Firefox 裁字：竖排“底部”(inline-end) 留白 */
-  padding-inline-end: 1em;     /* 不够就 1.5em / 2em */
-
-  /* ✅ 字体写法修正：regular 不是 font-family */
-  font-family: "KingHwa_OldSong", sans-serif;
-}
-
-/* 链接 */
 .vertical-chinese a {
   text-decoration: underline;
   word-break: break-word;
   overflow-wrap: break-word;
 }
+
 .vertical-chinese a:hover {
   text-decoration: underline;
 }
 
-/* 竖排里的图片 */
+.vertical-chinese {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 2.4;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+
+  font-family: "KingHwa_OldSong", sans-serif; /* ✅ 修正 regular */
+
+  column-fill: balance;
+  direction: ltr;
+
+  padding-bottom: 1em;        /* 你原来的保留 */
+  padding-inline-end: 1em;    /* ✅ 防 Firefox 裁字：竖排“底部”留白 */
+}
+
+/* 为图片设置最大宽度和高度 */
 .vertical-chinese img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-}
-
+}  
 
 img[aria-label="logo"] {
   border-radius: 50%;
