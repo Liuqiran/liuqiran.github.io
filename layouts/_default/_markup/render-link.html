@@ -1,0 +1,22 @@
+{{- $dest := .Destination -}}
+{{- $text := .Text | safeHTML -}}
+{{- $title := .Title -}}
+
+{{- $u := urls.Parse $dest -}}
+{{- $scheme := lower $u.Scheme -}}
+{{- $host := lower $u.Host -}}
+
+{{- $internalHosts := slice "liuqiran.com" "www.liuqiran.com" "liuqiran.github.io" -}}
+
+{{- $isExternal := false -}}
+{{- /* 只对 http/https（以及 //example.com 这种）判定外链 */ -}}
+{{- if or (eq $scheme "http") (eq $scheme "https") (and (eq $scheme "") (ne $host "")) -}}
+  {{- if not (in $internalHosts $host) -}}
+    {{- $isExternal = true -}}
+  {{- end -}}
+{{- end -}}
+
+<a href="{{ $dest | safeURL }}"
+  {{- with $title }} title="{{ . }}"{{ end -}}
+  {{- if $isExternal }} target="_blank" rel="noopener noreferrer"{{ end -}}
+>{{- $text -}}</a>
