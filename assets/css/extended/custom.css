@@ -49,7 +49,7 @@ html[lang="zh-CN"] body {
   direction: ltr;
 
   padding-bottom: 1em;        /* 你原来的保留 */
-  padding-inline-end: 1em;    /* ✅ 防 Firefox 裁字：竖排“底部”留白 */
+  padding-inline-end: 1.5em;    /* ✅ 防 Firefox 裁字：竖排“底部”留白 */
 }
 
 /* 为图片设置最大宽度和高度 */
