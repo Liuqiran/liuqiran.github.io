@@ -471,8 +471,38 @@ function ensureWaline() {
     }
   }
 
-  btnTOC && btnTOC.addEventListener('click', openTOC);
-  overlay && overlay.addEventListener('click', closeTOC);
+function closeTOC(){
+  document.documentElement.classList.remove('kq-toc-open');
+  // 顺便把 details 收起（否则下次打开还是展开状态）
+  if (toc) {
+    const d = toc.querySelector('details');
+    if (d) d.open = false;
+  }
+}
+
+function openTOC(){
+  if (!toc) return;
+  const d = toc.querySelector('details');
+  if (d) d.open = true;
+
+  if (mqMobile.matches) {
+    document.documentElement.classList.add('kq-toc-open');
+  } else {
+    toc.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+function toggleTOC(){
+  const html = document.documentElement;
+  if (html.classList.contains('kq-toc-open')) closeTOC();
+  else openTOC();
+}
+
+btnTOC && btnTOC.addEventListener('click', toggleTOC);
+
+// 遮罩：click + touchstart（手机更稳）
+overlay && overlay.addEventListener('click', closeTOC);
+overlay && overlay.addEventListener('touchstart', closeTOC, { passive: true });
 
   toc && toc.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
