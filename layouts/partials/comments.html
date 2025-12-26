@@ -2,7 +2,7 @@
 
 {{- $langRaw := .Lang | lower -}}
 
-{{/* ===== serverURL（强力清洗）===== */}}
+{{/* ===== serverURL（模板侧清洗）===== */}}
 {{- $server := "" -}}
 {{- with site.Params.waline.serverURL -}}
   {{- $server = . -}}
@@ -13,7 +13,7 @@
 {{- $server = $server | replaceRE `/+$` "" -}}
 {{- $hasWaline := ne $server "" -}}
 
-{{/* ===== walineLang 默认值（只是给 JS 兜底；真正以 <html lang> 为准）===== */}}
+{{/* ===== walineLang 兜底 ===== */}}
 {{- $walineLang := "en" -}}
 {{- if hasPrefix $langRaw "zh" -}}
   {{- $walineLang = "zh-CN" -}}
@@ -21,18 +21,16 @@
   {{- $walineLang = "jp" -}}
 {{- end -}}
 
-{{/* ===== commentPath：永远 t:translationKey（没有就用文件名）===== */}}
+{{/* ===== commentPath：t:translationKey（无则文件名）===== */}}
 {{- $tkey := "" -}}
 {{- with .Params.translationKey -}}
   {{- $tkey = . -}}
 {{- else -}}
   {{- with .File -}}{{- $tkey = .BaseFileName -}}{{- end -}}
 {{- end -}}
-
 {{- $tkey = $tkey | replaceRE `\\` "" -}}
 {{- $tkey = $tkey | replaceRE `["']` "" -}}
 {{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
-
 {{- $commentPath := printf "t:%s" $tkey -}}
 
 <style>
@@ -74,13 +72,12 @@
     right: calc(16px + env(safe-area-inset-right));
     bottom: calc(16px + env(safe-area-inset-bottom));
     display: none;
-    flex-direction: column; /* ✅ 竖向 */
+    flex-direction: column;
     gap: 12px;
     z-index: 9999;
   }
   .kq-fab.is-on{ display:flex; }
 
-  /* 统一样式：button + a.top-link */
   .kq-fab :is(.kq-fab-btn, .top-link){
     width: 44px;
     height: 44px;
@@ -99,17 +96,15 @@
     box-shadow: 0px 4px 8px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
   }
 
-  /* 把主题 top-link 变成“容器内按钮”，不要 fixed */
   .kq-fab .top-link{
     position: static !important;
     padding: 0 !important;
     text-decoration: none;
-    visibility: visible !important;  /* 防止主题脚本把它隐藏 */
+    visibility: visible !important;
     opacity: 1 !important;
   }
-  .kq-fab .topInner{ margin: 0 !important; } /* 避免变大 */
+  .kq-fab .topInner{ margin: 0 !important; }
 
-  /* overlay */
   .kq-toc-overlay{
     display:block;
     position: fixed; inset: 0;
@@ -122,7 +117,6 @@
     opacity: 1; pointer-events: auto;
   }
 
-  /* TOC drawer（只在移动端抽屉化） */
   #toc-container{
     position: fixed;
     top: 0; right: -86vw;
@@ -142,7 +136,6 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  /* 手机上隐藏 summary（你要保留标题就删掉这条） */
   #toc-container summary{ display:none; }
   #toc-container details{ height:100%; }
 }
@@ -161,9 +154,39 @@
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
-    const serverURL = {{ $server | jsonify }};
-    const commentPath = {{ $commentPath | jsonify }};
+    // 传入原始值（哪怕 config 里写得很怪，下面也会再清洗一次）
+    let serverURL = {{ $server | jsonify }};
+    let commentPath = {{ $commentPath | jsonify }};
     const hugoDefaultLang = {{ $walineLang | jsonify }};
+
+    function cleanString(x){
+      return String(x ?? "")
+        .replace(/\\/g, "")
+        .replace(/["']/g, "")
+        .trim();
+    }
+
+    function cleanServerURL(x){
+      let s = cleanString(x).replace(/\/+$/, "");
+      // 处理 https://https://xx 或 https://"https://xx" 等
+      s = s.replace(/^(https?:\/\/)(https?:\/\/)+/i, "$1");
+      // 处理 //domain 形式
+      if (s.startsWith("//")) s = "https:" + s;
+      return s;
+    }
+
+    function cleanPath(x){
+      return cleanString(x);
+    }
+
+    function isValidHttpUrl(s){
+      try{
+        const u = new URL(s);
+        return u.protocol === "http:" || u.protocol === "https:";
+      }catch(e){
+        return false;
+      }
+    }
 
     function normalizeWalineLang(raw) {
       const l = String(raw || "").toLowerCase();
@@ -176,16 +199,28 @@
     const pageLang = normalizeWalineLang(rawHtmlLang);
 
     const placeholderMap = {
-      "zh-CN": "看到你参与，我就知道这篇没有白写。谢谢你把时间留在这里。",
-      "en": "Thanks for being here—this wasn’t written into the void. I read every note.",
-      "jp": "気軽にコメントしてね",
+      "zh-CN": "写下你的留言…",
+      "en": "Write a comment…",
+      "jp": "コメントを書く…",
     };
     const placeholder = placeholderMap[pageLang] || "Write a comment…";
+
+    // ✅ 最终清洗（解决你现在看到的 https://"https://..."/path=%22t:..%22）
+    serverURL = cleanServerURL(serverURL);
+    commentPath = cleanPath(commentPath);
+
+    // 如果还是不合法：禁用 Waline，避免整个评论区报错卡死
+    if (!isValidHttpUrl(serverURL)) {
+      console.error("[Waline] Bad serverURL:", serverURL);
+      window.__walineBadConfig = true;
+    }
 
     let walineInited = false;
     function ensureWaline() {
       if (walineInited) return;
       walineInited = true;
+
+      if (window.__walineBadConfig) return;
 
       init({
         el: "#waline",
@@ -193,14 +228,13 @@
         path: commentPath,
         requiredMeta: ["nick", "mail"],
         lang: pageLang,
-        locale: {
-          reactionTitle: "",
-          placeholder,
-        },
+        locale: { reactionTitle: "", placeholder },
         reaction: true,
         dark: "body.dark",
         imageUploader: false,
       });
+
+      console.log("[Waline] inited:", { serverURL, commentPath, pageLang });
     }
 
     window.__ensureWaline = ensureWaline;
@@ -225,11 +259,17 @@
   const walineContainer = document.getElementById('waline-container');
   const giscusContainer = document.getElementById('giscus-container');
 
-  const GISCUS_TERM = {{ $commentPath | jsonify }};
+  const GISCUS_TERM_RAW = {{ $commentPath | jsonify }};
   const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
   const GISCUS_REPO_ID = "R_kgDONiVddQ";
   const GISCUS_CATEGORY = "General";
   const GISCUS_CATEGORY_ID = "DIC_kwDONiVddc4CljSp";
+
+  function cleanString(x){
+    return String(x ?? "").replace(/\\/g,"").replace(/["']/g,"").trim();
+  }
+
+  const GISCUS_TERM = cleanString(GISCUS_TERM_RAW);
 
   function normalizeGiscusLang(raw) {
     const l = String(raw || "").toLowerCase();
@@ -247,7 +287,6 @@
     const host = document.getElementById('giscus-comment');
     if (!host) return;
 
-    // 防止重复 append（比如某些情况下 host 里已有残留）
     host.innerHTML = "";
 
     const s = document.createElement('script');
@@ -269,16 +308,7 @@
     s.setAttribute('data-lang', lang);
 
     host.appendChild(s);
-  }
-
-  function showWaline() {
-    if (!btnWaline || !walineContainer) return;
-    btnWaline.classList.add('active');
-    if (btnGiscus) btnGiscus.classList.remove('active');
-    walineContainer.classList.add('active');
-    if (giscusContainer) giscusContainer.classList.remove('active');
-    localStorage.setItem('preferredComment', 'waline');
-    if (window.__ensureWaline) window.__ensureWaline();
+    console.log("[Giscus] term/lang:", GISCUS_TERM, lang);
   }
 
   function showGiscus() {
@@ -291,6 +321,19 @@
     ensureGiscus();
   }
 
+  function showWaline() {
+    // 如果 Waline 配置坏（你现在这类错误），直接回退 Giscus
+    if (window.__walineBadConfig) return showGiscus();
+
+    if (!btnWaline || !walineContainer) return;
+    btnWaline.classList.add('active');
+    if (btnGiscus) btnGiscus.classList.remove('active');
+    walineContainer.classList.add('active');
+    if (giscusContainer) giscusContainer.classList.remove('active');
+    localStorage.setItem('preferredComment', 'waline');
+    if (window.__ensureWaline) window.__ensureWaline();
+  }
+
   window.__kqShowWaline = showWaline;
   window.__kqShowGiscus = showGiscus;
 
@@ -300,8 +343,8 @@
   window.addEventListener('DOMContentLoaded', () => {
     const preferred = localStorage.getItem('preferredComment');
 
-    // 没 Waline 的情况下，默认 Giscus
-    if (!btnWaline || !walineContainer) return showGiscus();
+    // 没 Waline 或 Waline 配置坏 -> 默认 Giscus
+    if (!btnWaline || !walineContainer || window.__walineBadConfig) return showGiscus();
 
     if (preferred === 'giscus') return showGiscus();
     return showWaline();
@@ -317,7 +360,6 @@
   const btnCmt = document.getElementById('kq-fab-cmt');
   const overlay = document.getElementById('kq-toc-overlay');
   const toc = document.getElementById('toc-container');
-
   const mq = window.matchMedia('(max-width: 900px)');
 
   function openTOC() {
@@ -331,19 +373,17 @@
   btnTOC && btnTOC.addEventListener('click', openTOC);
   overlay && overlay.addEventListener('click', closeTOC);
 
-  // 点目录项后隐藏抽屉
   toc && toc.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
     if (!a) return;
     closeTOC();
   });
 
-  // 💬：切到上次评论系统 + 滚到输入框
   btnCmt && btnCmt.addEventListener('click', () => {
     closeTOC();
 
     const preferred = localStorage.getItem('preferredComment');
-    const hasWaline = !!document.getElementById('waline-container');
+    const hasWaline = !!document.getElementById('waline-container') && !window.__walineBadConfig;
     const hasGiscus = !!document.getElementById('giscus-container');
 
     if (preferred === 'giscus' && hasGiscus && window.__kqShowGiscus) window.__kqShowGiscus();
@@ -357,7 +397,7 @@
 
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-    // Waline 尝试 focus（Giscus iframe 无法跨域 focus）
+    // Waline 尝试 focus
     let tries = 0;
     (function tryFocus() {
       tries++;
@@ -371,26 +411,24 @@
     })();
   });
 
-  // 移动端：把主题 top-link 搬进 FAB，并按需隐藏 ☰/💬
   window.addEventListener('load', () => {
     if (!mq.matches || !fab) return;
 
-    // 1) 搬运 Top（只在移动端搬，桌面保持主题原样）
+    // 搬运 Top（移动端）
     const topLink = document.querySelector('a.top-link');
     if (topLink) {
       fab.appendChild(topLink);
       topLink.setAttribute('aria-label', 'Top');
     }
 
-    // 2) 没 TOC 移除 ☰
+    // 没 TOC 移除 ☰
     if (!toc && btnTOC) btnTOC.remove();
 
-    // 3) 没评论系统移除 💬
-    const hasWaline = !!document.getElementById('waline-container');
+    // 没评论系统移除 💬
+    const hasWaline = !!document.getElementById('waline-container') && !window.__walineBadConfig;
     const hasGiscus = !!document.getElementById('giscus-container');
     if (!hasWaline && !hasGiscus && btnCmt) btnCmt.remove();
 
-    // 4) 最终决定是否显示 FAB
     if (fab.children.length > 0) fab.classList.add('is-on');
   });
 })();
