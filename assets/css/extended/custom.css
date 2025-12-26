@@ -172,64 +172,53 @@ html[lang="en-US"] .profile_inner > span {
 .post-meta-item { display: inline; }   
 
 
-/* PaperMod 顶部菜单：永远一行，超出横向可滑（无 JS） */
-.nav .menu {
-  flex-wrap: nowrap !important;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  white-space: nowrap;
-  gap: .4rem;
-}
-
-/* 隐藏滚动条（尽量不破坏可用性） */
-.nav .menu::-webkit-scrollbar { display: none; }
-.nav .menu { scrollbar-width: none; } /* Firefox */
-
-/* 让每个菜单项不换行 + 点击区域稍微紧凑一点（可选） */
-.nav .menu a {
-  white-space: nowrap;
-  padding: .35rem .5rem;
-}
-
-/* 桌面端：你想整条 header 吸顶就留着（可选） */
-@media (min-width: 769px){
-  header.header, .header{
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background: var(--theme);
-    border-bottom: 1px solid var(--border);
-  }
-}
-
-/* 移动端：上面那一大排正常滚走；只让菜单这一排吸顶 */
+/* ========== Mobile: 只固定菜单（#menu），上面那一排照常滚走 ========== */
 @media (max-width: 768px){
-  /* 1) 取消整个 header 吸顶（否则大排也会粘住） */
-  header.header, .header{
-    position: static !important;
-  }
+  :root { --kq-menu-h: 52px; }  /* 48/52/56 自己微调 */
 
-  /* 2) 只让菜单吸顶 */
-  header.header .nav #menu,
-  header.header .nav .menu{
-    position: sticky;
-    top: 0;
+  /* 给整页让位，避免 fixed 菜单盖住内容 */
+  body { padding-top: var(--kq-menu-h); }
+
+  /* 取消整条 header 吸顶（否则大排也会粘住） */
+  header.header, .header { position: static !important; }
+
+  /* 菜单固定在顶部 */
+  header.header .nav #menu{
+    position: fixed;
+    top: 0; left: 0; right: 0;
     z-index: 1000;
+
+    height: var(--kq-menu-h);
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: .25rem .5rem;
+    list-style: none;
+
+    display: flex;              /* 关键：横向排列 */
+    align-items: center;
+    gap: .4rem;
+
     background: var(--theme);
     border-bottom: 1px solid var(--border);
 
-    /* 保持一行 + 横向可滑 */
-    flex-wrap: nowrap !important;
-    overflow-x: auto;
+    overflow-x: auto;           /* 关键：横向可滑 */
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
-    gap: .4rem;
-    padding: .25rem .5rem;
+  }
+
+  /* 关键：li 不要被压缩换行 */
+  header.header .nav #menu > li{ flex: 0 0 auto; }
+
+  /* 菜单项点击区域 */
+  header.header .nav #menu a{
+    display: block;
+    padding: .35rem .5rem;
+    white-space: nowrap;
   }
 
   /* 隐藏滚动条 */
-  header.header .nav #menu::-webkit-scrollbar{ display:none; }
-  header.header .nav #menu{ scrollbar-width:none; }
+  header.header .nav #menu::-webkit-scrollbar { display: none; }
+  header.header .nav #menu { scrollbar-width: none; }
 }
