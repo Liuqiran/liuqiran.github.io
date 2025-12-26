@@ -221,4 +221,54 @@ html[lang="en-US"] .profile_inner > span {
   /* 隐藏滚动条 */
   header.header .nav #menu::-webkit-scrollbar { display: none; }
   header.header .nav #menu { scrollbar-width: none; }
+}     
+
+/* 全端：菜单一行 + 横向可滚（命中 #menu） */
+header.header .nav #menu{
+  display: flex;
+  flex-wrap: nowrap !important;
+  gap: .4rem;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header.header .nav #menu > li{ flex: 0 0 auto; }
+header.header .nav #menu a{
+  display: block;
+  white-space: nowrap;
+  padding: .35rem .5rem;
+}
+
+/* 桌面端：不要隐藏滚动条（不然鼠标很难横向滚） */
+@media (min-width: 769px){
+  header.header .nav #menu{ scrollbar-width: auto; } /* Firefox */
+  header.header .nav #menu::-webkit-scrollbar{ height: 8px; } /* Chrome/Edge */
+}
+
+/* 移动端：你之前的 fixed 置顶逻辑保留 */
+@media (max-width: 768px){
+  :root { --kq-menu-h: 52px; }
+  body { padding-top: var(--kq-menu-h); }
+  header.header, .header { position: static !important; }
+
+  header.header .nav #menu{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    height: var(--kq-menu-h);
+    box-sizing: border-box;
+    padding: .25rem .5rem;
+    background: var(--theme);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* 移动端可以继续隐藏滚动条 */
+  header.header .nav #menu::-webkit-scrollbar{ display:none; }
+  header.header .nav #menu{ scrollbar-width:none; }
 }
