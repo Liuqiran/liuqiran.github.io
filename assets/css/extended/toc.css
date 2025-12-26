@@ -84,3 +84,74 @@
 .toc li a:hover {
     color: var(--secondary);
 }
+
+
+/* ===== TOC 可读性增强（贴在 toc.css 最底部，覆盖前面的规则）===== */
+:root{
+  --toc-font-size: 15px;
+  --toc-line-height: 1.55;
+  --toc-item-gap: 0.18rem;   /* 每条之间的竖向间距 */
+  --toc-indent: 0.9rem;      /* 每一级缩进 */
+}
+
+/* TOC 内容区：更松一点 */
+.toc .inner{
+  font-size: var(--toc-font-size);
+  line-height: var(--toc-line-height);
+  padding: 0.35rem 0.55rem 0.75rem 0.75rem; /* 左侧略加大 */
+}
+
+/* 列表本身去掉多余默认空隙 */
+.toc ul{
+  margin: 0;
+  padding-left: 0;
+}
+
+/* 每一项：更舒服的间距 */
+.toc li{
+  margin: var(--toc-item-gap) 0;
+  padding-bottom: 0; /* 覆盖你之前的 5px */
+}
+
+/* 链接变成“整行可点”，并加一点内边距 */
+.toc li a{
+  display: block;
+  padding: 0.18rem 0.35rem;
+  border-radius: 8px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* hover 给轻微底色（更像侧边栏） */
+.toc li a:hover{
+  background: var(--code-bg);
+}
+
+/* active 更清晰（兼容 active 可能在 a 或 li 上） */
+.toc a.active,
+.toc li.active > a{
+  font-weight: 650;
+  background: var(--code-bg);
+}
+
+/* ===== 关键：层级缩进更明显 + 左侧虚线引导 ===== */
+.toc ul ul{
+  margin-top: 0.2rem;
+  margin-left: var(--toc-indent);
+  padding-left: var(--toc-indent);
+  border-left: 1px dashed var(--border);
+}
+
+/* 让二级/三级的链接不要贴着虚线 */
+.toc ul ul > li > a{
+  padding-left: 0.25rem;
+}
+
+/* ===== 手机抽屉里：字号稍大、缩进稍收一点（避免太挤） ===== */
+@media (max-width: 900px){
+  :root{
+    --toc-font-size: 16px;
+    --toc-indent: 0.75rem;
+    --toc-item-gap: 0.22rem;
+  }
+}
