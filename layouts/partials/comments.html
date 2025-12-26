@@ -72,30 +72,40 @@ html[lang^="zh"] #waline *{
 */
 
 /* ===== FAB（只做 TOC + Comments，不动你原来的 top-link） ===== */
-/* 为了不挡住 PaperMod 自带 top-link，FAB 往上挪一点 */
 .kq-fab{
+  /* ✅ 统一用变量：你想抬高 FAB 就改这个 */
+  --kq-fab-bottom: 16px;
+  --kq-fab-gap: 12px;
+
   position: fixed;
-  right: 16px;
-  bottom: 16px;
+  right: calc(16px + env(safe-area-inset-right));
+  bottom: calc(var(--kq-fab-bottom) + env(safe-area-inset-bottom));
+
   display: none;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--kq-fab-gap);
   z-index: 9999;
-}  
+}
+.kq-fab.is-on{ display:flex; }
 
-/* 当 FAB 开启时，把主题的 top-link 顶到 FAB 上方（不会盖住按钮） */
+/* ✅ 当 FAB 开启时，把主题的 top-link 顶到 FAB 上方 */
 html.kq-fab-on a.top-link{
   right: calc(16px + env(safe-area-inset-right)) !important;
-  bottom: calc(16px + env(safe-area-inset-bottom) + var(--kq-fab-h, 0px) + 12px) !important;
+  bottom: calc(
+    var(--kq-fab-bottom, 16px)
+    + env(safe-area-inset-bottom)
+    + var(--kq-fab-h, 0px)
+    + var(--kq-fab-gap, 12px)
+  ) !important;
 }
 
-
-/* 手机安全区版本 */
+/* 手机：如果你真的想让 FAB 离底部更远，就只改变量，不要硬写 bottom */
 @media (max-width: 900px){
   .kq-fab{
-    right: calc(16px + env(safe-area-inset-right));
-    bottom: calc(16px + env(safe-area-inset-bottom));
+    --kq-fab-bottom: 16px; /* ✅ 想要 84px 就改成 84px */
   }
+}
+
 
 }
 .kq-fab.is-on{ display:flex; }
@@ -421,7 +431,6 @@ else if (canGiscus) showGiscus(true);
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-// FAB 是否显示：没 TOC 删 ☰；没评论系统删 💬；有剩余就显示
 window.addEventListener('DOMContentLoaded', () => {
   if (!fab) return;
 
@@ -432,29 +441,32 @@ window.addEventListener('DOMContentLoaded', () => {
   const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
   if (!hasAnyComment && btnCmt) btnCmt.remove();
 
-  // 3) 判断 FAB 里是否还有“可见控件”（button 或 a）
+  // 3) 是否还有控件
   const hasAnyControl = !!fab.querySelector('button, a');
+
+  const html = document.documentElement;
+
+  function syncFabOffset(){
+    const h = fab ? fab.getBoundingClientRect().height : 0;
+    html.style.setProperty('--kq-fab-h', h ? `${Math.ceil(h)}px` : '0px');
+  }
 
   if (hasAnyControl) {
     fab.classList.add('is-on');
-    document.documentElement.classList.add('kq-fab-on'); // 让 CSS 顶起 top-link
+    html.classList.add('kq-fab-on');
+
+    // 等一帧让 display:flex 生效再测高度
+    requestAnimationFrame(syncFabOffset);
+
+    window.addEventListener('resize', () => {
+      if (html.classList.contains('kq-fab-on')) requestAnimationFrame(syncFabOffset);
+    }, { passive: true });
   } else {
     fab.classList.remove('is-on');
-    document.documentElement.classList.remove('kq-fab-on');
-  }  
-  function syncFabOffset(){
-  const h = fab ? fab.offsetHeight : 0;
-  document.documentElement.style.setProperty('--kq-fab-h', h ? `${h}px` : '0px');
-}
-
-if (hasAnyControl) {
-  fab.classList.add('is-on');
-  document.documentElement.classList.add('kq-fab-on');
-  syncFabOffset();
-} else {
-  fab.classList.remove('is-on');
-  document.documentElement.classList.remove('kq-fab-on');
-  syncFabOffset();
+    html.classList.remove('kq-fab-on');
+    syncFabOffset();
+  }
+});
 }
 
 // 屏幕旋转/缩放后也更新一下（手机很常见）
