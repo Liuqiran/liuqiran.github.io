@@ -228,22 +228,40 @@ html.kq-toc-open .kq-toc-overlay{
     display: block !important;
   }
 
+@media (max-width: 900px){
+  .kq-fab a.top-link.kq-top-in-fab .topInner{
+    margin: 0 !important;
+    display: grid !important;
+    place-items: center !important;
+    gap: 1px !important;
+  }
+
   .kq-fab a.top-link.kq-top-in-fab #read_progress{
     display: block !important;
     width: 100% !important;
     text-align: center !important;
-    justify-self: center !important;
 
+    /* 不换行 */
     white-space: nowrap !important;
     overflow-wrap: normal !important;
     word-break: keep-all !important;
 
-    font-size: 14px !important;        /* ✅ 更接近“标准大小” */
+    /* 尽量用等宽数字（很多字体支持） */
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: "tnum" 1, "lnum" 1;
+
+    /* 你想要的“标准大小” */
+    font-size: 14px !important;
     line-height: 1 !important;
-    letter-spacing: -0.14em !important;/* ✅ 保证 100 不换行 */
-    font-variant-numeric: tabular-nums;
+
+    /* 为了塞进 44×44（100 也不炸） */
+    letter-spacing: -0.14em !important;
+
+    /* ✅ 关键：视觉居中微调（先试 -0.5px） */
+    transform: translateX(-0.5px);
   }
 }
+
 
 </style>
 
