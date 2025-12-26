@@ -5,8 +5,8 @@ slug: "now"
 author: Qiran
 type: page
 date: 2025-10-01  
-lastmod: 2025-12-22 
-limage: "/img/clock-wall.jpg"
+lastmod: 2025-12-25
+image: "/img/clock-wall.jpg"
 ---
 > This is what I’m currently focused on. Inspired by [nownownow.com](https://nownownow.com/about).
 >
@@ -17,12 +17,9 @@ limage: "/img/clock-wall.jpg"
 <!--</div>-->
 
 
-# 🌏 Language Learning Process (Until 2025-12-22)
+# 🌏 Learning Process (Until 2025-12-22)
 
 ![Anki Statistics](stats.png)
-
-
-Position in New Testament: ⬛⬛⬛⬜⬜⬜⬜⬜ 
 
 
 # 🌳 Building Habits
