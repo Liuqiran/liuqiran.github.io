@@ -571,13 +571,13 @@ window.addEventListener('DOMContentLoaded', () => {
           topLinkHome = topLinkHome || topLink.parentElement;
           topLinkNext = topLinkNext || topLink.nextSibling;
 
-          topLink.classList.add('kq-top-in-fab', 'kq-fab-btn');
+          topLink.classList.add('kq-top-in-fab',);
           fab.appendChild(topLink);
         }
       } else {
         // 桌面：放回原位置（可选，但建议保留）
         if (topLinkHome && topLink.classList.contains('kq-top-in-fab')) {
-          topLink.classList.remove('kq-top-in-fab', 'kq-fab-btn');
+          topLink.classList.remove('kq-top-in-fab',);
           topLinkHome.insertBefore(topLink, topLinkNext);
         }
       }
