@@ -172,58 +172,7 @@ html[lang="en-US"] .profile_inner > span {
 .post-meta-item { display: inline; }   
 
 
-/* ========== Mobile: 只固定菜单（#menu），上面那一排照常滚走 ========== */
-@media (max-width: 768px){
-  :root { --kq-menu-h: 52px; }  /* 48/52/56 自己微调 */
-
-  /* 给整页让位，避免 fixed 菜单盖住内容 */
-  body { padding-top: var(--kq-menu-h); }
-
-  /* 取消整条 header 吸顶（否则大排也会粘住） */
-  header.header, .header { position: static !important; }
-
-  /* 菜单固定在顶部 */
-  header.header .nav #menu{
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 1000;
-
-    height: var(--kq-menu-h);
-    box-sizing: border-box;
-
-    margin: 0;
-    padding: .25rem .5rem;
-    list-style: none;
-
-    display: flex;              /* 关键：横向排列 */
-    align-items: center;
-    gap: .4rem;
-
-    background: var(--theme);
-    border-bottom: 1px solid var(--border);
-
-    overflow-x: auto;           /* 关键：横向可滑 */
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
-  }
-
-  /* 关键：li 不要被压缩换行 */
-  header.header .nav #menu > li{ flex: 0 0 auto; }
-
-  /* 菜单项点击区域 */
-  header.header .nav #menu a{
-    display: block;
-    padding: .35rem .5rem;
-    white-space: nowrap;
-  }
-
-  /* 隐藏滚动条 */
-  header.header .nav #menu::-webkit-scrollbar { display: none; }
-  header.header .nav #menu { scrollbar-width: none; }
-}     
-
-/* 全端：菜单一行 + 横向可滚（命中 #menu） */
+/* ===== 菜单：全端一行 + 横向可滚（命中 #menu） ===== */
 header.header .nav #menu{
   display: flex;
   flex-wrap: nowrap !important;
@@ -241,34 +190,49 @@ header.header .nav #menu{
 header.header .nav #menu > li{ flex: 0 0 auto; }
 header.header .nav #menu a{
   display: block;
-  white-space: nowrap;
   padding: .35rem .5rem;
+  white-space: nowrap;
 }
 
-/* 桌面端：不要隐藏滚动条（不然鼠标很难横向滚） */
+/* ===== 桌面端：关键修复，让 overflow 真正在 #menu 上发生 ===== */
 @media (min-width: 769px){
-  header.header .nav #menu{ scrollbar-width: auto; } /* Firefox */
-  header.header .nav #menu::-webkit-scrollbar{ height: 8px; } /* Chrome/Edge */
+  header.header .nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;     /* 避免菜单被挤到下一行 */
+  }
+  header.header .nav #menu{
+    flex: 1 1 auto;        /* 占据剩余空间 */
+    min-width: 0;          /* ★ 关键：允许自己变窄 -> 才会出现横向滚动 */
+    max-width: 100%;
+  }
+
+  /* 桌面端不要强行隐藏滚动条（否则鼠标很难操作） */
+  header.header .nav #menu{ scrollbar-width: auto; }
+  header.header .nav #menu::-webkit-scrollbar{ height: 8px; }
 }
 
-/* 移动端：你之前的 fixed 置顶逻辑保留 */
+/* ===== 移动端：只固定菜单，上面那排照常滚走 ===== */
 @media (max-width: 768px){
-  :root { --kq-menu-h: 52px; }
-  body { padding-top: var(--kq-menu-h); }
-  header.header, .header { position: static !important; }
+  :root{ --kq-menu-h: 52px; } /* 48/52/56 自己调 */
+
+  body{ padding-top: var(--kq-menu-h); }
+  header.header, .header{ position: static !important; }
 
   header.header .nav #menu{
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000;
+
     height: var(--kq-menu-h);
     box-sizing: border-box;
     padding: .25rem .5rem;
+
     background: var(--theme);
     border-bottom: 1px solid var(--border);
   }
 
-  /* 移动端可以继续隐藏滚动条 */
-  header.header .nav #menu::-webkit-scrollbar{ display:none; }
-  header.header .nav #menu{ scrollbar-width:none; }
+  /* 移动端可隐藏滚动条 */
+  header.header .nav #menu::-webkit-scrollbar{ display: none; }
+  header.header .nav #menu{ scrollbar-width: none; }
 }
