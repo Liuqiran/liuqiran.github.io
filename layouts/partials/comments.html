@@ -145,15 +145,16 @@ html.kq-fab-on a.top-link{
 }
 
 /* ✅ 精准只命中百分比数字：#read_progress（避免影响 svg / 其他 span） */
-.kq-fab a.top-link.kq-top-in-fab #read_progress{
-  white-space: nowrap !important;
-  overflow-wrap: normal !important;
-  word-break: keep-all !important;
-
-  font-size: 10px !important;
-  line-height: 1 !important;
-  letter-spacing: -0.06em !important;
-  font-variant-numeric: tabular-nums;
+@media (max-width: 900px){
+  .kq-fab a.top-link.kq-top-in-fab #read_progress{
+    font-size: 11px !important;      /* 原来 10px → 11px */
+    line-height: 1 !important;
+    letter-spacing: -0.08em !important; /* 稍微更挤一点，保证 100 仍塞得下 */
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+  }
 }
 
 .kq-fab a.top-link.kq-top-in-fab svg{
