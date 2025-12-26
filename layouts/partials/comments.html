@@ -467,12 +467,5 @@ window.addEventListener('DOMContentLoaded', () => {
     syncFabOffset();
   }
 });
-}
-
-// 屏幕旋转/缩放后也更新一下（手机很常见）
-window.addEventListener('resize', () => {
-  if (document.documentElement.classList.contains('kq-fab-on')) syncFabOffset();
-}, { passive: true });
-});   
 })();
 </script>
