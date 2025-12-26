@@ -120,68 +120,67 @@
   <div id="waline"></div>
   <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 
-  <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+ <script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
-    const hugoDefaultLang = {{ $walineLang | jsonify }};  
+  // ✅ 把 Hugo 变量喂给 JS（否则 serverURL/commentPath 都是 undefined）
+  const serverURL = {{ $server | jsonify }};
+  const commentPath = {{ $commentPath | jsonify }};
+  const hugoDefaultLang = {{ $walineLang | jsonify }};
 
-const hugoDefaultLang = {{ $walineLang | jsonify }};
+  // Waline 的日语语言码是 jp（不是 ja）:contentReference[oaicite:1]{index=1}
+  function normalizeWalineLang(raw) {
+    const l = String(raw || "").toLowerCase();
+    if (l.startsWith("zh")) return "zh-CN";
+    if (l.startsWith("ja") || l.startsWith("jp")) return "jp";
+    return "en";
+  }
 
-// 用 Waline 支持的语言码（文档列的是 zh/zh-CN/en/en-US/jp/jp-JP...）:contentReference[oaicite:2]{index=2}
-function normalizeLang(raw) {
-  const l = String(raw || "").toLowerCase();
-  if (l.startsWith("zh")) return "zh-CN";
-  if (l.startsWith("ja") || l.startsWith("jp")) return "jp";
-  // 你也可以保留 en-US，但 en 更通用
-  return "en";
-}
+  const rawHtmlLang = document.documentElement.lang || hugoDefaultLang || "en";
+  const pageLang = normalizeWalineLang(rawHtmlLang);
 
-const rawHtmlLang = document.documentElement.lang || hugoDefaultLang || "en";
-const pageLang = normalizeLang(rawHtmlLang);
+  const placeholderMap = {
+    "zh-CN": "看到你参与，我就知道这篇没有白写。谢谢你把时间留在这里。",
+    "en": "Thanks for being here—this wasn’t written into the void. I read every note.",
+    "jp": "気軽にコメントしてね 👇",
+  };
 
-const placeholderMap = {
-  "zh-CN": "看到你参与，我就知道这篇没有白写。谢谢你把时间留在这里。",
-  "zh": "看到你参与，我就知道这篇没有白写。谢谢你把时间留在这里。",
-  "en": "Thanks for being here—this wasn’t written into the void. I read every note.",
-  "jp": "気軽にコメントしてね 👇",
-};
+  const placeholder =
+    placeholderMap[pageLang] ||
+    placeholderMap[pageLang.split("-")[0]] ||
+    "Comment here...";
 
-const placeholder =
-  placeholderMap[pageLang] ||
-  placeholderMap[pageLang.split("-")[0]] ||
-  "Comment here...";
+  let walineInited = false;
+  function ensureWaline() {
+    if (walineInited) return;
+    walineInited = true;
 
-let walineInited = false;
-function ensureWaline() {
-  if (walineInited) return;
-  walineInited = true;
+    init({
+      el: "#waline",
+      serverURL,
+      path: commentPath,
 
-  init({
-    el: "#waline",
-    serverURL,
-    path: commentPath,
-    requiredMeta: ["nick", "mail"],
-    lang: pageLang, // ✅ 用你算出来的运行时语言
-    locale: {
-      reactionTitle: "", // reactionTitle/placeholder 都在 locale 里 :contentReference[oaicite:3]{index=3}
-      placeholder,
-    },
-    reaction: true,
-    dark: "body.dark",
-    imageUploader: false,
-  });
-}
+      // ✅ 让匿名评论也必须填 nick/mail :contentReference[oaicite:2]{index=2}
+      requiredMeta: ["nick", "mail"],
 
-window.__ensureWaline = ensureWaline;
-  </script>
-</div>
-{{- end -}}
+      lang: pageLang,
+      locale: {
+        // reactionTitle / placeholder 都属于 locale 可覆盖项 :contentReference[oaicite:3]{index=3}
+        reactionTitle: "",
+        placeholder,
+      },
 
-<div id="giscus-container" class="comment-system">
-  <div id="giscus-comment"></div>
-</div>
+      reaction: true,
+      dark: "body.dark",
+      imageUploader: false,
+    });
 
-<script>
+    console.log("[Waline] inited:", { serverURL, commentPath, pageLang });
+  }
+
+  window.__ensureWaline = ensureWaline;
+</script>  
+
   const btnWaline = document.getElementById('btn-waline');
   const btnGiscus = document.getElementById('btn-giscus');
   const walineContainer = document.getElementById('waline-container');
