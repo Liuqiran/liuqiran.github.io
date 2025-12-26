@@ -185,7 +185,7 @@
   const commentPath = {{ $commentPath | jsonify }};
   const hugoDefaultLang = {{ $walineLang | jsonify }};
 
-  // Waline 的日语语言码是 jp（不是 ja）:contentReference[oaicite:1]{index=1}
+
   function normalizeWalineLang(raw) {
     const l = String(raw || "").toLowerCase();
     if (l.startsWith("zh")) return "zh-CN";
@@ -216,13 +216,10 @@
       el: "#waline",
       serverURL,
       path: commentPath,
-
-      // ✅ 让匿名评论也必须填 nick/mail :contentReference[oaicite:2]{index=2}
       requiredMeta: ["nick", "mail"],
 
       lang: pageLang,
       locale: {
-        // reactionTitle / placeholder 都属于 locale 可覆盖项 :contentReference[oaicite:3]{index=3}
         reactionTitle: "",
         placeholder,
       },
@@ -242,6 +239,13 @@
 
 <div id="giscus-container" class="comment-system">
   <div id="giscus-comment"></div>
+</div>
+
+<div class="kq-toc-overlay" id="kq-toc-overlay" aria-hidden="true"></div>
+
+<div class="kq-fab" id="kq-fab">
+  <button class="kq-fab-btn" id="kq-fab-toc" type="button" aria-label="TOC">☰</button>
+  <button class="kq-fab-btn" id="kq-fab-cmt" type="button" aria-label="Comments">💬</button>
 </div>
 
 <script>
@@ -303,9 +307,9 @@
     localStorage.setItem('preferredComment', 'waline');
 
     if (window.__ensureWaline) window.__ensureWaline();
-    window.__kqShowWaline = showWaline;
+   
   }
-
+  window.__kqShowWaline = showWaline;
   function showGiscus() {
     if (!btnGiscus || !giscusContainer) return;
     btnGiscus.classList.add('active');
@@ -313,10 +317,10 @@
     giscusContainer.classList.add('active');
     if (walineContainer) walineContainer.classList.remove('active');
     localStorage.setItem('preferredComment', 'giscus');
-    window.__kqShowGiscus = showGiscus;
+
     ensureGiscus();
   }
-
+  window.__kqShowGiscus = showGiscus;
   if (btnWaline) btnWaline.onclick = showWaline;
   if (btnGiscus) btnGiscus.onclick = showGiscus;
 
