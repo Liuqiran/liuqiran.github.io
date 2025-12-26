@@ -50,7 +50,18 @@ html[lang="zh-CN"] body {
 .vertical-chinese a {
   text-decoration: underline;
   word-break: break-word;
-  ov
+  overflow-wrap: break-word;
+}
+.vertical-chinese a:hover {
+  text-decoration: underline;
+}
+
+/* 竖排里的图片 */
+.vertical-chinese img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 
 
 img[aria-label="logo"] {
