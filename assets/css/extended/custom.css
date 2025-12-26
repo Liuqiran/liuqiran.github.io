@@ -45,13 +45,18 @@ html[lang="zh-CN"] body {
   padding-bottom: 1em; /* 或者先试 6px/10px */
 }
 
-/* 1) 不要 hidden（Firefox 会裁字）*/
+/* 竖排容器：限制高度为 85vh，并允许内部滚动（避免 Firefox 裁字） */
 .vertical-chinese-wrapper{
   overflow-x: auto;
-  overflow-y: visible;     /* 或 auto，但先用 visible 排除裁剪 */
-  height: auto;            /* 先别固定高度，排除“列/高度裁剪” */
-  max-height: none;
+  overflow-y: auto;     /* 关键：别用 hidden，避免裁字 */
+  height: 85vh;         /* 你要的 85% 屏幕高度 */
+  max-height: 85vh;
 }
+
+/* 竖排内容：留足“底部”空隙，防止最后几个像素被裁 */
+.vertical-chinese{
+  padding-inline-end: 1em;  /* 不够就改 1.5em / 2em */
+}  
 
 /* 2) 竖排底部留白要用 logical padding（inline-end=竖排的下方）*/
 .vertical-chinese{
