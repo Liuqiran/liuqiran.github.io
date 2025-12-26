@@ -123,56 +123,56 @@
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
-    const hugoDefaultLang = {{ $walineLang | jsonify }};
+    const hugoDefaultLang = {{ $walineLang | jsonify }};  
 
-    // --- 运行时语言（以 <html lang=""> 为准，避免 partialCached 等导致的“语言固定”）---
-    function normalizeLang(raw) {
-      const l = String(raw || "").toLowerCase();
-      if (l.startsWith("zh")) return "zh-CN";
-      if (l.startsWith("ja") || l.startsWith("jp")) return "ja";
-      return "en";
-    }
-    const pageLang = normalizeLang(document.documentElement.lang || hugoDefaultLang || "en");
+const hugoDefaultLang = {{ $walineLang | jsonify }};
 
-    // --- serverURL 清洗 ---
-    let serverURL = {{ $server | jsonify }};
-    serverURL = String(serverURL || "")
-      .replace(/\\/g, "")
-      .replace(/["']/g, "")
-      .trim()
-      .replace(/\/+$/, "");
+// 用 Waline 支持的语言码（文档列的是 zh/zh-CN/en/en-US/jp/jp-JP...）:contentReference[oaicite:2]{index=2}
+function normalizeLang(raw) {
+  const l = String(raw || "").toLowerCase();
+  if (l.startsWith("zh")) return "zh-CN";
+  if (l.startsWith("ja") || l.startsWith("jp")) return "jp";
+  // 你也可以保留 en-US，但 en 更通用
+  return "en";
+}
 
-    // --- path 清洗 ---
-    let commentPath = {{ $commentPath | jsonify }};
-    commentPath = String(commentPath || "")
-      .replace(/\\/g, "")
-      .replace(/["']/g, "")
-      .trim();
+const rawHtmlLang = document.documentElement.lang || hugoDefaultLang || "en";
+const pageLang = normalizeLang(rawHtmlLang);
 
-    let walineInited = false;
-    function ensureWaline() {
-      if (walineInited) return;
-      walineInited = true;
+const placeholderMap = {
+  "zh-CN": "看到你参与，我就知道这篇没有白写。谢谢你把时间留在这里。",
+  "zh": "看到你参与，我就知道这篇没有白写。谢谢你把时间留在这里。",
+  "en": "Thanks for being here—this wasn’t written into the void. I read every note.",
+  "jp": "気軽にコメントしてね 👇",
+};
 
-      console.log("[Waline] serverURL =", serverURL);
-      console.log("[Waline] path =", commentPath);
-      console.log("[Waline] lang =", pageLang);
+const placeholder =
+  placeholderMap[pageLang] ||
+  placeholderMap[pageLang.split("-")[0]] ||
+  "Comment here...";
 
-      init({
-        el: '#waline',
-        serverURL,
-        path: commentPath,
-        requiredMeta: ['nick', 'mail'],
-        lang: pageLang,
-        locale: { reactionTitle: "" },
-        reaction: true,
-        dark: 'body.dark',
-        imageUploader: false,
-      });
-    }
+let walineInited = false;
+function ensureWaline() {
+  if (walineInited) return;
+  walineInited = true;
 
-    // 暴露给非 module 脚本调用（用于 toggle 懒加载）
-    window.__ensureWaline = ensureWaline;
+  init({
+    el: "#waline",
+    serverURL,
+    path: commentPath,
+    requiredMeta: ["nick", "mail"],
+    lang: pageLang, // ✅ 用你算出来的运行时语言
+    locale: {
+      reactionTitle: "", // reactionTitle/placeholder 都在 locale 里 :contentReference[oaicite:3]{index=3}
+      placeholder,
+    },
+    reaction: true,
+    dark: "body.dark",
+    imageUploader: false,
+  });
+}
+
+window.__ensureWaline = ensureWaline;
   </script>
 </div>
 {{- end -}}
