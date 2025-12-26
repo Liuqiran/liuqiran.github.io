@@ -71,40 +71,6 @@ html[lang^="zh"] #waline *{
 }
 */
 
-/* ===== FAB（只做 TOC + Comments，不动你原来的 top-link） ===== */
-.kq-fab{
-  /* ✅ 统一用变量：你想抬高 FAB 就改这个 */
-  --kq-fab-bottom: 16px;
-  --kq-fab-gap: 12px;
-
-  position: fixed;
-  right: calc(16px + env(safe-area-inset-right));
-  bottom: calc(var(--kq-fab-bottom) + env(safe-area-inset-bottom));
-
-  display: none;
-  flex-direction: column;
-  gap: var(--kq-fab-gap);
-  z-index: 9999;
-}
-.kq-fab.is-on{ display:flex; }
-
-/* ===== FAB（只做 TOC + Comments，不动你原来的 top-link） ===== */
-.kq-fab{
-  /* 统一用变量：想抬高 FAB 就改这个 */
-  --kq-fab-bottom: 16px;
-  --kq-fab-gap: 12px;
-
-  position: fixed;
-  right: calc(16px + env(safe-area-inset-right));
-  bottom: calc(var(--kq-fab-bottom) + env(safe-area-inset-bottom));
-
-  display: none;
-  flex-direction: column;
-  gap: var(--kq-fab-gap);
-  z-index: 9999;
-}
-.kq-fab.is-on{ display:flex; }
-
 /* ===== FAB（TOC + Comments；移动端把 Top 收进同一列） ===== */
 .kq-fab{
   --kq-fab-bottom: 16px;
@@ -132,9 +98,8 @@ html.kq-fab-on a.top-link{
   ) !important;
 }
 
-/* 手机：只改变量，不再写死 bottom */
+/* 手机：只改变量，不写死 bottom */
 @media (max-width: 900px){
-  .kq-fab{ --kq-fab-bottom: 84px; }
 }
 
 .kq-fab-btn{
@@ -153,7 +118,7 @@ html.kq-fab-on a.top-link{
   box-shadow: 0px 4px 8px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
 }
 
-/* ✅ 只影响“被塞进 FAB 的 top-link”，不动你原本 Top.css */
+/* ✅ 只影响“被塞进 FAB 的 top-link”，不动你原 Top.css */
 .kq-fab a.top-link.kq-top-in-fab{
   position: static !important;
   right: auto !important;
@@ -170,7 +135,7 @@ html.kq-fab-on a.top-link{
   border-radius: 999px !important;
 }
 
-/* 保持原来“箭头上、数字下”的竖排 grid，只去掉 margin:7px（否则 100 容不下会被拆行） */
+/* 保持箭头上、数字下（grid 竖排），并去掉 topInner 的 margin:7px */
 .kq-fab a.top-link.kq-top-in-fab .topInner{
   margin: 0 !important;
   display: grid !important;
@@ -179,8 +144,8 @@ html.kq-fab-on a.top-link{
   gap: 2px !important;
 }
 
-/* ✅ 关键：只让数字不被拆成 10 + 0，同时不变宽 */
-.kq-fab a.top-link.kq-top-in-fab .topInner span{
+/* ✅ 精准只命中百分比数字：#read_progress（避免影响 svg / 其他 span） */
+.kq-fab a.top-link.kq-top-in-fab #read_progress{
   white-space: nowrap !important;
   overflow-wrap: normal !important;
   word-break: keep-all !important;
@@ -195,8 +160,6 @@ html.kq-fab-on a.top-link{
   width: 20px !important;
   height: 20px !important;
 }
-
-
 /* overlay（默认不挡点击） */
 .kq-toc-overlay{
   position: fixed; inset: 0;
@@ -211,10 +174,6 @@ html.kq-toc-open .kq-toc-overlay{
 
 /* iPhone 安全区 + 手机 TOC 抽屉 */
 @media (max-width: 900px){
-  .kq-fab{
-    right: calc(16px + env(safe-area-inset-right));
-    bottom: calc(84px + env(safe-area-inset-bottom));
-  }
 
   html.kq-toc-open #toc-container{ right: 0; }
 
@@ -249,14 +208,37 @@ html.kq-toc-open .kq-toc-overlay{
   .kq-fab a.top-link.kq-top-in-fab .top-percent,
   .kq-fab a.top-link.kq-top-in-fab .topPercent,
   .kq-fab a.top-link.kq-top-in-fab .topInner span{
-    min-width: 3ch;
     text-align: right;
     white-space: nowrap !important;
     overflow-wrap: normal !important;
     word-break: keep-all !important;
     line-height: 1;
   }
+}  
+/* ✅ 只修 FAB 里的 Top 百分比：不拆行，不变宽，不影响原样式 */
+@media (max-width: 900px){
+  /* 关键：FAB 里把 topInner 的 7px margin 去掉，否则 44px 圆里太挤会把 100 拆成 10+0 */
+  .kq-fab a.top-link.kq-top-in-fab .topInner{
+    margin: 0 !important;           /* 覆盖你 Top.css 的 margin:7px */
+    display: grid !important;       /* 保持箭头上、数字下 */
+    justify-items: center !important;
+    align-content: center !important;
+    gap: 2px !important;
+  }
+
+  /* 只针对数字，不动 svg */
+  .kq-fab a.top-link.kq-top-in-fab #read_progress{
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+
+    font-size: 10px !important;     /* 让 100 也塞得下 */
+    line-height: 1 !important;
+    letter-spacing: -0.06em !important;
+    font-variant-numeric: tabular-nums;
+  }
 }
+
 </style>
 
 <div class="comment-toggle">
