@@ -216,26 +216,31 @@ html.kq-toc-open .kq-toc-overlay{
     line-height: 1;
   }
 }  
-/* ✅ 只修 FAB 里的 Top 百分比：不拆行，不变宽，不影响原样式 */
 @media (max-width: 900px){
-  /* 关键：FAB 里把 topInner 的 7px margin 去掉，否则 44px 圆里太挤会把 100 拆成 10+0 */
   .kq-fab a.top-link.kq-top-in-fab .topInner{
-    margin: 0 !important;           /* 覆盖你 Top.css 的 margin:7px */
-    display: grid !important;       /* 保持箭头上、数字下 */
-    justify-items: center !important;
-    align-content: center !important;
-    gap: 2px !important;
+    margin: 0 !important;
+    display: grid !important;
+    place-items: center !important;
+    gap: 1px !important;
   }
 
-  /* 只针对数字，不动 svg */
+  .kq-fab a.top-link.kq-top-in-fab .topSvg{
+    display: block !important;
+  }
+
   .kq-fab a.top-link.kq-top-in-fab #read_progress{
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    justify-self: center !important;
+
     white-space: nowrap !important;
     overflow-wrap: normal !important;
     word-break: keep-all !important;
 
-    font-size: 10px !important;     /* 让 100 也塞得下 */
+    font-size: 14px !important;        /* ✅ 更接近“标准大小” */
     line-height: 1 !important;
-    letter-spacing: -0.06em !important;
+    letter-spacing: -0.14em !important;/* ✅ 保证 100 不换行 */
     font-variant-numeric: tabular-nums;
   }
 }
