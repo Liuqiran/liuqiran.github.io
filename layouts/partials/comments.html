@@ -74,6 +74,63 @@
   --waline-bg-color-light: var(--code-bg);
   --waline-border-color: var(--border);
   --waline-box-shadow: none;
+}   
+
+/* ===== Mobile FAB + TOC drawer (minimal JS) ===== */
+.kq-fab{ display:none; }
+
+@media (max-width: 900px){
+  .kq-fab{
+    position: fixed; right: 16px; bottom: 16px;
+    display: none; flex-direction: column; gap: 12px;
+    z-index: 9999;
+  }
+  .kq-fab.is-on{ display:flex; }
+
+  .kq-fab-btn{
+    width: 44px; height: 44px; border-radius: 999px;
+    border: 1px solid var(--border, #ccc);
+    background: var(--entry, #fff);
+    color: var(--content, #222);
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    font-size: 18px;
+  }
+
+  .kq-toc-overlay{
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.35);
+    opacity: 0; pointer-events: none;
+    transition: opacity .18s ease;
+    z-index: 9998;
+  }
+  html.kq-toc-open .kq-toc-overlay{
+    opacity: 1; pointer-events: auto;
+  }
+
+  /* 把你现有的 #toc-container 变成侧边抽屉 */
+  #toc-container{
+    position: fixed;
+    top: 0; right: -86vw;
+    width: 86vw; max-width: 340px;
+    height: 100vh;
+    background: var(--theme, #fff);
+    border-left: 1px solid var(--border, #ccc);
+    box-shadow: -10px 0 30px rgba(0,0,0,.12);
+    transition: right .18s ease;
+    z-index: 9999;
+  }
+  html.kq-toc-open #toc-container{ right: 0; }
+
+  /* 让 TOC 内容可手指滚动 */
+  #toc-container .inner{
+    max-height: calc(100vh - 56px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 手机上一般不需要 summary（否则会占一行），你想保留也可以删掉这条 */
+  #toc-container summary{ display:none; }
+  #toc-container details{ height:100%; }
 }
 </style>
 
@@ -246,6 +303,7 @@
     localStorage.setItem('preferredComment', 'waline');
 
     if (window.__ensureWaline) window.__ensureWaline();
+    window.__kqShowWaline = showWaline;
   }
 
   function showGiscus() {
@@ -255,7 +313,7 @@
     giscusContainer.classList.add('active');
     if (walineContainer) walineContainer.classList.remove('active');
     localStorage.setItem('preferredComment', 'giscus');
-
+    window.__kqShowGiscus = showGiscus;
     ensureGiscus();
   }
 
@@ -271,4 +329,81 @@
     if (preferred === 'giscus') return showGiscus();
     return showWaline();
   });
+</script>  
+
+<script>
+(() => {
+  const html = document.documentElement;
+
+  const fab = document.getElementById('kq-fab');
+  const btnTOC = document.getElementById('kq-fab-toc');
+  const btnCmt = document.getElementById('kq-fab-cmt');
+  const overlay = document.getElementById('kq-toc-overlay');
+
+  const toc = document.getElementById('toc-container');
+
+  function enableFab() {
+    if (fab) fab.classList.add('is-on');
+  }
+
+  // 只有“评论开启/显示”时再出现 FAB：你这页默认会 showWaline/showGiscus，所以这里直接启用即可
+  window.addEventListener('DOMContentLoaded', enableFab);
+
+  // 没 TOC 就隐藏 ☰
+  if (!toc && btnTOC) btnTOC.remove();
+
+  function openTOC() {
+    if (!toc) return;
+    html.classList.add('kq-toc-open');
+    // 复用你 TOC 里的 <details>，打开它以便渲染 ul
+    const d = toc.querySelector('details');
+    if (d) d.open = true;
+  }
+  function closeTOC() {
+    html.classList.remove('kq-toc-open');
+  }
+
+  btnTOC && btnTOC.addEventListener('click', openTOC);
+  overlay && overlay.addEventListener('click', closeTOC);
+
+  // 点目录项：跳转后自动隐藏抽屉（1 个监听）
+  toc && toc.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    closeTOC();
+  });
+
+  // 💬：切到上次评论系统 + 滚到输入框
+  btnCmt && btnCmt.addEventListener('click', () => {
+    closeTOC();
+
+    const preferred = localStorage.getItem('preferredComment'); // 你现有逻辑
+    const hasWaline = !!document.getElementById('waline-container');
+    const hasGiscus = !!document.getElementById('giscus-container');
+
+    if (preferred === 'giscus' && hasGiscus && window.__kqShowGiscus) window.__kqShowGiscus();
+    else if (hasWaline && window.__kqShowWaline) window.__kqShowWaline();
+    else if (hasGiscus && window.__kqShowGiscus) window.__kqShowGiscus();
+
+    const target = document.getElementById('waline') || document.getElementById('giscus-comment');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // 尽量 focus Waline 输入框（Waline 懒加载时需要等一下）
+    let tries = 0;
+    (function tryFocus() {
+      tries++;
+      const host = document.getElementById('waline');
+      if (!host) return;
+
+      const ta = host.querySelector('textarea');
+      if (ta) { ta.focus({ preventScroll: true }); return; }
+
+      const ed = host.querySelector('[contenteditable="true"]');
+      if (ed) { ed.focus({ preventScroll: true }); return; }
+
+      if (tries < 30) requestAnimationFrame(tryFocus);
+    })();
+  });
+})();
 </script>
+
