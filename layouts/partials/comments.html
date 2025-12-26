@@ -227,6 +227,36 @@ html.kq-toc-open .kq-toc-overlay{
   #toc-container summary{ display:none; }
   #toc-container details{ height:100%; }
 }
+
+/* ✅ 只修 FAB 里的 Top：100 不换行（不改你的 Top.css 文件） */
+@media (max-width: 900px){
+  /* 1) FAB 里取消 topInner 的 7px margin，不然 44px 圆里剩余宽度太小 */
+  .kq-fab a.top-link.kq-top-in-fab .topInner{
+    margin: 0 !important;
+  }
+
+  /* 2) 禁止百分比断行（覆盖可能存在的 break-all/anywhere） */
+  .kq-fab a.top-link.kq-top-in-fab,
+  .kq-fab a.top-link.kq-top-in-fab .topInner{
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+  }
+
+  /* 3) 给“百分比文本”至少 3ch 宽度（更稳）——多种 id/class 兜底 */
+  .kq-fab a.top-link.kq-top-in-fab #top-percent,
+  .kq-fab a.top-link.kq-top-in-fab #topPercent,
+  .kq-fab a.top-link.kq-top-in-fab .top-percent,
+  .kq-fab a.top-link.kq-top-in-fab .topPercent,
+  .kq-fab a.top-link.kq-top-in-fab .topInner span{
+    min-width: 3ch;
+    text-align: right;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+    line-height: 1;
+  }
+}
 </style>
 
 <div class="comment-toggle">
