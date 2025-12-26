@@ -63,60 +63,61 @@
   --waline-box-shadow: none;
 }
 
-/* ===== Mobile FAB + TOC drawer ===== */
-.kq-fab, .kq-toc-overlay{ display:none; }
+/* ===== FAB（桌面+手机统一） + TOC drawer（仅手机） ===== */
 
+/* 可选：隐藏 PaperMod 自带 top-link（因为我们自己做 Top 按钮） */
+a.top-link{ display:none !important; }
+
+.kq-fab{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: none;              /* 默认隐藏，JS 判断后再显示 */
+  flex-direction: column;     /* ✅ 竖向 */
+  gap: 12px;
+  z-index: 9999;
+}
+.kq-fab.is-on{ display:flex; }
+
+.kq-fab-btn{
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--border, #ccc);
+  background: var(--entry, #fff);
+  color: var(--content, #222);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+
+  transition: box-shadow .2s ease, transform .2s ease;
+  box-shadow: 0px 2px 4px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
+}
+.kq-fab-btn:hover{
+  box-shadow: 0px 4px 8px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
+}
+
+.kq-toc-overlay{
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.35);
+  opacity: 0; pointer-events: none;
+  transition: opacity .18s ease;
+  z-index: 9998;
+}
+html.kq-toc-open .kq-toc-overlay{
+  opacity: 1; pointer-events: auto;
+}
+
+/* iPhone 安全区适配 */
 @media (max-width: 900px){
   .kq-fab{
-    position: fixed;
     right: calc(16px + env(safe-area-inset-right));
     bottom: calc(16px + env(safe-area-inset-bottom));
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-    z-index: 9999;
-  }
-  .kq-fab.is-on{ display:flex; }
-
-  .kq-fab :is(.kq-fab-btn, .top-link){
-    width: 44px;
-    height: 44px;
-    border-radius: 999px;
-    border: 1px solid var(--border, #ccc);
-    background: var(--entry, #fff);
-    color: var(--content, #222);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    transition: box-shadow .2s ease, transform .2s ease;
-    box-shadow: 0px 2px 4px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
-  }
-  .kq-fab :is(.kq-fab-btn, .top-link):hover{
-    box-shadow: 0px 4px 8px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
   }
 
-  .kq-fab .top-link{
-    position: static !important;
-    padding: 0 !important;
-    text-decoration: none;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  .kq-fab .topInner{ margin: 0 !important; }
-
-  .kq-toc-overlay{
-    display:block;
-    position: fixed; inset: 0;
-    background: rgba(0,0,0,.35);
-    opacity: 0; pointer-events: none;
-    transition: opacity .18s ease;
-    z-index: 9998;
-  }
-  html.kq-toc-open .kq-toc-overlay{
-    opacity: 1; pointer-events: auto;
-  }
-
+  /* 手机：把你现有的 #toc-container 变抽屉 */
   #toc-container{
     position: fixed;
     top: 0; right: -86vw;
@@ -249,9 +250,10 @@
 <div class="kq-toc-overlay" id="kq-toc-overlay" aria-hidden="true"></div>
 
 <div class="kq-fab" id="kq-fab">
+  <button class="kq-fab-btn" id="kq-fab-top" type="button" aria-label="Top">↑</button>
   <button class="kq-fab-btn" id="kq-fab-toc" type="button" aria-label="TOC">☰</button>
   <button class="kq-fab-btn" id="kq-fab-cmt" type="button" aria-label="Comments">💬</button>
-</div>
+</div>  
 
 <script>
   const btnWaline = document.getElementById('btn-waline');
@@ -356,29 +358,51 @@
   const html = document.documentElement;
 
   const fab = document.getElementById('kq-fab');
+  const btnTop = document.getElementById('kq-fab-top');
   const btnTOC = document.getElementById('kq-fab-toc');
   const btnCmt = document.getElementById('kq-fab-cmt');
   const overlay = document.getElementById('kq-toc-overlay');
+
   const toc = document.getElementById('toc-container');
-  const mq = window.matchMedia('(max-width: 900px)');
+  const mqMobile = window.matchMedia('(max-width: 900px)');
+
+  function closeTOC() { html.classList.remove('kq-toc-open'); }
 
   function openTOC() {
     if (!toc) return;
-    html.classList.add('kq-toc-open');
+
+    // 手机：抽屉
+    if (mqMobile.matches) {
+      html.classList.add('kq-toc-open');
+      const d = toc.querySelector('details');
+      if (d) d.open = true;
+      return;
+    }
+
+    // 桌面：滚到目录并展开（不改变桌面布局）
     const d = toc.querySelector('details');
     if (d) d.open = true;
+    toc.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-  function closeTOC() { html.classList.remove('kq-toc-open'); }
 
+  // Top
+  btnTop && btnTop.addEventListener('click', () => {
+    closeTOC();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // TOC
   btnTOC && btnTOC.addEventListener('click', openTOC);
   overlay && overlay.addEventListener('click', closeTOC);
 
+  // 点目录项：手机抽屉关闭；桌面不管
   toc && toc.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
     if (!a) return;
-    closeTOC();
+    if (mqMobile.matches) closeTOC();
   });
 
+  // Comments
   btnCmt && btnCmt.addEventListener('click', () => {
     closeTOC();
 
@@ -397,7 +421,7 @@
 
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-    // Waline 尝试 focus
+    // 尝试 focus Waline（Giscus iframe 无法跨域 focus）
     let tries = 0;
     (function tryFocus() {
       tries++;
@@ -411,25 +435,18 @@
     })();
   });
 
-  window.addEventListener('load', () => {
-    if (!mq.matches || !fab) return;
+  // 启用/精简按钮：没 TOC 删 ☰；没评论删 💬；Top 永远留
+  window.addEventListener('DOMContentLoaded', () => {
+    if (!fab) return;
 
-    // 搬运 Top（移动端）
-    const topLink = document.querySelector('a.top-link');
-    if (topLink) {
-      fab.appendChild(topLink);
-      topLink.setAttribute('aria-label', 'Top');
-    }
-
-    // 没 TOC 移除 ☰
     if (!toc && btnTOC) btnTOC.remove();
 
-    // 没评论系统移除 💬
     const hasWaline = !!document.getElementById('waline-container') && !window.__walineBadConfig;
     const hasGiscus = !!document.getElementById('giscus-container');
     if (!hasWaline && !hasGiscus && btnCmt) btnCmt.remove();
 
-    if (fab.children.length > 0) fab.classList.add('is-on');
+    // 至少有一个按钮就显示（Top 一定在）
+    fab.classList.add('is-on');
   });
 })();
 </script>
