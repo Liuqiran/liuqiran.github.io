@@ -76,11 +76,31 @@ html[lang^="zh"] #waline *{
 .kq-fab{
   position: fixed;
   right: 16px;
-  bottom: 84px;
+  bottom: 16px;
   display: none;
   flex-direction: column;
   gap: 12px;
   z-index: 9999;
+}  
+
+/* 当 FAB 开启时：把 PaperMod 的 top-link 顶到 FAB 上面（2 个按钮的高度+间距） */
+html.kq-fab-on a.top-link{
+  right: 16px !important;
+  bottom: calc(16px + 44px + 12px + 44px + 12px) !important; /* 16 + (44+12)*2 */
+  z-index: 10000 !important;
+}
+
+/* 手机安全区版本 */
+@media (max-width: 900px){
+  .kq-fab{
+    right: calc(16px + env(safe-area-inset-right));
+    bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+
+  html.kq-fab-on a.top-link{
+    right: calc(16px + env(safe-area-inset-right)) !important;
+    bottom: calc(16px + env(safe-area-inset-bottom) + 44px + 12px + 44px + 12px) !important;
+  }
 }
 .kq-fab.is-on{ display:flex; }
 
@@ -387,9 +407,14 @@ html.kq-toc-open .kq-toc-overlay{
   btnCmt && btnCmt.addEventListener('click', () => {
     closeTOC();
 
-    const preferred = localStorage.getItem('preferredComment');
-    if (preferred === 'giscus') showGiscus(true);
-    else showWaline(true);
+const preferred = localStorage.getItem('preferredComment');
+const canWaline = walineContainer && walineOK;
+const canGiscus = !!giscusContainer;
+
+if (preferred === 'giscus' && canGiscus) showGiscus(true);
+else if (canWaline) showWaline(true);
+else if (canGiscus) showGiscus(true);
+
 
     const active = document.querySelector('.comment-system.active');
     const target =
@@ -400,16 +425,27 @@ html.kq-toc-open .kq-toc-overlay{
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-  // FAB 是否显示：没 TOC 删 ☰；没评论系统删 💬；有剩余就显示
-  window.addEventListener('DOMContentLoaded', () => {
-    if (!fab) return;
+// FAB 是否显示：没 TOC 删 ☰；没评论系统删 💬；有剩余就显示
+window.addEventListener('DOMContentLoaded', () => {
+  if (!fab) return;
 
-    if (!toc && btnTOC) btnTOC.remove();
+  // 1) 没 TOC 删 ☰
+  if (!toc && btnTOC) btnTOC.remove();
 
-    const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
-    if (!hasAnyComment && btnCmt) btnCmt.remove();
+  // 2) 没评论系统删 💬
+  const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
+  if (!hasAnyComment && btnCmt) btnCmt.remove();
 
-    if (fab.children.length > 0) fab.classList.add('is-on');
-  });
+  // 3) 判断 FAB 里是否还有“可见控件”（button 或 a）
+  const hasAnyControl = !!fab.querySelector('button, a');
+
+  if (hasAnyControl) {
+    fab.classList.add('is-on');
+    document.documentElement.classList.add('kq-fab-on'); // 让 CSS 顶起 top-link
+  } else {
+    fab.classList.remove('is-on');
+    document.documentElement.classList.remove('kq-fab-on');
+  }
+});   
 })();
 </script>
