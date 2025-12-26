@@ -88,7 +88,24 @@ html[lang^="zh"] #waline *{
 }
 .kq-fab.is-on{ display:flex; }
 
-/* ✅ 当 FAB 开启时，把主题的 top-link 顶到 FAB 上方 */
+/* ===== FAB（只做 TOC + Comments，不动你原来的 top-link） ===== */
+.kq-fab{
+  /* 统一用变量：想抬高 FAB 就改这个 */
+  --kq-fab-bottom: 16px;
+  --kq-fab-gap: 12px;
+
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right));
+  bottom: calc(var(--kq-fab-bottom) + env(safe-area-inset-bottom));
+
+  display: none;
+  flex-direction: column;
+  gap: var(--kq-fab-gap);
+  z-index: 9999;
+}
+.kq-fab.is-on{ display:flex; }
+
+/* ✅ 当 FAB 开启时，把主题的 top-link 顶到 FAB 上方（桌面端用） */
 html.kq-fab-on a.top-link{
   right: calc(16px + env(safe-area-inset-right)) !important;
   bottom: calc(
@@ -99,11 +116,54 @@ html.kq-fab-on a.top-link{
   ) !important;
 }
 
-/* 手机：如果你真的想让 FAB 离底部更远，就只改变量，不要硬写 bottom */
+/* 手机：只改变量，不要再硬写 bottom */
 @media (max-width: 900px){
-  .kq-fab{
-    --kq-fab-bottom: 16px; /* ✅ 想要 84px 就改成 84px */
-  }
+  .kq-fab{ --kq-fab-bottom: 84px; } /* 想要更高就改这里 */
+}
+
+.kq-fab-btn{
+  width: 44px; height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--border, #ccc);
+  background: var(--entry, #fff);
+  color: var(--content, #222);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  box-shadow: 0px 2px 4px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
+}
+.kq-fab-btn:hover{
+  box-shadow: 0px 4px 8px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
+}
+
+/* ✅ Top-link 被塞进 FAB 时：取消它的 fixed 定位，让它变成栈内按钮 */
+.kq-fab a.top-link.kq-top-in-fab{
+  position: static !important;
+  right: auto !important;
+  bottom: auto !important;
+
+  width: 44px !important;
+  height: 44px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* 你 Top.css 里 .topInner 有 margin:7px / grid，这里在 FAB 内强制归零 */
+.kq-fab a.top-link.kq-top-in-fab .topInner{
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.kq-fab a.top-link.kq-top-in-fab svg{
+  width: 20px !important;
+  height: 20px !important;
 }
 
 
@@ -454,6 +514,37 @@ window.addEventListener('DOMContentLoaded', () => {
   if (hasAnyControl) {
     fab.classList.add('is-on');
     html.classList.add('kq-fab-on');
+
+ // ✅ 移动端：把主题的“返回顶部”按钮塞进 FAB，三按钮同栈竖排
+    const topLink = document.querySelector('a.top-link');
+    let topLinkHome = null;
+    let topLinkNext = null;
+
+    function syncTopLinkPlacement(){
+      if (!topLink) return;
+
+      if (mqMobile.matches) {
+        // 只在手机塞进去
+        if (!fab.contains(topLink)) {
+          topLinkHome = topLinkHome || topLink.parentElement;
+          topLinkNext = topLinkNext || topLink.nextSibling;
+
+          topLink.classList.add('kq-top-in-fab', 'kq-fab-btn');
+          fab.appendChild(topLink);
+        }
+      } else {
+        // 桌面：放回原位置（可选，但建议保留）
+        if (topLinkHome && topLink.classList.contains('kq-top-in-fab')) {
+          topLink.classList.remove('kq-top-in-fab', 'kq-fab-btn');
+          topLinkHome.insertBefore(topLink, topLinkNext);
+        }
+      }
+
+      requestAnimationFrame(syncFabOffset);
+    }
+
+    syncTopLinkPlacement();
+    mqMobile.addEventListener('change', syncTopLinkPlacement);
 
     // 等一帧让 display:flex 生效再测高度
     requestAnimationFrame(syncFabOffset);
