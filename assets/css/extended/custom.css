@@ -170,4 +170,25 @@ img[aria-label="logo"] {
 .post-meta span {
   white-space: normal !important;
 }    
-.post-meta-item { display: inline; }
+.post-meta-item { display: inline; }   
+
+
+/* PaperMod 顶部菜单：永远一行，超出横向可滑（无 JS） */
+.nav .menu {
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  gap: .4rem;
+}
+
+/* 隐藏滚动条（尽量不破坏可用性） */
+.nav .menu::-webkit-scrollbar { display: none; }
+.nav .menu { scrollbar-width: none; } /* Firefox */
+
+/* 让每个菜单项不换行 + 点击区域稍微紧凑一点（可选） */
+.nav .menu a {
+  white-space: nowrap;
+  padding: .35rem .5rem;
+}
