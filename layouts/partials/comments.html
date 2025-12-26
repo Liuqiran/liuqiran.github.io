@@ -63,54 +63,42 @@
   --waline-box-shadow: none;
 }
 
-/* （可选）只让“中文页面评论区”用你的中文字体：把 font-family 换成你自己的 */
+/* 可选：只让中文评论区用“老宋”（把 font-family 换成你的实际字体名） */
+/*
 html[lang^="zh"] #waline,
 html[lang^="zh"] #waline *{
-  /* font-family: 'KingHwa_OldSong', sans-serif !important; */
+  font-family: 'KingHwa_OldSong', serif !important;
 }
+*/
 
-/* ===== FAB（桌面+手机统一） ===== */
+/* ===== FAB（只做 TOC + Comments，不动你原来的 top-link） ===== */
+/* 为了不挡住 PaperMod 自带 top-link，FAB 往上挪一点 */
 .kq-fab{
   position: fixed;
   right: 16px;
-  bottom: 16px;
-  display: none;              /* JS 判断后再显示 */
-  flex-direction: column;     /* 竖向 */
+  bottom: 84px;
+  display: none;
+  flex-direction: column;
   gap: 12px;
   z-index: 9999;
 }
 .kq-fab.is-on{ display:flex; }
 
-/* 统一尺寸：button + a.top-link（你的 top.css 继续控制 top-link 的背景/阴影等） */
-.kq-fab :is(.kq-fab-btn, .top-link){
-  width: 44px;
-  height: 44px;
+.kq-fab-btn{
+  width: 44px; height: 44px;
   border-radius: 999px;
+  border: 1px solid var(--border, #ccc);
+  background: var(--entry, #fff);
+  color: var(--content, #222);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
-}
-
-/* 自己的两个按钮 */
-.kq-fab-btn{
-  border: 1px solid var(--border, #ccc);
-  background: var(--entry, #fff);
-  color: var(--content, #222);
-  transition: box-shadow .2s ease, transform .2s ease;
   box-shadow: 0px 2px 4px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
 }
 .kq-fab-btn:hover{
   box-shadow: 0px 4px 8px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
 }
-
-/* top-link 被搬进 FAB 后不要 fixed；避免 top.css 里 margin 撑大 */
-.kq-fab .top-link{
-  position: static !important;
-  padding: 0 !important;
-  text-decoration: none;
-}
-.kq-fab .topInner{ margin: 0 !important; }
 
 /* overlay（默认不挡点击） */
 .kq-toc-overlay{
@@ -124,14 +112,13 @@ html.kq-toc-open .kq-toc-overlay{
   opacity: 1; pointer-events: auto;
 }
 
-/* iPhone 安全区 */
+/* iPhone 安全区 + 手机 TOC 抽屉 */
 @media (max-width: 900px){
   .kq-fab{
     right: calc(16px + env(safe-area-inset-right));
-    bottom: calc(16px + env(safe-area-inset-bottom));
+    bottom: calc(84px + env(safe-area-inset-bottom));
   }
 
-  /* 手机：TOC 抽屉化（桌面不改布局） */
   #toc-container{
     position: fixed;
     top: 0; right: -86vw;
@@ -164,146 +151,6 @@ html.kq-toc-open .kq-toc-overlay{
 {{- if $hasWaline -}}
 <div id="waline-container" class="comment-system">
   <div id="waline"></div>
-  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
-
- <script>
-  const btnWaline = document.getElementById('btn-waline');
-  const btnGiscus = document.getElementById('btn-giscus');
-  const walineContainer = document.getElementById('waline-container');
-  const giscusContainer = document.getElementById('giscus-container');
-
-  const GISCUS_TERM_RAW = {{ $commentPath | jsonify }};
-  const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
-  const GISCUS_REPO_ID = "R_kgDONiVddQ";
-  const GISCUS_CATEGORY = "General";
-  const GISCUS_CATEGORY_ID = "DIC_kwDONiVddc4CljSp";
-
-  function cleanString(x){
-    return String(x ?? "").replace(/\\/g,"").replace(/["']/g,"").trim();
-  }
-  const GISCUS_TERM = cleanString(GISCUS_TERM_RAW);
-
-  function normalizeGiscusLang(raw) {
-    const l = String(raw || "").toLowerCase();
-    if (l.startsWith("zh")) return "zh-CN";
-    if (l.startsWith("ja") || l.startsWith("jp")) return "ja";
-    return "en";
-  }
-
-  // ---- 关键：Waline module 未就绪时的“兜底 stub” ----
-  window.__walineWanted = window.__walineWanted || false;
-  if (typeof window.__ensureWaline !== 'function') {
-    window.__ensureWaline = () => { window.__walineWanted = true; };
-  }
-  function triggerWalineInit() {
-    window.__walineWanted = true;
-    if (typeof window.__ensureWaline === 'function') window.__ensureWaline();
-  }
-
-  // ---- Giscus 懒加载 ----
-  let giscusLoaded = false;
-  function ensureGiscus() {
-    if (giscusLoaded) return;
-    giscusLoaded = true;
-
-    const lang = normalizeGiscusLang(document.documentElement.lang);
-    const host = document.getElementById('giscus-comment');
-    if (!host) return;
-
-    host.innerHTML = "";
-
-    const s = document.createElement('script');
-    s.src = 'https://giscus.app/client.js';
-    s.async = true;
-    s.crossOrigin = 'anonymous';
-
-    s.setAttribute('data-repo', GISCUS_REPO);
-    s.setAttribute('data-repo-id', GISCUS_REPO_ID);
-    s.setAttribute('data-category', GISCUS_CATEGORY);
-    s.setAttribute('data-category-id', GISCUS_CATEGORY_ID);
-    s.setAttribute('data-mapping', 'specific');
-    s.setAttribute('data-term', GISCUS_TERM);
-    s.setAttribute('data-strict', '0');
-    s.setAttribute('data-reactions-enabled', '1');
-    s.setAttribute('data-emit-metadata', '0');
-    s.setAttribute('data-input-position', 'bottom');
-    s.setAttribute('data-theme', 'preferred_color_scheme');
-    s.setAttribute('data-lang', lang);
-
-    host.appendChild(s);
-  }
-
-  function deferLoad(fn) {
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(fn, { timeout: 1200 });
-    } else {
-      setTimeout(fn, 250);
-    }
-  }
-
-  // ---- UI 切换（loadNow 控制是否立刻加载）----
-  function showWaline(loadNow = true) {
-    // Waline 配置坏就回退到 Giscus
-    if (window.__walineBadConfig) return showGiscus(loadNow);
-
-    if (!btnWaline || !walineContainer) return;
-    btnWaline.classList.add('active');
-    if (btnGiscus) btnGiscus.classList.remove('active');
-
-    walineContainer.classList.add('active');
-    if (giscusContainer) giscusContainer.classList.remove('active');
-
-    localStorage.setItem('preferredComment', 'waline');
-
-    if (loadNow) triggerWalineInit();
-  }
-
-  function showGiscus(loadNow = true) {
-    if (!btnGiscus || !giscusContainer) return;
-    btnGiscus.classList.add('active');
-    if (btnWaline) btnWaline.classList.remove('active');
-
-    giscusContainer.classList.add('active');
-    if (walineContainer) walineContainer.classList.remove('active');
-
-    localStorage.setItem('preferredComment', 'giscus');
-
-    if (loadNow) ensureGiscus();
-  }
-
-  // 给 FAB 用
-  window.__kqShowWaline = () => showWaline(true);
-  window.__kqShowGiscus = () => showGiscus(true);
-
-  if (btnWaline) btnWaline.onclick = () => showWaline(true);
-  if (btnGiscus) btnGiscus.onclick = () => showGiscus(true);
-
-  // ---- 首屏：只切 UI，不立刻加载评论；空闲时再加载上次选择的系统 ----
-  window.addEventListener('DOMContentLoaded', () => {
-    const preferred = localStorage.getItem('preferredComment');
-
-    const hasWaline = !!btnWaline && !!walineContainer && !window.__walineBadConfig;
-    const hasGiscus = !!btnGiscus && !!giscusContainer;
-
-    // 先决定显示哪个（不加载）
-    if (!hasWaline && hasGiscus) {
-      showGiscus(false);
-      deferLoad(() => ensureGiscus());
-      return;
-    }
-
-    if (preferred === 'giscus' && hasGiscus) {
-      showGiscus(false);
-      deferLoad(() => ensureGiscus());
-      return;
-    }
-
-    // 默认 Waline
-    showWaline(false);
-    deferLoad(() => triggerWalineInit());
-  });
-</script>
-
 </div>
 {{- end -}}
 
@@ -319,128 +166,213 @@ html.kq-toc-open .kq-toc-overlay{
 </div>
 
 <script>
-/* ========= 评论系统切换（Waline / Giscus）========= */
-
-// stub：如果 module 还没加载，先记个“我想初始化 Waline”
-window.__ensureWaline = window.__ensureWaline || function(){ window.__walineWanted = true; };
-
-const btnWaline = document.getElementById('btn-waline');
-const btnGiscus = document.getElementById('btn-giscus');
-const walineContainer = document.getElementById('waline-container');
-const giscusContainer = document.getElementById('giscus-container');
-
-const GISCUS_TERM_RAW = {{ $commentPath | jsonify }};
-const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
-const GISCUS_REPO_ID = "R_kgDONiVddQ";
-const GISCUS_CATEGORY = "General";
-const GISCUS_CATEGORY_ID = "DIC_kwDONiVddc4CljSp";
-
-function cleanString(x){
-  return String(x ?? "").replace(/\\/g,"").replace(/["']/g,"").trim();
-}
-const GISCUS_TERM = cleanString(GISCUS_TERM_RAW);
-
-function normalizeGiscusLang(raw) {
-  const l = String(raw || "").toLowerCase();
-  if (l.startsWith("zh")) return "zh-CN";
-  if (l.startsWith("ja") || l.startsWith("jp")) return "ja";
-  return "en";
-}
-
-let giscusLoaded = false;
-function ensureGiscus() {
-  if (giscusLoaded) return;
-  giscusLoaded = true;
-
-  const lang = normalizeGiscusLang(document.documentElement.lang);
-  const host = document.getElementById('giscus-comment');
-  if (!host) return;
-
-  host.innerHTML = "";
-
-  const s = document.createElement('script');
-  s.src = 'https://giscus.app/client.js';
-  s.async = true;
-  s.crossOrigin = 'anonymous';
-
-  s.setAttribute('data-repo', GISCUS_REPO);
-  s.setAttribute('data-repo-id', GISCUS_REPO_ID);
-  s.setAttribute('data-category', GISCUS_CATEGORY);
-  s.setAttribute('data-category-id', GISCUS_CATEGORY_ID);
-  s.setAttribute('data-mapping', 'specific');
-  s.setAttribute('data-term', GISCUS_TERM);
-  s.setAttribute('data-strict', '0');
-  s.setAttribute('data-reactions-enabled', '1');
-  s.setAttribute('data-emit-metadata', '0');
-  s.setAttribute('data-input-position', 'bottom');
-  s.setAttribute('data-theme', 'preferred_color_scheme');
-  s.setAttribute('data-lang', lang);
-
-  host.appendChild(s);
-}
-
-function showGiscus() {
-  if (!btnGiscus || !giscusContainer) return;
-  btnGiscus.classList.add('active');
-  if (btnWaline) btnWaline.classList.remove('active');
-  giscusContainer.classList.add('active');
-  if (walineContainer) walineContainer.classList.remove('active');
-  localStorage.setItem('preferredComment', 'giscus');
-  ensureGiscus();
-}
-
-function showWaline() {
-  if (window.__walineBadConfig) return showGiscus();
-  if (!btnWaline || !walineContainer) return;
-  btnWaline.classList.add('active');
-  if (btnGiscus) btnGiscus.classList.remove('active');
-  walineContainer.classList.add('active');
-  if (giscusContainer) giscusContainer.classList.remove('active');
-  localStorage.setItem('preferredComment', 'waline');
-  window.__ensureWaline();
-}
-
-window.__kqShowWaline = showWaline;
-window.__kqShowGiscus = showGiscus;
-
-if (btnWaline) btnWaline.onclick = showWaline;
-if (btnGiscus) btnGiscus.onclick = showGiscus;
-
-window.addEventListener('DOMContentLoaded', () => {
-  const preferred = localStorage.getItem('preferredComment');
-
-  // 没 Waline / Waline 配置坏 -> 默认 Giscus
-  if (!btnWaline || !walineContainer || window.__walineBadConfig) return showGiscus();
-
-  if (preferred === 'giscus') return showGiscus();
-  return showWaline();
-});
-</script>
-
-<script>
-/* ========= FAB：Top(搬运主题按钮) / TOC / Comments ========= */
 (() => {
-  const html = document.documentElement;
-  const fab = document.getElementById('kq-fab');
-  if (!fab) return;
+  // ====== 从 Hugo 传值进来 ======
+  const HAS_WALINE = {{ $hasWaline | jsonify }};
+  const HUGO_SERVER_RAW = {{ $server | jsonify }};
+  const HUGO_PATH_RAW = {{ $commentPath | jsonify }};
+  const HUGO_LANG_FALLBACK = {{ $walineLang | jsonify }};
 
+  // ====== DOM ======
+  const btnWaline = document.getElementById('btn-waline');
+  const btnGiscus = document.getElementById('btn-giscus');
+  const walineContainer = document.getElementById('waline-container');
+  const giscusContainer = document.getElementById('giscus-container');
+
+  const fab = document.getElementById('kq-fab');
   const btnTOC = document.getElementById('kq-fab-toc');
   const btnCmt = document.getElementById('kq-fab-cmt');
   const overlay = document.getElementById('kq-toc-overlay');
   const toc = document.getElementById('toc-container');
   const mqMobile = window.matchMedia('(max-width: 900px)');
 
-  function closeTOC(){ html.classList.remove('kq-toc-open'); }
+  // ====== helpers ======
+  function cleanString(x){
+    return String(x ?? "").replace(/\\/g, "").replace(/["']/g, "").trim();
+  }
+  function cleanServerURL(x){
+    let s = cleanString(x).replace(/\/+$/, "");
+    s = s.replace(/^(https?:\/\/)(https?:\/\/)+/i, "$1");
+    const ms = s.match(/https?:\/\//ig);
+    if (ms && ms.length > 1) s = s.slice(s.toLowerCase().lastIndexOf("http"));
+    if (s.startsWith("//")) s = "https:" + s;
+    return s.replace(/\/+$/, "");
+  }
+  function isValidHttpUrl(s){
+    try{
+      const u = new URL(s);
+      return u.protocol === "http:" || u.protocol === "https:";
+    }catch(e){ return false; }
+  }
+  function deferLoad(fn) {
+    if ('requestIdleCallback' in window) requestIdleCallback(fn, { timeout: 1200 });
+    else setTimeout(fn, 250);
+  }
 
+  // ====== Lang normalize ======
+  function normalizeWalineLang(raw) {
+    const l = String(raw || "").toLowerCase();
+    if (l.startsWith("zh")) return "zh-CN";
+    if (l.startsWith("ja") || l.startsWith("jp")) return "jp";
+    return "en";
+  }
+  function normalizeGiscusLang(raw) {
+    const l = String(raw || "").toLowerCase();
+    if (l.startsWith("zh")) return "zh-CN";
+    if (l.startsWith("ja") || l.startsWith("jp")) return "ja";
+    return "en";
+  }
+
+  // ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
+  let walineReady = false;
+  let walineLoading = null;
+
+  const serverURL = cleanServerURL(HUGO_SERVER_RAW);
+  const commentPath = cleanString(HUGO_PATH_RAW);
+  const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
+
+  const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
+  if (!walineOK) window.__walineBadConfig = true;
+
+  function loadWalineCSSOnce() {
+    if (document.getElementById('kq-waline-css')) return;
+    const link = document.createElement('link');
+    link.id = 'kq-waline-css';
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
+    document.head.appendChild(link);
+  }
+
+  function ensureWaline() {
+    if (!walineOK || walineReady) return;
+    if (walineLoading) return;
+
+    walineLoading = (async () => {
+      loadWalineCSSOnce();
+      const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
+
+      mod.init({
+        el: "#waline",
+        serverURL,
+        path: commentPath,
+        requiredMeta: ["nick", "mail"],
+        lang: pageLangWaline,
+        locale: { reactionTitle: "", placeholder: "Write a comment…" },
+        reaction: true,
+        dark: "body.dark",
+        imageUploader: false,
+      });
+
+      walineReady = true;
+      walineLoading = null;
+      console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
+    })().catch((e) => {
+      console.error("[Waline] init failed:", e);
+      window.__walineBadConfig = true;
+      walineLoading = null;
+      // 失败就回退 giscus
+      showGiscus(true);
+    });
+  }
+
+  // ====== Giscus 懒加载 ======
+  const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
+  const GISCUS_REPO_ID = "R_kgDONiVddQ";
+  const GISCUS_CATEGORY = "General";
+  const GISCUS_CATEGORY_ID = "DIC_kwDONiVddc4CljSp";
+  const giscusTerm = cleanString(HUGO_PATH_RAW);
+
+  let giscusLoaded = false;
+  function ensureGiscus() {
+    if (giscusLoaded) return;
+    giscusLoaded = true;
+
+    const lang = normalizeGiscusLang(document.documentElement.lang);
+    const host = document.getElementById('giscus-comment');
+    if (!host) return;
+    host.innerHTML = "";
+
+    const s = document.createElement('script');
+    s.src = 'https://giscus.app/client.js';
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+
+    s.setAttribute('data-repo', GISCUS_REPO);
+    s.setAttribute('data-repo-id', GISCUS_REPO_ID);
+    s.setAttribute('data-category', GISCUS_CATEGORY);
+    s.setAttribute('data-category-id', GISCUS_CATEGORY_ID);
+    s.setAttribute('data-mapping', 'specific');
+    s.setAttribute('data-term', giscusTerm);
+    s.setAttribute('data-strict', '0');
+    s.setAttribute('data-reactions-enabled', '1');
+    s.setAttribute('data-emit-metadata', '0');
+    s.setAttribute('data-input-position', 'bottom');
+    s.setAttribute('data-theme', 'preferred_color_scheme');
+    s.setAttribute('data-lang', lang);
+
+    host.appendChild(s);
+    console.log("[Giscus] loaded:", { giscusTerm, lang });
+  }
+
+  // ====== UI 切换 ======
+  function showWaline(loadNow=true) {
+    if (!walineOK) return showGiscus(loadNow);
+
+    if (btnWaline) btnWaline.classList.add('active');
+    if (btnGiscus) btnGiscus.classList.remove('active');
+
+    if (walineContainer) walineContainer.classList.add('active');
+    if (giscusContainer) giscusContainer.classList.remove('active');
+
+    localStorage.setItem('preferredComment', 'waline');
+    if (loadNow) ensureWaline();
+  }
+
+  function showGiscus(loadNow=true) {
+    if (btnGiscus) btnGiscus.classList.add('active');
+    if (btnWaline) btnWaline.classList.remove('active');
+
+    if (giscusContainer) giscusContainer.classList.add('active');
+    if (walineContainer) walineContainer.classList.remove('active');
+
+    localStorage.setItem('preferredComment', 'giscus');
+    if (loadNow) ensureGiscus();
+  }
+
+  // 暴露给 FAB
+  window.__kqShowWaline = () => showWaline(true);
+  window.__kqShowGiscus = () => showGiscus(true);
+
+  if (btnWaline) btnWaline.onclick = () => showWaline(true);
+  if (btnGiscus) btnGiscus.onclick = () => showGiscus(true);
+
+  // 首屏：先切 UI，不立刻加载；空闲再加载
+  window.addEventListener('DOMContentLoaded', () => {
+    const preferred = localStorage.getItem('preferredComment');
+
+    if (!walineOK) {
+      showGiscus(false);
+      deferLoad(() => ensureGiscus());
+    } else if (preferred === 'giscus') {
+      showGiscus(false);
+      deferLoad(() => ensureGiscus());
+    } else {
+      showWaline(false);
+      deferLoad(() => ensureWaline());
+    }
+  });
+
+  // ====== FAB：TOC / Comments ======
+  function closeTOC(){ document.documentElement.classList.remove('kq-toc-open'); }
   function openTOC(){
     if (!toc) return;
     const d = toc.querySelector('details');
     if (d) d.open = true;
 
     if (mqMobile.matches) {
-      html.classList.add('kq-toc-open'); // 手机抽屉
+      document.documentElement.classList.add('kq-toc-open');
     } else {
-      toc.scrollIntoView({ behavior: 'smooth', block: 'start' }); // 桌面滚到目录
+      toc.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 
@@ -449,61 +381,35 @@ window.addEventListener('DOMContentLoaded', () => {
 
   toc && toc.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
-    if (!a) return;
-    if (mqMobile.matches) closeTOC();
+    if (a && mqMobile.matches) closeTOC();
   });
 
   btnCmt && btnCmt.addEventListener('click', () => {
     closeTOC();
 
     const preferred = localStorage.getItem('preferredComment');
-    const hasWaline = !!document.getElementById('waline-container') && !window.__walineBadConfig;
-    const hasGiscus = !!document.getElementById('giscus-container');
-
-    if (preferred === 'giscus' && hasGiscus) window.__kqShowGiscus && window.__kqShowGiscus();
-    else if (hasWaline) window.__kqShowWaline && window.__kqShowWaline();
-    else if (hasGiscus) window.__kqShowGiscus && window.__kqShowGiscus();
+    if (preferred === 'giscus') showGiscus(true);
+    else showWaline(true);
 
     const active = document.querySelector('.comment-system.active');
-    const target = (active && (active.querySelector('#waline') || active.querySelector('#giscus-comment')))
-      || document.getElementById('waline')
-      || document.getElementById('giscus-comment');
+    const target =
+      (active && (active.querySelector('#waline') || active.querySelector('#giscus-comment'))) ||
+      document.getElementById('waline') ||
+      document.getElementById('giscus-comment');
 
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-    // 尝试 focus Waline
-    let tries = 0;
-    (function tryFocus(){
-      tries++;
-      const host = document.getElementById('waline');
-      if (!host) return;
-      const ta = host.querySelector('textarea');
-      if (ta) { ta.focus({ preventScroll: true }); return; }
-      const ed = host.querySelector('[contenteditable="true"]');
-      if (ed) { ed.focus({ preventScroll: true }); return; }
-      if (tries < 30) requestAnimationFrame(tryFocus);
-    })();
   });
 
-  // ===== 初始化：搬运 top-link + 按需删按钮 + 显示 FAB =====
+  // FAB 是否显示：没 TOC 删 ☰；没评论系统删 💬；有剩余就显示
   window.addEventListener('DOMContentLoaded', () => {
-    // 1) 搬运主题 top-link（保留你 top.css 的所有逻辑）
-    const topLink = document.querySelector('a.top-link');
-    if (topLink && topLink.parentElement !== fab) {
-      fab.prepend(topLink);
-      topLink.setAttribute('aria-label', 'Top');
-    }
+    if (!fab) return;
 
-    // 2) 没 TOC 删 ☰
     if (!toc && btnTOC) btnTOC.remove();
 
-    // 3) 没评论系统删 💬
-    const hasWaline = !!document.getElementById('waline-container') && !window.__walineBadConfig;
-    const hasGiscus = !!document.getElementById('giscus-container');
-    if (!hasWaline && !hasGiscus && btnCmt) btnCmt.remove();
+    const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
+    if (!hasAnyComment && btnCmt) btnCmt.remove();
 
-    // 4) 只要 FAB 里最终还有东西就显示
-     if (fab) fab.classList.add('is-on');
+    if (fab.children.length > 0) fab.classList.add('is-on');
   });
 })();
 </script>
