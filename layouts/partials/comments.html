@@ -105,7 +105,23 @@ html[lang^="zh"] #waline *{
 }
 .kq-fab.is-on{ display:flex; }
 
-/* ✅ 当 FAB 开启时，把主题的 top-link 顶到 FAB 上方（桌面端用） */
+/* ===== FAB（TOC + Comments；移动端把 Top 收进同一列） ===== */
+.kq-fab{
+  --kq-fab-bottom: 16px;
+  --kq-fab-gap: 12px;
+
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right));
+  bottom: calc(var(--kq-fab-bottom) + env(safe-area-inset-bottom));
+
+  display: none;
+  flex-direction: column;
+  gap: var(--kq-fab-gap);
+  z-index: 9999;
+}
+.kq-fab.is-on{ display:flex; }
+
+/* 桌面端：top-link 顶到 FAB 上方 */
 html.kq-fab-on a.top-link{
   right: calc(16px + env(safe-area-inset-right)) !important;
   bottom: calc(
@@ -116,9 +132,9 @@ html.kq-fab-on a.top-link{
   ) !important;
 }
 
-/* 手机：只改变量，不要再硬写 bottom */
+/* 手机：只改变量，不再写死 bottom */
 @media (max-width: 900px){
-  .kq-fab{ --kq-fab-bottom: 84px; } /* 想要更高就改这里 */
+  .kq-fab{ --kq-fab-bottom: 84px; }
 }
 
 .kq-fab-btn{
@@ -137,7 +153,7 @@ html.kq-fab-on a.top-link{
   box-shadow: 0px 4px 8px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
 }
 
-/* ✅ Top-link 被塞进 FAB 时：取消它的 fixed 定位，让它变成栈内按钮 */
+/* ✅ 只影响“被塞进 FAB 的 top-link”，不动你原本 Top.css */
 .kq-fab a.top-link.kq-top-in-fab{
   position: static !important;
   right: auto !important;
@@ -151,14 +167,28 @@ html.kq-fab-on a.top-link{
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
+  border-radius: 999px !important;
 }
 
-/* 你 Top.css 里 .topInner 有 margin:7px / grid，这里在 FAB 内强制归零 */
+/* 保持原来“箭头上、数字下”的竖排 grid，只去掉 margin:7px（否则 100 容不下会被拆行） */
 .kq-fab a.top-link.kq-top-in-fab .topInner{
   margin: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: grid !important;
+  justify-items: center !important;
+  align-content: center !important;
+  gap: 2px !important;
+}
+
+/* ✅ 关键：只让数字不被拆成 10 + 0，同时不变宽 */
+.kq-fab a.top-link.kq-top-in-fab .topInner span{
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+
+  font-size: 10px !important;
+  line-height: 1 !important;
+  letter-spacing: -0.06em !important;
+  font-variant-numeric: tabular-nums;
 }
 
 .kq-fab a.top-link.kq-top-in-fab svg{
@@ -166,25 +196,6 @@ html.kq-fab-on a.top-link{
   height: 20px !important;
 }
 
-
-}
-.kq-fab.is-on{ display:flex; }
-
-.kq-fab-btn{
-  width: 44px; height: 44px;
-  border-radius: 999px;
-  border: 1px solid var(--border, #ccc);
-  background: var(--entry, #fff);
-  color: var(--content, #222);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  box-shadow: 0px 2px 4px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
-}
-.kq-fab-btn:hover{
-  box-shadow: 0px 4px 8px rgb(5 10 15 / 5%), 0px 7px 13px -3px rgb(5 10 15 / 30%);
-}
 
 /* overlay（默认不挡点击） */
 .kq-toc-overlay{
@@ -205,17 +216,6 @@ html.kq-toc-open .kq-toc-overlay{
     bottom: calc(84px + env(safe-area-inset-bottom));
   }
 
-  #toc-container{
-    position: fixed;
-    top: 0; right: -86vw;
-    width: 86vw; max-width: 340px;
-    height: 100vh;
-    background: var(--theme, #fff);
-    border-left: 1px solid var(--border, #ccc);
-    box-shadow: -10px 0 30px rgba(0,0,0,.12);
-    transition: right .18s ease;
-    z-index: 9999;
-  }
   html.kq-toc-open #toc-container{ right: 0; }
 
   #toc-container .inner{
