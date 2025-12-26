@@ -44,7 +44,6 @@ html[lang="zh-CN"] body {
   direction: ltr;  /* 保持内容本身从上到下、从右往左排 */
   padding-bottom: 1em; /* 或者先试 6px/10px */
 }
-} 
 
 /* 1) 不要 hidden（Firefox 会裁字）*/
 .vertical-chinese-wrapper{
@@ -112,7 +111,7 @@ img[aria-label="logo"] {
 }   
 
 /*/* 打字机效果样式 */
-/*html[lang="en-US"] .profile_inner > span {
+html[lang="en-US"] .profile_inner > span {
     font-size: 1.4em;
     display: block;
     margin: 10px 0;
