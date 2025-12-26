@@ -192,3 +192,16 @@ img[aria-label="logo"] {
   white-space: nowrap;
   padding: .35rem .5rem;
 }
+
+/* PaperMod 顶部导航：滚动时吸顶（无 JS） */
+header.header, .header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--theme); /* 不然会透出正文 */
+}
+
+/* 可选：吸顶后加一点分割线/阴影感 */
+header.header, .header {
+  border-bottom: 1px solid var(--border);
+}
