@@ -65,8 +65,25 @@
 
 /* ===== FAB（桌面+手机统一） + TOC drawer（仅手机） ===== */
 
-/* 可选：隐藏 PaperMod 自带 top-link（因为我们自己做 Top 按钮） */
-a.top-link{ display:none !important; }
+.kq-fab :is(.kq-fab-btn, .top-link){
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* top-link 被搬进 FAB 后不要 fixed */
+.kq-fab .top-link{
+  position: static !important;
+  padding: 0 !important;
+  text-decoration: none;
+}
+
+/* 你 top.css 里 topInner margin:7px 会撑大，搬进 FAB 需要归零 */
+.kq-fab .topInner{ margin: 0 !important; }
+
 
 .kq-fab{
   position: fixed;
@@ -250,10 +267,10 @@ html.kq-toc-open .kq-toc-overlay{
 <div class="kq-toc-overlay" id="kq-toc-overlay" aria-hidden="true"></div>
 
 <div class="kq-fab" id="kq-fab">
-  <button class="kq-fab-btn" id="kq-fab-top" type="button" aria-label="Top">↑</button>
   <button class="kq-fab-btn" id="kq-fab-toc" type="button" aria-label="TOC">☰</button>
   <button class="kq-fab-btn" id="kq-fab-cmt" type="button" aria-label="Comments">💬</button>
-</div>  
+</div>
+
 
 <script>
   const btnWaline = document.getElementById('btn-waline');
@@ -356,7 +373,11 @@ html.kq-toc-open .kq-toc-overlay{
 <script>
 (() => {
   const html = document.documentElement;
-
+  const topLink = document.querySelector('a.top-link');
+if (fab && topLink) {
+  fab.prepend(topLink); // 想 Top 在最上面用 prepend；想在最下面用 appendChild
+  topLink.setAttribute('aria-label', 'Top');
+}  
   const fab = document.getElementById('kq-fab');
   const btnTop = document.getElementById('kq-fab-top');
   const btnTOC = document.getElementById('kq-fab-toc');
