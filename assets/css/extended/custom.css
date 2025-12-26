@@ -110,7 +110,7 @@ img[aria-label="logo"] {
     color: var(--primary);
 }   
 
-/*/* 打字机效果样式 */
+/* 打字机效果样式 */
 html[lang="en-US"] .profile_inner > span {
     font-size: 1.4em;
     display: block;
@@ -192,15 +192,44 @@ html[lang="en-US"] .profile_inner > span {
   padding: .35rem .5rem;
 }
 
-/* PaperMod 顶部导航：滚动时吸顶（无 JS） */
-header.header, .header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: var(--theme); /* 不然会透出正文 */
+/* 桌面端：你想整条 header 吸顶就留着（可选） */
+@media (min-width: 769px){
+  header.header, .header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--theme);
+    border-bottom: 1px solid var(--border);
+  }
 }
 
-/* 可选：吸顶后加一点分割线/阴影感 */
-header.header, .header {
-  border-bottom: 1px solid var(--border);
+/* 移动端：上面那一大排正常滚走；只让菜单这一排吸顶 */
+@media (max-width: 768px){
+  /* 1) 取消整个 header 吸顶（否则大排也会粘住） */
+  header.header, .header{
+    position: static !important;
+  }
+
+  /* 2) 只让菜单吸顶 */
+  header.header .nav #menu,
+  header.header .nav .menu{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--theme);
+    border-bottom: 1px solid var(--border);
+
+    /* 保持一行 + 横向可滑 */
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    gap: .4rem;
+    padding: .25rem .5rem;
+  }
+
+  /* 隐藏滚动条 */
+  header.header .nav #menu::-webkit-scrollbar{ display:none; }
+  header.header .nav #menu{ scrollbar-width:none; }
 }
