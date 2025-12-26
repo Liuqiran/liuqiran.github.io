@@ -339,57 +339,87 @@ html.kq-toc-open .kq-toc-overlay{
     return "en";
   }
 
-  // ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
-  let walineReady = false;
-  let walineLoading = null;
+// ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
+let walineReady = false;
+let walineLoading = null;
 
-  const serverURL = cleanServerURL(HUGO_SERVER_RAW);
-  const commentPath = cleanString(HUGO_PATH_RAW);
-  const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
+const serverURL = cleanServerURL(HUGO_SERVER_RAW);
+const commentPath = cleanString(HUGO_PATH_RAW);
 
-  const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
-  if (!walineOK) window.__walineBadConfig = true;
+// 建议：Waline 更标准的语言码用 en-US / zh-CN / jp（不行也会自动 fallback）:contentReference[oaicite:1]{index=1}
+const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
 
-  function loadWalineCSSOnce() {
-    if (document.getElementById('kq-waline-css')) return;
-    const link = document.createElement('link');
-    link.id = 'kq-waline-css';
-    link.rel = 'stylesheet';
-    link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
-    document.head.appendChild(link);
+const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
+if (!walineOK) window.__walineBadConfig = true;
+
+// === 你的“输入框自定义文字”（按语言）===
+// 你想写多行就用 \n
+const PLACEHOLDER_MAP = {
+  "zh-CN": "谢谢你来到这里——我都会看。",
+  "jp": "コメントどうぞ…(*^_^*)",
+  "en-US": "Thanks for being here—this wasn’t written into the void.\nI read every note. ",
+  "en": "Thanks for being here—this wasn’t written into the void.\nI read every note. ",
+};
+const myPlaceholder = PLACEHOLDER_MAP[pageLangWaline] || "Write a comment…";
+
+function loadWalineCSSOnce() {
+  if (document.getElementById('kq-waline-css')) return;
+
+  const link = document.createElement('link');
+  link.id = 'kq-waline-css';
+  link.rel = 'stylesheet';
+  link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
+  document.head.appendChild(link);
+
+  // 可选：防止主题把 placeholder 透明度压没（你如果本来就正常可删）
+  if (!document.getElementById('kq-waline-ph-style')) {
+    const st = document.createElement('style');
+    st.id = 'kq-waline-ph-style';
+    st.textContent = `
+      #waline textarea::placeholder,
+      #waline input::placeholder { opacity: .85; }
+    `;
+    document.head.appendChild(st);
   }
+}
 
-  function ensureWaline() {
-    if (!walineOK || walineReady) return;
-    if (walineLoading) return;
+function ensureWaline() {
+  if (!walineOK || walineReady) return;
+  if (walineLoading) return;
 
-    walineLoading = (async () => {
-      loadWalineCSSOnce();
-      const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
+  walineLoading = (async () => {
+    loadWalineCSSOnce();
+    const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
 
-      mod.init({
-        el: "#waline",
-        serverURL,
-        path: commentPath,
-        requiredMeta: ["nick", "mail"],
-        lang: pageLangWaline,
-        locale: { reactionTitle: "", placeholder: "Write a comment…" },
-        reaction: true,
-        dark: "body.dark",
-        imageUploader: false,
-      });
+    mod.init({
+      el: "#waline",
+      serverURL,
+      path: commentPath,
+      requiredMeta: ["nick", "mail"],
+      lang: pageLangWaline,
 
-      walineReady = true;
-      walineLoading = null;
-      console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
-    })().catch((e) => {
-      console.error("[Waline] init failed:", e);
-      window.__walineBadConfig = true;
-      walineLoading = null;
-      // 失败就回退 giscus
-      showGiscus(true);
+      // ✅ 输入框提示文字就在这里：locale.placeholder :contentReference[oaicite:2]{index=2}
+      // reactionTitle 你设为空会把“反应/表情”标题隐藏 :contentReference[oaicite:3]{index=3}
+      locale: {
+        placeholder: myPlaceholder,
+        reactionTitle: "",
+      },
+
+      reaction: true,
+      dark: "body.dark",
+      imageUploader: false,
     });
-  }
+
+    walineReady = true;
+    walineLoading = null;
+    console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
+  })().catch((e) => {
+    console.error("[Waline] init failed:", e);
+    window.__walineBadConfig = true;
+    walineLoading = null;
+    showGiscus(true);
+  });
+}
 
   // ====== Giscus 懒加载 ======
   const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
