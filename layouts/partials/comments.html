@@ -166,91 +166,144 @@ html.kq-toc-open .kq-toc-overlay{
   <div id="waline"></div>
   <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 
-  <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+ <script>
+  const btnWaline = document.getElementById('btn-waline');
+  const btnGiscus = document.getElementById('btn-giscus');
+  const walineContainer = document.getElementById('waline-container');
+  const giscusContainer = document.getElementById('giscus-container');
 
-    let serverURL = {{ $server | jsonify }};
-    let commentPath = {{ $commentPath | jsonify }};
-    const hugoDefaultLang = {{ $walineLang | jsonify }};
+  const GISCUS_TERM_RAW = {{ $commentPath | jsonify }};
+  const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
+  const GISCUS_REPO_ID = "R_kgDONiVddQ";
+  const GISCUS_CATEGORY = "General";
+  const GISCUS_CATEGORY_ID = "DIC_kwDONiVddc4CljSp";
 
-    function cleanString(x){
-      return String(x ?? "")
-        .replace(/\\/g, "")
-        .replace(/["']/g, "")
-        .trim();
+  function cleanString(x){
+    return String(x ?? "").replace(/\\/g,"").replace(/["']/g,"").trim();
+  }
+  const GISCUS_TERM = cleanString(GISCUS_TERM_RAW);
+
+  function normalizeGiscusLang(raw) {
+    const l = String(raw || "").toLowerCase();
+    if (l.startsWith("zh")) return "zh-CN";
+    if (l.startsWith("ja") || l.startsWith("jp")) return "ja";
+    return "en";
+  }
+
+  // ---- 关键：Waline module 未就绪时的“兜底 stub” ----
+  window.__walineWanted = window.__walineWanted || false;
+  if (typeof window.__ensureWaline !== 'function') {
+    window.__ensureWaline = () => { window.__walineWanted = true; };
+  }
+  function triggerWalineInit() {
+    window.__walineWanted = true;
+    if (typeof window.__ensureWaline === 'function') window.__ensureWaline();
+  }
+
+  // ---- Giscus 懒加载 ----
+  let giscusLoaded = false;
+  function ensureGiscus() {
+    if (giscusLoaded) return;
+    giscusLoaded = true;
+
+    const lang = normalizeGiscusLang(document.documentElement.lang);
+    const host = document.getElementById('giscus-comment');
+    if (!host) return;
+
+    host.innerHTML = "";
+
+    const s = document.createElement('script');
+    s.src = 'https://giscus.app/client.js';
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+
+    s.setAttribute('data-repo', GISCUS_REPO);
+    s.setAttribute('data-repo-id', GISCUS_REPO_ID);
+    s.setAttribute('data-category', GISCUS_CATEGORY);
+    s.setAttribute('data-category-id', GISCUS_CATEGORY_ID);
+    s.setAttribute('data-mapping', 'specific');
+    s.setAttribute('data-term', GISCUS_TERM);
+    s.setAttribute('data-strict', '0');
+    s.setAttribute('data-reactions-enabled', '1');
+    s.setAttribute('data-emit-metadata', '0');
+    s.setAttribute('data-input-position', 'bottom');
+    s.setAttribute('data-theme', 'preferred_color_scheme');
+    s.setAttribute('data-lang', lang);
+
+    host.appendChild(s);
+  }
+
+  function deferLoad(fn) {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(fn, { timeout: 1200 });
+    } else {
+      setTimeout(fn, 250);
+    }
+  }
+
+  // ---- UI 切换（loadNow 控制是否立刻加载）----
+  function showWaline(loadNow = true) {
+    // Waline 配置坏就回退到 Giscus
+    if (window.__walineBadConfig) return showGiscus(loadNow);
+
+    if (!btnWaline || !walineContainer) return;
+    btnWaline.classList.add('active');
+    if (btnGiscus) btnGiscus.classList.remove('active');
+
+    walineContainer.classList.add('active');
+    if (giscusContainer) giscusContainer.classList.remove('active');
+
+    localStorage.setItem('preferredComment', 'waline');
+
+    if (loadNow) triggerWalineInit();
+  }
+
+  function showGiscus(loadNow = true) {
+    if (!btnGiscus || !giscusContainer) return;
+    btnGiscus.classList.add('active');
+    if (btnWaline) btnWaline.classList.remove('active');
+
+    giscusContainer.classList.add('active');
+    if (walineContainer) walineContainer.classList.remove('active');
+
+    localStorage.setItem('preferredComment', 'giscus');
+
+    if (loadNow) ensureGiscus();
+  }
+
+  // 给 FAB 用
+  window.__kqShowWaline = () => showWaline(true);
+  window.__kqShowGiscus = () => showGiscus(true);
+
+  if (btnWaline) btnWaline.onclick = () => showWaline(true);
+  if (btnGiscus) btnGiscus.onclick = () => showGiscus(true);
+
+  // ---- 首屏：只切 UI，不立刻加载评论；空闲时再加载上次选择的系统 ----
+  window.addEventListener('DOMContentLoaded', () => {
+    const preferred = localStorage.getItem('preferredComment');
+
+    const hasWaline = !!btnWaline && !!walineContainer && !window.__walineBadConfig;
+    const hasGiscus = !!btnGiscus && !!giscusContainer;
+
+    // 先决定显示哪个（不加载）
+    if (!hasWaline && hasGiscus) {
+      showGiscus(false);
+      deferLoad(() => ensureGiscus());
+      return;
     }
 
-    function cleanServerURL(x){
-      let s = cleanString(x).replace(/\/+$/, "");
-      // 去掉重复 scheme：https://https://xxx
-      s = s.replace(/^(https?:\/\/)(https?:\/\/)+/i, "$1");
-      // 如果还有多个 http(s)://，保留最后一个（更鲁棒）
-      const ms = s.match(/https?:\/\//ig);
-      if (ms && ms.length > 1) s = s.slice(s.toLowerCase().lastIndexOf("http"));
-      if (s.startsWith("//")) s = "https:" + s;
-      return s.replace(/\/+$/, "");
+    if (preferred === 'giscus' && hasGiscus) {
+      showGiscus(false);
+      deferLoad(() => ensureGiscus());
+      return;
     }
 
-    function cleanPath(x){
-      return cleanString(x);
-    }
+    // 默认 Waline
+    showWaline(false);
+    deferLoad(() => triggerWalineInit());
+  });
+</script>
 
-    function isValidHttpUrl(s){
-      try{
-        const u = new URL(s);
-        return u.protocol === "http:" || u.protocol === "https:";
-      }catch(e){ return false; }
-    }
-
-    function normalizeWalineLang(raw) {
-      const l = String(raw || "").toLowerCase();
-      if (l.startsWith("zh")) return "zh-CN";
-      if (l.startsWith("ja") || l.startsWith("jp")) return "jp";
-      return "en";
-    }
-
-    const pageLang = normalizeWalineLang(document.documentElement.lang || hugoDefaultLang || "en");
-
-    const placeholderMap = {
-      "zh-CN": "看到你参与，我就知道这篇没有白写。谢谢你把时间留在这里。",
-      "en": "Thanks for being here—this wasn’t written into the void. I read every note.",
-      "jp": "気軽にコメントしてね",
-    };
-    const placeholder = placeholderMap[pageLang] || placeholderMap["en"];
-
-    serverURL = cleanServerURL(serverURL);
-    commentPath = cleanPath(commentPath);
-
-    if (!isValidHttpUrl(serverURL)) {
-      console.error("[Waline] Bad serverURL:", serverURL);
-      window.__walineBadConfig = true;
-    }
-
-    let walineInited = false;
-    function ensureWaline() {
-      if (walineInited) return;
-      walineInited = true;
-      if (window.__walineBadConfig) return;
-
-      init({
-        el: "#waline",
-        serverURL,
-        path: commentPath,
-        requiredMeta: ["nick", "mail"],
-        lang: pageLang,
-        locale: { reactionTitle: "", placeholder },
-        reaction: true,
-        dark: "body.dark",
-        imageUploader: false,
-      });
-
-      console.log("[Waline] inited:", { serverURL, commentPath, pageLang });
-    }
-
-    // ✅ module 真正就绪后接管 stub，并补偿一次“之前用户已触发”
-    window.__ensureWaline = ensureWaline;
-    if (window.__walineWanted) ensureWaline();
-  </script>
 </div>
 {{- end -}}
 
@@ -433,7 +486,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   // ===== 初始化：搬运 top-link + 按需删按钮 + 显示 FAB =====
-  window.addEventListener('load', () => {
+  window.addEventListener('DOMContentLoaded', () => {
     // 1) 搬运主题 top-link（保留你 top.css 的所有逻辑）
     const topLink = document.querySelector('a.top-link');
     if (topLink && topLink.parentElement !== fab) {
@@ -450,7 +503,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (!hasWaline && !hasGiscus && btnCmt) btnCmt.remove();
 
     // 4) 只要 FAB 里最终还有东西就显示
-    if (fab.children.length > 0) fab.classList.add('is-on');
+     if (fab) fab.classList.add('is-on');
   });
 })();
 </script>
