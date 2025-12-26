@@ -6,7 +6,8 @@ type: page
 url: /zh/reading-list-2/
 date:    2023-02-10
 showLastMod: false
-cover:
+noComment: true
+coccover:
   image: /uploads/2023/09/books-scaled.jpg
 ---
 读完的书:
