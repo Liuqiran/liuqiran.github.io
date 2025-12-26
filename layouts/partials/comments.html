@@ -135,100 +135,50 @@ html.kq-fab-on a.top-link{
   border-radius: 999px !important;
 }
 
-/* 保持箭头上、数字下（grid 竖排），并去掉 topInner 的 margin:7px */
-.kq-fab a.top-link.kq-top-in-fab .topInner{
-  margin: 0 !important;
-  display: grid !important;
-  justify-items: center !important;
-  align-content: center !important;
-  gap: 2px !important;
-}
-
-/* ✅ 精准只命中百分比数字：#read_progress（避免影响 svg / 其他 span） */
+/* ===== iPhone 安全区 + 手机 TOC 抽屉（同时兼容没有 id 的情况） ===== */
 @media (max-width: 900px){
-  .kq-fab a.top-link.kq-top-in-fab #read_progress{
-    font-size: 12px !important;   /* 原来 10px → 11px */
-    line-height: 1 !important;
-    letter-spacing: -0.12em !important; 
-    font-variant-numeric: tabular-nums;
-    white-space: nowrap !important;
-    overflow-wrap: normal !important;
-    word-break: keep-all !important;
+  /* 把 toc-container 变成右侧抽屉（覆盖你 toc.css 里 absolute/left 的桌面逻辑） */
+  #toc-container,
+  aside.toc-container,
+  .toc-container{
+    position: fixed !important;
+    top: 0 !important;
+    right: -100% !important;
+    left: auto !important;
+    bottom: 0 !important;
+
+    width: min(86vw, 360px) !important;
+    height: 100% !important;
+
+    background: var(--theme);
+    border-left: 1px solid var(--border);
+    padding: calc(12px + env(safe-area-inset-top)) 12px 12px;
+
+    transition: right .18s ease;
+    z-index: 9999;
   }
-}
 
-.kq-fab a.top-link.kq-top-in-fab svg{
-  width: 20px !important;
-  height: 20px !important;
-}
-/* overlay（默认不挡点击） */
-.kq-toc-overlay{
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,.35);
-  opacity: 0; pointer-events: none;
-  transition: opacity .18s ease;
-  z-index: 9998;
-}
-html.kq-toc-open .kq-toc-overlay{
-  opacity: 1; pointer-events: auto;
-}
+  html.kq-toc-open #toc-container,
+  html.kq-toc-open aside.toc-container,
+  html.kq-toc-open .toc-container{
+    right: 0 !important;
+  }
 
-/* iPhone 安全区 + 手机 TOC 抽屉 */
-@media (max-width: 900px){
-
-  html.kq-toc-open #toc-container{ right: 0; }
-
-  #toc-container .inner{
+  /* toc 内部滚动 */
+  #toc-container .inner,
+  .toc-container .inner{
     max-height: calc(100vh - 56px);
     overflow: auto;
     -webkit-overflow-scrolling: touch;
   }
 
-  #toc-container summary{ display:none; }
-  #toc-container details{ height:100%; }
-}
-
-/* ✅ 只修 FAB 里的 Top：100 不换行（不改你的 Top.css 文件） */
-@media (max-width: 900px){
-  /* 1) FAB 里取消 topInner 的 7px margin，不然 44px 圆里剩余宽度太小 */
-  .kq-fab a.top-link.kq-top-in-fab .topInner{
-    margin: 0 !important;
+  /* 你的 overlay */
+  html.kq-toc-open .kq-toc-overlay{
+    opacity: 1;
+    pointer-events: auto;
   }
 
-  /* 2) 禁止百分比断行（覆盖可能存在的 break-all/anywhere） */
-  .kq-fab a.top-link.kq-top-in-fab,
-  .kq-fab a.top-link.kq-top-in-fab .topInner{
-    white-space: nowrap !important;
-    overflow-wrap: normal !important;
-    word-break: keep-all !important;
-  }
-
-  /* 3) 给“百分比文本”至少 3ch 宽度（更稳）——多种 id/class 兜底 */
-  .kq-fab a.top-link.kq-top-in-fab #top-percent,
-  .kq-fab a.top-link.kq-top-in-fab #topPercent,
-  .kq-fab a.top-link.kq-top-in-fab .top-percent,
-  .kq-fab a.top-link.kq-top-in-fab .topPercent,
-  .kq-fab a.top-link.kq-top-in-fab .topInner span{
-    text-align: right;
-    white-space: nowrap !important;
-    overflow-wrap: normal !important;
-    word-break: keep-all !important;
-    line-height: 1;
-  }
-}  
-@media (max-width: 900px){
-  .kq-fab a.top-link.kq-top-in-fab .topInner{
-    margin: 0 !important;
-    display: grid !important;
-    place-items: center !important;
-    gap: 1px !important;
-  }
-
-  .kq-fab a.top-link.kq-top-in-fab .topSvg{
-    display: block !important;
-  }
-
-@media (max-width: 900px){
+  /* FAB 里 Top 的数字不换行 & 居中 */
   .kq-fab a.top-link.kq-top-in-fab .topInner{
     margin: 0 !important;
     display: grid !important;
@@ -241,27 +191,19 @@ html.kq-toc-open .kq-toc-overlay{
     width: 100% !important;
     text-align: center !important;
 
-    /* 不换行 */
     white-space: nowrap !important;
     overflow-wrap: normal !important;
     word-break: keep-all !important;
 
-    /* 尽量用等宽数字（很多字体支持） */
     font-variant-numeric: tabular-nums lining-nums;
     font-feature-settings: "tnum" 1, "lnum" 1;
 
-    /* 你想要的“标准大小” */
     font-size: 14px !important;
     line-height: 1 !important;
-
-    /* 为了塞进 44×44（100 也不炸） */
     letter-spacing: -0.14em !important;
-
-    /* ✅ 关键：视觉居中微调（先试 -0.5px） */
     transform: translateX(-0.5px);
   }
 }
-
 
 </style>
 
@@ -305,7 +247,8 @@ html.kq-toc-open .kq-toc-overlay{
   const btnTOC = document.getElementById('kq-fab-toc');
   const btnCmt = document.getElementById('kq-fab-cmt');
   const overlay = document.getElementById('kq-toc-overlay');
-  const toc = document.getElementById('toc-container');
+  const toc = document.getElementById('toc-container')
+  || document.querySelector('aside.toc-container, .toc-container, .toc');
   const mqMobile = window.matchMedia('(max-width: 900px)');
 
   // ====== helpers ======
