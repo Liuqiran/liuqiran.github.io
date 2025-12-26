@@ -176,3 +176,43 @@ html[lang="en-US"] .profile_inner > span {
 }    
 .post-meta-item { display: inline; }   
 
+/* ===== TOC 字体层级优化（贴在 toc.css 最底部）===== */
+:root{
+  --toc-summary-size: 0.98rem;
+  --toc-l1-size: 0.98rem;   /* 一级 */
+  --toc-l2-size: 0.93rem;   /* 二级 */
+  --toc-l3-size: 0.89rem;   /* 三级及更深 */
+}
+
+/* TOC 标题（details summary）稍大更像“面板标题” */
+.toc details summary{
+  font-size: var(--toc-summary-size);
+  font-weight: 650;
+  letter-spacing: .01em;
+}
+
+/* 一级 / 二级 / 三级字号递减 */
+.toc .inner > ul > li > a{ font-size: var(--toc-l1-size); }
+.toc .inner > ul > li > ul > li > a{ font-size: var(--toc-l2-size); }
+.toc .inner > ul > li > ul > li > ul > li > a{ font-size: var(--toc-l3-size); }
+
+/* 更深层稍微淡一点（不用也行） */
+.toc .inner ul ul a{ opacity: .96; }
+.toc .inner ul ul ul a{ opacity: .90; }
+
+/* ✅ 关键：别让 active 把字号放大（覆盖你原来的 .active 110%） */
+.toc a.active,
+.toc li.active > a{
+  font-size: inherit !important;
+  font-weight: 700;
+}
+
+/* 手机抽屉里字号整体略大一点更舒服 */
+@media (max-width: 900px){
+  :root{
+    --toc-summary-size: 1.04rem;
+    --toc-l1-size: 1.02rem;
+    --toc-l2-size: 0.97rem;
+    --toc-l3-size: 0.93rem;
+  }
+}
