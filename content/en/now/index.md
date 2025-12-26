@@ -7,7 +7,7 @@ type: page
 date: 2025-10-01  
 lastmod: 2025-12-25
 cover:  
-- image: "/img/clock-wall.jpg"
+  image: "/img/clock-wall.jpg"
 ---
 > This is what I’m currently focused on. Inspired by [nownownow.com](https://nownownow.com/about).
 >
