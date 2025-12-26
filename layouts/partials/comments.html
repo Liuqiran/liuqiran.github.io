@@ -83,12 +83,12 @@ html[lang^="zh"] #waline *{
   z-index: 9999;
 }  
 
-/* 当 FAB 开启时：把 PaperMod 的 top-link 顶到 FAB 上面（2 个按钮的高度+间距） */
+/* 当 FAB 开启时，把主题的 top-link 顶到 FAB 上方（不会盖住按钮） */
 html.kq-fab-on a.top-link{
-  right: 16px !important;
-  bottom: calc(16px + 44px + 12px + 44px + 12px) !important; /* 16 + (44+12)*2 */
-  z-index: 10000 !important;
+  right: calc(16px + env(safe-area-inset-right)) !important;
+  bottom: calc(16px + env(safe-area-inset-bottom) + var(--kq-fab-h, 0px) + 12px) !important;
 }
+
 
 /* 手机安全区版本 */
 @media (max-width: 900px){
@@ -97,10 +97,6 @@ html.kq-fab-on a.top-link{
     bottom: calc(16px + env(safe-area-inset-bottom));
   }
 
-  html.kq-fab-on a.top-link{
-    right: calc(16px + env(safe-area-inset-right)) !important;
-    bottom: calc(16px + env(safe-area-inset-bottom) + 44px + 12px + 44px + 12px) !important;
-  }
 }
 .kq-fab.is-on{ display:flex; }
 
@@ -445,7 +441,26 @@ window.addEventListener('DOMContentLoaded', () => {
   } else {
     fab.classList.remove('is-on');
     document.documentElement.classList.remove('kq-fab-on');
-  }
+  }  
+  function syncFabOffset(){
+  const h = fab ? fab.offsetHeight : 0;
+  document.documentElement.style.setProperty('--kq-fab-h', h ? `${h}px` : '0px');
+}
+
+if (hasAnyControl) {
+  fab.classList.add('is-on');
+  document.documentElement.classList.add('kq-fab-on');
+  syncFabOffset();
+} else {
+  fab.classList.remove('is-on');
+  document.documentElement.classList.remove('kq-fab-on');
+  syncFabOffset();
+}
+
+// 屏幕旋转/缩放后也更新一下（手机很常见）
+window.addEventListener('resize', () => {
+  if (document.documentElement.classList.contains('kq-fab-on')) syncFabOffset();
+}, { passive: true });
 });   
 })();
 </script>
