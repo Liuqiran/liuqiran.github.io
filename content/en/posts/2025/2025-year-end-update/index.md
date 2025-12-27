@@ -10,4 +10,4 @@ tags:
   - Life  
 ---          
 
-After 
+After several days burning
