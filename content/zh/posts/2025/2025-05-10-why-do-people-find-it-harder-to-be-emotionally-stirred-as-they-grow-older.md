@@ -3,14 +3,13 @@ title: 为什么越长大越难心动？
 date: 2025-05-10
 draft: false
 author: 红护
-tags:
- - 人生
+tags: [人生]
 slug: 2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older
 translationKey: 2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older
-cover: 
-  image: /img/black-white-road.jpg
-aliases: ["/why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/"]
+cover: '{image: /img/black-white-road.jpg}'
+aliases: [/why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/]
 ---
+
 为何随着年龄增长，人们越发难以被打动？ 只因你来得太迟，犹如错过了饭点。  
 
 
