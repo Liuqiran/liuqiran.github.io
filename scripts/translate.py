@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/env python3
 from __future__ import annotations
 
@@ -74,6 +75,9 @@ def sha256(s: str) -> str:
 
 def split_frontmatter(md: str) -> Tuple[Optional[str], str]:
     """Only supports YAML frontmatter: --- ... ---"""
+    # ✅ handle UTF-8 BOM
+    md = md.lstrip("\ufeff")
+
     if not md.startswith(FRONT_DELIM):
         return None, md
     m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", md, flags=re.S)
@@ -112,7 +116,7 @@ def normalize_frontmatter_keys(fm: Dict[str, Any]) -> None:
 
 
 def is_under_posts(rel: Path) -> bool:
-    return bool(rel.parts) and rel.parts[0] == "posts"
+    return bool(rel.parts) and rel.parts[0].lower() == "posts"
 
 
 def load_tag_map() -> Tuple[Dict[str, Dict[str, str]], Dict[str, str]]:
@@ -207,7 +211,6 @@ def normalize_translate_cfg(raw: Any) -> Optional[Dict[str, Any]]:
         return {"mode": raw.strip().lower(), "targets": None, "draft": True}
 
     if isinstance(raw, dict):
-        # enabled switch
         enabled = raw.get("enabled")
         if enabled is False:
             return None
@@ -215,23 +218,20 @@ def normalize_translate_cfg(raw: Any) -> Optional[Dict[str, Any]]:
         mode = raw.get("mode")
         provider = raw.get("provider")
 
-        # if mode missing, allow provider
         if (not mode) and provider:
             mode = provider
 
-        # if both missing but enabled true -> default google
         if (not mode) and (enabled is True):
             mode = "google"
 
         if not mode:
             return None
 
-        out: Dict[str, Any] = {
+        return {
             "mode": str(mode).strip().lower(),
             "targets": raw.get("targets"),
             "draft": raw.get("draft"),
         }
-        return out
 
     return None
 
@@ -272,21 +272,23 @@ def build_target_frontmatter(
     target_lang: str,
     rel: Path,
 ) -> Dict[str, Any]:
-    """
-    Create new target frontmatter.
-    Minimal script control fields:
-      - kq_managed: true
-      - kq_mt: true/false
-    """
     fm = dict(src_fm)
     normalize_frontmatter_keys(fm)
 
     # remove translate config from targets
     fm.pop("translate", None)
 
-    # ✅ IMPORTANT: posts/ 下不要显式 type（避免 .Type 变成 post 导致 Archives 不收）
+    # ✅ multi-language: do NOT carry fixed url into translations
+    fm.pop("url", None)
+
+    # ✅ type rules (compatible with your historical: type: post)
     if is_under_posts(rel):
+        # posts/: don't write type, keep clean & avoid post/posts confusion
         fm.pop("type", None)
+    else:
+        # outside posts/: ensure it can appear in archives/list pages
+        if not isinstance(fm.get("type"), str) or not fm["type"].strip():
+            fm["type"] = "post"
 
     fm["translationKey"] = tk
     fm.setdefault("slug", slug)
@@ -498,10 +500,6 @@ def main() -> None:
 
                     normalize_frontmatter_keys(dst_fm)
 
-                    # ✅ IMPORTANT: posts/ 下不要显式 type
-                    if is_under_posts(rel):
-                        dst_fm.pop("type", None)
-
                     params = dst_fm.get("params")
                     looks_generated = (
                         dst_fm.get("translationKey") in (None, tk)
@@ -519,6 +517,16 @@ def main() -> None:
                         if dst_fm.get("kq_mt") is True:
                             dst_fm.setdefault("kq_mt_from", src_lang)
                             dst_fm.setdefault("kq_mt_to", lang)
+
+                        # ✅ multi-language: remove fixed url from translations
+                        dst_fm.pop("url", None)
+
+                        # ✅ type rules (compatible with your historical: type: post)
+                        if is_under_posts(rel):
+                            dst_fm.pop("type", None)
+                        else:
+                            if not isinstance(dst_fm.get("type"), str) or not dst_fm["type"].strip():
+                                dst_fm["type"] = "post"
 
                         # ✅ vertical rule (sync branch too)
                         if lang not in VERTICAL_ALLOWED_LANGS:
@@ -616,3 +624,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+```
