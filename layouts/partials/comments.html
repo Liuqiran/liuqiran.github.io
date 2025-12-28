@@ -31,8 +31,14 @@
 {{- $tkey = $tkey | replaceRE `\\` "" -}}
 {{- $tkey = $tkey | replaceRE `["']` "" -}}
 {{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
-{{/* ===== 用真实文章链接做 commentPath（保留 tkey 清洗）===== */}}
 
+{{/* ===== [新增] legacyPath：保持旧文章评论仍可显示（t:xxx）===== */}}
+{{- $legacyPath := printf "t:%s" $tkey -}}
+{{- $legacyPath = $legacyPath | replaceRE `\\` "" -}}
+{{- $legacyPath = $legacyPath | replaceRE `["']` "" -}}
+{{- $legacyPath = $legacyPath | replaceRE `^\s+|\s+$` "" -}}
+
+{{/* ===== 用真实文章链接做 commentPath（新文章；后台可点击）===== */}}
 {{- $p := .RelPermalink -}}
 
 {{/* 去语言前缀：按你的语言 key 改（示例 en/zh/ja） */}}
@@ -252,6 +258,7 @@ html.kq-fab-on a.top-link{
   const HAS_WALINE = {{ $hasWaline | jsonify }};
   const HUGO_SERVER_RAW = {{ $server | jsonify }};
   const HUGO_PATH_RAW = {{ $commentPath | jsonify }};
+  const HUGO_PATH_LEGACY_RAW = {{ $legacyPath | jsonify }};
   const HUGO_LANG_FALLBACK = {{ $walineLang | jsonify }};
 
   // ====== DOM ======
@@ -311,6 +318,7 @@ let walineLoading = null;
 
 const serverURL = cleanServerURL(HUGO_SERVER_RAW);
 const commentPath = cleanString(HUGO_PATH_RAW);
+const legacyPath = cleanString(HUGO_PATH_LEGACY_RAW);
 
 // 建议：Waline 更标准的语言码用 en-US / zh-CN / jp（不行也会自动 fallback）:contentReference[oaicite:1]{index=1}
 const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
@@ -349,6 +357,34 @@ function loadWalineCSSOnce() {
   }
 }
 
+/* ===== [新增] 自动兼容旧评论：新路径没评论就回退到 t:xxx ===== */
+async function hasWalineComments(p){
+  if (!p) return false;
+  const url = `${serverURL}/api/comment?path=${encodeURIComponent(p)}&page=1&pageSize=1`;
+  try{
+    const r = await fetch(url, { method: "GET" });
+    if (!r.ok) return false;
+    const j = await r.json();
+    if (Array.isArray(j?.data) && j.data.length > 0) return true;
+    if (Array.isArray(j?.data?.comments) && j.data.comments.length > 0) return true;
+    if (typeof j?.count === "number" && j.count > 0) return true;
+    if (typeof j?.data?.count === "number" && j.data.count > 0) return true;
+    return false;
+  }catch(e){
+    // 探测失败时：优先保证旧文章能看到评论（回退到 legacy）
+    return false;
+  }
+}
+
+async function pickWalinePath(){
+  // 1) 新路径有评论 -> 用新路径
+  if (await hasWalineComments(commentPath)) return commentPath;
+  // 2) 新路径没评论但旧路径有 -> 回退旧路径（显示旧评论）
+  if (await hasWalineComments(legacyPath)) return legacyPath;
+  // 3) 都没有 -> 用新路径（新文章走这里，后台可点击）
+  return commentPath;
+}
+
 function ensureWaline() {
   if (!walineOK || walineReady) return;
   if (walineLoading) return;
@@ -357,10 +393,12 @@ function ensureWaline() {
     loadWalineCSSOnce();
     const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
 
+    const finalPath = await pickWalinePath();
+
     mod.init({
       el: "#waline",
       serverURL,
-      path: commentPath,
+      path: finalPath,
       requiredMeta: ["nick", "mail"],
       lang: pageLangWaline,
 
@@ -378,7 +416,7 @@ function ensureWaline() {
 
     walineReady = true;
     walineLoading = null;
-    console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
+    console.log("[Waline] inited:", { serverURL, commentPath, legacyPath, finalPath, pageLangWaline });
   })().catch((e) => {
     console.error("[Waline] init failed:", e);
     window.__walineBadConfig = true;
