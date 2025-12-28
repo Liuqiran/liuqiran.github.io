@@ -1,11 +1,12 @@
 ---
-title: Year-end Update 
+title: Update Higo
 translationKey: 2025-year-end-update
 slug: "2025-year-end-update"
 draft: false
 author: Qiran
 type: post
 date: 2025-12-25
+lastmod: 2025-12-27
 cover:
   image: /img/2025-year-end-update/cover.jpg
 tags:
