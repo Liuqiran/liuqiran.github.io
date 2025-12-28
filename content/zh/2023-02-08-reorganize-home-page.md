@@ -4,7 +4,6 @@ translationKey: 2023-02-08-reorganize-home-page
 author: Qiran
 type: post
 date: 2023-02-08T11:17:57+00:00
-url: /zh/reorganize-home-page/
 xyz_twap:
   - 1
 tags:
