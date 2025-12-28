@@ -1,5 +1,5 @@
----translationKey: migrated-to-hugo
-
+---
+translationKey: migrated-to-hugo
 Title: Migrated to Hugo   
 slug: "migrated-to-hugo"
 Date: 2025-04-01 
@@ -10,7 +10,7 @@ translate:
   mode: google
   targets: ["zh"]
   draft: false 
----
+---  
 After several days of painstaking work, I finally moved from WordPress to Hugo.
 
 Due to the fact that my server is very slow, I think I can focus on writing offline and concentrate on content, rather than adjusting features.
