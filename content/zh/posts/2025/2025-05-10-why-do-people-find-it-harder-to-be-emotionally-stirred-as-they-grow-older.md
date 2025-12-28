@@ -6,7 +6,8 @@ author: 红护
 tags: [人生]
 slug: 2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older
 translationKey: 2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older
-image: /img/black-white-road.jpg
+cover: 
+  image: /img/black-white-road.jpg
 aliases: [/why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/]
 ---
 
