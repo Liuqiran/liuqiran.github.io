@@ -6,7 +6,7 @@ date: 2025-04-01
 aliases:
 - /migrated-to-hugo/
 tags:
-- Building Site
+- 建站
 draft: false
 kq_managed: true
 kq_mt: true
