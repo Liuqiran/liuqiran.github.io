@@ -4,6 +4,7 @@ translationKey: 2024-05-29-seven-symptons-of-leaky-gut
 author: Qiran
 date: 2024-05-29 10:28:20+00:00
 slug: seven-symptoms-of-leaky-gut
+type: post
 aliases:
 - /zh/seven-symptons-of-leaky-gut/
 xyz_twap_future_to_publish:
