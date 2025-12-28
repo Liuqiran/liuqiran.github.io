@@ -21,7 +21,7 @@
   {{- $walineLang = "jp" -}}
 {{- end -}}
 
-{{/* ===== tkey：translationKey（无则文件名）+ 清洗 ===== */}}
+{{/* ===== tkey（translationKey -> BaseFileName）===== */}}
 {{- $tkey := "" -}}
 {{- with .Params.translationKey -}}
   {{- $tkey = . -}}
@@ -31,40 +31,34 @@
 {{- $tkey = $tkey | replaceRE `\\` "" -}}
 {{- $tkey = $tkey | replaceRE `["']` "" -}}
 {{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
-
-{{/* ===== legacyPath：兼容旧数据（t:xxx）===== */}}
 {{- $legacyPath := printf "t:%s" $tkey -}}
-{{- $legacyPath = $legacyPath | replaceRE `\\` "" -}}
-{{- $legacyPath = $legacyPath | replaceRE `["']` "" -}}
-{{- $legacyPath = $legacyPath | replaceRE `^\s+|\s+$` "" -}}
 
-{{/* ===== 计算文章路径：RelPermalink -> 去语言前缀 -> 去尾斜杠 ===== */}}
-{{- $p0 := .RelPermalink -}}
-{{- $p0 = $p0 | replaceRE `^/(en|zh|ja)(/|$)` "/" -}}
-{{- $p0 = $p0 | replaceRE `/$` "" -}}
-{{- if eq $p0 "" -}}{{- $p0 = "/" -}}{{- end -}}
-
-{{/* ===== baseURL（绝对链接）===== */}}
-{{- $base := site.BaseURL | replaceRE `/$` "" -}}
-
-{{/* ===== noPrefix：兼容你之前生成过的 https://.../reading-list ===== */}}
-{{- $noPrefixPath := printf "%s%s" $base $p0 -}}
-{{- $noPrefixPath = $noPrefixPath | replaceRE `\\` "" -}}
-{{- $noPrefixPath = $noPrefixPath | replaceRE `["']` "" -}}
-{{- $noPrefixPath = $noPrefixPath | replaceRE `^\s+|\s+$` "" -}}
-
-{{/* ===== newPath：统一归一到 /en/（保证后台可点 + 跨语言共用）===== */}}
-{{- $pEn := "" -}}
-{{- if eq $p0 "/" -}}
-  {{- $pEn = "/en/" -}}
-{{- else -}}
-  {{- $pEn = printf "/en%s" $p0 -}}
+{{/* ===== canonical：固定用英文页面的 RelPermalink（让多语言共用一条线程，并且 /en/... 可打开）===== */}}
+{{- $canonicalRel := .RelPermalink -}}
+{{- range .AllTranslations -}}
+  {{- if eq .Lang "en" -}}
+    {{- $canonicalRel = .RelPermalink -}}
+  {{- end -}}
 {{- end -}}
-{{- $pEn = $pEn | replaceRE `/{2,}` "/" -}}
-{{- $pEn = $pEn | replaceRE `/$` "" -}}
-{{- if eq $pEn "" -}}{{- $pEn = "/en" -}}{{- end -}}
+{{- $canonicalRel = $canonicalRel | replaceRE `/$` "" -}}
+{{- if eq $canonicalRel "" -}}{{- $canonicalRel = "/" -}}{{- end -}}
 
-{{- $commentPath := printf "%s%s" $base $pEn -}}
+{{/* ===== noPrefix：用于兼容你过渡期已经写入的“去语言前缀”线程（/reading-list）===== */}}
+{{- $noPrefixRel := $canonicalRel | replaceRE `^/(en|zh|ja)(/|$)` "/" -}}
+{{- $noPrefixRel = $noPrefixRel | replaceRE `/$` "" -}}
+{{- if eq $noPrefixRel "" -}}{{- $noPrefixRel = "/" -}}{{- end -}}
+
+{{/* ===== 只改“新文章”的 path：从这个日期起用 canonical（你可改）===== */}}
+{{- $cutover := time "2025-12-29T00:00:00+08:00" -}}
+{{- $isNew := ge .Date $cutover -}}
+
+{{/* 默认 path：旧文章 legacy；新文章 canonical */}}
+{{- $commentPath := $legacyPath -}}
+{{- if $isNew -}}
+  {{- $commentPath = $canonicalRel -}}
+{{- end -}}
+
+{{/* 最后再做一次“避坑清洗” */}}
 {{- $commentPath = $commentPath | replaceRE `\\` "" -}}
 {{- $commentPath = $commentPath | replaceRE `["']` "" -}}
 {{- $commentPath = $commentPath | replaceRE `^\s+|\s+$` "" -}}
@@ -165,7 +159,6 @@ html.kq-fab-on a.top-link{
 
 /* ===== iPhone 安全区 + 手机 TOC 抽屉（同时兼容没有 id 的情况） ===== */
 @media (max-width: 900px){
-  /* 把 toc-container 变成右侧抽屉（覆盖你 toc.css 里 absolute/left 的桌面逻辑） */
   #toc-container,
   aside.toc-container,
   .toc-container{
@@ -192,7 +185,6 @@ html.kq-fab-on a.top-link{
     right: 0 !important;
   }
 
-  /* toc 内部滚动 */
   #toc-container .inner,
   .toc-container .inner{
     max-height: calc(100vh - 56px);
@@ -200,13 +192,11 @@ html.kq-fab-on a.top-link{
     -webkit-overflow-scrolling: touch;
   }
 
-  /* 你的 overlay */
   html.kq-toc-open .kq-toc-overlay{
     opacity: 1;
     pointer-events: auto;
   }
 
-  /* FAB 里 Top 的数字不换行 & 居中 */
   .kq-fab a.top-link.kq-top-in-fab .topInner{
     margin: 0 !important;
     display: grid !important;
@@ -261,9 +251,11 @@ html.kq-fab-on a.top-link{
   // ====== 从 Hugo 传值进来 ======
   const HAS_WALINE = {{ $hasWaline | jsonify }};
   const HUGO_SERVER_RAW = {{ $server | jsonify }};
-  const HUGO_PATH_RAW = {{ $commentPath | jsonify }};        // ✅ newPath: /en/...
-  const HUGO_PATH_NOPREFIX_RAW = {{ $noPrefixPath | jsonify }}; // ✅ noPrefix: /...
-  const HUGO_PATH_LEGACY_RAW = {{ $legacyPath | jsonify }};  // ✅ legacy: t:xxx
+  const HUGO_PATH_RAW = {{ $commentPath | jsonify }};
+  const HUGO_CANON_REL = {{ $canonicalRel | jsonify }};
+  const HUGO_NOPREFIX_REL = {{ $noPrefixRel | jsonify }};
+  const HUGO_LEGACY = {{ $legacyPath | jsonify }};
+  const HUGO_IS_NEW = {{ $isNew | jsonify }};
   const HUGO_LANG_FALLBACK = {{ $walineLang | jsonify }};
 
   // ====== DOM ======
@@ -277,7 +269,7 @@ html.kq-fab-on a.top-link{
   const btnCmt = document.getElementById('kq-fab-cmt');
   const overlay = document.getElementById('kq-toc-overlay');
   const toc = document.getElementById('toc-container')
-  || document.querySelector('aside.toc-container, .toc-container, .toc');
+    || document.querySelector('aside.toc-container, .toc-container, .toc');
   const mqMobile = window.matchMedia('(max-width: 900px)');
 
   // ====== helpers ======
@@ -317,16 +309,17 @@ html.kq-fab-on a.top-link{
     return "en";
   }
 
-  // ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
+  // ====== Waline (懒加载 + 多 CDN 兜底) ======
   let walineReady = false;
   let walineLoading = null;
+  let walineModulePromise = null;
 
   const serverURL = cleanServerURL(HUGO_SERVER_RAW);
 
-  // 三套候选路径
-  const commentPath = cleanString(HUGO_PATH_RAW);           // 新：绝对 /en/...
-  const noPrefixPath = cleanString(HUGO_PATH_NOPREFIX_RAW); // 兼容旧：绝对 /...
-  const legacyPath = cleanString(HUGO_PATH_LEGACY_RAW);     // 旧：t:...
+  const legacyPath = cleanString(HUGO_LEGACY);
+  const canonRel = cleanString(HUGO_CANON_REL);       // /en/xxx
+  const noPrefixRel = cleanString(HUGO_NOPREFIX_REL); // /xxx
+  const isNew = !!HUGO_IS_NEW;
 
   const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
 
@@ -336,74 +329,132 @@ html.kq-fab-on a.top-link{
   const PLACEHOLDER_MAP = {
     "zh-CN": "当月光洒下，万物皆是低语，你听到了什么心事？",
     "jp": "コメントどうぞ…(*^_^*)",
-    "en-US": "My words are just an invitation; your thoughts are the destination.",
-    "en": "My words are just an invitation; your thoughts are the destination. ",
+    "en": "My words are just an invitation; your thoughts are the destination.",
   };
   const myPlaceholder = PLACEHOLDER_MAP[pageLangWaline] || "Write a comment…";
 
-  function loadWalineCSSOnce() {
-    if (document.getElementById('kq-waline-css')) return;
+  // ✅ 多 CDN：优先国内更稳的 elemecdn，其次 jsDelivr，再 unpkg
+  const WALINE_CSS_CANDIDATES = [
+    "https://npm.elemecdn.com/@waline/client@v3/dist/waline.css",
+    "https://cdn.jsdelivr.net/npm/@waline/client@3/dist/waline.css",
+    "https://unpkg.com/@waline/client@v3/dist/waline.css",
+  ];
+  const WALINE_JS_CANDIDATES = [
+    "https://npm.elemecdn.com/@waline/client@v3/dist/waline.js",
+    "https://cdn.jsdelivr.net/npm/@waline/client@3/dist/waline.js",
+    "https://unpkg.com/@waline/client@v3/dist/waline.js",
+  ];
 
-    const link = document.createElement('link');
-    link.id = 'kq-waline-css';
-    link.rel = 'stylesheet';
-    link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
-    document.head.appendChild(link);
+  function loadCSSFromCandidatesOnce() {
+    if (document.getElementById('kq-waline-css')) return Promise.resolve(true);
 
-    if (!document.getElementById('kq-waline-ph-style')) {
-      const st = document.createElement('style');
-      st.id = 'kq-waline-ph-style';
-      st.textContent = `
-        #waline textarea::placeholder,
-        #waline input::placeholder { opacity: .85; }
-      `;
-      document.head.appendChild(st);
+    return new Promise((resolve) => {
+      let i = 0;
+      const tryNext = () => {
+        if (i >= WALINE_CSS_CANDIDATES.length) return resolve(false);
+
+        const href = WALINE_CSS_CANDIDATES[i++];
+        const link = document.createElement('link');
+        link.id = 'kq-waline-css';
+        link.rel = 'stylesheet';
+        link.href = href;
+
+        link.onload = () => resolve(true);
+        link.onerror = () => {
+          link.remove();
+          tryNext();
+        };
+
+        document.head.appendChild(link);
+      };
+
+      tryNext();
+
+      // 可选：防止主题把 placeholder 透明度压没
+      if (!document.getElementById('kq-waline-ph-style')) {
+        const st = document.createElement('style');
+        st.id = 'kq-waline-ph-style';
+        st.textContent = `
+          #waline textarea::placeholder,
+          #waline input::placeholder { opacity: .85; }
+        `;
+        document.head.appendChild(st);
+      }
+    });
+  }
+
+  async function importWalineFromCandidates() {
+    let lastErr = null;
+    for (const url of WALINE_JS_CANDIDATES) {
+      try {
+        const mod = await import(url);
+        if (mod && typeof mod.init === "function") return mod;
+        lastErr = new Error("Waline module invalid: " + url);
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+    throw lastErr || new Error("Waline import failed");
+  }
+
+  function warmWalineAssets(){
+    if (!walineOK) return;
+    loadCSSFromCandidatesOnce();
+    if (!walineModulePromise) walineModulePromise = importWalineFromCandidates();
+  }
+
+  async function fetchWithTimeout(url, ms=900) {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), ms);
+    try {
+      const res = await fetch(url, { signal: ctrl.signal, credentials: "omit" });
+      return res;
+    } finally {
+      clearTimeout(t);
     }
   }
 
-  async function hasWalineComments(p){
-    if (!p) return false;
-    const url = `${serverURL}/api/comment?path=${encodeURIComponent(p)}&page=1&pageSize=1`;
-    try{
-      const r = await fetch(url, { method: "GET" });
-      if (!r.ok) return false;
-      const j = await r.json();
-      if (Array.isArray(j?.data) && j.data.length > 0) return true;
-      if (Array.isArray(j?.data?.comments) && j.data.comments.length > 0) return true;
-      if (typeof j?.count === "number" && j.count > 0) return true;
-      if (typeof j?.data?.count === "number" && j.data.count > 0) return true;
+  async function hasAnyComment(path) {
+    if (!path) return false;
+    try {
+      const u = `${serverURL}/api/comment?path=${encodeURIComponent(path)}&pageSize=1`;
+      const res = await fetchWithTimeout(u, 900);
+      if (!res.ok) return false;
+      const data = await res.json();
+      const arr = data?.data || data?.comments || data;
+      return Array.isArray(arr) ? arr.length > 0 : !!data?.data?.length;
+    } catch (e) {
       return false;
-    }catch(e){
-      return null; // unknown
     }
   }
 
-  async function pickWalinePath(){
-    const n = await hasWalineComments(commentPath);
-    if (n === true) return commentPath;
+  async function resolveFinalPath() {
+    // 旧文章：固定 legacy（不探测，最快且保证旧评论）
+    if (!isNew) return legacyPath;
 
-    const np = await hasWalineComments(noPrefixPath);
-    if (np === true) return noPrefixPath;
+    // 新文章：默认 canonical(/en/...)，但兼容你过渡期写入的 noPrefix(/xxx)
+    const cacheKey = "kq_waline_path_choice::" + canonRel;
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) return cached;
 
-    const l = await hasWalineComments(legacyPath);
-    if (l === true) return legacyPath;
+    // 只探测一次：如果 noPrefix 已经有评论，就继续用它（避免“评论突然没了”）
+    const useNoPrefix = await hasAnyComment(noPrefixRel);
+    const chosen = useNoPrefix ? noPrefixRel : canonRel;
 
-    // 探测被挡时，优先 legacy，保证旧评论不丢
-    if (n === null || np === null || l === null) return legacyPath || commentPath;
-
-    // 都没评论：用新路径（后台可点）
-    return commentPath;
+    try { localStorage.setItem(cacheKey, chosen); } catch(e){}
+    return chosen;
   }
 
-  function ensureWaline() {
+  async function ensureWaline() {
     if (!walineOK || walineReady) return;
     if (walineLoading) return;
 
     walineLoading = (async () => {
-      loadWalineCSSOnce();
-      const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
+      warmWalineAssets();
 
-      const finalPath = await pickWalinePath();
+      const finalPath = await resolveFinalPath();
+      const mod = walineModulePromise ? await walineModulePromise : await importWalineFromCandidates();
+      await loadCSSFromCandidatesOnce();
 
       mod.init({
         el: "#waline",
@@ -422,7 +473,7 @@ html.kq-fab-on a.top-link{
 
       walineReady = true;
       walineLoading = null;
-      console.log("[Waline] inited:", { serverURL, commentPath, noPrefixPath, legacyPath, finalPath, pageLangWaline });
+      console.log("[Waline] inited:", { serverURL, finalPath, canonRel, noPrefixRel, legacyPath, pageLangWaline });
     })().catch((e) => {
       console.error("[Waline] init failed:", e);
       window.__walineBadConfig = true;
@@ -436,8 +487,6 @@ html.kq-fab-on a.top-link{
   const GISCUS_REPO_ID = "R_kgDONiVddQ";
   const GISCUS_CATEGORY = "General";
   const GISCUS_CATEGORY_ID = "DIC_kwDONiVddc4CljSp";
-
-  // 继续用“新 path”（没历史数据你说无所谓；也更标准）
   const giscusTerm = cleanString(HUGO_PATH_RAW);
 
   let giscusLoaded = false;
@@ -497,14 +546,13 @@ html.kq-fab-on a.top-link{
     if (loadNow) ensureGiscus();
   }
 
-  // 暴露给 FAB
   window.__kqShowWaline = () => showWaline(true);
   window.__kqShowGiscus = () => showGiscus(true);
 
   if (btnWaline) btnWaline.onclick = () => showWaline(true);
   if (btnGiscus) btnGiscus.onclick = () => showGiscus(true);
 
-  // 首屏：先切 UI，不立刻加载；空闲再加载
+  // 首屏：先切 UI，不立刻加载；空闲预热 + 加载
   window.addEventListener('DOMContentLoaded', () => {
     const preferred = localStorage.getItem('preferredComment');
 
@@ -516,12 +564,21 @@ html.kq-fab-on a.top-link{
       deferLoad(() => ensureGiscus());
     } else {
       showWaline(false);
+      // ✅ 预热资源：让“点开评论”更快
+      deferLoad(() => warmWalineAssets());
       deferLoad(() => ensureWaline());
     }
   });
 
   // ====== FAB：TOC / Comments ======
-  function closeTOC(){ document.documentElement.classList.remove('kq-toc-open'); }
+  function closeTOC(){
+    document.documentElement.classList.remove('kq-toc-open');
+    if (toc) {
+      const d = toc.querySelector('details');
+      if (d) d.open = false;
+    }
+  }
+
   function openTOC(){
     if (!toc) return;
     const d = toc.querySelector('details');
@@ -531,14 +588,6 @@ html.kq-fab-on a.top-link{
       document.documentElement.classList.add('kq-toc-open');
     } else {
       toc.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-
-  function closeTOC(){
-    document.documentElement.classList.remove('kq-toc-open');
-    if (toc) {
-      const d = toc.querySelector('details');
-      if (d) d.open = false;
     }
   }
 
