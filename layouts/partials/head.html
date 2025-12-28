@@ -3,8 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 {{- $isProd := or hugo.IsProduction (eq site.Params.env "production") -}}
-{{- $isMT := and .Params.params (eq .Params.params.mt true) -}}
-{{- $noindex := or (eq .Params.robotsNoIndex true) $isMT -}}
+{{- $noindex := or (eq .Params.robotsNoIndex true) (eq .Params.kq_mt true) -}}
 
 {{- if and $isProd (not $noindex) -}}
 <meta name="robots" content="index, follow">

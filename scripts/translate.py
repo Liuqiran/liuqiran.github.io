@@ -111,25 +111,18 @@ def build_target_frontmatter(
     fm.pop("translate", None)
 
     fm["translationKey"] = tk
-    fm.setdefault("slug", slug)  # 不强制覆盖，允许你以后改目标语言 slug
+    fm.setdefault("slug", slug)        # 不覆盖你手动改的中文 slug
     fm["draft"] = bool(draft)
 
-    # === Script-managed markers ===
+    # 脚本接管标记（只要这个为 true，脚本就只同步 frontmatter，不动正文）
     fm["kq_managed"] = True
-    fm.setdefault("kq_mt", mode == "google")  # 若用户手动改成 false，脚本不覆盖
 
-    # === SEO for machine translation stage ===
-    params = fm.get("params")
-    if not isinstance(params, dict):
-        params = {}
+    # 机器翻译标记：google = true；stub = false
+    # 注意：这里用 setdefault，允许你之后手动把 kq_mt 改成 false 并保持不被脚本改回去
+    fm.setdefault("kq_mt", (mode == "google"))
 
-    if fm.get("kq_mt") is True:
-        params.setdefault("mt", True)
-        params.setdefault("mt_source", "google")
-        fm["robotsNoIndex"] = True  # 你 head 里用的是 robotsNoIndex
-
-    fm["params"] = params
     return fm
+
 
 
 def translate_text_google(client: translate.Client, text: str, target_lang: str) -> str:
