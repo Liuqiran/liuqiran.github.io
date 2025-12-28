@@ -11,7 +11,10 @@ tags:
   - 互联网
   - 人生
   - 建站
-
+translate:
+  mode: google
+  targets: ["en"]
+  draft: false   
 ---
 <p class="has-primary-background-color has-background">
   我已经很久没有更新动态，不知什么时候已经心语难诉，也没有分享动态的动力了……
