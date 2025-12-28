@@ -1,8 +1,8 @@
 ---
 translationKey: migrated-to-hugo
-Title: Migrated to Hugo
+title: Migrated to Hugo
 slug: migrated-to-hugo
-Date: 2025-04-01
+date: 2025-04-01
 aliases:
 - /migrated-to-hugo/
 tags:
