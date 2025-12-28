@@ -10,7 +10,10 @@ xyz_twap:
 tags:
   - 互联网
   - 建站
-
+translate:
+  mode: google
+  targets: ["en"]
+  draft: false   
 ---
 尝试开通了一下<a rel="noreferrer noopener" href="https://t.me/qiranschannel" target="_blank">电报频道</a>。  
 发现电报创建频道非常快捷，向他人广播也非常快。  
