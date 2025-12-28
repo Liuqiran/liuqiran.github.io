@@ -23,4 +23,4 @@ translationKey: about-me
 
 联系我：可[直接发送邮件](mailto:woshiniuziku@gmail.com)或评论区留言。
 
- [1]: /tags/building-site/
+ [1]: /en/tags/building-site/
