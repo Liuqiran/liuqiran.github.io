@@ -1,10 +1,17 @@
 {{- if eq .Params.kq_mt true -}}
   {{- $lang := .Lang -}}
-  {{- $en := (where .AllTranslations "Lang" "eq" "en") | first -}}
+
+  {{- /* safely get EN translation (if exists) */ -}}
+  {{- $scratch := newScratch -}}
+  {{- $enList := where .AllTranslations "Lang" "eq" "en" -}}
+  {{- if gt (len $enList) 0 -}}
+    {{- $scratch.Set "en" (index $enList 0) -}}
+  {{- end -}}
+  {{- $en := $scratch.Get "en" -}}
 
   <div class="kq-mt-note">
     {{- if hasPrefix $lang "zh" -}}
-      <strong>机翻提示：</strong>本文由机器翻译生成，可能存在错误；欢迎你留言指正。
+      <strong>机翻提示：</strong>本文为机器翻译版本，可能存在错误；欢迎留言指正。
       {{- with $en }} <a href="{{ .Permalink }}">查看英文原文</a>{{ end -}}。
     {{- else if or (hasPrefix $lang "ja") (hasPrefix $lang "jp") -}}
       <strong>機械翻訳の注意：</strong>この記事は機械翻訳のため、誤りが含まれる可能性があります。
