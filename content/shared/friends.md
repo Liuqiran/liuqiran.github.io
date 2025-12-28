@@ -2,7 +2,6 @@
 * [陈仓颉](https://imzm.im)
 * [YIR](http://yir.me)
 * [FSpark](https://fspark.me)
-* [~~Broca-Phenol~~]()
 * [沉舟侧畔](https://springwood.me/)
 * [非科学のカッ�...](https://bkryofu.xyz/)
 * [大致](https://pewae.com)

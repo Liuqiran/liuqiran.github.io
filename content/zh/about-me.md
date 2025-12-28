@@ -4,7 +4,7 @@ author: Qiran
 type: post
 url: /zh/about-me
 date: 2019-02-09T03:14:24+00:00
-lastmod: 2020-05-20
+lastmod: 2025-12-28  
 tags: 
   - 建站
 vertical: true  
@@ -21,6 +21,7 @@ translationKey: about-me
 
 [关于本站][1]
 
-联系我：可[直接发送邮件](mailto:woshiniuziku@gmail.com)或评论区留言。
+联系我：您可以直接给我留言。如果无法加载评论区，您可 [直接发送邮件](mailto:woshiniuziku@gmail.com)
+
 
  [1]: /en/tags/building-site/

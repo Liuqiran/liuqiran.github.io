@@ -5,7 +5,7 @@ slug: 2025-06-the-great-divorce
 date: 2025-06-02
 draft: false
 tags:
-- reading
+- 阅读
 cover:
   image: cover.jpg
   relative: true

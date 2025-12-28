@@ -208,6 +208,7 @@ params:
   ShareButtons: ["linkedin","x","facebook","telegram","copy"]
   ShowPostNavLinks: true  
   ShowDraft: true
+  ShowFullTextinRSS: true
   mainSections: ["post","posts","zh","en"]
   ShowWordCount: true
   comments: true  # 这里打开评论

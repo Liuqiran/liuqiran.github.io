@@ -31,7 +31,24 @@
 {{- $tkey = $tkey | replaceRE `\\` "" -}}
 {{- $tkey = $tkey | replaceRE `["']` "" -}}
 {{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
-{{- $commentPath := printf "t:%s" $tkey -}}
+{{/* ===== 用真实文章链接做 commentPath（保留 tkey 清洗）===== */}}
+
+{{- $p := .RelPermalink -}}
+
+{{/* 去语言前缀：按你的语言 key 改（示例 en/zh/ja） */}}
+{{- $p = $p | replaceRE `^/(en|zh|ja)(/|$)` "/" -}}
+
+{{/* 去掉末尾 /，避免重复线程 */}}
+{{- $p = $p | replaceRE `/$` "" -}}
+{{- if eq $p "" -}}{{- $p = "/" -}}{{- end -}}
+
+{{/* 最关键：把 path 变成绝对 URL，这样 Waline 后台能点开 */}}
+{{- $base := site.BaseURL | replaceRE `/$` "" -}}
+{{- $commentPath := printf "%s%s" $base $p -}}
+{{- $commentPath = $commentPath | replaceRE `\\` "" -}}
+{{- $commentPath = $commentPath | replaceRE `["']` "" -}}
+{{- $commentPath = $commentPath | replaceRE `^\s+|\s+$` "" -}}
+
 
 <style>
 /* ===== Toggle ===== */
