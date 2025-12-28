@@ -18,7 +18,7 @@ SRC_LANG = "en"
 CONTENT_ROOT = Path("content")
 SRC_ROOT = CONTENT_ROOT / SRC_LANG
 
-CACHE_FILE = Path(".cache/mt_cache.json")  # 可选缓存（额外保险）
+CACHE_FILE = Path(".cache/mt_cache.json")  # 可选缓存
 FRONT_DELIM = "---"
 
 
@@ -101,28 +101,28 @@ def ensure_translation_key(fm: Dict[str, Any], slug: str) -> Tuple[Dict[str, Any
 
 def build_target_frontmatter(
     src_fm: Dict[str, Any],
-    target_lang: str,
     slug: str,
     tk: str,
     draft: bool,
     mode: str,
 ) -> Dict[str, Any]:
+    """
+    Create new target frontmatter.
+    Only minimal fields for MT control:
+      - kq_managed: true   (allow script sync draft/translationKey later)
+      - kq_mt: true/false  (your head uses this for noindex)
+    """
     fm = dict(src_fm)
     fm.pop("translate", None)
 
     fm["translationKey"] = tk
-    fm.setdefault("slug", slug)        # 不覆盖你手动改的中文 slug
+    fm.setdefault("slug", slug)   # don't override if user later changes target slug
     fm["draft"] = bool(draft)
 
-    # 脚本接管标记（只要这个为 true，脚本就只同步 frontmatter，不动正文）
     fm["kq_managed"] = True
-
-    # 机器翻译标记：google = true；stub = false
-    # 注意：这里用 setdefault，允许你之后手动把 kq_mt 改成 false 并保持不被脚本改回去
-    fm.setdefault("kq_mt", (mode == "google"))
+    fm.setdefault("kq_mt", (mode == "google"))  # allow user to manually set false later
 
     return fm
-
 
 
 def translate_text_google(client: translate.Client, text: str, target_lang: str) -> str:
@@ -141,6 +141,7 @@ def main() -> None:
     cache = load_cache()
     created = 0
     synced = 0
+    adopted = 0
     skipped_exists = 0
     updated_src = 0
     skipped_no_translate = 0
@@ -185,16 +186,15 @@ def main() -> None:
             src.write_text(dump_frontmatter(fm) + body, "utf-8")
             updated_src += 1
 
-        # Optional cache key (extra safety)
-        cache_key = str(src)
-        cache[cache_key] = sha256(fm_raw + "\n\n" + body)
+        # Cache (not used for skip, just record)
+        cache[str(src)] = sha256(fm_raw + "\n\n" + body)
 
         rel = get_rel_under_src(src)
 
         for lang in targets:
             dst = CONTENT_ROOT / lang / rel
 
-            # ===== 方案C：存在则只同步 frontmatter，不动正文 =====
+            # ===== exists: sync frontmatter only (draft/translationKey), do not touch body =====
             if dst.exists():
                 dst_md = dst.read_text("utf-8")
                 dst_fm_raw, dst_body = split_frontmatter(dst_md)
@@ -208,22 +208,25 @@ def main() -> None:
                     skipped_exists += 1
                     continue
 
+                # Auto-adopt old generated translations (that were created before kq_managed existed)
+                params = dst_fm.get("params")
+                looks_generated = (
+                    dst_fm.get("translationKey") in (None, tk)
+                    or dst_fm.get("robotsNoIndex") is True
+                    or (isinstance(params, dict) and params.get("mt") is True)
+                    or (dst_fm.get("kq_mt") is True)
+                )
+
+                if dst_fm.get("kq_managed") is not True and looks_generated:
+                    dst_fm["kq_managed"] = True
+                    dst_fm.setdefault("kq_mt", (mode == "google"))
+                    adopted += 1
+
                 if dst_fm.get("kq_managed") is True:
-                    # 1) draft 同步（发布/下线开关）
+                    # sync online/offline switch
                     dst_fm["draft"] = bool(draft)
-
-                    # 2) translationKey 保底同步
+                    # ensure translationKey exists
                     dst_fm.setdefault("translationKey", tk)
-
-                    # 3) 机器翻译阶段才强制 noindex + mt
-                    if dst_fm.get("kq_mt") is True:
-                        dst_fm["robotsNoIndex"] = True
-                        params = dst_fm.get("params")
-                        if not isinstance(params, dict):
-                            params = {}
-                        params["mt"] = True
-                        params.setdefault("mt_source", "google")
-                        dst_fm["params"] = params
 
                     dst.write_text(dump_frontmatter(dst_fm) + dst_body, "utf-8")
                     synced += 1
@@ -231,10 +234,11 @@ def main() -> None:
                     skipped_exists += 1
 
                 continue
-            # =====================================================
+            # ================================================================================
 
+            # ===== create new translation =====
             dst.parent.mkdir(parents=True, exist_ok=True)
-            target_fm = build_target_frontmatter(fm, lang, slug, tk, draft, mode)
+            target_fm = build_target_frontmatter(fm, slug, tk, draft, mode)
 
             if mode == "stub":
                 out_body = (
@@ -243,16 +247,17 @@ def main() -> None:
                 )
                 out = dump_frontmatter(target_fm) + out_body
             else:
-                zh_body = translate_text_google(client, body, lang)
-                out = dump_frontmatter(target_fm) + zh_body
+                translated = translate_text_google(client, body, lang)
+                out = dump_frontmatter(target_fm) + translated
 
             dst.write_text(out, "utf-8")
             created += 1
+            # ===============================
 
     save_cache(cache)
     print(
-        f"Done. created={created}, synced={synced}, skipped_exists={skipped_exists}, "
-        f"updated_src={updated_src}, skipped_no_translate={skipped_no_translate}"
+        f"Done. created={created}, synced={synced}, adopted={adopted}, "
+        f"skipped_exists={skipped_exists}, updated_src={updated_src}, skipped_no_translate={skipped_no_translate}"
     )
 
 
