@@ -7,7 +7,7 @@ author: Qiran
 type: post
 date: 2025-12-25
 cover:
-  image: "/static/img/2025-year-end-update/cover.jpg"  
+  image: "/img/2025-year-end-update/cover.jpg"  
   relative: true
 tags:
   - Life  
