@@ -15,8 +15,8 @@ autoshare_tweet_accounts:
 autoshare_status:
 - a:1:{i:0;a:4:{s:6:"status";s:9:"published";s:10:"twitter_id";i:1694014720297349599;s:6:"handle";s:9:"qiran_liu";s:10:"created_at";s:25:"2023-08-22T15:52:37+00:00";}}
 tags:
-- Podcast
-- Technology
+- 播客
+- 技术
 draft: false
 kq_managed: true
 kq_mt: true
