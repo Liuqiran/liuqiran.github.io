@@ -15,7 +15,10 @@ autoshare_status:
   - 'a:1:{i:0;a:4:{s:6:"status";s:9:"published";s:10:"twitter_id";i:1870991723939483710;s:6:"handle";s:9:"qiran_liu";s:10:"created_at";s:25:"2024-12-23T00:36:03+00:00";}}'
 tags:
   - 说说
-
+translate:
+  mode: google
+  targets: ["en"]
+  draft: false 
 ---
 很久没有打理自己的网站了。这几天准备再来更新一下站点。 
 

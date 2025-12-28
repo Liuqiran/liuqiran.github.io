@@ -11,6 +11,10 @@ xyz_twap_future_to_publish:
 xyz_twap:
   - 1
 tags:
-  - Journal
+  - Journal   
+translate:
+  mode: google
+  targets: ["zh"]
+  draft: false 
 ---
 ﻿I will try to digitize all of my diaries. It&#8217;s a very big project.
