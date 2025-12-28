@@ -21,7 +21,7 @@
   {{- $walineLang = "jp" -}}
 {{- end -}}
 
-{{/* ===== commentPath：t:translationKey（无则文件名）===== */}}
+{{/* ===== tkey：translationKey（无则文件名）+ 清洗 ===== */}}
 {{- $tkey := "" -}}
 {{- with .Params.translationKey -}}
   {{- $tkey = . -}}
@@ -32,29 +32,42 @@
 {{- $tkey = $tkey | replaceRE `["']` "" -}}
 {{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
 
-{{/* ===== [新增] legacyPath：保持旧文章评论仍可显示（t:xxx）===== */}}
+{{/* ===== legacyPath：兼容旧数据（t:xxx）===== */}}
 {{- $legacyPath := printf "t:%s" $tkey -}}
 {{- $legacyPath = $legacyPath | replaceRE `\\` "" -}}
 {{- $legacyPath = $legacyPath | replaceRE `["']` "" -}}
 {{- $legacyPath = $legacyPath | replaceRE `^\s+|\s+$` "" -}}
 
-{{/* ===== 用真实文章链接做 commentPath（新文章；后台可点击）===== */}}
-{{- $p := .RelPermalink -}}
+{{/* ===== 计算文章路径：RelPermalink -> 去语言前缀 -> 去尾斜杠 ===== */}}
+{{- $p0 := .RelPermalink -}}
+{{- $p0 = $p0 | replaceRE `^/(en|zh|ja)(/|$)` "/" -}}
+{{- $p0 = $p0 | replaceRE `/$` "" -}}
+{{- if eq $p0 "" -}}{{- $p0 = "/" -}}{{- end -}}
 
-{{/* 去语言前缀：按你的语言 key 改（示例 en/zh/ja） */}}
-{{- $p = $p | replaceRE `^/(en|zh|ja)(/|$)` "/" -}}
-
-{{/* 去掉末尾 /，避免重复线程 */}}
-{{- $p = $p | replaceRE `/$` "" -}}
-{{- if eq $p "" -}}{{- $p = "/" -}}{{- end -}}
-
-{{/* 最关键：把 path 变成绝对 URL，这样 Waline 后台能点开 */}}
+{{/* ===== baseURL（绝对链接）===== */}}
 {{- $base := site.BaseURL | replaceRE `/$` "" -}}
-{{- $commentPath := printf "%s%s" $base $p -}}
+
+{{/* ===== noPrefix：兼容你之前生成过的 https://.../reading-list ===== */}}
+{{- $noPrefixPath := printf "%s%s" $base $p0 -}}
+{{- $noPrefixPath = $noPrefixPath | replaceRE `\\` "" -}}
+{{- $noPrefixPath = $noPrefixPath | replaceRE `["']` "" -}}
+{{- $noPrefixPath = $noPrefixPath | replaceRE `^\s+|\s+$` "" -}}
+
+{{/* ===== newPath：统一归一到 /en/（保证后台可点 + 跨语言共用）===== */}}
+{{- $pEn := "" -}}
+{{- if eq $p0 "/" -}}
+  {{- $pEn = "/en/" -}}
+{{- else -}}
+  {{- $pEn = printf "/en%s" $p0 -}}
+{{- end -}}
+{{- $pEn = $pEn | replaceRE `/{2,}` "/" -}}
+{{- $pEn = $pEn | replaceRE `/$` "" -}}
+{{- if eq $pEn "" -}}{{- $pEn = "/en" -}}{{- end -}}
+
+{{- $commentPath := printf "%s%s" $base $pEn -}}
 {{- $commentPath = $commentPath | replaceRE `\\` "" -}}
 {{- $commentPath = $commentPath | replaceRE `["']` "" -}}
 {{- $commentPath = $commentPath | replaceRE `^\s+|\s+$` "" -}}
-
 
 <style>
 /* ===== Toggle ===== */
@@ -85,14 +98,6 @@
   --waline-border-color: var(--border);
   --waline-box-shadow: none;
 }
-
-/* 可选：只让中文评论区用“老宋”（把 font-family 换成你的实际字体名） */
-/*
-html[lang^="zh"] #waline,
-html[lang^="zh"] #waline *{
-  font-family: 'KingHwa_OldSong', serif !important;
-}
-*/
 
 /* ===== FAB（TOC + Comments；移动端把 Top 收进同一列） ===== */
 .kq-fab{
@@ -227,7 +232,6 @@ html.kq-fab-on a.top-link{
     transform: translateX(-0.5px);
   }
 }
-
 </style>
 
 <div class="comment-toggle">
@@ -257,8 +261,9 @@ html.kq-fab-on a.top-link{
   // ====== 从 Hugo 传值进来 ======
   const HAS_WALINE = {{ $hasWaline | jsonify }};
   const HUGO_SERVER_RAW = {{ $server | jsonify }};
-  const HUGO_PATH_RAW = {{ $commentPath | jsonify }};
-  const HUGO_PATH_LEGACY_RAW = {{ $legacyPath | jsonify }};
+  const HUGO_PATH_RAW = {{ $commentPath | jsonify }};        // ✅ newPath: /en/...
+  const HUGO_PATH_NOPREFIX_RAW = {{ $noPrefixPath | jsonify }}; // ✅ noPrefix: /...
+  const HUGO_PATH_LEGACY_RAW = {{ $legacyPath | jsonify }};  // ✅ legacy: t:xxx
   const HUGO_LANG_FALLBACK = {{ $walineLang | jsonify }};
 
   // ====== DOM ======
@@ -312,124 +317,127 @@ html.kq-fab-on a.top-link{
     return "en";
   }
 
-// ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
-let walineReady = false;
-let walineLoading = null;
+  // ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
+  let walineReady = false;
+  let walineLoading = null;
 
-const serverURL = cleanServerURL(HUGO_SERVER_RAW);
-const commentPath = cleanString(HUGO_PATH_RAW);
-const legacyPath = cleanString(HUGO_PATH_LEGACY_RAW);
+  const serverURL = cleanServerURL(HUGO_SERVER_RAW);
 
-// 建议：Waline 更标准的语言码用 en-US / zh-CN / jp（不行也会自动 fallback）:contentReference[oaicite:1]{index=1}
-const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
+  // 三套候选路径
+  const commentPath = cleanString(HUGO_PATH_RAW);           // 新：绝对 /en/...
+  const noPrefixPath = cleanString(HUGO_PATH_NOPREFIX_RAW); // 兼容旧：绝对 /...
+  const legacyPath = cleanString(HUGO_PATH_LEGACY_RAW);     // 旧：t:...
 
-const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
-if (!walineOK) window.__walineBadConfig = true;
+  const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
 
-// === 你的“输入框自定义文字”（按语言）===
-// 你想写多行就用 \n
-const PLACEHOLDER_MAP = {
-  "zh-CN": "当月光洒下，万物皆是低语，你听到了什么心事？",
-  "jp": "コメントどうぞ…(*^_^*)",
-  "en-US": "My words are just an invitation; your thoughts are the destination.",
-  "en": "My words are just an invitation; your thoughts are the destination. ",
-};
-const myPlaceholder = PLACEHOLDER_MAP[pageLangWaline] || "Write a comment…";
+  const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
+  if (!walineOK) window.__walineBadConfig = true;
 
-function loadWalineCSSOnce() {
-  if (document.getElementById('kq-waline-css')) return;
+  const PLACEHOLDER_MAP = {
+    "zh-CN": "当月光洒下，万物皆是低语，你听到了什么心事？",
+    "jp": "コメントどうぞ…(*^_^*)",
+    "en-US": "My words are just an invitation; your thoughts are the destination.",
+    "en": "My words are just an invitation; your thoughts are the destination. ",
+  };
+  const myPlaceholder = PLACEHOLDER_MAP[pageLangWaline] || "Write a comment…";
 
-  const link = document.createElement('link');
-  link.id = 'kq-waline-css';
-  link.rel = 'stylesheet';
-  link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
-  document.head.appendChild(link);
+  function loadWalineCSSOnce() {
+    if (document.getElementById('kq-waline-css')) return;
 
-  // 可选：防止主题把 placeholder 透明度压没（你如果本来就正常可删）
-  if (!document.getElementById('kq-waline-ph-style')) {
-    const st = document.createElement('style');
-    st.id = 'kq-waline-ph-style';
-    st.textContent = `
-      #waline textarea::placeholder,
-      #waline input::placeholder { opacity: .85; }
-    `;
-    document.head.appendChild(st);
+    const link = document.createElement('link');
+    link.id = 'kq-waline-css';
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
+    document.head.appendChild(link);
+
+    if (!document.getElementById('kq-waline-ph-style')) {
+      const st = document.createElement('style');
+      st.id = 'kq-waline-ph-style';
+      st.textContent = `
+        #waline textarea::placeholder,
+        #waline input::placeholder { opacity: .85; }
+      `;
+      document.head.appendChild(st);
+    }
   }
-}
 
-/* ===== [新增] 自动兼容旧评论：新路径没评论就回退到 t:xxx ===== */
-async function hasWalineComments(p){
-  if (!p) return false;
-  const url = `${serverURL}/api/comment?path=${encodeURIComponent(p)}&page=1&pageSize=1`;
-  try{
-    const r = await fetch(url, { method: "GET" });
-    if (!r.ok) return false;
-    const j = await r.json();
-    if (Array.isArray(j?.data) && j.data.length > 0) return true;
-    if (Array.isArray(j?.data?.comments) && j.data.comments.length > 0) return true;
-    if (typeof j?.count === "number" && j.count > 0) return true;
-    if (typeof j?.data?.count === "number" && j.data.count > 0) return true;
-    return false;
-  }catch(e){
-    // 探测失败时：优先保证旧文章能看到评论（回退到 legacy）
-    return false;
+  async function hasWalineComments(p){
+    if (!p) return false;
+    const url = `${serverURL}/api/comment?path=${encodeURIComponent(p)}&page=1&pageSize=1`;
+    try{
+      const r = await fetch(url, { method: "GET" });
+      if (!r.ok) return false;
+      const j = await r.json();
+      if (Array.isArray(j?.data) && j.data.length > 0) return true;
+      if (Array.isArray(j?.data?.comments) && j.data.comments.length > 0) return true;
+      if (typeof j?.count === "number" && j.count > 0) return true;
+      if (typeof j?.data?.count === "number" && j.data.count > 0) return true;
+      return false;
+    }catch(e){
+      return null; // unknown
+    }
   }
-}
 
-async function pickWalinePath(){
-  // 1) 新路径有评论 -> 用新路径
-  if (await hasWalineComments(commentPath)) return commentPath;
-  // 2) 新路径没评论但旧路径有 -> 回退旧路径（显示旧评论）
-  if (await hasWalineComments(legacyPath)) return legacyPath;
-  // 3) 都没有 -> 用新路径（新文章走这里，后台可点击）
-  return commentPath;
-}
+  async function pickWalinePath(){
+    const n = await hasWalineComments(commentPath);
+    if (n === true) return commentPath;
 
-function ensureWaline() {
-  if (!walineOK || walineReady) return;
-  if (walineLoading) return;
+    const np = await hasWalineComments(noPrefixPath);
+    if (np === true) return noPrefixPath;
 
-  walineLoading = (async () => {
-    loadWalineCSSOnce();
-    const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
+    const l = await hasWalineComments(legacyPath);
+    if (l === true) return legacyPath;
 
-    const finalPath = await pickWalinePath();
+    // 探测被挡时，优先 legacy，保证旧评论不丢
+    if (n === null || np === null || l === null) return legacyPath || commentPath;
 
-    mod.init({
-      el: "#waline",
-      serverURL,
-      path: finalPath,
-      requiredMeta: ["nick", "mail"],
-      lang: pageLangWaline,
+    // 都没评论：用新路径（后台可点）
+    return commentPath;
+  }
 
-      // ✅ 输入框提示文字就在这里：locale.placeholder :contentReference[oaicite:2]{index=2}
-      // reactionTitle 你设为空会把“反应/表情”标题隐藏 :contentReference[oaicite:3]{index=3}
-      locale: {
-        placeholder: myPlaceholder,
-        reactionTitle: "",
-      },
+  function ensureWaline() {
+    if (!walineOK || walineReady) return;
+    if (walineLoading) return;
 
-      reaction: true,
-      dark: "body.dark",
-      imageUploader: false,
+    walineLoading = (async () => {
+      loadWalineCSSOnce();
+      const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
+
+      const finalPath = await pickWalinePath();
+
+      mod.init({
+        el: "#waline",
+        serverURL,
+        path: finalPath,
+        requiredMeta: ["nick", "mail"],
+        lang: pageLangWaline,
+        locale: {
+          placeholder: myPlaceholder,
+          reactionTitle: "",
+        },
+        reaction: true,
+        dark: "body.dark",
+        imageUploader: false,
+      });
+
+      walineReady = true;
+      walineLoading = null;
+      console.log("[Waline] inited:", { serverURL, commentPath, noPrefixPath, legacyPath, finalPath, pageLangWaline });
+    })().catch((e) => {
+      console.error("[Waline] init failed:", e);
+      window.__walineBadConfig = true;
+      walineLoading = null;
+      showGiscus(true);
     });
-
-    walineReady = true;
-    walineLoading = null;
-    console.log("[Waline] inited:", { serverURL, commentPath, legacyPath, finalPath, pageLangWaline });
-  })().catch((e) => {
-    console.error("[Waline] init failed:", e);
-    window.__walineBadConfig = true;
-    walineLoading = null;
-    showGiscus(true);
-  });
-}
+  }
 
   // ====== Giscus 懒加载 ======
   const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
   const GISCUS_REPO_ID = "R_kgDONiVddQ";
   const GISCUS_CATEGORY = "General";
   const GISCUS_CATEGORY_ID = "DIC_kwDONiVddc4CljSp";
+
+  // 继续用“新 path”（没历史数据你说无所谓；也更标准）
   const giscusTerm = cleanString(HUGO_PATH_RAW);
 
   let giscusLoaded = false;
@@ -526,38 +534,23 @@ function ensureWaline() {
     }
   }
 
-function closeTOC(){
-  document.documentElement.classList.remove('kq-toc-open');
-  // 顺便把 details 收起（否则下次打开还是展开状态）
-  if (toc) {
-    const d = toc.querySelector('details');
-    if (d) d.open = false;
+  function closeTOC(){
+    document.documentElement.classList.remove('kq-toc-open');
+    if (toc) {
+      const d = toc.querySelector('details');
+      if (d) d.open = false;
+    }
   }
-}
 
-function openTOC(){
-  if (!toc) return;
-  const d = toc.querySelector('details');
-  if (d) d.open = true;
-
-  if (mqMobile.matches) {
-    document.documentElement.classList.add('kq-toc-open');
-  } else {
-    toc.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  function toggleTOC(){
+    const html = document.documentElement;
+    if (html.classList.contains('kq-toc-open')) closeTOC();
+    else openTOC();
   }
-}
 
-function toggleTOC(){
-  const html = document.documentElement;
-  if (html.classList.contains('kq-toc-open')) closeTOC();
-  else openTOC();
-}
-
-btnTOC && btnTOC.addEventListener('click', toggleTOC);
-
-// 遮罩：click + touchstart（手机更稳）
-overlay && overlay.addEventListener('click', closeTOC);
-overlay && overlay.addEventListener('touchstart', closeTOC, { passive: true });
+  btnTOC && btnTOC.addEventListener('click', toggleTOC);
+  overlay && overlay.addEventListener('click', closeTOC);
+  overlay && overlay.addEventListener('touchstart', closeTOC, { passive: true });
 
   toc && toc.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
@@ -567,14 +560,13 @@ overlay && overlay.addEventListener('touchstart', closeTOC, { passive: true });
   btnCmt && btnCmt.addEventListener('click', () => {
     closeTOC();
 
-const preferred = localStorage.getItem('preferredComment');
-const canWaline = walineContainer && walineOK;
-const canGiscus = !!giscusContainer;
+    const preferred = localStorage.getItem('preferredComment');
+    const canWaline = walineContainer && walineOK;
+    const canGiscus = !!giscusContainer;
 
-if (preferred === 'giscus' && canGiscus) showGiscus(true);
-else if (canWaline) showWaline(true);
-else if (canGiscus) showGiscus(true);
-
+    if (preferred === 'giscus' && canGiscus) showGiscus(true);
+    else if (canWaline) showWaline(true);
+    else if (canGiscus) showGiscus(true);
 
     const active = document.querySelector('.comment-system.active');
     const target =
@@ -585,72 +577,64 @@ else if (canGiscus) showGiscus(true);
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-window.addEventListener('DOMContentLoaded', () => {
-  if (!fab) return;
+  window.addEventListener('DOMContentLoaded', () => {
+    if (!fab) return;
 
-  // 1) 没 TOC 删 ☰
-  if (!toc && btnTOC) btnTOC.remove();
+    if (!toc && btnTOC) btnTOC.remove();
 
-  // 2) 没评论系统删 💬
-  const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
-  if (!hasAnyComment && btnCmt) btnCmt.remove();
+    const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
+    if (!hasAnyComment && btnCmt) btnCmt.remove();
 
-  // 3) 是否还有控件
-  const hasAnyControl = !!fab.querySelector('button, a');
+    const hasAnyControl = !!fab.querySelector('button, a');
+    const html = document.documentElement;
 
-  const html = document.documentElement;
-
-  function syncFabOffset(){
-    const h = fab ? fab.getBoundingClientRect().height : 0;
-    html.style.setProperty('--kq-fab-h', h ? `${Math.ceil(h)}px` : '0px');
-  }
-
-  if (hasAnyControl) {
-    fab.classList.add('is-on');
-    html.classList.add('kq-fab-on');
-
- // ✅ 移动端：把主题的“返回顶部”按钮塞进 FAB，三按钮同栈竖排
-    const topLink = document.querySelector('a.top-link');
-    let topLinkHome = null;
-    let topLinkNext = null;
-
-    function syncTopLinkPlacement(){
-      if (!topLink) return;
-
-      if (mqMobile.matches) {
-        // 只在手机塞进去
-        if (!fab.contains(topLink)) {
-          topLinkHome = topLinkHome || topLink.parentElement;
-          topLinkNext = topLinkNext || topLink.nextSibling;
-
-          topLink.classList.add('kq-top-in-fab');
-          fab.appendChild(topLink);
-        }
-      } else {
-        // 桌面：放回原位置（可选，但建议保留）
-        if (topLinkHome && topLink.classList.contains('kq-top-in-fab')) {
-          topLink.classList.remove('kq-top-in-fab');
-          topLinkHome.insertBefore(topLink, topLinkNext);
-        }
-      }
-
-      requestAnimationFrame(syncFabOffset);
+    function syncFabOffset(){
+      const h = fab ? fab.getBoundingClientRect().height : 0;
+      html.style.setProperty('--kq-fab-h', h ? `${Math.ceil(h)}px` : '0px');
     }
 
-    syncTopLinkPlacement();
-    mqMobile.addEventListener('change', syncTopLinkPlacement);
+    if (hasAnyControl) {
+      fab.classList.add('is-on');
+      html.classList.add('kq-fab-on');
 
-    // 等一帧让 display:flex 生效再测高度
-    requestAnimationFrame(syncFabOffset);
+      const topLink = document.querySelector('a.top-link');
+      let topLinkHome = null;
+      let topLinkNext = null;
 
-    window.addEventListener('resize', () => {
-      if (html.classList.contains('kq-fab-on')) requestAnimationFrame(syncFabOffset);
-    }, { passive: true });
-  } else {
-    fab.classList.remove('is-on');
-    html.classList.remove('kq-fab-on');
-    syncFabOffset();
-  }
-});
+      function syncTopLinkPlacement(){
+        if (!topLink) return;
+
+        if (mqMobile.matches) {
+          if (!fab.contains(topLink)) {
+            topLinkHome = topLinkHome || topLink.parentElement;
+            topLinkNext = topLinkNext || topLink.nextSibling;
+
+            topLink.classList.add('kq-top-in-fab');
+            fab.appendChild(topLink);
+          }
+        } else {
+          if (topLinkHome && topLink.classList.contains('kq-top-in-fab')) {
+            topLink.classList.remove('kq-top-in-fab');
+            topLinkHome.insertBefore(topLink, topLinkNext);
+          }
+        }
+
+        requestAnimationFrame(syncFabOffset);
+      }
+
+      syncTopLinkPlacement();
+      mqMobile.addEventListener('change', syncTopLinkPlacement);
+
+      requestAnimationFrame(syncFabOffset);
+
+      window.addEventListener('resize', () => {
+        if (html.classList.contains('kq-fab-on')) requestAnimationFrame(syncFabOffset);
+      }, { passive: true });
+    } else {
+      fab.classList.remove('is-on');
+      html.classList.remove('kq-fab-on');
+      syncFabOffset();
+    }
+  });
 })();
 </script>
