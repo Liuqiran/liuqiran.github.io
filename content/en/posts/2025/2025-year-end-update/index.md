@@ -16,7 +16,9 @@ tags:
 
 After several days of burning the midnight oil, I finally finished migrating my commenting system, adding custom buttons to my site, and implementing several other features.
 
-The new commenting system, **Waline**, supports reactions and comes with a clean, elegant interface. I also added floating buttons at the bottom of each page—a table of contents button and a comment button—so visitors can quickly jump to the sections they want.
+The new commenting system, **Waline**, supports reactions and comes with a clean, elegant interface. I also added floating buttons at the bottom of each page—a table of contents button and a comment button—so visitors can quickly jump to the sections they want. 
+
+If articles on different language websites have similar content, the comment sections will be merged together.
 
 In addition, I updated the word-counting feature on the archive page. It now counts both the total number of articles and the total word count across the site.
 
