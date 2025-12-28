@@ -11,6 +11,8 @@ cover:
   relative: true
 kq_managed: true
 kq_mt: true
+kq_mt_from: en
+kq_mt_to: zh
 ---
 这是我继《返璞归真》（Mere Christianity）之后读的第二本C.S.刘易斯的书。虽然篇幅不长，但我还是花了几天时间才读完。
 
