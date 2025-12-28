@@ -3,7 +3,6 @@ title: Font Recommendation – Jinghua Old Song Typeface
 translationKey: kinghwa-oldsong
 slug: kinghwa-oldsong
 author: Qiran
-type: post
 date: 2025-04-11
 cover:
   image: img/cover-kinghwa-oldsong.png
