@@ -3,9 +3,13 @@ name: Translate (per-post config)
 on:
   push:
     branches: ["main"]
+    # ✅ 白名单：只在这些目录/文件变更时触发（排除 content/shared/** 等）
     paths:
       - "content/en/**"
+      - "content/zh/**"
+      - "content/ja/**"
       - "scripts/translate.py"
+      - "data/kq_tag_map.yaml"
   workflow_dispatch:
 
 permissions:
@@ -13,29 +17,43 @@ permissions:
 
 jobs:
   translate:
+    # ✅ 防止 workflow 自己 commit/push 后再次触发造成循环
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install deps
         run: |
-          pip install pyyaml google-cloud-translate
+          python -m pip install --upgrade pip
+          pip install pyyaml google-cloud-translate google-auth
 
-      - name: Run script
+      - name: Run translate script
         env:
           GCP_SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
         run: |
-          python scripts/translate.py
+          python3 scripts/translate.py
 
       - name: Commit changes (if any)
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add content/zh content/en .cache/mt_cache.json || true
+
+          # ✅ Add generated/updated content
+          git add content/en content/zh content/ja || true
+
+          # ✅ Cache file (may be gitignored, so force add)
+          git add -f .cache/mt_cache.json || true
+
+          # ✅ No changes -> stop
           git diff --cached --quiet && exit 0
+
           git commit -m "chore: generate translations (per-post translate config)"
           git push
