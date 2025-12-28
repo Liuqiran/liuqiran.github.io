@@ -1,5 +1,5 @@
 ---
-title: Updated Hugo
+title: 更新 Hugo
 translationKey: 2025-year-end-update
 slug: 2025-year-end-update
 draft: false
