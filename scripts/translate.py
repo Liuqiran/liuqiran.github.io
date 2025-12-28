@@ -107,6 +107,16 @@ def build_target_frontmatter(
       - kq_mt: true/false  (used for MT notice; (you decided not to noindex by it))
     """
     fm = dict(src_fm)
+
+    # normalize common frontmatter keys (Title->title, Date->date, Lastmod->lastmod)
+    for k_from, k_to in (("Title", "title"), ("Date", "date"), ("Lastmod", "lastmod")):
+        if k_from in fm and k_to not in fm:
+            fm[k_to] = fm.pop(k_from)
+
+    # optional: trim title
+    if isinstance(fm.get("title"), str):
+        fm["title"] = fm["title"].strip()
+
     fm.pop("translate", None)
 
     fm["translationKey"] = tk
