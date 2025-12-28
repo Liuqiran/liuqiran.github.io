@@ -35,11 +35,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml google-cloud-translate google-auth
 
+      - name: Debug (before)
+        run: |
+          echo "== locate leaky gut zh file =="
+          grep -RIn "translationKey: 2024-05-29-seven-symptons-of-leaky-gut" content/zh || true
+          echo "== check existing en file (mirror path) =="
+          ls -la content/en/2024-05-29-seven-symptons-of-leaky-gut.md || true
+
       - name: Run translate script
         env:
           GCP_SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
         run: |
           python3 scripts/translate.py
+
+      - name: Debug (after)
+        run: |
+          echo "== git status =="
+          git status --porcelain || true
+          echo "== check en file again =="
+          ls -la content/en/2024-05-29-seven-symptons-of-leaky-gut.md || true
 
       - name: Commit changes (if any)
         run: |
