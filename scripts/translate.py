@@ -5,9 +5,8 @@ import json
 import os
 import re
 import hashlib
-from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Tuple, Optional, List
+from typing import Any, Dict, Tuple, Optional
 
 import yaml
 
@@ -20,11 +19,12 @@ CONTENT_ROOT = Path("content")
 SRC_ROOT = CONTENT_ROOT / SRC_LANG
 
 CACHE_FILE = Path(".cache/mt_cache.json")  # 可选缓存（额外保险）
-
 FRONT_DELIM = "---"
+
 
 def sha256(s: str) -> str:
     return hashlib.sha256(s.encode("utf-8")).hexdigest()
+
 
 def split_frontmatter(md: str) -> Tuple[Optional[str], str]:
     """
@@ -37,19 +37,22 @@ def split_frontmatter(md: str) -> Tuple[Optional[str], str]:
         return None, md
     return m.group(1), m.group(2)
 
+
 def dump_frontmatter(data: Dict[str, Any]) -> str:
-    # 保持 key 顺序（sort_keys=False）
     y = yaml.safe_dump(data, allow_unicode=True, sort_keys=False).strip()
     return f"---\n{y}\n---\n"
+
 
 def load_cache() -> Dict[str, str]:
     if CACHE_FILE.exists():
         return json.loads(CACHE_FILE.read_text("utf-8"))
     return {}
 
+
 def save_cache(cache: Dict[str, str]) -> None:
     CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
     CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), "utf-8")
+
 
 def normalize_translate_cfg(raw: Any) -> Optional[Dict[str, Any]]:
     """
@@ -66,6 +69,7 @@ def normalize_translate_cfg(raw: Any) -> Optional[Dict[str, Any]]:
         return raw
     return None
 
+
 def derive_slug(src_path: Path, fm: Dict[str, Any]) -> str:
     slug = fm.get("slug")
     if isinstance(slug, str) and slug.strip():
@@ -78,8 +82,10 @@ def derive_slug(src_path: Path, fm: Dict[str, Any]) -> str:
     # normal file: xxx.md -> xxx
     return src_path.stem
 
+
 def get_rel_under_src(src_path: Path) -> Path:
     return src_path.relative_to(SRC_ROOT)
+
 
 def ensure_translation_key(fm: Dict[str, Any], slug: str) -> Tuple[Dict[str, Any], bool, str]:
     """
@@ -92,46 +98,46 @@ def ensure_translation_key(fm: Dict[str, Any], slug: str) -> Tuple[Dict[str, Any
     fm["translationKey"] = slug
     return fm, True, slug
 
-def build_target_frontmatter(src_fm: Dict[str, Any], target_lang: str, slug: str, tk: str,
-                            draft: bool, mode: str) -> Dict[str, Any]:
-    """
-    Create target frontmatter.
-    - Copy most fields but remove translate block to avoid confusion.
-    - Force slug/translationKey.
-    - Draft controlled by translate.draft (default True).
-    - Add mt/noindex markers for machine translation.
-    """
-    fm = dict(src_fm)  # shallow copy
 
-    # Remove per-post translate config from generated translation by default
+def build_target_frontmatter(
+    src_fm: Dict[str, Any],
+    target_lang: str,
+    slug: str,
+    tk: str,
+    draft: bool,
+    mode: str,
+) -> Dict[str, Any]:
+    fm = dict(src_fm)
     fm.pop("translate", None)
 
-    # Force keys used for multilingual pairing
     fm["translationKey"] = tk
-    fm["slug"] = slug
+    fm.setdefault("slug", slug)  # 不强制覆盖，允许你以后改目标语言 slug
     fm["draft"] = bool(draft)
 
-    # SEO / machine-translation markers
-    # - noindex default true for google MT (even if draft false)
-    #   You can later set noindex:false and params.mt:false when polished.
+    # === Script-managed markers ===
+    fm["kq_managed"] = True
+    fm.setdefault("kq_mt", mode == "google")  # 若用户手动改成 false，脚本不覆盖
+
+    # === SEO for machine translation stage ===
     params = fm.get("params")
     if not isinstance(params, dict):
         params = {}
-    if mode == "google":
+
+    if fm.get("kq_mt") is True:
         params.setdefault("mt", True)
         params.setdefault("mt_source", "google")
-        fm.setdefault("noindex", True)
-    fm["params"] = params
+        fm["robotsNoIndex"] = True  # 你 head 里用的是 robotsNoIndex
 
+    fm["params"] = params
     return fm
 
+
 def translate_text_google(client: translate.Client, text: str, target_lang: str) -> str:
-    # v2 translate: HTML entities may appear; keep format_="text"
     res = client.translate(text, target_language=target_lang, format_="text")
     return res["translatedText"]
 
+
 def main() -> None:
-    # Service Account JSON stored in env (GitHub Secrets)
     sa_json = os.environ.get("GCP_SA_KEY_JSON")
     if not sa_json:
         raise SystemExit("Missing env: GCP_SA_KEY_JSON (service account JSON)")
@@ -141,6 +147,7 @@ def main() -> None:
 
     cache = load_cache()
     created = 0
+    synced = 0
     skipped_exists = 0
     updated_src = 0
     skipped_no_translate = 0
@@ -182,27 +189,58 @@ def main() -> None:
         # Ensure translationKey backwrite to EN
         fm, changed, tk = ensure_translation_key(fm, slug)
         if changed:
-            new_src = dump_frontmatter(fm) + body
-            src.write_text(new_src, "utf-8")
+            src.write_text(dump_frontmatter(fm) + body, "utf-8")
             updated_src += 1
 
         # Optional cache key (extra safety)
-        content_hash = sha256(fm_raw + "\n\n" + body)
-        cache_key = f"{src}"
-        cache.setdefault(cache_key, content_hash)
+        cache_key = str(src)
+        cache[cache_key] = sha256(fm_raw + "\n\n" + body)
 
         rel = get_rel_under_src(src)
 
         for lang in targets:
             dst = CONTENT_ROOT / lang / rel
 
-            # If target exists, NEVER overwrite (your requirement)
+            # ===== 方案C：存在则只同步 frontmatter，不动正文 =====
             if dst.exists():
-                skipped_exists += 1
+                dst_md = dst.read_text("utf-8")
+                dst_fm_raw, dst_body = split_frontmatter(dst_md)
+                if dst_fm_raw is None:
+                    skipped_exists += 1
+                    continue
+
+                try:
+                    dst_fm = yaml.safe_load(dst_fm_raw) or {}
+                except Exception:
+                    skipped_exists += 1
+                    continue
+
+                if dst_fm.get("kq_managed") is True:
+                    # 1) draft 同步（发布/下线开关）
+                    dst_fm["draft"] = bool(draft)
+
+                    # 2) translationKey 保底同步
+                    dst_fm.setdefault("translationKey", tk)
+
+                    # 3) 机器翻译阶段才强制 noindex + mt
+                    if dst_fm.get("kq_mt") is True:
+                        dst_fm["robotsNoIndex"] = True
+                        params = dst_fm.get("params")
+                        if not isinstance(params, dict):
+                            params = {}
+                        params["mt"] = True
+                        params.setdefault("mt_source", "google")
+                        dst_fm["params"] = params
+
+                    dst.write_text(dump_frontmatter(dst_fm) + dst_body, "utf-8")
+                    synced += 1
+                else:
+                    skipped_exists += 1
+
                 continue
+            # =====================================================
 
             dst.parent.mkdir(parents=True, exist_ok=True)
-
             target_fm = build_target_frontmatter(fm, lang, slug, tk, draft, mode)
 
             if mode == "stub":
@@ -212,7 +250,6 @@ def main() -> None:
                 )
                 out = dump_frontmatter(target_fm) + out_body
             else:
-                # google translate body
                 zh_body = translate_text_google(client, body, lang)
                 out = dump_frontmatter(target_fm) + zh_body
 
@@ -220,7 +257,11 @@ def main() -> None:
             created += 1
 
     save_cache(cache)
-    print(f"Done. created={created}, skipped_exists={skipped_exists}, updated_src={updated_src}, skipped_no_translate={skipped_no_translate}")
+    print(
+        f"Done. created={created}, synced={synced}, skipped_exists={skipped_exists}, "
+        f"updated_src={updated_src}, skipped_no_translate={skipped_no_translate}"
+    )
+
 
 if __name__ == "__main__":
     main()
