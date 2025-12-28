@@ -130,6 +130,20 @@ def translate_text_google(client: translate.Client, text: str, target_lang: str)
     return res["translatedText"]
 
 
+def translate_title_if_needed(client: translate.Client, fm: Dict[str, Any], target_lang: str, mode: str) -> Optional[str]:
+    """
+    Title is treated like body:
+    - Only translate when creating NEW target file (dst doesn't exist)
+    - Never update existing file's title automatically
+    """
+    if mode != "google":
+        return None
+    t = fm.get("title")
+    if not isinstance(t, str) or not t.strip():
+        return None
+    return translate_text_google(client, t.strip(), target_lang)
+
+
 def main() -> None:
     sa_json = os.environ.get("GCP_SA_KEY_JSON")
     if not sa_json:
@@ -194,7 +208,7 @@ def main() -> None:
         for lang in targets:
             dst = CONTENT_ROOT / lang / rel
 
-            # ===== exists: sync frontmatter only (draft/translationKey), do not touch body =====
+            # ===== exists: sync frontmatter only (draft/translationKey), do not touch body/title =====
             if dst.exists():
                 dst_md = dst.read_text("utf-8")
                 dst_fm_raw, dst_body = split_frontmatter(dst_md)
@@ -239,6 +253,11 @@ def main() -> None:
             # ===== create new translation =====
             dst.parent.mkdir(parents=True, exist_ok=True)
             target_fm = build_target_frontmatter(fm, slug, tk, draft, mode)
+
+            # ✅ Only on FIRST creation: translate title (like body)
+            new_title = translate_title_if_needed(client, fm, lang, mode)
+            if new_title:
+                target_fm["title"] = new_title
 
             if mode == "stub":
                 out_body = (
