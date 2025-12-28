@@ -6,6 +6,10 @@ Date: 2025-04-01
 aliases: ["/migrated-to-hugo/"]
 tags:
   - Building Site
+translate:
+  mode: google
+  targets: ["zh"]
+  draft: false 
 ---
 After several days of painstaking work, I finally moved from WordPress to Hugo.
 
