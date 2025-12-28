@@ -4,7 +4,6 @@ translationKey: 2023-02-08-created-telegram-channel
 author: Qiran
 type: post
 date: 2023-02-08 10:12:49+00:00
-url: /zh/created-telegram-channel/
 xyz_twap:
 - 1
 tags:
