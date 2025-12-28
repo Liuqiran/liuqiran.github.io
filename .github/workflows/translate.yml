@@ -7,9 +7,12 @@ on:
     paths:
       - "content/en/**"
       - "content/zh/**"
-      - "content/ja/**"
+      # 如果你未来真的要启用日文目录，再取消注释下一行
+      # - "content/ja/**"
       - "scripts/translate.py"
       - "data/kq_tag_map.yaml"
+      # （可选）改 workflow 自己也能触发一次，方便调试
+      - ".github/workflows/translate.yml"
   workflow_dispatch:
 
 permissions:
@@ -35,6 +38,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml google-cloud-translate google-auth
 
+      # ✅ 可选：调试用（确认脚本真的生成了目标文件）
       - name: Debug (before)
         run: |
           echo "== locate leaky gut zh file =="
@@ -62,8 +66,9 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
 
-          # ✅ Add generated/updated content
-          git add content/en content/zh content/ja || true
+          # ✅ Add generated/updated content (only add dirs that exist)
+          git add content/en content/zh || true
+          if [ -d content/ja ]; then git add content/ja; fi
 
           # ✅ Cache file (may be gitignored, so force add)
           git add -f .cache/mt_cache.json || true
