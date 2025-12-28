@@ -1,0 +1,41 @@
+name: Translate (per-post config)
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "content/en/**"
+      - "scripts/translate.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          pip install pyyaml google-cloud-translate
+
+      - name: Run script
+        env:
+          GCP_SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
+        run: |
+          python scripts/translate.py
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add content/zh content/en .cache/mt_cache.json || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: generate translations (per-post translate config)"
+          git push
