@@ -204,4 +204,14 @@ html[lang="en-US"] .profile_inner > span {
     --toc-l2-size: 0.97rem;
     --toc-l3-size: 0.93rem;
   }
+}   
+
+
+.kq-mt-note{
+  border:1px solid var(--border);
+  background: var(--entry);
+  padding: .8rem 1rem;
+  border-radius: var(--radius);
+  margin: 1rem 0;
+  font-size: .95rem;
 }

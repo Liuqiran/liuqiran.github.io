@@ -1,0 +1,17 @@
+{{- if eq .Params.kq_mt true -}}
+  {{- $lang := .Lang -}}
+  {{- $en := (where .AllTranslations "Lang" "eq" "en") | first -}}
+
+  <div class="kq-mt-note">
+    {{- if hasPrefix $lang "zh" -}}
+      <strong>机翻提示：</strong>本文由机器翻译生成，可能存在错误；欢迎你留言指正。
+      {{- with $en }} <a href="{{ .Permalink }}">查看英文原文</a>{{ end -}}。
+    {{- else if or (hasPrefix $lang "ja") (hasPrefix $lang "jp") -}}
+      <strong>機械翻訳の注意：</strong>この記事は機械翻訳のため、誤りが含まれる可能性があります。
+      {{- with $en }} <a href="{{ .Permalink }}">英語の原文</a>{{ end -}}。
+    {{- else -}}
+      <strong>Machine translation notice:</strong> This page is machine-translated and may contain errors.
+      {{- with $en }} <a href="{{ .Permalink }}">English original</a>{{ end -}}.
+    {{- end -}}
+  </div>
+{{- end -}}
