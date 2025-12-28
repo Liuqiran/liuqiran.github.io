@@ -22,6 +22,7 @@ kq_managed: true
 kq_mt: true
 kq_mt_from: en
 kq_mt_to: zh
+type: post
 ---
 在我看来，生活中存在三种信息。
 
