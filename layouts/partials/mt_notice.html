@@ -1,24 +1,27 @@
 {{- if eq .Params.kq_mt true -}}
   {{- $lang := .Lang -}}
+  {{- $from := .Params.kq_mt_from | default "" -}}
 
-  {{- /* safely get EN translation (if exists) */ -}}
+  {{- /* 找到“原文语言”的那篇翻译（如果存在） */ -}}
   {{- $scratch := newScratch -}}
-  {{- $enList := where .AllTranslations "Lang" "eq" "en" -}}
-  {{- if gt (len $enList) 0 -}}
-    {{- $scratch.Set "en" (index $enList 0) -}}
+  {{- if $from -}}
+    {{- $list := where .AllTranslations "Lang" "eq" $from -}}
+    {{- if gt (len $list) 0 -}}
+      {{- $scratch.Set "src" (index $list 0) -}}
+    {{- end -}}
   {{- end -}}
-  {{- $en := $scratch.Get "en" -}}
+  {{- $src := $scratch.Get "src" -}}
 
   <div class="kq-mt-note">
     {{- if hasPrefix $lang "zh" -}}
-      <strong>机翻提示：</strong>本文为机器翻译版本，可能存在错误；欢迎留言指正。
-      {{- with $en }} <a href="{{ .Permalink }}">查看英文原文</a>{{ end -}}。
+      <strong>机翻提示：</strong>本文为机器翻译版本，可能存在错误；我会逐步润色修正。
+      {{- with $src }} <a href="{{ .Permalink }}">查看原文</a>{{ end -}}
     {{- else if or (hasPrefix $lang "ja") (hasPrefix $lang "jp") -}}
-      <strong>機械翻訳の注意：</strong>この記事は機械翻訳のため、誤りが含まれる可能性があります。
-      {{- with $en }} <a href="{{ .Permalink }}">英語の原文</a>{{ end -}}。
+      <strong>機械翻訳の注意：</strong>この記事は機械翻訳のため、誤りが含まれる可能性があります。順次修正します。
+      {{- with $src }} <a href="{{ .Permalink }}">原文を見る</a>{{ end -}}
     {{- else -}}
-      <strong>Machine translation notice:</strong> This page is machine-translated and may contain errors.
-      {{- with $en }} <a href="{{ .Permalink }}">English original</a>{{ end -}}.
+      <strong>Machine translation notice:</strong> This page is machine-translated and may contain errors. I will polish it over time.
+      {{- with $src }} <a href="{{ .Permalink }}">View original</a>{{ end -}}
     {{- end -}}
   </div>
 {{- end -}}
