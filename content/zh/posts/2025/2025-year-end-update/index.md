@@ -16,6 +16,8 @@ noindex: true
 params:
   mt: true
   mt_source: google
+kq_managed: true
+kq_mt: true
 ---
 经过几天的熬夜，我终于完成了评论系统的迁移，为网站添加了自定义按钮，并实现了其他一些功能。
 
