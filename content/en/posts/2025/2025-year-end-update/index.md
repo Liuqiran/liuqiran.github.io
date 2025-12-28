@@ -19,9 +19,9 @@ The new commenting system, **Waline**, supports reactions and comes with a clean
 
 In addition, I updated the word-counting feature on the archive page. It now counts both the total number of articles and the total word count across the site.
 
-I also found a better way to write and update articles on my phone. I initially wanted to use GitJournal, but it modifies the front matter, which caused my site builds to fail. I didn’t want to rely on installing Termux and pulling the entire repository just to edit files either. Instead, I now use **Markor**, a lightweight offline Markdown editor. It’s simple, reliable, and much more convenient for mobile writing going forward.
+I also found a better way to write and update articles on my phone. I initially wanted to use GitJournal, but it modifies the front matter, which caused my site builds to fail. Then I installed Termux and pulling the entire repository. For editing files, I  use **Markor**, a lightweight offline Markdown editor. It’s simple, reliable, and much more convenient for mobile writing going forward.
 
 There are still features I’d like to implement—such as automatically publishing my posts to other platforms—but this has proven to be surprisingly difficult. I tried many approaches, but none worked well enough.
 
-In the end, this process feels a lot like decorating my own small space on the internet. And I genuinely enjoy it.   
+In the end, this process feels a lot like decorating my own small space. And I genuinely enjoy it.   
 
