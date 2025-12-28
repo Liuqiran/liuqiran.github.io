@@ -17,7 +17,10 @@ autoshare_status:
 tags:
   - Podcast
   - Technology
-
+translate:
+  mode: google
+  targets: ["zh"]
+  draft: false 
 ---
 ﻿In my own opinion, there are three kinds of information in our life.  
 The first one is text, the second is audio, the last one is video.  
