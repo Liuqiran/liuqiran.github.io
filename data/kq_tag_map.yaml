@@ -1,0 +1,38 @@
+building-site:
+  en: Building Site
+  zh: 建站
+  ja: サイト構築
+
+life:
+  en: Life
+  zh: 生活
+  ja: 生活
+
+reading:
+  en: Reading
+  zh: 阅读
+  ja: 読書  
+
+
+# kq_tag_map.yaml — Tag dictionary for KQ translate.py
+#
+# ✅ 用法（批量修复“已生成译文”的 tags，不动正文）：
+#
+# Mac / Linux / GitHub Actions (bash):
+#   KQ_TAGS_SYNC=1 python3 translate.py
+#
+# Windows PowerShell:
+#   $env:KQ_TAGS_SYNC="1"
+#   python translate.py
+#
+# Windows cmd:
+#   set KQ_TAGS_SYNC=1
+#   python translate.py
+#
+# ✅ 说明：
+# - 平时正常跑：python3 translate.py 只会在“新建译文”时写入 tags；旧译文默认不动。
+# - 开启 KQ_TAGS_SYNC=1：会把旧译文的 tags 按本词典更新（只更新 frontmatter tags）。
+#
+# ✅ 推荐格式：canonical key（建议小写 + 连字符），每个 key 写 en/zh/ja
+# - 大小写不影响匹配：脚本会 case-insensitive 反查
+# - en 的值就是你希望展示的英文（可以保留 Title Case）

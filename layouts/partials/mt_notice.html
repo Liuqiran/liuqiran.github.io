@@ -14,13 +14,13 @@
 
   <div class="kq-mt-note">
     {{- if hasPrefix $lang "zh" -}}
-      <strong>机翻提示：</strong>本文为机器翻译版本，可能存在错误；我会逐步润色修正。
+      <strong>机翻提示：</strong>本文为机译版本，如觉读来不顺，欢迎您留言纠错。
       {{- with $src }} <a href="{{ .Permalink }}">查看原文</a>{{ end -}}
     {{- else if or (hasPrefix $lang "ja") (hasPrefix $lang "jp") -}}
       <strong>機械翻訳の注意：</strong>この記事は機械翻訳のため、誤りが含まれる可能性があります。順次修正します。
       {{- with $src }} <a href="{{ .Permalink }}">原文を見る</a>{{ end -}}
     {{- else -}}
-      <strong>Machine translation notice:</strong> This page is machine-translated and may contain errors. I will polish it over time.
+      <strong>Machine translation notice:</strong> This page is machine-translated and may contain inaccuracies. If it reads awkwardly, your corrections in the comments would be much appreciated.
       {{- with $src }} <a href="{{ .Permalink }}">View original</a>{{ end -}}
     {{- end -}}
   </div>
