@@ -12,6 +12,10 @@ cover:
 tags:
   - Life  
   - Building site
+translate:
+  mode: google
+  targets: ["zh"]
+  draft: true
 ---          
 
 After several days of burning the midnight oil, I finally finished migrating my commenting system, adding custom buttons to my site, and implementing several other features.
