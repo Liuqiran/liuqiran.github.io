@@ -13,7 +13,7 @@ autoshare_tweet_accounts:
 autoshare_status:
 - a:1:{i:0;a:4:{s:6:"status";s:9:"published";s:10:"twitter_id";i:1870991723939483710;s:6:"handle";s:9:"qiran_liu";s:10:"created_at";s:25:"2024-12-23T00:36:03+00:00";}}
 tags:
-- Tell me
+- ShuoShuo
 slug: 2024-12-23-updateblogagain
 draft: false
 kq_managed: true
