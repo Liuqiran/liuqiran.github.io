@@ -10,8 +10,8 @@ lastmod: 2025-12-27
 cover:
   image: /img/2025-year-end-update/cover.jpg
 tags:
-- Life
-- Building site
+- 生活
+- 建站
 noindex: true
 params:
   mt: true
