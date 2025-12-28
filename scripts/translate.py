@@ -5,6 +5,7 @@ import json
 import os
 import re
 import hashlib
+import html
 from pathlib import Path
 from typing import Any, Dict, Tuple, Optional, List
 
@@ -14,20 +15,57 @@ import yaml
 from google.cloud import translate_v2 as translate
 from google.oauth2 import service_account
 
-CONTENT_ROOT = Path("content")
-
-CACHE_FILE = Path(".cache/mt_cache.json")  # optional cache
 FRONT_DELIM = "---"
 
 # ✅ Do NOT carry vertical:true into these languages
 VERTICAL_ALLOWED_LANGS = {"zh", "ja"}
 
 # ✅ Tag dictionary
-TAG_MAP_FILE = Path("data/kq_tag_map.yaml")
+TAG_MAP_FILE_REL = Path("data/kq_tag_map.yaml")
 
 # ✅ Batch-fix tags on existing translated files without adding any new frontmatter fields:
 #   KQ_TAGS_SYNC=1 python3 translate.py
 TAGS_SYNC = os.environ.get("KQ_TAGS_SYNC", "").strip().lower() in ("1", "true", "yes")
+
+# ✅ If tag map missing / tag missing mapping -> fallback to machine translate (default ON)
+#   KQ_TAGS_MT=0 to disable
+TAGS_MT_FALLBACK = os.environ.get("KQ_TAGS_MT", "").strip().lower() not in ("0", "false", "no", "off")
+
+# ✅ Optional: force re-translate body for existing managed MT files (DANGEROUS: overwrites manual edits)
+#   KQ_FORCE_MT=1 python3 translate.py
+FORCE_MT = os.environ.get("KQ_FORCE_MT", "").strip().lower() in ("1", "true", "yes")
+
+
+def find_repo_root() -> Path:
+    """
+    Make paths stable no matter where you run the script from.
+    Priority:
+      1) env KQ_REPO_ROOT
+      2) nearest parent containing "content/" directory
+      3) script dir (or its parent)
+    """
+    env_root = os.environ.get("KQ_REPO_ROOT", "").strip()
+    if env_root:
+        p = Path(env_root).expanduser().resolve()
+        if (p / "content").is_dir():
+            return p
+
+    here = Path(__file__).resolve()
+    for p in [here.parent] + list(here.parents):
+        if (p / "content").is_dir():
+            return p
+
+    # fallback: maybe script is in scripts/
+    if (here.parent.parent / "content").is_dir():
+        return here.parent.parent
+
+    return here.parent
+
+
+REPO_ROOT = find_repo_root()
+CONTENT_ROOT = (REPO_ROOT / "content").resolve()
+CACHE_FILE = (REPO_ROOT / ".cache/mt_cache.json").resolve()
+TAG_MAP_FILE = (REPO_ROOT / TAG_MAP_FILE_REL).resolve()
 
 
 def sha256(s: str) -> str:
@@ -51,7 +89,10 @@ def dump_frontmatter(data: Dict[str, Any]) -> str:
 
 def load_cache() -> Dict[str, str]:
     if CACHE_FILE.exists():
-        return json.loads(CACHE_FILE.read_text("utf-8"))
+        try:
+            return json.loads(CACHE_FILE.read_text("utf-8"))
+        except Exception:
+            return {}
     return {}
 
 
@@ -70,11 +111,15 @@ def normalize_frontmatter_keys(fm: Dict[str, Any]) -> None:
         fm["title"] = fm["title"].strip()
 
 
+def is_under_posts(rel: Path) -> bool:
+    return bool(rel.parts) and rel.parts[0] == "posts"
+
+
 def load_tag_map() -> Tuple[Dict[str, Dict[str, str]], Dict[str, str]]:
     """
     Load tag map + build reverse index.
 
-    Recommended canonical format:
+    Canonical recommended:
       building-site:
         en: Building Site
         zh: 建站
@@ -129,17 +174,65 @@ def load_tag_map() -> Tuple[Dict[str, Dict[str, str]], Dict[str, str]]:
 
 def normalize_translate_cfg(raw: Any) -> Optional[Dict[str, Any]]:
     """
-    Accept:
-      translate: {mode, targets, draft}
-    If translate missing -> None
+    Accept many formats:
+
+    1) translate: google / stub
+    2) translate: true
+    3) translate:
+         mode: google|stub
+         targets: [...]
+         draft: true|false
+    4) translate:
+         enabled: true|false
+         provider: google|stub  (provider treated as mode)
+         targets: [...]
+         draft: ...
+    5) translate:
+         enabled: true
+         targets: [...]
+         draft: ...
+       (provider/mode omitted => default google)
+
+    Returns normalized dict:
+      {mode, targets, draft}
+    or None when disabled/missing.
     """
     if raw is None:
         return None
+
+    if raw is True:
+        return {"mode": "google", "targets": None, "draft": True}
+
     if isinstance(raw, str):
-        # translate: google / stub
-        return {"mode": raw, "targets": ["zh"]}
+        return {"mode": raw.strip().lower(), "targets": None, "draft": True}
+
     if isinstance(raw, dict):
-        return raw
+        # enabled switch
+        enabled = raw.get("enabled")
+        if enabled is False:
+            return None
+
+        mode = raw.get("mode")
+        provider = raw.get("provider")
+
+        # if mode missing, allow provider
+        if (not mode) and provider:
+            mode = provider
+
+        # if both missing but enabled true -> default google
+        if (not mode) and (enabled is True):
+            mode = "google"
+
+        if not mode:
+            return None
+
+        out: Dict[str, Any] = {
+            "mode": str(mode).strip().lower(),
+            "targets": raw.get("targets"),
+            "draft": raw.get("draft"),
+        }
+        return out
+
     return None
 
 
@@ -177,17 +270,23 @@ def build_target_frontmatter(
     draft: bool,
     mode: str,
     target_lang: str,
+    rel: Path,
 ) -> Dict[str, Any]:
     """
     Create new target frontmatter.
     Minimal script control fields:
-      - kq_managed: true   (allow sync draft/translationKey later)
-      - kq_mt: true/false  (used for MT notice)
+      - kq_managed: true
+      - kq_mt: true/false
     """
     fm = dict(src_fm)
     normalize_frontmatter_keys(fm)
 
+    # remove translate config from targets
     fm.pop("translate", None)
+
+    # ✅ IMPORTANT: posts/ 下不要显式 type（避免 .Type 变成 post 导致 Archives 不收）
+    if is_under_posts(rel):
+        fm.pop("type", None)
 
     fm["translationKey"] = tk
     fm.setdefault("slug", slug)
@@ -210,7 +309,8 @@ def translate_text_google(client: translate.Client, text: str, source_lang: str,
         source_language=source_lang,
         format_="text",
     )
-    return res["translatedText"]
+    # v2 may return HTML entities
+    return html.unescape(res["translatedText"])
 
 
 def translate_title_if_needed(
@@ -233,21 +333,24 @@ def translate_title_if_needed(
     return translate_text_google(client, t.strip(), source_lang, target_lang)
 
 
-def translate_tags_dict_only(
+def translate_tags(
+    client: Optional[translate.Client],
     src_tags: Any,
     tag_map: Dict[str, Dict[str, str]],
     rev: Dict[str, str],
+    source_lang: str,
     target_lang: str,
+    mode: str,
 ) -> Optional[List[str]]:
     """
-    Tags: dictionary ONLY (no Google translation).
+    Tags:
+      1) Prefer kq_tag_map.yaml mapping (case-insensitive)
+      2) If missing (file missing OR tag not mapped for that lang) and TAGS_MT_FALLBACK:
+           - use Google MT when mode==google and client available
+      3) Else keep raw tag
 
-    Steps:
-      - reverse lookup raw tag -> canonical
-      - canonical -> tag_map[canonical][target_lang]
-      - fallback:
-          - if target_lang == "en": use canonical as display (works for old format)
-          - else keep raw
+    Note:
+      - If target_lang == "en" and canonical exists in tag_map, we can use canonical for old-format friendliness.
     """
     if not isinstance(src_tags, list) or not src_tags:
         return None
@@ -263,32 +366,59 @@ def translate_tags_dict_only(
 
         if mapped:
             out.append(mapped)
-        else:
-            if target_lang == "en" and canonical in tag_map:
-                out.append(canonical)  # old-format friendly
-            else:
-                out.append(raw)
+            continue
+
+        # old-format friendly: en display as canonical if canonical is known
+        if target_lang == "en" and canonical in tag_map:
+            out.append(canonical)
+            continue
+
+        # fallback MT
+        if TAGS_MT_FALLBACK and mode == "google" and client is not None:
+            try:
+                out.append(translate_text_google(client, raw, source_lang, target_lang))
+                continue
+            except Exception:
+                pass
+
+        out.append(raw)
 
     return out
 
 
 def main() -> None:
-    sa_json = os.environ.get("GCP_SA_KEY_JSON")
-    if not sa_json:
-        raise SystemExit("Missing env: GCP_SA_KEY_JSON (service account JSON)")
+    # ---- credentials ----
+    sa_json = os.environ.get("GCP_SA_KEY_JSON", "").strip()
+    creds = None
 
-    creds = service_account.Credentials.from_service_account_info(json.loads(sa_json))
+    if sa_json:
+        creds = service_account.Credentials.from_service_account_info(json.loads(sa_json))
+    else:
+        # allow GOOGLE_APPLICATION_CREDENTIALS=file.json
+        gac = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "").strip()
+        if gac and Path(gac).expanduser().exists():
+            creds = service_account.Credentials.from_service_account_file(str(Path(gac).expanduser()))
+
+    if creds is None:
+        raise SystemExit(
+            "Missing credentials. Set either:\n"
+            "  - GCP_SA_KEY_JSON='{\"type\":...}'\n"
+            "or\n"
+            "  - GOOGLE_APPLICATION_CREDENTIALS=/path/to/service_account.json"
+        )
+
     client = translate.Client(credentials=creds)
 
     tag_map, tag_rev = load_tag_map()
-
     cache = load_cache()
+
     created = 0
     synced = 0
     adopted = 0
     skipped_exists = 0
     updated_src = 0
     skipped_no_translate = 0
+    warned_unknown_mode = 0
 
     # ✅ Only these language folders (avoid shared/ etc)
     LANGS = {"en", "zh", "ja"}  # adjust if you add more
@@ -319,7 +449,8 @@ def main() -> None:
 
             mode = str(tcfg.get("mode", "")).strip().lower()
             if mode not in ("google", "stub"):
-                print(f"[WARN] Unknown translate.mode in {src}: {mode} (use google|stub)")
+                print(f"[WARN] Unknown translate mode/provider in {src}: {mode} (use google|stub)")
+                warned_unknown_mode += 1
                 continue
 
             targets = tcfg.get("targets")
@@ -367,6 +498,10 @@ def main() -> None:
 
                     normalize_frontmatter_keys(dst_fm)
 
+                    # ✅ IMPORTANT: posts/ 下不要显式 type
+                    if is_under_posts(rel):
+                        dst_fm.pop("type", None)
+
                     params = dst_fm.get("params")
                     looks_generated = (
                         dst_fm.get("translationKey") in (None, tk)
@@ -392,11 +527,26 @@ def main() -> None:
                         dst_fm["draft"] = bool(draft)
                         dst_fm.setdefault("translationKey", tk)
 
-                        # ✅ optional: batch-fix tags on existing translations via env var (DICT ONLY)
+                        # ✅ optional: batch-fix tags on existing translations via env var
                         if TAGS_SYNC:
-                            new_tags = translate_tags_dict_only(fm.get("tags"), tag_map, tag_rev, lang)
+                            new_tags = translate_tags(
+                                client=client,
+                                src_tags=fm.get("tags"),
+                                tag_map=tag_map,
+                                rev=tag_rev,
+                                source_lang=src_lang,
+                                target_lang=lang,
+                                mode=mode,
+                            )
                             if new_tags is not None:
                                 dst_fm["tags"] = new_tags
+
+                        # ⚠️ optional: force overwrite body for existing MT files
+                        if FORCE_MT and dst_fm.get("kq_mt") is True and mode == "google":
+                            try:
+                                dst_body = translate_text_google(client, body, src_lang, lang)
+                            except Exception as e:
+                                print(f"[WARN] FORCE_MT body translate failed: {dst} -> {e}")
 
                         dst.write_text(dump_frontmatter(dst_fm) + dst_body, "utf-8")
                         synced += 1
@@ -408,7 +558,15 @@ def main() -> None:
 
                 # ===== create new translation =====
                 dst.parent.mkdir(parents=True, exist_ok=True)
-                target_fm = build_target_frontmatter(fm, slug, tk, draft, mode, target_lang=lang)
+                target_fm = build_target_frontmatter(
+                    src_fm=fm,
+                    slug=slug,
+                    tk=tk,
+                    draft=draft,
+                    mode=mode,
+                    target_lang=lang,
+                    rel=rel,
+                )
 
                 if mode == "google":
                     target_fm.setdefault("kq_mt_from", src_lang)
@@ -419,8 +577,16 @@ def main() -> None:
                 if new_title:
                     target_fm["title"] = new_title
 
-                # ✅ Only on FIRST creation: tags from DICT ONLY
-                new_tags = translate_tags_dict_only(fm.get("tags"), tag_map, tag_rev, lang)
+                # ✅ Only on FIRST creation: tags (map first, then MT fallback)
+                new_tags = translate_tags(
+                    client=client,
+                    src_tags=fm.get("tags"),
+                    tag_map=tag_map,
+                    rev=tag_rev,
+                    source_lang=src_lang,
+                    target_lang=lang,
+                    mode=mode,
+                )
                 if new_tags is not None:
                     target_fm["tags"] = new_tags
 
@@ -440,8 +606,11 @@ def main() -> None:
 
     save_cache(cache)
     print(
-        f"Done. created={created}, synced={synced}, adopted={adopted}, "
-        f"skipped_exists={skipped_exists}, updated_src={updated_src}, skipped_no_translate={skipped_no_translate}"
+        "Done. "
+        f"created={created}, synced={synced}, adopted={adopted}, "
+        f"skipped_exists={skipped_exists}, updated_src={updated_src}, skipped_no_translate={skipped_no_translate}, "
+        f"warned_unknown_mode={warned_unknown_mode}\n"
+        f"(repo_root={REPO_ROOT})"
     )
 
 

@@ -3,7 +3,6 @@ title: 第14集 信息质量
 translationKey: ep-14-information-quality
 slug: ep-14-information-quality
 author: Qiran
-type: post
 date: 2023-08-22 15:52:36+00:00
 aliases:
 - /ep-14-information-quality/
