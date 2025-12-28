@@ -7,6 +7,10 @@ type: post
 date: 2025-04-11
 cover:
   image: img/cover-kinghwa-oldsong.png
+translate:
+  mode: google
+  targets: ["en"]
+  draft: false 
 vertical: true
 ---
 最近在折腾站点的时候，因为厌倦了系统默认的中文黑体，想找一款新的字体作为阅读字体。回想起了很久以前在赫赫文王的一篇文章当中了解到四个地区字形中文字形的差异：
