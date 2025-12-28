@@ -50,10 +50,12 @@ jobs:
 
       - name: Debug (after)
         run: |
+          echo "== exists? =="
+          ls -la content/en/2024-05-29-seven-symptons-of-leaky-gut.md || true
           echo "== git status =="
           git status --porcelain || true
-          echo "== check en file again =="
-          ls -la content/en/2024-05-29-seven-symptons-of-leaky-gut.md || true
+          echo "== check ignore =="
+          git check-ignore -v content/en/2024-05-29-seven-symptons-of-leaky-gut.md || echo "NOT ignored"
 
       - name: Commit changes (if any)
         run: |
