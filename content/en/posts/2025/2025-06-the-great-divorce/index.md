@@ -9,6 +9,10 @@ tags:
 cover:
   image: "cover.jpg"
   relative: true
+translate:
+  mode: google
+  targets: ["zh"]
+  draft: false 
 ---
 
 This is the second book by C.S. Lewis I've read after *Mere Christianity*. Though short, it took me several days to finish.
