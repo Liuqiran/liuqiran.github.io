@@ -21,7 +21,7 @@
   {{- $walineLang = "jp" -}}
 {{- end -}}
 
-{{/* ===== tkey（translationKey -> BaseFileName）===== */}}
+{{/* ===== commentPath：t:translationKey（无则文件名）===== */}}
 {{- $tkey := "" -}}
 {{- with .Params.translationKey -}}
   {{- $tkey = . -}}
@@ -31,37 +31,7 @@
 {{- $tkey = $tkey | replaceRE `\\` "" -}}
 {{- $tkey = $tkey | replaceRE `["']` "" -}}
 {{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
-{{- $legacyPath := printf "t:%s" $tkey -}}
-
-{{/* ===== canonical：固定用英文页面的 RelPermalink（让多语言共用一条线程，并且 /en/... 可打开）===== */}}
-{{- $canonicalRel := .RelPermalink -}}
-{{- range .AllTranslations -}}
-  {{- if eq .Lang "en" -}}
-    {{- $canonicalRel = .RelPermalink -}}
-  {{- end -}}
-{{- end -}}
-{{- $canonicalRel = $canonicalRel | replaceRE `/$` "" -}}
-{{- if eq $canonicalRel "" -}}{{- $canonicalRel = "/" -}}{{- end -}}
-
-{{/* ===== noPrefix：用于兼容你过渡期已经写入的“去语言前缀”线程（/reading-list）===== */}}
-{{- $noPrefixRel := $canonicalRel | replaceRE `^/(en|zh|ja)(/|$)` "/" -}}
-{{- $noPrefixRel = $noPrefixRel | replaceRE `/$` "" -}}
-{{- if eq $noPrefixRel "" -}}{{- $noPrefixRel = "/" -}}{{- end -}}
-
-{{/* ===== 只改“新文章”的 path：从这个日期起用 canonical（你可改）===== */}}
-{{- $cutover := time "2025-12-29T00:00:00+08:00" -}}
-{{- $isNew := ge .Date $cutover -}}
-
-{{/* 默认 path：旧文章 legacy；新文章 canonical */}}
-{{- $commentPath := $legacyPath -}}
-{{- if $isNew -}}
-  {{- $commentPath = $canonicalRel -}}
-{{- end -}}
-
-{{/* 最后再做一次“避坑清洗” */}}
-{{- $commentPath = $commentPath | replaceRE `\\` "" -}}
-{{- $commentPath = $commentPath | replaceRE `["']` "" -}}
-{{- $commentPath = $commentPath | replaceRE `^\s+|\s+$` "" -}}
+{{- $commentPath := printf "t:%s" $tkey -}}
 
 <style>
 /* ===== Toggle ===== */
@@ -92,6 +62,14 @@
   --waline-border-color: var(--border);
   --waline-box-shadow: none;
 }
+
+/* 可选：只让中文评论区用“老宋”（把 font-family 换成你的实际字体名） */
+/*
+html[lang^="zh"] #waline,
+html[lang^="zh"] #waline *{
+  font-family: 'KingHwa_OldSong', serif !important;
+}
+*/
 
 /* ===== FAB（TOC + Comments；移动端把 Top 收进同一列） ===== */
 .kq-fab{
@@ -159,6 +137,7 @@ html.kq-fab-on a.top-link{
 
 /* ===== iPhone 安全区 + 手机 TOC 抽屉（同时兼容没有 id 的情况） ===== */
 @media (max-width: 900px){
+  /* 把 toc-container 变成右侧抽屉（覆盖你 toc.css 里 absolute/left 的桌面逻辑） */
   #toc-container,
   aside.toc-container,
   .toc-container{
@@ -185,6 +164,7 @@ html.kq-fab-on a.top-link{
     right: 0 !important;
   }
 
+  /* toc 内部滚动 */
   #toc-container .inner,
   .toc-container .inner{
     max-height: calc(100vh - 56px);
@@ -192,11 +172,13 @@ html.kq-fab-on a.top-link{
     -webkit-overflow-scrolling: touch;
   }
 
+  /* 你的 overlay */
   html.kq-toc-open .kq-toc-overlay{
     opacity: 1;
     pointer-events: auto;
   }
 
+  /* FAB 里 Top 的数字不换行 & 居中 */
   .kq-fab a.top-link.kq-top-in-fab .topInner{
     margin: 0 !important;
     display: grid !important;
@@ -222,6 +204,7 @@ html.kq-fab-on a.top-link{
     transform: translateX(-0.5px);
   }
 }
+
 </style>
 
 <div class="comment-toggle">
@@ -252,10 +235,6 @@ html.kq-fab-on a.top-link{
   const HAS_WALINE = {{ $hasWaline | jsonify }};
   const HUGO_SERVER_RAW = {{ $server | jsonify }};
   const HUGO_PATH_RAW = {{ $commentPath | jsonify }};
-  const HUGO_CANON_REL = {{ $canonicalRel | jsonify }};
-  const HUGO_NOPREFIX_REL = {{ $noPrefixRel | jsonify }};
-  const HUGO_LEGACY = {{ $legacyPath | jsonify }};
-  const HUGO_IS_NEW = {{ $isNew | jsonify }};
   const HUGO_LANG_FALLBACK = {{ $walineLang | jsonify }};
 
   // ====== DOM ======
@@ -269,7 +248,7 @@ html.kq-fab-on a.top-link{
   const btnCmt = document.getElementById('kq-fab-cmt');
   const overlay = document.getElementById('kq-toc-overlay');
   const toc = document.getElementById('toc-container')
-    || document.querySelector('aside.toc-container, .toc-container, .toc');
+  || document.querySelector('aside.toc-container, .toc-container, .toc');
   const mqMobile = window.matchMedia('(max-width: 900px)');
 
   // ====== helpers ======
@@ -309,178 +288,87 @@ html.kq-fab-on a.top-link{
     return "en";
   }
 
-  // ====== Waline (懒加载 + 多 CDN 兜底) ======
-  let walineReady = false;
-  let walineLoading = null;
-  let walineModulePromise = null;
+// ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
+let walineReady = false;
+let walineLoading = null;
 
-  const serverURL = cleanServerURL(HUGO_SERVER_RAW);
+const serverURL = cleanServerURL(HUGO_SERVER_RAW);
+const commentPath = cleanString(HUGO_PATH_RAW);
 
-  const legacyPath = cleanString(HUGO_LEGACY);
-  const canonRel = cleanString(HUGO_CANON_REL);       // /en/xxx
-  const noPrefixRel = cleanString(HUGO_NOPREFIX_REL); // /xxx
-  const isNew = !!HUGO_IS_NEW;
+// 建议：Waline 更标准的语言码用 en-US / zh-CN / jp（不行也会自动 fallback）:contentReference[oaicite:1]{index=1}
+const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
 
-  const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
+const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
+if (!walineOK) window.__walineBadConfig = true;
 
-  const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
-  if (!walineOK) window.__walineBadConfig = true;
+// === 你的“输入框自定义文字”（按语言）===
+// 你想写多行就用 \n
+const PLACEHOLDER_MAP = {
+  "zh-CN": "当月光洒下，万物皆是低语，你听到了什么心事？",
+  "jp": "コメントどうぞ…(*^_^*)",
+  "en-US": "My words are just an invitation; your thoughts are the destination.",
+  "en": "My words are just an invitation; your thoughts are the destination. ",
+};
+const myPlaceholder = PLACEHOLDER_MAP[pageLangWaline] || "Write a comment…";
 
-  const PLACEHOLDER_MAP = {
-    "zh-CN": "当月光洒下，万物皆是低语，你听到了什么心事？",
-    "jp": "コメントどうぞ…(*^_^*)",
-    "en": "My words are just an invitation; your thoughts are the destination.",
-  };
-  const myPlaceholder = PLACEHOLDER_MAP[pageLangWaline] || "Write a comment…";
+function loadWalineCSSOnce() {
+  if (document.getElementById('kq-waline-css')) return;
 
-  // ✅ 多 CDN：优先国内更稳的 elemecdn，其次 jsDelivr，再 unpkg
-  const WALINE_CSS_CANDIDATES = [
-    "https://npm.elemecdn.com/@waline/client@v3/dist/waline.css",
-    "https://cdn.jsdelivr.net/npm/@waline/client@3/dist/waline.css",
-    "https://unpkg.com/@waline/client@v3/dist/waline.css",
-  ];
-  const WALINE_JS_CANDIDATES = [
-    "https://npm.elemecdn.com/@waline/client@v3/dist/waline.js",
-    "https://cdn.jsdelivr.net/npm/@waline/client@3/dist/waline.js",
-    "https://unpkg.com/@waline/client@v3/dist/waline.js",
-  ];
+  const link = document.createElement('link');
+  link.id = 'kq-waline-css';
+  link.rel = 'stylesheet';
+  link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
+  document.head.appendChild(link);
 
-  function loadCSSFromCandidatesOnce() {
-    if (document.getElementById('kq-waline-css')) return Promise.resolve(true);
+  // 可选：防止主题把 placeholder 透明度压没（你如果本来就正常可删）
+  if (!document.getElementById('kq-waline-ph-style')) {
+    const st = document.createElement('style');
+    st.id = 'kq-waline-ph-style';
+    st.textContent = `
+      #waline textarea::placeholder,
+      #waline input::placeholder { opacity: .85; }
+    `;
+    document.head.appendChild(st);
+  }
+}
 
-    return new Promise((resolve) => {
-      let i = 0;
-      const tryNext = () => {
-        if (i >= WALINE_CSS_CANDIDATES.length) return resolve(false);
+function ensureWaline() {
+  if (!walineOK || walineReady) return;
+  if (walineLoading) return;
 
-        const href = WALINE_CSS_CANDIDATES[i++];
-        const link = document.createElement('link');
-        link.id = 'kq-waline-css';
-        link.rel = 'stylesheet';
-        link.href = href;
+  walineLoading = (async () => {
+    loadWalineCSSOnce();
+    const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
 
-        link.onload = () => resolve(true);
-        link.onerror = () => {
-          link.remove();
-          tryNext();
-        };
+    mod.init({
+      el: "#waline",
+      serverURL,
+      path: commentPath,
+      requiredMeta: ["nick", "mail"],
+      lang: pageLangWaline,
 
-        document.head.appendChild(link);
-      };
+      // ✅ 输入框提示文字就在这里：locale.placeholder :contentReference[oaicite:2]{index=2}
+      // reactionTitle 你设为空会把“反应/表情”标题隐藏 :contentReference[oaicite:3]{index=3}
+      locale: {
+        placeholder: myPlaceholder,
+        reactionTitle: "",
+      },
 
-      tryNext();
-
-      // 可选：防止主题把 placeholder 透明度压没
-      if (!document.getElementById('kq-waline-ph-style')) {
-        const st = document.createElement('style');
-        st.id = 'kq-waline-ph-style';
-        st.textContent = `
-          #waline textarea::placeholder,
-          #waline input::placeholder { opacity: .85; }
-        `;
-        document.head.appendChild(st);
-      }
+      reaction: true,
+      dark: "body.dark",
+      imageUploader: false,
     });
-  }
 
-  async function importWalineFromCandidates() {
-    let lastErr = null;
-    for (const url of WALINE_JS_CANDIDATES) {
-      try {
-        const mod = await import(url);
-        if (mod && typeof mod.init === "function") return mod;
-        lastErr = new Error("Waline module invalid: " + url);
-      } catch (e) {
-        lastErr = e;
-      }
-    }
-    throw lastErr || new Error("Waline import failed");
-  }
-
-  function warmWalineAssets(){
-    if (!walineOK) return;
-    loadCSSFromCandidatesOnce();
-    if (!walineModulePromise) walineModulePromise = importWalineFromCandidates();
-  }
-
-  async function fetchWithTimeout(url, ms=900) {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), ms);
-    try {
-      const res = await fetch(url, { signal: ctrl.signal, credentials: "omit" });
-      return res;
-    } finally {
-      clearTimeout(t);
-    }
-  }
-
-  async function hasAnyComment(path) {
-    if (!path) return false;
-    try {
-      const u = `${serverURL}/api/comment?path=${encodeURIComponent(path)}&pageSize=1`;
-      const res = await fetchWithTimeout(u, 900);
-      if (!res.ok) return false;
-      const data = await res.json();
-      const arr = data?.data || data?.comments || data;
-      return Array.isArray(arr) ? arr.length > 0 : !!data?.data?.length;
-    } catch (e) {
-      return false;
-    }
-  }
-
-  async function resolveFinalPath() {
-    // 旧文章：固定 legacy（不探测，最快且保证旧评论）
-    if (!isNew) return legacyPath;
-
-    // 新文章：默认 canonical(/en/...)，但兼容你过渡期写入的 noPrefix(/xxx)
-    const cacheKey = "kq_waline_path_choice::" + canonRel;
-    const cached = localStorage.getItem(cacheKey);
-    if (cached) return cached;
-
-    // 只探测一次：如果 noPrefix 已经有评论，就继续用它（避免“评论突然没了”）
-    const useNoPrefix = await hasAnyComment(noPrefixRel);
-    const chosen = useNoPrefix ? noPrefixRel : canonRel;
-
-    try { localStorage.setItem(cacheKey, chosen); } catch(e){}
-    return chosen;
-  }
-
-  async function ensureWaline() {
-    if (!walineOK || walineReady) return;
-    if (walineLoading) return;
-
-    walineLoading = (async () => {
-      warmWalineAssets();
-
-      const finalPath = await resolveFinalPath();
-      const mod = walineModulePromise ? await walineModulePromise : await importWalineFromCandidates();
-      await loadCSSFromCandidatesOnce();
-
-      mod.init({
-        el: "#waline",
-        serverURL,
-        path: finalPath,
-        requiredMeta: ["nick", "mail"],
-        lang: pageLangWaline,
-        locale: {
-          placeholder: myPlaceholder,
-          reactionTitle: "",
-        },
-        reaction: true,
-        dark: "body.dark",
-        imageUploader: false,
-      });
-
-      walineReady = true;
-      walineLoading = null;
-      console.log("[Waline] inited:", { serverURL, finalPath, canonRel, noPrefixRel, legacyPath, pageLangWaline });
-    })().catch((e) => {
-      console.error("[Waline] init failed:", e);
-      window.__walineBadConfig = true;
-      walineLoading = null;
-      showGiscus(true);
-    });
-  }
+    walineReady = true;
+    walineLoading = null;
+    console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
+  })().catch((e) => {
+    console.error("[Waline] init failed:", e);
+    window.__walineBadConfig = true;
+    walineLoading = null;
+    showGiscus(true);
+  });
+}
 
   // ====== Giscus 懒加载 ======
   const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
@@ -546,13 +434,14 @@ html.kq-fab-on a.top-link{
     if (loadNow) ensureGiscus();
   }
 
+  // 暴露给 FAB
   window.__kqShowWaline = () => showWaline(true);
   window.__kqShowGiscus = () => showGiscus(true);
 
   if (btnWaline) btnWaline.onclick = () => showWaline(true);
   if (btnGiscus) btnGiscus.onclick = () => showGiscus(true);
 
-  // 首屏：先切 UI，不立刻加载；空闲预热 + 加载
+  // 首屏：先切 UI，不立刻加载；空闲再加载
   window.addEventListener('DOMContentLoaded', () => {
     const preferred = localStorage.getItem('preferredComment');
 
@@ -564,21 +453,12 @@ html.kq-fab-on a.top-link{
       deferLoad(() => ensureGiscus());
     } else {
       showWaline(false);
-      // ✅ 预热资源：让“点开评论”更快
-      deferLoad(() => warmWalineAssets());
       deferLoad(() => ensureWaline());
     }
   });
 
   // ====== FAB：TOC / Comments ======
-  function closeTOC(){
-    document.documentElement.classList.remove('kq-toc-open');
-    if (toc) {
-      const d = toc.querySelector('details');
-      if (d) d.open = false;
-    }
-  }
-
+  function closeTOC(){ document.documentElement.classList.remove('kq-toc-open'); }
   function openTOC(){
     if (!toc) return;
     const d = toc.querySelector('details');
@@ -591,15 +471,38 @@ html.kq-fab-on a.top-link{
     }
   }
 
-  function toggleTOC(){
-    const html = document.documentElement;
-    if (html.classList.contains('kq-toc-open')) closeTOC();
-    else openTOC();
+function closeTOC(){
+  document.documentElement.classList.remove('kq-toc-open');
+  // 顺便把 details 收起（否则下次打开还是展开状态）
+  if (toc) {
+    const d = toc.querySelector('details');
+    if (d) d.open = false;
   }
+}
 
-  btnTOC && btnTOC.addEventListener('click', toggleTOC);
-  overlay && overlay.addEventListener('click', closeTOC);
-  overlay && overlay.addEventListener('touchstart', closeTOC, { passive: true });
+function openTOC(){
+  if (!toc) return;
+  const d = toc.querySelector('details');
+  if (d) d.open = true;
+
+  if (mqMobile.matches) {
+    document.documentElement.classList.add('kq-toc-open');
+  } else {
+    toc.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+function toggleTOC(){
+  const html = document.documentElement;
+  if (html.classList.contains('kq-toc-open')) closeTOC();
+  else openTOC();
+}
+
+btnTOC && btnTOC.addEventListener('click', toggleTOC);
+
+// 遮罩：click + touchstart（手机更稳）
+overlay && overlay.addEventListener('click', closeTOC);
+overlay && overlay.addEventListener('touchstart', closeTOC, { passive: true });
 
   toc && toc.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
@@ -609,13 +512,14 @@ html.kq-fab-on a.top-link{
   btnCmt && btnCmt.addEventListener('click', () => {
     closeTOC();
 
-    const preferred = localStorage.getItem('preferredComment');
-    const canWaline = walineContainer && walineOK;
-    const canGiscus = !!giscusContainer;
+const preferred = localStorage.getItem('preferredComment');
+const canWaline = walineContainer && walineOK;
+const canGiscus = !!giscusContainer;
 
-    if (preferred === 'giscus' && canGiscus) showGiscus(true);
-    else if (canWaline) showWaline(true);
-    else if (canGiscus) showGiscus(true);
+if (preferred === 'giscus' && canGiscus) showGiscus(true);
+else if (canWaline) showWaline(true);
+else if (canGiscus) showGiscus(true);
+
 
     const active = document.querySelector('.comment-system.active');
     const target =
@@ -626,64 +530,72 @@ html.kq-fab-on a.top-link{
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-  window.addEventListener('DOMContentLoaded', () => {
-    if (!fab) return;
+window.addEventListener('DOMContentLoaded', () => {
+  if (!fab) return;
 
-    if (!toc && btnTOC) btnTOC.remove();
+  // 1) 没 TOC 删 ☰
+  if (!toc && btnTOC) btnTOC.remove();
 
-    const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
-    if (!hasAnyComment && btnCmt) btnCmt.remove();
+  // 2) 没评论系统删 💬
+  const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
+  if (!hasAnyComment && btnCmt) btnCmt.remove();
 
-    const hasAnyControl = !!fab.querySelector('button, a');
-    const html = document.documentElement;
+  // 3) 是否还有控件
+  const hasAnyControl = !!fab.querySelector('button, a');
 
-    function syncFabOffset(){
-      const h = fab ? fab.getBoundingClientRect().height : 0;
-      html.style.setProperty('--kq-fab-h', h ? `${Math.ceil(h)}px` : '0px');
-    }
+  const html = document.documentElement;
 
-    if (hasAnyControl) {
-      fab.classList.add('is-on');
-      html.classList.add('kq-fab-on');
+  function syncFabOffset(){
+    const h = fab ? fab.getBoundingClientRect().height : 0;
+    html.style.setProperty('--kq-fab-h', h ? `${Math.ceil(h)}px` : '0px');
+  }
 
-      const topLink = document.querySelector('a.top-link');
-      let topLinkHome = null;
-      let topLinkNext = null;
+  if (hasAnyControl) {
+    fab.classList.add('is-on');
+    html.classList.add('kq-fab-on');
 
-      function syncTopLinkPlacement(){
-        if (!topLink) return;
+ // ✅ 移动端：把主题的“返回顶部”按钮塞进 FAB，三按钮同栈竖排
+    const topLink = document.querySelector('a.top-link');
+    let topLinkHome = null;
+    let topLinkNext = null;
 
-        if (mqMobile.matches) {
-          if (!fab.contains(topLink)) {
-            topLinkHome = topLinkHome || topLink.parentElement;
-            topLinkNext = topLinkNext || topLink.nextSibling;
+    function syncTopLinkPlacement(){
+      if (!topLink) return;
 
-            topLink.classList.add('kq-top-in-fab');
-            fab.appendChild(topLink);
-          }
-        } else {
-          if (topLinkHome && topLink.classList.contains('kq-top-in-fab')) {
-            topLink.classList.remove('kq-top-in-fab');
-            topLinkHome.insertBefore(topLink, topLinkNext);
-          }
+      if (mqMobile.matches) {
+        // 只在手机塞进去
+        if (!fab.contains(topLink)) {
+          topLinkHome = topLinkHome || topLink.parentElement;
+          topLinkNext = topLinkNext || topLink.nextSibling;
+
+          topLink.classList.add('kq-top-in-fab');
+          fab.appendChild(topLink);
         }
-
-        requestAnimationFrame(syncFabOffset);
+      } else {
+        // 桌面：放回原位置（可选，但建议保留）
+        if (topLinkHome && topLink.classList.contains('kq-top-in-fab')) {
+          topLink.classList.remove('kq-top-in-fab');
+          topLinkHome.insertBefore(topLink, topLinkNext);
+        }
       }
 
-      syncTopLinkPlacement();
-      mqMobile.addEventListener('change', syncTopLinkPlacement);
-
       requestAnimationFrame(syncFabOffset);
-
-      window.addEventListener('resize', () => {
-        if (html.classList.contains('kq-fab-on')) requestAnimationFrame(syncFabOffset);
-      }, { passive: true });
-    } else {
-      fab.classList.remove('is-on');
-      html.classList.remove('kq-fab-on');
-      syncFabOffset();
     }
-  });
+
+    syncTopLinkPlacement();
+    mqMobile.addEventListener('change', syncTopLinkPlacement);
+
+    // 等一帧让 display:flex 生效再测高度
+    requestAnimationFrame(syncFabOffset);
+
+    window.addEventListener('resize', () => {
+      if (html.classList.contains('kq-fab-on')) requestAnimationFrame(syncFabOffset);
+    }, { passive: true });
+  } else {
+    fab.classList.remove('is-on');
+    html.classList.remove('kq-fab-on');
+    syncFabOffset();
+  }
+});
 })();
 </script>
