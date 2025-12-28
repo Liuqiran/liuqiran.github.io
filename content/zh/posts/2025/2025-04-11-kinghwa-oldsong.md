@@ -6,7 +6,7 @@ author: Qiran
 type: post
 date: 2025-04-11
 cover:
-  image: img/cover-kinghwa-oldsong.png
+  image: /img/cover-kinghwa-oldsong.png
 translate:
   mode: google
   targets: ["en"]
