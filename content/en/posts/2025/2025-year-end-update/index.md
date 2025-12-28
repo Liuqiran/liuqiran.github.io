@@ -16,8 +16,6 @@ translate:
   mode: google
   targets: ["zh"]
   draft: false
-kq_managed: true
-kq_mt: true
 ---          
 
 After several days of burning the midnight oil, I finally finished migrating my commenting system, adding custom buttons to my site, and implementing several other features.
