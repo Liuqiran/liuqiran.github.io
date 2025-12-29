@@ -436,25 +436,7 @@ function ensureWaline() {
     walineLoading = null;
     showGiscus(true);
   });
-}
-
-
-    obs.observe(btn, {
-      attributes: true,
-      attributeFilter: ['title', 'class', 'aria-pressed'],
-      childList: true,
-      subtree: true
-    });
-
-    // 超时兜底：最多等 1.6s
-    setTimeout(() => {
-      if (done) return;
-      try { obs.disconnect(); } catch(_) {}
-      lockMap.set(key, Date.now() + 400);
-    }, 1600);
-  }, true);
-})();
-
+  
   // ====== Giscus 懒加载 ======
   const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
   const GISCUS_REPO_ID = "R_kgDONiVddQ";
@@ -684,6 +666,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 })();
 </script>
+
 
 
 
