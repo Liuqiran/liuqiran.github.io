@@ -358,78 +358,82 @@ function ensureWaline() {
       dark: "body.dark",
       imageUploader: false,
     });
-// === KQ patch: 防止同窗口对“评论点赞(❤️)”连续点击造成多次计数 ===
-(function bindLikeGuard(){
+// === KQ patch: Waline 评论点赞(❤️) 支持 toggle + 防连点/抖动 ===
+(function bindWalineLikeToggle(){
   const root = document.getElementById('waline');
   if (!root) return;
 
-  const LS_PREFIX = `kq_like_once::${commentPath}::`;
-  const pending = new Set(); // 防止网络慢时重复点
+  const LOCK_MS = 800;        // 连点锁
+  const WAIT_DOM_MS = 1200;   // 等待 DOM 状态更新的最长时间
+  const lockMap = new Map();  // key -> unlockAt
 
+  function findCommentKey(btn){
+    // 尽量找最近的“评论容器 id/data-id”
+    const node = btn.closest('[data-id],[data-cid],[data-commentid],[id]');
+    return (
+      node?.getAttribute('data-id') ||
+      node?.getAttribute('data-cid') ||
+      node?.getAttribute('data-commentid') ||
+      node?.id ||
+      // 兜底：同页位置（不完美，但比没有强）
+      ('pos_' + Array.from(root.querySelectorAll('button.wl-like')).indexOf(btn))
+    );
+  }
+
+  function isLiked(btn){
+  const t = (btn.getAttribute('title') || '').toLowerCase();
+  const aria = (btn.getAttribute('aria-pressed') || '').toLowerCase();
+  if (aria === 'true') return true;
+  if (t.includes('cancel') || t.includes('取消')) return true;
+  return btn.classList.contains('active') || btn.classList.contains('is-active');
+}
   root.addEventListener('click', (e) => {
-    // Waline v3: 点赞按钮通常在 comment actions 区域，class/结构可能不同，所以用“宽松但更安全”的规则：
-    const btn = e.target.closest?.('button, a, span, svg');
+    const btn = e.target.closest?.('button.wl-like');
     if (!btn) return;
 
-    // 尝试识别“like/赞”按钮：优先 aria-label / title / data-*
-    const label = (
-      btn.getAttribute?.('aria-label') ||
-      btn.getAttribute?.('title') ||
-      btn.dataset?.action ||
-      btn.dataset?.type ||
-      ''
-    ).toLowerCase();
+    const key = findCommentKey(btn);
+    const now = Date.now();
 
-    // 兜底：如果按钮附近包含 ❤️ 或 "like/赞" 字样
-    const nearText = (btn.textContent || '').trim().toLowerCase();
-
-    const looksLike = (
-      label.includes('like') || label.includes('赞') || label.includes('点赞') ||
-      nearText.includes('like') || nearText.includes('赞') || nearText.includes('❤️')
-    );
-
-    if (!looksLike) return;
-
-    // 找到这条评论的唯一 id（Waline 通常会在评论节点上带 data-id / id / data-cid 等）
-    const commentNode = e.target.closest?.('[data-id],[data-cid],[id^="wl-comment"],.wl-comment,.wl-card,.wl-panel');
-    if (!commentNode) return;
-
-    const cid =
-      commentNode.getAttribute('data-id') ||
-      commentNode.getAttribute('data-cid') ||
-      commentNode.id ||
-      '';
-
-    if (!cid) return;
-
-    const key = LS_PREFIX + cid;
-
-    // 1) 已点过：直接拦截（避免再次 +1）
-    if (localStorage.getItem(key) === '1') {
+    // 1) 防连点：锁住一小段时间
+    const unlockAt = lockMap.get(key) || 0;
+    if (now < unlockAt) {
       e.preventDefault();
       e.stopPropagation();
       return;
     }
+    lockMap.set(key, now + LOCK_MS);
 
-    // 2) 网络未返回前：也拦截连点
-    if (pending.has(key)) {
-      e.preventDefault();
-      e.stopPropagation();
-      return;
-    }
+    // 2) 让这次点击正常放行（点赞或取消）
+    // 3) 但在 DOM 状态真正翻转前，继续屏蔽后续点击，避免“狂点+回退”
+    const beforeLiked = isLiked(btn);
 
-    pending.add(key);
+    // 用 MutationObserver 等待 title 从 Like <-> Cancel like 切换
+    let done = false;
+    const obs = new MutationObserver(() => {
+      const afterLiked = isLiked(btn);
+      if (afterLiked !== beforeLiked) {
+        done = true;
+        obs.disconnect();
+        // 状态已翻转：允许下一次操作
+        lockMap.set(key, Date.now() + 250);
+      }
+    });
 
-    // 先放行这次点击，让 Waline 正常发请求
-    // 然后很快把“已点过”落盘，避免双击/连点
+    obs.observe(btn, {
+  attributes: true,
+  attributeFilter: ['title', 'class', 'aria-pressed'],
+  childList: true,
+  subtree: true
+});
+
+    // 超时兜底：即使没观察到变化，也别永久锁
     setTimeout(() => {
-      try { localStorage.setItem(key, '1'); } catch (_) {}
-      pending.delete(key);
-    }, 1200);
+      if (done) return;
+      try { obs.disconnect(); } catch(_) {}
+      lockMap.set(key, Date.now() + 250);
+    }, WAIT_DOM_MS);
   }, true);
 })();
-
-
     walineReady = true;
     walineLoading = null;
     console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
@@ -670,5 +674,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 })();
 </script>
+
 
 
