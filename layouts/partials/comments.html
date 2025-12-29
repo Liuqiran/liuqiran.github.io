@@ -284,10 +284,14 @@ html.kq-fab-on a.top-link{
     if (l.startsWith("ja") || l.startsWith("jp")) return "ja";
     return "en";
   } 
-
+  // ✅ 关键：Waline UI 语言（你下面 PLACEHOLDER_MAP 要用它）
+  const pageLangWaline = normalizeWalineLang(
+    document.documentElement.lang || HUGO_LANG_FALLBACK || "en"
+  );
     // ====== from Hugo -> runtime values ======
   const serverURL = cleanServerURL(HUGO_SERVER_RAW);
   const commentPath = cleanString(HUGO_PATH_RAW).replace(/[?#].*$/, "").replace(/\/+$/, "") + "/";
+  const walineOK = !!HAS_WALINE && !!walineContainer && isValidHttpUrl(serverURL);
 
   // Waline 是否可用（serverURL 必须是 http/https）
   const walineOK = !!HAS_WALINE && isValidHttpUrl(serverURL);
@@ -584,6 +588,7 @@ html.kq-fab-on a.top-link{
   });
 })();
 </script>
+
 
 
 
