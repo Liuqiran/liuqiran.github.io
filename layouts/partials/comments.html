@@ -358,6 +358,53 @@ function ensureWaline() {
       dark: "body.dark",
       imageUploader: false,
     });
+// === KQ patch: 防止同窗口反复点 reaction 造成多次计数 ===
+(function bindReactionGuard(){
+  const root = document.getElementById('waline'); // mount 点
+  if (!root) return;
+
+  const LS_PREFIX = `kq_react_once::${commentPath}::`;
+  let lastClickAt = 0;
+
+  root.addEventListener('click', (e) => {
+    // 只处理 reaction 区域内的点击
+    const reactionWrap = e.target.closest?.('.wl-reaction, .wl-reaction-list, [data-waline-reaction]');
+    if (!reactionWrap) return;
+
+    const btn = e.target.closest?.('button, [data-reaction]');
+    if (!btn) return;
+
+    const now = Date.now();
+
+    // 节流：防止连点/双击
+    if (now - lastClickAt < 800) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+
+    // 生成 key（尽量稳定）
+    const key =
+      btn.getAttribute('data-reaction') ||
+      btn.getAttribute('aria-label') ||
+      btn.textContent?.trim();
+
+    if (!key) return; // 没 key 就不拦
+
+    const lsKey = LS_PREFIX + key;
+
+    // 已点过：拦截
+    if (localStorage.getItem(lsKey) === '1') {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+
+    // 首次点：记录
+    localStorage.setItem(lsKey, '1');
+    lastClickAt = now;
+  }, true);
+})();
 
     walineReady = true;
     walineLoading = null;
@@ -599,3 +646,4 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 })();
 </script>
+
