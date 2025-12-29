@@ -21,13 +21,15 @@
   {{- $walineLang = "jp" -}}
 {{- end -}}  
   
-{{/* ===== commentPath：按页面实际链接分线程（中英彻底分开）===== */}}
+{{/* ===== commentPath：统一“无尾斜杠”，兼容你历史数据 ===== */}}
 {{- $commentPath := .RelPermalink -}}
 {{- $commentPath = $commentPath | replaceRE `#.*$` "" -}}
 {{- $commentPath = $commentPath | replaceRE `\?.*$` "" -}}
 {{- $commentPath = $commentPath | replaceRE `\s+` "" -}}
-{{- if not (hasSuffix $commentPath "/") -}}
-  {{- $commentPath = printf "%s/" $commentPath -}}
+
+{{/* 去掉尾部 / ，但保留根路径 "/" */}}
+{{- if and (ne $commentPath "/") (hasSuffix $commentPath "/") -}}
+  {{- $commentPath = substr $commentPath 0 (sub (len $commentPath) 1) -}}
 {{- end -}}
 
 <style>
@@ -290,7 +292,9 @@ html.kq-fab-on a.top-link{
   );
     // ====== from Hugo -> runtime values ======
   const serverURL = cleanServerURL(HUGO_SERVER_RAW);
-  const commentPath = cleanString(HUGO_PATH_RAW).replace(/[?#].*$/, "").replace(/\/+$/, "") + "/";
+  let commentPath = cleanString(HUGO_PATH_RAW).replace(/[?#].*$/, "");
+  commentPath = commentPath === "/" ? "/" : commentPath.replace(/\/+$/, "");
+
 
     // ✅ 不要重复声明：先 let，再赋值
   let walineOK = false;
@@ -589,6 +593,7 @@ html.kq-fab-on a.top-link{
   });
 })();
 </script>
+
 
 
 
