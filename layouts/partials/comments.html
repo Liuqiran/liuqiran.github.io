@@ -38,13 +38,25 @@
 
 {{- $cut := time "2025-12-28T00:00:00-05:00" -}} {{/* America/New_York */}}
 {{- $isNew := ge .Date $cut -}}
-
 {{- $commentPath := "" -}}
 {{- if $isNew -}}
   {{- $commentPath = .RelPermalink -}}
 {{- else -}}
-  {{- $commentPath = printf "t:%s" $tkey -}}
+  {{- $zh := "" -}}
+  {{- range .AllTranslations -}}
+    {{- if eq .Lang "zh" -}}
+      {{- $zh = .RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $zh -}}
+    {{- $commentPath = $zh -}}
+  {{- else -}}
+    {{- $commentPath = .RelPermalink -}} {{/* 没有中文版本就退回当前页 */}}
+  {{- end -}}
 {{- end -}}
+
+{{- $commentPath = $commentPath | replaceRE `/+$` "" -}}
+
 
 {{- /* 统一清理末尾 /，避免同页因带不带 / 分裂 */ -}}
 {{- $commentPath = $commentPath | replaceRE `/+$` "" -}}
@@ -603,6 +615,7 @@ html.kq-fab-on a.top-link{
   });
 })();
 </script>
+
 
 
 
