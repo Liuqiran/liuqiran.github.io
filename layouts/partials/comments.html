@@ -358,53 +358,77 @@ function ensureWaline() {
       dark: "body.dark",
       imageUploader: false,
     });
-// === KQ patch: 防止同窗口反复点 reaction 造成多次计数 ===
-(function bindReactionGuard(){
-  const root = document.getElementById('waline'); // mount 点
+// === KQ patch: 防止同窗口对“评论点赞(❤️)”连续点击造成多次计数 ===
+(function bindLikeGuard(){
+  const root = document.getElementById('waline');
   if (!root) return;
 
-  const LS_PREFIX = `kq_react_once::${commentPath}::`;
-  let lastClickAt = 0;
+  const LS_PREFIX = `kq_like_once::${commentPath}::`;
+  const pending = new Set(); // 防止网络慢时重复点
 
   root.addEventListener('click', (e) => {
-    // 只处理 reaction 区域内的点击
-    const reactionWrap = e.target.closest?.('.wl-reaction, .wl-reaction-list, [data-waline-reaction]');
-    if (!reactionWrap) return;
-
-    const btn = e.target.closest?.('button, [data-reaction]');
+    // Waline v3: 点赞按钮通常在 comment actions 区域，class/结构可能不同，所以用“宽松但更安全”的规则：
+    const btn = e.target.closest?.('button, a, span, svg');
     if (!btn) return;
 
-    const now = Date.now();
+    // 尝试识别“like/赞”按钮：优先 aria-label / title / data-*
+    const label = (
+      btn.getAttribute?.('aria-label') ||
+      btn.getAttribute?.('title') ||
+      btn.dataset?.action ||
+      btn.dataset?.type ||
+      ''
+    ).toLowerCase();
 
-    // 节流：防止连点/双击
-    if (now - lastClickAt < 800) {
+    // 兜底：如果按钮附近包含 ❤️ 或 "like/赞" 字样
+    const nearText = (btn.textContent || '').trim().toLowerCase();
+
+    const looksLike = (
+      label.includes('like') || label.includes('赞') || label.includes('点赞') ||
+      nearText.includes('like') || nearText.includes('赞') || nearText.includes('❤️')
+    );
+
+    if (!looksLike) return;
+
+    // 找到这条评论的唯一 id（Waline 通常会在评论节点上带 data-id / id / data-cid 等）
+    const commentNode = e.target.closest?.('[data-id],[data-cid],[id^="wl-comment"],.wl-comment,.wl-card,.wl-panel');
+    if (!commentNode) return;
+
+    const cid =
+      commentNode.getAttribute('data-id') ||
+      commentNode.getAttribute('data-cid') ||
+      commentNode.id ||
+      '';
+
+    if (!cid) return;
+
+    const key = LS_PREFIX + cid;
+
+    // 1) 已点过：直接拦截（避免再次 +1）
+    if (localStorage.getItem(key) === '1') {
       e.preventDefault();
       e.stopPropagation();
       return;
     }
 
-    // 生成 key（尽量稳定）
-    const key =
-      btn.getAttribute('data-reaction') ||
-      btn.getAttribute('aria-label') ||
-      btn.textContent?.trim();
-
-    if (!key) return; // 没 key 就不拦
-
-    const lsKey = LS_PREFIX + key;
-
-    // 已点过：拦截
-    if (localStorage.getItem(lsKey) === '1') {
+    // 2) 网络未返回前：也拦截连点
+    if (pending.has(key)) {
       e.preventDefault();
       e.stopPropagation();
       return;
     }
 
-    // 首次点：记录
-    localStorage.setItem(lsKey, '1');
-    lastClickAt = now;
+    pending.add(key);
+
+    // 先放行这次点击，让 Waline 正常发请求
+    // 然后很快把“已点过”落盘，避免双击/连点
+    setTimeout(() => {
+      try { localStorage.setItem(key, '1'); } catch (_) {}
+      pending.delete(key);
+    }, 1200);
   }, true);
 })();
+
 
     walineReady = true;
     walineLoading = null;
@@ -646,4 +670,5 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 })();
 </script>
+
 
