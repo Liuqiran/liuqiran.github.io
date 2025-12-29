@@ -20,8 +20,12 @@
 {{- else if or (hasPrefix $langRaw "ja") (hasPrefix $langRaw "jp") -}}
   {{- $walineLang = "jp" -}}
 {{- end -}}
+{{/* ===== comment identity =====
+  旧文章：沿用 t:translationKey（多语言共用旧线程）
+  新文章：用 .RelPermalink（按语言分开）
+  分界：2026-01-01（可改）
+===== */}}
 
-{{/* ===== commentPath：t:translationKey（无则文件名）===== */}}
 {{- $tkey := "" -}}
 {{- with .Params.translationKey -}}
   {{- $tkey = . -}}
@@ -31,7 +35,20 @@
 {{- $tkey = $tkey | replaceRE `\\` "" -}}
 {{- $tkey = $tkey | replaceRE `["']` "" -}}
 {{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
-{{- $commentPath := printf "t:%s" $tkey -}}
+
+{{- $cut := time "2025-12-30T00:00:00-05:00" -}} {{/* America/New_York */}}
+{{- $isNew := ge .Date $cut -}}
+
+{{- $commentPath := "" -}}
+{{- if $isNew -}}
+  {{- $commentPath = .RelPermalink -}}
+{{- else -}}
+  {{- $commentPath = printf "t:%s" $tkey -}}
+{{- end -}}
+
+{{- /* 统一清理末尾 /，避免同页因带不带 / 分裂 */ -}}
+{{- $commentPath = $commentPath | replaceRE `/+$` "" -}}
+
 
 <style>
 /* ===== Toggle ===== */
@@ -586,6 +603,7 @@ html.kq-fab-on a.top-link{
   });
 })();
 </script>
+
 
 
 
