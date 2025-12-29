@@ -20,18 +20,18 @@ cover:
 
 # 🌏 Learning Process (Until 2025-12-29)
 
-Days studied:	⁨178⁩ of ⁨180⁩ (⁨98.89⁩%)
-Total:	⁨290.08⁩ hours
-Average over period:	⁨97⁩ minutes/day
-Average for days studied:	⁨98⁩ minutes/day
-Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)   
+Days studied:	⁨178⁩ of ⁨180⁩ (⁨98.89⁩%)   
+Total:	⁨290.08⁩ hours   
+Average over period:	⁨97⁩ minutes/day   
+Average for days studied:	⁨98⁩ minutes/day   
+Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)       
 
 # 🖥️ Building Site plan 
 
-1. Fix Hugo backend comment URLs
-2. Optimize word count statistics
-3. Add email subscription feature
-
+- 1. Fix Hugo backend comment URLs
+- 2. Optimize word count statistics
+- 3. Add email subscription feature
+  
 # 🌳 Building Habits
 
 > - The **Overall Habit Score** is the total score of all habits recorded using the [Loop Habit Tracker](https://loophabits.org/).
