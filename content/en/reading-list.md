@@ -4,8 +4,7 @@ translationKey: reading-list
 slug: "reading-list"
 author: Qiran
 type: page
-date: 2023-02-10  
-lastmod: 2025-12-24 
+date: 2023-12-29  
 cover:
   image: /uploads/2023/09/books-scaled.jpg
 ---
