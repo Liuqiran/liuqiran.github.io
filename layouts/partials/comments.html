@@ -23,7 +23,12 @@
   
 {{/* ===== commentPath：按页面实际链接分线程（中英彻底分开）===== */}}
 {{- $commentPath := .RelPermalink -}}
-{{- $commentPath = $commentPath | replaceRE `/+$` "" -}}
+{{- $commentPath = $commentPath | replaceRE `#.*$` "" -}}
+{{- $commentPath = $commentPath | replaceRE `\?.*$` "" -}}
+{{- $commentPath = $commentPath | replaceRE `\s+` "" -}}
+{{- if not (hasSuffix $commentPath "/") -}}
+  {{- $commentPath = printf "%s/" $commentPath -}}
+{{- end -}}
 
 <style>
 /* ===== Toggle ===== */
@@ -278,18 +283,19 @@ html.kq-fab-on a.top-link{
     if (l.startsWith("zh")) return "zh-CN";
     if (l.startsWith("ja") || l.startsWith("jp")) return "ja";
     return "en";
-  }
+  } 
+
+    // ====== from Hugo -> runtime values ======
+  const serverURL = cleanServerURL(HUGO_SERVER_RAW);
+  const commentPath = cleanString(HUGO_PATH_RAW).replace(/[?#].*$/, "").replace(/\/+$/, "") + "/";
+
+  // Waline 是否可用（serverURL 必须是 http/https）
+  const walineOK = !!HAS_WALINE && isValidHttpUrl(serverURL);
+
 
   // ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
   let walineReady = false;
   let walineLoading = null;
-
-  const serverURL = cleanServerURL(HUGO_SERVER_RAW);
-  const commentPath = cleanString(HUGO_PATH_RAW);
-  const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
-
-  const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
-  if (!walineOK) window.__walineBadConfig = true;
 
   const PLACEHOLDER_MAP = {
     "zh-CN": "当月光洒下，万物皆是低语，你听到了什么心事？",
@@ -578,6 +584,7 @@ html.kq-fab-on a.top-link{
   });
 })();
 </script>
+
 
 
 
