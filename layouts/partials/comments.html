@@ -358,92 +358,88 @@ function ensureWaline() {
       dark: "body.dark",
       imageUploader: false,
     });
-// === KQ patch: Waline 评论点赞(❤️) 支持 toggle + 防连点/抖动 ===
+// === KQ patch v2: wl-like toggle + “先锁后点” 防狂点（保证一次只发一个）===
 (function bindWalineLikeToggle(){
   const root = document.getElementById('waline');
   if (!root) return;
 
-  const LOCK_MS = 800;        // 连点锁
-  const WAIT_DOM_MS = 1200;   // 等待 DOM 状态更新的最长时间
-  const lockMap = new Map();  // key -> unlockAt
+  // 连点锁 & “强制只放行一次”
+  const LOCK_MS = 1200;     // 比之前更长一点，确保第二下进不来
+  const lockMap = new Map(); // key -> unlockAt
 
   function findCommentKey(btn){
-    // 尽量找最近的“评论容器 id/data-id”
     const node = btn.closest('[data-id],[data-cid],[data-commentid],[id]');
     return (
       node?.getAttribute('data-id') ||
       node?.getAttribute('data-cid') ||
       node?.getAttribute('data-commentid') ||
       node?.id ||
-      // 兜底：同页位置（不完美，但比没有强）
       ('pos_' + Array.from(root.querySelectorAll('button.wl-like')).indexOf(btn))
     );
   }
 
   function isLiked(btn){
-  const t = (btn.getAttribute('title') || '').toLowerCase();
-  const aria = (btn.getAttribute('aria-pressed') || '').toLowerCase();
-  if (aria === 'true') return true;
-  if (t.includes('cancel') || t.includes('取消')) return true;
-  return btn.classList.contains('active') || btn.classList.contains('is-active');
-}
-  root.addEventListener('click', (e) => {
+    const t = (btn.getAttribute('title') || '').toLowerCase();
+    const aria = (btn.getAttribute('aria-pressed') || '').toLowerCase();
+    if (aria === 'true') return true;
+    if (t.includes('cancel') || t.includes('取消')) return true;
+    return btn.classList.contains('active') || btn.classList.contains('is-active');
+  }
+
+  // ✅ 关键：在 pointerdown 就锁住（比 click 更早）
+  root.addEventListener('pointerdown', (e) => {
     const btn = e.target.closest?.('button.wl-like');
     if (!btn) return;
 
     const key = findCommentKey(btn);
     const now = Date.now();
-
-    // 1) 防连点：锁住一小段时间
     const unlockAt = lockMap.get(key) || 0;
+
+    // 锁期间：直接吞掉后续按下（连点/双击都进不来）
     if (now < unlockAt) {
       e.preventDefault();
       e.stopPropagation();
       return;
     }
+
+    // 先锁住，再允许这一次后续 click 继续走
     lockMap.set(key, now + LOCK_MS);
+  }, true);
 
-    // 2) 让这次点击正常放行（点赞或取消）
-    // 3) 但在 DOM 状态真正翻转前，继续屏蔽后续点击，避免“狂点+回退”
-    const beforeLiked = isLiked(btn);
+  // click 阶段：等待状态翻转后稍微提前解锁，保证 toggle 体验顺滑
+  root.addEventListener('click', (e) => {
+    const btn = e.target.closest?.('button.wl-like');
+    if (!btn) return;
 
-    // 用 MutationObserver 等待 title 从 Like <-> Cancel like 切换
+    const key = findCommentKey(btn);
+    const before = isLiked(btn);
+
     let done = false;
     const obs = new MutationObserver(() => {
-      const afterLiked = isLiked(btn);
-      if (afterLiked !== beforeLiked) {
+      const after = isLiked(btn);
+      if (after !== before) {
         done = true;
         obs.disconnect();
-        // 状态已翻转：允许下一次操作
+        // 状态翻转后，250ms 后允许下一次操作（用于“取消/再赞”）
         lockMap.set(key, Date.now() + 250);
       }
     });
 
     obs.observe(btn, {
-  attributes: true,
-  attributeFilter: ['title', 'class', 'aria-pressed'],
-  childList: true,
-  subtree: true
-});
+      attributes: true,
+      attributeFilter: ['title', 'class', 'aria-pressed'],
+      childList: true,
+      subtree: true
+    });
 
-    // 超时兜底：即使没观察到变化，也别永久锁
+    // 超时兜底：最多等 1.6s
     setTimeout(() => {
       if (done) return;
       try { obs.disconnect(); } catch(_) {}
-      lockMap.set(key, Date.now() + 250);
-    }, WAIT_DOM_MS);
+      lockMap.set(key, Date.now() + 400);
+    }, 1600);
   }, true);
 })();
-    walineReady = true;
-    walineLoading = null;
-    console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
-  })().catch((e) => {
-    console.error("[Waline] init failed:", e);
-    window.__walineBadConfig = true;
-    walineLoading = null;
-    showGiscus(true);
-  });
-}
 
   // ====== Giscus 懒加载 ======
   const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
@@ -674,6 +670,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 })();
 </script>
+
 
 
 
