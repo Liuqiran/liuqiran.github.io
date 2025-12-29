@@ -11,20 +11,22 @@ cover:
 ---
 > This is what I’m currently focused on. Inspired by [nownownow.com](https://nownownow.com/about).
 >
-> A website with a link that says “now” goes to a page that tells you what this person is focused on at this point in their life.
+> A website with a link that says “now” goes to a page that tells you what this person is focused on at this point in their life.   
+> **I usually update every Sunday, please remind me.**
 
 <!--<div style="clear: both;">-->
 <!--<iframe src="https://twisty-change-610.notion.site/ebd/1fc21e6176cd8080be08ea1b2214e8b3?v=1fc21e6176cd813b966e000c20634f61" width="100%" height="600" frameborder="0" allowfullscreen></iframe>-->   
-<!--</div>-->
+<!--</div>-->  
 
 
-# 🌏 Learning Process (Until 2025-12-29)
+# 🌏 Learning Process (2025-12-29)
 
-Days studied:	⁨178⁩ of ⁨180⁩ (⁨98.89⁩%)   
-Total:	⁨290.08⁩ hours   
+Days studied:	⁨179⁩ of ⁨180⁩ (⁨99.44⁩%)   
+Total:	⁨290.37⁩ hours   
 Average over period:	⁨97⁩ minutes/day   
-Average for days studied:	⁨98⁩ minutes/day   
-Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)       
+Average for days studied:	⁨97⁩ minutes/day  
+Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)   
+
 
 # 🖥️ Building Site plan 
 
