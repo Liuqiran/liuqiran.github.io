@@ -5,7 +5,7 @@ slug: "now"
 author: Qiran
 type: page
 date: 2025-10-01  
-lastmod: 2025-12-25
+lastmod: 2025-12-29
 cover:  
   image: "/img/clock-wall.jpg"
 ---
@@ -18,10 +18,13 @@ cover:
 <!--</div>-->
 
 
-# 🌏 Learning Process (Until 2025-12-22)
+# 🌏 Learning Process (Until 2025-12-29)
 
-![Anki Statistics](stats.png)
-
+Days studied:	⁨178⁩ of ⁨180⁩ (⁨98.89⁩%)
+Total:	⁨290.08⁩ hours
+Average over period:	⁨97⁩ minutes/day
+Average for days studied:	⁨98⁩ minutes/day
+Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)
 
 # 🌳 Building Habits
 
