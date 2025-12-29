@@ -291,11 +291,12 @@ html.kq-fab-on a.top-link{
     // ====== from Hugo -> runtime values ======
   const serverURL = cleanServerURL(HUGO_SERVER_RAW);
   const commentPath = cleanString(HUGO_PATH_RAW).replace(/[?#].*$/, "").replace(/\/+$/, "") + "/";
-  const walineOK = !!HAS_WALINE && !!walineContainer && isValidHttpUrl(serverURL);
 
-  // Waline 是否可用（serverURL 必须是 http/https）
-  const walineOK = !!HAS_WALINE && isValidHttpUrl(serverURL);
+    // ✅ 不要重复声明：先 let，再赋值
+  let walineOK = false;
+  walineOK = !!HAS_WALINE && !!walineContainer && isValidHttpUrl(serverURL);
 
+  if (!walineOK) window.__walineBadConfig = true;
 
   // ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
   let walineReady = false;
@@ -588,6 +589,7 @@ html.kq-fab-on a.top-link{
   });
 })();
 </script>
+
 
 
 
