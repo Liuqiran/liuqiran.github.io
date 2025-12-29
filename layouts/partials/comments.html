@@ -339,91 +339,105 @@ function ensureWaline() {
   walineLoading = (async () => {
     loadWalineCSSOnce();
     const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
-
     mod.init({
       el: "#waline",
       serverURL,
       path: commentPath,
       requiredMeta: ["nick", "mail"],
       lang: pageLangWaline,
-
-      // ✅ 输入框提示文字就在这里：locale.placeholder :contentReference[oaicite:2]{index=2}
-      // reactionTitle 你设为空会把“反应/表情”标题隐藏 :contentReference[oaicite:3]{index=3}
-      locale: {
-        placeholder: myPlaceholder,
-        reactionTitle: "",
-      },
-
+      locale: { placeholder: myPlaceholder, reactionTitle: "" },
       reaction: true,
       dark: "body.dark",
       imageUploader: false,
     });
-// === KQ patch v2: wl-like toggle + “先锁后点” 防狂点（保证一次只发一个）===
-(function bindWalineLikeToggle(){
-  const root = document.getElementById('waline');
-  if (!root) return;
 
-  // 连点锁 & “强制只放行一次”
-  const LOCK_MS = 1200;     // 比之前更长一点，确保第二下进不来
-  const lockMap = new Map(); // key -> unlockAt
+    // === KQ patch v2...
+    ;(function bindWalineLikeToggle(){
+      const root = document.getElementById('waline');
+      if (!root) return;
 
-  function findCommentKey(btn){
-    const node = btn.closest('[data-id],[data-cid],[data-commentid],[id]');
-    return (
-      node?.getAttribute('data-id') ||
-      node?.getAttribute('data-cid') ||
-      node?.getAttribute('data-commentid') ||
-      node?.id ||
-      ('pos_' + Array.from(root.querySelectorAll('button.wl-like')).indexOf(btn))
-    );
-  }
+      const LOCK_MS = 1200;
+      const lockMap = new Map();
 
-  function isLiked(btn){
-    const t = (btn.getAttribute('title') || '').toLowerCase();
-    const aria = (btn.getAttribute('aria-pressed') || '').toLowerCase();
-    if (aria === 'true') return true;
-    if (t.includes('cancel') || t.includes('取消')) return true;
-    return btn.classList.contains('active') || btn.classList.contains('is-active');
-  }
-
-  // ✅ 关键：在 pointerdown 就锁住（比 click 更早）
-  root.addEventListener('pointerdown', (e) => {
-    const btn = e.target.closest?.('button.wl-like');
-    if (!btn) return;
-
-    const key = findCommentKey(btn);
-    const now = Date.now();
-    const unlockAt = lockMap.get(key) || 0;
-
-    // 锁期间：直接吞掉后续按下（连点/双击都进不来）
-    if (now < unlockAt) {
-      e.preventDefault();
-      e.stopPropagation();
-      return;
-    }
-
-    // 先锁住，再允许这一次后续 click 继续走
-    lockMap.set(key, now + LOCK_MS);
-  }, true);
-
-  // click 阶段：等待状态翻转后稍微提前解锁，保证 toggle 体验顺滑
-  root.addEventListener('click', (e) => {
-    const btn = e.target.closest?.('button.wl-like');
-    if (!btn) return;
-
-    const key = findCommentKey(btn);
-    const before = isLiked(btn);
-
-    let done = false;
-    const obs = new MutationObserver(() => {
-      const after = isLiked(btn);
-      if (after !== before) {
-        done = true;
-        obs.disconnect();
-        // 状态翻转后，250ms 后允许下一次操作（用于“取消/再赞”）
-        lockMap.set(key, Date.now() + 250);
+      function findCommentKey(btn){
+        const node = btn.closest('[data-id],[data-cid],[data-commentid],[id]');
+        return (
+          node?.getAttribute('data-id') ||
+          node?.getAttribute('data-cid') ||
+          node?.getAttribute('data-commentid') ||
+          node?.id ||
+          ('pos_' + Array.from(root.querySelectorAll('button.wl-like')).indexOf(btn))
+        );
       }
-    });
+
+      function isLiked(btn){
+        const t = (btn.getAttribute('title') || '').toLowerCase();
+        const aria = (btn.getAttribute('aria-pressed') || '').toLowerCase();
+        if (aria === 'true') return true;
+        if (t.includes('cancel') || t.includes('取消')) return true;
+        return btn.classList.contains('active') || btn.classList.contains('is-active');
+      }
+
+      root.addEventListener('pointerdown', (e) => {
+        const btn = e.target.closest?.('button.wl-like');
+        if (!btn) return;
+
+        const key = findCommentKey(btn);
+        const now = Date.now();
+        const unlockAt = lockMap.get(key) || 0;
+
+        if (now < unlockAt) {
+          e.preventDefault();
+          e.stopPropagation();
+          return;
+        }
+        lockMap.set(key, now + LOCK_MS);
+      }, true);
+
+      root.addEventListener('click', (e) => {
+        const btn = e.target.closest?.('button.wl-like');
+        if (!btn) return;
+
+        const key = findCommentKey(btn);
+        const before = isLiked(btn);
+
+        let done = false;
+        const obs = new MutationObserver(() => {
+          const after = isLiked(btn);
+          if (after !== before) {
+            done = true;
+            obs.disconnect();
+            lockMap.set(key, Date.now() + 250);
+          }
+        });
+
+        obs.observe(btn, {
+          attributes: true,
+          attributeFilter: ['title', 'class', 'aria-pressed'],
+          childList: true,
+          subtree: true
+        });
+
+        setTimeout(() => {
+          if (done) return;
+          try { obs.disconnect(); } catch(_) {}
+          lockMap.set(key, Date.now() + 400);
+        }, 1600);
+      }, true);
+    })();
+
+    // ✅ 关键：把 async IIFE 收口
+    walineReady = true;
+    walineLoading = null;
+    console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
+  })().catch((e) => {
+    console.error("[Waline] init failed:", e);
+    window.__walineBadConfig = true;
+    walineLoading = null;
+    showGiscus(true);
+  });
+}
+
 
     obs.observe(btn, {
       attributes: true,
@@ -670,6 +684,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 })();
 </script>
+
 
 
 
