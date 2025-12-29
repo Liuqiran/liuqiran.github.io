@@ -347,80 +347,110 @@ html.kq-fab-on a.top-link{
         imageUploader: false,
       });
 
-      // === KQ patch v2: wl-like toggle + “先锁后点” 防狂点（尽量一次只发一个）===
-      ;(function bindWalineLikeToggle(){
-        const root = document.getElementById('waline');
-        if (!root) return;
+;(function bindWalineLikeHardLock(){
+  const root = document.getElementById('waline');
+  if (!root) return;
 
-        const LOCK_MS = 1200;
-        const lockMap = new Map();
+  const WAIT_MS = 2000;         // 最多锁 2 秒
+  const btnState = new WeakMap(); // btn -> { locked: boolean, timer: any }
 
-        function findCommentKey(btn){
-          const node = btn.closest('[data-id],[data-cid],[data-commentid],[id]');
-          return (
-            node?.getAttribute('data-id') ||
-            node?.getAttribute('data-cid') ||
-            node?.getAttribute('data-commentid') ||
-            node?.id ||
-            ('pos_' + Array.from(root.querySelectorAll('button.wl-like')).indexOf(btn))
-          );
-        }
+  function lockBtn(btn){
+    if (!btn) return;
+    const st = btnState.get(btn) || {};
+    if (st.locked) return;
 
-        function isLiked(btn){
-          const t = (btn.getAttribute('title') || '').toLowerCase();
-          const aria = (btn.getAttribute('aria-pressed') || '').toLowerCase();
-          if (aria === 'true') return true;
-          if (t.includes('cancel') || t.includes('取消')) return true;
-          return btn.classList.contains('active') || btn.classList.contains('is-active');
-        }
+    st.locked = true;
+    btnState.set(btn, st);
 
-        root.addEventListener('pointerdown', (e) => {
-          const btn = e.target.closest?.('button.wl-like');
-          if (!btn) return;
+    // 彻底禁用交互
+    btn.dataset.kqLocked = "1";
+    btn.style.pointerEvents = "none";
+    btn.setAttribute("aria-disabled", "true");
+    btn.disabled = true;
 
-          const key = findCommentKey(btn);
-          const now = Date.now();
-          const unlockAt = lockMap.get(key) || 0;
+    // 超时兜底
+    st.timer = setTimeout(() => unlockBtn(btn), WAIT_MS);
+  }
 
-          if (now < unlockAt) {
-            e.preventDefault();
-            e.stopPropagation();
-            return;
-          }
-          lockMap.set(key, now + LOCK_MS);
-        }, true);
+  function unlockBtn(btn){
+    if (!btn) return;
+    const st = btnState.get(btn);
+    if (st?.timer) clearTimeout(st.timer);
 
-        root.addEventListener('click', (e) => {
-          const btn = e.target.closest?.('button.wl-like');
-          if (!btn) return;
+    btnState.set(btn, { locked: false });
+    delete btn.dataset.kqLocked;
 
-          const key = findCommentKey(btn);
-          const before = isLiked(btn);
+    btn.style.pointerEvents = "";
+    btn.removeAttribute("aria-disabled");
+    btn.disabled = false;
+  }
 
-          let done = false;
-          const obs = new MutationObserver(() => {
-            const after = isLiked(btn);
-            if (after !== before) {
-              done = true;
-              obs.disconnect();
-              lockMap.set(key, Date.now() + 250);
-            }
-          });
+  function watchUntilChanged(btn){
+    // 观察“title / class / aria-pressed / 文本计数”任一变化就解锁
+    const beforeTitle = btn.getAttribute("title") || "";
+    const beforeClass = btn.className || "";
+    const beforeAria  = btn.getAttribute("aria-pressed") || "";
+    const beforeText  = (btn.textContent || "").trim();
 
-          obs.observe(btn, {
-            attributes: true,
-            attributeFilter: ['title', 'class', 'aria-pressed'],
-            childList: true,
-            subtree: true
-          });
+    let done = false;
+    const obs = new MutationObserver(() => {
+      const afterTitle = btn.getAttribute("title") || "";
+      const afterClass = btn.className || "";
+      const afterAria  = btn.getAttribute("aria-pressed") || "";
+      const afterText  = (btn.textContent || "").trim();
 
-          setTimeout(() => {
-            if (done) return;
-            try { obs.disconnect(); } catch(_) {}
-            lockMap.set(key, Date.now() + 400);
-          }, 1600);
-        }, true);
-      })();
+      if (
+        afterTitle !== beforeTitle ||
+        afterClass !== beforeClass ||
+        afterAria  !== beforeAria ||
+        afterText  !== beforeText
+      ){
+        done = true;
+        obs.disconnect();
+        // 给一点点余量，避免立刻又点进去
+        setTimeout(() => unlockBtn(btn), 150);
+      }
+    });
+
+    obs.observe(btn, { attributes: true, characterData: true, childList: true, subtree: true });
+
+    // 双兜底：如果没检测到变化，超时也会 unlock（lockBtn 里已有）
+    return () => { if (!done) { try { obs.disconnect(); } catch(_) {} } };
+  }
+
+  // 用 pointerdown 捕获最早的一次交互（比 click 更早）
+  root.addEventListener("pointerdown", (e) => {
+    const btn = e.target.closest?.("button.wl-like");
+    if (!btn) return;
+
+    // 已锁：直接吞掉（防止触发第二套事件）
+    if (btn.dataset.kqLocked === "1") {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+
+    // 第一次：先锁死，再让后续 click 正常发生
+    lockBtn(btn);
+    watchUntilChanged(btn);
+  }, true);
+
+  // 同时拦 click（有些设备没有 pointerdown 或会补发 click）
+  root.addEventListener("click", (e) => {
+    const btn = e.target.closest?.("button.wl-like");
+    if (!btn) return;
+
+    if (btn.dataset.kqLocked === "1") {
+      // 这里不要 preventDefault，否则会把“第一次 click”也吞掉；
+      // 但我们只在“已经锁”时才拦
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+  }, true);
+})();
+
+      
 
       walineReady = true;
       walineLoading = null;
@@ -629,4 +659,5 @@ html.kq-fab-on a.top-link{
   });
 })();
 </script>
+
 
