@@ -1,7 +1,7 @@
 ---
 title: 過客記
 translationKey: ep-10-temporary-guest
-slug: "ep-10-temporary-guest"
+slug: "2023-06-ep-10-temporary-guest"
 author: Qiran
 date: 2025-04-12  
 lastmod: 2025-10-28
