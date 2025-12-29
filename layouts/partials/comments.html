@@ -19,48 +19,11 @@
   {{- $walineLang = "zh-CN" -}}
 {{- else if or (hasPrefix $langRaw "ja") (hasPrefix $langRaw "jp") -}}
   {{- $walineLang = "jp" -}}
-{{- end -}}
-{{/* ===== comment identity =====
-  旧文章：沿用 t:translationKey（多语言共用旧线程）
-  新文章：用 .RelPermalink（按语言分开）
-  分界：2026-01-01（可改）
-===== */}}
-
-{{- $tkey := "" -}}
-{{- with .Params.translationKey -}}
-  {{- $tkey = . -}}
-{{- else -}}
-  {{- with .File -}}{{- $tkey = .BaseFileName -}}{{- end -}}
-{{- end -}}
-{{- $tkey = $tkey | replaceRE `\\` "" -}}
-{{- $tkey = $tkey | replaceRE `["']` "" -}}
-{{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
-
-{{- $cut := time "2025-12-28T00:00:00-05:00" -}} {{/* America/New_York */}}
-{{- $isNew := ge .Date $cut -}}
-{{- $commentPath := "" -}}
-{{- if $isNew -}}
-  {{- $commentPath = .RelPermalink -}}
-{{- else -}}
-  {{- $zh := "" -}}
-  {{- range .AllTranslations -}}
-    {{- if eq .Lang "zh" -}}
-      {{- $zh = .RelPermalink -}}
-    {{- end -}}
-  {{- end -}}
-  {{- if $zh -}}
-    {{- $commentPath = $zh -}}
-  {{- else -}}
-    {{- $commentPath = .RelPermalink -}} {{/* 没有中文版本就退回当前页 */}}
-  {{- end -}}
-{{- end -}}
-
+{{- end -}}  
+  
+{{/* ===== commentPath：按页面实际链接分线程（中英彻底分开）===== */}}
+{{- $commentPath := .RelPermalink -}}
 {{- $commentPath = $commentPath | replaceRE `/+$` "" -}}
-
-
-{{- /* 统一清理末尾 /，避免同页因带不带 / 分裂 */ -}}
-{{- $commentPath = $commentPath | replaceRE `/+$` "" -}}
-
 
 <style>
 /* ===== Toggle ===== */
@@ -615,6 +578,7 @@ html.kq-fab-on a.top-link{
   });
 })();
 </script>
+
 
 
 
