@@ -36,7 +36,7 @@
 {{- $tkey = $tkey | replaceRE `["']` "" -}}
 {{- $tkey = $tkey | replaceRE `^\s+|\s+$` "" -}}
 
-{{- $cut := time "2025-12-30T00:00:00-05:00" -}} {{/* America/New_York */}}
+{{- $cut := time "2025-12-28T00:00:00-05:00" -}} {{/* America/New_York */}}
 {{- $isNew := ge .Date $cut -}}
 
 {{- $commentPath := "" -}}
@@ -603,6 +603,7 @@ html.kq-fab-on a.top-link{
   });
 })();
 </script>
+
 
 
 
