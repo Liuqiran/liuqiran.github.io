@@ -230,7 +230,7 @@ html.kq-fab-on a.top-link{
 </div>
 
 <script>
-(() => {
+;(() => {
   // ====== 从 Hugo 传值进来 ======
   const HAS_WALINE = {{ $hasWaline | jsonify }};
   const HUGO_SERVER_RAW = {{ $server | jsonify }};
@@ -248,7 +248,7 @@ html.kq-fab-on a.top-link{
   const btnCmt = document.getElementById('kq-fab-cmt');
   const overlay = document.getElementById('kq-toc-overlay');
   const toc = document.getElementById('toc-container')
-  || document.querySelector('aside.toc-container, .toc-container, .toc');
+    || document.querySelector('aside.toc-container, .toc-container, .toc');
   const mqMobile = window.matchMedia('(max-width: 900px)');
 
   // ====== helpers ======
@@ -288,156 +288,152 @@ html.kq-fab-on a.top-link{
     return "en";
   }
 
-// ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
-let walineReady = false;
-let walineLoading = null;
+  // ====== Waline (真正懒加载：CSS + JS 都只在需要时加载) ======
+  let walineReady = false;
+  let walineLoading = null;
 
-const serverURL = cleanServerURL(HUGO_SERVER_RAW);
-const commentPath = cleanString(HUGO_PATH_RAW);
+  const serverURL = cleanServerURL(HUGO_SERVER_RAW);
+  const commentPath = cleanString(HUGO_PATH_RAW);
+  const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
 
-// 建议：Waline 更标准的语言码用 en-US / zh-CN / jp（不行也会自动 fallback）:contentReference[oaicite:1]{index=1}
-const pageLangWaline = normalizeWalineLang(document.documentElement.lang || HUGO_LANG_FALLBACK || "en");
+  const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
+  if (!walineOK) window.__walineBadConfig = true;
 
-const walineOK = HAS_WALINE && walineContainer && isValidHttpUrl(serverURL);
-if (!walineOK) window.__walineBadConfig = true;
+  const PLACEHOLDER_MAP = {
+    "zh-CN": "当月光洒下，万物皆是低语，你听到了什么心事？",
+    "jp": "コメントどうぞ…(*^_^*)",
+    "en-US": "My words are just an invitation; your thoughts are the destination.",
+    "en": "My words are just an invitation; your thoughts are the destination.",
+  };
+  const myPlaceholder = PLACEHOLDER_MAP[pageLangWaline] || "Write a comment…";
 
-// === 你的“输入框自定义文字”（按语言）===
-// 你想写多行就用 \n
-const PLACEHOLDER_MAP = {
-  "zh-CN": "当月光洒下，万物皆是低语，你听到了什么心事？",
-  "jp": "コメントどうぞ…(*^_^*)",
-  "en-US": "My words are just an invitation; your thoughts are the destination.",
-  "en": "My words are just an invitation; your thoughts are the destination. ",
-};
-const myPlaceholder = PLACEHOLDER_MAP[pageLangWaline] || "Write a comment…";
+  function loadWalineCSSOnce() {
+    if (document.getElementById('kq-waline-css')) return;
 
-function loadWalineCSSOnce() {
-  if (document.getElementById('kq-waline-css')) return;
+    const link = document.createElement('link');
+    link.id = 'kq-waline-css';
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
+    document.head.appendChild(link);
 
-  const link = document.createElement('link');
-  link.id = 'kq-waline-css';
-  link.rel = 'stylesheet';
-  link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
-  document.head.appendChild(link);
-
-  // 可选：防止主题把 placeholder 透明度压没（你如果本来就正常可删）
-  if (!document.getElementById('kq-waline-ph-style')) {
-    const st = document.createElement('style');
-    st.id = 'kq-waline-ph-style';
-    st.textContent = `
-      #waline textarea::placeholder,
-      #waline input::placeholder { opacity: .85; }
-    `;
-    document.head.appendChild(st);
+    if (!document.getElementById('kq-waline-ph-style')) {
+      const st = document.createElement('style');
+      st.id = 'kq-waline-ph-style';
+      st.textContent = `
+        #waline textarea::placeholder,
+        #waline input::placeholder { opacity: .85; }
+      `;
+      document.head.appendChild(st);
+    }
   }
-}
 
-function ensureWaline() {
-  if (!walineOK || walineReady) return;
-  if (walineLoading) return;
+  function ensureWaline() {
+    if (!walineOK || walineReady) return;
+    if (walineLoading) return;
 
-  walineLoading = (async () => {
-    loadWalineCSSOnce();
-    const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
-    mod.init({
-      el: "#waline",
-      serverURL,
-      path: commentPath,
-      requiredMeta: ["nick", "mail"],
-      lang: pageLangWaline,
-      locale: { placeholder: myPlaceholder, reactionTitle: "" },
-      reaction: true,
-      dark: "body.dark",
-      imageUploader: false,
-    });
+    walineLoading = (async () => {
+      loadWalineCSSOnce();
+      const mod = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
 
-    // === KQ patch v2...
-    ;(function bindWalineLikeToggle(){
-      const root = document.getElementById('waline');
-      if (!root) return;
+      mod.init({
+        el: "#waline",
+        serverURL,
+        path: commentPath,
+        requiredMeta: ["nick", "mail"],
+        lang: pageLangWaline,
+        locale: { placeholder: myPlaceholder, reactionTitle: "" },
+        reaction: true,
+        dark: "body.dark",
+        imageUploader: false,
+      });
 
-      const LOCK_MS = 1200;
-      const lockMap = new Map();
+      // === KQ patch v2: wl-like toggle + “先锁后点” 防狂点（尽量一次只发一个）===
+      ;(function bindWalineLikeToggle(){
+        const root = document.getElementById('waline');
+        if (!root) return;
 
-      function findCommentKey(btn){
-        const node = btn.closest('[data-id],[data-cid],[data-commentid],[id]');
-        return (
-          node?.getAttribute('data-id') ||
-          node?.getAttribute('data-cid') ||
-          node?.getAttribute('data-commentid') ||
-          node?.id ||
-          ('pos_' + Array.from(root.querySelectorAll('button.wl-like')).indexOf(btn))
-        );
-      }
+        const LOCK_MS = 1200;
+        const lockMap = new Map();
 
-      function isLiked(btn){
-        const t = (btn.getAttribute('title') || '').toLowerCase();
-        const aria = (btn.getAttribute('aria-pressed') || '').toLowerCase();
-        if (aria === 'true') return true;
-        if (t.includes('cancel') || t.includes('取消')) return true;
-        return btn.classList.contains('active') || btn.classList.contains('is-active');
-      }
-
-      root.addEventListener('pointerdown', (e) => {
-        const btn = e.target.closest?.('button.wl-like');
-        if (!btn) return;
-
-        const key = findCommentKey(btn);
-        const now = Date.now();
-        const unlockAt = lockMap.get(key) || 0;
-
-        if (now < unlockAt) {
-          e.preventDefault();
-          e.stopPropagation();
-          return;
+        function findCommentKey(btn){
+          const node = btn.closest('[data-id],[data-cid],[data-commentid],[id]');
+          return (
+            node?.getAttribute('data-id') ||
+            node?.getAttribute('data-cid') ||
+            node?.getAttribute('data-commentid') ||
+            node?.id ||
+            ('pos_' + Array.from(root.querySelectorAll('button.wl-like')).indexOf(btn))
+          );
         }
-        lockMap.set(key, now + LOCK_MS);
-      }, true);
 
-      root.addEventListener('click', (e) => {
-        const btn = e.target.closest?.('button.wl-like');
-        if (!btn) return;
+        function isLiked(btn){
+          const t = (btn.getAttribute('title') || '').toLowerCase();
+          const aria = (btn.getAttribute('aria-pressed') || '').toLowerCase();
+          if (aria === 'true') return true;
+          if (t.includes('cancel') || t.includes('取消')) return true;
+          return btn.classList.contains('active') || btn.classList.contains('is-active');
+        }
 
-        const key = findCommentKey(btn);
-        const before = isLiked(btn);
+        root.addEventListener('pointerdown', (e) => {
+          const btn = e.target.closest?.('button.wl-like');
+          if (!btn) return;
 
-        let done = false;
-        const obs = new MutationObserver(() => {
-          const after = isLiked(btn);
-          if (after !== before) {
-            done = true;
-            obs.disconnect();
-            lockMap.set(key, Date.now() + 250);
+          const key = findCommentKey(btn);
+          const now = Date.now();
+          const unlockAt = lockMap.get(key) || 0;
+
+          if (now < unlockAt) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
           }
-        });
+          lockMap.set(key, now + LOCK_MS);
+        }, true);
 
-        obs.observe(btn, {
-          attributes: true,
-          attributeFilter: ['title', 'class', 'aria-pressed'],
-          childList: true,
-          subtree: true
-        });
+        root.addEventListener('click', (e) => {
+          const btn = e.target.closest?.('button.wl-like');
+          if (!btn) return;
 
-        setTimeout(() => {
-          if (done) return;
-          try { obs.disconnect(); } catch(_) {}
-          lockMap.set(key, Date.now() + 400);
-        }, 1600);
-      }, true);
-    })();
+          const key = findCommentKey(btn);
+          const before = isLiked(btn);
 
-    // ✅ 关键：把 async IIFE 收口
-    walineReady = true;
-    walineLoading = null;
-    console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
-  })().catch((e) => {
-    console.error("[Waline] init failed:", e);
-    window.__walineBadConfig = true;
-    walineLoading = null;
-    showGiscus(true);
-  });
-  
-  // ====== Giscus 懒加载 ======
+          let done = false;
+          const obs = new MutationObserver(() => {
+            const after = isLiked(btn);
+            if (after !== before) {
+              done = true;
+              obs.disconnect();
+              lockMap.set(key, Date.now() + 250);
+            }
+          });
+
+          obs.observe(btn, {
+            attributes: true,
+            attributeFilter: ['title', 'class', 'aria-pressed'],
+            childList: true,
+            subtree: true
+          });
+
+          setTimeout(() => {
+            if (done) return;
+            try { obs.disconnect(); } catch(_) {}
+            lockMap.set(key, Date.now() + 400);
+          }, 1600);
+        }, true);
+      })();
+
+      walineReady = true;
+      walineLoading = null;
+      console.log("[Waline] inited:", { serverURL, commentPath, pageLangWaline });
+    })().catch((e) => {
+      console.error("[Waline] init failed:", e);
+      window.__walineBadConfig = true;
+      walineLoading = null;
+      showGiscus(true);
+    });
+  }
+
+  // ====== Giscus 懒加载（必须在 ensureWaline 外） ======
   const GISCUS_REPO = "Liuqiran/liuqiran.github.io";
   const GISCUS_REPO_ID = "R_kgDONiVddQ";
   const GISCUS_CATEGORY = "General";
@@ -537,39 +533,15 @@ function ensureWaline() {
       toc.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
-
-function closeTOC(){
-  document.documentElement.classList.remove('kq-toc-open');
-  // 顺便把 details 收起（否则下次打开还是展开状态）
-  if (toc) {
-    const d = toc.querySelector('details');
-    if (d) d.open = false;
+  function toggleTOC(){
+    const html = document.documentElement;
+    if (html.classList.contains('kq-toc-open')) closeTOC();
+    else openTOC();
   }
-}
 
-function openTOC(){
-  if (!toc) return;
-  const d = toc.querySelector('details');
-  if (d) d.open = true;
-
-  if (mqMobile.matches) {
-    document.documentElement.classList.add('kq-toc-open');
-  } else {
-    toc.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
-
-function toggleTOC(){
-  const html = document.documentElement;
-  if (html.classList.contains('kq-toc-open')) closeTOC();
-  else openTOC();
-}
-
-btnTOC && btnTOC.addEventListener('click', toggleTOC);
-
-// 遮罩：click + touchstart（手机更稳）
-overlay && overlay.addEventListener('click', closeTOC);
-overlay && overlay.addEventListener('touchstart', closeTOC, { passive: true });
+  btnTOC && btnTOC.addEventListener('click', toggleTOC);
+  overlay && overlay.addEventListener('click', closeTOC);
+  overlay && overlay.addEventListener('touchstart', closeTOC, { passive: true });
 
   toc && toc.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
@@ -579,14 +551,13 @@ overlay && overlay.addEventListener('touchstart', closeTOC, { passive: true });
   btnCmt && btnCmt.addEventListener('click', () => {
     closeTOC();
 
-const preferred = localStorage.getItem('preferredComment');
-const canWaline = walineContainer && walineOK;
-const canGiscus = !!giscusContainer;
+    const preferred = localStorage.getItem('preferredComment');
+    const canWaline = walineContainer && walineOK;
+    const canGiscus = !!giscusContainer;
 
-if (preferred === 'giscus' && canGiscus) showGiscus(true);
-else if (canWaline) showWaline(true);
-else if (canGiscus) showGiscus(true);
-
+    if (preferred === 'giscus' && canGiscus) showGiscus(true);
+    else if (canWaline) showWaline(true);
+    else if (canGiscus) showGiscus(true);
 
     const active = document.querySelector('.comment-system.active');
     const target =
@@ -597,78 +568,65 @@ else if (canGiscus) showGiscus(true);
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-window.addEventListener('DOMContentLoaded', () => {
-  if (!fab) return;
+  window.addEventListener('DOMContentLoaded', () => {
+    if (!fab) return;
 
-  // 1) 没 TOC 删 ☰
-  if (!toc && btnTOC) btnTOC.remove();
+    if (!toc && btnTOC) btnTOC.remove();
 
-  // 2) 没评论系统删 💬
-  const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
-  if (!hasAnyComment && btnCmt) btnCmt.remove();
+    const hasAnyComment = (walineContainer && walineOK) || !!giscusContainer;
+    if (!hasAnyComment && btnCmt) btnCmt.remove();
 
-  // 3) 是否还有控件
-  const hasAnyControl = !!fab.querySelector('button, a');
+    const hasAnyControl = !!fab.querySelector('button, a');
+    const html = document.documentElement;
 
-  const html = document.documentElement;
-
-  function syncFabOffset(){
-    const h = fab ? fab.getBoundingClientRect().height : 0;
-    html.style.setProperty('--kq-fab-h', h ? `${Math.ceil(h)}px` : '0px');
-  }
-
-  if (hasAnyControl) {
-    fab.classList.add('is-on');
-    html.classList.add('kq-fab-on');
-
- // ✅ 移动端：把主题的“返回顶部”按钮塞进 FAB，三按钮同栈竖排
-    const topLink = document.querySelector('a.top-link');
-    let topLinkHome = null;
-    let topLinkNext = null;
-
-    function syncTopLinkPlacement(){
-      if (!topLink) return;
-
-      if (mqMobile.matches) {
-        // 只在手机塞进去
-        if (!fab.contains(topLink)) {
-          topLinkHome = topLinkHome || topLink.parentElement;
-          topLinkNext = topLinkNext || topLink.nextSibling;
-
-          topLink.classList.add('kq-top-in-fab');
-          fab.appendChild(topLink);
-        }
-      } else {
-        // 桌面：放回原位置（可选，但建议保留）
-        if (topLinkHome && topLink.classList.contains('kq-top-in-fab')) {
-          topLink.classList.remove('kq-top-in-fab');
-          topLinkHome.insertBefore(topLink, topLinkNext);
-        }
-      }
-
-      requestAnimationFrame(syncFabOffset);
+    function syncFabOffset(){
+      const h = fab ? fab.getBoundingClientRect().height : 0;
+      html.style.setProperty('--kq-fab-h', h ? `${Math.ceil(h)}px` : '0px');
     }
 
-    syncTopLinkPlacement();
-    mqMobile.addEventListener('change', syncTopLinkPlacement);
+    if (hasAnyControl) {
+      fab.classList.add('is-on');
+      html.classList.add('kq-fab-on');
 
-    // 等一帧让 display:flex 生效再测高度
-    requestAnimationFrame(syncFabOffset);
+      const topLink = document.querySelector('a.top-link');
+      let topLinkHome = null;
+      let topLinkNext = null;
 
-    window.addEventListener('resize', () => {
-      if (html.classList.contains('kq-fab-on')) requestAnimationFrame(syncFabOffset);
-    }, { passive: true });
-  } else {
-    fab.classList.remove('is-on');
-    html.classList.remove('kq-fab-on');
-    syncFabOffset();
-  }
-});
+      function syncTopLinkPlacement(){
+        if (!topLink) return;
+
+        if (mqMobile.matches) {
+          if (!fab.contains(topLink)) {
+            topLinkHome = topLinkHome || topLink.parentElement;
+            topLinkNext = topLinkNext || topLink.nextSibling;
+
+            topLink.classList.add('kq-top-in-fab');
+            fab.appendChild(topLink);
+          }
+        } else {
+          if (topLinkHome && topLink.classList.contains('kq-top-in-fab')) {
+            topLink.classList.remove('kq-top-in-fab');
+            topLinkHome.insertBefore(topLink, topLinkNext);
+          }
+        }
+
+        requestAnimationFrame(syncFabOffset);
+      }
+
+      syncTopLinkPlacement();
+      mqMobile.addEventListener('change', syncTopLinkPlacement);
+
+      requestAnimationFrame(syncFabOffset);
+
+      window.addEventListener('resize', () => {
+        if (html.classList.contains('kq-fab-on')) requestAnimationFrame(syncFabOffset);
+      }, { passive: true });
+    } else {
+      fab.classList.remove('is-on');
+      html.classList.remove('kq-fab-on');
+      syncFabOffset();
+    }
+  });
 })();
 </script>
-
-
-
-
-
 
