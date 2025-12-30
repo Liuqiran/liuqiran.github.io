@@ -12,7 +12,7 @@ cover:
 > This is what I’m currently focused on. Inspired by [nownownow.com](https://nownownow.com/about).
 >
 > A website with a link that says “now” goes to a page that tells you what this person is focused on at this point in their life.   
-> **I usually update every Sunday, please remind me.**
+> *I usually update every Sunday, please remind me.*
 
 <!--<div style="clear: both;">-->
 <!--<iframe src="https://twisty-change-610.notion.site/ebd/1fc21e6176cd8080be08ea1b2214e8b3?v=1fc21e6176cd813b966e000c20634f61" width="100%" height="600" frameborder="0" allowfullscreen></iframe>-->   
@@ -29,7 +29,7 @@ Average for days studied:	⁨97⁩ minutes/day
 Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)   
 
 # ☕Daily plan   
-- [ ] Finishing reading Little Prince
+- [ ] Little Prince
 
 # 🖥️ Building Site plan 
 
@@ -56,4 +56,4 @@ Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)
 
 {{< /weektable >}}  
 
-> *If you have any thoughts about what’s been going on with me lately, please feel free to leave a comment!*
+
