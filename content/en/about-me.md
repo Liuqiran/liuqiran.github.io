@@ -34,7 +34,7 @@ tags:
 - Site’s birthday: Feb 9, 2019
 - Writing is supposed to be an essential part of life. Organizing one’s words and works in the form of a site is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this site to record myself and share my thoughts, articles and works. ：)
 - This site has joined the [Ten-year Contract activities
-  ](https://foreverblog.cn/)(that is, from joining this activity, our site will not be closed for ten years, to maintain the update and vitality!)
+  ](https://www.foreverblog.cn/)(that is, from joining this activity, our site will not be closed for ten years, to maintain the update and vitality!)
 - This site is hosted on GitHub, with the alternate URL [liuqiran.github.io](https://liuqiran.github.io).
   (It means that this site can exist for a long time!)
 - ⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the [Chinese site](/zh/).
