@@ -47,12 +47,11 @@ tags:
 **🧐 My Personality Type**   
 - **Big5 result: [O+C+E−A+N−](https://bigfive-test.com/result/692293bdf2aeb4f99975b6e5)**
 ![](/img/big5.png)    
+ [INFP](https://www.16personalities.com/infp-personality)
 
-- **MBTI**: [INFP](https://www.16personalities.com/infp-personality)
+**👫Relationship Status**: With Sheena since Sep 27, 2025
 
-**🫂Relationship Status**: With [Sheena](https://www.facebook.com/sheenamae.ucab/) since Sep 27, 2025
-
-**[🧑‍🤝‍🧑 Online Neighbors](/en/my-friends/)**
+**[🤝Online Neighbors](/en/my-friends/)**
 
 **👣 Footprints:**
 

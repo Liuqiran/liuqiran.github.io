@@ -28,8 +28,8 @@ Average over period:	⁨97⁩ minutes/day
 Average for days studied:	⁨97⁩ minutes/day  
 Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)   
 
-# ☕Daily plan   
-- [ ] Little Prince
+# ☕Reading plan   
+See [**📚 Reading list**](/en/reading-list/)
 
 # 🖥️ Building Site plan 
 
@@ -40,7 +40,7 @@ Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)
 - [ ] Change social buttons of home pages
 - [ ] Add image and statement at the end of the post (different in each language)
 - [ ] Add Substack button  
-- [ ] Open Gumrand/Buy me a coffee account 
+- [ ] Open Gumroad/Buy me a coffee account 
 - [ ] Add feature of Archive page ( Can find posts  by year/month)     
   
 # 🌳 Building Habits
