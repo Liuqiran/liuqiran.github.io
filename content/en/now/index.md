@@ -39,7 +39,9 @@ Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)
 - [ ] Setting level system for Waline  
 - [ ] Change social buttons of home pages
 - [ ] Add image and statement at the end of the post (different in each language)
-- [ ] Add Substack button
+- [ ] Add Substack button  
+- [ ] Open Gumrand/Buy me a coffee account 
+- [ ] Add feature of Archive page ( Can find posts  by year/month)     
   
 # 🌳 Building Habits
 
