@@ -21,7 +21,9 @@ translationKey: about-me
 
 [关于本站][1]
 
-联系我：您可以直接给我留言。如果无法加载评论区，您可 [直接发送邮件](mailto:woshiniuziku@gmail.com)
+联系我：您可以直接给我留言。
+如果无法加载评论区，您可 [直接发送邮件](mailto:woshiniuziku@gmail.com)   
 
+在Waline评论区登录您将可以设定本站专属头衔~
 
  [1]: /en/tags/building-site/

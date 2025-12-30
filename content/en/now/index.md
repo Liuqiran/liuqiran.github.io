@@ -19,20 +19,27 @@ cover:
 <!--</div>-->  
 
 
-# 🌏 Learning Process (2025-12-29)
+# 🌏 Learning Process
 
+## Anki Language learning   
 Days studied:	⁨179⁩ of ⁨180⁩ (⁨99.44⁩%)   
 Total:	⁨290.37⁩ hours   
 Average over period:	⁨97⁩ minutes/day   
 Average for days studied:	⁨97⁩ minutes/day  
 Average answer time:	⁨9.2⁩s (⁨⁨6.52⁩ cards/minute⁩)   
 
+# ☕Daily plan   
+- [ ] Finishing reading Little Prince
 
 # 🖥️ Building Site plan 
 
-- 1. Fix Hugo backend comment URLs
-- 2. Optimize word count statistics
-- 3. Add email subscription feature
+- [x] Fix Hugo backend comment URLs
+- [ ] Optimize word count statistics
+- [x] Add email subscription feature   
+- [ ] Setting level system for Waline  
+- [ ] Change social buttons of home pages
+- [ ] Add image and statement at the end of the post (different in each language)
+- [ ] Add Substack button
   
 # 🌳 Building Habits
 
