@@ -224,12 +224,12 @@ list:
     Author: "C. S. Lewis"
     Date: "2025-06-02"
     Rating: 5    
-- "No": 46
+  - "No": 46
     Title: "The Little Prince"
     Author: "Antoine de Saint-Exupéry"
     Date: "2025-12-31"      
-- "No": 47 
-  Title: "Beyond Happiness"  
-  Author: "Jenn Lim"  
-  Date: "Reading"  
-  Rating:   
+  - "No": 47 
+    Title: "Beyond Happiness"  
+    Author: "Jenn Lim"  
+    Date: "Reading"  
+    Rating:   
