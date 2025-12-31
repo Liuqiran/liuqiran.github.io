@@ -228,6 +228,7 @@ list:
     Title: "The Little Prince"
     Author: "Antoine de Saint-Exupéry"
     Date: "2025-12-31"      
+    Rating: 3
   - "No": 47 
     Title: "Beyond Happiness"  
     Author: "Jenn Lim"  
