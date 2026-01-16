@@ -1,4 +1,4 @@
----
+---  
 title: 受洗见证
 translationKey: baptism-testimony
 slug: baptism-testimony
@@ -7,7 +7,7 @@ author: Qiran
 date: 2026-01-15
 lastmod: 2026-01-16
 cover:
-  image:https://upload.wikimedia.org/wikipedia/commons/2/2f/D%C3%BClmen%2C_Heilig-Kreuz-Kirche%2C_Innenansicht_--_2018_--_1338.jpg  
+  image:  https://upload.wikimedia.org/wikipedia/commons/2/2f/D%C3%BClmen%2C_Heilig-Kreuz-Kirche%2C_Innenansicht_--_2018_--_1338.jpg  
 tags:
 - 信仰
 params:
@@ -19,7 +19,6 @@ kq_mt_from: zh
 kq_mt_to: en
 ---
    
-
 
 大家好，我是其然。我今天站在这里，是向大家分享神在我生命中的作为。迎接我将来的洗礼。
     
