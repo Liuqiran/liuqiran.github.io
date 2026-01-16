@@ -7,7 +7,7 @@ author: Qiran
 date: 2026-01-15
 lastmod: 2026-01-16
 cover:
-  image:  https://upload.wikimedia.org/wikipedia/commons/2/2f/D%C3%BClmen%2C_Heilig-Kreuz-Kirche%2C_Innenansicht_--_2018_--_1338.jpg  
+  image:  "https://upload.wikimedia.org/wikipedia/commons/2/2f/D%C3%BClmen%2C_Heilig-Kreuz-Kirche%2C_Innenansicht_--_2018_--_1338.jpg"  
 tags:
 - 信仰
 vertical: true  
