@@ -7,14 +7,11 @@ author: Qiran
 date: 2026-01-15
 lastmod: 2026-01-16
 cover:
-<<<<<<< HEAD
   image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/D%C3%BClmen%2C_Heilig-Kreuz-Kirche%2C_Innenansicht_--_2018_--_1338.jpg"
   relative: false
+  
 images:
-  - "https://upload.wikimedia.org/wikipedia/commons/2/2f/D%C3%BClmen%2C_Heilig-Kreuz-Kirche%2C_Innenansicht_--_2018_--_1338.jpg"
-=======
-  image: https://upload.wikimedia.org/wikipedia/commons/2/2f/D%C3%BClmen%2C_Heilig-Kreuz-Kirche%2C_Innenansicht_--_2018_--_1338.jpg
->>>>>>> 34301d244dc4b8c5c94f0e935bd7b9af78fe5407
+  -  "https://upload.wikimedia.org/wikipedia/commons/2/2f/D%C3%BClmen%2C_Heilig-Kreuz-Kirche%2C_Innenansicht_--_2018_--_1338.jpg"
 tags:
 - Belief
 kq_managed: true
