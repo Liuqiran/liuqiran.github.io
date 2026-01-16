@@ -14,8 +14,7 @@ kq_managed: true
 kq_mt: true
 kq_mt_from: zh
 kq_mt_to: en
----  
-
+---
 Hello everyone, I am Qiran. I stand here today to share with you God's work in my life and to welcome my future baptism.
 
 Before believing in the Lord, I relied on worldly things to sustain my life. Whether it was playing, studying, or working, these things seemed to fill my time, but they couldn't fill my heart. I often pondered the meaning of life, but the meaning constantly shifted and fluctuated with circumstances and successes and failures.
