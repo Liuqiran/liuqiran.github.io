@@ -10,6 +10,7 @@ cover:
   image:  https://upload.wikimedia.org/wikipedia/commons/2/2f/D%C3%BClmen%2C_Heilig-Kreuz-Kirche%2C_Innenansicht_--_2018_--_1338.jpg  
 tags:
 - 信仰
+vertical: true  
 translate:
   mode: google
   targets: ["en"]
