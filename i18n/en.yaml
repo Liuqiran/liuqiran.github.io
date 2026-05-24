@@ -5,7 +5,9 @@
 - id: archive_label
   translation: "Archive"
 - id: archive_total
-  translation: "Total ~"
+  translation: "Total ~ (Qiran originals only; excluding machine-translated and AI-assisted posts)"
+- id: archive_total_without_mt
+  translation: "Total ~ (excluding machine-translated posts)"
 - id: archive_total_without_ai
   translation: "Total ~ (excluding AI-assisted)"
 - id: archive_total_with_ai

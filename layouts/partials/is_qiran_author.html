@@ -1,0 +1,20 @@
+{{- $isQiran := false -}}
+{{- with .Param "author" -}}
+  {{- if eq (lower (printf "%v" .)) "qiran" -}}
+    {{- $isQiran = true -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $isQiran -}}
+  {{- with .Param "authors" -}}
+    {{- if reflect.IsSlice . -}}
+      {{- range . -}}
+        {{- if eq (lower (printf "%v" .)) "qiran" -}}
+          {{- $isQiran = true -}}
+        {{- end -}}
+      {{- end -}}
+    {{- else if eq (lower (printf "%v" .)) "qiran" -}}
+      {{- $isQiran = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $isQiran -}}

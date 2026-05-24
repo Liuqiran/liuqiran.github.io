@@ -241,6 +241,16 @@ html[lang="en-US"] .profile_inner > span {
   filter: invert(1);
 }
 
+.archive-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+}
+
+.archive-stats-item {
+  white-space: normal;
+}
+
 /* Smaller cover images: keep thumbnails compact on lists and single posts. */
 .post-entry {
   overflow: hidden;

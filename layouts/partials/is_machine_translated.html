@@ -1,0 +1,8 @@
+{{- $isMachineTranslated := false -}}
+{{- with .Param "kq_mt" -}}
+  {{- $raw := lower (printf "%v" .) -}}
+  {{- if or (eq . true) (eq $raw "true") (eq $raw "1") (eq $raw "yes") -}}
+    {{- $isMachineTranslated = true -}}
+  {{- end -}}
+{{- end -}}
+{{- return $isMachineTranslated -}}

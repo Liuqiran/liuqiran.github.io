@@ -4,7 +4,9 @@
 - id: archive_label
   translation: "归档"
 - id: archive_total
-  translation: "总计约"
+  translation: "总计约（仅 Qiran 原创，不含机器翻译和辅助）"
+- id: archive_total_without_mt
+  translation: "总计约（不含机翻文章）"
 - id: archive_total_without_ai
   translation: "总计约（不含 AI 辅助）"
 - id: archive_total_with_ai

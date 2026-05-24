@@ -26,26 +26,24 @@
 
 {{/* 总计 */}}
 {{- $s := newScratch -}}
-{{- $s.Set "total_with_ai" 0 -}}
-{{- $s.Set "total_without_ai" 0 -}}
+{{- $s.Set "total_original" 0 -}}
 {{- range $pages -}}
   {{- $n := partial "word_count.html" . -}}
-  {{- $s.Add "total_with_ai" $n -}}
-  {{- if not (partial "is_ai_assisted.html" .) -}}
-    {{- $s.Add "total_without_ai" $n -}}
+  {{- $isAI := partial "is_ai_assisted.html" . -}}
+  {{- $isMT := partial "is_machine_translated.html" . -}}
+  {{- $isQiran := partial "is_qiran_author.html" . -}}
+  {{- if and $isQiran (not $isAI) (not $isMT) -}}
+    {{- $s.Add "total_original" $n -}}
   {{- end -}}
 {{- end -}}
-{{- $totalWithAI := $s.Get "total_with_ai" -}}
-{{- $totalWithoutAI := $s.Get "total_without_ai" -}}
+{{- $totalOriginal := $s.Get "total_original" -}}
 {{- $unit := cond $isCJK (i18n "archive_unit_cjk") (i18n "archive_unit_words") -}}
-{{- $displayTotalWithoutAI := cond $isCJK (printf "%d" $totalWithoutAI) (printf "%.2fK" (div (float $totalWithoutAI) 1000)) -}}
-{{- $displayTotalWithAI := cond $isCJK (printf "%d" $totalWithAI) (printf "%.2fK" (div (float $totalWithAI) 1000)) -}}
+{{- $displayTotalOriginal := cond $isCJK (printf "%d" $totalOriginal) (printf "%.2fK" (div (float $totalOriginal) 1000)) -}}
 
 {{/* 统计（先显示在最上方） */}}
 <div class="post-description archive-stats">
-  {{ i18n "archive_label" }} {{ len $pages }} ·
-  {{ i18n "archive_total_without_ai" }} {{ $displayTotalWithoutAI }} {{ $unit }} ·
-  {{ i18n "archive_total_with_ai" }} {{ $displayTotalWithAI }} {{ $unit }}
+  <span class="archive-stats-item">{{ i18n "archive_label" }} {{ len $pages }}</span>
+  <span class="archive-stats-item">{{ i18n "archive_total" }} {{ $displayTotalOriginal }} {{ $unit }}</span>
 </div>
 
 {{/* 最近更新：只显示最近半年、最多5篇、只在第一页出现 */}}
