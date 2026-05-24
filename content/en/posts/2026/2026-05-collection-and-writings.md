@@ -14,7 +14,7 @@ tags:
   - Life
 translate:  
   mode: google
-  targets: ["en"]
+  targets: ["zh"]
   draft: false
 ---
 
