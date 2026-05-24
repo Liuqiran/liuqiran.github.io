@@ -9,6 +9,8 @@ aliases: ["/rss/"]
 tags:
   - Building Site
 ---
-﻿[English Site ](/en/index.xml)
+These are full-text RSS feeds. Machine-translation notes and AI-assisted notes are included at the beginning of the RSS article body.
 
-[Chinese Site](/zh/index.xml)
+[English full-text RSS](/en/index.xml)
+
+[Chinese full-text RSS](/zh/index.xml)
