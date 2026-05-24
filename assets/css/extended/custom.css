@@ -226,50 +226,27 @@ html[lang="en-US"] .profile_inner > span {
   margin-top: 1.5rem;
 }
 
-.kq-human-badge svg {
-  width: min(220px, 100%);
-  height: auto;
+.kq-human-badge-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.kq-human-badge img {
+  height: 42px;
+  width: auto;
   display: block;
 }
 
-.kq-human-badge-bg {
-  fill: var(--primary);
-  stroke: var(--border);
-  stroke-width: 1.5;
+.kq-human-badge-dark {
+  display: none;
 }
 
-.kq-human-badge-ring {
-  fill: none;
-  stroke: var(--theme);
-  stroke-width: 2.2;
+.dark .kq-human-badge-light {
+  display: none;
 }
 
-.kq-human-badge-fill {
-  fill: var(--theme);
-}
-
-.kq-human-badge-smile {
-  fill: none;
-  stroke: var(--theme);
-  stroke-width: 2.2;
-  stroke-linecap: round;
-}
-
-.kq-human-badge-title,
-.kq-human-badge-sub {
-  fill: var(--theme);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  letter-spacing: 0;
-}
-
-.kq-human-badge-title {
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.kq-human-badge-sub {
-  font-size: 10.5px;
-  font-weight: 600;
+.dark .kq-human-badge-dark {
+  display: block;
 }
 
 /* Smaller cover images: keep thumbnails compact on lists and single posts. */
