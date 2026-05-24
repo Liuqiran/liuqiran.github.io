@@ -234,19 +234,19 @@ html[lang="en-US"] .profile_inner > span {
 .kq-human-badge img {
   height: 42px;
   width: auto;
-  display: block;
+  display: block !important;
 }
 
 .kq-human-badge-dark {
-  display: none;
+  display: none !important;
 }
 
 .dark .kq-human-badge-light {
-  display: none;
+  display: none !important;
 }
 
 .dark .kq-human-badge-dark {
-  display: block;
+  display: block !important;
 }
 
 /* Smaller cover images: keep thumbnails compact on lists and single posts. */
