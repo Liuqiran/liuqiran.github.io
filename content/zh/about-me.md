@@ -4,7 +4,7 @@ author: Qiran
 type: page
 url: /zh/about-me
 date: 2019-02-09T03:14:24+00:00
-lastmod: 2025-12-28  
+lastmod: 2026-05-25  
 tags: 
   - 建站
 vertical: true  
@@ -17,7 +17,7 @@ translationKey: about-me
 
 比特币地址：1Lae6qzRkp62V6Tbfusv3fhtfKrXDZnoV9
 
-(本站分英文站点和中文站点，内容并不相同，均为原创。翻译功能只有在内容对应的情况下才有效。) 
+(本站分为多个语言站点，内容并不相同，均为原创。翻译功能只有在内容对应的情况下才有效。) 
 
 [关于本站][1]
 
