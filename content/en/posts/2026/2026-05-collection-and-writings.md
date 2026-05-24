@@ -7,7 +7,7 @@ author: Qiran
 date: 2026-05-24
 lastmod: 2026-05-24   
 cover:
-  image: "https://commons.wikimedia.org/wiki/File%3AWeFightCartoon.jpg"
+  image: "https://upload.wikimedia.org/wikipedia/commons/5/57/Books_surrounded_by_smart_phones.jpg"
   relative: false
 tags: 
   - Building Site
