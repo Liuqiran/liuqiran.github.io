@@ -1,24 +1,23 @@
 ---
-title: "收藏与写作"
-translationKey: "2026-05-collection-and-writings"
-slug: "2026-05-collection-and-writings"
+title: 收藏与写作
+translationKey: 2026-05-collection-and-writings
+slug: 2026-05-collection-and-writings
 draft: false
 author: Qiran
 date: 2026-05-24
 lastmod: 2026-05-24
 vertical: true
 cover:
-  image: "https://upload.wikimedia.org/wikipedia/commons/5/57/Books_surrounded_by_smart_phones.jpg"
+  image: https://upload.wikimedia.org/wikipedia/commons/5/57/Books_surrounded_by_smart_phones.jpg
   relative: false
 tags:
-  - 建站
-  - 生活
+- 建站
+- 生活
 kq_managed: true
 kq_mt: true
 kq_mt_from: en
 kq_mt_to: zh
 ---
-
 我花了很多时间下载漫画书。  
 我那种只收藏、却不真正使用或阅读的习惯，似乎又变得更强了。  
 
