@@ -1,0 +1,110 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Summary }}
+    <div class="post-description">{{ .Summary }}</div>
+  {{- else if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+  {{- end }}
+</header>
+
+{{/* 只取“当前语言站点”的页面（不会中英混算） */}}
+{{- $main := site.Params.mainSections | default (slice "posts" "post") -}}
+{{- $pages := where site.RegularPages "Type" "in" $main -}}
+{{- if site.Params.ShowAllPagesInArchive -}}
+  {{- $pages = site.RegularPages -}}
+{{- end -}}
+
+{{/* 分页（只调用一次） */}}
+{{- $perPage := site.Params.archivePaginate | default 200 -}}
+{{- $p := .Paginate ($pages.ByPublishDate.Reverse) $perPage -}}
+
+{{/* 语言与计数口径：统一使用 partial，CJK 字符 + 英文/数字词 */}}
+{{- $lang := site.Language.Lang -}}
+{{- $isCJK := in (slice "zh" "ja" "ko") $lang -}}
+
+{{/* 总计 */}}
+{{- $s := newScratch -}}
+{{- $s.Set "total_with_ai" 0 -}}
+{{- $s.Set "total_without_ai" 0 -}}
+{{- range $pages -}}
+  {{- $n := partial "word_count.html" . -}}
+  {{- $s.Add "total_with_ai" $n -}}
+  {{- if not (.Param "ai_assisted") -}}
+    {{- $s.Add "total_without_ai" $n -}}
+  {{- end -}}
+{{- end -}}
+{{- $totalWithAI := $s.Get "total_with_ai" -}}
+{{- $totalWithoutAI := $s.Get "total_without_ai" -}}
+{{- $unit := cond $isCJK (i18n "archive_unit_cjk") (i18n "archive_unit_words") -}}
+{{- $displayTotalWithoutAI := cond $isCJK (printf "%d" $totalWithoutAI) (printf "%.2fK" (div (float $totalWithoutAI) 1000)) -}}
+{{- $displayTotalWithAI := cond $isCJK (printf "%d" $totalWithAI) (printf "%.2fK" (div (float $totalWithAI) 1000)) -}}
+
+{{/* 统计（先显示在最上方） */}}
+<div class="post-description archive-stats">
+  {{ i18n "archive_label" }} {{ len $pages }} ·
+  {{ i18n "archive_total_without_ai" }} {{ $displayTotalWithoutAI }} {{ $unit }} ·
+  {{ i18n "archive_total_with_ai" }} {{ $displayTotalWithAI }} {{ $unit }}
+</div>
+
+{{/* 最近更新：只显示最近半年、最多5篇、只在第一页出现 */}}
+{{- if eq $p.PageNumber 1 -}}
+  {{- $cutoff := now.AddDate 0 -6 0 -}}
+  {{- $recent := where $pages "Lastmod" "ge" $cutoff -}}
+  {{- $recent = first 5 (sort $recent "Lastmod" "desc") -}}
+
+  {{- if gt (len $recent) 0 -}}
+    <div class="archive-year">
+      <h2 class="archive-year-header">{{ i18n "archive_recent" }}</h2>
+      <div class="archive-posts">
+        {{- range $recent -}}
+          <div class="archive-entry">
+            <h3 class="archive-entry-title entry-hint-parent">{{ .Title | markdownify }}</h3>
+            <div class="archive-meta">
+              {{ i18n "archive_updated_on" }} {{ .Lastmod.Format "01-02" }}
+            </div>
+            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+          </div>
+        {{- end -}}
+      </div>
+    </div>
+  {{- end -}}
+{{- end -}}
+
+{{/* 下面是归档正文（按年/月） */}}
+{{- range $p.Pages.GroupByPublishDate "2006" -}}
+  {{- if ne .Key "0001" -}}
+    <div class="archive-year">
+      {{- $year := replace .Key "0001" "" -}}
+      <h2 class="archive-year-header" id="{{ $year }}">
+        <a class="archive-header-link" href="#{{ $year }}">{{ $year }}</a>
+        <sup class="archive-count"> {{ len .Pages }}</sup>
+      </h2>
+
+      {{- range (.Pages.ByPublishDate.Reverse).GroupByDate "January" -}}
+        <div class="archive-month">
+          <h3 class="archive-month-header" id="{{ $year }}-{{ .Key }}">
+            <a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">{{ .Key }}</a>
+            <sup class="archive-count"> {{ len .Pages }}</sup>
+          </h3>
+
+          <div class="archive-posts">
+            {{- range .Pages.ByPublishDate.Reverse -}}
+              <div class="archive-entry">
+                <h3 class="archive-entry-title entry-hint-parent">{{ .Title | markdownify }}</h3>
+                <div class="archive-meta">{{- partial "post_meta.html" . -}}</div>
+                <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+              </div>
+            {{- end -}}
+          </div>
+        </div>
+      {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}
+
+{{/* 纯数字分页 */}}
+{{- partial "pagination-digits.html" $p -}}
+
+{{- end }}

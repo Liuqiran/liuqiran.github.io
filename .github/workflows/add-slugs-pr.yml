@@ -1,0 +1,47 @@
+name: Add slugs (PR)
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  add_slugs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Show markdown files found (debug)
+        run: |
+          echo "== Markdown files under content =="
+          find content -type f \( -name "*.md" -o -name "*.markdown" -o -name "*.mdx" \) | wc -l
+          find content -type f \( -name "*.md" -o -name "*.markdown" -o -name "*.mdx" \) | head -n 50
+
+      - name: Apply (scan whole content)
+        run: |
+          python3 scripts/add_slug_from_filename.py --roots content --apply
+
+      - name: Show changes (debug)
+        run: |
+          echo "== git diff (name-only) =="
+          git diff --name-only | head -n 200
+          echo "== sample slugs added (grep) =="
+          grep -RIn "^[[:space:]]*slug:" content | head -n 80 || true
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/add-slugs
+          title: "chore: add slugs from filename"
+          commit-message: "chore: add slugs from filename"
+          body: |
+            This PR adds `slug` front matter to markdown content files based on filename/folder name.
+            It helps prevent permalink collisions when using /:slug/.
+          labels: automated

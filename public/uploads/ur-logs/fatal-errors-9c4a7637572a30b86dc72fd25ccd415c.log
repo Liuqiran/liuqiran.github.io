@@ -1,0 +1,8 @@
+2024-12-23T22:31:47+08:00 CRITICAL Cannot redeclare search_distinct() (previously declared in /www/wwwroot/aiweikai.com/_bt_www_bt_wwwroot_bt_aiweikai.com_t_1636553901.7175007/wp-content/plugins/wpchinese-switcher-main/wpchinese-switcher.php:1162) in /www/wwwroot/aiweikai.com/_bt_www_bt_wwwroot_bt_aiweikai.com_t_1636553901.7175007/wp-content/plugins/wpchinese-switcher-main/wpchinese-switcher.php on line 1161
+
+2024-12-23T22:31:52+08:00 CRITICAL Cannot redeclare search_distinct() (previously declared in /www/wwwroot/aiweikai.com/_bt_www_bt_wwwroot_bt_aiweikai.com_t_1636553901.7175007/wp-content/plugins/wpchinese-switcher-main/wpchinese-switcher.php:1162) in /www/wwwroot/aiweikai.com/_bt_www_bt_wwwroot_bt_aiweikai.com_t_1636553901.7175007/wp-content/plugins/wpchinese-switcher-main/wpchinese-switcher.php on line 1161
+
+2024-12-23T22:41:19+08:00 CRITICAL Cannot redeclare search_distinct() (previously declared in /www/wwwroot/aiweikai.com/_bt_www_bt_wwwroot_bt_aiweikai.com_t_1636553901.7175007/wp-content/plugins/wpchinese-switcher-main/wpchinese-switcher.php:1162) in /www/wwwroot/aiweikai.com/_bt_www_bt_wwwroot_bt_aiweikai.com_t_1636553901.7175007/wp-content/plugins/wpchinese-switcher-main/wpchinese-switcher.php on line 1161
+
+2024-12-23T22:41:20+08:00 CRITICAL Cannot redeclare search_distinct() (previously declared in /www/wwwroot/aiweikai.com/_bt_www_bt_wwwroot_bt_aiweikai.com_t_1636553901.7175007/wp-content/plugins/wpchinese-switcher-main/wpchinese-switcher.php:1162) in /www/wwwroot/aiweikai.com/_bt_www_bt_wwwroot_bt_aiweikai.com_t_1636553901.7175007/wp-content/plugins/wpchinese-switcher-main/wpchinese-switcher.php on line 1161
+

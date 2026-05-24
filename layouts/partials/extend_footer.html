@@ -1,0 +1,46 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 英文版本：精确定位 span
+    const profileSubtitle = document.querySelector('.profile_inner > span');
+    
+    if (profileSubtitle) {
+        new TypeIt(profileSubtitle, {
+            strings: [
+                "Welcome to my personal site",
+                "Life is a...",
+                "Life is but a walking shadow.", 
+            ],
+            speed: 50,            // 稍快的速度（原来是100）
+            deleteSpeed: 45,      // 稍快的删除速度（原来是75）
+            waitUntilVisible: true,
+            breakLines: false,
+            lifeLike: true,
+            startDelay: 200,     
+            nextStringDelay: 600,
+            startDelete: true
+        }).go();
+    }
+
+    // 中文版本的代码，速度也相应调整
+    const homeContent = document.querySelector('.home-info .entry-content');
+    if (homeContent) {
+        new TypeIt(homeContent, {
+            strings: [
+                "悲欢离合总无情",
+                "一任阶前...",
+                "点滴到天明。"
+            ],
+            speed: 90,
+            deleteSpeed: 65,
+            waitUntilVisible: true,
+            breakLines: false,
+            lifeLike: true,
+            startDelay: 1000,
+            nextStringDelay: 2000,
+            startDelete: true
+        }).go();
+    }
+});
+</script>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c02627b1413543b0afa49b8b4b0a7957"}'></script><!-- End Cloudflare Web Analytics -->

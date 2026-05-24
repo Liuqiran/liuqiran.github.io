@@ -1,0 +1,90 @@
+{{/* 
+    Cumulative reading count line chart by year
+  */}}
+  
+  {{ $books := site.Data.books.list }}
+  
+  {{/* 1. Group books by year */}}
+  {{ $counts := dict }}
+  
+  {{ range $books }}
+    {{ $year := .Date | default "Unknown" | slice 0 4 }}  {{/* Get year part, e.g. "2022" from "2022-05-01" or just "2022" */}}
+    {{ if ne $year "Unk" }} {{/* Ignore invalid dates if any */}}
+      {{ $oldCount := index $counts $year | default 0 }}
+      {{ $counts = merge $counts (dict $year (add $oldCount 1)) }}
+    {{ end }}
+  {{ end }}
+  
+  {{/* 2. Sort years ascending */}}
+  {{ $years := slice }}
+  {{ range $k, $v := $counts }}
+    {{ $years = $years | append $k }}
+  {{ end }}
+  {{ $sortedYears := sort $years }}
+  
+  {{/* 3. Prepare cumulative counts */}}
+  {{ $cumulative := slice }}
+  {{ $total := 0 }}
+  {{ range $sortedYears }}
+    {{ $year := . }}
+    {{ $count := index $counts $year }}
+    {{ $total = add $total $count }}
+    {{ $cumulative = $cumulative | append dict "year" $year "total" $total }}
+  {{ end }}
+  
+  {{/* 4. Prepare JSON data arrays */}}
+  {{ $labels := slice }}
+  {{ $data := slice }}
+  
+  {{ range $cumulative }}
+    {{ $labels = $labels | append .year }}
+    {{ $data = $data | append .total }}
+  {{ end }}
+  
+  <div style="max-width: 700px; margin: auto;">
+    <canvas id="readingChart"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('readingChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: {{ $labels | jsonify }},
+        datasets: [{
+          label: 'Cumulative Books Read',
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          data: {{ $data | jsonify }},
+          fill: true,
+          tension: 0.3,
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            precision: 0,
+            title: {
+              display: true,
+              text: 'Books Read'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Year'
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top'
+          }
+        }
+      }
+    });
+  </script>

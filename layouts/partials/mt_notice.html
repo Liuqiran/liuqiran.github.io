@@ -1,0 +1,27 @@
+{{- if eq .Params.kq_mt true -}}
+  {{- $lang := .Lang -}}
+  {{- $from := .Params.kq_mt_from | default "" -}}
+
+  {{- /* 找到“原文语言”的那篇翻译（如果存在） */ -}}
+  {{- $scratch := newScratch -}}
+  {{- if $from -}}
+    {{- $list := where .AllTranslations "Lang" "eq" $from -}}
+    {{- if gt (len $list) 0 -}}
+      {{- $scratch.Set "src" (index $list 0) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $src := $scratch.Get "src" -}}
+
+  <div class="kq-mt-note">
+    {{- if hasPrefix $lang "zh" -}}
+      <strong>提示：</strong>本文为机器翻译版本，如觉读来不顺，欢迎指正。
+      {{- with $src }} <a href="{{ .Permalink }}">查看原语言</a>{{ end -}}
+    {{- else if or (hasPrefix $lang "ja") (hasPrefix $lang "jp") -}}
+      <strong>機械翻訳の注意：</strong>この記事は機械翻訳のため、誤りが含まれる可能性があります。順次修正します。
+      {{- with $src }} <a href="{{ .Permalink }}">原文を見る</a>{{ end -}}
+    {{- else -}}
+      <strong>Machine translation notice:</strong> This page is machine-translated and may contain inaccuracies. If it reads awkwardly, your corrections in the comments would be much appreciated.
+      {{- with $src }} <a href="{{ .Permalink }}">View original</a>{{ end -}}
+    {{- end -}}
+  </div>
+{{- end -}}

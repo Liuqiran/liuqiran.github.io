@@ -1,0 +1,210 @@
+{{ $books := site.Data.books.list }}
+
+<style>
+/* 定义亮色模式的颜色变量 */
+:root {
+  --paper-bg: #f2f0e6;
+  --paper-grid: rgba(0,0,0,0.03);
+  --border-color: #e0ded5;
+  --border-dark: #c8c6bd;
+  --text-color: #4a4a4a;
+  --text-secondary: #565656;
+  --th-bg: rgba(0, 0, 0, 0.04);
+  --th-border: rgba(0, 0, 0, 0.08);
+  --td-border: rgba(0, 0, 0, 0.06);
+  --hover-bg: rgba(255,255,255,0.5);
+}
+
+/* 暗色模式的颜色变量 */
+.dark {
+  --paper-bg: #2a2826;
+  --paper-grid: rgba(255,255,255,0.03);
+  --border-color: #3d3a36;
+  --border-dark: #4a4642;
+  --text-color: #e0ded5;
+  --text-secondary: #c8c6bd;
+  --th-bg: rgba(255, 255, 255, 0.04);
+  --th-border: rgba(255, 255, 255, 0.08);
+  --td-border: rgba(255, 255, 255, 0.06);
+  --hover-bg: rgba(255,255,255,0.05);
+}
+
+/* 羊皮纸效果和表格样式 */
+.reading-table-container {
+  padding: 2rem;
+  background: var(--paper-bg);
+  border-radius: 8px;
+  box-shadow: 
+    0 2px 4px rgba(0,0,0,0.1),
+    0 8px 16px rgba(0,0,0,0.1);
+  background-image: 
+    linear-gradient(var(--paper-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--paper-grid) 1px, transparent 1px);
+  background-size: 20px 20px;
+  position: relative;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 装饰性边框 */
+.reading-table-container::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem;
+}
+
+th {
+  background: var(--th-bg);
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--th-border);
+  color: var(--text-color);
+}
+
+th:first-child {
+  border-top-left-radius: 6px;
+}
+
+th:last-child {
+  border-top-right-radius: 6px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--td-border);
+  color: var(--text-secondary);
+}
+
+tr:hover {
+  background: var(--hover-bg);
+}
+
+.rating-cell {
+  white-space: nowrap;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.star {
+  display: inline-block;
+  width: 1.2em;
+  text-align: center;
+}
+
+/* 装饰性角落 - 更精美的设计 */
+.corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.corner::before,
+.corner::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border-dark);
+  border-radius: 50%;
+}
+
+.corner::after {
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 4px;
+  border-color: var(--border-color);
+}
+
+/* 角落装饰件的花纹 */
+.corner-decoration {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-color);
+  top: 8px;
+  left: 8px;
+}
+
+.corner-top-left {
+  top: -12px;
+  left: -12px;
+}
+
+.corner-top-right {
+  top: -12px;
+  right: -12px;
+  transform: rotate(90deg);
+}
+
+.corner-bottom-left {
+  bottom: -12px;
+  left: -12px;
+  transform: rotate(-90deg);
+}
+
+.corner-bottom-right {
+  bottom: -12px;
+  right: -12px;
+  transform: rotate(180deg);
+}
+
+/* 添加装饰性线条 */
+.corner::before {
+  background: 
+    radial-gradient(circle at center, var(--border-dark) 2px, transparent 2px),
+    radial-gradient(circle at 30% 30%, var(--border-dark) 2px, transparent 2px),
+    radial-gradient(circle at 70% 70%, var(--border-dark) 2px, transparent 2px);
+}
+</style>
+
+<div class="reading-table-container">
+  <div class="corner corner-top-left"><div class="corner-decoration"></div></div>
+  <div class="corner corner-top-right"><div class="corner-decoration"></div></div>
+  <div class="corner corner-bottom-left"><div class="corner-decoration"></div></div>
+  <div class="corner corner-bottom-right"><div class="corner-decoration"></div></div>
+  <div style="overflow-x: auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Date of completion</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $books }}
+          <tr>
+            <td>{{ .No }}</td>
+            <td>{{ .Title }}</td>
+            <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
+            <td>{{ .Date }}</td>
+            <td class="rating-cell">
+              {{- $rating := .Rating -}}
+              {{- range seq 1 5 -}}
+                <span class="star">{{- if le . $rating -}}⭐{{- else -}}☆{{- end -}}</span>
+              {{- end -}}
+            </td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+</div>

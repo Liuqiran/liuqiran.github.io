@@ -1,0 +1,14 @@
+{{- /*
+Count text consistently across English and CJK content.
+
+Rules:
+- Han, Hiragana, Katakana, Hangul, and Japanese iteration/prolonged-sound marks count as one each.
+- Latin words and numbers count as one token each, including contractions.
+- Mixed-language posts add both counts.
+*/ -}}
+{{- $plain := .Plain | htmlUnescape -}}
+{{- $cjkPattern := "[\\p{Han}\\p{Hiragana}\\p{Katakana}\\p{Hangul}々〆〤ー]" -}}
+{{- $cjk := len (findRE $cjkPattern $plain) -}}
+{{- $withoutCJK := replaceRE $cjkPattern " " $plain -}}
+{{- $words := len (findRE "[\\p{Latin}\\p{N}]+(?:[’'][\\p{Latin}\\p{N}]+)?" $withoutCJK) -}}
+{{- return (add $cjk $words) -}}

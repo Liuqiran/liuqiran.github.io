@@ -1,0 +1,80 @@
+name: Translate (per-post config)
+
+on:
+  push:
+    branches: ["main"]
+    # ✅ 白名单：只在这些目录/文件变更时触发（排除 content/shared/** 等）
+    paths:
+      - "content/en/**"
+      - "content/zh/**"
+      # 如果你未来真的要启用日文目录，再取消注释下一行
+      # - "content/ja/**"
+      - "scripts/translate.py"
+      - "data/kq_tag_map.yaml"
+      # （可选）改 workflow 自己也能触发一次，方便调试
+      - ".github/workflows/translate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    # ✅ 防止 workflow 自己 commit/push 后再次触发造成循环
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml google-cloud-translate google-auth
+
+      # ✅ 可选：调试用（确认脚本真的生成了目标文件）
+      - name: Debug (before)
+        run: |
+          echo "== locate leaky gut zh file =="
+          grep -RIn "translationKey: 2024-05-29-seven-symptons-of-leaky-gut" content/zh || true
+          echo "== check existing en file (mirror path) =="
+          ls -la content/en/2024-05-29-seven-symptons-of-leaky-gut.md || true
+
+      - name: Run translate script
+        env:
+          GCP_SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
+        run: |
+          python3 scripts/translate.py
+
+      - name: Debug (after)
+        run: |
+          echo "== exists? =="
+          ls -la content/en/2024-05-29-seven-symptons-of-leaky-gut.md || true
+          echo "== git status =="
+          git status --porcelain || true
+          echo "== check ignore =="
+          git check-ignore -v content/en/2024-05-29-seven-symptons-of-leaky-gut.md || echo "NOT ignored"
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+
+          # ✅ Add generated/updated content (only add dirs that exist)
+          git add content/en content/zh || true
+          if [ -d content/ja ]; then git add content/ja; fi
+
+          # ✅ Cache file (may be gitignored, so force add)
+          git add -f .cache/mt_cache.json || true
+
+          # ✅ No changes -> stop
+          git diff --cached --quiet && exit 0
+
+          git commit -m "chore: generate translations (per-post translate config)"
+          git push

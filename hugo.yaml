@@ -1,0 +1,234 @@
+defaultContentLanguage: "en"
+enableGitInfo: false
+hasCJKLanguage: true
+defaultContentLanguageInSubdir: true  
+theme: "PaperMod"  
+baseURL: "https://liuqiran.github.io/"
+relativeURLs: true   
+
+languages:
+  en:
+    languageName: "EN"  
+    title: "Liu Qiran"
+    weight: 1
+    languageCode: "en-US"
+    contentDir: content/en/
+    taxonomies: # 分类系统
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - identifier: home
+          name: 🏠 Home
+          url: /en/
+          weight: 1
+        - identifier: about
+          name: 👤 About
+          url: /en/about-me/
+          weight: 10
+        - identifier: Reading list
+          name: 📚 Reading list
+          url: /en/reading-list/
+          weight: 20
+        - identifier: archive
+          name: 🗂️ Archive
+          url: /en/archive/
+          weight: 40
+        - identifier: tags
+          name: 🏷️ Tags
+          url: /en/tags/
+          weight: 50
+        - identifier: friends
+          name: 🧑‍🤝‍🧑 Friends
+          url: /en/my-friends/
+          weight: 60
+        - identifier: search
+          name: 🔍 Search
+          url: /en/search/
+          weight: 70
+    params: 
+      ShowFullTextinRSS: true
+      editPost:
+          URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/en" 
+          appendFilePath: true
+          Text: "View on GitHub"
+      label:
+        icon: "/img/Avatar.jpg"
+      displayFullLangName: true
+      ShowPostNavLinks: true
+      alternatelang: 'zh'
+      profileMode:
+        enabled: true
+        title: Liu Qiran
+        subtitle:  ""
+        imageUrl: '/img/Avatar.jpg'
+        imageWidth: 150
+        imageHeight: 150
+        buttons:
+          - name: 👤 About me 
+            url: /en/about-me-2/
+          - name: 🗂️ posts 
+            url: /en/archive/
+          - name: 🧭 Now
+            url: /en/now/
+
+      socialIcons:
+        - name: rss
+          url: '/rss'     
+        - name: mastodon
+          url: 'https://mastodon.social/@liuqiran'
+        - name: github
+          url: 'https://github.com/liuqiran'
+        - name: telegram
+          url: 'https://t.me/qiranschannel'
+        - name: twitter
+          url: 'https://twitter.com/qiran_liu' 
+        - name: linkedin
+          url: 'https://www.linkedin.com/in/liuqiran/'
+        - name: youtube
+          url: 'https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ'
+        - name: email
+          url: 'mailto:woshiniuziku@gmail.com'    
+        - name: facebook
+          url: 'https://web.facebook.com/liuqiran123'
+    
+  zh:
+    languageName: "中文"   
+    Title: "刘其然的部落格"
+    languageCode: "zh-cn"
+    weight: 2
+    contentDir: content/zh/  
+    taxonomies: # 分类系统
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - identifier: homepage 
+          name: 🏠 主页
+          weight: 1
+          url: /zh/
+        - identifier: about
+          name: 👤 关于
+          url: /zh/about-me/
+          weight: 2
+        - identifier: reading-list
+          name: 📚 阅读书目 
+          url: /zh/reading-list-2/    
+          weight: 3
+        - identifier: archive 
+          name: 🗂️ 归档
+          url: /zh/archive/
+          weight: 4
+        - identifier: 标签
+          name: 🏷️ 标签
+          url: /zh/tags/
+          weight: 5
+        - identifier: links
+          name: 🧑‍🤝‍🧑 友人
+          url: /zh/my-friends/
+          weight: 6
+        - identifier: search
+          name: 🔍 搜索
+          url: /zh/search/
+          weight: 7
+    params:  
+      editPost:
+          URL: "https://github.com/Liuqiran/liuqiran.github.io/edit/main/content/zh" 
+          appendFilePath: true
+          Text: "查看源码"
+      label:
+        icon: "/img/Avatar.jpg"
+      displayFullLangName: true
+      ShowPostnevLinks: true
+      alternatelang: 'en' 
+      homeInfoParams:
+        enabled: true
+        Title: "刘其然的部落格"
+        Content: "欢迎访问本人站点！"
+        imageUrl: "/img/Avatar.jpg"
+        imageWidth: 110
+        imageHeight: 110
+      
+      socialIcons:
+        - name: rss
+          url:  /zh/rss-2/     
+        - name: mastodon
+          url: 'https://mastodon.social/@liuqiran'
+        - name: github
+          url: 'https://github.com/liuqiran'
+        - name: telegram
+          url: 'https://t.me/qiranschannel'
+        - name: twitter
+          url: 'https://twitter.com/qiran_liu' 
+        - name: linkedin
+          url: 'https://www.linkedin.com/in/liuqiran/'
+        - name: youtube
+          url: 'https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ'
+        - name: email
+          url: 'mailto:woshiniuziku@gmail.com'    
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true   # 关于 Raw HTML 警告，你可以选择在 config.yml 中添加以下内容来忽略它：   
+
+# ignoreErrors: 
+   # - "error-remote-getjson" #不想启用不安全的 HTML 渲染      
+
+outputs:
+  home:
+    - HTML # 生成的静态页面
+    - RSS # 这个其实无所谓
+    - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
+  section:
+    - HTML
+    - RSS 
+    - SITEMAP  
+    - ROBOTS
+
+outputFormats:
+  RSS:
+    mediatype: "application/rss+xml"
+    baseName: "index"  # 这将生成 index.xml
+  RSSFeed:
+    mediatype: "application/rss+xml"
+    baseName: "feed"   # 这将生成 feed.xml
+    permalinkable: true   
+    path: /
+
+# 这里的参数会被代码以 .Site.Params 的形式读取
+params:  
+  assets:
+    favicon: "favicon.ico"
+  css: ["css/custom.css"]
+  ShowLastMod: true
+  ShowLastModOnlyIfDiff: true
+  author : "Qiran" 
+  ShowShareButtons: true
+  ShareButtons: ["linkedin","x","facebook","telegram","copy"]
+  ShowPostNavLinks: true  
+  ShowDraft: true
+  ShowFullTextinRSS: false 
+  mainSections: ["post","posts","zh","en"]
+  ShowWordCount: true
+  comments: true  # 这里打开评论
+  showtoc: true
+  tocopen: true
+  ShowArchive: true
+  cover:
+    image: "/img/Avatar.jpg"
+  rss: "/feed/"
+  # twikoo评论
+  twikoo:
+    version: 1.6.40
+    id: https://twikoo-gamma-red.vercel.app/
+    region:  # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数，请看twikoo官方文档       
+  waline:
+    serverURL: https://waline.liuqiran.com/
+
+
+permalinks:
+  page:
+    posts: /:slug/
+  section:
+    posts: /posts/
