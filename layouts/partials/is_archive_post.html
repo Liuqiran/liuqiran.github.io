@@ -1,0 +1,13 @@
+{{- $isArchivePost := true -}}
+{{- with .File -}}
+  {{- $path := lower .Path -}}
+  {{- $base := path.Base $path -}}
+  {{- $excludedBases := slice "_index.md" "about-me.md" "reading-list.md" "my-friends.md" "search.md" "rss.md" -}}
+  {{- if in $excludedBases $base -}}
+    {{- $isArchivePost = false -}}
+  {{- end -}}
+  {{- if or (hasPrefix $path "archive/") (hasPrefix $path "now/") -}}
+    {{- $isArchivePost = false -}}
+  {{- end -}}
+{{- end -}}
+{{- return $isArchivePost -}}

@@ -15,6 +15,13 @@
 {{- if site.Params.ShowAllPagesInArchive -}}
   {{- $pages = site.RegularPages -}}
 {{- end -}}
+{{- $filteredPages := slice -}}
+{{- range $pages -}}
+  {{- if partial "is_archive_post.html" . -}}
+    {{- $filteredPages = $filteredPages | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $pages = $filteredPages -}}
 
 {{/* 分页（只调用一次） */}}
 {{- $perPage := site.Params.archivePaginate | default 200 -}}

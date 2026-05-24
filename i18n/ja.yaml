@@ -1,0 +1,22 @@
+- id: readmore
+  translation:
+    other: "続きを読む："
+
+- id: archive_label
+  translation: "アーカイブ"
+- id: archive_total
+  translation: "総計（Qiran本人のオリジナルのみ。機械翻訳・AI補助を除く）"
+- id: archive_total_without_mt
+  translation: "総計（機械翻訳記事を除く）"
+- id: archive_total_without_ai
+  translation: "総計（AI補助を除く）"
+- id: archive_total_with_ai
+  translation: "総計（AI補助を含む）"
+- id: archive_recent
+  translation: "最近の更新"
+- id: archive_updated_on
+  translation: "更新日"
+- id: archive_unit_cjk
+  translation: "字"
+- id: archive_unit_words
+  translation: "words"

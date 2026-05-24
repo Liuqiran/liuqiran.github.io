@@ -10,13 +10,13 @@ from typing import Tuple, Optional, List, Dict
 DATE_PREFIX_RE = re.compile(r"^\d{4}-\d{2}-\d{2}[-_]+")
 
 def detect_language(md_path: Path) -> str:
-    # crude but practical: content/en/... or content/zh/...
+    # crude but practical: content/en/... or content/zh/... or content/ja/...
     parts = [p.lower() for p in md_path.parts]
     if "content" in parts:
         i = parts.index("content")
         if i + 1 < len(parts):
             lang = parts[i + 1]
-            if lang in ("en", "zh"):
+            if lang in ("en", "zh", "ja"):
                 return lang
     return "unknown"
 
@@ -117,8 +117,8 @@ def main():
     ap.add_argument(
         "--roots",
         nargs="+",
-        default=["content/en/posts", "content/zh/posts"],
-        help="Roots to scan (default: content/en/posts content/zh/posts)",
+        default=["content/en/posts", "content/zh/posts", "content/ja/posts"],
+        help="Roots to scan (default: content/en/posts content/zh/posts content/ja/posts)",
     )
     ap.add_argument(
         "--apply",

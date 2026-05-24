@@ -8,7 +8,7 @@ on:
       - "content/en/**"
       - "content/zh/**"
       # 如果你未来真的要启用日文目录，再取消注释下一行
-      # - "content/ja/**"
+      - "content/ja/**"
       - "scripts/translate.py"
       - "data/kq_tag_map.yaml"
       # （可选）改 workflow 自己也能触发一次，方便调试
