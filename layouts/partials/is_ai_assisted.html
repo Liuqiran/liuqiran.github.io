@@ -1,0 +1,8 @@
+{{- $aiAssisted := false -}}
+{{- with .Param "ai_assisted" -}}
+  {{- $raw := lower (printf "%v" .) -}}
+  {{- if or (eq . true) (eq $raw "true") (eq $raw "1") (eq $raw "yes") -}}
+    {{- $aiAssisted = true -}}
+  {{- end -}}
+{{- end -}}
+{{- return $aiAssisted -}}

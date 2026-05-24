@@ -210,13 +210,66 @@ html[lang="en-US"] .profile_inner > span {
 
 
 .kq-mt-note,
-.kq-ai-note{
+.kq-ai-note,
+.kq-human-note{
   border:1px solid var(--border);
   background: var(--entry);
   padding: .8rem 1rem;
   border-radius: var(--radius);
   margin: 1rem 0;
   font-size: .95rem;
+}
+
+.kq-human-badge {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.kq-human-badge svg {
+  width: min(220px, 100%);
+  height: auto;
+  display: block;
+}
+
+.kq-human-badge-bg {
+  fill: var(--primary);
+  stroke: var(--border);
+  stroke-width: 1.5;
+}
+
+.kq-human-badge-ring {
+  fill: none;
+  stroke: var(--theme);
+  stroke-width: 2.2;
+}
+
+.kq-human-badge-fill {
+  fill: var(--theme);
+}
+
+.kq-human-badge-smile {
+  fill: none;
+  stroke: var(--theme);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.kq-human-badge-title,
+.kq-human-badge-sub {
+  fill: var(--theme);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+.kq-human-badge-title {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.kq-human-badge-sub {
+  font-size: 10.5px;
+  font-weight: 600;
 }
 
 /* Smaller cover images: keep thumbnails compact on lists and single posts. */

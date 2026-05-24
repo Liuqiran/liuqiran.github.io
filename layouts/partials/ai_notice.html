@@ -1,9 +1,9 @@
-{{- if eq (.Param "ai_assisted") true -}}
+{{- if partial "is_ai_assisted.html" . -}}
   <div class="kq-ai-note">
     {{- if hasPrefix .Lang "zh" -}}
-      <strong>说明：</strong>本文由 AI 辅助起草，并由我确认和编辑。
+      <strong>声明：</strong>本文由 AI 辅助起草，并由我确认和编辑。
     {{- else if or (hasPrefix .Lang "ja") (hasPrefix .Lang "jp") -}}
-      <strong>注記：</strong>この記事は AI の支援を受けて下書きし、本人が確認・編集しました。
+      <strong>注記：</strong>この記事は AI の支援を受けて下書きし、本人が確認と編集を行いました。
     {{- else -}}
       <strong>Note:</strong> This post was drafted with AI assistance and reviewed and edited by me.
     {{- end -}}

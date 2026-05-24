@@ -74,7 +74,7 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if .Content }}
-      {{- $rssNotices := printf "%s%s" (partial "mt_notice.html" .) (partial "ai_notice.html" .) -}}
+      {{- $rssNotices := printf "%s%s%s" (partial "mt_notice.html" .) (partial "ai_notice.html" .) (partial "human_notice.html" .) -}}
       {{- $rssContent := printf "%s%s" $rssNotices .Content -}}
       <content:encoded>{{ (printf "<![CDATA[%s]]>" $rssContent) | safeHTML }}</content:encoded>
       {{- end }}

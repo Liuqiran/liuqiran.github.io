@@ -31,7 +31,7 @@
 {{- range $pages -}}
   {{- $n := partial "word_count.html" . -}}
   {{- $s.Add "total_with_ai" $n -}}
-  {{- if not (.Param "ai_assisted") -}}
+  {{- if not (partial "is_ai_assisted.html" .) -}}
     {{- $s.Add "total_without_ai" $n -}}
   {{- end -}}
 {{- end -}}
