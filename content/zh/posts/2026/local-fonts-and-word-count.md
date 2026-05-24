@@ -7,6 +7,10 @@ type: post
 date: 2026-05-24
 lastmod: 2026-05-24
 ai_assisted: true
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mountain_and_lake_landscape_at_Glacier_National_Park.jpg/1280px-Mountain_and_lake_landscape_at_Glacier_National_Park.jpg"
+  alt: "Glacier National Park mountain and lake landscape"
+  caption: "Image: [PotatoCow25 / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mountain_and_lake_landscape_at_Glacier_National_Park.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 tags:
   - 建站
   - 技术

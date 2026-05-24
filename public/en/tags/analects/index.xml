@@ -2,30 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Analects on Liu Qiran</title>
-    <link>http://localhost:1313/en/tags/analects/</link>
+    <link>https://liuqiran.github.io/en/tags/analects/</link>
     <description>Recent content in Analects on Liu Qiran</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.161.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/analects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Oct 2019 06:14:00 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/en/tags/analects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pa Yih 13 analysis</title>
-      <link>http://localhost:1313/en/2019-10-21-pa-yih-13-analysis/</link>
+      <link>https://liuqiran.github.io/en/pa-yih-13-analysis/</link>
       <pubDate>Mon, 21 Oct 2019 06:14:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/2019-10-21-pa-yih-13-analysis/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Tranlation’s words&lt;/strong&gt;&lt;/p&gt;
+      <guid>https://liuqiran.github.io/en/pa-yih-13-analysis/</guid>
+      <description>&lt;p&gt;﻿&lt;strong&gt;Tranlation’s words&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;谓：Legge’s translation: “meaning”, Eno’s translation: “sense”.&lt;/p&gt;
 &lt;p&gt;媚：Legge: pay court to; Eno: appeal to; Lau: be obsequious to&lt;/p&gt;
-&lt;p&gt;灶：Legge: furnance; Eno: the kitchen god; Lau: the kitchen stove&lt;/p&gt;</description>
+&lt;p&gt;灶：Legge: furnance; Eno: the kitchen god; Lau: the kitchen stove&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿<strong>Tranlation’s words</strong></p>
+<p>谓：Legge’s translation: “meaning”, Eno’s translation: “sense”.</p>
+<p>媚：Legge: pay court to; Eno: appeal to; Lau: be obsequious to</p>
+<p>灶：Legge: furnance; Eno: the kitchen god; Lau: the kitchen stove</p>
+<p>奥： Legge: the south-west corner; Eno: the god of the dark corner; Lau: the south-west corner of the house</p>
+<p>Legge translated “问曰”into “asked, saying” . Comparing to “asked” (Eno’s translation) and “said” (Lau’s translation) , Legge translated both words. Wangsun Jia asked a question after “问曰”in this chapter, so it is also understandable if only translate “问曰”into “asked” or “said”.</p>
+<p>Legge translated “媚”into “pay court to” . “媚”has several meanings (love or flatter)<a href="#sdfootnote1sym"><sup>1</sup></a>
+ as a verb. Comparing to Eno’s translation (appeal to) , “pay court to” is more close to the original meaning of “媚”. But “pay court to” has been old-fashioned than “appeal to” from 1800.</p>
+<p>“灶” has two meanings in Chinese: “kitchen stove” or “kitchen god” , In Chinese culture, “灶”is Legge’s translation is “furnace” . Eno’s translation is “kitchen god” , Lau’s translation is “kitchen stove” . In this chapter, “灶”refers to kitchen god living near the kitchen stove, also called “灶神”or “灶君”. Why Legge translated “灶”to “furnace” instead of “stove” or “kitchen stove” ? Maybe it’s due to the limited information on “灶”in Morrison’s dictionary, “灶”、“炉”(fireplace) 、“窖”(cellar) , they all mean a same thing: A furnace. But “灶神”is included in this entry, it refers to “the god of the furnace, employed in the dressing of provisions.” <a href="#sdfootnote2sym"><sup>2</sup></a>
+For that reason, Legge should know the meaning of “灶”（灶神） in this chapter, therefore we can conclude that Legge’s translation is reasonable.</p>
+<p>“获”means “get” or “capture” , “罪”means “crime” or “fault”. Literally, “获罪”can means “be proved guilty” or “be convicted”. But in this chapter, “罪”doesn’t mean an illegal action which can be punished by law in society, it’s related to “Heaven” , so Legge, Eno and Lau all translated it into “offend against”.</p>
+<p>“天”: Legge’s translation is “Heaven” , Legge explained it as “The lofty one who is on high” . “天”may not be a place in this chapter. It doesn’t mean “Heaven” itself, it may refers to Moral Power or Moral Law<a href="#sdfootnote3sym"><sup>3</sup></a>
+. “Choo He says, Heaven means principle” . Because the concept of “天”is rather ambiguous, Eno just translated “天”into pinyin “<em>tian</em>“.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Pa Yih 13 translations</title>
-      <link>http://localhost:1313/en/2019-10-12-pa-yih-13-translations/</link>
+      <link>https://liuqiran.github.io/en/pa-yih-13-translations/</link>
       <pubDate>Sat, 12 Oct 2019 11:16:19 +0000</pubDate>
-      <guid>http://localhost:1313/en/2019-10-12-pa-yih-13-translations/</guid>
-      <description>&lt;p&gt;【十三章】【一節】王孫賈問曰、與其媚於奧、寧媚於竈、何謂也。【二節】子曰、不然、獲罪於天、無所禱也。&lt;/p&gt;
+      <guid>https://liuqiran.github.io/en/pa-yih-13-translations/</guid>
+      <description>&lt;p&gt;﻿【十三章】【一節】王孫賈問曰、與其媚於奧、寧媚於竈、何謂也。【二節】子曰、不然、獲罪於天、無所禱也。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Legge’s translation:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Chapter XIII. 1. Wang-sun Chia asked, saying, “What is the meaning of the saying, ‘It is better to pay court to the furnace than to the south-west corner?&amp;rsquo;”&lt;/p&gt;</description>
+&lt;p&gt;Chapter XIII. 1. Wang-sun Chia asked, saying, “What is the meaning of the saying, ‘It is better to pay court to the furnace than to the south-west corner?&amp;rsquo;”&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿【十三章】【一節】王孫賈問曰、與其媚於奧、寧媚於竈、何謂也。【二節】子曰、不然、獲罪於天、無所禱也。</p>
+<p><strong>Legge’s translation:</strong></p>
+<p>Chapter XIII. 1. Wang-sun Chia asked, saying, “What is the meaning of the saying, ‘It is better to pay court to the furnace than to the south-west corner?&rsquo;”</p>
+<ol start="2">
+<li>The Master said, “Not so. He who offends against Heaven has none to whom he can pray.”</li>
+</ol>
+<p>Commentary: THAT THERE IS NO RESOURCE AGAINST THE CONSEQUENCES OF VILATING THE RIGHT. Kea is the great officer of Wei, and having the power of the state in his hands, insinuated Confucius that it would be for his advantage to pay court to him. The southwest corner was from the structure of ancient houses the cosiest nook, and the place of honour.<br>
+Choo He explains the proverb by reference to the customs of sacrifice.<br>
+The furnace was comparatively a mean place, but when the spirit of the furnace was sacrificed to, then the rank of the two places was changed for the time, and the proverb quoted was in vogue. But there does not seem much force in this explanation. The <em>door</em>, or <em>well</em>, or any other of the five things in the regular sacrifices, might take the place of the furnace.<br>
+2 Confucius’ reply was in a high tone. Choo He says, “Heaven means principle” But why should Heaven mean principle, if there were not in such a use of the term an instinctive recognition of a supreme government of intelligence and righteousness We find the term explained by “The lofty one who is on high”.</p>
+<p><strong>Eno’s translation:</strong></p>
+<p>3.13 Wangsun Jia asked, “What is the sense of that saying: ‘Better to appeal to the kitchen god than the god of the dark corner?’” The Master said, “Not so! If one offends against Tian, one will have no place at which to pray.”</p>
+<p>Commentary: 3.13 After failing to succeed in reforming the politics of his home state of Lu, Confucius journeyed from state to state in search of a worthy ruler. Here he is in the state of Wei, and the powerful minister of war is suggesting, by means of analogy with customary ideas of household gods, that he, rather than the duke of Wei, is the key to political access in Wei. (See 6.28.)</p>
+<p><strong>D.C. Lau’s translation:</strong></p>
+<p>Wang-sun Chia said, “Better to be obsequious to the kitchen stove Than to the south-west corner of the house.* What does that mean?”<br>
+The Master said, “The saying has got it wrong.  When  you  have  offended  against Heaven, there is nowhere you  can turn to in your prayers.”</p>
+<p>*By ‘the south-west corner of the house’ which is the  place of honour Wang-sun Chia, being a minister of Wei,  presumably meant to refer to the lord of Wei and by ‘the  kitchen stove’ to himself.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

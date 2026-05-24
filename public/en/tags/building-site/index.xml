@@ -2,156 +2,363 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Building Site on Liu Qiran</title>
-    <link>http://localhost:1313/en/tags/building-site/</link>
+    <link>https://liuqiran.github.io/en/tags/building-site/</link>
     <description>Recent content in Building Site on Liu Qiran</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.161.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 21 May 2025 11:11:49 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/building-site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/en/tags/building-site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local Fonts and Better Word Counts</title>
+      <link>https://liuqiran.github.io/en/local-fonts-and-word-count/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/local-fonts-and-word-count/</guid>
+      <description>&lt;p&gt;I made two small but important improvements to this site today: I moved the Chinese web font to local files, and I rewrote the word-counting logic.&lt;/p&gt;
+&lt;p&gt;The Chinese pages had been using &lt;strong&gt;KingHwa OldSong&lt;/strong&gt; through an external CDN. In theory this was convenient, but in practice it was fragile. If the CDN was blocked, slow, changed domains, or returned an error, the browser would fall back to a system font. That made the site look different from what I intended.&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-ai-note"><strong>Note:</strong> This post was drafted with AI assistance and reviewed and edited by me.</div><p>I made two small but important improvements to this site today: I moved the Chinese web font to local files, and I rewrote the word-counting logic.</p>
+<p>The Chinese pages had been using <strong>KingHwa OldSong</strong> through an external CDN. In theory this was convenient, but in practice it was fragile. If the CDN was blocked, slow, changed domains, or returned an error, the browser would fall back to a system font. That made the site look different from what I intended.</p>
+<p>Now the site hosts the sliced <code>.woff2</code> font files locally. This does not mean every visitor has to download the whole font at once. The font is split into many small files, and the browser only loads the pieces needed for the characters on the current page. It costs more repository space, but it makes the site more stable and predictable. I also enabled the same font for Japanese pages, since the typeface includes Japanese glyphs and works well for CJK text.</p>
+<p>I also optimized the word-counting method. Hugo&rsquo;s built-in <code>.WordCount</code> is useful for English, but it is not precise enough for Chinese. The new logic counts CJK characters as individual characters, counts Latin words and numbers as word tokens, and combines both for mixed-language posts. This unified method is now used by post metadata, archive totals, the heatmap, and structured data.</p>
+<p>These changes are not very visible as features, but they make the site feel more like a carefully maintained personal space. Typography and counting rules are small details, yet they affect the experience of reading and reviewing my own writing over time.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Updated Hugo</title>
+      <link>https://liuqiran.github.io/en/2025-year-end-update/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/2025-year-end-update/</guid>
+      <description>&lt;p&gt;After several days of burning the midnight oil, I finally finished migrating my commenting system, adding custom buttons to my site, and implementing several other features.&lt;/p&gt;
+&lt;p&gt;The new commenting system, &lt;strong&gt;Waline&lt;/strong&gt;, supports reactions and comes with a clean, elegant interface. I also added floating buttons at the bottom of each page—a table of contents button and a comment button—so visitors can quickly jump to the sections they want.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;If articles on different language websites have similar content, the comment sections will be merged together.&lt;/del&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<p>After several days of burning the midnight oil, I finally finished migrating my commenting system, adding custom buttons to my site, and implementing several other features.</p>
+<p>The new commenting system, <strong>Waline</strong>, supports reactions and comes with a clean, elegant interface. I also added floating buttons at the bottom of each page—a table of contents button and a comment button—so visitors can quickly jump to the sections they want.</p>
+<p><del>If articles on different language websites have similar content, the comment sections will be merged together.</del></p>
+<p>In addition, I updated the word-counting feature on the archive page. It now counts both the total number of articles and the total word count across the site.</p>
+<p>I also found a better way to write and update articles on my phone. I initially wanted to use GitJournal, but it modifies the front matter, which caused my site builds to fail. Then I installed Termux and pulling the entire repository. For editing files, I  use <strong>Markor</strong>, a lightweight offline Markdown editor. It’s simple, reliable, and much more convenient for mobile writing going forward.</p>
+<p>There are still features I’d like to implement—such as automatically publishing my posts to other platforms—but this has proven to be surprisingly difficult. I tried many approaches, but none worked well enough.</p>
+<p>In the end, this process feels a lot like decorating my own small space. And I genuinely enjoy it.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Migrated to Hugo</title>
-      <link>http://localhost:1313/en/2025-01-07-migrated-to-hugo/</link>
+      <link>https://liuqiran.github.io/en/migrated-to-hugo/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/2025-01-07-migrated-to-hugo/</guid>
+      <guid>https://liuqiran.github.io/en/migrated-to-hugo/</guid>
       <description>&lt;p&gt;After several days of painstaking work, I finally moved from WordPress to Hugo.&lt;/p&gt;
 &lt;p&gt;Due to the fact that my server is very slow, I think I can focus on writing offline and concentrate on content, rather than adjusting features.&lt;/p&gt;
-&lt;p&gt;There are many features that I find unnecessary, such as commentator ranking. The tree map of categories is also not that useful, because it’s hard to maintain the database. After switching to Hugo to manage my &lt;em&gt;posts&lt;/em&gt;, I can organize them more easily.&lt;/p&gt;</description>
+&lt;p&gt;There are many features that I find unnecessary, such as commentator ranking. The tree map of categories is also not that useful, because it’s hard to maintain the database. After switching to Hugo to manage my &lt;em&gt;posts&lt;/em&gt;, I can organize them more easily.&lt;/p&gt;</description><content:encoded><![CDATA[<p>After several days of painstaking work, I finally moved from WordPress to Hugo.</p>
+<p>Due to the fact that my server is very slow, I think I can focus on writing offline and concentrate on content, rather than adjusting features.</p>
+<p>There are many features that I find unnecessary, such as commentator ranking. The tree map of categories is also not that useful, because it’s hard to maintain the database. After switching to Hugo to manage my <em>posts</em>, I can organize them more easily.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>EP 9 Technical breakdown</title>
-      <link>http://localhost:1313/en/2023-06-13-ep-9-technical-breakdown/</link>
+      <link>https://liuqiran.github.io/en/ep-9-technical-breakdown/</link>
       <pubDate>Tue, 13 Jun 2023 14:52:24 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-06-13-ep-9-technical-breakdown/</guid>
-      <description>&lt;p&gt;Last week I went through a serious problem of my server, on which my website runs.&lt;br&gt;
+      <guid>https://liuqiran.github.io/en/ep-9-technical-breakdown/</guid>
+      <description>&lt;p&gt;﻿Last week I went through a serious problem of my server, on which my website runs.&lt;br&gt;
 It started with the problem of the version of PHP. The edition of the current PHP is very old and it couldn’t support the running of some plugins. Then I tried to install a new version of PHP, but it didn’t work. When I tried to uninstall the old version, the server crashed and could not be restarted due to an error called “kernel panic”.&lt;br&gt;
-I’ve done my best to fix it myself until midnight. It’s useless. I could only ask other people for help. The technical staff couldn’t solve it either, but they helped me to backup the data. It’s a very tedious experience and I could restore my server after several days. Finally, I used the backup data and restored my website.&lt;/p&gt;</description>
+I’ve done my best to fix it myself until midnight. It’s useless. I could only ask other people for help. The technical staff couldn’t solve it either, but they helped me to backup the data. It’s a very tedious experience and I could restore my server after several days. Finally, I used the backup data and restored my website.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Last week I went through a serious problem of my server, on which my website runs.<br>
+It started with the problem of the version of PHP. The edition of the current PHP is very old and it couldn’t support the running of some plugins. Then I tried to install a new version of PHP, but it didn’t work. When I tried to uninstall the old version, the server crashed and could not be restarted due to an error called “kernel panic”.<br>
+I’ve done my best to fix it myself until midnight. It’s useless. I could only ask other people for help. The technical staff couldn’t solve it either, but they helped me to backup the data. It’s a very tedious experience and I could restore my server after several days. Finally, I used the backup data and restored my website.</p>
+<p>Now I feel that there are a lot of problems I cannot do by myself, what I can only do is find the help from some professional persons. But it’s my hobby to explore some technical stuff. It’s very interesting. It reminds me of the days when I created my first blog when I was only 8 years old. It made me very excited.</p>
+<p>After a period of time when I started this website, I didn’t know the usefulness of building a website. It was built entirely out of my own passion. Sometimes I was in the situation of self-doubt. But I still hope that it will give me some benefits in the future. Because I’ve spent a lot of time on building the website, I can feel that my skill is growing. Now I realized that it’s really an interest of mine. Why not just continue. In this field of website building, there are a lot of things I need to learn.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Change the title</title>
-      <link>http://localhost:1313/en/2023-02-28-change-the-title/</link>
+      <link>https://liuqiran.github.io/en/change-the-title/</link>
       <pubDate>Tue, 28 Feb 2023 12:53:54 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-02-28-change-the-title/</guid>
-      <description>&lt;p&gt;Changed the title of the English website.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/change-the-title/</guid>
+      <description>&lt;p&gt;﻿Changed the title of the English website.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Changed the title of the English website.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Reorganize the layout</title>
+      <link>https://liuqiran.github.io/en/2023-02-08-reorganize-home-page/</link>
+      <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/2023-02-08-reorganize-home-page/</guid>
+      <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
+&lt;p&gt;I haven&amp;rsquo;t updated my status in a long time. I don&amp;rsquo;t know when it happened, but I&amp;rsquo;ve lost the ability to express my feelings and the motivation to share&amp;hellip;&lt;/p&gt;
+&lt;/p&gt;
+&lt;p&gt;Recently, I discovered that many functions were no longer working. It took a long time to fix them, otherwise this place would have been overgrown with weeds.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve noticed many people are starting to use LinkTree as a personal homepage to aggregate numerous links. It seems these people are active on more and more social media platforms these days. They&amp;rsquo;ve lost count, so they use this website to organize them.&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>Machine translation notice:</strong> This page is machine-translated and may contain inaccuracies. If it reads awkwardly, your corrections in the comments would be much appreciated. <a href="https://liuqiran.github.io/zh/2023-02-08-reorganize-home-page/">View original</a></div><p class="has-primary-background-color has-background">
+<p>I haven&rsquo;t updated my status in a long time. I don&rsquo;t know when it happened, but I&rsquo;ve lost the ability to express my feelings and the motivation to share&hellip;</p>
+</p>
+<p>Recently, I discovered that many functions were no longer working. It took a long time to fix them, otherwise this place would have been overgrown with weeds.</p>
+<p>I&rsquo;ve noticed many people are starting to use LinkTree as a personal homepage to aggregate numerous links. It seems these people are active on more and more social media platforms these days. They&rsquo;ve lost count, so they use this website to organize them.</p>
+<p>But isn&rsquo;t this just the function of a personal website homepage? You just add these links to your homepage, and you can customize the style and functions, avoiding the problem of everyone looking the same.</p>
+<p>Besides, organizing your own homepage has other advantages: the URL is more concise and easier to remember; access is centralized on your own platform, not controlled by other platforms.</p>
+<p>But regardless, it still needs regular maintenance. I should update my status more often.</p>
+</p>]]></content:encoded>
     </item>
     <item>
       <title>Update home page</title>
-      <link>http://localhost:1313/en/2023-02-08-update-home-page/</link>
+      <link>https://liuqiran.github.io/en/update-home-page/</link>
       <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-02-08-update-home-page/</guid>
-      <description>&lt;p&gt;Added progress bars and more social icons for home page.&lt;/p&gt;
-&lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/update-home-page/</guid>
+      <description>&lt;p&gt;﻿Added progress bars and more social icons for home page.&lt;/p&gt;
+&lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Added progress bars and more social icons for home page.</p>
+<p>Added the feature which can share posts on Mastodon.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Create a Telegram channel</title>
+      <link>https://liuqiran.github.io/en/2023-02-08-created-telegram-channel/</link>
+      <pubDate>Wed, 08 Feb 2023 10:12:49 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/2023-02-08-created-telegram-channel/</guid>
+      <description>&lt;p&gt;I tried opening a Telegram channel.&lt;/p&gt;
+&lt;p&gt;I found that creating a channel on Telegram is very quick, and broadcasting to others is also very fast.&lt;/p&gt;
+&lt;p&gt;Most importantly, the platform is open, and after adding the bot function, updates from my personal website can be automatically synchronized to the channel.&lt;/p&gt;
+&lt;p&gt;Now, coupled with the real-time message reception, Telegram&amp;rsquo;s functionality surpasses many other communication software programs. I highly recommend trying it!&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>Machine translation notice:</strong> This page is machine-translated and may contain inaccuracies. If it reads awkwardly, your corrections in the comments would be much appreciated. <a href="https://liuqiran.github.io/zh/created-telegram-channel/">View original</a></div><p>I tried opening a Telegram channel.</p>
+<p>I found that creating a channel on Telegram is very quick, and broadcasting to others is also very fast.</p>
+<p>Most importantly, the platform is open, and after adding the bot function, updates from my personal website can be automatically synchronized to the channel.</p>
+<p>Now, coupled with the real-time message reception, Telegram&rsquo;s functionality surpasses many other communication software programs. I highly recommend trying it!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Separation</title>
-      <link>http://localhost:1313/en/2022-08-04-separation/</link>
+      <link>https://liuqiran.github.io/en/separation/</link>
       <pubDate>Thu, 04 Aug 2022 15:37:39 +0000</pubDate>
-      <guid>http://localhost:1313/en/2022-08-04-separation/</guid>
-      <description>&lt;p&gt;Totally separated my blog into two subsites– English site and Chinese site. It’s more convenient for viewers to choose their familiar language.&lt;/p&gt;
-&lt;p&gt;Added the language switcher menu.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/separation/</guid>
+      <description>&lt;p&gt;﻿Totally separated my blog into two subsites– English site and Chinese site. It’s more convenient for viewers to choose their familiar language.&lt;/p&gt;
+&lt;p&gt;Added the language switcher menu.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Totally separated my blog into two subsites– English site and Chinese site. It’s more convenient for viewers to choose their familiar language.</p>
+<p>Added the language switcher menu.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Mastodon</title>
-      <link>http://localhost:1313/en/2021-02-20-mastodon/</link>
+      <link>https://liuqiran.github.io/en/mastodon/</link>
       <pubDate>Sat, 20 Feb 2021 02:29:16 +0000</pubDate>
-      <guid>http://localhost:1313/en/2021-02-20-mastodon/</guid>
-      <description>&lt;p&gt;Removed some plugins from my blog. &lt;s&gt;Added options for foreign languages&lt;/s&gt;.&lt;br&gt;
+      <guid>https://liuqiran.github.io/en/mastodon/</guid>
+      <description>&lt;p&gt;﻿Removed some plugins from my blog. &lt;s&gt;Added options for foreign languages&lt;/s&gt;.&lt;br&gt;
 Added the Mastodon icon and removed the YouTube icon.&lt;br&gt;
-Tried out Mastodon, a decentralized social networking software. I think it is a good alternative to Twitter.&lt;/p&gt;</description>
+Tried out Mastodon, a decentralized social networking software. I think it is a good alternative to Twitter.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Removed some plugins from my blog. <s>Added options for foreign languages</s>.<br>
+Added the Mastodon icon and removed the YouTube icon.<br>
+Tried out Mastodon, a decentralized social networking software. I think it is a good alternative to Twitter.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Delete “like”</title>
-      <link>http://localhost:1313/en/2020-09-23-delete-like/</link>
+      <link>https://liuqiran.github.io/en/delete-like/</link>
       <pubDate>Wed, 23 Sep 2020 05:41:08 +0000</pubDate>
-      <guid>http://localhost:1313/en/2020-09-23-delete-like/</guid>
-      <description>&lt;p&gt;Reference: &lt;em&gt;&lt;a href=&#34;https://www.liuqiran.com/2020/08/12/dont-click-like/&#34;&gt;Don’t Click “Like”&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/delete-like/</guid>
+      <description>&lt;p&gt;﻿Reference: &lt;em&gt;&lt;a href=&#34;../../../dont-click-like/&#34;&gt;Don’t Click “Like”&lt;/a&gt;
+&lt;/em&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Reference: <em><a href="/dont-click-like/">Don’t Click “Like”</a>
+</em></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Chinese conversion</title>
-      <link>http://localhost:1313/en/2020-04-03-chinese-conversion/</link>
+      <link>https://liuqiran.github.io/en/chinese-conversion/</link>
       <pubDate>Fri, 03 Apr 2020 13:13:35 +0000</pubDate>
-      <guid>http://localhost:1313/en/2020-04-03-chinese-conversion/</guid>
-      <description>&lt;p&gt;已開啓中文繁簡轉換和關键詞搜索轉換功能，感謝&lt;a href=&#34;https://wordpress.org/support/plugin/wp-chinese-conversion/reviews/&#34;&gt;WP Chinese Conversion&lt;/a&gt;插件作者。&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/chinese-conversion/</guid>
+      <description>&lt;p&gt;﻿已開啓中文繁簡轉換和關键詞搜索轉換功能，感謝&lt;a href=&#34;https://wordpress.org/support/plugin/wp-chinese-conversion/reviews/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;WP Chinese Conversion&lt;/a&gt;
+插件作者。&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿已開啓中文繁簡轉換和關键詞搜索轉換功能，感謝<a href="https://wordpress.org/support/plugin/wp-chinese-conversion/reviews/" target="_blank" rel="noopener noreferrer">WP Chinese Conversion</a>
+插件作者。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>RSS Feed</title>
-      <link>http://localhost:1313/en/rss/</link>
+      <link>https://liuqiran.github.io/en/rss/</link>
       <pubDate>Sun, 29 Sep 2019 09:00:50 +0000</pubDate>
-      <guid>http://localhost:1313/en/rss/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;../../../en/index.xml&#34;&gt;English Site &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;../../../zh/index.xml&#34;&gt;Chinese Site&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/rss/</guid>
+      <description>&lt;p&gt;These are full-text RSS feeds. Machine-translation notes and AI-assisted notes are included at the beginning of the RSS article body.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../../en/index.xml&#34;&gt;English full-text RSS&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../../zh/index.xml&#34;&gt;Chinese full-text RSS&lt;/a&gt;
+&lt;/p&gt;</description><content:encoded><![CDATA[<p>These are full-text RSS feeds. Machine-translation notes and AI-assisted notes are included at the beginning of the RSS article body.</p>
+<p><a href="/en/index.xml">English full-text RSS</a>
+</p>
+<p><a href="/zh/index.xml">Chinese full-text RSS</a>
+</p>
+]]></content:encoded>
     </item>
     <item>
       <title>My friends</title>
-      <link>http://localhost:1313/en/my-friends/</link>
+      <link>https://liuqiran.github.io/en/my-friends/</link>
       <pubDate>Tue, 09 Jul 2019 07:51:36 +0000</pubDate>
-      <guid>http://localhost:1313/en/my-friends/</guid>
-      <description>&lt;p class=&#34;has-contrast-color has-primary-background-color has-text-color has-background&#34;&gt;
-   “If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”
+      <guid>https://liuqiran.github.io/en/my-friends/</guid>
+      <description>&lt;p&gt;﻿&lt;p class=&#34;has-contrast-color has-primary-background-color has-text-color has-background&#34;&gt;
+ “If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”&lt;/p&gt;
 &lt;/p&gt;
 
 
   &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.dylanwu.space/&#34;&gt;Dylan Wu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://imzm.im&#34;&gt;陈仓颉&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://yir.me&#34;&gt;YIR&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fspark.me&#34;&gt;FSpark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;del&gt;Broca-Phenol&lt;/del&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://springwood.me/&#34;&gt;沉舟侧畔&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bkryofu.xyz/&#34;&gt;非科学のカッ�&amp;hellip;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pewae.com&#34;&gt;大致&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://osmh.net&#34;&gt;OSMH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;&lt;a href=&#34;&#34;&gt;青山&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dreamendy.com&#34;&gt;Dreamendy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.cxwblog.com&#34;&gt;梅塔特隆立方&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.moekira.com&#34;&gt;Kira&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kqh.me&#34;&gt;kqh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.yanshihua.com/&#34;&gt;Mars&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://minuo.me&#34;&gt;minuo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.xinshijiededa.men/&#34;&gt;新世界的大门&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;li&gt;&lt;a href=&#34;https://blog.dylanwu.space/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Dylan Wu&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://imzm.im&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;陈仓颉&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yir.me&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;YIR&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fspark.me&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;FSpark&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://springwood.me/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;沉舟侧畔&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bkryofu.xyz/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;非科学のカッ�&amp;hellip;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pewae.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;大致&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://osmh.net&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;OSMH&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;&#34;&gt;青山&lt;/a&gt;
+&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dreamendy.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Dreamendy&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cxwblog.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;梅塔特隆立方&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.moekira.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Kira&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kqh.me&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;kqh&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.yanshihua.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Mars&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://minuo.me&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;minuo&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.xinshijiededa.men/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;新世界的大门&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><content:encoded><![CDATA[<p>﻿<p class="has-contrast-color has-primary-background-color has-text-color has-background">
+ “If you have an idea and I have an idea, we exchange these ideas, then each of us will have two ideas.”</p>
+</p>
+
+
+  <ul>
+<li><a href="https://blog.dylanwu.space/" target="_blank" rel="noopener noreferrer">Dylan Wu</a>
+</li>
+<li><a href="https://imzm.im" target="_blank" rel="noopener noreferrer">陈仓颉</a>
+</li>
+<li><a href="http://yir.me" target="_blank" rel="noopener noreferrer">YIR</a>
+</li>
+<li><a href="https://fspark.me" target="_blank" rel="noopener noreferrer">FSpark</a>
+</li>
+<li><a href="https://springwood.me/" target="_blank" rel="noopener noreferrer">沉舟侧畔</a>
+</li>
+<li><a href="https://bkryofu.xyz/" target="_blank" rel="noopener noreferrer">非科学のカッ�&hellip;</a>
+</li>
+<li><a href="https://pewae.com" target="_blank" rel="noopener noreferrer">大致</a>
+</li>
+<li><a href="https://osmh.net" target="_blank" rel="noopener noreferrer">OSMH</a>
+</li>
+<li><del><a href="">青山</a>
+</del></li>
+<li><a href="http://dreamendy.com" target="_blank" rel="noopener noreferrer">Dreamendy</a>
+</li>
+<li><a href="http://www.cxwblog.com" target="_blank" rel="noopener noreferrer">梅塔特隆立方</a>
+</li>
+<li><a href="http://blog.moekira.com" target="_blank" rel="noopener noreferrer">Kira</a>
+</li>
+<li><a href="https://kqh.me" target="_blank" rel="noopener noreferrer">kqh</a>
+</li>
+<li><a href="https://www.yanshihua.com/" target="_blank" rel="noopener noreferrer">Mars</a>
+</li>
+<li><a href="https://minuo.me" target="_blank" rel="noopener noreferrer">minuo</a>
+</li>
+<li><a href="https://blog.xinshijiededa.men/" target="_blank" rel="noopener noreferrer">新世界的大门</a>
+</li>
+</ul>
+
+
+]]></content:encoded>
     </item>
     <item>
       <title>Categorize my blog</title>
-      <link>http://localhost:1313/en/2019-06-23-categorize-my-blog/</link>
+      <link>https://liuqiran.github.io/en/categorize-my-blog/</link>
       <pubDate>Sun, 23 Jun 2019 02:26:48 +0000</pubDate>
-      <guid>http://localhost:1313/en/2019-06-23-categorize-my-blog/</guid>
-      <description>&lt;p&gt;The most important decision is &lt;a href=&#34;https://www.liuqiran.com/index.php/2019/05/22/category/&#34;&gt;changing categories&lt;/a&gt;. so I think it is also important to categorize my writings, I improved the classification of my categories in my blog. I can read and found my writing through multi-level categories, classify them and reflect efficiently. I also can discover everything I wrote before through categories, like time traveling, know myself.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/categorize-my-blog/</guid>
+      <description>&lt;p&gt;﻿The most important decision is &lt;a href=&#34;https://www.liuqiran.com/index.php/2019/05/22/category/&#34;&gt;changing categories&lt;/a&gt;
+. so I think it is also important to categorize my writings, I improved the classification of my categories in my blog. I can read and found my writing through multi-level categories, classify them and reflect efficiently. I also can discover everything I wrote before through categories, like time traveling, know myself.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿The most important decision is <a href="https://www.liuqiran.com/index.php/2019/05/22/category/">changing categories</a>
+. so I think it is also important to categorize my writings, I improved the classification of my categories in my blog. I can read and found my writing through multi-level categories, classify them and reflect efficiently. I also can discover everything I wrote before through categories, like time traveling, know myself.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>👤 About me</title>
-      <link>http://localhost:1313/en/about-me/</link>
+      <link>https://liuqiran.github.io/en/about-me/</link>
       <pubDate>Sat, 09 Feb 2019 03:14:24 +0000</pubDate>
-      <guid>http://localhost:1313/en/about-me/</guid>
-      <description>&lt;p&gt;Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）&lt;/p&gt;
+      <guid>https://liuqiran.github.io/en/about-me/</guid>
+      <description>&lt;p&gt;﻿Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）&lt;/p&gt;
 &lt;div class=&#34;profile-section&#34;&gt;
   &lt;div class=&#34;profile-text&#34;&gt;
     &lt;p&gt;&lt;strong&gt;ℹ️ Basic Info:&lt;/strong&gt;&lt;/p&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;strong&gt;Surname:&lt;/strong&gt; LIU&lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;First Name:&lt;/strong&gt; Qiran&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Gender:&lt;/strong&gt; ♂️&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Gender:&lt;/strong&gt; ♂️&lt;/li&gt;  
       &lt;li&gt;&lt;strong&gt;Generation:&lt;/strong&gt; Gen Z&lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;Hometown:&lt;/strong&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Hunan&#34; target=&#34;_blank&#34;&gt;Hunan&lt;/a&gt;, South 🇨🇳&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Personality Type:&lt;/strong&gt; &lt;a href=&#34;https://www.16personalities.com/infp-personality&#34; target=&#34;_blank&#34;&gt;INFP&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
   &lt;div class=&#34;profile-image&#34;&gt;
     &lt;img src=&#34;../../../img/2014-03-25-selfie.jpg&#34; alt=&#34;Qiran&#39;s selfie at age 16&#34;&gt;
     &lt;center&gt;&lt;p class=&#34;caption&#34;&gt;When I was 16&lt;/p&gt;&lt;/center&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+&lt;/div&gt;   
 &lt;p&gt;&lt;strong&gt;🖥️ About this site&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Site’s birthday: Feb 9, 2019&lt;/li&gt;
 &lt;li&gt;Writing is supposed to be an essential part of life. Organizing one’s words and works in the form of a site is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this site to record myself and share my thoughts, articles and works. ：)&lt;/li&gt;
-&lt;li&gt;This site has joined the &lt;a href=&#34;https://foreverblog.cn/&#34;&gt;Ten-year Contract activities
-&lt;/a&gt;(that is, from joining this activity, our site will not be closed for ten years, to maintain the update and vitality!)&lt;/li&gt;
-&lt;li&gt;This site is hosted on GitHub, with the alternate URL &lt;a href=&#34;https://liuqiran.github.io&#34;&gt;liuqiran.github.io&lt;/a&gt;.
+&lt;li&gt;This site has joined the &lt;a href=&#34;https://www.foreverblog.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Ten-year Contract activities
+&lt;/a&gt;
+(that is, from joining this activity, our site will not be closed for ten years, to maintain the update and vitality!)&lt;/li&gt;
+&lt;li&gt;This site is hosted on GitHub, with the alternate URL &lt;a href=&#34;https://liuqiran.github.io&#34;&gt;liuqiran.github.io&lt;/a&gt;
+.
 (It means that this site can exist for a long time!)&lt;/li&gt;
-&lt;li&gt;⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the &lt;a href=&#34;../../../zh/&#34;&gt;Chinese site&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../en/tags/building-site/&#34;&gt;Building site log&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the &lt;a href=&#34;../../../zh/&#34;&gt;Chinese site&lt;/a&gt;
+.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../tags/building-site/&#34;&gt;Building site log&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;../../../en/now&#34;&gt;🧭 What I’m doing now&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;../../../en/now&#34;&gt;🧭 What I’m doing now&lt;/a&gt;
+&lt;/strong&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Hello! 👋 This is Qiran. I hope to connect to the world and meet more friends. :）</p>
+<div class="profile-section">
+  <div class="profile-text">
+    <p><strong>ℹ️ Basic Info:</strong></p>
+    <ul>
+      <li><strong>Surname:</strong> LIU</li>
+      <li><strong>First Name:</strong> Qiran</li>
+      <li><strong>Gender:</strong> ♂️</li>  
+      <li><strong>Generation:</strong> Gen Z</li>
+      <li><strong>Hometown:</strong> <a href="https://en.wikipedia.org/wiki/Hunan" target="_blank">Hunan</a>, South 🇨🇳</li>
+    </ul>
+  </div>
+  <div class="profile-image">
+    <img src="/img/2014-03-25-selfie.jpg" alt="Qiran's selfie at age 16">
+    <center><p class="caption">When I was 16</p></center>
+  </div>
+</div>   
+<p><strong>🖥️ About this site</strong>:</p>
+<ul>
+<li>Site’s birthday: Feb 9, 2019</li>
+<li>Writing is supposed to be an essential part of life. Organizing one’s words and works in the form of a site is less fickle than social media-style sharing, and there are no more meaningless likes and comments; compared to keeping it private for oneself, and sharing it with those who need it. I created this site to record myself and share my thoughts, articles and works. ：)</li>
+<li>This site has joined the <a href="https://www.foreverblog.cn/" target="_blank" rel="noopener noreferrer">Ten-year Contract activities
+</a>
+(that is, from joining this activity, our site will not be closed for ten years, to maintain the update and vitality!)</li>
+<li>This site is hosted on GitHub, with the alternate URL <a href="https://liuqiran.github.io">liuqiran.github.io</a>
+.
+(It means that this site can exist for a long time!)</li>
+<li>⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the <a href="/zh/">Chinese site</a>
+.</li>
+<li><a href="/tags/building-site/">Building site log</a>
+</li>
+</ul>
+<p><strong><a href="/en/now">🧭 What I’m doing now</a>
+</strong></p>
+<p><a href="/en/reading-list/"><strong>📚 Reading list</strong></a>
+</p>
+<p><strong>🧐 My Personality Type</strong></p>
+<ul>
+<li><strong>Big5 result: <a href="https://bigfive-test.com/result/692293bdf2aeb4f99975b6e5" target="_blank" rel="noopener noreferrer">O+C+E−A+N−</a>
+</strong>
+<img loading="lazy" src="/img/big5.png"> <br>
+<a href="https://www.16personalities.com/infp-personality" target="_blank" rel="noopener noreferrer">INFP</a>
+</li>
+</ul>
+<p><strong>👫Relationship Status</strong>: With Sheena since Sep 27, 2025</p>
+<p><strong><a href="/en/my-friends/">🤝Online Neighbors</a>
+</strong></p>
+<p><strong>👣 Footprints:</strong></p>
+<iframe src="https://www.google.com/maps/d/embed?mid=119HoTPMwJRmgVKISsDxl9sp08cILSDM&ehbc=2E312F" width="640" height="480"></iframe>  
+<p>🪙BTC address: 1Lae6qzRkp62V6Tbfusv3fhtfKrXDZnoV9</p>
+<p><strong>Contact me</strong>: <a href="https://t.me/liuqiran" target="_blank" rel="noopener noreferrer">Telegram: Contact @liuqiran</a>
+</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

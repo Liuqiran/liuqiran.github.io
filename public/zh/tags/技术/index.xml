@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>技术 on 刘其然的部落格</title>
+    <link>https://liuqiran.github.io/zh/tags/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on 刘其然的部落格</description>
+    <generator>Hugo -- 0.161.1</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/zh/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>本地字体和更准确的字数统计</title>
+      <link>https://liuqiran.github.io/zh/local-fonts-and-word-count/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/zh/local-fonts-and-word-count/</guid>
+      <description>&lt;p&gt;今天对这个网站做了两个小更新：把中文字体放到了本地，并且重新优化了字数统计方式。&lt;/p&gt;
+&lt;p&gt;之前中文页面使用的是通过外部 CDN 加载的 &lt;strong&gt;京华老宋体&lt;/strong&gt;。这种方式配置起来很方便，但实际使用并不稳定。如果 CDN 被拦截、变慢、换了域名，或者直接返回错误，浏览器就会回退到系统默认字体。这样一来，页面最终显示出来的效果就和我原本设计的不一样。&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-ai-note"><strong>说明：</strong>本文由 AI 辅助起草，并由我确认和编辑。</div><p>今天对这个网站做了两个小更新：把中文字体放到了本地，并且重新优化了字数统计方式。</p>
+<p>之前中文页面使用的是通过外部 CDN 加载的 <strong>京华老宋体</strong>。这种方式配置起来很方便，但实际使用并不稳定。如果 CDN 被拦截、变慢、换了域名，或者直接返回错误，浏览器就会回退到系统默认字体。这样一来，页面最终显示出来的效果就和我原本设计的不一样。</p>
+<p>现在网站改为本地托管切片后的 <code>.woff2</code> 字体文件。这并不是让访问者一次性下载完整字体，而是把字体拆成很多小文件。浏览器会根据当前页面用到的字符，自动加载需要的那几个分片。这样会让仓库体积变大一些，但页面显示更稳定，也不再依赖第三方字体服务。因为京华老宋体也包含日文字形，所以我也让日文页面以后可以使用这套字体。</p>
+<p>另外，我也重新调整了字数统计方式。Hugo 内置的 <code>.WordCount</code> 对英文比较方便，但对中文和日文并不够准确。现在的新规则是：中文、日文、韩文字符按单字统计，英文和数字按词统计，如果文章是混排，就把两部分加在一起。这个统一的统计方式已经用在文章元信息、归档页总字数、博客热力图，以及结构化数据里。</p>
+<p>这些更新看起来不像是很大的功能，但它们会影响我长期维护网站时的体验。字体决定了阅读的质感，字数统计则影响我回顾和整理写作记录的方式。对我来说，这些细节也是整理自己空间的一部分。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>第14集 信息质量</title>
+      <link>https://liuqiran.github.io/zh/ep-14-information-quality/</link>
+      <pubDate>Tue, 22 Aug 2023 15:52:36 +0000</pubDate>
+      <guid>https://liuqiran.github.io/zh/ep-14-information-quality/</guid>
+      <description>&lt;p&gt;在我看来，生活中存在三种信息。&lt;/p&gt;
+&lt;p&gt;第一种是文本，第二种是音频，最后一种是视频。&lt;/p&gt;
+&lt;p&gt;我们先来谈谈第一种。文本的内容基于文字，它是最抽象的信息形式。如果我们识字，就能理解文字，从而理解路标、海报、杂志和书籍。文本对我们来说是最容易保存的信息形式，也是信息质量最高的形式之一。但它或许也是最难理解的信息。书籍包含的信息质量最高。&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>提示：</strong>本文为机器翻译版本，如觉读来不顺，欢迎指正。 <a href="https://liuqiran.github.io/en/ep-14-information-quality/">查看原语言</a></div><p>在我看来，生活中存在三种信息。</p>
+<p>第一种是文本，第二种是音频，最后一种是视频。</p>
+<p>我们先来谈谈第一种。文本的内容基于文字，它是最抽象的信息形式。如果我们识字，就能理解文字，从而理解路标、海报、杂志和书籍。文本对我们来说是最容易保存的信息形式，也是信息质量最高的形式之一。但它或许也是最难理解的信息。书籍包含的信息质量最高。</p>
+<p>音频是另一种信息，它基于声音。它对我们来说更自然，因为我们可以用耳朵来理解。但我们无法控制理解的速度，而且我们可能还会接收到一些无用的信息。</p>
+<p>第三种是视频。它结合了声音和图像。我们能很好地理解它，但它的内容比较浅显。通常来说，视频的信息质量并不高。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

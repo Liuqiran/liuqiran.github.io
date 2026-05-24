@@ -2,76 +2,219 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Life on Liu Qiran</title>
-    <link>http://localhost:1313/en/tags/life/</link>
+    <link>https://liuqiran.github.io/en/tags/life/</link>
     <description>Recent content in Life on Liu Qiran</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.161.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 10 May 2025 22:04:54 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/en/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Updated Hugo</title>
+      <link>https://liuqiran.github.io/en/2025-year-end-update/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/2025-year-end-update/</guid>
+      <description>&lt;p&gt;After several days of burning the midnight oil, I finally finished migrating my commenting system, adding custom buttons to my site, and implementing several other features.&lt;/p&gt;
+&lt;p&gt;The new commenting system, &lt;strong&gt;Waline&lt;/strong&gt;, supports reactions and comes with a clean, elegant interface. I also added floating buttons at the bottom of each page—a table of contents button and a comment button—so visitors can quickly jump to the sections they want.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;If articles on different language websites have similar content, the comment sections will be merged together.&lt;/del&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<p>After several days of burning the midnight oil, I finally finished migrating my commenting system, adding custom buttons to my site, and implementing several other features.</p>
+<p>The new commenting system, <strong>Waline</strong>, supports reactions and comes with a clean, elegant interface. I also added floating buttons at the bottom of each page—a table of contents button and a comment button—so visitors can quickly jump to the sections they want.</p>
+<p><del>If articles on different language websites have similar content, the comment sections will be merged together.</del></p>
+<p>In addition, I updated the word-counting feature on the archive page. It now counts both the total number of articles and the total word count across the site.</p>
+<p>I also found a better way to write and update articles on my phone. I initially wanted to use GitJournal, but it modifies the front matter, which caused my site builds to fail. Then I installed Termux and pulling the entire repository. For editing files, I  use <strong>Markor</strong>, a lightweight offline Markdown editor. It’s simple, reliable, and much more convenient for mobile writing going forward.</p>
+<p>There are still features I’d like to implement—such as automatically publishing my posts to other platforms—but this has proven to be surprisingly difficult. I tried many approaches, but none worked well enough.</p>
+<p>In the end, this process feels a lot like decorating my own small space. And I genuinely enjoy it.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>General Santos City</title>
+      <link>https://liuqiran.github.io/en/2025-06-general-santos-city/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/2025-06-general-santos-city/</guid>
+      <description>&lt;p&gt;There is a divine will guiding things in the unseen.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m lazy about going out, but if I hadn&amp;rsquo;t suddenly decided to stroll that street in MOA that night, this story would never have begun.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve never considered visiting another city just for entertainment. This time I bought the ticket, though expensive, to keep my promise to attend the Singles&amp;rsquo; camp.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../en/2025-06-general-santos-city/plane.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not much of a traveler, especially the hardships during trips. I still remember the good memory from when I was 8 years old, lying on the upper berth of the standard train heading south from my hometown. I watched moonlight shine on the white bed and saw tree shadows from rural areas sprinkle over the sandstone road and window. As the train started slowly, shadows moved behind slowly then sped up. Twinkling city lights faded away as the train left the Transfer City Station.&lt;/p&gt;</description><content:encoded><![CDATA[<p>There is a divine will guiding things in the unseen.</p>
+<p>I&rsquo;m lazy about going out, but if I hadn&rsquo;t suddenly decided to stroll that street in MOA that night, this story would never have begun.</p>
+<p>I&rsquo;ve never considered visiting another city just for entertainment. This time I bought the ticket, though expensive, to keep my promise to attend the Singles&rsquo; camp.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/plane.jpg"></p>
+<p>I&rsquo;m not much of a traveler, especially the hardships during trips. I still remember the good memory from when I was 8 years old, lying on the upper berth of the standard train heading south from my hometown. I watched moonlight shine on the white bed and saw tree shadows from rural areas sprinkle over the sandstone road and window. As the train started slowly, shadows moved behind slowly then sped up. Twinkling city lights faded away as the train left the Transfer City Station.</p>
+<p>With flights, I can never feel that slow feeling of my childhood train journey. This time when I boarded the plane, it was daytime. I fell asleep, and when I woke, it was night. I was already in General Santos City, a southern city in the Philippines.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/gensan-night.jpg"></p>
+<p>I was lucky to quickly get a taxi and meet a very kind driver after leaving the airport. His name is Solomon. I could feel his parents&rsquo; expectations through his name. Though he wasn&rsquo;t good at expression and his English was worse than mine, he tried his best to communicate and introduce himself. He&rsquo;s from Mabuhay. He said he needs to work until 3 am, which stunned me. He explained he needs to pay his loan and tuition fee, and the car is rented. His ex used up all his money and left him - she drank and smoked despite claiming to be a believer. That&rsquo;s why he&rsquo;s already 30 years old and still unmarried. He said though everyone here is kind and friendly, he met bad people.</p>
+<p>After dropping my luggage, I headed directly to the college on Leslie&rsquo;s invitation. The road was uneven and dimly lit, with low buildings on both sides, but every shopfront was open. There were many motor tricycles, which are rare now in my hometown. After turning a quiet corner, I arrived and met them.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/kidscamp.jpg"></p>
+<p>The first night, I watched the final activity of the Kids&rsquo; camp. In just two days, these kids were trained for preaching from the KJV. They were divided into different groups and matched for drama performances. I was amazed, imagining what they were nurturing in this city - they were receiving excellent education.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/lane.jpg"></p>
+<p>The next morning, I visited Plaza Heneral Santos. This place was quite peaceful. I could hear the clock chiming on the hour. I felt a unique tranquility here.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/statue1.jpg"></p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/statue2.jpg"></p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/protrait.jpg"></p>
+<p>I noticed local people like displaying their large portraits in public places for honor. I can&rsquo;t imagine doing that - I would be very embarrassed.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/lion.jpg"></p>
+<p>The seaside was close to the park. I walked there, seeing kids playing basketball and families sitting together. There were tourists too, whom I helped take photos.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/basketball.jpg"></p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/family.jpg"></p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/gensanpicture.jpg"></p>
+<p>In the afternoon, I walked around and visited a small restaurant (a shirt from Qingdao team&hellip;What exactly did people from Qingdao do wrong?).</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/clothes.jpg"></p>
+<p>On the 5th morning, the singles&rsquo; camp began. I received my ID and schedule. Many people joined. I also met Miles and Christian, whom I&rsquo;d met in SLC and who had been praying for me.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/ID.jpg"></p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/schedule.jpg"></p>
+<p>I visited room by room where children were nurtured, from infants just months old to toddlers of several years, all sorted into different rooms. Pastor Doug, the church&rsquo;s founder, left his hometown and took root in this city with his family. He devoted his life to his mission and this city. The theories I previously could only learn from books, I now witnessed firsthand: how a strong and stable community is built.</p>
+<p>During lunch, Carmela asked if I was a vampire. I wished so, but I could feel my aging. Maybe I&rsquo;m becoming a vampire sucking lots of supplements, haha. I noticed Dayla took 4 eggs for lunch - she told me it&rsquo;s low-carb diet. While I&rsquo;m still struggling and arguing about what I should eat, I admired she is the first person I met with this dietary awareness in this far south city.</p>
+<p>In the afternoon, we did painting with other groups.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/game1.jpg"></p>
+<p>In the evening, we played many games. One lady had to compete against one male from another team. I was matched with Aloha, though I wasn&rsquo;t really good at playing.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/game2.jpg"></p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/game3.jpg"></p>
+<p>At night, there was an outdoor bonfire. Everyone could write a wish on paper and throw it into the bonfire. I&rsquo;m not good at wishing and though I thought a lot, I could only write a few characters.</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/bonfire.jpg"></p>
+<p><em>Because I feel everything is already arranged, my only wish was: please don&rsquo;t follow my words or my prayers. If fate followed my wishes instead of Heaven&rsquo;s will, everything could be worse&hellip; Some things I can&rsquo;t understand or bear must have purposes beyond human comprehension. I can&rsquo;t even wish to understand these things, as not understanding is itself a protection.</em></p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/platform.jpg"></p>
+<p>Services were conducted in Bisaya. I met Jirehson, who said he was introverted and always nervous talking with others. Though he claimed this, he was the one who approached me and helped translate topics intuitively on the second day - he was the friendliest person I met here. Faith supports him now, and that&rsquo;s what a real faithful soul looks like. It feels like a lost child finding their way home.</p>
+<p>I had many conversations with Leslie. I told her that Jirehson considered her one of the smartest girls here.  She disagreed, and she responded to my question remarkably well. When she said &ldquo;再见&rdquo; , I really appreciated it. She was the local I knew who could pop out many Chinese words. She gave me a letter, asking me to open it only after boarding the plane.</p>
+<p>Three days went by so fast. I am one of the seeds dispersed from the dandelion, but what I already see is branches that have taken root and sprouted, growing into a forest. I’m grateful for everyone I’ve met here. Until now, it&rsquo;s my best memory of life in the Philippines.</p>
+<p>I thought I&rsquo;d lost the letter because I was distributing pamphlets and rushing to board. I was searching through my bag when I found it had been tucked in the Book all along:</p>
+<p><img loading="lazy" src="/en/2025-06-general-santos-city/letter.jpg"></p>
+<blockquote>
+Dear Qiran,
+<p style="text-align: right">6/6/25 1:07 am</p>
+<p>First, I think the Lord you come here in Gensan. It held with prayers and knees. Everyone is shock about it. I know you have a great time here in Gensan. And thank you for accepting the invitation to join in our singles&rsquo; camp 2025. This is our 4th singles&rsquo; camp.</p>
+<p>You have a good and great skills in Fine arts. Continue doing it! Hope those praching even if Bisaya. I know God speak to your heart. You must know the truest friend the Holy Spirit.</p>
+<p>Sorry for my so could letter, and my penmanship. But I want to say Thank you so much, you taught me something. You are a Blessing.</p>
+<p>See you somewhere, else, take care &ldquo;Amping permi&rdquo; in Bisaya. Have a good rest! Read your Bible everyday, that would help you a lot. If you don&rsquo;t know the answer; ASK HIM through his word.</p>
+<p style="text-align: right">
+Truly the servant of the Lord<br>
+Jesus Christ; 你的朋友<br>
+Leslie   ◁：<br>
+Life verses:<br>
+Lamentation 3:21,<br>
+Philippians 3:10
+</p>
+</blockquote>
+]]></content:encoded>
+    </item>
     <item>
       <title>Why do people find it harder to be emotionally stirred as they grow older?</title>
-      <link>http://localhost:1313/en/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</link>
+      <link>https://liuqiran.github.io/en/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</guid>
+      <guid>https://liuqiran.github.io/en/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</guid>
       <description>&lt;p&gt;Because you came late, too late, even past mealtime.&lt;/p&gt;
-&lt;p&gt;The cost of entering someone&amp;rsquo;s heart doubles with age. At fifteen, a simple glance back can become a lifelong precious memory. At forty, even someone who manages both work and housework is just another part of life&amp;rsquo;s struggles. As children, playing in the dirt could create lifelong friendships, but as adults, today&amp;rsquo;s sworn brothers might stab you in the back tomorrow.&lt;/p&gt;</description>
+&lt;p&gt;The cost of entering someone&amp;rsquo;s heart doubles with age. At fifteen, a simple glance back can become a lifelong precious memory. At forty, even someone who manages both work and housework is just another part of life&amp;rsquo;s struggles. As children, playing in the dirt could create lifelong friendships, but as adults, today&amp;rsquo;s sworn brothers might stab you in the back tomorrow.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Because you came late, too late, even past mealtime.</p>
+<p>The cost of entering someone&rsquo;s heart doubles with age. At fifteen, a simple glance back can become a lifelong precious memory. At forty, even someone who manages both work and housework is just another part of life&rsquo;s struggles. As children, playing in the dirt could create lifelong friendships, but as adults, today&rsquo;s sworn brothers might stab you in the back tomorrow.</p>
+<p>A person&rsquo;s understanding of the world develops over time. Things that exist before maturity become fundamental truths, things that appear during maturity become one&rsquo;s own, and things that come after maturity seem strange and alien. Everyone&rsquo;s nostalgia is about their childhood and youth. You hear fifty-year-olds missing their fifteen-year-old sports field, but never hear hundred-year-olds missing their sixty-year-old nursing home. Though the time gap seems the same, the perception of the world is very different.</p>
+<p>If you appear in someone&rsquo;s life when they&rsquo;re building their understanding of the world, you become part of their world, an important piece of their memories, a significant part of their life. Whenever they remember that time, they can&rsquo;t avoid or forget you. The more involved you were, the bigger your place in their memories, and the more likely you are to touch their heart.</p>
+<p>Also, people&rsquo;s perception of time speeds up as they age. Three years in middle school feel long and meaningful, from cafeteria to playground, from classroom to campus, from bulletin boards to workbooks&hellip; there&rsquo;s so much to remember. But three years at work pass in a blur - before you even know your coworkers, you&rsquo;re already planning to change jobs or file labor complaints. Who has time to notice who might touch their heart?</p>
+<p>A one-year-old baby is very different from a ten-year-old child, but a seventy-year-old and an eighty-year-old are just elderly people with no distinction. When people get older and lose their own uniqueness, how can they notice others&rsquo; special qualities?</p>
+<p>The reason it&rsquo;s harder to fall in love with age is that our understanding of the world becomes more complete and clear. We no longer need to fill in gaps. Except for League of Legends designers, no one likes to mess with a mature system. Once something is set, it&rsquo;s set - those who come late are simply late.
+People start like blank paper - a light stroke can leave a clear mark. But when their picture is already complete, you need much stronger strokes to leave your mark. Everyone has their own story and their own characters in that story, and you might not be in it.</p>
+<p>Zhao Yun of Changshan fought bravely and loyally throughout his life, but his dedication still couldn&rsquo;t compare to the brotherhood formed in the Peach Garden.</p>
+<p>Cao Cao of Xuzhou gave his heart and trust to Guan Yu, but in the end, Guan Yu still left his position to find his sworn brother through many battles.</p>
+<p>Did they do anything wrong?
+No, they just came late.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>EP 12 Repetition</title>
-      <link>http://localhost:1313/en/2023-07-25-ep-12-repetition/</link>
+      <link>https://liuqiran.github.io/en/ep-12-repetition/</link>
       <pubDate>Tue, 25 Jul 2023 12:24:20 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-07-25-ep-12-repetition/</guid>
-      <description>&lt;p&gt;Repetition is an essential part in our life.&lt;br&gt;
+      <guid>https://liuqiran.github.io/en/ep-12-repetition/</guid>
+      <description>&lt;p&gt;﻿Repetition is an essential part in our life.&lt;br&gt;
 Life is started from one cell. But just by copying itself, one cell can grow into a complicate system with different features. It’s a form of repetition.&lt;/p&gt;
 &lt;p&gt;When we need to memorize something, we aIso need a lot of repetitions. Maybe it’s very boring, but I can’t deny it’s a very effective way.&lt;br&gt;
 When we need to gain a skill, we also need a lot of repetitions. We usually started from a very basic practice. Only after enough times of practice, we can learn more advanced skill.&lt;br&gt;
-At first, even a basic skill is challenging to us, After enough repetition, it will become more and more easier. Then based on this skill there can growing more advanced skills.&lt;/p&gt;</description>
+At first, even a basic skill is challenging to us, After enough repetition, it will become more and more easier. Then based on this skill there can growing more advanced skills.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Repetition is an essential part in our life.<br>
+Life is started from one cell. But just by copying itself, one cell can grow into a complicate system with different features. It’s a form of repetition.</p>
+<p>When we need to memorize something, we aIso need a lot of repetitions. Maybe it’s very boring, but I can’t deny it’s a very effective way.<br>
+When we need to gain a skill, we also need a lot of repetitions. We usually started from a very basic practice. Only after enough times of practice, we can learn more advanced skill.<br>
+At first, even a basic skill is challenging to us, After enough repetition, it will become more and more easier. Then based on this skill there can growing more advanced skills.</p>
+<p>If we can repeat enought times, we will definately gain more and more skills. The difficulty is, we always give up. We make a lot assumptions that we are not good at all. But the truth is, the beginning is always the most difficult part. With enough repetition and time, we can break fences one by one.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Cash</title>
-      <link>http://localhost:1313/en/2023-07-18-cash/</link>
+      <link>https://liuqiran.github.io/en/cash/</link>
       <pubDate>Tue, 18 Jul 2023 15:24:01 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-07-18-cash/</guid>
-      <description>&lt;p&gt;I bought a wallet and started using cash again recently.
+      <guid>https://liuqiran.github.io/en/cash/</guid>
+      <description>&lt;p&gt;﻿I bought a wallet and started using cash again recently.
 It’s a very interesting try. I’ve been getting used to pay by smartphone for many years. It’s feeling weird after suddenly giving up E-pay. But now I found that I can still be relaxed when I going out without smartphone.
-When I was paying, the feeling of “touching money” is very authentic. Compare with just tapping on the phone, I prefer the feeling of real money.&lt;/p&gt;</description>
+When I was paying, the feeling of “touching money” is very authentic. Compare with just tapping on the phone, I prefer the feeling of real money.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿I bought a wallet and started using cash again recently.
+It’s a very interesting try. I’ve been getting used to pay by smartphone for many years. It’s feeling weird after suddenly giving up E-pay. But now I found that I can still be relaxed when I going out without smartphone.
+When I was paying, the feeling of “touching money” is very authentic. Compare with just tapping on the phone, I prefer the feeling of real money.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>EP 8 Real wealth</title>
-      <link>http://localhost:1313/en/2023-05-30-ep-8-real-wealth/</link>
+      <link>https://liuqiran.github.io/en/ep-8-real-wealth/</link>
       <pubDate>Tue, 30 May 2023 15:07:06 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-05-30-ep-8-real-wealth/</guid>
-      <description>&lt;p&gt;Wealth is usually considered to be money. But in my opinion, true wealth does not only contain money. It can contain many things, such as health, wisdom, and experience.&lt;br&gt;
+      <guid>https://liuqiran.github.io/en/ep-8-real-wealth/</guid>
+      <description>&lt;p&gt;﻿Wealth is usually considered to be money. But in my opinion, true wealth does not only contain money. It can contain many things, such as health, wisdom, and experience.&lt;br&gt;
 An essential part of wealth is health. We inherited our health from our ancestors when we were born. It’s innate and priceless. But we can partially change it. We can destroy health, but we can also increase it.&lt;br&gt;
 Another part of wealth is wisdom. Although our health can be inherited, we can’t inherit wisdom. Through learning, reading, and education, we can gradually get wisdom. Everyone has their own wisdom. It’s also priceless in different people’s lives.&lt;br&gt;
-Finally, experience is also a part of wealth. Good experience is wealth, and bad experience is a kind of debt. But whether it is good or bad, whether it is a wealth or a liability, all depends on how you look at yourself. Everybody has unique experiences. If we can get more experience, we might be able to handle challenges more easily in the future.&lt;/p&gt;</description>
+Finally, experience is also a part of wealth. Good experience is wealth, and bad experience is a kind of debt. But whether it is good or bad, whether it is a wealth or a liability, all depends on how you look at yourself. Everybody has unique experiences. If we can get more experience, we might be able to handle challenges more easily in the future.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Wealth is usually considered to be money. But in my opinion, true wealth does not only contain money. It can contain many things, such as health, wisdom, and experience.<br>
+An essential part of wealth is health. We inherited our health from our ancestors when we were born. It’s innate and priceless. But we can partially change it. We can destroy health, but we can also increase it.<br>
+Another part of wealth is wisdom. Although our health can be inherited, we can’t inherit wisdom. Through learning, reading, and education, we can gradually get wisdom. Everyone has their own wisdom. It’s also priceless in different people’s lives.<br>
+Finally, experience is also a part of wealth. Good experience is wealth, and bad experience is a kind of debt. But whether it is good or bad, whether it is a wealth or a liability, all depends on how you look at yourself. Everybody has unique experiences. If we can get more experience, we might be able to handle challenges more easily in the future.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>EP 7 Practice</title>
-      <link>http://localhost:1313/en/2023-05-16-ep-7-practice/</link>
+      <link>https://liuqiran.github.io/en/ep-7-practice/</link>
       <pubDate>Mon, 15 May 2023 17:39:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-05-16-ep-7-practice/</guid>
-      <description>&lt;p&gt;Practice is one of the most important things in our life.&lt;br&gt;
+      <guid>https://liuqiran.github.io/en/ep-7-practice/</guid>
+      <description>&lt;p&gt;﻿Practice is one of the most important things in our life.&lt;br&gt;
 In order to gain our skill or improve our ability, we all need to have enough practice.&lt;br&gt;
 Practice is repeated action. Enough times of repetition is necessary in our life. If we do a lot of practice, we will definitely get some improvements unconsciously.&lt;/p&gt;
-&lt;p&gt;In most cases, the beginning of the practice is very difficult. We think it’s hard, it’s a big challenge. We may have tried many times, but there are still no results at all. We want to give up. But if we continue and persevere, as the times of practice increase, our improvement will be faster and faster. This is a phenomenon that shows up in many areas. The problem is that we give up so easily.&lt;/p&gt;</description>
+&lt;p&gt;In most cases, the beginning of the practice is very difficult. We think it’s hard, it’s a big challenge. We may have tried many times, but there are still no results at all. We want to give up. But if we continue and persevere, as the times of practice increase, our improvement will be faster and faster. This is a phenomenon that shows up in many areas. The problem is that we give up so easily.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Practice is one of the most important things in our life.<br>
+In order to gain our skill or improve our ability, we all need to have enough practice.<br>
+Practice is repeated action. Enough times of repetition is necessary in our life. If we do a lot of practice, we will definitely get some improvements unconsciously.</p>
+<p>In most cases, the beginning of the practice is very difficult. We think it’s hard, it’s a big challenge. We may have tried many times, but there are still no results at all. We want to give up. But if we continue and persevere, as the times of practice increase, our improvement will be faster and faster. This is a phenomenon that shows up in many areas. The problem is that we give up so easily.</p>
+<p>Most things are not like playing video games. Video game will set a lot of wonderful features and plots to attract us to stick to it. But skills in real life may not be like that. The journey to get a skill is not so smooth, it’s very long and painful. Maybe some of them are similar to learning to ride a bicycle, we would fall down a lot of times. But suddenly we can keep the balance, we know how to ride a bike. It’s a serendipity, a change we can’t imagine. To get this amazing result, all we can do is practice.</p>
+<p>I am beginning to understand the importance of practice. What we can do is create an environment for practice. Usually I am afraid of something. I realized that’s the reason I haven’t touched that thing enough times. I can simulate an environment and do a lot of practice. If I can handle it with ease in practice, then it’s not a big deal when I have to face it.</p>
+<p>Everything is hard in the beginning, but every achievement starts from simple repetition.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Why don’t lie</title>
-      <link>http://localhost:1313/en/2023-03-14-why-dont-lie/</link>
+      <link>https://liuqiran.github.io/en/why-dont-lie/</link>
       <pubDate>Mon, 13 Mar 2023 23:06:31 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-03-14-why-dont-lie/</guid>
-      <description>&lt;p&gt;When we were kids, elders always tell us not to lie. But most of us lie because we are afraid of the consequences after telling the truths. As a child, lying is a good protection. &lt;/p&gt;
+      <guid>https://liuqiran.github.io/en/why-dont-lie/</guid>
+      <description>&lt;p&gt;﻿When we were kids, elders always tell us not to lie. But most of us lie because we are afraid of the consequences after telling the truths. As a child, lying is a good protection. &lt;/p&gt;
 &lt;p&gt;It’s always a bad habit to lie to yourself or to other people.&lt;/p&gt;
-&lt;p&gt;Lying can distort our understanding of reality. When we lie to ourselves, at first we think we can avoid the difficulties or solve some problems. But we will gradually lose the ability to face the real world.&lt;/p&gt;</description>
+&lt;p&gt;Lying can distort our understanding of reality. When we lie to ourselves, at first we think we can avoid the difficulties or solve some problems. But we will gradually lose the ability to face the real world.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿When we were kids, elders always tell us not to lie. But most of us lie because we are afraid of the consequences after telling the truths. As a child, lying is a good protection. </p>
+<p>It’s always a bad habit to lie to yourself or to other people.</p>
+<p>Lying can distort our understanding of reality. When we lie to ourselves, at first we think we can avoid the difficulties or solve some problems. But we will gradually lose the ability to face the real world.</p>
+<p>The truth is cruel, but the truth also reflects our own weaknesses. We will grow if we face the truth, instead of letting our shell made of lies become so thick that we cannot break out of it.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Reorganize the layout</title>
+      <link>https://liuqiran.github.io/en/2023-02-08-reorganize-home-page/</link>
+      <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/2023-02-08-reorganize-home-page/</guid>
+      <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
+&lt;p&gt;I haven&amp;rsquo;t updated my status in a long time. I don&amp;rsquo;t know when it happened, but I&amp;rsquo;ve lost the ability to express my feelings and the motivation to share&amp;hellip;&lt;/p&gt;
+&lt;/p&gt;
+&lt;p&gt;Recently, I discovered that many functions were no longer working. It took a long time to fix them, otherwise this place would have been overgrown with weeds.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve noticed many people are starting to use LinkTree as a personal homepage to aggregate numerous links. It seems these people are active on more and more social media platforms these days. They&amp;rsquo;ve lost count, so they use this website to organize them.&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>Machine translation notice:</strong> This page is machine-translated and may contain inaccuracies. If it reads awkwardly, your corrections in the comments would be much appreciated. <a href="https://liuqiran.github.io/zh/2023-02-08-reorganize-home-page/">View original</a></div><p class="has-primary-background-color has-background">
+<p>I haven&rsquo;t updated my status in a long time. I don&rsquo;t know when it happened, but I&rsquo;ve lost the ability to express my feelings and the motivation to share&hellip;</p>
+</p>
+<p>Recently, I discovered that many functions were no longer working. It took a long time to fix them, otherwise this place would have been overgrown with weeds.</p>
+<p>I&rsquo;ve noticed many people are starting to use LinkTree as a personal homepage to aggregate numerous links. It seems these people are active on more and more social media platforms these days. They&rsquo;ve lost count, so they use this website to organize them.</p>
+<p>But isn&rsquo;t this just the function of a personal website homepage? You just add these links to your homepage, and you can customize the style and functions, avoiding the problem of everyone looking the same.</p>
+<p>Besides, organizing your own homepage has other advantages: the URL is more concise and easier to remember; access is centralized on your own platform, not controlled by other platforms.</p>
+<p>But regardless, it still needs regular maintenance. I should update my status more often.</p>
+</p>]]></content:encoded>
     </item>
     <item>
       <title>Update home page</title>
-      <link>http://localhost:1313/en/2023-02-08-update-home-page/</link>
+      <link>https://liuqiran.github.io/en/update-home-page/</link>
       <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-02-08-update-home-page/</guid>
-      <description>&lt;p&gt;Added progress bars and more social icons for home page.&lt;/p&gt;
-&lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/update-home-page/</guid>
+      <description>&lt;p&gt;﻿Added progress bars and more social icons for home page.&lt;/p&gt;
+&lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Added progress bars and more social icons for home page.</p>
+<p>Added the feature which can share posts on Mastodon.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

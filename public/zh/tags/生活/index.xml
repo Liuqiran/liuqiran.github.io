@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>生活 on 刘其然的部落格</title>
+    <link>https://liuqiran.github.io/zh/tags/%E7%94%9F%E6%B4%BB/</link>
+    <description>Recent content in 生活 on 刘其然的部落格</description>
+    <generator>Hugo -- 0.161.1</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 29 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/zh/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>更新 Hugo</title>
+      <link>https://liuqiran.github.io/zh/2025-year-end-update/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/zh/2025-year-end-update/</guid>
+      <description>&lt;p&gt;经过几天的熬夜，我终于完成了评论系统的迁移，为网站添加了自定义按钮，并实现了其他一些功能。&lt;/p&gt;
+&lt;p&gt;新的评论系统 &lt;strong&gt;Waline&lt;/strong&gt; 支持表情符号，界面简洁优雅。我还在每个页面的底部添加了浮动按钮——目录按钮和评论按钮——方便访客快速跳转到他们想要的部分。&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>提示：</strong>本文为机器翻译版本，如觉读来不顺，欢迎指正。 <a href="https://liuqiran.github.io/en/2025-year-end-update/">查看原语言</a></div><p>经过几天的熬夜，我终于完成了评论系统的迁移，为网站添加了自定义按钮，并实现了其他一些功能。</p>
+<p>新的评论系统 <strong>Waline</strong> 支持表情符号，界面简洁优雅。我还在每个页面的底部添加了浮动按钮——目录按钮和评论按钮——方便访客快速跳转到他们想要的部分。</p>
+<p>此外，我还更新了归档页面上的字数统计功能。现在，它会同时统计网站的文章总数和总字数。</p>
+<p>我还找到了在手机上撰写和更新文章的更佳方式。我最初想使用 GitJournal，但它会修改 front matter，导致我的网站构建失败。后来，我安装了 Termux 并拉取了整个代码库。编辑文件时，我使用 <strong>Markor</strong>，一款轻量级的离线 Markdown 编辑器。它简单易用、稳定可靠，而且对于未来的移动写作来说更加方便。我仍然想实现一些功能——比如自动将文章发布到其他平台——但这出乎意料地困难。我尝试了很多方法，但都不太理想。</p>
+<p>最终，这个过程感觉就像是在装饰自己的小空间。我真的很享受这个过程。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

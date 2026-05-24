@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 刘其然的部落格</title>
+    <link>https://liuqiran.github.io/zh/posts/</link>
+    <description>Recent content in Posts on 刘其然的部落格</description>
+    <generator>Hugo -- 0.161.1</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>本地字体和更准确的字数统计</title>
+      <link>https://liuqiran.github.io/zh/local-fonts-and-word-count/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/zh/local-fonts-and-word-count/</guid>
+      <description>&lt;p&gt;今天对这个网站做了两个小更新：把中文字体放到了本地，并且重新优化了字数统计方式。&lt;/p&gt;
+&lt;p&gt;之前中文页面使用的是通过外部 CDN 加载的 &lt;strong&gt;京华老宋体&lt;/strong&gt;。这种方式配置起来很方便，但实际使用并不稳定。如果 CDN 被拦截、变慢、换了域名，或者直接返回错误，浏览器就会回退到系统默认字体。这样一来，页面最终显示出来的效果就和我原本设计的不一样。&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-ai-note"><strong>说明：</strong>本文由 AI 辅助起草，并由我确认和编辑。</div><p>今天对这个网站做了两个小更新：把中文字体放到了本地，并且重新优化了字数统计方式。</p>
+<p>之前中文页面使用的是通过外部 CDN 加载的 <strong>京华老宋体</strong>。这种方式配置起来很方便，但实际使用并不稳定。如果 CDN 被拦截、变慢、换了域名，或者直接返回错误，浏览器就会回退到系统默认字体。这样一来，页面最终显示出来的效果就和我原本设计的不一样。</p>
+<p>现在网站改为本地托管切片后的 <code>.woff2</code> 字体文件。这并不是让访问者一次性下载完整字体，而是把字体拆成很多小文件。浏览器会根据当前页面用到的字符，自动加载需要的那几个分片。这样会让仓库体积变大一些，但页面显示更稳定，也不再依赖第三方字体服务。因为京华老宋体也包含日文字形，所以我也让日文页面以后可以使用这套字体。</p>
+<p>另外，我也重新调整了字数统计方式。Hugo 内置的 <code>.WordCount</code> 对英文比较方便，但对中文和日文并不够准确。现在的新规则是：中文、日文、韩文字符按单字统计，英文和数字按词统计，如果文章是混排，就把两部分加在一起。这个统一的统计方式已经用在文章元信息、归档页总字数、博客热力图，以及结构化数据里。</p>
+<p>这些更新看起来不像是很大的功能，但它们会影响我长期维护网站时的体验。字体决定了阅读的质感，字数统计则影响我回顾和整理写作记录的方式。对我来说，这些细节也是整理自己空间的一部分。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>更新 Hugo</title>
+      <link>https://liuqiran.github.io/zh/2025-year-end-update/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/zh/2025-year-end-update/</guid>
+      <description>&lt;p&gt;经过几天的熬夜，我终于完成了评论系统的迁移，为网站添加了自定义按钮，并实现了其他一些功能。&lt;/p&gt;
+&lt;p&gt;新的评论系统 &lt;strong&gt;Waline&lt;/strong&gt; 支持表情符号，界面简洁优雅。我还在每个页面的底部添加了浮动按钮——目录按钮和评论按钮——方便访客快速跳转到他们想要的部分。&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>提示：</strong>本文为机器翻译版本，如觉读来不顺，欢迎指正。 <a href="https://liuqiran.github.io/en/2025-year-end-update/">查看原语言</a></div><p>经过几天的熬夜，我终于完成了评论系统的迁移，为网站添加了自定义按钮，并实现了其他一些功能。</p>
+<p>新的评论系统 <strong>Waline</strong> 支持表情符号，界面简洁优雅。我还在每个页面的底部添加了浮动按钮——目录按钮和评论按钮——方便访客快速跳转到他们想要的部分。</p>
+<p>此外，我还更新了归档页面上的字数统计功能。现在，它会同时统计网站的文章总数和总字数。</p>
+<p>我还找到了在手机上撰写和更新文章的更佳方式。我最初想使用 GitJournal，但它会修改 front matter，导致我的网站构建失败。后来，我安装了 Termux 并拉取了整个代码库。编辑文件时，我使用 <strong>Markor</strong>，一款轻量级的离线 Markdown 编辑器。它简单易用、稳定可靠，而且对于未来的移动写作来说更加方便。我仍然想实现一些功能——比如自动将文章发布到其他平台——但这出乎意料地困难。我尝试了很多方法，但都不太理想。</p>
+<p>最终，这个过程感觉就像是在装饰自己的小空间。我真的很享受这个过程。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>大别离</title>
+      <link>https://liuqiran.github.io/zh/2025-06-the-great-divorce/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/zh/2025-06-the-great-divorce/</guid>
+      <description>&lt;p&gt;这是我继《返璞归真》（Mere Christianity）之后读的第二本C.S.刘易斯的书。虽然篇幅不长，但我还是花了几天时间才读完。&lt;/p&gt;
+&lt;p&gt;在天堂，一切都是坚实而真实的。鬼魂无法承受这种现实，主要是因为他们自身的思维模式。地狱始于一个微小的念头，并在接触到天堂的真理后不断滋长。这些念头会不断膨胀，直至占据灵魂，使鬼魂无法承受天堂的现实，最终被迫重返人间。这说明，没有真正微小的罪过。&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>提示：</strong>本文为机器翻译版本，如觉读来不顺，欢迎指正。 <a href="https://liuqiran.github.io/en/2025-06-the-great-divorce/">查看原语言</a></div><p>这是我继《返璞归真》（Mere Christianity）之后读的第二本C.S.刘易斯的书。虽然篇幅不长，但我还是花了几天时间才读完。</p>
+<p>在天堂，一切都是坚实而真实的。鬼魂无法承受这种现实，主要是因为他们自身的思维模式。地狱始于一个微小的念头，并在接触到天堂的真理后不断滋长。这些念头会不断膨胀，直至占据灵魂，使鬼魂无法承受天堂的现实，最终被迫重返人间。这说明，没有真正微小的罪过。</p>
+<p>有趣的是，杀人犯可以留在天堂，而他们的受害者有时却不能。孩子可以留在天堂，而过度依赖他们的母亲却不能。夫妻一方可以在天堂找到安宁，而他们深爱的另一方却无法留下。鬼魂觉得这不公平，并要求伸张正义。但他们没有意识到，上帝的公平与人类的公平截然不同。他的公平远比我们所能理解的更加深邃。</p>
+<p>只有放下我们内心的“蜥蜴”（指本能或欲望），我们才能真正享受天堂。令人惊奇的是，即使是这只“邪恶”的蜥蜴，也能在天堂化身为飞马——我们的苦难也能转化为力量。如果我们改变看待痛苦回忆和过往罪孽的方式，它们也能成为通往救赎的道路。</p>
+<p>我喜欢路易斯的作品，因为他运用丰富的想象力来分享深刻的真理。阅读他的文字，仿佛置身梦境，探索着意义深远的思想。他的书为我打开了通往追寻信仰的大门。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>为什么越长大越难心动？</title>
+      <link>https://liuqiran.github.io/zh/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/zh/2025-05-10-why-do-people-find-it-harder-to-be-emotionally-stirred-as-they-grow-older/</guid>
+      <description>&lt;p&gt;为何随着年龄增长，人们越发难以被打动？ 只因你来得太迟，犹如错过了饭点。&lt;/p&gt;
+&lt;p&gt;走入一个人的内心，其代价随年龄倍增。十五岁时，一个回眸便可成为终生难忘的白月光；四十岁时，即便对方为你承担起生活的疾苦，也不过是柴米油盐。儿时玩泥巴能结下毕生挚友，长大后却常见今日称兄道弟，明日背信弃义。&lt;/p&gt;</description><content:encoded><![CDATA[<p>为何随着年龄增长，人们越发难以被打动？ 只因你来得太迟，犹如错过了饭点。</p>
+<p>走入一个人的内心，其代价随年龄倍增。十五岁时，一个回眸便可成为终生难忘的白月光；四十岁时，即便对方为你承担起生活的疾苦，也不过是柴米油盐。儿时玩泥巴能结下毕生挚友，长大后却常见今日称兄道弟，明日背信弃义。</p>
+<p>人的认知体系随着成长而完善。早期形成的认知成为理所当然，成长期获得的成为个人特质，而成熟后接触的往往显得格格不入。人们总是怀念童年少年，正如五十岁的人怀念十五岁的操场，却从未听闻百岁老人思念六十岁的养老院。表面时差相仿，实则对世界的感知大不相同。
+若你在他构建世界观时相伴左右，你便成为他生命中不可或缺的一部分。每当追忆往昔，你的身影挥之不去，难以忘怀。你在他记忆中的分量越重，越容易撩动心弦。</p>
+<p>时光流逝的感知随年龄加快。中学三年悠长难忘，从食堂到操场，教室到校园，点点滴滴皆是回忆。而职场三年恍惚如梦，人事更迭匆匆，转眼便已萌生跳槽之意。一岁婴孩与十岁童子天差地别，而古稀之年的长者们却难觅分别。人至暮年，连自身特色渐失，又怎会留意他人特质？</p>
+<p>所谓难以动心，实因阅历渐丰，世界观已然完整，不再需要填补空缺。自古以来，除了游戏设计师，谁愿意去改动一个成熟的体系？既已定型，迟来者也只能说声抱歉了。人初如白纸，一笔便能留下印记。待到画作完成，若想添笔，需得浓墨重彩。每个人都有自己的故事，有了故事中的主角，或许就没有你的位置。</p>
+<p>常山赵子龙虽然赤胆忠心，七进七出，终究不及桃园结义的情谊。 许昌曹操对关羽以诚相待，最终却只换得对方弃官寻兄。</p>
+<p>他们做错了什么？ 不，只是来得太迟罢了。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>字体推荐——京华老宋体</title>
+      <link>https://liuqiran.github.io/zh/kinghwa-oldsong/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/zh/kinghwa-oldsong/</guid>
+      <description>&lt;p&gt;最近在折腾站点的时候，因为厌倦了系统默认的中文黑体，想找一款新的字体作为阅读字体。回想起了很久以前在赫赫文王的一篇文章当中了解到四个地区字形中文字形的差异：&lt;/p&gt;</description><content:encoded><![CDATA[<p>最近在折腾站点的时候，因为厌倦了系统默认的中文黑体，想找一款新的字体作为阅读字体。回想起了很久以前在赫赫文王的一篇文章当中了解到四个地区字形中文字形的差异：</p>
+<p>在印刷体中，日本的字形参照了康熙字典体，保留了大量传统字形，但字形和中国汉字已经有了区别；韩国因为废除了汉字，字体也保留康熙字典的传统字形。目前的国标字形和台标字形都和传统字形有很大的差异。</p>
+<p>一直想找一个古雅的字体，康熙字典上的字形是传统字形的规范，目前文悅科技厉向晨制作的康熙字典体在网络上很流行。但是这个字体收字不全，并且还有滥用的趋势。</p>
+<p>偶然在知乎上被一个字体吸引到了：<strong>京华老宋体</strong>。</p>
+<p>该字体由特里王制作，该字体基于1961年北京新华字模厂的 <strong>61-1体</strong>。</p>
+<p><strong>61-1 体是什么：</strong></p>
+<blockquote>
+<p>“在建国之初，各种行业在字面意思上都处于「百废待兴」的状态，出版业也需要新的字模满足印刷需求。1961年，北京新华字模厂组织设计了 61‑1 宋体。之后又设计了 6183 字的繁体，主要用于排印古籍书正文。”</p>
+</blockquote>
+<p>1961年北京新华字模厂设计了这一款字体，它改刻自日本筑地明朝体活字，并且印过大名鼎鼎的中华书局二十四史，各种点校的古籍、老课本都能见到其身影。在80年代采用新的字形并转为照排和电脑字体前，中国人对它是非常熟悉的。</p>
+<p>1975年版《读通鉴论》
+<img loading="lazy" src="/img/page-of-dutongjian.png"></p>
+<p>《毛选》竖排本
+<img loading="lazy" src="/img/page-of-selected-mao.png"></p>
+<p>特里王根据这款经典的字形制作了 <strong>京华老宋体</strong>。作者使用AI补全了统一码基础字库，完全没有缺字的担忧。它不仅包含了<strong>所有基础汉字、<strong>新字形和传统字形，它还收录了</strong>日韩字形</strong>、<strong>所有已编码二简字</strong>和<strong>越南喃字</strong>。</p>
+<p>试用了一下这款字体，感觉很不错。</p>
+<blockquote>
+<p>“桃形点、鹅头勾和三角字肩，极具老宋体风味，较之如今最常使用的宋二体更加厚重圆润……比之明朝体时代距今更近，因此排版效果更加工整秀丽，少了一些破落，古拙的质感，多了一些标致、正规的气息。但在字形上又还没受到新字形的规范，正经的外表下暗藏一丝叛逆，甚为妙哉。”</p>
+</blockquote>
+<p><strong>作者原文链接：</strong><a href="https://zhuanlan.zhihu.com/p/637491623" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/637491623</a>
+</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Migrated to Hugo</title>
+      <link>https://liuqiran.github.io/zh/migrated-to-hugo/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/zh/migrated-to-hugo/</guid>
+      <description>&lt;p&gt;经过几天的艰苦努力，我终于从 WordPress 迁移到了 Hugo。&lt;/p&gt;
+&lt;p&gt;由于我的服务器速度很慢，我想我可以专注于离线写作，把精力集中在内容创作上，而不是调整各种功能。&lt;/p&gt;
+&lt;p&gt;我发现很多功能都用不上，比如评论者排名。分类树状图也不太实用，因为维护数据库很麻烦。切换到 Hugo 管理我的文章后，我可以更轻松地组织它们。&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>提示：</strong>本文为机器翻译版本，如觉读来不顺，欢迎指正。 <a href="https://liuqiran.github.io/en/migrated-to-hugo/">查看原语言</a></div><p>经过几天的艰苦努力，我终于从 WordPress 迁移到了 Hugo。</p>
+<p>由于我的服务器速度很慢，我想我可以专注于离线写作，把精力集中在内容创作上，而不是调整各种功能。</p>
+<p>我发现很多功能都用不上，比如评论者排名。分类树状图也不太实用，因为维护数据库很麻烦。切换到 Hugo 管理我的文章后，我可以更轻松地组织它们。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -2,27 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Software on Liu Qiran</title>
-    <link>http://localhost:1313/en/tags/software/</link>
+    <link>https://liuqiran.github.io/en/tags/software/</link>
     <description>Recent content in Software on Liu Qiran</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.161.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 13:44:33 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EP 13 Anki and offline</title>
-      <link>http://localhost:1313/en/2023-08-08-ep-13-anki-and-offline/</link>
+      <link>https://liuqiran.github.io/en/ep-13-anki-and-offline/</link>
       <pubDate>Tue, 08 Aug 2023 13:44:33 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-08-08-ep-13-anki-and-offline/</guid>
-      <description>&lt;p&gt;I had been using Anki as my reviewing tool from 2017.&lt;br&gt;
+      <guid>https://liuqiran.github.io/en/ep-13-anki-and-offline/</guid>
+      <description>&lt;p&gt;﻿I had been using Anki as my reviewing tool from 2017.&lt;br&gt;
 Anki is a very powerful and effective tool, it’s also one of the best tools for learning a language. There is also no alternative of Anki as a tool for creating your own database.&lt;/p&gt;
-&lt;p&gt;But I gradually felt its disadvantages. It’s a software. I always need to use it on computer or on smartphone. To form a habit, I need to open it everyday.&lt;/p&gt;</description>
+&lt;p&gt;But I gradually felt its disadvantages. It’s a software. I always need to use it on computer or on smartphone. To form a habit, I need to open it everyday.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿I had been using Anki as my reviewing tool from 2017.<br>
+Anki is a very powerful and effective tool, it’s also one of the best tools for learning a language. There is also no alternative of Anki as a tool for creating your own database.</p>
+<p>But I gradually felt its disadvantages. It’s a software. I always need to use it on computer or on smartphone. To form a habit, I need to open it everyday.</p>
+<p>But currently I’m practising digital minimalism. I tried to replace most of unnecessary softwares which should open computer or phone with some simple devices such as MP3 player and voice recorder. Some requirements such as task management, I can just open a notebook to meet them. It achieved some good results. Because a lot of my activities can be finished without using computer and smartphone, there are few possibilities that I will be distracted by temptations online.</p>
+<p>As for Anki, I now think that it’s not a necessity for learning and reviewing, though maybe its algorithm and features can provide a lot of conveniences. In my opinion, we can learn anything just by reading books. So, we can surely gain a language just by reading.</p>
+<p>Now I find that tools or softwares can raise complexity. Features can also bring troubles. We can also reviewing words offline, what’s more important is enough repetitions instead of a good algorithm.</p>
+<p>Because I don’t need to open my computer and use Anki, now I can finish most of my personal tasks without a computer or phone. It’s very enjoyable to be offline.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Loop Habits Tracker</title>
-      <link>http://localhost:1313/en/2023-05-09-loop-habits-tracker/</link>
+      <link>https://liuqiran.github.io/en/loop-habits-tracker/</link>
       <pubDate>Tue, 09 May 2023 15:09:09 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-05-09-loop-habits-tracker/</guid>
-      <description>&lt;p&gt;Maybe I can use plain text instead of software to track my habits.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/loop-habits-tracker/</guid>
+      <description>&lt;p&gt;﻿Maybe I can use plain text instead of software to track my habits.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Maybe I can use plain text instead of software to track my habits.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

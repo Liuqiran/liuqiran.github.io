@@ -2,28 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Reading on Liu Qiran</title>
-    <link>http://localhost:1313/en/tags/reading/</link>
+    <link>https://liuqiran.github.io/en/tags/reading/</link>
     <description>Recent content in Reading on Liu Qiran</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.161.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/en/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Great Divorce</title>
+      <link>https://liuqiran.github.io/en/2025-06-the-great-divorce/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/2025-06-the-great-divorce/</guid>
+      <description>&lt;p&gt;This is the second book by C.S. Lewis I&amp;rsquo;ve read after &lt;em&gt;Mere Christianity&lt;/em&gt;. Though short, it took me several days to finish.&lt;/p&gt;
+&lt;p&gt;In heaven, everything is solid and real. The ghosts can&amp;rsquo;t handle this reality, mainly because of their own mindset. Hell starts from a tiny thought and grows when exposed to heaven&amp;rsquo;s truth. These thoughts can grow until they take over the soul, making the ghosts unable to bear heaven&amp;rsquo;s reality, forcing them back to Earth. This shows why no sin is truly small.&lt;/p&gt;</description><content:encoded><![CDATA[<p>This is the second book by C.S. Lewis I&rsquo;ve read after <em>Mere Christianity</em>. Though short, it took me several days to finish.</p>
+<p>In heaven, everything is solid and real. The ghosts can&rsquo;t handle this reality, mainly because of their own mindset. Hell starts from a tiny thought and grows when exposed to heaven&rsquo;s truth. These thoughts can grow until they take over the soul, making the ghosts unable to bear heaven&rsquo;s reality, forcing them back to Earth. This shows why no sin is truly small.</p>
+<p>It&rsquo;s interesting how murderers can live in heaven, while their victims sometimes can&rsquo;t. Children can stay in heaven, while their overly attached mothers can&rsquo;t. One spouse may find peace in heaven, while their deeply devoted partner cannot stay. The ghosts feel this is unfair and demand justice. But they don&rsquo;t see that LORD&rsquo;s fairness works differently from human fairness. His justice lies deeper than what we can understand.</p>
+<p>Only by letting go of our &rsquo;lizard&rsquo; can we fully enjoy heaven. What&rsquo;s amazing is that even this &rsquo;evil&rsquo; lizard can become a flying horse in heaven - our struggles can transform into strength. Our painful memories and past sins can become paths to salvation if we change how we think about them.</p>
+<p>I enjoy Lewis&rsquo;s writing because he uses imagination to share deep truths. Reading his words feels like floating in a dream while discovering profound ideas. His books have opened the door for me to Christianity.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Communication</title>
-      <link>http://localhost:1313/en/2023-08-01-communication/</link>
+      <link>https://liuqiran.github.io/en/communication/</link>
       <pubDate>Tue, 01 Aug 2023 15:06:51 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-08-01-communication/</guid>
-      <description>&lt;p&gt;Communication is necessary in our life. Reading is also a form of communication. When I’m reading, it just like I’m talking with the author.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/communication/</guid>
+      <description>&lt;p&gt;﻿Communication is necessary in our life. Reading is also a form of communication. When I’m reading, it just like I’m talking with the author.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Communication is necessary in our life. Reading is also a form of communication. When I’m reading, it just like I’m talking with the author.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Twenty books</title>
-      <link>http://localhost:1313/en/2023-06-08-twenty-books/</link>
+      <link>https://liuqiran.github.io/en/twenty-books/</link>
       <pubDate>Thu, 08 Jun 2023 14:52:35 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-06-08-twenty-books/</guid>
-      <description>&lt;p&gt;Until today I finished reading 20 books written in English.&lt;br&gt;
+      <guid>https://liuqiran.github.io/en/twenty-books/</guid>
+      <description>&lt;p&gt;﻿Until today I finished reading 20 books written in English.&lt;br&gt;
 Twenty books is not a lot, but it’s a big step for me.&lt;br&gt;
 It’s a good accomplishment.&lt;br&gt;
-Just keep going.&lt;/p&gt;</description>
+Just keep going.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Until today I finished reading 20 books written in English.<br>
+Twenty books is not a lot, but it’s a big step for me.<br>
+It’s a good accomplishment.<br>
+Just keep going.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

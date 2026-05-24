@@ -2,53 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Technology on Liu Qiran</title>
-    <link>http://localhost:1313/en/tags/technology/</link>
+    <link>https://liuqiran.github.io/en/tags/technology/</link>
     <description>Recent content in Technology on Liu Qiran</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.161.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/en/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local Fonts and Better Word Counts</title>
+      <link>https://liuqiran.github.io/en/local-fonts-and-word-count/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/local-fonts-and-word-count/</guid>
+      <description>&lt;p&gt;I made two small but important improvements to this site today: I moved the Chinese web font to local files, and I rewrote the word-counting logic.&lt;/p&gt;
+&lt;p&gt;The Chinese pages had been using &lt;strong&gt;KingHwa OldSong&lt;/strong&gt; through an external CDN. In theory this was convenient, but in practice it was fragile. If the CDN was blocked, slow, changed domains, or returned an error, the browser would fall back to a system font. That made the site look different from what I intended.&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-ai-note"><strong>Note:</strong> This post was drafted with AI assistance and reviewed and edited by me.</div><p>I made two small but important improvements to this site today: I moved the Chinese web font to local files, and I rewrote the word-counting logic.</p>
+<p>The Chinese pages had been using <strong>KingHwa OldSong</strong> through an external CDN. In theory this was convenient, but in practice it was fragile. If the CDN was blocked, slow, changed domains, or returned an error, the browser would fall back to a system font. That made the site look different from what I intended.</p>
+<p>Now the site hosts the sliced <code>.woff2</code> font files locally. This does not mean every visitor has to download the whole font at once. The font is split into many small files, and the browser only loads the pieces needed for the characters on the current page. It costs more repository space, but it makes the site more stable and predictable. I also enabled the same font for Japanese pages, since the typeface includes Japanese glyphs and works well for CJK text.</p>
+<p>I also optimized the word-counting method. Hugo&rsquo;s built-in <code>.WordCount</code> is useful for English, but it is not precise enough for Chinese. The new logic counts CJK characters as individual characters, counts Latin words and numbers as word tokens, and combines both for mixed-language posts. This unified method is now used by post metadata, archive totals, the heatmap, and structured data.</p>
+<p>These changes are not very visible as features, but they make the site feel more like a carefully maintained personal space. Typography and counting rules are small details, yet they affect the experience of reading and reviewing my own writing over time.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Harm from technology</title>
-      <link>http://localhost:1313/en/2023-08-29-harm-from-technology/</link>
+      <link>https://liuqiran.github.io/en/harm-from-technology/</link>
       <pubDate>Mon, 28 Aug 2023 16:03:02 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-08-29-harm-from-technology/</guid>
-      <description>&lt;p&gt;In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it’s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/harm-from-technology/</guid>
+      <description>&lt;p&gt;﻿In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it’s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿In my opinion, the real harmful radiation is from the devices in our daily life. When we are using our smartphone or other electronic tools, it’s possible to be exposed to radiation. Some people think the radition from phone is not enough to cause negative effect to our body. I take a sceptical attitude.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>EP 14 Information quality</title>
-      <link>http://localhost:1313/en/2023-08-22-ep-14-information-quality/</link>
+      <link>https://liuqiran.github.io/en/ep-14-information-quality/</link>
       <pubDate>Tue, 22 Aug 2023 15:52:36 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-08-22-ep-14-information-quality/</guid>
-      <description>&lt;p&gt;In my own opinion, there are three kinds of information in our life.&lt;br&gt;
+      <guid>https://liuqiran.github.io/en/ep-14-information-quality/</guid>
+      <description>&lt;p&gt;﻿In my own opinion, there are three kinds of information in our life.&lt;br&gt;
 The first one is text, the second is audio, the last one is video.&lt;br&gt;
 Let’s talk about the first one. The content of texts is based on words. It’s the most abstract form of information. If we are literate, we can understand words, then we can understand road signs, posters, magazines, and books. It’s simplest to save texts for us. It’s also a form that can save the best information quality. But it’s maybe the hardest information to understand. Books contain the deepest information quality.&lt;br&gt;
 Audio is another kind of information, it’s based on sounds. It’s more natural to us because we can use our ear to understand. But we can’t control the speed of understanding. We probably also receive some useless information.&lt;br&gt;
-The third one is video. It combines sound and image. We can understand it very well, but it’s more shallow. Normally, information quality of video is not that good.&lt;/p&gt;</description>
+The third one is video. It combines sound and image. We can understand it very well, but it’s more shallow. Normally, information quality of video is not that good.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿In my own opinion, there are three kinds of information in our life.<br>
+The first one is text, the second is audio, the last one is video.<br>
+Let’s talk about the first one. The content of texts is based on words. It’s the most abstract form of information. If we are literate, we can understand words, then we can understand road signs, posters, magazines, and books. It’s simplest to save texts for us. It’s also a form that can save the best information quality. But it’s maybe the hardest information to understand. Books contain the deepest information quality.<br>
+Audio is another kind of information, it’s based on sounds. It’s more natural to us because we can use our ear to understand. But we can’t control the speed of understanding. We probably also receive some useless information.<br>
+The third one is video. It combines sound and image. We can understand it very well, but it’s more shallow. Normally, information quality of video is not that good.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>EP 6 Plain text</title>
-      <link>http://localhost:1313/en/2023-05-02-ep-6-plain-text/</link>
+      <link>https://liuqiran.github.io/en/ep-6-plain-text/</link>
       <pubDate>Tue, 02 May 2023 15:03:53 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-05-02-ep-6-plain-text/</guid>
-      <description>&lt;p&gt;I have used a lot of software to store my notes and data. But gradually I found that although these softwares are very convenient and they offer a lot of good services. They also caused me a lot of trouble in the long run.&lt;br&gt;
+      <guid>https://liuqiran.github.io/en/ep-6-plain-text/</guid>
+      <description>&lt;p&gt;﻿I have used a lot of software to store my notes and data. But gradually I found that although these softwares are very convenient and they offer a lot of good services. They also caused me a lot of trouble in the long run.&lt;br&gt;
 One important reason is that you cannot export your data freely. I tried a lot of softwares after I decided to write online. Many of them don’t provide good export service. Your files can only be exported to some special formats. What’s more, these files can only be viewed in some special forms. We can probably convert them to other formats we want, but it’s not that easy.&lt;br&gt;
-Another reason is that I realized that some tools and services could give you a lot of convenience and unique features, but when you get used to it. You are also limited by these tools. Your choice would be less, and it’s also very inconvenient if you want to change your tool. Especially for a person who is always curious about new tools. Technology is a double-edged sword. I always want to find a suitable tool for writing, learning, productivity, etc. But the result is not so good.&lt;/p&gt;</description>
+Another reason is that I realized that some tools and services could give you a lot of convenience and unique features, but when you get used to it. You are also limited by these tools. Your choice would be less, and it’s also very inconvenient if you want to change your tool. Especially for a person who is always curious about new tools. Technology is a double-edged sword. I always want to find a suitable tool for writing, learning, productivity, etc. But the result is not so good.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿I have used a lot of software to store my notes and data. But gradually I found that although these softwares are very convenient and they offer a lot of good services. They also caused me a lot of trouble in the long run.<br>
+One important reason is that you cannot export your data freely. I tried a lot of softwares after I decided to write online. Many of them don’t provide good export service. Your files can only be exported to some special formats. What’s more, these files can only be viewed in some special forms. We can probably convert them to other formats we want, but it’s not that easy.<br>
+Another reason is that I realized that some tools and services could give you a lot of convenience and unique features, but when you get used to it. You are also limited by these tools. Your choice would be less, and it’s also very inconvenient if you want to change your tool. Especially for a person who is always curious about new tools. Technology is a double-edged sword. I always want to find a suitable tool for writing, learning, productivity, etc. But the result is not so good.</p>
+<p>One day I read an <a href="https://sive.rs/plaintext" target="_blank" rel="noopener noreferrer">article</a>
+ about plain text. I suddenly realized that we can do that too. We shouldn’t worry about the tools. What we can do is just go back to the content, to the medium itself. I can just focus on the words and the texts. I think that’s the easiest and best medium.</p>
+<p>As for the format, I can choose the plain text, just like in this article. It’s very simple. Maybe I can do a lot of things only in plain text format. I don’t have to worry about the stability of software, and I can easily open plain text in a lot of software without worrying about the security of my personal data.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>EP 4 AI tool for learning</title>
-      <link>http://localhost:1313/en/2023-04-04-ep-4-ai-tool-for-learning/</link>
+      <link>https://liuqiran.github.io/en/ep-4-ai-tool-for-learning/</link>
       <pubDate>Mon, 03 Apr 2023 20:33:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-04-04-ep-4-ai-tool-for-learning/</guid>
-      <description>&lt;p&gt;I’m Qiran. Today, I would like to share with you my understanding of Artificial Intelligence.&lt;/p&gt;
-&lt;p&gt;I gradually realized that AI has already entered my life. Some people may think that AI is very destructive to the lives of ordinary people. But in my opinion, the most distinct characteristic that humans possess and surpass other creatures is the ability to use tools. AI is a very useful tool now, and it would be highly beneficial if we can learn to use it effectively.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/ep-4-ai-tool-for-learning/</guid>
+      <description>&lt;p&gt;﻿I’m Qiran. Today, I would like to share with you my understanding of Artificial Intelligence.&lt;/p&gt;
+&lt;p&gt;I gradually realized that AI has already entered my life. Some people may think that AI is very destructive to the lives of ordinary people. But in my opinion, the most distinct characteristic that humans possess and surpass other creatures is the ability to use tools. AI is a very useful tool now, and it would be highly beneficial if we can learn to use it effectively.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿I’m Qiran. Today, I would like to share with you my understanding of Artificial Intelligence.</p>
+<p>I gradually realized that AI has already entered my life. Some people may think that AI is very destructive to the lives of ordinary people. But in my opinion, the most distinct characteristic that humans possess and surpass other creatures is the ability to use tools. AI is a very useful tool now, and it would be highly beneficial if we can learn to use it effectively.</p>
+<p>In terms of learning English, I have found a lot of useful tools that are built upon artificial intelligence. One of these tools is DeepL, which I noticed several years ago. The quality of its translation is far better than Google Translate. I can smoothly translate an article into another language without worrying about its readability. Moreover, I can easily find a suitable word on DeepL if I forget its expression in another language.</p>
+<p>In addition to this, I have also found some AI-powered tools for web designing. I am sure that many problems in building a beautiful and powerful website will be solved in the future. As for me, I just need to focus on creating content.</p>
+<p>Recently, the stunning tool called ChatGPT was released, and I’m using it as a grammar checker after finishing a writing practice in English. It’s so useful that I can learn to write by myself without a tutor. I don’t need to worry about errors in writing anymore, and can write freely and smoothly. As a result, I am willing to post my articles written in English online. Though there is still a lot of room for improvement, I can already express some complicated ideas without misunderstanding now.</p>
+<p>Anyway, maybe the reason these tools motivated me is that they give me some confidence in sharing and learning. However, ultimate success in learning depends on our own efforts instead of just relying on tools. We just need to practice more.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Share</title>
-      <link>http://localhost:1313/en/2023-02-08-4299-2/</link>
+      <link>https://liuqiran.github.io/en/4299-2/</link>
       <pubDate>Wed, 08 Feb 2023 12:00:15 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-02-08-4299-2/</guid>
-      <description>&lt;figure class=&#34;wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter&#34;&gt;
+      <guid>https://liuqiran.github.io/en/4299-2/</guid>
+      <description>&lt;p&gt;﻿&lt;figure class=&#34;wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-width=&#34;550&#34; data-dnt=&#34;true&#34;&gt;
     &lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
@@ -57,7 +88,17 @@ Another reason is that I realized that some tools and services could give you a 
 &lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://twitter.com/zebulgar/status/1620436085376712705?ref_src=twsrc%5Etfw&amp;quot;&amp;gt;January 31, 2023&amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/blockquote&gt;
-&lt;/div&gt;&lt;/figure&gt;</description>
+&lt;/div&gt;&lt;/figure&gt;</description><content:encoded><![CDATA[<p>﻿<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"></p>
+<div class="wp-block-embed__wrapper">
+  <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+    <p lang="en" dir="ltr">
+      i cannot believe this is actually real <a href="https://t.co/zo9pl0bXjU">pic.twitter.com/zo9pl0bXjU</a>
+    </p>&mdash; delian (@zebulgar) 
+<pre><code>&lt;a href=&quot;https://twitter.com/zebulgar/status/1620436085376712705?ref_src=twsrc%5Etfw&quot;&gt;January 31, 2023&lt;/a&gt;
+</code></pre>
+  </blockquote>
+</div></figure>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -2,33 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Internet on Liu Qiran</title>
-    <link>http://localhost:1313/en/tags/internet/</link>
+    <link>https://liuqiran.github.io/en/tags/internet/</link>
     <description>Recent content in Internet on Liu Qiran</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.161.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Apr 2025 18:28:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 11:18:08 +0000</lastBuildDate>
+    <atom:link href="https://liuqiran.github.io/en/tags/internet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stickers</title>
-      <link>http://localhost:1313/en/2023-03-28-stickers/</link>
+      <link>https://liuqiran.github.io/en/stickers/</link>
       <pubDate>Tue, 28 Mar 2023 11:18:08 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-03-28-stickers/</guid>
-      <description>&lt;p&gt;Why do I no longer use stickers? For me, the use of stickers distorts the understanding of others. I don’t think it’s an effective or appropriate way to communicate with others online. The Internet is already full of entertaining and useless information. Using stickers will make this situation worse. Using words is enough to convey accurate information. Although without stickers, some people will think that it will feel that there is no emotion. But the truth is that the Internet cannot emulate the real conversation. Calling and talking face to face may be a better way for communication.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/stickers/</guid>
+      <description>&lt;p&gt;﻿Why do I no longer use stickers? For me, the use of stickers distorts the understanding of others. I don’t think it’s an effective or appropriate way to communicate with others online. The Internet is already full of entertaining and useless information. Using stickers will make this situation worse. Using words is enough to convey accurate information. Although without stickers, some people will think that it will feel that there is no emotion. But the truth is that the Internet cannot emulate the real conversation. Calling and talking face to face may be a better way for communication.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Why do I no longer use stickers? For me, the use of stickers distorts the understanding of others. I don’t think it’s an effective or appropriate way to communicate with others online. The Internet is already full of entertaining and useless information. Using stickers will make this situation worse. Using words is enough to convey accurate information. Although without stickers, some people will think that it will feel that there is no emotion. But the truth is that the Internet cannot emulate the real conversation. Calling and talking face to face may be a better way for communication.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Reorganize the layout</title>
+      <link>https://liuqiran.github.io/en/2023-02-08-reorganize-home-page/</link>
+      <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/2023-02-08-reorganize-home-page/</guid>
+      <description>&lt;p class=&#34;has-primary-background-color has-background&#34;&gt;
+&lt;p&gt;I haven&amp;rsquo;t updated my status in a long time. I don&amp;rsquo;t know when it happened, but I&amp;rsquo;ve lost the ability to express my feelings and the motivation to share&amp;hellip;&lt;/p&gt;
+&lt;/p&gt;
+&lt;p&gt;Recently, I discovered that many functions were no longer working. It took a long time to fix them, otherwise this place would have been overgrown with weeds.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve noticed many people are starting to use LinkTree as a personal homepage to aggregate numerous links. It seems these people are active on more and more social media platforms these days. They&amp;rsquo;ve lost count, so they use this website to organize them.&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>Machine translation notice:</strong> This page is machine-translated and may contain inaccuracies. If it reads awkwardly, your corrections in the comments would be much appreciated. <a href="https://liuqiran.github.io/zh/2023-02-08-reorganize-home-page/">View original</a></div><p class="has-primary-background-color has-background">
+<p>I haven&rsquo;t updated my status in a long time. I don&rsquo;t know when it happened, but I&rsquo;ve lost the ability to express my feelings and the motivation to share&hellip;</p>
+</p>
+<p>Recently, I discovered that many functions were no longer working. It took a long time to fix them, otherwise this place would have been overgrown with weeds.</p>
+<p>I&rsquo;ve noticed many people are starting to use LinkTree as a personal homepage to aggregate numerous links. It seems these people are active on more and more social media platforms these days. They&rsquo;ve lost count, so they use this website to organize them.</p>
+<p>But isn&rsquo;t this just the function of a personal website homepage? You just add these links to your homepage, and you can customize the style and functions, avoiding the problem of everyone looking the same.</p>
+<p>Besides, organizing your own homepage has other advantages: the URL is more concise and easier to remember; access is centralized on your own platform, not controlled by other platforms.</p>
+<p>But regardless, it still needs regular maintenance. I should update my status more often.</p>
+</p>]]></content:encoded>
     </item>
     <item>
       <title>Update home page</title>
-      <link>http://localhost:1313/en/2023-02-08-update-home-page/</link>
+      <link>https://liuqiran.github.io/en/update-home-page/</link>
       <pubDate>Wed, 08 Feb 2023 11:17:57 +0000</pubDate>
-      <guid>http://localhost:1313/en/2023-02-08-update-home-page/</guid>
-      <description>&lt;p&gt;Added progress bars and more social icons for home page.&lt;/p&gt;
-&lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description>
+      <guid>https://liuqiran.github.io/en/update-home-page/</guid>
+      <description>&lt;p&gt;﻿Added progress bars and more social icons for home page.&lt;/p&gt;
+&lt;p&gt;Added the feature which can share posts on Mastodon.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿Added progress bars and more social icons for home page.</p>
+<p>Added the feature which can share posts on Mastodon.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Create a Telegram channel</title>
+      <link>https://liuqiran.github.io/en/2023-02-08-created-telegram-channel/</link>
+      <pubDate>Wed, 08 Feb 2023 10:12:49 +0000</pubDate>
+      <guid>https://liuqiran.github.io/en/2023-02-08-created-telegram-channel/</guid>
+      <description>&lt;p&gt;I tried opening a Telegram channel.&lt;/p&gt;
+&lt;p&gt;I found that creating a channel on Telegram is very quick, and broadcasting to others is also very fast.&lt;/p&gt;
+&lt;p&gt;Most importantly, the platform is open, and after adding the bot function, updates from my personal website can be automatically synchronized to the channel.&lt;/p&gt;
+&lt;p&gt;Now, coupled with the real-time message reception, Telegram&amp;rsquo;s functionality surpasses many other communication software programs. I highly recommend trying it!&lt;/p&gt;</description><content:encoded><![CDATA[<div class="kq-mt-note"><strong>Machine translation notice:</strong> This page is machine-translated and may contain inaccuracies. If it reads awkwardly, your corrections in the comments would be much appreciated. <a href="https://liuqiran.github.io/zh/created-telegram-channel/">View original</a></div><p>I tried opening a Telegram channel.</p>
+<p>I found that creating a channel on Telegram is very quick, and broadcasting to others is also very fast.</p>
+<p>Most importantly, the platform is open, and after adding the bot function, updates from my personal website can be automatically synchronized to the channel.</p>
+<p>Now, coupled with the real-time message reception, Telegram&rsquo;s functionality surpasses many other communication software programs. I highly recommend trying it!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Z-library in Nov. 2022</title>
-      <link>http://localhost:1313/en/2022-11-04-z-library-in-nov-2022/</link>
+      <link>https://liuqiran.github.io/en/z-library-in-nov-2022/</link>
       <pubDate>Fri, 04 Nov 2022 02:49:11 +0000</pubDate>
-      <guid>http://localhost:1313/en/2022-11-04-z-library-in-nov-2022/</guid>
-      <description>&lt;figure class=&#34;wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter&#34;&gt;
+      <guid>https://liuqiran.github.io/en/z-library-in-nov-2022/</guid>
+      <description>&lt;p&gt;﻿&lt;figure class=&#34;wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-width=&#34;550&#34; data-dnt=&#34;true&#34;&gt;
     &lt;p lang=&#34;zh&#34; dir=&#34;ltr&#34;&gt;
@@ -38,7 +74,28 @@
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/blockquote&gt;
 &lt;/div&gt;&lt;figcaption&gt;Z-library&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;The official URL of Z-library is down.&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;
+The official URL of Z-library is down.&lt;/p&gt;</description><content:encoded><![CDATA[<p>﻿<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"></p>
+<div class="wp-block-embed__wrapper">
+  <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+    <p lang="zh" dir="ltr">
+      完蛋了，全世界最大的电子图书馆被 ban 。<br /><br />全世界最大的电子图书馆 z-lib 被美国警方查封，目前官方所有网址均无法访问。<a href="https://twitter.com/hashtag/zlibrary?src=hash&ref_src=twsrc%5Etfw">#zlibrary</a> <a href="https://t.co/AyebO3xbK8">pic.twitter.com/AyebO3xbK8</a>
+    </p>&mdash; Bruce 小胡同学 𝕏 (@huhexian) 
+<pre><code>&lt;a href=&quot;https://twitter.com/huhexian/status/1588350395818311680?ref_src=twsrc%5Etfw&quot;&gt;November 4, 2022&lt;/a&gt;
+</code></pre>
+  </blockquote>
+</div><figcaption>Z-library</figcaption></figure>
+<p><a href=""></a>
+The official URL of Z-library is down.</p>
+<p>You can still access it on the dark web for now.</p>
+<p>The URL is: <a href="http://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion/" target="_blank" rel="noopener noreferrer">http://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion/</a>
+</p>
+<p>We can access it using Tor Browser.</p>
+<p>UPDATE: You can access it. but you cannot download book files directly.</p>
+<p>You can log in an account and tap “send to Email” , then you will receive the book file from your Emailbox.</p>
+<p>But this way only works for files smaller than 20 MB.</p>
+<p>UPDATE: The Telegram Bot service is restored.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>
