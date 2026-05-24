@@ -6,6 +6,7 @@ import os
 import re
 import hashlib
 import html
+import time
 from pathlib import Path
 from typing import Any, Dict, Tuple, Optional, List
 
@@ -14,6 +15,7 @@ import yaml
 # Google Translate v2 client
 from google.cloud import translate_v2 as translate
 from google.oauth2 import service_account
+from google.api_core import exceptions as google_exceptions
 
 FRONT_DELIM = "---"
 
@@ -34,6 +36,22 @@ TAGS_MT_FALLBACK = os.environ.get("KQ_TAGS_MT", "").strip().lower() not in ("0",
 # ✅ Optional: force re-translate body for existing managed MT files (DANGEROUS: overwrites manual edits)
 #   KQ_FORCE_MT=1 python3 translate.py
 FORCE_MT = os.environ.get("KQ_FORCE_MT", "").strip().lower() in ("1", "true", "yes")
+
+try:
+    MT_MAX_RETRIES = max(0, int(os.environ.get("KQ_MT_MAX_RETRIES", "3").strip() or "3"))
+except ValueError:
+    MT_MAX_RETRIES = 3
+
+try:
+    MT_INITIAL_BACKOFF_SECONDS = max(
+        0.5, float(os.environ.get("KQ_MT_INITIAL_BACKOFF_SECONDS", "2").strip() or "2")
+    )
+except ValueError:
+    MT_INITIAL_BACKOFF_SECONDS = 2.0
+
+
+class TranslationRetryExhausted(RuntimeError):
+    """Raised when a retryable translate error keeps failing after backoff."""
 
 
 def find_repo_root() -> Path:
@@ -303,15 +321,66 @@ def build_target_frontmatter(
     return fm
 
 
+def is_retryable_translate_error(exc: Exception) -> bool:
+    if isinstance(
+        exc,
+        (
+            google_exceptions.TooManyRequests,
+            google_exceptions.ResourceExhausted,
+            google_exceptions.ServiceUnavailable,
+            google_exceptions.DeadlineExceeded,
+            google_exceptions.InternalServerError,
+        ),
+    ):
+        return True
+
+    if isinstance(exc, google_exceptions.Forbidden):
+        msg = str(exc).lower()
+        return (
+            "user rate limit exceeded" in msg
+            or "rate limit" in msg
+            or "quota" in msg
+            or "resource exhausted" in msg
+        )
+
+    return False
+
+
 def translate_text_google(client: translate.Client, text: str, source_lang: str, target_lang: str) -> str:
-    res = client.translate(
-        text,
-        target_language=target_lang,
-        source_language=source_lang,
-        format_="text",
+    delay = MT_INITIAL_BACKOFF_SECONDS
+    max_attempts = MT_MAX_RETRIES + 1
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            res = client.translate(
+                text,
+                target_language=target_lang,
+                source_language=source_lang,
+                format_="text",
+            )
+            # v2 may return HTML entities
+            return html.unescape(res["translatedText"])
+        except Exception as exc:
+            if not is_retryable_translate_error(exc):
+                raise
+
+            if attempt >= max_attempts:
+                raise TranslationRetryExhausted(
+                    f"{source_lang}->{target_lang} retry budget exhausted after "
+                    f"{MT_MAX_RETRIES} retries: {exc}"
+                ) from exc
+
+            print(
+                f"[WARN] Retryable translate error for {source_lang}->{target_lang} "
+                f"(attempt {attempt}/{max_attempts}): {exc}. Sleeping {delay:.1f}s."
+            )
+            time.sleep(delay)
+            delay *= 2
+
+    raise TranslationRetryExhausted(
+        f"{source_lang}->{target_lang} retry budget exhausted after "
+        f"{MT_MAX_RETRIES} retries"
     )
-    # v2 may return HTML entities
-    return html.unescape(res["translatedText"])
 
 
 def translate_title_if_needed(
@@ -420,6 +489,7 @@ def main() -> None:
     updated_src = 0
     skipped_no_translate = 0
     warned_unknown_mode = 0
+    skipped_retry_exhausted = 0
 
     # ✅ Only these language folders (avoid shared/ etc)
     LANGS = {"en", "zh", "ja"}  # adjust if you add more
@@ -454,13 +524,21 @@ def main() -> None:
                 warned_unknown_mode += 1
                 continue
 
-            targets = tcfg.get("targets")
+            raw_targets = tcfg.get("targets")
+            targets = raw_targets
             if not targets:
                 targets = [l for l in all_langs if l != src_lang]
             if isinstance(targets, str):
                 targets = [targets]
             targets = [str(x).strip() for x in targets if str(x).strip()]
             targets = [x for x in targets if x != src_lang]
+            if not targets:
+                targets = [l for l in all_langs if l != src_lang]
+                print(
+                    f"[WARN] {src}: translate.targets contained no valid target "
+                    f"languages after removing source '{src_lang}'. "
+                    f"Falling back to: {targets}"
+                )
 
             draft = tcfg.get("draft")
             if draft is None:
@@ -564,51 +642,56 @@ def main() -> None:
                 # ================================================================================
 
                 # ===== create new translation =====
-                dst.parent.mkdir(parents=True, exist_ok=True)
-                target_fm = build_target_frontmatter(
-                    src_fm=fm,
-                    slug=slug,
-                    tk=tk,
-                    draft=draft,
-                    mode=mode,
-                    target_lang=lang,
-                    rel=rel,
-                )
-
-                if mode == "google":
-                    target_fm.setdefault("kq_mt_from", src_lang)
-                    target_fm.setdefault("kq_mt_to", lang)
-
-                # Only on FIRST creation: translate title (like body)
-                new_title = translate_title_if_needed(client, fm, src_lang, lang, mode)
-                if new_title:
-                    target_fm["title"] = new_title
-
-                # ✅ Only on FIRST creation: tags (map first, then MT fallback)
-                new_tags = translate_tags(
-                    client=client,
-                    src_tags=fm.get("tags"),
-                    tag_map=tag_map,
-                    rev=tag_rev,
-                    source_lang=src_lang,
-                    target_lang=lang,
-                    mode=mode,
-                )
-                if new_tags is not None:
-                    target_fm["tags"] = new_tags
-
-                if mode == "stub":
-                    out_body = (
-                        "<!-- TODO: translate manually -->\n\n"
-                        f"> Source: /{src_lang}/{rel.as_posix().replace('index.md','')}\n"
+                try:
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+                    target_fm = build_target_frontmatter(
+                        src_fm=fm,
+                        slug=slug,
+                        tk=tk,
+                        draft=draft,
+                        mode=mode,
+                        target_lang=lang,
+                        rel=rel,
                     )
-                    out = dump_frontmatter(target_fm) + out_body
-                else:
-                    translated = translate_text_google(client, body, src_lang, lang)
-                    out = dump_frontmatter(target_fm) + translated
 
-                dst.write_text(out, "utf-8")
-                created += 1
+                    if mode == "google":
+                        target_fm.setdefault("kq_mt_from", src_lang)
+                        target_fm.setdefault("kq_mt_to", lang)
+
+                    # Only on FIRST creation: translate title (like body)
+                    new_title = translate_title_if_needed(client, fm, src_lang, lang, mode)
+                    if new_title:
+                        target_fm["title"] = new_title
+
+                    # ✅ Only on FIRST creation: tags (map first, then MT fallback)
+                    new_tags = translate_tags(
+                        client=client,
+                        src_tags=fm.get("tags"),
+                        tag_map=tag_map,
+                        rev=tag_rev,
+                        source_lang=src_lang,
+                        target_lang=lang,
+                        mode=mode,
+                    )
+                    if new_tags is not None:
+                        target_fm["tags"] = new_tags
+
+                    if mode == "stub":
+                        out_body = (
+                            "<!-- TODO: translate manually -->\n\n"
+                            f"> Source: /{src_lang}/{rel.as_posix().replace('index.md','')}\n"
+                        )
+                        out = dump_frontmatter(target_fm) + out_body
+                    else:
+                        translated = translate_text_google(client, body, src_lang, lang)
+                        out = dump_frontmatter(target_fm) + translated
+
+                    dst.write_text(out, "utf-8")
+                    created += 1
+                except TranslationRetryExhausted as e:
+                    skipped_retry_exhausted += 1
+                    print(f"[WARN] Skipping translation for {src} -> {lang}: {e}")
+                    continue
                 # ===============================
 
     save_cache(cache)
@@ -616,7 +699,7 @@ def main() -> None:
         "Done. "
         f"created={created}, synced={synced}, adopted={adopted}, "
         f"skipped_exists={skipped_exists}, updated_src={updated_src}, skipped_no_translate={skipped_no_translate}, "
-        f"warned_unknown_mode={warned_unknown_mode}\n"
+        f"warned_unknown_mode={warned_unknown_mode}, skipped_retry_exhausted={skipped_retry_exhausted}\n"
         f"(repo_root={REPO_ROOT})"
     )
 

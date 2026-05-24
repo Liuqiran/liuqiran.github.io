@@ -74,7 +74,7 @@ languages:
 
       socialIcons:
         - name: rss
-          url: '/rss'     
+          url: '/en/index.xml'     
         - name: mastodon
           url: 'https://mastodon.social/@liuqiran'
         - name: github
@@ -151,7 +151,7 @@ languages:
       
       socialIcons:
         - name: rss
-          url:  /zh/rss-2/     
+          url:  /zh/index.xml     
         - name: mastodon
           url: 'https://mastodon.social/@liuqiran'
         - name: github
