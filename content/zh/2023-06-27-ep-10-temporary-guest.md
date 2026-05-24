@@ -12,6 +12,7 @@ tags:
 cover: 
   image: img/guest.jpg  
 vertical: true
+ai_assisted: true
 ---
 （注：此文智機所作。）  
 近日整理通訊錄，見故人多矣，久不相聞。光陰荏苒，彼輩漸行漸遠，杳然無跡。雖存其名，恍若已逝，皆為過客耳。   
