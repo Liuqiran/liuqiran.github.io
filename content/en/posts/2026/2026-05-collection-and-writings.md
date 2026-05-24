@@ -12,6 +12,10 @@ cover:
 tags: 
   - Building Site
   - Life
+translate:  
+  mode: google
+  targets: ["en"]
+  draft: false
 ---
 
 I spent a lot of time downloading comic books.   
