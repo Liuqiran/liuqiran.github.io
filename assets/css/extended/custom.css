@@ -237,16 +237,8 @@ html[lang="en-US"] .profile_inner > span {
   display: block !important;
 }
 
-.kq-human-badge-dark {
-  display: none !important;
-}
-
-.dark .kq-human-badge-light {
-  display: none !important;
-}
-
-.dark .kq-human-badge-dark {
-  display: block !important;
+.dark .kq-human-badge-image {
+  filter: invert(1);
 }
 
 /* Smaller cover images: keep thumbnails compact on lists and single posts. */
