@@ -2,7 +2,7 @@
 title: "Collecting and Writing"
 translationKey: "2026-05-collection-and-writings"
 slug: "2026-05-collection-and-writings"
-draft: true
+draft: false
 author: Qiran
 date: 2026-05-24
 lastmod: 2026-05-24   
