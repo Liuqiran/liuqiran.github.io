@@ -52,6 +52,6 @@
 
 
 {{- range $i, $v := $meta -}}
-  {{- if gt $i 0 -}} ;&nbsp;·&nbsp; {{- end -}}
+  {{- if gt $i 0 -}} &nbsp;·&nbsp; {{- end -}}
   <span class="post-meta-item">{{- $v | safeHTML -}}</span>
 {{- end -}}
