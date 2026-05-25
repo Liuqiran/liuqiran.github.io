@@ -13,7 +13,7 @@ tags:
   - Life   
   - Technology   
   - AI  
----  
+---   
 
 Recently, many graduates have been booing speakers when they mention AI or express optimism about the future of AI.
 
