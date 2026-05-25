@@ -30,4 +30,4 @@ I gave up using my own RSS reader and switched to Inoreader and FeedMe, because 
 I have been thinking about pure text and images. Compared with images, pure text has many advantages. Although pure text is not always good for sharing details, it is much easier to save, modify, and edit. I can also search through text very easily, and the maintenance cost is very low. I always worry about the durability of images. When I export backups of my writings, the file size becomes very large.   
 
 In fact, I don't think images are that necessary.   
-Now I have even stopped inserting images into my journals, and I may focus on writing pure text posts in the future.
+Now I have even stopped inserting images into my journals, and I may focus on writing pure text posts in the future.    

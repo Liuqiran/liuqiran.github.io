@@ -18,7 +18,7 @@ cover:
 <!--</div>-->  
 
 
-# 🌏 Learning Process
+# 🌏 Learning Process 2026-05
 
 ## Anki Language learning   
 - Days studied:	⁨318⁩ of ⁨326⁩ (⁨97.55⁩%)
@@ -26,11 +26,15 @@ cover:
 - Average over period:	⁨613⁩ reviews/day
 - Average for days studied:	⁨628⁩ reviews/day
 
+Progress: 590 hours
+
 # ☕Reading plan   
 See [**📚 Reading list**](/en/reading-list/)
 
-# 🖥️ Other plans 
+# 🖥️ Other plans   
 
+- [ ] **数字化日记②** 
+- [ ] 数字化日记③ 
 - [x] Fix Hugo backend comment URLs
 - [x] Optimize word count statistics
 - [x] Add email subscription feature   
@@ -40,9 +44,7 @@ See [**📚 Reading list**](/en/reading-list/)
 - [ ] Add Substack button  
 - [ ] Open Gumroad/Buy me a coffee account 
 - [ ] Add feature of Archive page ( Can find posts  by year/month)     
-- [ ] 数字化日记②
-- [ ] 数字化日记③
-  
+
 # 🌳 Building Habits
 
 > - The **Overall Habit Score** is the total score of all habits recorded using the [Loop Habit Tracker](https://loophabits.org/).
