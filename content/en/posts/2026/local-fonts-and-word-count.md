@@ -20,7 +20,7 @@ I made two small but important improvements to this site today: I moved the Chin
 
 The Chinese pages had been using **KingHwa OldSong** through an external CDN. In theory this was convenient, but in practice it was fragile. If the CDN was blocked, slow, changed domains, or returned an error, the browser would fall back to a system font. That made the site look different from what I intended.
 
-Now the site hosts the sliced `.woff2` font files locally. This does not mean every visitor has to download the whole font at once. The font is split into many small files, and the browser only loads the pieces needed for the characters on the current page. It costs more repository space, but it makes the site more stable and predictable. I also enabled the same font for Japanese pages, since the typeface includes Japanese glyphs and works well for CJK text.
+Now the site hosts the sliced `.woff2` font files locally. This does not mean every visitor has to download the whole font at once. The font is split into many small files, and the browser only loads the pieces needed for the characters on the current page. It costs more repository space, but it makes the site more stable and predictable. I also enabled the same font for other languages.
 
 I also optimized the word-counting method. Hugo's built-in `.WordCount` is useful for English, but it is not precise enough for Chinese. The new logic counts CJK characters as individual characters, counts Latin words and numbers as word tokens, and combines both for mixed-language posts. This unified method is now used by post metadata, archive totals, the heatmap, and structured data.
 
