@@ -74,14 +74,8 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if .Content }}
-      {{- $isAI := partial "is_ai_assisted.html" . -}}
-      {{- $isMT := partial "is_machine_translated.html" . -}}
       {{- $rssPrefixNotices := printf "%s%s" (partial "mt_notice.html" .) (partial "ai_notice.html" .) -}}
-      {{- $rssSuffixNotice := "" -}}
-      {{- if and (not $isAI) (not $isMT) -}}
-        {{- $rssSuffixNotice = partial "human_notice.html" . -}}
-      {{- end -}}
-      {{- $rssContent := printf "%s%s%s" $rssPrefixNotices .Content $rssSuffixNotice -}}
+      {{- $rssContent := printf "%s%s" $rssPrefixNotices .Content -}}
       <content:encoded>{{ (printf "<![CDATA[%s]]>" $rssContent) | safeHTML }}</content:encoded>
       {{- end }}
     </item>
