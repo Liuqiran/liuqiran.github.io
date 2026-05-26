@@ -75,7 +75,8 @@
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if .Content }}
       {{- $rssPrefixNotices := printf "%s%s" (partial "mt_notice.html" .) (partial "ai_notice.html" .) -}}
-      {{- $rssContent := printf "%s%s" $rssPrefixNotices .Content -}}
+      {{- $rssSuffixNotices := partial "cc_license_notice.html" . -}}
+      {{- $rssContent := printf "%s%s%s" $rssPrefixNotices .Content $rssSuffixNotices -}}
       <content:encoded>{{ (printf "<![CDATA[%s]]>" $rssContent) | safeHTML }}</content:encoded>
       {{- end }}
     </item>

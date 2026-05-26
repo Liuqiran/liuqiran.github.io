@@ -241,6 +241,55 @@ html[lang="en-US"] .profile_inner > span {
   filter: invert(1);
 }
 
+.kq-license-note {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--entry);
+  margin: 1.25rem 0 0;
+  padding: .9rem 1rem;
+  color: var(--secondary);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.kq-license-title {
+  margin-bottom: .35rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.kq-license-note p {
+  margin: .25rem 0;
+}
+
+.kq-license-note dl {
+  display: grid;
+  gap: .25rem;
+  margin: .55rem 0 0;
+}
+
+.kq-license-note dl div {
+  display: grid;
+  grid-template-columns: 5.8rem minmax(0, 1fr);
+  gap: .6rem;
+}
+
+.kq-license-note dt {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.kq-license-note dd {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.kq-license-note a {
+  color: inherit;
+  box-shadow: 0 1px;
+}
+
 .archive-stats {
   display: flex;
   flex-wrap: wrap;

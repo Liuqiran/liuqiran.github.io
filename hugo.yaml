@@ -215,6 +215,11 @@ params:
   showtoc: true
   tocopen: true
   ShowArchive: true
+  contentLicense:
+    authorName: "Qiran"
+    authorUrl: "https://liuqiran.github.io/"
+    name: "CC BY-NC-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
   cover:
     image: "/img/Avatar.jpg"
   rss: "/feed/"
