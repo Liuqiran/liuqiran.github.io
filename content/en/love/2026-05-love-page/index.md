@@ -2,7 +2,18 @@
 title: "How This Garden Began"
 date: 2026-05-26
 url: "/our-garden-2025-0927-k8f3q9p2/2026-05-love-page/"
+type: love
 machineAssisted: true
+private: true
+rssHidden: true
+feedHidden: true
+searchHidden: true
+robotsNoIndex: true
+showLicenseNotice: false
+sitemap:
+  disable: true
+outputs:
+  - HTML
 ---
 
 This little garden began as a simple idea: I wanted one quiet place for our days, our soft memories, and all the things that are too personal for the main site.
