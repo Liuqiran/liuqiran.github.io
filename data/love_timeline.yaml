@@ -19,8 +19,9 @@
 
 - date: "2026-05-26"
   dateText: "May 26, 2026"
-  icon: "heart"
+  icon: "🌷"
   text: "Built this small secret garden for our memories."
-  image: "/our-garden-assets-k8f3q9p2/secret-garden.jpg"
+  image: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Tulip_Tulipa_clusiana_%27Lady_Jane%27_Rock_Ledge_Flower_Edit_2000px.jpg"
   link: "/our-garden-2025-0927-k8f3q9p2/2026-05-love-page/"
-  linkText: "Read related Hugo post"
+  linkText: "post"     
+  
