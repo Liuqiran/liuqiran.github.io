@@ -26,7 +26,12 @@
 
 - date: "2025-12-10"  
   icon: "🌷"   
-  text: "Tulips and argument."    
+  text: "Tulips and argument."   
+
+
+- date: "2026-05-26"
+  icon: "heart"
+  text: "Went to Tagaytay."      
 
 - date: "2026-05-26"
   icon: "🌼"
