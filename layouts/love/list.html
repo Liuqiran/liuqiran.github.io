@@ -64,10 +64,17 @@
         {{ range sort $timeline "date" "desc" }}
           {{ $item := . }}
           {{ $icon := default "heart" (or $item.icon $item.Icon) }}
+          {{ $dateValue := printf "%v" $item.date }}
+          {{ $dateLabel := $dateValue }}
+          {{ with $item.dateText }}
+            {{ $dateLabel = . }}
+          {{ else }}
+            {{ with time.AsTime $dateValue }}{{ $dateLabel = .Format "January 2, 2006" }}{{ end }}
+          {{ end }}
           <article class="timeline-item" data-date="{{ $item.date }}">
             <div class="timeline-dot" aria-hidden="true">{{ if eq $icon "sparkle" }}&#10023;{{ else if eq $icon "heart" }}&#9825;{{ else }}{{ $icon }}{{ end }}</div>
             <div class="timeline-date-wrap">
-              <div class="timeline-date">{{ default $item.date $item.dateText }}</div>
+              <div class="timeline-date">{{ $dateLabel }}</div>
               <div class="timeline-since"></div>
             </div>
             <div class="timeline-content">

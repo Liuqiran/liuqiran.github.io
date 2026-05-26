@@ -6,34 +6,29 @@
 # YouTube videos use either a video ID or a normal YouTube URL:
 # youtube: "dQw4w9WgXcQ"
 # icon accepts "heart", "sparkle", or any emoji / short kaomoji.
+# Dates display automatically from date. Add dateText only if you want custom text.
 
 - date: "2025-06-28"
-  dateText: "June 28, 2025"
   icon: "sparkle"
   text: "A memory before we officially became together."   
 
 - date: "2025-07-02"   
-  dateText: "July 2, 2025"   
-  Icon: "👥"   
+  icon: "👥"   
   text: "In BGC"    
   
 - date: "2025-09-27"
-  dateText: "September 27, 2025"
   icon: "heart"
   text: "The day our love story began."    
 
 - date: "2025-10-01"  
-  dateText: "October 1, 2025"   
   icon: "🛖"   
   text: "Fort Santiago"    
 
 - date: "2025-12-10"  
-  dateText: "December 10, 2025"   
   icon: "🌷"   
   text: "Tulips and argument."    
 
 - date: "2026-05-26"
-  dateText: "May 26, 2026"
   icon: "🌼"
   text: "Built this small secret garden for our memories."
   image: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Tulip_Tulipa_clusiana_%27Lady_Jane%27_Rock_Ledge_Flower_Edit_2000px.jpg"
