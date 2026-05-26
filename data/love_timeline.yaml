@@ -1,0 +1,25 @@
+# Edit items here. Keep dates as YYYY-MM-DD.
+# Local images live under static/, for example:
+# /our-garden-assets-k8f3q9p2/photo.jpg
+# Remote image URLs also work. Facebook image URLs must be public direct image URLs;
+# they may expire, so local static images are more stable.
+# YouTube videos use either a video ID or a normal YouTube URL:
+# youtube: "dQw4w9WgXcQ"
+
+- date: "2025-06-28"
+  dateText: "June 28, 2025"
+  icon: "sparkle"
+  text: "A memory before we officially became together."
+
+- date: "2025-09-27"
+  dateText: "September 27, 2025"
+  icon: "heart"
+  text: "The day our love story began."
+
+- date: "2026-05-26"
+  dateText: "May 26, 2026"
+  icon: "heart"
+  text: "Built this small secret garden for our memories."
+  image: "/our-garden-assets-k8f3q9p2/secret-garden.jpg"
+  link: "/our-garden-2025-0927-k8f3q9p2/2026-05-love-page/"
+  linkText: "Read related Hugo post"

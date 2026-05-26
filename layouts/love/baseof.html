@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} - {{ site.Title }}</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  {{ with resources.Get "css/love.css" }}
+    {{ $style := . | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ end }}
+  {{ with resources.Get "js/love.js" }}
+    {{ $script := . | resources.Minify | resources.Fingerprint }}
+    <script defer src="{{ $script.RelPermalink }}"></script>
+  {{ end }}
+</head>
+<body>{{ block "main" . }}{{ end }}</body>
+</html>

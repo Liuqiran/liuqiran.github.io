@@ -1,0 +1,94 @@
+{{ define "main" }}
+{{ $timeline := hugo.Data.love_timeline | default slice }}
+<div class="love-page" data-love-start="{{ .Params.startDate | default "2025-09-27T00:00:00" }}">
+  <div class="love-bg" aria-hidden="true">
+    <div class="vine vine-left">
+      <svg viewBox="0 0 300 300">
+        <path d="M42 290 C70 220 12 178 76 124 S126 43 205 26" />
+        <path class="leaf-shape" d="M78 154 C42 148 34 120 48 96 C80 110 91 131 78 154Z" />
+        <path class="leaf-shape leaf-alt" d="M101 103 C75 82 82 53 106 38 C126 61 124 88 101 103Z" />
+        <circle cx="71" cy="123" r="15" />
+        <circle cx="116" cy="78" r="12" />
+        <circle cx="184" cy="39" r="18" />
+      </svg>
+    </div>
+    <div class="vine vine-right">
+      <svg viewBox="0 0 300 300">
+        <path d="M42 290 C70 220 12 178 76 124 S126 43 205 26" />
+        <path class="leaf-shape" d="M78 154 C42 148 34 120 48 96 C80 110 91 131 78 154Z" />
+        <path class="leaf-shape leaf-alt" d="M101 103 C75 82 82 53 106 38 C126 61 124 88 101 103Z" />
+        <circle cx="71" cy="123" r="15" />
+        <circle cx="116" cy="78" r="12" />
+        <circle cx="184" cy="39" r="18" />
+      </svg>
+    </div>
+    <span class="flower f1"></span><span class="flower f2"></span><span class="flower f3"></span><span class="flower f4"></span><span class="flower f5"></span><span class="flower f6"></span>
+    <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span><span class="petal p5"></span><span class="petal p6"></span><span class="petal p7"></span><span class="petal p8"></span><span class="petal p9"></span><span class="petal p10"></span>
+    <span class="sparkle s1"></span><span class="sparkle s2"></span><span class="sparkle s3"></span><span class="sparkle s4"></span><span class="sparkle s5"></span><span class="sparkle s6"></span><span class="sparkle s7"></span><span class="sparkle s8"></span><span class="sparkle s9"></span>
+    <span class="floating-heart h1">&#9825;</span><span class="floating-heart h2">&#9825;</span><span class="floating-heart h3">&#9825;</span><span class="floating-heart h4">&#9825;</span><span class="floating-heart h5">&#9825;</span>
+    <span class="butterfly b1"></span><span class="butterfly b2"></span>
+  </div>
+
+  <main class="love-card">
+    <div class="card-decor" aria-hidden="true">
+      <span class="card-flower cf1"></span><span class="card-flower cf2"></span><span class="card-flower cf3"></span><span class="card-flower cf4"></span><span class="card-flower cf5"></span><span class="card-flower cf6"></span><span class="card-flower cf7"></span><span class="card-flower cf8"></span>
+      <span class="card-petal cp1"></span><span class="card-petal cp2"></span><span class="card-petal cp3"></span><span class="card-petal cp4"></span><span class="card-petal cp5"></span><span class="card-petal cp6"></span><span class="card-petal cp7"></span><span class="card-petal cp8"></span><span class="card-petal cp9"></span><span class="card-petal cp10"></span><span class="card-petal cp11"></span><span class="card-petal cp12"></span>
+    </div>
+    <div class="love-kicker">{{ .Params.startDateLabel | default "Since September 27, 2025" }}</div>
+    <h1>{{ .Params.heading | default .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="love-subtitle">{{ . }}</p>{{ end }}
+
+    <section class="love-counter" aria-label="Time together">
+      <div class="counter-heading">We have been together for</div>
+      <div class="total-days-card">
+        <strong id="total-days">0</strong>
+        <span>days together</span>
+      </div>
+      <div class="live-calendar">
+        <div><strong id="live-years">0</strong><span>Years</span></div>
+        <div><strong id="live-months">0</strong><span>Months</span></div>
+        <div><strong id="live-days">0</strong><span>Days</span></div>
+        <div><strong id="live-hours">00</strong><span>Hours</span></div>
+        <div><strong id="live-minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="live-seconds">00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    {{ with .Content }}<section class="love-note">{{ . }}</section>{{ end }}
+
+    <div class="love-date-line"><span>{{ .Params.startDateShort | default "2025.09.27" }}</span><i></i><span>Now</span></div>
+
+    <section class="timeline-panel">
+      <div class="timeline-title"><h2>Memory Timeline</h2></div>
+      <div class="timeline-list">
+        {{ range sort $timeline "date" "desc" }}
+          {{ $item := . }}
+          {{ $icon := default "heart" $item.icon }}
+          <article class="timeline-item" data-date="{{ $item.date }}">
+            <div class="timeline-dot" aria-hidden="true">{{ if eq $icon "sparkle" }}&#10023;{{ else }}&#9825;{{ end }}</div>
+            <div class="timeline-date-wrap">
+              <div class="timeline-date">{{ default $item.date $item.dateText }}</div>
+              <div class="timeline-since"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-event">{{ $item.text | markdownify }}</div>
+              {{ if or $item.image $item.link $item.youtube }}
+                <div class="timeline-media">
+                  {{ with $item.image }}<img src="{{ . | safeURL }}" alt="" loading="lazy" onerror="this.remove()">{{ end }}
+                  {{ with $item.youtube }}
+                    {{ $youtubeID := replaceRE "^.*(?:youtu\\.be/|v=|embed/|shorts/)([A-Za-z0-9_-]{11}).*$" "$1" . }}
+                    <div class="timeline-video">
+                      <iframe src="{{ printf "https://www.youtube-nocookie.com/embed/%s" $youtubeID | safeURL }}" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  {{ end }}
+                  {{ with $item.link }}<a class="timeline-link" href="{{ . | safeURL }}">{{ default "Open related link" $item.linkText }}</a>{{ end }}
+                </div>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  </main>
+</div>
+{{ end }}
