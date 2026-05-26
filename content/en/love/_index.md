@@ -1,10 +1,10 @@
 ---
-title: "Our Love Story"
+title: "Our Love Garden"
 url: "/our-garden-2025-0927-k8f3q9p2/"
 type: love
 layout: list
-heading: "Our Love Story"
-shareTitle: "Our Love Story"
+heading: "Our Love Garden"
+shareTitle: "Our Love Garden"
 subtitle: "A soft little garden for the days, promises, and memories we keep together."
 description: "A soft little garden for the days, promises, and memories we keep together."
 shareImage: "/our-garden-assets-k8f3q9p2/our-love-story-share-v2.png"
@@ -31,6 +31,22 @@ showToc: false
 hideMeta: true
 sitemap:
   disable: true
+cascade:
+  type: love
+  startDate: "2025-09-27T00:00:00"
+  startDateLabel: "Since September 27, 2025"
+  searchHidden: true
+  robotsNoIndex: true
+  comments: false
+  ShowShareButtons: false
+  ShowReadingTime: false
+  ShowBreadCrumbs: false
+  ShowPostNavLinks: false
+  ShowWordCount: false
+  showToc: false
+  hideMeta: true
+  sitemap:
+    disable: true
 outputs:
   - HTML
 ---

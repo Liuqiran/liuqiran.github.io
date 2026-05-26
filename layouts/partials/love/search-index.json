@@ -1,0 +1,43 @@
+{{- $items := slice -}}
+{{- range sort (where site.RegularPages "Section" "love") "Date" "desc" -}}
+  {{- $dateLabel := "" -}}
+  {{- if not .Date.IsZero -}}
+    {{- $dateLabel = .Date.Format "January 2, 2006" -}}
+  {{- end -}}
+  {{- $items = $items | append (dict
+    "type" "post"
+    "label" "Post"
+    "title" .Title
+    "date" $dateLabel
+    "content" .Plain
+    "url" .RelPermalink
+  ) -}}
+{{- end -}}
+{{- $loveHome := site.GetPage "section" "love" -}}
+{{- $loveHomeURL := "/our-garden-2025-0927-k8f3q9p2/" -}}
+{{- with $loveHome }}{{ $loveHomeURL = .RelPermalink }}{{ end -}}
+{{- range sort (site.Data.love_timeline | default slice) "date" "desc" -}}
+  {{- $item := . -}}
+  {{- $dateValue := printf "%v" $item.date -}}
+  {{- $dateLabel := $dateValue -}}
+  {{- with $item.dateText -}}
+    {{- $dateLabel = . -}}
+  {{- else -}}
+    {{- with time.AsTime $dateValue }}{{ $dateLabel = .Format "January 2, 2006" }}{{ end -}}
+  {{- end -}}
+  {{- $textPlain := plainify (default "" $item.text) -}}
+  {{- $anchor := printf "memory-%s-%s" $dateValue ($textPlain | urlize) -}}
+  {{- $url := printf "%s#%s" $loveHomeURL $anchor -}}
+  {{- with $item.link }}{{ $url = . }}{{ end -}}
+  {{- $items = $items | append (dict
+    "type" "timeline"
+    "label" "Timeline"
+    "title" ($textPlain | truncate 90)
+    "date" $dateLabel
+    "year" (substr $dateValue 0 4)
+    "content" $textPlain
+    "url" $url
+    "target" $anchor
+  ) -}}
+{{- end -}}
+{{- $items | jsonify -}}

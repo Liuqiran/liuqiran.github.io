@@ -230,5 +230,7 @@ params:
 permalinks:
   page:
     posts: /:slug/
+    love: /our-garden-2025-0927-k8f3q9p2/:slug/
   section:
     posts: /posts/
+    love: /our-garden-2025-0927-k8f3q9p2/

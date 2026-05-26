@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ $loveHome := site.GetPage "section" "love" }}
+{{ $loveHomeURL := "/our-garden-2025-0927-k8f3q9p2/" }}
+{{ with $loveHome }}{{ $loveHomeURL = .RelPermalink }}{{ end }}
+<div class="love-page love-page-single" data-love-start="{{ .Params.startDate | default "2025-09-27T00:00:00" }}" data-love-music-src="/music/love/musicList.json">
+  {{ partial "love/background.html" . }}
+
+  <main class="love-card love-post-card">
+    {{ partial "love/card-decor.html" . }}
+
+    <nav class="love-post-nav" aria-label="Love section">
+      <a class="love-home-link" href="{{ $loveHomeURL }}">Back to Our Love Garden</a>
+    </nav>
+
+    <article class="love-post">
+      <header class="love-post-header">
+        <div class="love-kicker">{{ .Params.startDateLabel | default "Our Love Garden" }}</div>
+        <h1 class="love-post-title">{{ .Title }}</h1>
+        {{ if not .Date.IsZero }}<div class="love-post-date">{{ .Date.Format "January 2, 2006" }}</div>{{ end }}
+      </header>
+      <div class="love-post-content">
+        {{ .Content }}
+        {{ if .Params.machineAssisted }}
+          <p class="love-machine-note">Written with machine assistance and edited for our love garden.</p>
+        {{ end }}
+      </div>
+    </article>
+  </main>
+
+  <div id="love-aplayer" class="love-aplayer" aria-label="Love page music player"></div>
+  {{ partial "love/top-link.html" . }}
+</div>
+{{ end }}

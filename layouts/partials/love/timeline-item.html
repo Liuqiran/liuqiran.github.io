@@ -7,7 +7,9 @@
 {{ else }}
   {{ with time.AsTime $dateValue }}{{ $dateLabel = .Format "January 2, 2006" }}{{ end }}
 {{ end }}
-<article class="timeline-item" data-date="{{ $dateValue }}">
+{{ $textPlain := plainify (default "" $item.text) }}
+{{ $anchor := printf "memory-%s-%s" $dateValue ($textPlain | urlize) }}
+<article class="timeline-item" id="{{ $anchor }}" data-date="{{ $dateValue }}">
   <div class="timeline-dot" aria-hidden="true">{{ if eq $icon "sparkle" }}&#10023;{{ else if eq $icon "heart" }}&#9825;{{ else }}{{ $icon }}{{ end }}</div>
   <div class="timeline-date-wrap">
     <div class="timeline-date">{{ $dateLabel }}</div>
