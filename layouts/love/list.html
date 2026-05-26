@@ -1,5 +1,13 @@
 {{ define "main" }}
-{{ $timeline := .Site.Data.love_timeline | default slice }}
+{{ $timeline := sort (.Site.Data.love_timeline | default slice) "date" "desc" }}
+{{ $timelineYears := slice }}
+{{ range $timeline }}
+  {{ $timelineYears = $timelineYears | append (substr (printf "%v" .date) 0 4) }}
+{{ end }}
+{{ $timelineYears = uniq $timelineYears }}
+{{ $timelineYearsAsc := sort $timelineYears }}
+{{ $latestTimelineYear := "" }}
+{{ with $timelineYears }}{{ $latestTimelineYear = index . 0 }}{{ end }}
 <div class="love-page" data-love-start="{{ .Params.startDate | default "2025-09-27T00:00:00" }}" data-love-music-src="/music/love/musicList.json">
   <div class="love-bg" aria-hidden="true">
     <div class="vine vine-left">
@@ -56,47 +64,50 @@
 
     {{ with .Content }}<section class="love-note">{{ . }}</section>{{ end }}
 
-    <div class="love-date-line"><span>{{ .Params.startDateShort | default "2025.09.27" }}</span><i></i><span>Now</span></div>
-
     <section class="timeline-panel">
       <div class="timeline-title"><h2>Memory Timeline</h2></div>
-      <div class="timeline-list">
-        {{ range sort $timeline "date" "desc" }}
-          {{ $item := . }}
-          {{ $icon := default "heart" (or $item.icon $item.Icon) }}
-          {{ $dateValue := printf "%v" $item.date }}
-          {{ $dateLabel := $dateValue }}
-          {{ with $item.dateText }}
-            {{ $dateLabel = . }}
-          {{ else }}
-            {{ with time.AsTime $dateValue }}{{ $dateLabel = .Format "January 2, 2006" }}{{ end }}
-          {{ end }}
-          <article class="timeline-item" data-date="{{ $item.date }}">
-            <div class="timeline-dot" aria-hidden="true">{{ if eq $icon "sparkle" }}&#10023;{{ else if eq $icon "heart" }}&#9825;{{ else }}{{ $icon }}{{ end }}</div>
-            <div class="timeline-date-wrap">
-              <div class="timeline-date">{{ $dateLabel }}</div>
-              <div class="timeline-since"></div>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-event">{{ $item.text | markdownify }}</div>
-              {{ if or $item.image $item.link $item.youtube }}
-                <div class="timeline-media">
-                  {{ with $item.image }}<img src="{{ . | safeURL }}" alt="" loading="lazy" onerror="this.remove()">{{ end }}
-                  {{ with $item.youtube }}
-                    {{ $youtubeID := replaceRE "^.*(youtu\\.be/|v=|embed/|shorts/)([A-Za-z0-9_-]{11}).*$" "$2" . }}
-                    <div class="timeline-video">
-                      <iframe src="{{ printf "https://www.youtube-nocookie.com/embed/%s" $youtubeID | safeURL }}" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
+      <div class="timeline-year-tabs" role="group" aria-label="Timeline years">
+        {{ range $timelineYearsAsc }}
+          <button class="timeline-year-tab{{ if eq . $latestTimelineYear }} is-active{{ end }}" type="button" data-timeline-year-button="{{ . }}" aria-pressed="{{ if eq . $latestTimelineYear }}true{{ else }}false{{ end }}">{{ . }}</button>
+        {{ end }}
+      </div>
+      <div class="timeline-years">
+        {{ range $timelineYears }}
+          {{ $year := . }}
+          <div class="timeline-year-panel{{ if eq $year $latestTimelineYear }} is-active{{ end }}" data-timeline-year-panel="{{ $year }}" data-timeline-loaded="{{ if eq $year $latestTimelineYear }}true{{ else }}false{{ end }}"{{ if ne $year $latestTimelineYear }} hidden{{ end }}>
+            {{ if eq $year $latestTimelineYear }}
+              <div class="timeline-list">
+                {{ range $timeline }}
+                  {{ if eq (substr (printf "%v" .date) 0 4) $year }}
+                    {{ partial "love/timeline-item.html" (dict "item" .) }}
                   {{ end }}
-                  {{ with $item.link }}<a class="timeline-link" href="{{ . | safeURL }}">{{ default "Open related link" $item.linkText }}</a>{{ end }}
-                </div>
-              {{ end }}
-            </div>
-          </article>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+          {{ if ne $year $latestTimelineYear }}
+            <template data-timeline-year-template="{{ $year }}">
+              <div class="timeline-list">
+                {{ range $timeline }}
+                  {{ if eq (substr (printf "%v" .date) 0 4) $year }}
+                    {{ partial "love/timeline-item.html" (dict "item" .) }}
+                  {{ end }}
+                {{ end }}
+              </div>
+            </template>
+          {{ end }}
         {{ end }}
       </div>
     </section>
   </main>
   <div id="love-aplayer" class="love-aplayer" aria-label="Love page music player"></div>
+  <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link love-top-link" id="top-link" accesskey="g">
+    <span class="topInner">
+      <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z"/>
+      </svg>
+      <span id="read_progress"></span>
+    </span>
+  </a>
 </div>
 {{ end }}

@@ -1,4 +1,5 @@
 # Edit items here. Keep dates as YYYY-MM-DD.
+# The page groups memories by year automatically.
 # Local images live under static/, for example:
 # /our-garden-assets-k8f3q9p2/photo.jpg
 # Remote image URLs also work. Facebook image URLs must be public direct image URLs;
@@ -29,7 +30,7 @@
   text: "Tulips and argument."   
 
 
-- date: "2026-05-26"
+- date: "2026-05-15"
   icon: "heart"
   text: "Went to Tagaytay."      
 
