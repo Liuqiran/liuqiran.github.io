@@ -52,9 +52,9 @@ body {
 }
 
 .love-bg {
-  position: absolute;
+  position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 1;
   overflow: hidden;
   pointer-events: none;
 }
@@ -153,27 +153,52 @@ body {
 .f6 { --x: 72%; --y: 52%; --size: 46px; --rotate: -18deg; --speed: 13s; opacity: .32; }
 
 .petal {
-  top: -12%;
+  top: -18vh;
   left: var(--x);
   width: var(--w);
   height: var(--h);
   border-radius: 76% 24% 70% 30%;
-  background: linear-gradient(145deg, rgba(229, 103, 145, .46), rgba(255, 211, 226, .2));
+  background:
+    radial-gradient(circle at 32% 24%, rgba(255, 255, 255, .9), transparent 25%),
+    linear-gradient(145deg, rgba(216, 67, 122, .88), rgba(255, 184, 213, .62));
+  filter: drop-shadow(0 9px 14px rgba(149, 65, 95, .16));
   opacity: 0;
   animation: petal-drift var(--speed) linear infinite;
   animation-delay: var(--delay);
 }
 
-.p1 { --x: 10%; --w: 16px; --h: 26px; --speed: 16s; --delay: -1s; }
-.p2 { --x: 25%; --w: 13px; --h: 23px; --speed: 19s; --delay: -8s; }
-.p3 { --x: 42%; --w: 18px; --h: 30px; --speed: 17s; --delay: -4s; }
-.p4 { --x: 62%; --w: 12px; --h: 22px; --speed: 20s; --delay: -10s; }
-.p5 { --x: 78%; --w: 17px; --h: 29px; --speed: 18s; --delay: -6s; }
-.p6 { --x: 92%; --w: 14px; --h: 24px; --speed: 21s; --delay: -13s; }
-.p7 { --x: 16%; --w: 11px; --h: 20px; --speed: 23s; --delay: -15s; }
-.p8 { --x: 34%; --w: 15px; --h: 25px; --speed: 22s; --delay: -18s; }
-.p9 { --x: 55%; --w: 10px; --h: 18px; --speed: 24s; --delay: -11s; }
-.p10 { --x: 84%; --w: 12px; --h: 21px; --speed: 25s; --delay: -20s; }
+.p1 { --x: 10%; --w: 18px; --h: 30px; --speed: 12s; --delay: -1s; --dx: 180px; --sway: -56px; --end-rotate: 520deg; }
+.p2 { --x: 22%; --w: 13px; --h: 24px; --speed: 14s; --delay: -8s; --dx: 120px; --sway: 42px; --end-rotate: -460deg; }
+.p3 { --x: 36%; --w: 20px; --h: 34px; --speed: 13s; --delay: -4s; --dx: 82px; --sway: -76px; --end-rotate: 610deg; }
+.p4 { --x: 50%; --w: 14px; --h: 26px; --speed: 15s; --delay: -10s; --dx: -84px; --sway: 68px; --end-rotate: -530deg; }
+.p5 { --x: 66%; --w: 19px; --h: 32px; --speed: 13.5s; --delay: -6s; --dx: -130px; --sway: -52px; --end-rotate: 540deg; }
+.p6 { --x: 80%; --w: 15px; --h: 27px; --speed: 16s; --delay: -13s; --dx: -190px; --sway: 58px; --end-rotate: -600deg; }
+.p7 { --x: 16%; --w: 12px; --h: 22px; --speed: 17s; --delay: -15s; --dx: 150px; --sway: 72px; --end-rotate: 480deg; }
+.p8 { --x: 30%; --w: 17px; --h: 28px; --speed: 15.5s; --delay: -18s; --dx: 104px; --sway: -64px; --end-rotate: -540deg; }
+.p9 { --x: 44%; --w: 11px; --h: 20px; --speed: 18s; --delay: -11s; --dx: 42px; --sway: 78px; --end-rotate: 430deg; }
+.p10 { --x: 58%; --w: 14px; --h: 24px; --speed: 17.5s; --delay: -20s; --dx: -55px; --sway: -70px; --end-rotate: -520deg; }
+.p11 { --x: 72%; --w: 18px; --h: 31px; --speed: 12.5s; --delay: -3s; --dx: -138px; --sway: 44px; --end-rotate: 560deg; }
+.p12 { --x: 88%; --w: 13px; --h: 23px; --speed: 16.5s; --delay: -9s; --dx: -220px; --sway: -58px; --end-rotate: -490deg; }
+.p13 { --x: 26%; --w: 21px; --h: 35px; --speed: 13.8s; --delay: -5s; --dx: 138px; --sway: 88px; --end-rotate: 620deg; }
+.p14 { --x: 39%; --w: 15px; --h: 27px; --speed: 11.8s; --delay: -7s; --dx: 72px; --sway: -92px; --end-rotate: -580deg; }
+.p15 { --x: 53%; --w: 19px; --h: 32px; --speed: 14.2s; --delay: -12s; --dx: -70px; --sway: 62px; --end-rotate: 570deg; }
+.p16 { --x: 61%; --w: 12px; --h: 22px; --speed: 12.8s; --delay: -16s; --dx: -118px; --sway: -86px; --end-rotate: -510deg; }
+.p17 { --x: 47%; --w: 16px; --h: 29px; --speed: 10.8s; --delay: -2s; --dx: 16px; --sway: 104px; --end-rotate: 680deg; }
+.p18 { --x: 70%; --w: 14px; --h: 25px; --speed: 18.5s; --delay: -14s; --dx: -160px; --sway: -48px; --end-rotate: -620deg; }
+.p19 { --x: 34%; --w: 13px; --h: 23px; --speed: 12.2s; --delay: -19s; --dx: 118px; --sway: 56px; --end-rotate: 520deg; }
+.p20 { --x: 77%; --w: 20px; --h: 34px; --speed: 15.2s; --delay: -22s; --dx: -196px; --sway: 80px; --end-rotate: -680deg; }
+.p21 { --x: 5%; --w: 14px; --h: 26px; --speed: 19s; --delay: -24s; --dx: 260px; --sway: -62px; --end-rotate: 560deg; }
+.p22 { --x: 94%; --w: 16px; --h: 28px; --speed: 18s; --delay: -26s; --dx: -260px; --sway: 66px; --end-rotate: -540deg; }
+.p23 { --x: 18%; --w: 22px; --h: 36px; --speed: 10.6s; --delay: -6s; --dx: 190px; --sway: 98px; --end-rotate: 660deg; }
+.p24 { --x: 28%; --w: 15px; --h: 27px; --speed: 9.8s; --delay: -17s; --dx: 138px; --sway: -104px; --end-rotate: -620deg; }
+.p25 { --x: 41%; --w: 18px; --h: 31px; --speed: 11.4s; --delay: -23s; --dx: 74px; --sway: 112px; --end-rotate: 700deg; }
+.p26 { --x: 57%; --w: 21px; --h: 35px; --speed: 10.2s; --delay: -15s; --dx: -92px; --sway: -112px; --end-rotate: -690deg; }
+.p27 { --x: 69%; --w: 16px; --h: 29px; --speed: 9.4s; --delay: -5s; --dx: -152px; --sway: 92px; --end-rotate: 630deg; }
+.p28 { --x: 83%; --w: 19px; --h: 33px; --speed: 12.4s; --delay: -21s; --dx: -238px; --sway: -88px; --end-rotate: -710deg; }
+.p29 { --x: 12%; --w: 13px; --h: 24px; --speed: 8.8s; --delay: -11s; --dx: 232px; --sway: 74px; --end-rotate: 590deg; }
+.p30 { --x: 49%; --w: 23px; --h: 38px; --speed: 13.2s; --delay: -29s; --dx: -24px; --sway: -126px; --end-rotate: -760deg; }
+.p31 { --x: 63%; --w: 14px; --h: 25px; --speed: 8.2s; --delay: -27s; --dx: -108px; --sway: 120px; --end-rotate: 640deg; }
+.p32 { --x: 91%; --w: 17px; --h: 30px; --speed: 11.8s; --delay: -33s; --dx: -286px; --sway: -72px; --end-rotate: -620deg; }
 
 .sparkle {
   left: var(--x);
@@ -253,7 +278,7 @@ body {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, .54);
   border-radius: 8px;
-  background: rgba(255, 255, 255, .28);
+  background: rgba(255, 255, 255, .24);
   box-shadow: 0 24px 70px rgba(143, 65, 96, .12);
   text-align: center;
   backdrop-filter: blur(5px);
@@ -320,9 +345,9 @@ body {
   height: var(--h);
   border-radius: 76% 24% 70% 30%;
   background:
-    radial-gradient(circle at 34% 26%, rgba(255, 255, 255, .78), transparent 24%),
-    linear-gradient(145deg, rgba(214, 83, 132, .52), rgba(255, 205, 224, .24));
-  filter: drop-shadow(0 7px 12px rgba(149, 65, 95, .08));
+    radial-gradient(circle at 34% 26%, rgba(255, 255, 255, .86), transparent 24%),
+    linear-gradient(145deg, rgba(214, 83, 132, .68), rgba(255, 205, 224, .36));
+  filter: drop-shadow(0 8px 13px rgba(149, 65, 95, .12));
   opacity: 0;
   animation: card-petal-fall var(--speed) linear infinite;
   animation-delay: var(--delay);
@@ -340,6 +365,18 @@ body {
 .cp10 { --x: 58%; --w: 13px; --h: 21px; --speed: 14s; --delay: -13s; --dx: -38px; --end-rotate: -520deg; }
 .cp11 { --x: 44%; --w: 15px; --h: 26px; --speed: 9.8s; --delay: -8s; --dx: -52px; --end-rotate: 440deg; }
 .cp12 { --x: 64%; --w: 12px; --h: 22px; --speed: 11.8s; --delay: -12s; --dx: 86px; --end-rotate: -470deg; }
+.cp13 { --x: 46%; --w: 17px; --h: 29px; --speed: 8.8s; --delay: -4s; --dx: -132px; --end-rotate: 560deg; }
+.cp14 { --x: 52%; --w: 13px; --h: 24px; --speed: 10.2s; --delay: -6s; --dx: 118px; --end-rotate: -520deg; }
+.cp15 { --x: 39%; --w: 19px; --h: 31px; --speed: 12.8s; --delay: -10s; --dx: 86px; --end-rotate: 610deg; }
+.cp16 { --x: 61%; --w: 14px; --h: 25px; --speed: 9.2s; --delay: -14s; --dx: -112px; --end-rotate: -570deg; }
+.cp17 { --x: 35%; --w: 12px; --h: 22px; --speed: 11.2s; --delay: -16s; --dx: 154px; --end-rotate: 540deg; }
+.cp18 { --x: 69%; --w: 18px; --h: 30px; --speed: 10.8s; --delay: -18s; --dx: -166px; --end-rotate: -620deg; }
+.cp19 { --x: 48%; --w: 11px; --h: 20px; --speed: 7.2s; --delay: -2s; --dx: 42px; --end-rotate: 460deg; }
+.cp20 { --x: 57%; --w: 16px; --h: 28px; --speed: 13.2s; --delay: -20s; --dx: -58px; --end-rotate: -540deg; }
+.cp21 { --x: 28%; --w: 14px; --h: 25px; --speed: 12.2s; --delay: -22s; --dx: 190px; --end-rotate: 620deg; }
+.cp22 { --x: 75%; --w: 15px; --h: 27px; --speed: 11.4s; --delay: -24s; --dx: -202px; --end-rotate: -590deg; }
+.cp23 { --x: 43%; --w: 20px; --h: 34px; --speed: 9.6s; --delay: -26s; --dx: 96px; --end-rotate: 640deg; }
+.cp24 { --x: 66%; --w: 13px; --h: 23px; --speed: 8.4s; --delay: -28s; --dx: -124px; --end-rotate: -520deg; }
 
 .card-decor {
   z-index: 0 !important;
@@ -385,7 +422,7 @@ body {
 .timeline-panel {
   border: 1px solid rgba(255, 255, 255, .44);
   border-radius: 8px;
-  background: rgba(255, 255, 255, .16);
+  background: rgba(255, 255, 255, .12);
   box-shadow: inset 0 0 24px rgba(255, 218, 229, .08);
 }
 
@@ -569,7 +606,7 @@ body {
   align-items: start;
   padding: .95rem;
   border-radius: 8px;
-  background: rgba(255, 255, 255, .18);
+  background: rgba(255, 255, 255, .14);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .13), 0 10px 24px rgba(137, 58, 91, .035);
   animation: item-in .35s ease both;
 }
@@ -710,8 +747,10 @@ body {
 
 @keyframes petal-drift {
   0% { transform: translate3d(0, -20px, 0) rotate(0); opacity: 0; }
-  12% { opacity: .52; }
-  100% { transform: translate3d(-90px, 118vh, 0) rotate(420deg); opacity: 0; }
+  8% { opacity: .92; }
+  34% { transform: translate3d(var(--sway), 36vh, 0) rotate(180deg); opacity: .95; }
+  68% { opacity: .84; }
+  100% { transform: translate3d(var(--dx), 132vh, 0) rotate(var(--end-rotate)); opacity: 0; }
 }
 
 @keyframes sparkle-pulse {
@@ -756,13 +795,17 @@ body {
     opacity: 0;
   }
   12% {
-    opacity: .62;
+    opacity: .78;
+  }
+  44% {
+    transform: translate3d(var(--sway, 42px), 350px, 0) rotate(220deg);
+    opacity: .74;
   }
   72% {
-    opacity: .52;
+    opacity: .66;
   }
   100% {
-    transform: translate3d(var(--dx), 760px, 0) rotate(var(--end-rotate));
+    transform: translate3d(var(--dx), 980px, 0) rotate(var(--end-rotate));
     opacity: 0;
   }
 }
