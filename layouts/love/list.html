@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $timeline := hugo.Data.love_timeline | default slice }}
+{{ $timeline := .Site.Data.love_timeline | default slice }}
 <div class="love-page" data-love-start="{{ .Params.startDate | default "2025-09-27T00:00:00" }}">
   <div class="love-bg" aria-hidden="true">
     <div class="vine vine-left">
@@ -76,7 +76,7 @@
                 <div class="timeline-media">
                   {{ with $item.image }}<img src="{{ . | safeURL }}" alt="" loading="lazy" onerror="this.remove()">{{ end }}
                   {{ with $item.youtube }}
-                    {{ $youtubeID := replaceRE "^.*(?:youtu\\.be/|v=|embed/|shorts/)([A-Za-z0-9_-]{11}).*$" "$1" . }}
+                    {{ $youtubeID := replaceRE "^.*(youtu\\.be/|v=|embed/|shorts/)([A-Za-z0-9_-]{11}).*$" "$2" . }}
                     <div class="timeline-video">
                       <iframe src="{{ printf "https://www.youtube-nocookie.com/embed/%s" $youtubeID | safeURL }}" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
