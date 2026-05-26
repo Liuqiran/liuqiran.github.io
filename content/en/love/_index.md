@@ -4,7 +4,11 @@ url: "/our-garden-2025-0927-k8f3q9p2/"
 type: love
 layout: list
 heading: "Our Love Story"
+shareTitle: "Our Love Story"
 subtitle: "A soft little garden for the days, promises, and memories we keep together."
+description: "A soft little garden for the days, promises, and memories we keep together."
+shareImage: "/our-garden-assets-k8f3q9p2/our-love-story-share.png"
+shareImageAlt: "Two soft animal-like mascots cuddling in a dreamy flower garden."
 startDate: "2025-09-27T00:00:00"
 startDateLabel: "Since September 27, 2025"
 startDateShort: "2025.09.27"

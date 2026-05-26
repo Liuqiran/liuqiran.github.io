@@ -678,6 +678,24 @@ body {
   text-decoration: underline;
 }
 
+.love-aplayer.aplayer.aplayer-fixed .aplayer-body {
+  border: 1px solid rgba(255, 255, 255, .62);
+  border-radius: 0 8px 0 0;
+  background: rgba(255, 246, 250, .88);
+  box-shadow: 0 12px 32px rgba(113, 50, 75, .14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.love-aplayer.aplayer .aplayer-info .aplayer-music .aplayer-title,
+.love-aplayer.aplayer .aplayer-info .aplayer-music .aplayer-author {
+  color: #71324b;
+}
+
+.love-aplayer.aplayer .aplayer-list ol li.aplayer-list-light {
+  background: rgba(255, 225, 235, .56);
+}
+
 @keyframes vine-sway {
   0%,
   100% { rotate: -1.5deg; }

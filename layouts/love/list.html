@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $timeline := .Site.Data.love_timeline | default slice }}
-<div class="love-page" data-love-start="{{ .Params.startDate | default "2025-09-27T00:00:00" }}">
+<div class="love-page" data-love-start="{{ .Params.startDate | default "2025-09-27T00:00:00" }}" data-love-music-src="/music/love/musicList.json">
   <div class="love-bg" aria-hidden="true">
     <div class="vine vine-left">
       <svg viewBox="0 0 300 300">
@@ -90,5 +90,6 @@
       </div>
     </section>
   </main>
+  <div id="love-aplayer" class="love-aplayer" aria-label="Love page music player"></div>
 </div>
 {{ end }}
