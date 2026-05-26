@@ -64,8 +64,18 @@
     {{- with .OutputFormats.Get "RSS" }}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end }}
-    {{- range $pages }}
-    {{- if and (ne .Layout `search`) (ne .Layout `archives`) }}
+{{- range $pages }}
+{{- if and
+  (ne .Layout `search`)
+  (ne .Layout `archives`)
+  (ne (.Section | default "") `love`)
+  (ne (.Type | default "") `love`)
+  (not (.Param "private" | default false))
+  (not (.Param "rssHidden" | default false))
+  (not (.Param "feedHidden" | default false))
+  (not (.Param "searchHidden" | default false))
+  (not (.Param "robotsNoIndex" | default false))
+}}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
