@@ -1,4 +1,13 @@
-{{- if partial "is_qiran_author.html" . -}}
+{{- $showNotice := true -}}
+{{- if eq (.Type | default "") "page" -}}
+  {{- $showNotice = false -}}
+{{- end -}}
+{{- if isset .Params "showlicensenotice" -}}
+  {{- $toggle := .Param "showLicenseNotice" -}}
+  {{- $rawToggle := lower (printf "%v" $toggle) -}}
+  {{- $showNotice = or (eq $toggle true) (eq $rawToggle "true") (eq $rawToggle "1") (eq $rawToggle "yes") (eq $rawToggle "on") -}}
+{{- end -}}
+{{- if and $showNotice (partial "is_qiran_author.html" .) -}}
   {{- $license := site.Params.contentLicense | default dict -}}
   {{- $authorName := $license.authorName | default "Qiran" -}}
   {{- $authorUrl := $license.authorUrl | default site.BaseURL -}}
@@ -12,31 +21,22 @@
   {{- else if or (hasPrefix .Lang "ja") (hasPrefix .Lang "jp") -}}
     {{- $noteLabel = "著作権と作成に関する注記" -}}
   {{- end -}}
-  <aside class="kq-license-note" aria-label="{{ $noteLabel }}">
+  <p class="kq-license-note" aria-label="{{ $noteLabel }}">
     {{- if hasPrefix .Lang "zh" -}}
-      <div class="kq-license-title">版权与创作声明</div>
-      <p>{{ if $isAI }}本文使用 AI 辅助起草，并由作者确认和编辑。{{ else if $isMT }}原文为纯人工创作；本语言版本为机器翻译版本。{{ else }}本文为纯人工创作。{{ end }}</p>
-      <p>本文由 <a href="{{ $authorUrl }}" rel="author noopener noreferrer">{{ $authorName }}</a> 创作，采用 <a href="{{ $licenseUrl }}" rel="license noopener noreferrer" target="_blank">{{ $licenseName }}</a> 许可。转载、引用或改编请注明作者与原文链接。</p>
-      <dl>
-        <div><dt>作者</dt><dd>{{ $authorName }}</dd></div>
-        <div><dt>原文</dt><dd><a href="{{ .Permalink }}">{{ .Permalink }}</a></dd></div>
-      </dl>
+      {{ if $isAI }}本文使用 AI 辅助起草，并由作者确认和编辑。{{ else if $isMT }}原文为纯人工创作；本语言版本为机器翻译版本。{{ else }}本文为纯人工创作。{{ end }}
+      <span>© <a href="{{ $authorUrl }}" rel="author noopener noreferrer">{{ $authorName }}</a></span>
+      <span aria-hidden="true"> · </span><a href="{{ $licenseUrl }}" rel="license noopener noreferrer" target="_blank">{{ $licenseName }}</a>
+      <span aria-hidden="true"> · </span><a href="{{ .Permalink }}">原文链接</a>
     {{- else if or (hasPrefix .Lang "ja") (hasPrefix .Lang "jp") -}}
-      <div class="kq-license-title">著作権と作成に関する注記</div>
-      <p>{{ if $isAI }}この記事は AI の支援を受けて下書きされ、著者が確認・編集しました。{{ else if $isMT }}原文は人間が作成したもので、この言語版は機械翻訳です。{{ else }}この記事は純粋に人間が作成したものです。{{ end }}</p>
-      <p>この記事は <a href="{{ $authorUrl }}" rel="author noopener noreferrer">{{ $authorName }}</a> による作品で、<a href="{{ $licenseUrl }}" rel="license noopener noreferrer" target="_blank">{{ $licenseName }}</a> の下で提供されています。引用、共有、翻案の際は、著者名と元記事の URL を明記してください。</p>
-      <dl>
-        <div><dt>著者</dt><dd>{{ $authorName }}</dd></div>
-        <div><dt>元記事</dt><dd><a href="{{ .Permalink }}">{{ .Permalink }}</a></dd></div>
-      </dl>
+      {{ if $isAI }}この記事は AI の支援を受けて下書きされ、著者が確認・編集しました。{{ else if $isMT }}原文は人間が作成したもので、この言語版は機械翻訳です。{{ else }}この記事は純粋に人間が作成したものです。{{ end }}
+      <span>© <a href="{{ $authorUrl }}" rel="author noopener noreferrer">{{ $authorName }}</a></span>
+      <span aria-hidden="true"> · </span><a href="{{ $licenseUrl }}" rel="license noopener noreferrer" target="_blank">{{ $licenseName }}</a>
+      <span aria-hidden="true"> · </span><a href="{{ .Permalink }}">元記事</a>
     {{- else -}}
-      <div class="kq-license-title">Copyright and Creation Note</div>
-      <p>{{ if $isAI }}This post was drafted with AI assistance, then reviewed and edited by the author.{{ else if $isMT }}The original post is human-created; this language version is machine-translated.{{ else }}This post is purely human-created.{{ end }}</p>
-      <p>This work by <a href="{{ $authorUrl }}" rel="author noopener noreferrer">{{ $authorName }}</a> is licensed under <a href="{{ $licenseUrl }}" rel="license noopener noreferrer" target="_blank">{{ $licenseName }}</a>. Please attribute the author and original URL when quoting, sharing, or adapting it.</p>
-      <dl>
-        <div><dt>Author</dt><dd>{{ $authorName }}</dd></div>
-        <div><dt>Source</dt><dd><a href="{{ .Permalink }}">{{ .Permalink }}</a></dd></div>
-      </dl>
+      {{ if $isAI }}This post was drafted with AI assistance, then reviewed and edited by the author.{{ else if $isMT }}The original post is human-created; this language version is machine-translated.{{ else }}This post is purely human-created.{{ end }}
+      <span>© <a href="{{ $authorUrl }}" rel="author noopener noreferrer">{{ $authorName }}</a></span>
+      <span aria-hidden="true"> · </span><a href="{{ $licenseUrl }}" rel="license noopener noreferrer" target="_blank">{{ $licenseName }}</a>
+      <span aria-hidden="true"> · </span><a href="{{ .Permalink }}">Source</a>
     {{- end -}}
-  </aside>
+  </p>
 {{- end -}}
