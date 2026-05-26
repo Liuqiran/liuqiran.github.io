@@ -5,6 +5,7 @@
 # they may expire, so local static images are more stable.
 # YouTube videos use either a video ID or a normal YouTube URL:
 # youtube: "dQw4w9WgXcQ"
+# icon accepts "heart", "sparkle", or any emoji / short kaomoji.
 
 - date: "2025-06-28"
   dateText: "June 28, 2025"

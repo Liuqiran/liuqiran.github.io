@@ -65,7 +65,7 @@
           {{ $item := . }}
           {{ $icon := default "heart" $item.icon }}
           <article class="timeline-item" data-date="{{ $item.date }}">
-            <div class="timeline-dot" aria-hidden="true">{{ if eq $icon "sparkle" }}&#10023;{{ else }}&#9825;{{ end }}</div>
+            <div class="timeline-dot" aria-hidden="true">{{ if eq $icon "sparkle" }}&#10023;{{ else if eq $icon "heart" }}&#9825;{{ else }}{{ $icon }}{{ end }}</div>
             <div class="timeline-date-wrap">
               <div class="timeline-date">{{ default $item.date $item.dateText }}</div>
               <div class="timeline-since"></div>
