@@ -28,7 +28,7 @@
       theme: "#f2a7bd",
       loop: "all",
       order: "list",
-      preload: "auto",
+      preload: "metadata",
       volume: 0.52,
       mutex: true,
       listFolded: true,

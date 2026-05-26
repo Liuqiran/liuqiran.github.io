@@ -2,14 +2,21 @@
   {
     "name": "Heartwarming",
     "artist": "Kevin MacLeod",
-    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heartwarming.mp3",
+    "url": "/music/love/heartwarming-lite.mp3",
     "cover": "/our-garden-assets-k8f3q9p2/our-love-story-share.png",
     "theme": "#f2a7bd"
   },
   {
     "name": "Gymnopedie No. 1",
     "artist": "Kevin MacLeod",
-    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Gymnopedie%20No%201.mp3",
+    "url": "/music/love/gymnopedie-lite.mp3",
+    "cover": "/our-garden-assets-k8f3q9p2/our-love-story-share.png",
+    "theme": "#f2a7bd"
+  },
+  {
+    "name": "Canon in D for Two Renaissance Harps",
+    "artist": "Johann Pachelbel",
+    "url": "/music/love/canon-in-d-harps-lite.mp3",
     "cover": "/our-garden-assets-k8f3q9p2/our-love-story-share.png",
     "theme": "#f2a7bd"
   }

@@ -2,8 +2,15 @@
 Licensed under Creative Commons: By Attribution 3.0 License
 https://creativecommons.org/licenses/by/3.0/
 Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100207
+Local page file: /music/love/heartwarming-lite.mp3, compressed 90-second page preview
 
 "Gymnopedie No. 1" Kevin MacLeod (incompetech.com)
 Licensed under Creative Commons: By Attribution 3.0 License
 https://creativecommons.org/licenses/by/3.0/
 Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100787
+Local page file: /music/love/gymnopedie-lite.mp3, compressed 90-second page preview
+
+"Canon in D for Two Renaissance Harps"
+Composer: Johann Pachelbel
+Source: user-supplied local file
+Local page file: /music/love/canon-in-d-harps-lite.mp3, compressed 90-second page preview
