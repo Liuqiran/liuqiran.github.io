@@ -32,6 +32,9 @@ hideMeta: true
 sitemap:
   disable: true
 cascade:
+  private: true
+  rssHidden: true
+  feedHidden: true
   type: love
   startDate: "2025-09-27T00:00:00"
   startDateLabel: "Since September 27, 2025"
