@@ -5,6 +5,21 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+    # Keep deploys tied to files that can change the generated site.
+    # Timeline edits live under data/, so phone edits there trigger Pages.
+    paths:
+      - ".github/workflows/hugo.yml"
+      - "assets/**"
+      - "config/**"
+      - "content/**"
+      - "data/**"
+      - "i18n/**"
+      - "layouts/**"
+      - "static/**"
+      - "themes/**"
+      - "hugo.yaml"
+      - "package.json"
+      - "package-lock.json"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

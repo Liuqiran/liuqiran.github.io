@@ -63,7 +63,7 @@
       <div class="timeline-list">
         {{ range sort $timeline "date" "desc" }}
           {{ $item := . }}
-          {{ $icon := default "heart" $item.icon }}
+          {{ $icon := default "heart" (or $item.icon $item.Icon) }}
           <article class="timeline-item" data-date="{{ $item.date }}">
             <div class="timeline-dot" aria-hidden="true">{{ if eq $icon "sparkle" }}&#10023;{{ else if eq $icon "heart" }}&#9825;{{ else }}{{ $icon }}{{ end }}</div>
             <div class="timeline-date-wrap">
