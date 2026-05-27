@@ -68,6 +68,9 @@ jobs:
       - name: Generate translations
         env:
           GCP_SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
+          KQ_TAGS_MT: "0"
+          KQ_MT_INITIAL_BACKOFF_SECONDS: "30"
+          KQ_MT_MAX_RETRIES: "4"
         run: |
           if [ -z "$GCP_SA_KEY_JSON" ]; then
             echo "::warning::GCP_SA_KEY_JSON secret is not set; skipping Google translation."
