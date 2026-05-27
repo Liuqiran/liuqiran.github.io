@@ -32,7 +32,11 @@
 
 - date: "2026-05-15"
   icon: "heart"
-  text: "Went to Tagaytay."      
+  text: "Went to Tagaytay."    
+
+- date: "2026-05-15"
+  icon: "heart"
+  text: "Went to Tagaytay."    
 
 - date: "2026-05-26"
   icon: "🌼"
@@ -40,6 +44,7 @@
   image: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Tulip_Tulipa_clusiana_%27Lady_Jane%27_Rock_Ledge_Flower_Edit_2000px.jpg"
   link: "/our-garden-2025-0927-k8f3q9p2/2026-05-love-page/"
   linkText: "post"     
+
 
 
   
