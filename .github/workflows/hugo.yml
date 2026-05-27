@@ -63,6 +63,17 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Install Python translation dependencies
+        run: python3 -m pip install pyyaml google-cloud-translate
+      - name: Generate translations
+        env:
+          GCP_SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
+        run: |
+          if [ -z "$GCP_SA_KEY_JSON" ]; then
+            echo "::warning::GCP_SA_KEY_JSON secret is not set; skipping Google translation."
+          else
+            python3 scripts/translate.py
+          fi
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
