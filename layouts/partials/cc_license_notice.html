@@ -23,20 +23,20 @@
   {{- end -}}
   <p class="kq-license-note" aria-label="{{ $noteLabel }}">
     {{- if hasPrefix .Lang "zh" -}}
-      {{ if $isAI }}本文使用 AI 辅助起草，并由作者确认和编辑。{{ else if $isMT }}原文为纯人工创作；本语言版本为机器翻译版本。{{ else }}本文为纯人工创作。{{ end }}
+      {{ if $isAI }}本文使用 AI 辅助起草，并由作者确认和编辑。{{ else if $isMT }}原始文章为纯人工创作；当前语言版本为机器翻译版本。{{ else }}本文为纯人工创作。{{ end }}
       <span>© <a href="{{ $authorUrl }}" rel="author noopener noreferrer">{{ $authorName }}</a></span>
       <span aria-hidden="true"> · </span><a href="{{ $licenseUrl }}" rel="license noopener noreferrer" target="_blank">{{ $licenseName }}</a>
-      <span aria-hidden="true"> · </span><a href="{{ .Permalink }}">原文链接</a>
+      <span aria-hidden="true"> · </span><a href="{{ .Permalink }}">当前页链接</a>
     {{- else if or (hasPrefix .Lang "ja") (hasPrefix .Lang "jp") -}}
       {{ if $isAI }}この記事は AI の支援を受けて下書きされ、著者が確認・編集しました。{{ else if $isMT }}原文は人間が作成したもので、この言語版は機械翻訳です。{{ else }}この記事は純粋に人間が作成したものです。{{ end }}
       <span>© <a href="{{ $authorUrl }}" rel="author noopener noreferrer">{{ $authorName }}</a></span>
       <span aria-hidden="true"> · </span><a href="{{ $licenseUrl }}" rel="license noopener noreferrer" target="_blank">{{ $licenseName }}</a>
-      <span aria-hidden="true"> · </span><a href="{{ .Permalink }}">元記事</a>
+      <span aria-hidden="true"> · </span><a href="{{ .Permalink }}">現在のページ</a>
     {{- else -}}
-      {{ if $isAI }}This post was drafted with AI assistance, then reviewed and edited by the author.{{ else if $isMT }}The original post is human-created; this language version is machine-translated.{{ else }}This post is purely human-created.{{ end }}
+      {{ if $isAI }}This post was drafted with AI assistance, then reviewed and edited by the author.{{ else if $isMT }}The source article is human-created; this language version is machine-translated.{{ else }}This post is purely human-created.{{ end }}
       <span>© <a href="{{ $authorUrl }}" rel="author noopener noreferrer">{{ $authorName }}</a></span>
       <span aria-hidden="true"> · </span><a href="{{ $licenseUrl }}" rel="license noopener noreferrer" target="_blank">{{ $licenseName }}</a>
-      <span aria-hidden="true"> · </span><a href="{{ .Permalink }}">Source</a>
+      <span aria-hidden="true"> · </span><a href="{{ .Permalink }}">Current page</a>
     {{- end -}}
   </p>
 {{- end -}}
