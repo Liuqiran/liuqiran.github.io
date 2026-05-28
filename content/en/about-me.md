@@ -4,7 +4,7 @@ slug: "about-me"
 author: Qiran
 type: page
 date: 2019-02-09T03:14:24+00:00
-lastmod: 2025-12-25  
+lastmod: 2026-05-28  
 translationKey: about-me
 aliases: ["/en/about-me-2/"]
 tags:
@@ -37,7 +37,7 @@ tags:
   ](https://www.foreverblog.cn/)(that is, from joining this activity, our site will not be closed for ten years, to maintain the update and vitality!)
 - This site is hosted on GitHub, with the alternate URL [liuqiran.github.io](https://liuqiran.github.io).
   (It means that this site can exist for a long time!)
-- ⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the Chinese content, please visit the [Chinese site](/zh/).
+- ⚠ The content in different languages on this site is separate. The language switch (translation) button only appears on article pages when the content is the same. To read the content of other languages, please click the related language on the top of my site.
 - [Building site log][1]
 
 **[🧭 What I’m doing now](/en/now)**
