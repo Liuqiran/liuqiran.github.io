@@ -148,7 +148,6 @@ languages:
         imageUrl: "/img/Avatar.jpg"
         imageWidth: 110
         imageHeight: 110
-        imageHeight: 110
       
       socialIcons:
         - name: rss
