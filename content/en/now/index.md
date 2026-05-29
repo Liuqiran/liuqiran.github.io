@@ -4,9 +4,9 @@ translationKey: now
 slug: "now"
 author: Qiran
 type: page
-date: 2025-10-01 
 cover:  
-  image: "/img/clock-wall.jpg"
+  image: "/img/clock-wall.jpg"   
+showToc: false
 ---
 > This is what I’m currently focused on. Inspired by [nownownow.com](https://nownownow.com/about).
 >
@@ -14,7 +14,9 @@ cover:
 <!--<iframe src="https://twisty-change-610.notion.site/ebd/1fc21e6176cd8080be08ea1b2214e8b3?v=1fc21e6176cd813b966e000c20634f61" width="100%" height="600" frameborder="0" allowfullscreen></iframe>-->   
 <!--</div>-->  
 
+# ✒️ Daily Notes   
 
+2026-05-29 Very tired now... I'm thinking of using plain text.    
 
 # 🖥️ Other plans   
 
