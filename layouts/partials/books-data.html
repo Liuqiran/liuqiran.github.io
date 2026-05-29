@@ -1,14 +1,14 @@
 {{- $books := slice -}}
 
 {{- if fileExists "data/books.txt" -}}
-  {{- $raw := readFile "data/books.txt" | replaceRE "\r\n" "\n" | replaceRE "\n[ \t]*\n+" "\n\n" | strings.TrimSpace -}}
+  {{- $raw := readFile "data/books.txt" | replaceRE "\r\n" "\n" | replaceRE "\n[ \t]*\n+" "\n\n" | trim " \n\t\r" -}}
   {{- range split $raw "\n\n" -}}
     {{- $book := dict -}}
     {{- range split . "\n" -}}
-      {{- $line := strings.TrimSpace . -}}
+      {{- $line := trim . " \t\r\n" -}}
       {{- if findRE ":" $line -}}
-        {{- $key := lower (strings.TrimSpace (replaceRE ":.*$" "" $line)) -}}
-        {{- $value := strings.TrimSpace (replaceRE "^[^:]+:\\s*" "" $line) -}}
+        {{- $key := lower (trim (replaceRE ":.*$" "" $line) " \t\r\n") -}}
+        {{- $value := trim (replaceRE "^[^:]+:\\s*" "" $line) " \t\r\n" -}}
         {{- $book = merge $book (dict $key $value) -}}
       {{- end -}}
     {{- end -}}
