@@ -1,4 +1,4 @@
-{{ $books := site.Data.books.list }}
+{{ $books := partial "books-data.html" . }}
 
 <style>
 /* 定义亮色模式的颜色变量 */
@@ -59,14 +59,14 @@
   pointer-events: none;
 }
 
-table {
+.reading-table-container table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   font-size: 0.95rem;
 }
 
-th {
+.reading-table-container th {
   background: var(--th-bg);
   padding: 12px;
   text-align: left;
@@ -74,21 +74,21 @@ th {
   color: var(--text-color);
 }
 
-th:first-child {
+.reading-table-container th:first-child {
   border-top-left-radius: 6px;
 }
 
-th:last-child {
+.reading-table-container th:last-child {
   border-top-right-radius: 6px;
 }
 
-td {
+.reading-table-container td {
   padding: 12px;
   border-bottom: 1px solid var(--td-border);
   color: var(--text-secondary);
 }
 
-tr:hover {
+.reading-table-container tr:hover {
   background: var(--hover-bg);
 }
 
@@ -190,14 +190,18 @@ tr:hover {
         </tr>
       </thead>
       <tbody>
-        {{ range $books }}
+        {{ range $index, $book := $books }}
+          {{ $ratingText := index $book "rating" | default "0" }}
+          {{ $rating := 0 }}
+          {{ if findRE "^[0-5]$" $ratingText }}
+            {{ $rating = int $ratingText }}
+          {{ end }}
           <tr>
-            <td>{{ .No }}</td>
-            <td>{{ .Title }}</td>
-            <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
-            <td>{{ .Date }}</td>
+            <td>{{ add $index 1 }}</td>
+            <td>{{ index $book "title" }}</td>
+            <td>{{ with index $book "author" }}{{ . }}{{ else }}Unknown{{ end }}</td>
+            <td>{{ with index $book "date" }}{{ . }}{{ else }}—{{ end }}</td>
             <td class="rating-cell">
-              {{- $rating := .Rating -}}
               {{- range seq 1 5 -}}
                 <span class="star">{{- if le . $rating -}}⭐{{- else -}}☆{{- end -}}</span>
               {{- end -}}
