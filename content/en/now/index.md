@@ -14,14 +14,10 @@ showToc: false
 <!--<iframe src="https://twisty-change-610.notion.site/ebd/1fc21e6176cd8080be08ea1b2214e8b3?v=1fc21e6176cd813b966e000c20634f61" width="100%" height="600" frameborder="0" allowfullscreen></iframe>-->   
 <!--</div>-->  
 
-# ✒️ Daily Notes   
+# 🖥️ Plans   
 
-2026-05-29 Very tired now... I'm thinking of using plain text.    
-
-# 🖥️ Other plans   
-
-- [ ] **数字化日记②** 
-- [ ] 数字化日记③ 
+- [ ] **Digitalize日记②** 
+- [ ] Digitalize日记③ 
 - [x] Fix Hugo backend comment URLs
 - [x] Optimize word count statistics
 - [x] Add email subscription feature   
@@ -31,6 +27,24 @@ showToc: false
 - [ ] Add Substack button  
 - [ ] ~~Open Gumroad/Buy me a coffee account~~ 
 - [ ] ~~Add feature of Archive page ( Can find posts  by year/month)~~  
+
+
+# ✒️ Moments      
+
+<details open>
+<summary>2026</summary>
+
+## 2026-05-29
+
+Updated my now page. Deleted other fields.     
+Very tired now... I'm thinking of using plain text as my to-do list.      
+
+Now my pages and post are the same with my diaries. They are all using plain texts now.    
+
+
+</details>    
+
+
 
 # 🌳 Building Habits
 
