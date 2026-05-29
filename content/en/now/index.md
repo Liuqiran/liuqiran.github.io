@@ -26,7 +26,7 @@ showToc: false
 - [x] Add image and statement at the end of the post (different in each language)
 - [ ] Add Substack button  
 - [ ] ~~Open Gumroad/Buy me a coffee account~~ 
-- [ ] ~~Add feature of Archive page ( Can find posts  by year/month)~~  
+- [ ] ~~Add feature of Archive page ( Can find posts  by year/month)~~ 
 
 
 # ✒️ Moments      
@@ -54,6 +54,8 @@ Now my pages and post are the same with my diaries. They are all using plain tex
 {{< weektable >}}
 
 
-{{< /weektable >}}  
+{{< /weektable >}}    
+
+[en-black](en-black.svg)
 
 
