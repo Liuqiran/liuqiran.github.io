@@ -30,7 +30,7 @@ showToc: false
 - [x] Add image and statement at the end of the post (different in each language)
 - [ ] Add Substack button  
 - [ ] ~~Open Gumroad/Buy me a coffee account~~ 
-- [ ] ~~Add feature of Archive page ( Can find posts  by year/month)~~
+- [ ] ~~Add feature of Archive page ( Can find posts  by year/month)~~  
 
 # 🌳 Building Habits
 
