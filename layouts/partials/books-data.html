@@ -1,0 +1,30 @@
+{{- $books := slice -}}
+
+{{- if fileExists "data/books.txt" -}}
+  {{- $raw := readFile "data/books.txt" | replaceRE "\r\n" "\n" | replaceRE "\n[ \t]*\n+" "\n\n" | strings.TrimSpace -}}
+  {{- range split $raw "\n\n" -}}
+    {{- $book := dict -}}
+    {{- range split . "\n" -}}
+      {{- $line := strings.TrimSpace . -}}
+      {{- if findRE ":" $line -}}
+        {{- $key := lower (strings.TrimSpace (replaceRE ":.*$" "" $line)) -}}
+        {{- $value := strings.TrimSpace (replaceRE "^[^:]+:\\s*" "" $line) -}}
+        {{- $book = merge $book (dict $key $value) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if index $book "title" -}}
+      {{- $books = $books | append $book -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if site.Data.books.list -}}
+  {{- range site.Data.books.list -}}
+    {{- $books = $books | append (dict
+      "title" (.Title | default "")
+      "author" (.Author | default "")
+      "date" (.Date | default "")
+      "rating" (printf "%v" (.Rating | default ""))
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $books -}}
