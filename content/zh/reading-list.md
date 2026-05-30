@@ -4,7 +4,6 @@ translationKey: reading-list
 author: Qiran
 type: page
 url: /zh/reading-list-2/
-description: "我已经读完的书目列表。"
 date: 2023-02-10
 showLastMod: false
 cover:
