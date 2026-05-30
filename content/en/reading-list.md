@@ -9,7 +9,8 @@ cover:
   image: /uploads/2023/09/books-scaled.jpg
 ---   
 
-It’s updated from time to time…
+It’s updated from time to time…   
+
 The books I have finished reading:
 
 {{< booktable >}}
