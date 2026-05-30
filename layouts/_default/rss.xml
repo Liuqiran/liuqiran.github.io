@@ -42,6 +42,7 @@
 {{- if ge $limit 1 }}
 {{- $pages = $pages | first $limit }}
 {{- end }}
+{{- $siteBaseURL := strings.TrimSuffix "/" site.BaseURL }}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
@@ -82,12 +83,35 @@
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
-      <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if .Content }}
       {{- $rssPrefixNotices := printf "%s%s" (partial "mt_notice.html" .) (partial "ai_notice.html" .) -}}
       {{- $rssSuffixNotices := partial "cc_license_notice.html" . -}}
-      {{- $rssContent := printf "%s%s%s" $rssPrefixNotices .Content $rssSuffixNotices -}}
+      {{- $coverHTML := "" -}}
+      {{- $coverSrc := "" -}}
+      {{- with .Params.cover }}
+        {{- if reflect.IsMap . }}
+          {{- with .image }}{{- $coverSrc = . -}}{{- end }}
+        {{- end }}
+      {{- end }}
+      {{- if $coverSrc }}
+        {{- $coverURL := urls.Parse $coverSrc -}}
+        {{- if not $coverURL.IsAbs }}
+          {{- with .Resources.GetMatch (strings.TrimPrefix "./" $coverSrc) }}
+            {{- $coverSrc = .Permalink -}}
+          {{- else }}
+            {{- $coverSrc = $coverSrc | absURL -}}
+          {{- end }}
+        {{- end }}
+        {{- $coverHTML = printf "<p><img src=%q alt=%q></p>" $coverSrc .Title -}}
+      {{- end }}
+      {{- $rssContent := printf "%s%s%s%s" $rssPrefixNotices $coverHTML .Content $rssSuffixNotices -}}
+      {{- $rssContent = replaceRE `(src|href)="(/[^"/][^"]*)"` (printf `${1}="%s${2}"` $siteBaseURL) $rssContent -}}
+      {{- $rssContent = replaceRE `(src|href)='(/[^'/][^']*)'` (printf `${1}='%s${2}'` $siteBaseURL) $rssContent -}}
+      {{- $rssContent = replace $rssContent "]]>" "]]]]><![CDATA[>" -}}
+      <description>{{ (printf "<![CDATA[%s]]>" $rssContent) | safeHTML }}</description>
       <content:encoded>{{ (printf "<![CDATA[%s]]>" $rssContent) | safeHTML }}</content:encoded>
+      {{- else }}
+      <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- end }}
     </item>
     {{- end }}
