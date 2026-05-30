@@ -1,0 +1,12 @@
+{{- $src := .Destination -}}
+{{- $url := urls.Parse $src -}}
+
+{{- if not $url.IsAbs -}}
+  {{- with .Page.Resources.GetMatch (strings.TrimPrefix "./" $src) -}}
+    {{- $src = .Permalink -}}
+  {{- else -}}
+    {{- $src = $src | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+<img loading="lazy" src="{{ $src | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}>
