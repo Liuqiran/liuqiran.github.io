@@ -3,6 +3,7 @@ title: General Santos City
 translationKey: 2025-06-general-santos-city
 slug: "2025-06-general-santos-city"
 date: 2025-06-07  
+draft: true
 tags:
   - travel
   - life
