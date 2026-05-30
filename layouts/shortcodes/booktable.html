@@ -1,31 +1,4 @@
-{{- $books := slice -}}
-
-{{- if fileExists "data/books.txt" -}}
-  {{- $raw := readFile "data/books.txt" | replaceRE "\r\n" "\n" | replaceRE "\n[ \t]*\n+" "\n\n" | trim " \n\t\r" -}}
-  {{- range split $raw "\n\n" -}}
-    {{- $book := dict -}}
-    {{- range split . "\n" -}}
-      {{- $line := trim . " \t\r\n" -}}
-      {{- if findRE ":" $line -}}
-        {{- $key := lower (trim (replaceRE ":.*$" "" $line) " \t\r\n") -}}
-        {{- $value := trim (replaceRE "^[^:]+:\\s*" "" $line) " \t\r\n" -}}
-        {{- $book = merge $book (dict $key $value) -}}
-      {{- end -}}
-    {{- end -}}
-    {{- if index $book "title" -}}
-      {{- $books = $books | append $book -}}
-    {{- end -}}
-  {{- end -}}
-{{- else if site.Data.books.list -}}
-  {{- range site.Data.books.list -}}
-    {{- $books = $books | append (dict
-      "title" (.Title | default "")
-      "author" (.Author | default "")
-      "date" (.Date | default "")
-      "rating" (printf "%v" (.Rating | default ""))
-    ) -}}
-  {{- end -}}
-{{- end -}}
+{{ $books := site.Data.books.list }}
 
 <style>
 /* 定义亮色模式的颜色变量 */
@@ -86,14 +59,14 @@
   pointer-events: none;
 }
 
-.reading-table-container table {
+table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   font-size: 0.95rem;
 }
 
-.reading-table-container th {
+th {
   background: var(--th-bg);
   padding: 12px;
   text-align: left;
@@ -101,21 +74,21 @@
   color: var(--text-color);
 }
 
-.reading-table-container th:first-child {
+th:first-child {
   border-top-left-radius: 6px;
 }
 
-.reading-table-container th:last-child {
+th:last-child {
   border-top-right-radius: 6px;
 }
 
-.reading-table-container td {
+td {
   padding: 12px;
   border-bottom: 1px solid var(--td-border);
   color: var(--text-secondary);
 }
 
-.reading-table-container tr:hover {
+tr:hover {
   background: var(--hover-bg);
 }
 
@@ -218,17 +191,13 @@
       </thead>
       <tbody>
         {{ range $index, $book := $books }}
-          {{ $ratingText := index $book "rating" | default "0" }}
-          {{ $rating := 0 }}
-          {{ if findRE "^[0-5]$" $ratingText }}
-            {{ $rating = int $ratingText }}
-          {{ end }}
           <tr>
             <td>{{ add $index 1 }}</td>
-            <td>{{ index $book "title" }}</td>
-            <td>{{ with index $book "author" }}{{ . }}{{ else }}Unknown{{ end }}</td>
-            <td>{{ with index $book "date" }}{{ . }}{{ else }}—{{ end }}</td>
+            <td>{{ .Title }}</td>
+            <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
+            <td>{{ .Date }}</td>
             <td class="rating-cell">
+              {{- $rating := .Rating | default 0 -}}
               {{- range seq 1 5 -}}
                 <span class="star">{{- if le . $rating -}}⭐{{- else -}}☆{{- end -}}</span>
               {{- end -}}
