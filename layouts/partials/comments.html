@@ -27,7 +27,7 @@
 {{- end -}}
 
 <style>
-.comment-toggle{margin:1em 0;text-align:center}.comment-toggle button{padding:.5em 1.2em;margin:0 .3em;cursor:pointer;border:1px solid var(--border,#ccc);background:var(--entry,#f8f8f8);color:var(--content,#555);font-weight:500;border-radius:8px;font-size:.9rem}.comment-toggle button.active{background:var(--code-bg,#ddd);border-color:var(--border,#999);color:var(--content,#222);cursor:default;pointer-events:none}.comment-system{display:none}.comment-system.active{display:block}#waline{--waline-theme-color:var(--primary);--waline-active-color:var(--primary);--waline-color:var(--content);--waline-bg-color:var(--entry);--waline-bg-color-light:var(--code-bg);--waline-border-color:var(--border);--waline-box-shadow:none}.kq-fab{--kq-fab-bottom:16px;--kq-fab-gap:12px;position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:calc(var(--kq-fab-bottom) + env(safe-area-inset-bottom));display:none;flex-direction:column;gap:var(--kq-fab-gap);z-index:9999}.kq-fab.is-on{display:flex}.kq-fab-btn{width:44px;height:44px;border-radius:999px;border:1px solid var(--border,#ccc);background:var(--entry,#fff);color:var(--content,#222);display:inline-flex;align-items:center;justify-content:center;line-height:1;box-shadow:0 2px 4px rgb(5 10 15 / 5%),0 7px 13px -3px rgb(5 10 15 / 30%)}html.kq-fab-on a.top-link{right:calc(16px + env(safe-area-inset-right))!important;bottom:calc(var(--kq-fab-bottom,16px) + env(safe-area-inset-bottom) + var(--kq-fab-h,0px) + var(--kq-fab-gap,12px))!important}@media(max-width:900px){#toc-container,aside.toc-container,.toc-container{position:fixed!important;top:0!important;right:-100%!important;left:auto!important;bottom:0!important;width:min(86vw,360px)!important;height:100%!important;background:var(--theme);border-left:1px solid var(--border);padding:calc(12px + env(safe-area-inset-top)) 12px 12px;transition:right .18s ease;z-index:9999}html.kq-toc-open #toc-container,html.kq-toc-open aside.toc-container,html.kq-toc-open .toc-container{right:0!important}.kq-toc-overlay{position:fixed;inset:0;background:rgb(0 0 0 / 25%);opacity:0;pointer-events:none;transition:opacity .18s ease;z-index:9998}html.kq-toc-open .kq-toc-overlay{opacity:1;pointer-events:auto}}
+.comment-toggle{margin:1em 0;text-align:center}.comment-toggle button{padding:.5em 1.2em;margin:0 .3em;cursor:pointer;border:1px solid var(--border,#ccc);background:var(--entry,#f8f8f8);color:var(--content,#555);font-weight:500;border-radius:8px;font-size:.9rem}.comment-toggle button.active{background:var(--code-bg,#ddd);border-color:var(--border,#999);color:var(--content,#222);cursor:default;pointer-events:none}.comment-system{display:none}.comment-system.active{display:block}#waline{--waline-theme-color:var(--primary);--waline-active-color:var(--primary);--waline-color:var(--content);--waline-bg-color:var(--entry);--waline-bg-color-light:var(--code-bg);--waline-border-color:var(--border);--waline-box-shadow:none}#waline .kq-waline-reaction-locked{pointer-events:none!important;opacity:.62;filter:saturate(.65)}.kq-fab{--kq-fab-bottom:16px;--kq-fab-gap:12px;position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:calc(var(--kq-fab-bottom) + env(safe-area-inset-bottom));display:none;flex-direction:column;gap:var(--kq-fab-gap);z-index:9999}.kq-fab.is-on{display:flex}.kq-fab-btn{width:44px;height:44px;border-radius:999px;border:1px solid var(--border,#ccc);background:var(--entry,#fff);color:var(--content,#222);display:inline-flex;align-items:center;justify-content:center;line-height:1;box-shadow:0 2px 4px rgb(5 10 15 / 5%),0 7px 13px -3px rgb(5 10 15 / 30%)}html.kq-fab-on a.top-link{right:calc(16px + env(safe-area-inset-right))!important;bottom:calc(var(--kq-fab-bottom,16px) + env(safe-area-inset-bottom) + var(--kq-fab-h,0px) + var(--kq-fab-gap,12px))!important}@media(max-width:900px){#toc-container,aside.toc-container,.toc-container{position:fixed!important;top:0!important;right:-100%!important;left:auto!important;bottom:0!important;width:min(86vw,360px)!important;height:100%!important;background:var(--theme);border-left:1px solid var(--border);padding:calc(12px + env(safe-area-inset-top)) 12px 12px;transition:right .18s ease;z-index:9999}html.kq-toc-open #toc-container,html.kq-toc-open aside.toc-container,html.kq-toc-open .toc-container{right:0!important}.kq-toc-overlay{position:fixed;inset:0;background:rgb(0 0 0 / 25%);opacity:0;pointer-events:none;transition:opacity .18s ease;z-index:9998}html.kq-toc-open .kq-toc-overlay{opacity:1;pointer-events:auto}}
 </style>
 
 <div class="comment-toggle">
@@ -85,6 +85,65 @@
   };
   const myPlaceholder = PLACEHOLDER_MAP[pageLangWaline] || 'Write a comment…';
 
+  const WALINE_REACTION_LOCK_PREFIX = 'kq-waline-reaction-lock:v2:';
+  function walineRoot(){return document.getElementById('waline')}
+  function getTextSafe(el){return String(el?.textContent||'').replace(/\s+/g,' ').trim().slice(0,80)}
+  function isReactionLikeNode(el){
+    if(!el || !walineRoot()?.contains(el)) return null;
+    const clickable = el.closest('button,a,.wl-reaction-item,.wl-like,.wl-vote,.wl-action,[role="button"]');
+    if(!clickable || !walineRoot().contains(clickable)) return null;
+    const zone = clickable.closest('.wl-reaction,.wl-like,.wl-vote,.wl-actions,.wl-card-actions,.wl-comment-actions,.wl-action');
+    const label = [clickable.className, clickable.getAttribute('aria-label'), clickable.getAttribute('title'), clickable.dataset?.type, clickable.dataset?.reaction, getTextSafe(clickable)].join(' ').toLowerCase();
+    if(zone || /reaction|like|vote|heart|agree|赞|点赞|喜欢|愛|❤|♥|💗|💖|💘|💕/.test(label)) return clickable;
+    return null;
+  }
+  function reactionLockKey(node){
+    const root = walineRoot();
+    const card = node.closest('[data-comment-id],[data-id],.wl-comment,.wl-card,.wl-item,.wl-panel') || root;
+    const cardId = card?.dataset?.commentId || card?.dataset?.id || card?.id || getTextSafe(card).slice(0,60) || 'page';
+    const group = node.closest('.wl-reaction,.wl-like,.wl-vote,.wl-actions,.wl-card-actions,.wl-comment-actions,.wl-action') || node.parentElement || root;
+    const siblings = Array.from(group.querySelectorAll('button,a,.wl-reaction-item,.wl-like,.wl-vote,.wl-action,[role="button"]'));
+    const index = Math.max(0, siblings.indexOf(node));
+    const img = node.querySelector?.('img');
+    const reactionId = node.dataset?.type || node.dataset?.reaction || node.getAttribute('aria-label') || node.getAttribute('title') || img?.getAttribute('alt') || img?.getAttribute('src') || getTextSafe(node) || index;
+    return WALINE_REACTION_LOCK_PREFIX + commentPath + ':' + cardId + ':' + index + ':' + reactionId;
+  }
+  function isLocked(node){try{return localStorage.getItem(reactionLockKey(node))==='1'}catch(e){return false}}
+  function setLocked(node){try{localStorage.setItem(reactionLockKey(node),'1')}catch(e){}}
+  function markLockedReactions(){
+    const root = walineRoot();
+    if(!root) return;
+    root.querySelectorAll('button,a,.wl-reaction-item,.wl-like,.wl-vote,.wl-action,[role="button"]').forEach((node)=>{
+      if(isReactionLikeNode(node) && isLocked(node)){
+        node.classList.add('kq-waline-reaction-locked');
+        node.setAttribute('aria-disabled','true');
+        node.setAttribute('title', node.getAttribute('title') || 'Already reacted');
+      }
+    });
+  }
+  function bindWalineReactionLock(){
+    const root = walineRoot();
+    if(!root || root.dataset.kqReactionLockBound==='1') return;
+    root.dataset.kqReactionLockBound='1';
+    root.addEventListener('click',(ev)=>{
+      const node = isReactionLikeNode(ev.target);
+      if(!node) return;
+      if(isLocked(node)){
+        ev.preventDefault();
+        ev.stopPropagation();
+        ev.stopImmediatePropagation();
+        return false;
+      }
+      setLocked(node);
+      node.classList.add('kq-waline-reaction-locked');
+      node.setAttribute('aria-disabled','true');
+      setTimeout(markLockedReactions, 350);
+      setTimeout(markLockedReactions, 1200);
+    }, true);
+    markLockedReactions();
+    new MutationObserver(()=>markLockedReactions()).observe(root,{childList:true,subtree:true});
+  }
+
   let walineReady=false, walineLoading=null;
   function loadWalineCSSOnce(){
     if(document.getElementById('kq-waline-css'))return;
@@ -123,6 +182,9 @@
         dark:'body.dark',
         imageUploader:false,
       });
+      bindWalineReactionLock();
+      setTimeout(bindWalineReactionLock,600);
+      setTimeout(markLockedReactions,1500);
       walineReady=true;walineLoading=null;
       console.log('[Waline] inited:',{serverURL,commentPath,pageLangWaline});
     })().catch(e=>{console.error('[Waline] init failed:',e);window.__walineBadConfig=true;walineLoading=null;showGiscus(true)});
