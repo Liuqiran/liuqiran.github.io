@@ -2,7 +2,7 @@
 title: 表哥的画
 author: Qiran
 type: post
-date: 2019-06-07T08:00:53+00:00
+date: 2006-02-04T08:03:00+00:00
 url: /zh/cousinsdrawing/
 autoshare_tweet-allow-image:
   - yes
