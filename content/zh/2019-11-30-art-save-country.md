@@ -6,8 +6,7 @@ type: post
 date: 2019-11-30T08:42:49+00:00
 url: /zh/art-save-country/
 tags:
-  - 中国美术史
-
+  - 旧校遗秽-中美
 ---
 ### 第一节 美术救国 {.wp-block-heading}
 

@@ -10,6 +10,5 @@ private: true
 aliases: ["/practice-wen-zhengming-caotang-shizhi/"]
 tags:
   - Calligraphy
-  - Wen Zhengming
 ---
 ﻿![](/uploads/2019/05/IMG_20190424_210105-1.jpg)

@@ -10,8 +10,7 @@ wp_last_modified_info:
 wplmi_shortcode:
   - '[lmt-post-modified-info]'
 tags:
-  - 文征明
-
+  - 旧校遗秽-中美
 ---
 “古意”、“奇古”的说法从北宋时期就开始出现。米芾就在《画史》中谈到：“余家董源雾景横披全幅……意趣高古。”古意代表的是一种高尚的审美情趣。  
 

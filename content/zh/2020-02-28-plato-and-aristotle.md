@@ -7,7 +7,7 @@ type: post
 date: 2020-02-28T10:17:02+00:00
 aliases: ["/plato-and-aristotle/"]
 tags:
-  - Art theory
+  - 旧校遗秽-西美
 
 ---
 ﻿柏拉图和亚历士多德艺术思想的比较：  

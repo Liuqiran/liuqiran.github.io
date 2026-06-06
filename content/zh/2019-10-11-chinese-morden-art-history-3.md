@@ -6,8 +6,7 @@ type: post
 date: 2019-10-11T03:44:31+00:00
 url: /zh/chinese-morden-art-history-3/
 tags:
-  - 中国美术史
-
+  - 旧校遗秽-中美
 ---
 海上题襟馆是晚清到民国时期的社团，光绪中期成立
 

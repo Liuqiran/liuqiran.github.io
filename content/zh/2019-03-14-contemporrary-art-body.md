@@ -6,8 +6,7 @@ type: post
 date: 2019-03-14T02:33:47+00:00
 url: /zh/contemporrary-art-body/
 tags:
-  - 西方美术史
-
+  - 旧校遗秽-西美
 ---
 二战以后随着当代艺术的发展人们逐渐关注到身体本身。
 

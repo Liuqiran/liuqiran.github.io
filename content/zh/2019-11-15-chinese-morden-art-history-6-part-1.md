@@ -6,8 +6,7 @@ type: post
 date: 2019-11-15T11:51:42+00:00
 url: /zh/chinese-morden-art-history-6-part-1/
 tags:
-  - 中国美术史
-
+  - 旧校遗秽-中美
 ---
 **概况**  
 1、大批游学海外的青年艺术家归来，西方现代艺术及思潮涌入中国。  

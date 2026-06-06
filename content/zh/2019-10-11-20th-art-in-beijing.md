@@ -6,8 +6,7 @@ type: post
 date: 2019-10-11T00:04:21+00:00
 url: /zh/20th-art-in-beijing/
 tags:
-  - 中国美术史
-
+  - 旧校遗秽-中美
 ---
 [private containter=&#8221;span&#8221;]公睿妍[/private]
 

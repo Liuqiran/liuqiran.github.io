@@ -8,6 +8,8 @@ date: 2019-10-06T08:33:15+00:00
 aliases: ["/analects-notes-1/"]
 s:
   - Analects
+tags:
+  - 旧校遗秽-中美
 ---
 ﻿_力不足者，中道而废，今女画。_
 

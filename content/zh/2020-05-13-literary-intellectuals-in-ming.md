@@ -6,7 +6,7 @@ type: post
 date: 2020-05-13T02:21:18+00:00
 url: /zh/literary-intellectuals-in-ming/
 tags:
-  - 美学
+  - 旧校遗秽-美学
 
 ---
 “真性情”是明代的主線。背後的思想基礎還是以儒家為主，佛學的狂禪與道教的觀點到了儒家之中。  

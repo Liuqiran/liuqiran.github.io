@@ -1,11 +1,11 @@
-﻿---
+---
 title: 【书画笔记】抒发意趣，自成一家——中年文征明
 author: Qiran
 type: post
 date: 2018-10-16T08:17:55+00:00
 url: /zh/middle-age-wenzhengming/
 tags:
-  - 中国美术史
+  - 旧校遗秽-中美
 ---
 ![](/uploads/2019/02/img_20190226_161742_855589193632959511323.jpg)
 

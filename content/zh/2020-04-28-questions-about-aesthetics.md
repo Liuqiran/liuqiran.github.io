@@ -12,7 +12,7 @@ autoshare_tweet-allow-image:
 autoshare_tweet_accounts:
   - 'a:0:{}'
 tags:
-  - 美学
+  - 旧校遗秽-美学
 
 ---
 （1）什麽是“規範詩學”？你認為其對於藝術創作有什麽積極意義？  

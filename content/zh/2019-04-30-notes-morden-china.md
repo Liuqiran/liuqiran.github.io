@@ -10,8 +10,7 @@ wp_last_modified_info:
 wplmi_shortcode:
   - '[lmt-post-modified-info]'
 tags:
-  - 历史课
-
+  - 旧校遗秽-西美
 ---
 &nbsp;&nbsp;&nbsp;近代中国社会为何如此动荡？经过阅读和思考，我认为有以下几个方面的原因。
 

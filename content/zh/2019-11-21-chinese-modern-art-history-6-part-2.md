@@ -6,8 +6,7 @@ type: post
 date: 2019-11-21T02:01:41+00:00
 url: /zh/chinese-modern-art-history-6-part-2/
 tags:
-  - 中国美术史
-
+  - 旧校遗秽-中美
 ---
 #### 南黄北齐 {.wp-block-heading}
 

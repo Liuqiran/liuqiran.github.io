@@ -10,8 +10,7 @@ wp_last_modified_info:
 wplmi_shortcode:
   - '[lmt-post-modified-info]'
 tags:
-  - 中国美术史
-
+  - 旧校遗秽-中美
 ---
 最早提出吴门这一概念的是董其昌。董其昌通过“南北宗论”将吴门画派划为南宗的文人画派。
 

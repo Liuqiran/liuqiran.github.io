@@ -5,7 +5,8 @@ author: Qiran
 type: post
 date: 2020-05-08T07:25:40+00:00
 url: /zh/ninth-ancient-style/
-
+tags:
+  - 旧校遗秽-中美
 ---
 **南宋**  
 文人想要回到唐代文人的狀態  

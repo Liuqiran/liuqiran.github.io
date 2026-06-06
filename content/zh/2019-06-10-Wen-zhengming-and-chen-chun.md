@@ -6,7 +6,7 @@ type: post
 date: 2019-06-10T09:34:04+00:00
 url: /title/Wen-zhengming-and-chen-chun
 tags:
-  - 中国美术史
+  - 旧校遗秽-中美
 ---
 《文征明与陈淳绘画风格比较研究》
 

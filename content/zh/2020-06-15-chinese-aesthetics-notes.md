@@ -6,7 +6,7 @@ type: post
 date: 2020-06-15T15:04:20+00:00
 url: /zh/chinese-aesthetics-notes/
 tags:
-  - 美学
+  - 旧校遗秽-美学
 
 ---
 **憂生和憂世**

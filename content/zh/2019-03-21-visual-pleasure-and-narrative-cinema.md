@@ -6,8 +6,7 @@ type: post
 date: 2019-03-21T05:37:16+00:00
 url: /zh/visual-pleasure-and-narrative-cinema/
 tags:
-  - 西方美术史
-
+  - 旧校遗秽-西美
 ---
 主流电影如好莱坞电影的叙事方式强化了父系秩序，并提供了一种快感。要分析这种快感，就是要摧毁他们。
 

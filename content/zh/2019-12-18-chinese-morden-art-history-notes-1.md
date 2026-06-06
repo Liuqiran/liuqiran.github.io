@@ -7,7 +7,7 @@ type: post
 date: 2019-12-18T02:02:45+00:00
 aliases: ["/chinese-morden-art-history-notes-1/"]
 tags:
-  - Chinese art history
+  - 旧校遗秽-中美
 
 ---
 ﻿**《点石斋画报》**  
