@@ -32,9 +32,11 @@ showToc: false
 # ✒️ Moments      
 
 <details open>
-<summary>2026</summary>
+<summary>2026</summary>   
 
-## 2026-05-29
+
+
+## 2026-05-29   
 
 Updated my now page. Deleted other fields.     
 Very tired now... I'm thinking of using plain text as my to-do list.      
