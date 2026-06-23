@@ -89,9 +89,6 @@ languages:
           url: 'https://www.youtube.com/channel/UCzE6daBF2ss6UNSMLXMlnTQ'
         - name: email
           url: 'mailto:woshiniuziku@gmail.com'    
-        - name: facebook
-          url: 'https://web.facebook.com/liuqiran123'
-    
   zh:
     languageName: "中文"   
     Title: "刘其然的部落格"
