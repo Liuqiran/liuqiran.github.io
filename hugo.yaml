@@ -68,7 +68,7 @@ languages:
           - name: 👤 About me 
             url: /en/about-me-2/
           - name: 🗂️ posts 
-            url: /en/archive/
+            url: /en/posts/
           - name: 🧭 Now
             url: /en/now/
 
