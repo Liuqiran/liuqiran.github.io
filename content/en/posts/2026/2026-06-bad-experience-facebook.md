@@ -8,7 +8,7 @@ lastmod: 2026-06-24
 cover:
   image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Facebook_photo_albums%2C_Rostov-on-Don%2C_Russia.jpg/1280px-Facebook_photo_albums%2C_Rostov-on-Don%2C_Russia.jpg"
   relative: false
-draft: false
+draft: false  
 tags: 
   - Technology   
   - Social media  
