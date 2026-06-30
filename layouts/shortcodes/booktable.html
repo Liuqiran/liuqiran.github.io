@@ -1,210 +1,280 @@
-{{ $books := site.Data.books.list }}
+{{- $books := partial "books-data.html" . -}}
+{{- $lang := .Site.Language.Lang | default "en" -}}
+{{- $labels := dict
+  "author" "Author"
+  "authorUnknown" "Unknown author"
+  "date" "Date"
+  "noRating" "No rating"
+  "rating" "Rating"
+  "sortBy" "Sort by"
+  "sortDate" "Date"
+  "sortRating" "Rating"
+  "title" "Title"
+-}}
+{{- if eq $lang "zh" -}}
+  {{- $labels = dict
+    "author" "作者"
+    "authorUnknown" "作者未知"
+    "date" "日期"
+    "noRating" "未评分"
+    "rating" "评分"
+    "sortBy" "排序"
+    "sortDate" "日期"
+    "sortRating" "评分"
+    "title" "书名"
+  -}}
+{{- else if or (eq $lang "ja") (eq $lang "jp") -}}
+  {{- $labels = dict
+    "author" "著者"
+    "authorUnknown" "著者不明"
+    "date" "日付"
+    "noRating" "未評価"
+    "rating" "評価"
+    "sortBy" "並べ替え"
+    "sortDate" "日付"
+    "sortRating" "評価"
+    "title" "タイトル"
+  -}}
+{{- end -}}
+
+{{- $events := slice -}}
+{{- range $books -}}
+  {{- $book := . -}}
+  {{- $dates := partial "book-dates.html" .date -}}
+  {{- if eq (len $dates) 0 -}}
+    {{- $dates = slice (.date | default "") -}}
+  {{- end -}}
+  {{- range $dates -}}
+    {{- $date := . -}}
+    {{- $isDate := gt (len (findRE "^[0-9]{4}(-[0-9]{2}){0,2}$" $date)) 0 -}}
+    {{- $dateSort := cond $isDate $date "" -}}
+    {{- $events = $events | append (merge $book (dict
+      "date" $date
+      "dateSort" $dateSort
+      "dateValid" (cond $isDate "1" "0")
+      "titleSort" (lower $book.title)
+      "authorSort" (lower $book.author)
+    )) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $tableID := printf "readingTable-%d" .Ordinal -}}
 
 <style>
-/* 定义亮色模式的颜色变量 */
-:root {
-  --paper-bg: #f2f0e6;
-  --paper-grid: rgba(0,0,0,0.03);
-  --border-color: #e0ded5;
-  --border-dark: #c8c6bd;
-  --text-color: #4a4a4a;
-  --text-secondary: #565656;
-  --th-bg: rgba(0, 0, 0, 0.04);
-  --th-border: rgba(0, 0, 0, 0.08);
-  --td-border: rgba(0, 0, 0, 0.06);
-  --hover-bg: rgba(255,255,255,0.5);
+.reading-table-shell {
+  margin-top: 1.5rem;
 }
 
-/* 暗色模式的颜色变量 */
-.dark {
-  --paper-bg: #2a2826;
-  --paper-grid: rgba(255,255,255,0.03);
-  --border-color: #3d3a36;
-  --border-dark: #4a4642;
-  --text-color: #e0ded5;
-  --text-secondary: #c8c6bd;
-  --th-bg: rgba(255, 255, 255, 0.04);
-  --th-border: rgba(255, 255, 255, 0.08);
-  --td-border: rgba(255, 255, 255, 0.06);
-  --hover-bg: rgba(255,255,255,0.05);
-}
-
-/* 羊皮纸效果和表格样式 */
-.reading-table-container {
-  padding: 2rem;
-  background: var(--paper-bg);
-  border-radius: 8px;
-  box-shadow: 
-    0 2px 4px rgba(0,0,0,0.1),
-    0 8px 16px rgba(0,0,0,0.1);
-  background-image: 
-    linear-gradient(var(--paper-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--paper-grid) 1px, transparent 1px);
-  background-size: 20px 20px;
-  position: relative;
-  border: 1px solid var(--border-color);
-  transition: all 0.3s ease; /* 添加过渡效果 */
-}
-
-/* 装饰性边框 */
-.reading-table-container::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border: 2px solid var(--border-color);
-  border-radius: 6px;
-  pointer-events: none;
-}
-
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: 0.95rem;
-}
-
-th {
-  background: var(--th-bg);
-  padding: 12px;
-  text-align: left;
-  border-bottom: 2px solid var(--th-border);
-  color: var(--text-color);
-}
-
-th:first-child {
-  border-top-left-radius: 6px;
-}
-
-th:last-child {
-  border-top-right-radius: 6px;
-}
-
-td {
-  padding: 12px;
-  border-bottom: 1px solid var(--td-border);
-  color: var(--text-secondary);
-}
-
-tr:hover {
-  background: var(--hover-bg);
-}
-
-.rating-cell {
-  white-space: nowrap;
-  letter-spacing: 1px;
+.reading-table-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--secondary);
   font-size: 0.9rem;
 }
 
-.star {
-  display: inline-block;
-  width: 1.2em;
-  text-align: center;
+.reading-sort-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2.2rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--entry);
+  color: var(--primary);
+  cursor: pointer;
+  font: inherit;
 }
 
-/* 装饰性角落 - 更精美的设计 */
-.corner {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  pointer-events: none;
+.reading-sort-button:hover,
+.reading-sort-button.is-active {
+  border-color: var(--primary);
 }
 
-.corner::before,
-.corner::after {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  border: 2px solid var(--border-dark);
-  border-radius: 50%;
+.reading-sort-button.is-active {
+  background: var(--primary);
+  color: var(--theme);
 }
 
-.corner::after {
-  width: 16px;
-  height: 16px;
-  top: 4px;
-  left: 4px;
-  border-color: var(--border-color);
+.reading-table-wrap {
+  overflow-x: auto;
+  border-block: 1px solid var(--border);
 }
 
-/* 角落装饰件的花纹 */
-.corner-decoration {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--border-color);
-  top: 8px;
-  left: 8px;
+.reading-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 0.95rem;
 }
 
-.corner-top-left {
-  top: -12px;
-  left: -12px;
+.reading-table th,
+.reading-table td {
+  padding: 0.75rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
 }
 
-.corner-top-right {
-  top: -12px;
-  right: -12px;
-  transform: rotate(90deg);
+.reading-table th {
+  color: var(--primary);
+  font-weight: 650;
 }
 
-.corner-bottom-left {
-  bottom: -12px;
-  left: -12px;
-  transform: rotate(-90deg);
+.reading-table tbody tr:hover {
+  background: var(--code-bg);
 }
 
-.corner-bottom-right {
-  bottom: -12px;
-  right: -12px;
-  transform: rotate(180deg);
+.reading-table-title {
+  color: var(--primary);
+  font-weight: 650;
+  line-height: 1.35;
 }
 
-/* 添加装饰性线条 */
-.corner::before {
-  background: 
-    radial-gradient(circle at center, var(--border-dark) 2px, transparent 2px),
-    radial-gradient(circle at 30% 30%, var(--border-dark) 2px, transparent 2px),
-    radial-gradient(circle at 70% 70%, var(--border-dark) 2px, transparent 2px);
+.reading-stars {
+  display: inline-flex;
+  min-width: 5.8em;
+  color: var(--primary);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .reading-table {
+    min-width: 620px;
+  }
 }
 </style>
 
-<div class="reading-table-container">
-  <div class="corner corner-top-left"><div class="corner-decoration"></div></div>
-  <div class="corner corner-top-right"><div class="corner-decoration"></div></div>
-  <div class="corner corner-bottom-left"><div class="corner-decoration"></div></div>
-  <div class="corner corner-bottom-right"><div class="corner-decoration"></div></div>
-  <div style="overflow-x: auto;">
-    <table>
+<div class="reading-table-shell" data-reading-table-shell>
+  <div class="reading-table-toolbar" aria-label="{{ index $labels "sortBy" }}">
+    <span>{{ index $labels "sortBy" }}</span>
+    <button class="reading-sort-button is-active" type="button" data-sort-key="date" data-default-dir="desc" aria-pressed="true">
+      <span>{{ index $labels "sortDate" }}</span>
+      <span class="reading-sort-arrow" aria-hidden="true">↓</span>
+    </button>
+    <button class="reading-sort-button" type="button" data-sort-key="rating" data-default-dir="desc" aria-pressed="false">
+      <span>{{ index $labels "sortRating" }}</span>
+      <span class="reading-sort-arrow" aria-hidden="true">↓</span>
+    </button>
+  </div>
+
+  <div class="reading-table-wrap">
+    <table class="reading-table" id="{{ $tableID }}">
       <thead>
         <tr>
-          <th>No.</th>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Date of completion</th>
-          <th>Rating</th>
+          <th scope="col">{{ index $labels "title" }}</th>
+          <th scope="col">{{ index $labels "author" }}</th>
+          <th scope="col">{{ index $labels "date" }}</th>
+          <th scope="col">{{ index $labels "rating" }}</th>
         </tr>
       </thead>
       <tbody>
-        {{ range $index, $book := $books }}
-          <tr>
-            <td>{{ add $index 1 }}</td>
-            <td>{{ .Title }}</td>
-            <td>{{ if .Author }}{{ .Author }}{{ else }}Unknown{{ end }}</td>
-            <td>{{ .Date }}</td>
-            <td class="rating-cell">
-              {{- $rating := .Rating | default 0 -}}
-              {{- range seq 1 5 -}}
-                <span class="star">{{- if le . $rating -}}⭐{{- else -}}☆{{- end -}}</span>
+        {{- range $events -}}
+          {{- $rating := .rating -}}
+          <tr
+            data-date-sort="{{ .dateSort }}"
+            data-date-valid="{{ .dateValid }}"
+            data-rating-sort="{{ $rating }}"
+            data-title-sort="{{ .titleSort }}"
+            data-author-sort="{{ .authorSort }}">
+            <td>
+              <span class="reading-table-title">{{ .title }}</span>
+            </td>
+            <td>{{ if .author }}{{ .author }}{{ else }}{{ index $labels "authorUnknown" }}{{ end }}</td>
+            <td>{{ .date }}</td>
+            <td>
+              {{- if gt $rating 0 -}}
+                <span class="reading-stars" aria-label="{{ $rating }} / 5">
+                  {{- range seq 1 5 -}}<span aria-hidden="true">{{ if le . $rating }}&#9733;{{ else }}&#9734;{{ end }}</span>{{- end -}}
+                </span>
+              {{- else -}}
+                <span>{{ index $labels "noRating" }}</span>
               {{- end -}}
             </td>
           </tr>
-        {{ end }}
+        {{- end -}}
       </tbody>
     </table>
   </div>
 </div>
+
+<script>
+(() => {
+  const table = document.getElementById({{ $tableID | jsonify | safeJS }});
+  if (!table) return;
+
+  const shell = table.closest('[data-reading-table-shell]');
+  const tbody = table.querySelector('tbody');
+  const buttons = shell ? Array.from(shell.querySelectorAll('[data-sort-key]')) : [];
+  const arrows = { asc: '↑', desc: '↓' };
+  let activeKey = 'date';
+  let activeDir = 'desc';
+
+  const valueFor = (row, key) => {
+    if (key === 'rating') return Number(row.dataset.ratingSort || 0);
+    return row.dataset.dateSort || '';
+  };
+
+  const compareRows = (a, b, key, dir) => {
+    if (key === 'date') {
+      const aValid = a.dataset.dateValid === '1';
+      const bValid = b.dataset.dateValid === '1';
+      if (aValid !== bValid) return aValid ? -1 : 1;
+    }
+
+    const av = valueFor(a, key);
+    const bv = valueFor(b, key);
+    let result = 0;
+
+    if (typeof av === 'number' && typeof bv === 'number') {
+      result = av - bv;
+    } else {
+      result = String(av).localeCompare(String(bv), undefined, { numeric: true });
+    }
+
+    if (result === 0 && key !== 'date') {
+      result = String(a.dataset.dateSort || '').localeCompare(String(b.dataset.dateSort || ''), undefined, { numeric: true });
+    }
+
+    if (result === 0) {
+      result = String(a.dataset.titleSort || '').localeCompare(String(b.dataset.titleSort || ''));
+    }
+
+    return dir === 'desc' ? -result : result;
+  };
+
+  const updateButtons = () => {
+    buttons.forEach((button) => {
+      const isActive = button.dataset.sortKey === activeKey;
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      const arrow = button.querySelector('.reading-sort-arrow');
+      if (arrow) arrow.textContent = isActive ? arrows[activeDir] : arrows[button.dataset.defaultDir || 'desc'];
+    });
+  };
+
+  const sortRows = (key, dir) => {
+    activeKey = key;
+    activeDir = dir;
+    Array.from(tbody.querySelectorAll('tr'))
+      .sort((a, b) => compareRows(a, b, key, dir))
+      .forEach((row) => tbody.appendChild(row));
+    updateButtons();
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const key = button.dataset.sortKey;
+      const defaultDir = button.dataset.defaultDir || 'desc';
+      const dir = activeKey === key && activeDir === defaultDir ? 'asc' : defaultDir;
+      sortRows(key, dir);
+    });
+  });
+
+  sortRows(activeKey, activeDir);
+})();
+</script>

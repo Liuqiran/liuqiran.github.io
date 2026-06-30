@@ -58,6 +58,8 @@
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        if (anchor.hasAttribute("data-native-anchor")) return;
+
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);

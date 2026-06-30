@@ -1,29 +1,37 @@
 {{- $books := slice -}}
+{{- $source := "content/shared/reading-list.md" -}}
 
-{{- if fileExists "data/books.txt" -}}
-  {{- $raw := readFile "data/books.txt" | replaceRE "\r\n" "\n" | replaceRE "\n[ \t]*\n+" "\n\n" | trim " \n\t\r" -}}
-  {{- range split $raw "\n\n" -}}
-    {{- $book := dict -}}
-    {{- range split . "\n" -}}
-      {{- $line := trim . " \t\r\n" -}}
-      {{- if findRE ":" $line -}}
-        {{- $key := lower (trim (replaceRE ":.*$" "" $line) " \t\r\n") -}}
-        {{- $value := trim (replaceRE "^[^:]+:\\s*" "" $line) " \t\r\n" -}}
-        {{- $book = merge $book (dict $key $value) -}}
+{{- if fileExists $source -}}
+  {{- $raw := readFile $source | replaceRE "\r\n" "\n" -}}
+  {{- range split $raw "\n" -}}
+    {{- $line := trim . " \t\r\n" -}}
+    {{- if gt (len (findRE "^\\|.*\\|$" $line)) 0 -}}
+      {{- $row := replace $line "\\|" "%%PIPE%%" -}}
+      {{- $cells := split $row "|" -}}
+      {{- if ge (len $cells) 5 -}}
+        {{- $title := replace (trim (index $cells 1) " \t\r\n") "%%PIPE%%" "|" -}}
+        {{- $isHeader := eq (lower $title) "title" -}}
+        {{- $isSeparator := gt (len (findRE "^:?-+:?$" $title)) 0 -}}
+        {{- if and $title (not $isHeader) (not $isSeparator) -}}
+          {{- $author := replace (trim (index $cells 2) " \t\r\n") "%%PIPE%%" "|" -}}
+          {{- $date := replace (trim (index $cells 3) " \t\r\n") "%%PIPE%%" "|" -}}
+          {{- $ratingRaw := trim (index $cells 4) " \t\r\n" -}}
+          {{- $rating := 0 -}}
+          {{- if gt (len (findRE "^[0-5]$" $ratingRaw)) 0 -}}
+            {{- $rating = int $ratingRaw -}}
+          {{- else -}}
+            {{- $rating = len (findRE "[★⭐*]" $ratingRaw) -}}
+          {{- end -}}
+          {{- $books = $books | append (dict
+            "title" $title
+            "author" $author
+            "date" $date
+            "rating" $rating
+            "ratingRaw" $ratingRaw
+          ) -}}
+        {{- end -}}
       {{- end -}}
     {{- end -}}
-    {{- if index $book "title" -}}
-      {{- $books = $books | append $book -}}
-    {{- end -}}
-  {{- end -}}
-{{- else if site.Data.books.list -}}
-  {{- range site.Data.books.list -}}
-    {{- $books = $books | append (dict
-      "title" (.Title | default "")
-      "author" (.Author | default "")
-      "date" (.Date | default "")
-      "rating" (printf "%v" (.Rating | default ""))
-    ) -}}
   {{- end -}}
 {{- end -}}
 

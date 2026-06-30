@@ -1,90 +1,460 @@
-{{/* 
-    Cumulative reading count line chart by year
-  */}}
-  
-  {{ $books := site.Data.books.list }}
-  
-  {{/* 1. Group books by year */}}
-  {{ $counts := dict }}
-  
-  {{ range $books }}
-    {{ $year := .Date | default "Unknown" | slice 0 4 }}  {{/* Get year part, e.g. "2022" from "2022-05-01" or just "2022" */}}
-    {{ if ne $year "Unk" }} {{/* Ignore invalid dates if any */}}
-      {{ $oldCount := index $counts $year | default 0 }}
-      {{ $counts = merge $counts (dict $year (add $oldCount 1)) }}
-    {{ end }}
-  {{ end }}
-  
-  {{/* 2. Sort years ascending */}}
-  {{ $years := slice }}
-  {{ range $k, $v := $counts }}
-    {{ $years = $years | append $k }}
-  {{ end }}
-  {{ $sortedYears := sort $years }}
-  
-  {{/* 3. Prepare cumulative counts */}}
-  {{ $cumulative := slice }}
-  {{ $total := 0 }}
-  {{ range $sortedYears }}
-    {{ $year := . }}
-    {{ $count := index $counts $year }}
-    {{ $total = add $total $count }}
-    {{ $cumulative = $cumulative | append dict "year" $year "total" $total }}
-  {{ end }}
-  
-  {{/* 4. Prepare JSON data arrays */}}
-  {{ $labels := slice }}
-  {{ $data := slice }}
-  
-  {{ range $cumulative }}
-    {{ $labels = $labels | append .year }}
-    {{ $data = $data | append .total }}
-  {{ end }}
-  
-  <div style="max-width: 700px; margin: auto;">
-    <canvas id="readingChart"></canvas>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script>
-    const ctx = document.getElementById('readingChart').getContext('2d');
-    const chart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: {{ $labels | jsonify }},
-        datasets: [{
-          label: 'Cumulative Books Read',
-          backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          borderColor: 'rgba(54, 162, 235, 1)',
-          data: {{ $data | jsonify }},
-          fill: true,
-          tension: 0.3,
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: true,
-            precision: 0,
-            title: {
-              display: true,
-              text: 'Books Read'
-            }
-          },
-          x: {
-            title: {
-              display: true,
-              text: 'Year'
-            }
-          }
-        },
-        plugins: {
-          legend: {
-            display: true,
-            position: 'top'
-          }
-        }
-      }
-    });
-  </script>
+{{- $books := partial "books-data.html" . -}}
+{{- $lang := .Site.Language.Lang | default "en" -}}
+{{- $labels := dict
+  "authorUnknown" "Unknown author"
+  "cumulativeCount" "Total so far"
+  "title" "Reading Progress"
+  "cumulativeDataset" "Cumulative readings"
+  "yearlyDataset" "Readings per year"
+  "empty" "No dated readings yet."
+  "yearCount" "This year"
+  "yearDetail" "Selected year"
+  "x" "Year"
+  "y" "Readings"
+-}}
+{{- if eq $lang "zh" -}}
+  {{- $labels = dict
+    "authorUnknown" "作者未知"
+    "cumulativeCount" "累计"
+    "title" "阅读进度"
+    "cumulativeDataset" "累计阅读次数"
+    "yearlyDataset" "每年阅读次数"
+    "empty" "还没有可统计的阅读日期。"
+    "yearCount" "当年"
+    "yearDetail" "所选年份"
+    "x" "年份"
+    "y" "阅读次数"
+  -}}
+{{- else if or (eq $lang "ja") (eq $lang "jp") -}}
+  {{- $labels = dict
+    "authorUnknown" "著者不明"
+    "cumulativeCount" "累計"
+    "title" "読書の推移"
+    "cumulativeDataset" "累計読書回数"
+    "yearlyDataset" "年ごとの読書回数"
+    "empty" "集計できる読了日がまだありません。"
+    "yearCount" "この年"
+    "yearDetail" "選択した年"
+    "x" "年"
+    "y" "読書回数"
+  -}}
+{{- end -}}
+
+{{- $yearCounts := dict -}}
+{{- $yearDetails := dict -}}
+{{- range $books -}}
+  {{- $book := . -}}
+  {{- range partial "book-dates.html" .date -}}
+    {{- $date := . -}}
+    {{- if gt (len (findRE "^[0-9]{4}(-[0-9]{2}){0,2}$" $date)) 0 -}}
+      {{- $year := replaceRE "^([0-9]{4}).*$" "$1" $date -}}
+      {{- $yearCounts = merge $yearCounts (dict $year (add (index $yearCounts $year | default 0) 1)) -}}
+      {{- $yearItems := index $yearDetails $year | default (slice) -}}
+      {{- $yearDetails = merge $yearDetails (dict $year ($yearItems | append (dict
+        "author" (default "" $book.author)
+        "date" $date
+        "rating" (default 0 $book.rating)
+        "title" (default "" $book.title)
+      ))) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $years := slice -}}
+{{- range $year, $_ := $yearCounts -}}
+  {{- $years = $years | append $year -}}
+{{- end -}}
+
+{{- $chartLabels := slice -}}
+{{- $yearlyData := slice -}}
+{{- $cumulativeData := slice -}}
+{{- $total := 0 -}}
+{{- range sort $years -}}
+  {{- $count := index $yearCounts . -}}
+  {{- $total = add $total $count -}}
+  {{- $chartLabels = $chartLabels | append . -}}
+  {{- $yearlyData = $yearlyData | append $count -}}
+  {{- $cumulativeData = $cumulativeData | append $total -}}
+{{- end -}}
+
+{{- $yearTotal := len $chartLabels -}}
+{{- $maxYearCount := 0 -}}
+{{- range $yearlyData -}}
+  {{- if gt . $maxYearCount -}}
+    {{- $maxYearCount = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if lt $maxYearCount 1 -}}
+  {{- $maxYearCount = 1 -}}
+{{- end -}}
+
+{{- $plotLeft := 52 -}}
+{{- $plotTop := 54 -}}
+{{- $plotRight := 52 -}}
+{{- $plotBottom := 62 -}}
+{{- $minChartWidth := 760 -}}
+{{- $minYearSlotWidth := 42 -}}
+{{- $neededChartWidth := add (add $plotLeft $plotRight) (mul $yearTotal $minYearSlotWidth) -}}
+{{- $chartWidth := cond (gt $neededChartWidth $minChartWidth) $neededChartWidth $minChartWidth -}}
+{{- $chartHeight := 360 -}}
+{{- $plotWidth := sub (sub $chartWidth $plotLeft) $plotRight -}}
+{{- $plotHeight := sub (sub $chartHeight $plotTop) $plotBottom -}}
+{{- $plotEnd := sub $chartWidth $plotRight -}}
+{{- $baseline := add $plotTop $plotHeight -}}
+{{- $maxValue := $total -}}
+{{- if lt $maxValue 1 -}}
+  {{- $maxValue = 1 -}}
+{{- end -}}
+{{- $slotWidth := 0.0 -}}
+{{- if gt $yearTotal 0 -}}
+  {{- $slotWidth = div (float $plotWidth) (float $yearTotal) -}}
+{{- end -}}
+{{- $linePoints := slice -}}
+{{- range $index, $year := $chartLabels -}}
+  {{- $cumulative := index $cumulativeData $index -}}
+  {{- $slotX := add $plotLeft (mul (float $index) $slotWidth) -}}
+  {{- $x := add $slotX (div $slotWidth 2.0) -}}
+  {{- $y := sub $baseline (mul (div (float $cumulative) (float $maxValue)) $plotHeight) -}}
+  {{- $linePoints = $linePoints | append (printf "%.2f,%.2f" $x $y) -}}
+{{- end -}}
+{{- $linePath := delimit $linePoints " " -}}
+{{- $latestYear := "" -}}
+{{- if gt $yearTotal 0 -}}
+  {{- $latestYear = index $chartLabels (sub $yearTotal 1) -}}
+{{- end -}}
+
+<style>
+.reading-chart {
+  margin: 1.5rem 0 2.5rem;
+  padding: 1rem 0 1.25rem;
+  border-block: 1px solid var(--border);
+}
+
+.reading-chart-title {
+  margin: 0 0 0.9rem;
+  color: var(--primary);
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.reading-chart-figure {
+  margin: 0;
+}
+
+.reading-chart-scroll {
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.reading-chart-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.reading-chart-grid {
+  stroke: var(--primary);
+  stroke-opacity: 0.14;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.reading-chart-axis {
+  stroke: var(--secondary);
+  stroke-opacity: 0.5;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.reading-chart-label,
+.reading-chart-tick {
+  fill: var(--secondary);
+  font-size: 12px;
+}
+
+.reading-chart-tick-yearly {
+  fill: var(--primary);
+}
+
+.reading-chart-legend {
+  fill: var(--secondary);
+  font-size: 12px;
+}
+
+.reading-chart-bar {
+  fill: var(--secondary);
+  fill-opacity: 0.34;
+  stroke: var(--secondary);
+  stroke-opacity: 0.8;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.reading-chart-line {
+  fill: none;
+  stroke: var(--primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.reading-chart-point {
+  fill: var(--theme);
+  stroke: var(--primary);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.reading-chart-hit-area {
+  fill: transparent;
+  pointer-events: all;
+}
+
+.reading-chart-year-link {
+  color: var(--primary);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.reading-chart-year-link:hover .reading-chart-bar,
+.reading-chart-year-link:focus .reading-chart-bar {
+  fill-opacity: 0.55;
+  stroke-opacity: 1;
+}
+
+.reading-chart-year-link:hover .reading-chart-label,
+.reading-chart-year-link:focus .reading-chart-label {
+  fill: var(--primary);
+}
+
+.reading-chart-year-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.reading-chart-year-links a {
+  min-height: 1.9rem;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--primary);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.reading-chart-year-links a:hover,
+.reading-chart-year-links a:focus {
+  border-color: var(--primary);
+  background: var(--code-bg);
+}
+
+.reading-year-panels {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.reading-year-panel {
+  display: none;
+  scroll-margin-top: 5rem;
+}
+
+.reading-year-panel.is-latest {
+  display: block;
+}
+
+.reading-year-panels:has(.reading-year-panel:target) .reading-year-panel {
+  display: none;
+}
+
+.reading-year-panels:has(.reading-year-panel:target) .reading-year-panel:target {
+  display: block;
+}
+
+.reading-year-panel h3 {
+  margin: 0 0 0.55rem;
+  color: var(--primary);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.reading-chart-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.75rem;
+}
+
+.reading-chart-stat {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.8rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--code-bg);
+  color: var(--primary);
+  font-size: 0.9rem;
+}
+
+.reading-chart-books {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.reading-chart-books li + li {
+  margin-top: 0.45rem;
+}
+
+.reading-chart-book-title {
+  color: var(--primary);
+  font-weight: 650;
+}
+
+.reading-chart-book-meta {
+  display: block;
+  margin-top: 0.1rem;
+  color: var(--secondary);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.reading-chart-empty {
+  margin: 0;
+  color: var(--secondary);
+}
+
+body.dark .reading-chart-grid,
+.dark .reading-chart-grid {
+  stroke-opacity: 0.24;
+}
+
+body.dark .reading-chart-bar,
+.dark .reading-chart-bar {
+  fill-opacity: 0.46;
+  stroke-opacity: 1;
+}
+
+body.dark .reading-chart-axis,
+.dark .reading-chart-axis {
+  stroke-opacity: 0.7;
+}
+
+@supports not selector(:has(*)) {
+  .reading-year-panel {
+    display: block;
+  }
+
+  .reading-year-panel + .reading-year-panel {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+  }
+}
+</style>
+
+<section class="reading-chart">
+  <h2 class="reading-chart-title">{{ index $labels "title" }}</h2>
+  {{- if gt $yearTotal 0 -}}
+    {{- $chartTitleID := printf "readingChartTitle-%d" .Ordinal -}}
+    {{- $chartDescID := printf "readingChartDesc-%d" .Ordinal -}}
+    <figure class="reading-chart-figure">
+      <div class="reading-chart-scroll">
+        <svg class="reading-chart-svg" style="min-width: {{ $chartWidth }}px;" viewBox="0 0 {{ $chartWidth }} {{ $chartHeight }}" role="img" aria-labelledby="{{ $chartTitleID }} {{ $chartDescID }}">
+          <title id="{{ $chartTitleID }}">{{ index $labels "title" }}</title>
+          <desc id="{{ $chartDescID }}">{{ index $labels "yearlyDataset" }}; {{ index $labels "cumulativeDataset" }}.</desc>
+
+        <g aria-hidden="true">
+          <rect x="{{ $plotLeft }}" y="{{ $plotTop }}" width="{{ $plotWidth }}" height="{{ $plotHeight }}" fill="none"></rect>
+          {{- $tickSteps := 4 -}}
+          {{- range seq 0 $tickSteps -}}
+            {{- $tickValue := div (mul (float $maxValue) (float .)) (float $tickSteps) -}}
+            {{- $yearlyTickValue := div (mul (float $maxYearCount) (float .)) (float $tickSteps) -}}
+            {{- $tickY := sub $baseline (mul (div $tickValue (float $maxValue)) $plotHeight) -}}
+            <line class="reading-chart-grid" x1="{{ $plotLeft }}" y1="{{ printf "%.2f" $tickY }}" x2="{{ $plotEnd }}" y2="{{ printf "%.2f" $tickY }}"></line>
+            <text class="reading-chart-tick" x="{{ sub $plotLeft 8 }}" y="{{ printf "%.2f" (add $tickY 4) }}" text-anchor="end">{{ printf "%.0f" $tickValue }}</text>
+            <text class="reading-chart-tick reading-chart-tick-yearly" x="{{ add $plotEnd 8 }}" y="{{ printf "%.2f" (add $tickY 4) }}" text-anchor="start">{{ printf "%.0f" $yearlyTickValue }}</text>
+          {{- end -}}
+          <line class="reading-chart-axis" x1="{{ $plotLeft }}" y1="{{ $baseline }}" x2="{{ $plotEnd }}" y2="{{ $baseline }}"></line>
+          <line class="reading-chart-axis" x1="{{ $plotLeft }}" y1="{{ $plotTop }}" x2="{{ $plotLeft }}" y2="{{ $baseline }}"></line>
+          <line class="reading-chart-axis" x1="{{ $plotEnd }}" y1="{{ $plotTop }}" x2="{{ $plotEnd }}" y2="{{ $baseline }}"></line>
+
+          <g transform="translate({{ $plotLeft }}, 22)">
+            <rect class="reading-chart-bar" x="0" y="-10" width="18" height="10" rx="2"></rect>
+            <text class="reading-chart-legend" x="26" y="0">{{ index $labels "yearlyDataset" }}</text>
+            <line class="reading-chart-line" x1="190" y1="-5" x2="220" y2="-5"></line>
+            <circle class="reading-chart-point" cx="205" cy="-5" r="3"></circle>
+            <text class="reading-chart-legend" x="230" y="0">{{ index $labels "cumulativeDataset" }}</text>
+          </g>
+        </g>
+
+        {{- range $index, $year := $chartLabels -}}
+          {{- $yearCount := index $yearCounts $year -}}
+          {{- $cumulativeCount := index $cumulativeData $index -}}
+          {{- $slotX := add $plotLeft (mul (float $index) $slotWidth) -}}
+          {{- $x := add $slotX (div $slotWidth 2.0) -}}
+          {{- $barWidth := div $slotWidth 2.0 -}}
+          {{- $barWidth = cond (gt $barWidth 34.0) 34.0 $barWidth -}}
+          {{- $barWidth = cond (lt $barWidth 8.0) 8.0 $barWidth -}}
+          {{- $barHeight := mul (div (float $yearCount) (float $maxYearCount)) $plotHeight -}}
+          {{- $barX := sub $x (div $barWidth 2.0) -}}
+          {{- $barY := sub $baseline $barHeight -}}
+          {{- $pointY := sub $baseline (mul (div (float $cumulativeCount) (float $maxValue)) $plotHeight) -}}
+          {{- $panelID := printf "reading-year-%d-%s" $.Ordinal $year -}}
+          <a class="reading-chart-year-link" href="#{{ $panelID }}" data-native-anchor="true" aria-label="{{ $year }}: {{ index $labels "yearCount" }} {{ $yearCount }}, {{ index $labels "cumulativeCount" }} {{ $cumulativeCount }}">
+            <title>{{ $year }}: {{ index $labels "yearCount" }} {{ $yearCount }}, {{ index $labels "cumulativeCount" }} {{ $cumulativeCount }}</title>
+            <rect class="reading-chart-hit-area" x="{{ printf "%.2f" $slotX }}" y="{{ $plotTop }}" width="{{ printf "%.2f" $slotWidth }}" height="{{ add $plotHeight 42 }}"></rect>
+            <rect class="reading-chart-bar" x="{{ printf "%.2f" $barX }}" y="{{ printf "%.2f" $barY }}" width="{{ printf "%.2f" $barWidth }}" height="{{ printf "%.2f" $barHeight }}" rx="4"></rect>
+            <circle class="reading-chart-point" cx="{{ printf "%.2f" $x }}" cy="{{ printf "%.2f" $pointY }}" r="4"></circle>
+            <text class="reading-chart-label" x="{{ printf "%.2f" $x }}" y="{{ add $baseline 27 }}" text-anchor="middle">{{ $year }}</text>
+          </a>
+        {{- end -}}
+
+        <polyline class="reading-chart-line" points="{{ $linePath }}"></polyline>
+        </svg>
+      </div>
+
+      <div class="reading-chart-year-links" aria-label="{{ index $labels "yearDetail" }}">
+        {{- range $chartLabels -}}
+          {{- $panelID := printf "reading-year-%d-%s" $.Ordinal . -}}
+          <a href="#{{ $panelID }}" data-native-anchor="true">{{ . }}</a>
+        {{- end -}}
+      </div>
+    </figure>
+
+    <div class="reading-year-panels">
+      {{- range $index, $year := $chartLabels -}}
+        {{- $yearCount := index $yearCounts $year -}}
+        {{- $cumulativeCount := index $cumulativeData $index -}}
+        {{- $panelID := printf "reading-year-%d-%s" $.Ordinal $year -}}
+        <section class="reading-year-panel{{ if eq $year $latestYear }} is-latest{{ end }}" id="{{ $panelID }}" tabindex="-1">
+          <h3>{{ index $labels "yearDetail" }}: {{ $year }}</h3>
+          <div class="reading-chart-stats">
+            <span class="reading-chart-stat">{{ index $labels "yearCount" }}: {{ $yearCount }}</span>
+            <span class="reading-chart-stat">{{ index $labels "cumulativeCount" }}: {{ $cumulativeCount }}</span>
+          </div>
+          <ol class="reading-chart-books">
+            {{- range sort (index $yearDetails $year) "date" -}}
+              {{- $rating := int (.rating | default 0) -}}
+              <li>
+                <span class="reading-chart-book-title">{{ .title }}</span>
+                <span class="reading-chart-book-meta">
+                  {{- .date -}}
+                  {{- if .author }} · {{ .author }}{{ else }} · {{ index $labels "authorUnknown" }}{{ end -}}
+                  {{- if gt $rating 0 }} · {{ range seq 1 5 }}{{ if le . $rating }}&#9733;{{ else }}&#9734;{{ end }}{{ end }}{{ end -}}
+                </span>
+              </li>
+            {{- end -}}
+          </ol>
+        </section>
+      {{- end -}}
+    </div>
+  {{- else -}}
+    <p class="reading-chart-empty">{{ index $labels "empty" }}</p>
+  {{- end -}}
+</section>

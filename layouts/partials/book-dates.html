@@ -1,0 +1,15 @@
+{{- $dates := slice -}}
+{{- $value := printf "%s" (. | default "") -}}
+{{- $value = trim $value " \t\r\n" -}}
+{{- $value = replaceRE "(?i)<br\\s*/?>" " " $value -}}
+
+{{- $dateMatches := findRE "[0-9]{4}(-[0-9]{2}){0,2}" $value -}}
+{{- if gt (len $dateMatches) 0 -}}
+  {{- range $dateMatches -}}
+    {{- $dates = $dates | append . -}}
+  {{- end -}}
+{{- else if $value -}}
+  {{- $dates = $dates | append $value -}}
+{{- end -}}
+
+{{- return $dates -}}
