@@ -29,22 +29,7 @@ showToc: false
 - [ ] ~~Add feature of Archive page ( Can find posts  by year/month)~~ 
 
 
-# ✒️ Moments      
-
-<details open>
-<summary>2026</summary>   
-
-
-
-## 2026-05-29   
-
-Updated my now page. Deleted other fields.     
-Very tired now... I'm thinking of using plain text as my to-do list.      
-
-Now my pages and post are the same with my diaries. They are all using plain texts now.    
-
-
-</details>    
+# ✒️ [Moments](/en/tags/journal/)      
 
 
 

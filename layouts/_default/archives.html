@@ -82,9 +82,22 @@
   {{- if ne .Key "0001" -}}
     <div class="archive-year">
       {{- $year := replace .Key "0001" "" -}}
+      {{- $yearScratch := newScratch -}}
+      {{- $yearScratch.Set "total_original" 0 -}}
+      {{- range .Pages -}}
+        {{- $n := partial "word_count.html" . -}}
+        {{- $isAI := partial "is_ai_assisted.html" . -}}
+        {{- $isMT := partial "is_machine_translated.html" . -}}
+        {{- $isQiran := partial "is_qiran_author.html" . -}}
+        {{- if and $isQiran (not $isAI) (not $isMT) -}}
+          {{- $yearScratch.Add "total_original" $n -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $yearTotalOriginal := $yearScratch.Get "total_original" -}}
+      {{- $displayYearTotalOriginal := cond $isCJK (printf "%d" $yearTotalOriginal) (printf "%.2fK" (div (float $yearTotalOriginal) 1000)) -}}
       <h2 class="archive-year-header" id="{{ $year }}">
         <a class="archive-header-link" href="#{{ $year }}">{{ $year }}</a>
-        <sup class="archive-count"> {{ len .Pages }}</sup>
+        <sup class="archive-count"> {{ len .Pages }} · {{ $displayYearTotalOriginal }} {{ $unit }}</sup>
       </h2>
 
       {{- range (.Pages.ByPublishDate.Reverse).GroupByDate "January" -}}
