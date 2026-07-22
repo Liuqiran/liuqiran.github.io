@@ -9,7 +9,7 @@ tags:
   - "Dream"   
   - "Life"   
 cover:
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Depression-2912424_1280.jpg/1280px-Depression-2912424_1280.jpg"
+  image: "https://commons.wikimedia.org/wiki/File:Depression-2912424_1280.jpg"
   relative: false
 ---
 
