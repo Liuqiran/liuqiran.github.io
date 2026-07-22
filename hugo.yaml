@@ -206,6 +206,7 @@ params:
   ShowPostNavLinks: true  
   ShowDraft: true
   ShowFullTextinRSS: false 
+  followItSubscribeUrl: ""
   mainSections: ["post","posts","zh","en","ja"]
   ShowWordCount: true
   comments: true  # 这里打开评论

@@ -282,3 +282,56 @@ html[lang="en-US"] .profile_inner > span {
   object-fit: cover;
 }
 
+.newsletter-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0 0.75rem;
+  color: var(--secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.newsletter-inline-text {
+  display: inline-block;
+}
+
+.newsletter-inline-button,
+.newsletter-inline input[type="email"] {
+  min-height: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font: inherit;
+}
+
+.newsletter-inline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75rem;
+  background: var(--code-bg);
+  color: var(--primary);
+  box-shadow: none;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.newsletter-inline input[type="email"] {
+  flex: 1 1 12rem;
+  max-width: 100%;
+  padding: 0 0.55rem;
+  background: var(--entry);
+  color: var(--primary);
+}
+
+.newsletter-inline-button:hover {
+  opacity: 0.85;
+}
+
+.newsletter-inline-button:focus-visible,
+.newsletter-inline input[type="email"]:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+

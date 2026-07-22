@@ -1,0 +1,12 @@
+{{- $isEnglishPost := and (eq .Site.Language.Lang "en") (eq .Section "posts") (eq .Kind "page") -}}
+{{- if $isEnglishPost -}}
+  {{- $subscribeUrl := .Site.Params.followItSubscribeUrl | default "" -}}
+  {{- if ne $subscribeUrl "" -}}
+    <div class="newsletter-inline" aria-label="Email subscription">
+      <span class="newsletter-inline-text">Get new posts by email.</span>
+      <a class="newsletter-inline-button" href="{{ $subscribeUrl | safeURL }}" target="_blank" rel="noopener noreferrer">Subscribe</a>
+    </div>
+  {{- else -}}
+    <!--! Newsletter subscribe hidden: set params.followItSubscribeUrl in hugo.yaml to the follow.it subscription page URL. -->
+  {{- end -}}
+{{- end -}}
