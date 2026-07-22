@@ -11,7 +11,7 @@ cover:
   relative: false
 ---
 
-原文链接： https://springwood.me/blog-rebuilt/  
+[原文链接](https://springwood.me/blog-rebuilt/)  
 
 > 某个博客重建了，导致 RSS 里所有文章都被当成新文章推送了。
 

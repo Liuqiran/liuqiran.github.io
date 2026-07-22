@@ -13,7 +13,7 @@ cover:
   relative: false
 ---
 
-原文链接：https://jefftay.com/now#20260701  
+[原文链接](https://jefftay.com/now#20260701) 
 
 你之前在 WordPress 原站点的内容都不管了吗？  
 如果是我的话会有强迫症必须全部迁移 hhh    
