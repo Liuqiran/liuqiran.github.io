@@ -3,18 +3,26 @@ title: "Apologize"
 slug: "2026-apologize"
 date: 2026-07-22
 lastmod: 2026-07-22
-draft: true
+draft: false
 tags:
   - "Journal"
   - "Dream"   
   - "Life"   
 cover:
-  image: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Old_Man_with_his_Head_in_his_Hands_%28At_Eternity%27s_Gate%29.jpg"
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Depression-2912424_1280.jpg/1280px-Depression-2912424_1280.jpg"
   relative: false
 ---
 
-Before I leave this land, I had a bad dream again.    
+Before I leave this land, I had a bad dream again:      
 
-In this dream, I was sitting in a classroom of a military base. There is a teacher who is forcing me to learn Hebrew. I escaped away but I suddenly arrived in a school (maybe it's my high school)   
+- In this dream, I was sitting in a classroom of a military base. There is a teacher who is forcing me to learn Hebrew. I escaped away but I suddenly arrived in a school (maybe it's my high school)   
 
-I met Y, 
+- I met Y. He said I was wearing his backpack. When I looked back, I realized that it was true.   
+
+I woke up.      
+
+I don't need to bear this kind of heavy burden. Maybe Hebrew is the image of the life in the church, or it just means my burden of learning a new language.     
+
+I felt really sorrowful. I realized that I hurted a lot of people. Just like Y hurted me.     
+
+I wanted to apologize.     
