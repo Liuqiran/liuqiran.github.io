@@ -5,7 +5,8 @@ date: 2026-07-22
 lastmod: 2026-07-22
 draft: false
 tags:
-  - "记录"
+  - "记录"  
+  - "建站"   
 cover:
   image: ""
   relative: false
