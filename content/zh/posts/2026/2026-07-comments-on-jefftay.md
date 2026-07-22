@@ -7,8 +7,7 @@ draft: false
 tags:
   - "记录"
   - "建站"     
-  - "软件"   
-  - "Anki"  
+  - "软件"    
 cover:
   image: ""
   relative: false
@@ -16,7 +15,7 @@ cover:
 
 原文链接：https://jefftay.com/now#20260701  
 
-你之前在 Wordpress 原站点的内容都不管了吗？  
+你之前在 WordPress 原站点的内容都不管了吗？  
 如果是我的话会有强迫症必须全部迁移 hhh    
 
 关于 Now 页面，我觉得如果不能反馈现在状态的话那就和日志没太多差别了。所以我干脆直接归档到 Journal 了。  
