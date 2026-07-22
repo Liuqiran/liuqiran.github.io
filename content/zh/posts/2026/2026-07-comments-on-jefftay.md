@@ -3,7 +3,7 @@ title: "2026-07 陈仓颉站点上的留言"
 slug: "2026-07-comments-on-jefftay"
 date: 2026-07-22
 lastmod: 2026-07-22
-draft: true
+draft: false
 tags:
   - "记录"
   - "建站"     
