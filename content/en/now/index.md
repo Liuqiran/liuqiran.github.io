@@ -42,7 +42,7 @@ ai_assisted: true
 
 Building and maintaining a stable habit system is the most important practical foundation of my life. It is how I try to turn my values, intentions, and long-term goals into repeated daily action. This chart shows how consistently I have followed the habits that are currently active in my tracking system.
 
-![Full history of my weighted habit-strength score](/images/habit-strength-history.svg)
+![Full history of my weighted habit-strength score](./habit-strength-history.svg)
 
 The rightmost part of the chart represents my most recent habit strength. A rising line generally means that I have been following my current habits more consistently. A falling line means that my routines have recently become less stable.
 
