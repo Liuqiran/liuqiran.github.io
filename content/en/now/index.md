@@ -40,7 +40,14 @@ ai_assisted: true
 
 *Updated July 17 2026.*
 
-Building and maintaining a stable habit system is the most important practical foundation of my life. It is how I try to turn my values, intentions, and long-term goals into repeated daily action. This chart shows how consistently I have followed the habits that are currently active in my tracking system.
+Building and maintaining a stable habit system is the most important practical foundation of my life. It is how I try to turn my values, intentions, and long-term goals into repeated action.   
+
+I currently track **37** active habits. They range from small daily maintenance routines to long-term practices that shape how I live. Some of the habits that matter most to me include:
+
+- Maintaining a consistent sleep schedule;
+- Reading and studying regularly;
+- Journaling;
+- Exercising;
 
 ![Full history of my weighted habit-strength score](./habit-strength-history.svg)
 
