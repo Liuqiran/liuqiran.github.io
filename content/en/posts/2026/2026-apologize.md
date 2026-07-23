@@ -2,7 +2,7 @@
 title: "Apologize"
 slug: "2026-apologize"
 date: 2026-07-22
-lastmod: 2026-07-22
+lastmod: 2026-07-23
 draft: false
 tags:
   - "Journal"
@@ -17,7 +17,7 @@ Before I leave this land, I had a bad dream again:
 
 - In this dream, I was sitting in a classroom of a military base. There is a teacher who is forcing me to learn Hebrew. I escaped away but I suddenly arrived in a school (maybe it's my high school)   
 
-- I met Y. He said I was wearing his backpack. When I looked back, I realized that it was true.   
+- I met Y. He said that I was wearing his backpack. When I looked back, I realized that it was true.   
 
 I woke up.      
 

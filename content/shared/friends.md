@@ -1,5 +1,5 @@
 * [Dylan Wu](https://blog.dylanwu.space/)
-* [陈仓颉](https://imzm.im)
+* [陈仓颉](https://jefftay.com/)
 * [YIR](http://yir.me)
 * ~~[FSpark](**fspark.me**)~~ 
 * [沉舟侧畔](https://springwood.me/)
