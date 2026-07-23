@@ -18,7 +18,9 @@ ai_assisted: true
 # 🖥️ Plans   
 
 - [x] **Digitalize日记②** 
-- [ ] Digitalize日记③ 
+- [ ] Digitalize 日记③ 
+- [ ] Digitalize 日记④  
+- [ ] Create default images for posts 
 - [x] Fix Hugo backend comment URLs
 - [x] Optimize word count statistics
 - [x] Add email subscription feature   
