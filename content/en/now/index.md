@@ -36,15 +36,17 @@ ai_assisted: true
 
 # 🌳 Building Habits
 
-## Habit Strength Over Time
+## How My Current Habit System Is Going
+
+*Updated July 17 2026.*
+
+Building and maintaining a stable habit system is the most important practical foundation of my life. It is how I try to turn my values, intentions, and long-term goals into repeated daily action. This chart shows how consistently I have followed the habits that are currently active in my tracking system.
 
 ![Full history of my weighted habit-strength score](/images/habit-strength-history.svg)
 
-The chart shows how consistently I have maintained the habits that are currently active in my tracking system. The rightmost point represents my most recent habit strength.
+The rightmost part of the chart represents my most recent habit strength. A rising line generally means that I have been following my current habits more consistently. A falling line means that my routines have recently become less stable.
 
-A rising line generally means that I have been following these habits more consistently. A falling line means that my routines have recently become less stable.
-
-This is not a score of my happiness, success, morality, productivity, or value as a person. It measures only one part of my life:
+This is not a score of my happiness, success, morality, productivity, or value as a person. It measures the consistency of the system through which I try to live according to what matters most to me:
 
 > How consistently am I practising the habits I currently intend to maintain?
 
@@ -60,6 +62,5 @@ The historical line is calculated from the habits that are active in my current 
 Because I may add, archive, reorder, or redefine habits over time, this score is best understood as an evolving personal indicator rather than a fixed scientific measurement.
 
 </details>
-
 
 
