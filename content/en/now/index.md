@@ -17,7 +17,7 @@ ai_assisted: true
 
 # 🖥️ Plans   
 
-- [x] **Digitalize日记②** 
+- [ ] Fix the URL of Waline system 
 - [ ] Digitalize 日记③ 
 - [ ] Digitalize 日记④  
 - [ ] Create default images for posts 
