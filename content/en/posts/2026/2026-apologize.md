@@ -21,7 +21,7 @@ Before I leave this land, I had a bad dream again:
 
 I woke up.      
 
-I don't need to bear this kind of heavy burden. Maybe Hebrew is the image of the life in the church, or it just means my burden of learning a new language.     
+I don't need to bear this kind of heavy burden. Maybe Hebrew is the image of the life in the church, or it just means my burden of learning a new language. A lot of people said that learning a new language is really not practical nowdays in this age, just like the skill I had practiced for a long time.      
 
 I felt really sorrowful. I realized that I hurted a lot of people. Just like Y hurted me.     
 

@@ -1,0 +1,33 @@
+{{ $item := .item }}
+{{ $icon := default "heart" (or $item.icon $item.Icon) }}
+{{ $dateValue := printf "%v" $item.date }}
+{{ $dateLabel := $dateValue }}
+{{ with $item.dateText }}
+  {{ $dateLabel = . }}
+{{ else }}
+  {{ with time.AsTime $dateValue }}{{ $dateLabel = .Format "January 2, 2006" }}{{ end }}
+{{ end }}
+{{ $textPlain := plainify (default "" $item.text) }}
+{{ $anchor := printf "memory-%s-%s" $dateValue ($textPlain | urlize) }}
+<article class="timeline-item" id="{{ $anchor }}" data-date="{{ $dateValue }}">
+  <div class="timeline-dot" aria-hidden="true">{{ if eq $icon "sparkle" }}&#10023;{{ else if eq $icon "heart" }}&#9825;{{ else }}{{ $icon }}{{ end }}</div>
+  <div class="timeline-date-wrap">
+    <div class="timeline-date">{{ $dateLabel }}</div>
+    <div class="timeline-since"></div>
+  </div>
+  <div class="timeline-content">
+    <div class="timeline-event">{{ $item.text | markdownify }}</div>
+    {{ if or $item.image $item.link $item.youtube }}
+      <div class="timeline-media">
+        {{ with $item.image }}<img src="{{ . | safeURL }}" alt="" loading="lazy" onerror="this.remove()">{{ end }}
+        {{ with $item.youtube }}
+          {{ $youtubeID := replaceRE "^.*(youtu\\.be/|v=|embed/|shorts/)([A-Za-z0-9_-]{11}).*$" "$2" . }}
+          <div class="timeline-video">
+            <iframe src="{{ printf "https://www.youtube-nocookie.com/embed/%s" $youtubeID | safeURL }}" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        {{ end }}
+        {{ with $item.link }}<a class="timeline-link" href="{{ . | safeURL }}">{{ default "Open related link" $item.linkText }}</a>{{ end }}
+      </div>
+    {{ end }}
+  </div>
+</article>
