@@ -1,8 +1,8 @@
 ---
 title: "转载-教育挪威限制小学生使用 AI"
-translationKey: "major-choice"
-slug: "major-choice"
-author: Qiran
+translationKey: "norway-ai-education"
+slug: "norway-ai-education"
+author: Solidot
 date: 2026-07-11
 lastmod: 2026-07-11   
 cover:
