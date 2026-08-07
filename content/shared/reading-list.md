@@ -54,5 +54,5 @@ Each valid date is counted separately in the reading chart.
 | The Little Prince | Antoine de Saint-Exupéry | 2025-12-31 | 3 |
 | Tadoku Graded Reader LVL 0 (50) (848pg) |  | 2026-05-03 | 5 |
 | よむよむ文庫 Lv0 |  | 2026-05-25 | 5 |
-| よむよむ文庫 Lv7 |  | 2026-07| 5 |
+| よむよむ文庫 Lv1 |  | 2026-07| 5 |
 | Beyond Happiness | Jenn Lim | Reading |  |
