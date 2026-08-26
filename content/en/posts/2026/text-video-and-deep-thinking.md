@@ -1,5 +1,5 @@
 ---
-title: "Text, Video, and Deep Thinking"
+title: "Why Video Is Shallower — and Why Social Media Is Worth Avoiding"
 translationKey: "2026-08-text-video-and-deep-thinking"
 slug: "text-video-and-deep-thinking"
 author: ChatGPT
@@ -14,57 +14,95 @@ tags:
   - AI
 ---
 
-Video and text are not simply two different ways of delivering the same information. Their forms encourage us to use attention differently.
+Video and text are not simply two different containers for the same information. They encourage different mental habits. **Compared with serious reading, video tends to be a shallower medium for processing complex ideas, and short-form social video pushes that tendency much further.**
 
-Social media can contain genuinely useful things: firsthand experiences, breaking news, new ideas, and information that has not yet reached books or traditional media. The problem is not that social media or video is automatically bad. The more important question is **how the medium asks us to process information**.
+Social media can still contain useful things: firsthand reports, breaking news, unusual experiences, and information that has not yet reached books or traditional media. But usefulness does not make the medium harmless. The central problem is that the structure of video feeds encourages us to consume more information while processing less of it deeply.
 
-## Text lets the reader control time
+## Text makes you do more of the thinking
 
-Reading is naturally self-paced. You can stop after one sentence, think about it, reread it, compare it with an earlier paragraph, or slow down when an idea becomes difficult. The information stays in front of you while you decide what to do with it.
+Reading is naturally self-paced. You can stop after one sentence, think about it, reread it, compare it with an earlier paragraph, or slow down when an idea becomes difficult. The words remain in front of you while you decide what to do with them.
 
-This makes long-form text especially suitable for complex arguments, abstraction, comparison, reflection, and building connections between ideas.
+Text therefore makes the reader actively reconstruct meaning. You have to follow an argument, remember earlier claims, imagine what is being described, notice contradictions, and connect one paragraph to another. Long-form reading is especially well suited to abstraction, reasoning, reflection, inference, and sustained attention.
 
-## Video usually controls more of the flow
+A book does not keep moving unless you move through it.
 
-Video is time-based. Images and words keep arriving in a sequence. Of course, we can pause, rewind, or change the speed, but doing so requires us to interrupt the medium's default flow.
+## Video is easier to consume — and easier to process shallowly
 
-Video has real strengths. It is excellent for demonstrations, movement, spatial information, emotional context, and showing something that would take many paragraphs to describe. But because it can be very easy to keep watching, it can also encourage continuous consumption rather than deliberate stopping and reflection.
+Video is time-based. Images, speech, music, captions, cuts, and emotional cues keep arriving in a sequence chosen by someone else. You can pause or rewind, but the natural mode is to keep watching.
 
-A useful way to put the difference is:
+That makes video extremely effective for demonstration, movement, spatial information, and showing concrete events. But those strengths also make it easier to remain a passive recipient. Much of the interpretation, visualization, pacing, emphasis, and emotional framing has already been prepared for you.
 
-- **Text tends to encourage:** self-pacing, rereading, comparison, abstraction, active interpretation, and sustained attention.
-- **Video tends to encourage:** continuous flow, demonstration, immediate perception, audiovisual context, and faster consumption.
+In practice, this means video often makes information **feel easier to understand** while giving the viewer fewer natural pauses to examine it critically. For complex arguments and abstract ideas, that makes shallow processing more likely.
 
-## Why short-form social video is different
+A useful contrast is:
 
-The contrast becomes stronger with TikTok, Reels, Shorts, and similar feeds. The experience is built around rapid switching, novelty, algorithmic recommendations, emotional stimulation, and the expectation that another clip is only one swipe away.
+- **Text:** reader-paced, rereadable, easy to compare, easier to stop, better for abstraction and sustained argument.
+- **Video:** medium-paced, continuously moving, emotionally richer, easier to consume passively, and more likely to encourage fast rather than reflective processing.
 
-That environment rewards quick recognition and reaction. It gives us fewer natural reasons to remain with one difficult idea for several minutes.
+This does not mean every video is shallow or every book is deep. A serious documentary can demand thought, and a bad book can be empty. But **as a default medium for complex thought, text gives the reader better conditions for depth.**
 
-## This is where *The Shallows* matters
+## Short video makes the problem much worse
 
-In *The Shallows*, Nicholas Carr's broader argument is not simply that the internet is bad and books are good. A more useful idea is that **the form of a medium can influence the kind of attention we repeatedly practice**.
+TikTok, Reels, Shorts, and similar feeds are not simply "video." They combine video with rapid novelty, algorithmic recommendation, emotional stimulation, social feedback, and almost frictionless switching.
 
-A long book repeatedly asks us to stay with one line of thought, remember what came before, connect ideas, and tolerate moments that are not immediately stimulating. A short-video feed repeatedly asks us to watch, react, swipe, and move to something new.
+A difficult paragraph asks you to stay. A short-video feed constantly gives you permission to leave.
 
-> The strongest distinction is not “video is shallow and text is deep.” It is that different media make different mental habits easier.
+If something becomes boring, uncomfortable, complicated, or slow, the next stimulus is one swipe away. Over time, this rewards quick recognition, quick emotion, and quick judgment rather than patience with difficult ideas.
 
-## So books still matter
+The result is a style of information consumption that is broad but thin: **many impressions, few deeply processed ideas.**
 
-Books and long-form writing are valuable not because every book is profound, but because the medium creates unusually good conditions for deep reading. The reader controls the pace. Difficult ideas can remain on the page. Arguments can unfold over many pages without a new stimulus arriving every few seconds.
+## Infinite scroll is not neutral
 
-That kind of reading gives more space for inference, reflection, disagreement, imagination, and the slow construction of a mental model.
+Infinite scroll removes a natural stopping point. There is no last page, no end of an episode, and often no conscious moment when you decide to continue. The next item simply appears.
 
-## A balanced conclusion
+When this is combined with personalized recommendation and unpredictable novelty, it can become highly habit-forming and encourage compulsive use. You do not need to decide, "I want to watch twenty more videos." You only need to make the tiny decision to watch one more — again and again.
 
-Video is better at **showing**. Text is often better at giving us room to **stop, examine, and think**.
+That is one reason short-form social media can consume far more time than people intended. The design makes continuing easier than stopping.
 
-So the goal does not have to be avoiding social media. A better approach is to use it intentionally: take its firsthand information, useful discoveries, and timely news, but actively filter the rest. And do not let fast, continuous media completely replace the slower kind of attention that books and long-form reading cultivate.
+## This is what *The Shallows* helps explain
+
+Nicholas Carr's *The Shallows* is useful because its deeper argument is about **media and attention**. A medium does not merely give us information; repeated use can also train a particular way of attending to information.
+
+Books repeatedly train a pattern like this:
+
+**stay → remember → connect → question → reflect**
+
+Short-video feeds repeatedly train a different pattern:
+
+**watch → react → swipe → novelty → repeat**
+
+The second pattern is faster, easier, and more stimulating. It is also much closer to what we mean by **shallow consumption**.
+
+## Why books still matter
+
+Books and long-form writing are not valuable merely because they are old media. They create unusually good conditions for deep reading.
+
+The reader controls the pace. Difficult ideas can remain on the page. Earlier arguments can be revisited. There is no algorithm inserting a new emotional stimulus every few seconds. You can disagree, pause, imagine, compare, and build a mental model slowly.
+
+That slowness is not a defect. **It is part of the cognitive value of reading.**
+
+Reading asks more from us, and that is precisely why it can give us more.
+
+## Social media should be the exception, not the default
+
+Social media still has uses. It can be useful for breaking news, firsthand information, niche communities, and discovering things worth investigating further.
+
+But because its dominant incentives are engagement, novelty, speed, and continued consumption, it is a poor default environment for thinking.
+
+The healthier strategy is not merely to "filter better" while spending hours inside the feed. **It is to reduce exposure to the feed itself.** Use social media deliberately when it has a specific purpose, get the information you need, and leave.
+
+For learning, reflection, and understanding, books and long-form text should remain the default. Social media should be occasional and instrumental rather than the place where most of our attention lives.
+
+## Conclusion
+
+**Video tends to be shallower than text for complex thought. Short-form video makes that tendency stronger. Infinite scroll and recommendation systems make continued consumption easier and can encourage compulsive use.**
+
+So if the goal is to protect attention and think more deeply, avoiding or sharply limiting social media is not an extreme position. It is a reasonable response to a medium designed to keep us consuming.
+
+Social media can help us discover information. **It should not become the environment in which we do most of our thinking.**
 
 ### Further reading
 
 - Nicholas Carr, *The Shallows: What the Internet Is Doing to Our Brains*.
 - Maryanne Wolf's work on deep reading and the reading brain.
 - Tarchi, Zaccoletti & Mason, research comparing learning from text, video, and subtitled video.
-
-*This article was written by ChatGPT and is marked as AI-assisted on this site.*
