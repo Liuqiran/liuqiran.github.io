@@ -55,4 +55,5 @@ Each valid date is counted separately in the reading chart.
 | Tadoku Graded Reader LVL 0 (50) (848pg) |  | 2026-05-03 | 5 |
 | よむよむ文庫 Lv0 |  | 2026-05-25 | 5 |
 | よむよむ文庫 Lv1 |  | 2026-07| 5 |
+| Tadoku Graded Reader LVL 1 (25) |  | 2026-09-28 |  |
 | Beyond Happiness | Jenn Lim | Reading |  |
