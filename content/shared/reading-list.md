@@ -56,4 +56,5 @@ Each valid date is counted separately in the reading chart.
 | よむよむ文庫 Lv0 |  | 2026-05-25 | 5 |
 | よむよむ文庫 Lv1 |  | 2026-07| 5 |
 | Tadoku Graded Reader LVL 1 (25) |  | 2026-09-28 | 5 |
+| The Mom Test | Rob Fitzpatrick | 2026-10-07 |  |
 | Beyond Happiness | Jenn Lim | Reading |  |
